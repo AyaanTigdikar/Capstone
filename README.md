@@ -1,11 +1,11 @@
 # Capstone Project: Moody's
 
 ### Members:
-Ayaan Tigdikar \\ 
-Carlos Gallegos \\
-Emilio Gonzalez-Islas \\
-Ignacio Orueta \\
-Leonardo Luksic
+Ayaan Tigdikar ----
+Carlos Gallegos ----
+Emilio Gonzalez-Islas ----
+Ignacio Orueta ----
+Leonardo Luksic ----
 
 In this Capstone project, we address the following questions:
 
