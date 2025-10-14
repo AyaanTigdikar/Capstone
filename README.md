@@ -11,7 +11,7 @@ In this Capstone project, we address the following questions:
 
 •	What factors explain why some countries have been more successful than others? <br>
 •	What policy levers and institutional conditions support or hinder the transition? <br>
-•	How sustainable are these shifts in terms of fiscal revenues, employment and export diversification? How have they supported or hindered credit quality? <br>
+•	How sustainable are these shifts in terms of fiscal revenues, employment and export diversification? How have they supported or hindered credit quality? 
 
 ## Data sources:
    The data used for this project comes from 3 sources: <br><br>
@@ -27,9 +27,12 @@ In this Capstone project, we address the following questions:
         4) To add 
 
 
-### Methodology:
-#### Quantitative analysis:
+## Methodology:
+### a) Quantitative analysis:
+#### - Clustering analysis
 
-#### Qualitative analysis:
+
+### b) Qualitative analysis:
+#### - Comparative analysis
 
  
