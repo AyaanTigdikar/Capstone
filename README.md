@@ -28,11 +28,17 @@ In this Capstone project, we address the following questions:
 
 
 ## Methodology:
-### a) Quantitative analysis:
-#### - Clustering analysis
+### 1) Quantitative analysis:
 
+#### a) Econometric analysis
 
-### b) Qualitative analysis:
+#### b) Machine learning analysis:
+
+##### i) Cluster analysis: this allow us to filter countries for our analysis, keeping ony emerging markets with a high level of natural resources.
+
+##### ii) LASSO/Random Forest: here, we analyze the most important variables for ECI upgrading. 
+
+### 2) Qualitative analysis:
 #### - Comparative analysis
 
  ## Main findings
