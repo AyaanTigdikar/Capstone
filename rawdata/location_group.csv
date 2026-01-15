@@ -1,0 +1,1594 @@
+country_id,country_iso3_code,group_id,group_type,group_name,group_parent_id
+28,ATG,930,continent,North America,
+44,BHS,930,continent,North America,
+52,BRB,930,continent,North America,
+60,BMU,930,continent,North America,
+84,BLZ,930,continent,North America,
+92,VGB,930,continent,North America,
+124,CAN,930,continent,North America,
+136,CYM,930,continent,North America,
+188,CRI,930,continent,North America,
+192,CUB,930,continent,North America,
+212,DMA,930,continent,North America,
+214,DOM,930,continent,North America,
+222,SLV,930,continent,North America,
+238,FLK,930,continent,North America,
+304,GRL,930,continent,North America,
+308,GRD,930,continent,North America,
+312,GLP,930,continent,North America,
+320,GTM,930,continent,North America,
+332,HTI,930,continent,North America,
+340,HND,930,continent,North America,
+388,JAM,930,continent,North America,
+474,MTQ,930,continent,North America,
+484,MEX,930,continent,North America,
+500,MSR,930,continent,North America,
+530,ANT,930,continent,North America,
+531,CUW,930,continent,North America,
+533,ABW,930,continent,North America,
+534,SXM,930,continent,North America,
+558,NIC,930,continent,North America,
+591,PAN,930,continent,North America,
+592,PCZ,930,continent,North America,
+652,BLM,930,continent,North America,
+659,KNA,930,continent,North America,
+660,AIA,930,continent,North America,
+662,LCA,930,continent,North America,
+666,SPM,930,continent,North America,
+670,VCT,930,continent,North America,
+780,TTO,930,continent,North America,
+796,TCA,930,continent,North America,
+840,USA,930,continent,North America,
+850,VIR,930,continent,North America,
+4,AFG,931,continent,Asia,
+31,AZE,931,continent,Asia,
+48,BHR,931,continent,Asia,
+50,BGD,931,continent,Asia,
+51,ARM,931,continent,Asia,
+64,BTN,931,continent,Asia,
+96,BRN,931,continent,Asia,
+104,MMR,931,continent,Asia,
+116,KHM,931,continent,Asia,
+144,LKA,931,continent,Asia,
+156,CHN,931,continent,Asia,
+158,TWN,931,continent,Asia,
+196,CYP,931,continent,Asia,
+268,GEO,931,continent,Asia,
+275,PSE,931,continent,Asia,
+344,HKG,931,continent,Asia,
+356,IND,931,continent,Asia,
+360,IDN,931,continent,Asia,
+364,IRN,931,continent,Asia,
+368,IRQ,931,continent,Asia,
+376,ISR,931,continent,Asia,
+392,JPN,931,continent,Asia,
+398,KAZ,931,continent,Asia,
+400,JOR,931,continent,Asia,
+408,PRK,931,continent,Asia,
+410,KOR,931,continent,Asia,
+414,KWT,931,continent,Asia,
+417,KGZ,931,continent,Asia,
+418,LAO,931,continent,Asia,
+422,LBN,931,continent,Asia,
+446,MAC,931,continent,Asia,
+458,MYS,931,continent,Asia,
+462,MDV,931,continent,Asia,
+496,MNG,931,continent,Asia,
+512,OMN,931,continent,Asia,
+524,NPL,931,continent,Asia,
+586,PAK,931,continent,Asia,
+608,PHL,931,continent,Asia,
+626,TLS,931,continent,Asia,
+634,QAT,931,continent,Asia,
+682,SAU,931,continent,Asia,
+702,SGP,931,continent,Asia,
+704,VNM,931,continent,Asia,
+720,YMD,931,continent,Asia,
+760,SYR,931,continent,Asia,
+762,TJK,931,continent,Asia,
+764,THA,931,continent,Asia,
+784,ARE,931,continent,Asia,
+792,TUR,931,continent,Asia,
+795,TKM,931,continent,Asia,
+860,UZB,931,continent,Asia,
+868,VDR,931,continent,Asia,
+887,YEM,931,continent,Asia,
+12,DZA,932,continent,Africa,
+24,AGO,932,continent,Africa,
+72,BWA,932,continent,Africa,
+108,BDI,932,continent,Africa,
+120,CMR,932,continent,Africa,
+132,CPV,932,continent,Africa,
+140,CAF,932,continent,Africa,
+148,TCD,932,continent,Africa,
+174,COM,932,continent,Africa,
+175,MYT,932,continent,Africa,
+178,COG,932,continent,Africa,
+180,COD,932,continent,Africa,
+204,BEN,932,continent,Africa,
+226,GNQ,932,continent,Africa,
+231,ETH,932,continent,Africa,
+232,ERI,932,continent,Africa,
+262,DJI,932,continent,Africa,
+266,GAB,932,continent,Africa,
+270,GMB,932,continent,Africa,
+288,GHA,932,continent,Africa,
+324,GIN,932,continent,Africa,
+384,CIV,932,continent,Africa,
+404,KEN,932,continent,Africa,
+426,LSO,932,continent,Africa,
+430,LBR,932,continent,Africa,
+434,LBY,932,continent,Africa,
+450,MDG,932,continent,Africa,
+454,MWI,932,continent,Africa,
+466,MLI,932,continent,Africa,
+478,MRT,932,continent,Africa,
+480,MUS,932,continent,Africa,
+504,MAR,932,continent,Africa,
+508,MOZ,932,continent,Africa,
+516,NAM,932,continent,Africa,
+562,NER,932,continent,Africa,
+566,NGA,932,continent,Africa,
+624,GNB,932,continent,Africa,
+638,REU,932,continent,Africa,
+646,RWA,932,continent,Africa,
+654,SHN,932,continent,Africa,
+678,STP,932,continent,Africa,
+686,SEN,932,continent,Africa,
+690,SYC,932,continent,Africa,
+694,SLE,932,continent,Africa,
+706,SOM,932,continent,Africa,
+710,ZAF,932,continent,Africa,
+716,ZWE,932,continent,Africa,
+728,SSD,932,continent,Africa,
+729,SDN,932,continent,Africa,
+732,ESH,932,continent,Africa,
+748,SWZ,932,continent,Africa,
+768,TGO,932,continent,Africa,
+788,TUN,932,continent,Africa,
+800,UGA,932,continent,Africa,
+818,EGY,932,continent,Africa,
+834,TZA,932,continent,Africa,
+854,BFA,932,continent,Africa,
+894,ZMB,932,continent,Africa,
+8,ALB,933,continent,Europe,
+20,AND,933,continent,Europe,
+40,AUT,933,continent,Europe,
+56,BEL,933,continent,Europe,
+70,BIH,933,continent,Europe,
+100,BGR,933,continent,Europe,
+112,BLR,933,continent,Europe,
+191,HRV,933,continent,Europe,
+200,CSK,933,continent,Europe,
+203,CZE,933,continent,Europe,
+208,DNK,933,continent,Europe,
+233,EST,933,continent,Europe,
+234,FRO,933,continent,Europe,
+246,FIN,933,continent,Europe,
+250,FRA,933,continent,Europe,
+276,DEU,933,continent,Europe,
+278,DDR,933,continent,Europe,
+292,GIB,933,continent,Europe,
+300,GRC,933,continent,Europe,
+336,VAT,933,continent,Europe,
+348,HUN,933,continent,Europe,
+352,ISL,933,continent,Europe,
+372,IRL,933,continent,Europe,
+380,ITA,933,continent,Europe,
+428,LVA,933,continent,Europe,
+440,LTU,933,continent,Europe,
+442,LUX,933,continent,Europe,
+470,MLT,933,continent,Europe,
+498,MDA,933,continent,Europe,
+499,MNE,933,continent,Europe,
+528,NLD,933,continent,Europe,
+578,NOR,933,continent,Europe,
+616,POL,933,continent,Europe,
+620,PRT,933,continent,Europe,
+642,ROU,933,continent,Europe,
+643,RUS,933,continent,Europe,
+674,SMR,933,continent,Europe,
+688,SRB,933,continent,Europe,
+703,SVK,933,continent,Europe,
+705,SVN,933,continent,Europe,
+724,ESP,933,continent,Europe,
+752,SWE,933,continent,Europe,
+756,CHE,933,continent,Europe,
+804,UKR,933,continent,Europe,
+807,MKD,933,continent,Europe,
+810,SUN,933,continent,Europe,
+826,GBR,933,continent,Europe,
+890,YUG,933,continent,Europe,
+891,SCG,933,continent,Europe,
+32,ARG,934,continent,South America,
+68,BOL,934,continent,South America,
+76,BRA,934,continent,South America,
+152,CHL,934,continent,South America,
+170,COL,934,continent,South America,
+218,ECU,934,continent,South America,
+254,GUF,934,continent,South America,
+328,GUY,934,continent,South America,
+535,BES,934,continent,South America,
+600,PRY,934,continent,South America,
+604,PER,934,continent,South America,
+740,SUR,934,continent,South America,
+858,URY,934,continent,South America,
+862,VEN,934,continent,South America,
+10,ATA,935,continent,Other,
+16,ASM,935,continent,Other,
+74,BVT,935,continent,Other,
+86,IOT,935,continent,Other,
+239,SGS,935,continent,Other,
+260,ATF,935,continent,Other,
+334,HMD,935,continent,Other,
+581,UMI,935,continent,Other,
+914,USP,935,continent,Other,
+999,ANS,935,continent,Other,
+36,AUS,936,continent,Oceania,
+90,SLB,936,continent,Oceania,
+162,CXR,936,continent,Oceania,
+166,CCK,936,continent,Oceania,
+184,COK,936,continent,Oceania,
+242,FJI,936,continent,Oceania,
+258,PYF,936,continent,Oceania,
+296,KIR,936,continent,Oceania,
+316,GUM,936,continent,Oceania,
+520,NRU,936,continent,Oceania,
+540,NCL,936,continent,Oceania,
+548,VUT,936,continent,Oceania,
+554,NZL,936,continent,Oceania,
+570,NIU,936,continent,Oceania,
+574,NFK,936,continent,Oceania,
+580,MNP,936,continent,Oceania,
+582,PCI,936,continent,Oceania,
+583,FSM,936,continent,Oceania,
+584,MHL,936,continent,Oceania,
+585,PLW,936,continent,Oceania,
+598,PNG,936,continent,Oceania,
+612,PCN,936,continent,Oceania,
+772,TKL,936,continent,Oceania,
+776,TON,936,continent,Oceania,
+798,TUV,936,continent,Oceania,
+876,WLF,936,continent,Oceania,
+882,WSM,936,continent,Oceania,
+40,AUT,952,political,European Union,
+56,BEL,952,political,European Union,
+100,BGR,952,political,European Union,
+191,HRV,952,political,European Union,
+196,CYP,952,political,European Union,
+203,CZE,952,political,European Union,
+208,DNK,952,political,European Union,
+233,EST,952,political,European Union,
+246,FIN,952,political,European Union,
+250,FRA,952,political,European Union,
+276,DEU,952,political,European Union,
+300,GRC,952,political,European Union,
+348,HUN,952,political,European Union,
+372,IRL,952,political,European Union,
+380,ITA,952,political,European Union,
+428,LVA,952,political,European Union,
+440,LTU,952,political,European Union,
+442,LUX,952,political,European Union,
+470,MLT,952,political,European Union,
+528,NLD,952,political,European Union,
+616,POL,952,political,European Union,
+620,PRT,952,political,European Union,
+642,ROU,952,political,European Union,
+703,SVK,952,political,European Union,
+705,SVN,952,political,European Union,
+724,ESP,952,political,European Union,
+752,SWE,952,political,European Union,
+124,CAN,953,political,G7,
+250,FRA,953,political,G7,
+276,DEU,953,political,G7,
+380,ITA,953,political,G7,
+392,JPN,953,political,G7,
+826,GBR,953,political,G7,
+840,USA,953,political,G7,
+12,DZA,2,region,Africa,1
+24,AGO,2,region,Africa,1
+72,BWA,2,region,Africa,1
+86,IOT,2,region,Africa,1
+108,BDI,2,region,Africa,1
+120,CMR,2,region,Africa,1
+132,CPV,2,region,Africa,1
+140,CAF,2,region,Africa,1
+148,TCD,2,region,Africa,1
+174,COM,2,region,Africa,1
+175,MYT,2,region,Africa,1
+178,COG,2,region,Africa,1
+180,COD,2,region,Africa,1
+204,BEN,2,region,Africa,1
+226,GNQ,2,region,Africa,1
+231,ETH,2,region,Africa,1
+232,ERI,2,region,Africa,1
+262,DJI,2,region,Africa,1
+266,GAB,2,region,Africa,1
+270,GMB,2,region,Africa,1
+288,GHA,2,region,Africa,1
+324,GIN,2,region,Africa,1
+384,CIV,2,region,Africa,1
+404,KEN,2,region,Africa,1
+426,LSO,2,region,Africa,1
+430,LBR,2,region,Africa,1
+434,LBY,2,region,Africa,1
+450,MDG,2,region,Africa,1
+454,MWI,2,region,Africa,1
+466,MLI,2,region,Africa,1
+478,MRT,2,region,Africa,1
+480,MUS,2,region,Africa,1
+504,MAR,2,region,Africa,1
+508,MOZ,2,region,Africa,1
+516,NAM,2,region,Africa,1
+562,NER,2,region,Africa,1
+566,NGA,2,region,Africa,1
+624,GNB,2,region,Africa,1
+638,REU,2,region,Africa,1
+646,RWA,2,region,Africa,1
+654,SHN,2,region,Africa,1
+678,STP,2,region,Africa,1
+686,SEN,2,region,Africa,1
+690,SYC,2,region,Africa,1
+694,SLE,2,region,Africa,1
+706,SOM,2,region,Africa,1
+710,ZAF,2,region,Africa,1
+716,ZWE,2,region,Africa,1
+728,SSD,2,region,Africa,1
+729,SDN,2,region,Africa,1
+732,ESH,2,region,Africa,1
+748,SWZ,2,region,Africa,1
+768,TGO,2,region,Africa,1
+788,TUN,2,region,Africa,1
+800,UGA,2,region,Africa,1
+818,EGY,2,region,Africa,1
+834,TZA,2,region,Africa,1
+854,BFA,2,region,Africa,1
+894,ZMB,2,region,Africa,1
+16,ASM,9,region,Oceania,1
+36,AUS,9,region,Oceania,1
+90,SLB,9,region,Oceania,1
+162,CXR,9,region,Oceania,1
+166,CCK,9,region,Oceania,1
+184,COK,9,region,Oceania,1
+242,FJI,9,region,Oceania,1
+258,PYF,9,region,Oceania,1
+296,KIR,9,region,Oceania,1
+316,GUM,9,region,Oceania,1
+334,HMD,9,region,Oceania,1
+520,NRU,9,region,Oceania,1
+540,NCL,9,region,Oceania,1
+548,VUT,9,region,Oceania,1
+554,NZL,9,region,Oceania,1
+570,NIU,9,region,Oceania,1
+574,NFK,9,region,Oceania,1
+580,MNP,9,region,Oceania,1
+581,UMI,9,region,Oceania,1
+583,FSM,9,region,Oceania,1
+584,MHL,9,region,Oceania,1
+585,PLW,9,region,Oceania,1
+598,PNG,9,region,Oceania,1
+612,PCN,9,region,Oceania,1
+772,TKL,9,region,Oceania,1
+776,TON,9,region,Oceania,1
+798,TUV,9,region,Oceania,1
+876,WLF,9,region,Oceania,1
+882,WSM,9,region,Oceania,1
+28,ATG,19,region,Americas,1
+32,ARG,19,region,Americas,1
+44,BHS,19,region,Americas,1
+52,BRB,19,region,Americas,1
+60,BMU,19,region,Americas,1
+68,BOL,19,region,Americas,1
+74,BVT,19,region,Americas,1
+76,BRA,19,region,Americas,1
+84,BLZ,19,region,Americas,1
+92,VGB,19,region,Americas,1
+124,CAN,19,region,Americas,1
+136,CYM,19,region,Americas,1
+152,CHL,19,region,Americas,1
+170,COL,19,region,Americas,1
+188,CRI,19,region,Americas,1
+192,CUB,19,region,Americas,1
+212,DMA,19,region,Americas,1
+214,DOM,19,region,Americas,1
+218,ECU,19,region,Americas,1
+222,SLV,19,region,Americas,1
+238,FLK,19,region,Americas,1
+239,SGS,19,region,Americas,1
+254,GUF,19,region,Americas,1
+304,GRL,19,region,Americas,1
+308,GRD,19,region,Americas,1
+312,GLP,19,region,Americas,1
+320,GTM,19,region,Americas,1
+328,GUY,19,region,Americas,1
+332,HTI,19,region,Americas,1
+340,HND,19,region,Americas,1
+388,JAM,19,region,Americas,1
+474,MTQ,19,region,Americas,1
+484,MEX,19,region,Americas,1
+500,MSR,19,region,Americas,1
+530,ANT,19,region,Americas,1
+531,CUW,19,region,Americas,1
+533,ABW,19,region,Americas,1
+534,SXM,19,region,Americas,1
+535,BES,19,region,Americas,1
+558,NIC,19,region,Americas,1
+591,PAN,19,region,Americas,1
+600,PRY,19,region,Americas,1
+604,PER,19,region,Americas,1
+652,BLM,19,region,Americas,1
+659,KNA,19,region,Americas,1
+660,AIA,19,region,Americas,1
+662,LCA,19,region,Americas,1
+666,SPM,19,region,Americas,1
+670,VCT,19,region,Americas,1
+740,SUR,19,region,Americas,1
+780,TTO,19,region,Americas,1
+796,TCA,19,region,Americas,1
+840,USA,19,region,Americas,1
+850,VIR,19,region,Americas,1
+858,URY,19,region,Americas,1
+862,VEN,19,region,Americas,1
+4,AFG,142,region,Asia,1
+31,AZE,142,region,Asia,1
+48,BHR,142,region,Asia,1
+50,BGD,142,region,Asia,1
+51,ARM,142,region,Asia,1
+64,BTN,142,region,Asia,1
+96,BRN,142,region,Asia,1
+104,MMR,142,region,Asia,1
+116,KHM,142,region,Asia,1
+144,LKA,142,region,Asia,1
+156,CHN,142,region,Asia,1
+158,TWN,142,region,Asia,1
+196,CYP,142,region,Asia,1
+268,GEO,142,region,Asia,1
+275,PSE,142,region,Asia,1
+344,HKG,142,region,Asia,1
+356,IND,142,region,Asia,1
+360,IDN,142,region,Asia,1
+364,IRN,142,region,Asia,1
+368,IRQ,142,region,Asia,1
+376,ISR,142,region,Asia,1
+392,JPN,142,region,Asia,1
+398,KAZ,142,region,Asia,1
+400,JOR,142,region,Asia,1
+408,PRK,142,region,Asia,1
+410,KOR,142,region,Asia,1
+414,KWT,142,region,Asia,1
+417,KGZ,142,region,Asia,1
+418,LAO,142,region,Asia,1
+422,LBN,142,region,Asia,1
+446,MAC,142,region,Asia,1
+458,MYS,142,region,Asia,1
+462,MDV,142,region,Asia,1
+496,MNG,142,region,Asia,1
+512,OMN,142,region,Asia,1
+524,NPL,142,region,Asia,1
+586,PAK,142,region,Asia,1
+608,PHL,142,region,Asia,1
+626,TLS,142,region,Asia,1
+634,QAT,142,region,Asia,1
+682,SAU,142,region,Asia,1
+702,SGP,142,region,Asia,1
+704,VNM,142,region,Asia,1
+760,SYR,142,region,Asia,1
+762,TJK,142,region,Asia,1
+764,THA,142,region,Asia,1
+784,ARE,142,region,Asia,1
+792,TUR,142,region,Asia,1
+795,TKM,142,region,Asia,1
+860,UZB,142,region,Asia,1
+887,YEM,142,region,Asia,1
+8,ALB,150,region,Europe,1
+20,AND,150,region,Europe,1
+40,AUT,150,region,Europe,1
+56,BEL,150,region,Europe,1
+70,BIH,150,region,Europe,1
+100,BGR,150,region,Europe,1
+112,BLR,150,region,Europe,1
+191,HRV,150,region,Europe,1
+203,CZE,150,region,Europe,1
+208,DNK,150,region,Europe,1
+233,EST,150,region,Europe,1
+234,FRO,150,region,Europe,1
+246,FIN,150,region,Europe,1
+250,FRA,150,region,Europe,1
+276,DEU,150,region,Europe,1
+292,GIB,150,region,Europe,1
+300,GRC,150,region,Europe,1
+336,VAT,150,region,Europe,1
+348,HUN,150,region,Europe,1
+352,ISL,150,region,Europe,1
+372,IRL,150,region,Europe,1
+380,ITA,150,region,Europe,1
+428,LVA,150,region,Europe,1
+440,LTU,150,region,Europe,1
+442,LUX,150,region,Europe,1
+470,MLT,150,region,Europe,1
+498,MDA,150,region,Europe,1
+499,MNE,150,region,Europe,1
+528,NLD,150,region,Europe,1
+578,NOR,150,region,Europe,1
+616,POL,150,region,Europe,1
+620,PRT,150,region,Europe,1
+642,ROU,150,region,Europe,1
+643,RUS,150,region,Europe,1
+674,SMR,150,region,Europe,1
+688,SRB,150,region,Europe,1
+703,SVK,150,region,Europe,1
+705,SVN,150,region,Europe,1
+724,ESP,150,region,Europe,1
+752,SWE,150,region,Europe,1
+756,CHE,150,region,Europe,1
+804,UKR,150,region,Europe,1
+807,MKD,150,region,Europe,1
+826,GBR,150,region,Europe,1
+10,ATA,998,region,Other,1
+260,ATF,998,region,Other,1
+914,USP,998,region,Other,1
+999,ANS,998,region,Other,1
+12,DZA,937,rock_song,strategic bets,
+24,AGO,937,rock_song,strategic bets,
+31,AZE,937,rock_song,strategic bets,
+36,AUS,937,rock_song,strategic bets,
+48,BHR,937,rock_song,strategic bets,
+50,BGD,937,rock_song,strategic bets,
+51,ARM,937,rock_song,strategic bets,
+68,BOL,937,rock_song,strategic bets,
+72,BWA,937,rock_song,strategic bets,
+104,MMR,937,rock_song,strategic bets,
+116,KHM,937,rock_song,strategic bets,
+120,CMR,937,rock_song,strategic bets,
+152,CHL,937,rock_song,strategic bets,
+178,COG,937,rock_song,strategic bets,
+180,COD,937,rock_song,strategic bets,
+188,CRI,937,rock_song,strategic bets,
+192,CUB,937,rock_song,strategic bets,
+196,CYP,937,rock_song,strategic bets,
+218,ECU,937,rock_song,strategic bets,
+231,ETH,937,rock_song,strategic bets,
+266,GAB,937,rock_song,strategic bets,
+268,GEO,937,rock_song,strategic bets,
+288,GHA,937,rock_song,strategic bets,
+324,GIN,937,rock_song,strategic bets,
+340,HND,937,rock_song,strategic bets,
+364,IRN,937,rock_song,strategic bets,
+372,IRL,937,rock_song,strategic bets,
+384,CIV,937,rock_song,strategic bets,
+388,JAM,937,rock_song,strategic bets,
+398,KAZ,937,rock_song,strategic bets,
+414,KWT,937,rock_song,strategic bets,
+418,LAO,937,rock_song,strategic bets,
+430,LBR,937,rock_song,strategic bets,
+434,LBY,937,rock_song,strategic bets,
+450,MDG,937,rock_song,strategic bets,
+454,MWI,937,rock_song,strategic bets,
+466,MLI,937,rock_song,strategic bets,
+478,MRT,937,rock_song,strategic bets,
+496,MNG,937,rock_song,strategic bets,
+498,MDA,937,rock_song,strategic bets,
+504,MAR,937,rock_song,strategic bets,
+508,MOZ,937,rock_song,strategic bets,
+512,OMN,937,rock_song,strategic bets,
+516,NAM,937,rock_song,strategic bets,
+558,NIC,937,rock_song,strategic bets,
+566,NGA,937,rock_song,strategic bets,
+598,PNG,937,rock_song,strategic bets,
+600,PRY,937,rock_song,strategic bets,
+604,PER,937,rock_song,strategic bets,
+634,QAT,937,rock_song,strategic bets,
+682,SAU,937,rock_song,strategic bets,
+686,SEN,937,rock_song,strategic bets,
+716,ZWE,937,rock_song,strategic bets,
+748,SWZ,937,rock_song,strategic bets,
+762,TJK,937,rock_song,strategic bets,
+768,TGO,937,rock_song,strategic bets,
+780,TTO,937,rock_song,strategic bets,
+784,ARE,937,rock_song,strategic bets,
+795,TKM,937,rock_song,strategic bets,
+800,UGA,937,rock_song,strategic bets,
+807,MKD,937,rock_song,strategic bets,
+834,TZA,937,rock_song,strategic bets,
+854,BFA,937,rock_song,strategic bets,
+858,URY,937,rock_song,strategic bets,
+862,VEN,937,rock_song,strategic bets,
+887,YEM,937,rock_song,strategic bets,
+894,ZMB,937,rock_song,strategic bets,
+8,ALB,938,rock_song,parsimonious industrial,
+32,ARG,938,rock_song,parsimonious industrial,
+76,BRA,938,rock_song,parsimonious industrial,
+124,CAN,938,rock_song,parsimonious industrial,
+144,LKA,938,rock_song,parsimonious industrial,
+191,HRV,938,rock_song,parsimonious industrial,
+208,DNK,938,rock_song,parsimonious industrial,
+214,DOM,938,rock_song,parsimonious industrial,
+222,SLV,938,rock_song,parsimonious industrial,
+250,FRA,938,rock_song,parsimonious industrial,
+300,GRC,938,rock_song,parsimonious industrial,
+320,GTM,938,rock_song,parsimonious industrial,
+480,MUS,938,rock_song,parsimonious industrial,
+528,NLD,938,rock_song,parsimonious industrial,
+554,NZL,938,rock_song,parsimonious industrial,
+578,NOR,938,rock_song,parsimonious industrial,
+586,PAK,938,rock_song,parsimonious industrial,
+620,PRT,938,rock_song,parsimonious industrial,
+724,ESP,938,rock_song,parsimonious industrial,
+788,TUN,938,rock_song,parsimonious industrial,
+792,TUR,938,rock_song,parsimonious industrial,
+818,EGY,938,rock_song,parsimonious industrial,
+40,AUT,939,rock_song,technological frontier,
+203,CZE,939,rock_song,technological frontier,
+276,DEU,939,rock_song,technological frontier,
+348,HUN,939,rock_song,technological frontier,
+392,JPN,939,rock_song,technological frontier,
+410,KOR,939,rock_song,technological frontier,
+702,SGP,939,rock_song,technological frontier,
+752,SWE,939,rock_song,technological frontier,
+756,CHE,939,rock_song,technological frontier,
+840,USA,939,rock_song,technological frontier,
+56,BEL,940,rock_song,light touch,
+70,BIH,940,rock_song,light touch,
+100,BGR,940,rock_song,light touch,
+112,BLR,940,rock_song,light touch,
+156,CHN,940,rock_song,light touch,
+170,COL,940,rock_song,light touch,
+233,EST,940,rock_song,light touch,
+246,FIN,940,rock_song,light touch,
+356,IND,940,rock_song,light touch,
+360,IDN,940,rock_song,light touch,
+376,ISR,940,rock_song,light touch,
+380,ITA,940,rock_song,light touch,
+400,JOR,940,rock_song,light touch,
+404,KEN,940,rock_song,light touch,
+417,KGZ,940,rock_song,light touch,
+422,LBN,940,rock_song,light touch,
+428,LVA,940,rock_song,light touch,
+440,LTU,940,rock_song,light touch,
+458,MYS,940,rock_song,light touch,
+484,MEX,940,rock_song,light touch,
+591,PAN,940,rock_song,light touch,
+608,PHL,940,rock_song,light touch,
+616,POL,940,rock_song,light touch,
+642,ROU,940,rock_song,light touch,
+643,RUS,940,rock_song,light touch,
+688,SRB,940,rock_song,light touch,
+703,SVK,940,rock_song,light touch,
+704,VNM,940,rock_song,light touch,
+705,SVN,940,rock_song,light touch,
+710,ZAF,940,rock_song,light touch,
+764,THA,940,rock_song,light touch,
+804,UKR,940,rock_song,light touch,
+826,GBR,940,rock_song,light touch,
+860,UZB,940,rock_song,light touch,
+32,ARG,5,subregion,South America,19
+68,BOL,5,subregion,South America,19
+74,BVT,5,subregion,South America,19
+76,BRA,5,subregion,South America,19
+152,CHL,5,subregion,South America,19
+170,COL,5,subregion,South America,19
+218,ECU,5,subregion,South America,19
+238,FLK,5,subregion,South America,19
+239,SGS,5,subregion,South America,19
+254,GUF,5,subregion,South America,19
+328,GUY,5,subregion,South America,19
+600,PRY,5,subregion,South America,19
+604,PER,5,subregion,South America,19
+740,SUR,5,subregion,South America,19
+858,URY,5,subregion,South America,19
+862,VEN,5,subregion,South America,19
+132,CPV,11,subregion,Western Africa,2
+204,BEN,11,subregion,Western Africa,2
+270,GMB,11,subregion,Western Africa,2
+288,GHA,11,subregion,Western Africa,2
+324,GIN,11,subregion,Western Africa,2
+384,CIV,11,subregion,Western Africa,2
+430,LBR,11,subregion,Western Africa,2
+466,MLI,11,subregion,Western Africa,2
+478,MRT,11,subregion,Western Africa,2
+562,NER,11,subregion,Western Africa,2
+566,NGA,11,subregion,Western Africa,2
+624,GNB,11,subregion,Western Africa,2
+654,SHN,11,subregion,Western Africa,2
+686,SEN,11,subregion,Western Africa,2
+694,SLE,11,subregion,Western Africa,2
+768,TGO,11,subregion,Western Africa,2
+854,BFA,11,subregion,Western Africa,2
+84,BLZ,13,subregion,Central America,19
+188,CRI,13,subregion,Central America,19
+222,SLV,13,subregion,Central America,19
+320,GTM,13,subregion,Central America,19
+340,HND,13,subregion,Central America,19
+484,MEX,13,subregion,Central America,19
+558,NIC,13,subregion,Central America,19
+591,PAN,13,subregion,Central America,19
+86,IOT,14,subregion,Eastern Africa,2
+108,BDI,14,subregion,Eastern Africa,2
+174,COM,14,subregion,Eastern Africa,2
+175,MYT,14,subregion,Eastern Africa,2
+231,ETH,14,subregion,Eastern Africa,2
+232,ERI,14,subregion,Eastern Africa,2
+262,DJI,14,subregion,Eastern Africa,2
+404,KEN,14,subregion,Eastern Africa,2
+450,MDG,14,subregion,Eastern Africa,2
+454,MWI,14,subregion,Eastern Africa,2
+480,MUS,14,subregion,Eastern Africa,2
+508,MOZ,14,subregion,Eastern Africa,2
+638,REU,14,subregion,Eastern Africa,2
+646,RWA,14,subregion,Eastern Africa,2
+690,SYC,14,subregion,Eastern Africa,2
+706,SOM,14,subregion,Eastern Africa,2
+716,ZWE,14,subregion,Eastern Africa,2
+728,SSD,14,subregion,Eastern Africa,2
+800,UGA,14,subregion,Eastern Africa,2
+834,TZA,14,subregion,Eastern Africa,2
+894,ZMB,14,subregion,Eastern Africa,2
+12,DZA,15,subregion,Northern Africa,2
+434,LBY,15,subregion,Northern Africa,2
+504,MAR,15,subregion,Northern Africa,2
+729,SDN,15,subregion,Northern Africa,2
+732,ESH,15,subregion,Northern Africa,2
+788,TUN,15,subregion,Northern Africa,2
+818,EGY,15,subregion,Northern Africa,2
+24,AGO,17,subregion,Middle Africa,2
+120,CMR,17,subregion,Middle Africa,2
+140,CAF,17,subregion,Middle Africa,2
+148,TCD,17,subregion,Middle Africa,2
+178,COG,17,subregion,Middle Africa,2
+180,COD,17,subregion,Middle Africa,2
+226,GNQ,17,subregion,Middle Africa,2
+266,GAB,17,subregion,Middle Africa,2
+678,STP,17,subregion,Middle Africa,2
+72,BWA,18,subregion,Southern Africa,2
+426,LSO,18,subregion,Southern Africa,2
+516,NAM,18,subregion,Southern Africa,2
+710,ZAF,18,subregion,Southern Africa,2
+748,SWZ,18,subregion,Southern Africa,2
+60,BMU,21,subregion,Northern America,19
+124,CAN,21,subregion,Northern America,19
+304,GRL,21,subregion,Northern America,19
+666,SPM,21,subregion,Northern America,19
+840,USA,21,subregion,Northern America,19
+28,ATG,29,subregion,Caribbean,19
+44,BHS,29,subregion,Caribbean,19
+52,BRB,29,subregion,Caribbean,19
+92,VGB,29,subregion,Caribbean,19
+136,CYM,29,subregion,Caribbean,19
+192,CUB,29,subregion,Caribbean,19
+212,DMA,29,subregion,Caribbean,19
+214,DOM,29,subregion,Caribbean,19
+308,GRD,29,subregion,Caribbean,19
+312,GLP,29,subregion,Caribbean,19
+332,HTI,29,subregion,Caribbean,19
+388,JAM,29,subregion,Caribbean,19
+474,MTQ,29,subregion,Caribbean,19
+500,MSR,29,subregion,Caribbean,19
+530,ANT,29,subregion,Caribbean,19
+531,CUW,29,subregion,Caribbean,19
+533,ABW,29,subregion,Caribbean,19
+534,SXM,29,subregion,Caribbean,19
+535,BES,29,subregion,Caribbean,19
+652,BLM,29,subregion,Caribbean,19
+659,KNA,29,subregion,Caribbean,19
+660,AIA,29,subregion,Caribbean,19
+662,LCA,29,subregion,Caribbean,19
+670,VCT,29,subregion,Caribbean,19
+780,TTO,29,subregion,Caribbean,19
+796,TCA,29,subregion,Caribbean,19
+850,VIR,29,subregion,Caribbean,19
+156,CHN,30,subregion,Eastern Asia,142
+158,TWN,30,subregion,Eastern Asia,142
+344,HKG,30,subregion,Eastern Asia,142
+392,JPN,30,subregion,Eastern Asia,142
+408,PRK,30,subregion,Eastern Asia,142
+410,KOR,30,subregion,Eastern Asia,142
+446,MAC,30,subregion,Eastern Asia,142
+496,MNG,30,subregion,Eastern Asia,142
+4,AFG,34,subregion,Southern Asia,142
+50,BGD,34,subregion,Southern Asia,142
+64,BTN,34,subregion,Southern Asia,142
+144,LKA,34,subregion,Southern Asia,142
+356,IND,34,subregion,Southern Asia,142
+364,IRN,34,subregion,Southern Asia,142
+462,MDV,34,subregion,Southern Asia,142
+524,NPL,34,subregion,Southern Asia,142
+586,PAK,34,subregion,Southern Asia,142
+96,BRN,35,subregion,South-eastern Asia,142
+104,MMR,35,subregion,South-eastern Asia,142
+116,KHM,35,subregion,South-eastern Asia,142
+360,IDN,35,subregion,South-eastern Asia,142
+418,LAO,35,subregion,South-eastern Asia,142
+458,MYS,35,subregion,South-eastern Asia,142
+608,PHL,35,subregion,South-eastern Asia,142
+626,TLS,35,subregion,South-eastern Asia,142
+702,SGP,35,subregion,South-eastern Asia,142
+704,VNM,35,subregion,South-eastern Asia,142
+764,THA,35,subregion,South-eastern Asia,142
+8,ALB,39,subregion,Southern Europe,150
+20,AND,39,subregion,Southern Europe,150
+70,BIH,39,subregion,Southern Europe,150
+191,HRV,39,subregion,Southern Europe,150
+292,GIB,39,subregion,Southern Europe,150
+300,GRC,39,subregion,Southern Europe,150
+336,VAT,39,subregion,Southern Europe,150
+380,ITA,39,subregion,Southern Europe,150
+470,MLT,39,subregion,Southern Europe,150
+499,MNE,39,subregion,Southern Europe,150
+620,PRT,39,subregion,Southern Europe,150
+674,SMR,39,subregion,Southern Europe,150
+688,SRB,39,subregion,Southern Europe,150
+705,SVN,39,subregion,Southern Europe,150
+724,ESP,39,subregion,Southern Europe,150
+807,MKD,39,subregion,Southern Europe,150
+36,AUS,53,subregion,Australia and New Zealand,9
+162,CXR,53,subregion,Australia and New Zealand,9
+166,CCK,53,subregion,Australia and New Zealand,9
+334,HMD,53,subregion,Australia and New Zealand,9
+554,NZL,53,subregion,Australia and New Zealand,9
+574,NFK,53,subregion,Australia and New Zealand,9
+90,SLB,54,subregion,Melanesia,9
+242,FJI,54,subregion,Melanesia,9
+540,NCL,54,subregion,Melanesia,9
+548,VUT,54,subregion,Melanesia,9
+598,PNG,54,subregion,Melanesia,9
+296,KIR,57,subregion,Micronesia,9
+316,GUM,57,subregion,Micronesia,9
+520,NRU,57,subregion,Micronesia,9
+580,MNP,57,subregion,Micronesia,9
+581,UMI,57,subregion,Micronesia,9
+583,FSM,57,subregion,Micronesia,9
+584,MHL,57,subregion,Micronesia,9
+585,PLW,57,subregion,Micronesia,9
+16,ASM,61,subregion,Polynesia,9
+184,COK,61,subregion,Polynesia,9
+258,PYF,61,subregion,Polynesia,9
+570,NIU,61,subregion,Polynesia,9
+612,PCN,61,subregion,Polynesia,9
+772,TKL,61,subregion,Polynesia,9
+776,TON,61,subregion,Polynesia,9
+798,TUV,61,subregion,Polynesia,9
+876,WLF,61,subregion,Polynesia,9
+882,WSM,61,subregion,Polynesia,9
+398,KAZ,143,subregion,Central Asia,142
+417,KGZ,143,subregion,Central Asia,142
+762,TJK,143,subregion,Central Asia,142
+795,TKM,143,subregion,Central Asia,142
+860,UZB,143,subregion,Central Asia,142
+31,AZE,145,subregion,Western Asia,142
+48,BHR,145,subregion,Western Asia,142
+51,ARM,145,subregion,Western Asia,142
+196,CYP,145,subregion,Western Asia,142
+268,GEO,145,subregion,Western Asia,142
+275,PSE,145,subregion,Western Asia,142
+368,IRQ,145,subregion,Western Asia,142
+376,ISR,145,subregion,Western Asia,142
+400,JOR,145,subregion,Western Asia,142
+414,KWT,145,subregion,Western Asia,142
+422,LBN,145,subregion,Western Asia,142
+512,OMN,145,subregion,Western Asia,142
+634,QAT,145,subregion,Western Asia,142
+682,SAU,145,subregion,Western Asia,142
+760,SYR,145,subregion,Western Asia,142
+784,ARE,145,subregion,Western Asia,142
+792,TUR,145,subregion,Western Asia,142
+887,YEM,145,subregion,Western Asia,142
+100,BGR,151,subregion,Eastern Europe,150
+112,BLR,151,subregion,Eastern Europe,150
+203,CZE,151,subregion,Eastern Europe,150
+348,HUN,151,subregion,Eastern Europe,150
+498,MDA,151,subregion,Eastern Europe,150
+616,POL,151,subregion,Eastern Europe,150
+642,ROU,151,subregion,Eastern Europe,150
+643,RUS,151,subregion,Eastern Europe,150
+703,SVK,151,subregion,Eastern Europe,150
+804,UKR,151,subregion,Eastern Europe,150
+208,DNK,154,subregion,Northern Europe,150
+233,EST,154,subregion,Northern Europe,150
+234,FRO,154,subregion,Northern Europe,150
+246,FIN,154,subregion,Northern Europe,150
+352,ISL,154,subregion,Northern Europe,150
+372,IRL,154,subregion,Northern Europe,150
+428,LVA,154,subregion,Northern Europe,150
+440,LTU,154,subregion,Northern Europe,150
+578,NOR,154,subregion,Northern Europe,150
+752,SWE,154,subregion,Northern Europe,150
+826,GBR,154,subregion,Northern Europe,150
+40,AUT,155,subregion,Western Europe,150
+56,BEL,155,subregion,Western Europe,150
+250,FRA,155,subregion,Western Europe,150
+276,DEU,155,subregion,Western Europe,150
+442,LUX,155,subregion,Western Europe,150
+528,NLD,155,subregion,Western Europe,150
+756,CHE,155,subregion,Western Europe,150
+10,ATA,996,subregion,Antarctica,998
+260,ATF,996,subregion,Antarctica,998
+914,USP,997,subregion,Other,998
+999,ANS,997,subregion,Other,998
+124,CAN,954,trade,NAFTA,
+484,MEX,954,trade,NAFTA,
+840,USA,954,trade,NAFTA,
+12,DZA,955,trade,OPEC,
+24,AGO,955,trade,OPEC,
+178,COG,955,trade,OPEC,
+226,GNQ,955,trade,OPEC,
+266,GAB,955,trade,OPEC,
+364,IRN,955,trade,OPEC,
+368,IRQ,955,trade,OPEC,
+414,KWT,955,trade,OPEC,
+434,LBY,955,trade,OPEC,
+566,NGA,955,trade,OPEC,
+682,SAU,955,trade,OPEC,
+784,ARE,955,trade,OPEC,
+862,VEN,955,trade,OPEC,
+20,AND,941,wdi_income_level,high,
+28,ATG,941,wdi_income_level,high,
+36,AUS,941,wdi_income_level,high,
+40,AUT,941,wdi_income_level,high,
+44,BHS,941,wdi_income_level,high,
+48,BHR,941,wdi_income_level,high,
+52,BRB,941,wdi_income_level,high,
+56,BEL,941,wdi_income_level,high,
+60,BMU,941,wdi_income_level,high,
+92,VGB,941,wdi_income_level,high,
+96,BRN,941,wdi_income_level,high,
+124,CAN,941,wdi_income_level,high,
+136,CYM,941,wdi_income_level,high,
+152,CHL,941,wdi_income_level,high,
+191,HRV,941,wdi_income_level,high,
+196,CYP,941,wdi_income_level,high,
+203,CZE,941,wdi_income_level,high,
+208,DNK,941,wdi_income_level,high,
+233,EST,941,wdi_income_level,high,
+234,FRO,941,wdi_income_level,high,
+246,FIN,941,wdi_income_level,high,
+250,FRA,941,wdi_income_level,high,
+258,PYF,941,wdi_income_level,high,
+276,DEU,941,wdi_income_level,high,
+292,GIB,941,wdi_income_level,high,
+300,GRC,941,wdi_income_level,high,
+304,GRL,941,wdi_income_level,high,
+316,GUM,941,wdi_income_level,high,
+344,HKG,941,wdi_income_level,high,
+348,HUN,941,wdi_income_level,high,
+352,ISL,941,wdi_income_level,high,
+372,IRL,941,wdi_income_level,high,
+376,ISR,941,wdi_income_level,high,
+380,ITA,941,wdi_income_level,high,
+392,JPN,941,wdi_income_level,high,
+410,KOR,941,wdi_income_level,high,
+414,KWT,941,wdi_income_level,high,
+428,LVA,941,wdi_income_level,high,
+440,LTU,941,wdi_income_level,high,
+442,LUX,941,wdi_income_level,high,
+446,MAC,941,wdi_income_level,high,
+470,MLT,941,wdi_income_level,high,
+512,OMN,941,wdi_income_level,high,
+520,NRU,941,wdi_income_level,high,
+528,NLD,941,wdi_income_level,high,
+531,CUW,941,wdi_income_level,high,
+533,ABW,941,wdi_income_level,high,
+534,SXM,941,wdi_income_level,high,
+540,NCL,941,wdi_income_level,high,
+554,NZL,941,wdi_income_level,high,
+578,NOR,941,wdi_income_level,high,
+580,MNP,941,wdi_income_level,high,
+585,PLW,941,wdi_income_level,high,
+616,POL,941,wdi_income_level,high,
+620,PRT,941,wdi_income_level,high,
+634,QAT,941,wdi_income_level,high,
+659,KNA,941,wdi_income_level,high,
+674,SMR,941,wdi_income_level,high,
+682,SAU,941,wdi_income_level,high,
+690,SYC,941,wdi_income_level,high,
+702,SGP,941,wdi_income_level,high,
+703,SVK,941,wdi_income_level,high,
+705,SVN,941,wdi_income_level,high,
+724,ESP,941,wdi_income_level,high,
+752,SWE,941,wdi_income_level,high,
+756,CHE,941,wdi_income_level,high,
+780,TTO,941,wdi_income_level,high,
+784,ARE,941,wdi_income_level,high,
+796,TCA,941,wdi_income_level,high,
+826,GBR,941,wdi_income_level,high,
+840,USA,941,wdi_income_level,high,
+850,VIR,941,wdi_income_level,high,
+858,URY,941,wdi_income_level,high,
+4,AFG,942,wdi_income_level,low,
+108,BDI,942,wdi_income_level,low,
+140,CAF,942,wdi_income_level,low,
+148,TCD,942,wdi_income_level,low,
+180,COD,942,wdi_income_level,low,
+231,ETH,942,wdi_income_level,low,
+232,ERI,942,wdi_income_level,low,
+270,GMB,942,wdi_income_level,low,
+324,GIN,942,wdi_income_level,low,
+408,PRK,942,wdi_income_level,low,
+430,LBR,942,wdi_income_level,low,
+450,MDG,942,wdi_income_level,low,
+454,MWI,942,wdi_income_level,low,
+466,MLI,942,wdi_income_level,low,
+508,MOZ,942,wdi_income_level,low,
+562,NER,942,wdi_income_level,low,
+624,GNB,942,wdi_income_level,low,
+646,RWA,942,wdi_income_level,low,
+694,SLE,942,wdi_income_level,low,
+706,SOM,942,wdi_income_level,low,
+728,SSD,942,wdi_income_level,low,
+729,SDN,942,wdi_income_level,low,
+760,SYR,942,wdi_income_level,low,
+768,TGO,942,wdi_income_level,low,
+800,UGA,942,wdi_income_level,low,
+854,BFA,942,wdi_income_level,low,
+862,VEN,942,wdi_income_level,low,
+887,YEM,942,wdi_income_level,low,
+12,DZA,943,wdi_income_level,lower middle,
+24,AGO,943,wdi_income_level,lower middle,
+50,BGD,943,wdi_income_level,lower middle,
+64,BTN,943,wdi_income_level,lower middle,
+68,BOL,943,wdi_income_level,lower middle,
+84,BLZ,943,wdi_income_level,lower middle,
+90,SLB,943,wdi_income_level,lower middle,
+104,MMR,943,wdi_income_level,lower middle,
+116,KHM,943,wdi_income_level,lower middle,
+120,CMR,943,wdi_income_level,lower middle,
+132,CPV,943,wdi_income_level,lower middle,
+144,LKA,943,wdi_income_level,lower middle,
+174,COM,943,wdi_income_level,lower middle,
+178,COG,943,wdi_income_level,lower middle,
+204,BEN,943,wdi_income_level,lower middle,
+222,SLV,943,wdi_income_level,lower middle,
+262,DJI,943,wdi_income_level,lower middle,
+275,PSE,943,wdi_income_level,lower middle,
+288,GHA,943,wdi_income_level,lower middle,
+296,KIR,943,wdi_income_level,lower middle,
+332,HTI,943,wdi_income_level,lower middle,
+340,HND,943,wdi_income_level,lower middle,
+356,IND,943,wdi_income_level,lower middle,
+360,IDN,943,wdi_income_level,lower middle,
+364,IRN,943,wdi_income_level,lower middle,
+384,CIV,943,wdi_income_level,lower middle,
+404,KEN,943,wdi_income_level,lower middle,
+417,KGZ,943,wdi_income_level,lower middle,
+418,LAO,943,wdi_income_level,lower middle,
+426,LSO,943,wdi_income_level,lower middle,
+478,MRT,943,wdi_income_level,lower middle,
+496,MNG,943,wdi_income_level,lower middle,
+504,MAR,943,wdi_income_level,lower middle,
+524,NPL,943,wdi_income_level,lower middle,
+548,VUT,943,wdi_income_level,lower middle,
+558,NIC,943,wdi_income_level,lower middle,
+566,NGA,943,wdi_income_level,lower middle,
+583,FSM,943,wdi_income_level,lower middle,
+586,PAK,943,wdi_income_level,lower middle,
+598,PNG,943,wdi_income_level,lower middle,
+608,PHL,943,wdi_income_level,lower middle,
+626,TLS,943,wdi_income_level,lower middle,
+678,STP,943,wdi_income_level,lower middle,
+686,SEN,943,wdi_income_level,lower middle,
+704,VNM,943,wdi_income_level,lower middle,
+716,ZWE,943,wdi_income_level,lower middle,
+748,SWZ,943,wdi_income_level,lower middle,
+762,TJK,943,wdi_income_level,lower middle,
+788,TUN,943,wdi_income_level,lower middle,
+804,UKR,943,wdi_income_level,lower middle,
+818,EGY,943,wdi_income_level,lower middle,
+834,TZA,943,wdi_income_level,lower middle,
+860,UZB,943,wdi_income_level,lower middle,
+882,WSM,943,wdi_income_level,lower middle,
+894,ZMB,943,wdi_income_level,lower middle,
+8,ALB,944,wdi_income_level,upper middle,
+16,ASM,944,wdi_income_level,upper middle,
+31,AZE,944,wdi_income_level,upper middle,
+32,ARG,944,wdi_income_level,upper middle,
+51,ARM,944,wdi_income_level,upper middle,
+70,BIH,944,wdi_income_level,upper middle,
+72,BWA,944,wdi_income_level,upper middle,
+76,BRA,944,wdi_income_level,upper middle,
+100,BGR,944,wdi_income_level,upper middle,
+112,BLR,944,wdi_income_level,upper middle,
+156,CHN,944,wdi_income_level,upper middle,
+170,COL,944,wdi_income_level,upper middle,
+188,CRI,944,wdi_income_level,upper middle,
+192,CUB,944,wdi_income_level,upper middle,
+212,DMA,944,wdi_income_level,upper middle,
+214,DOM,944,wdi_income_level,upper middle,
+218,ECU,944,wdi_income_level,upper middle,
+226,GNQ,944,wdi_income_level,upper middle,
+242,FJI,944,wdi_income_level,upper middle,
+266,GAB,944,wdi_income_level,upper middle,
+268,GEO,944,wdi_income_level,upper middle,
+308,GRD,944,wdi_income_level,upper middle,
+320,GTM,944,wdi_income_level,upper middle,
+328,GUY,944,wdi_income_level,upper middle,
+368,IRQ,944,wdi_income_level,upper middle,
+388,JAM,944,wdi_income_level,upper middle,
+398,KAZ,944,wdi_income_level,upper middle,
+400,JOR,944,wdi_income_level,upper middle,
+422,LBN,944,wdi_income_level,upper middle,
+434,LBY,944,wdi_income_level,upper middle,
+458,MYS,944,wdi_income_level,upper middle,
+462,MDV,944,wdi_income_level,upper middle,
+480,MUS,944,wdi_income_level,upper middle,
+484,MEX,944,wdi_income_level,upper middle,
+498,MDA,944,wdi_income_level,upper middle,
+499,MNE,944,wdi_income_level,upper middle,
+516,NAM,944,wdi_income_level,upper middle,
+584,MHL,944,wdi_income_level,upper middle,
+591,PAN,944,wdi_income_level,upper middle,
+600,PRY,944,wdi_income_level,upper middle,
+604,PER,944,wdi_income_level,upper middle,
+642,ROU,944,wdi_income_level,upper middle,
+643,RUS,944,wdi_income_level,upper middle,
+662,LCA,944,wdi_income_level,upper middle,
+670,VCT,944,wdi_income_level,upper middle,
+688,SRB,944,wdi_income_level,upper middle,
+710,ZAF,944,wdi_income_level,upper middle,
+740,SUR,944,wdi_income_level,upper middle,
+764,THA,944,wdi_income_level,upper middle,
+776,TON,944,wdi_income_level,upper middle,
+792,TUR,944,wdi_income_level,upper middle,
+795,TKM,944,wdi_income_level,upper middle,
+798,TUV,944,wdi_income_level,upper middle,
+807,MKD,944,wdi_income_level,upper middle,
+28,ATG,945,wdi_region,Latin America & Caribbean,
+32,ARG,945,wdi_region,Latin America & Caribbean,
+44,BHS,945,wdi_region,Latin America & Caribbean,
+52,BRB,945,wdi_region,Latin America & Caribbean,
+68,BOL,945,wdi_region,Latin America & Caribbean,
+76,BRA,945,wdi_region,Latin America & Caribbean,
+84,BLZ,945,wdi_region,Latin America & Caribbean,
+92,VGB,945,wdi_region,Latin America & Caribbean,
+136,CYM,945,wdi_region,Latin America & Caribbean,
+152,CHL,945,wdi_region,Latin America & Caribbean,
+170,COL,945,wdi_region,Latin America & Caribbean,
+188,CRI,945,wdi_region,Latin America & Caribbean,
+192,CUB,945,wdi_region,Latin America & Caribbean,
+212,DMA,945,wdi_region,Latin America & Caribbean,
+214,DOM,945,wdi_region,Latin America & Caribbean,
+218,ECU,945,wdi_region,Latin America & Caribbean,
+222,SLV,945,wdi_region,Latin America & Caribbean,
+308,GRD,945,wdi_region,Latin America & Caribbean,
+320,GTM,945,wdi_region,Latin America & Caribbean,
+328,GUY,945,wdi_region,Latin America & Caribbean,
+332,HTI,945,wdi_region,Latin America & Caribbean,
+340,HND,945,wdi_region,Latin America & Caribbean,
+388,JAM,945,wdi_region,Latin America & Caribbean,
+484,MEX,945,wdi_region,Latin America & Caribbean,
+531,CUW,945,wdi_region,Latin America & Caribbean,
+533,ABW,945,wdi_region,Latin America & Caribbean,
+534,SXM,945,wdi_region,Latin America & Caribbean,
+558,NIC,945,wdi_region,Latin America & Caribbean,
+591,PAN,945,wdi_region,Latin America & Caribbean,
+600,PRY,945,wdi_region,Latin America & Caribbean,
+604,PER,945,wdi_region,Latin America & Caribbean,
+659,KNA,945,wdi_region,Latin America & Caribbean,
+662,LCA,945,wdi_region,Latin America & Caribbean,
+670,VCT,945,wdi_region,Latin America & Caribbean,
+740,SUR,945,wdi_region,Latin America & Caribbean,
+780,TTO,945,wdi_region,Latin America & Caribbean,
+796,TCA,945,wdi_region,Latin America & Caribbean,
+850,VIR,945,wdi_region,Latin America & Caribbean,
+858,URY,945,wdi_region,Latin America & Caribbean,
+862,VEN,945,wdi_region,Latin America & Caribbean,
+4,AFG,946,wdi_region,South Asia,
+50,BGD,946,wdi_region,South Asia,
+64,BTN,946,wdi_region,South Asia,
+144,LKA,946,wdi_region,South Asia,
+356,IND,946,wdi_region,South Asia,
+462,MDV,946,wdi_region,South Asia,
+524,NPL,946,wdi_region,South Asia,
+586,PAK,946,wdi_region,South Asia,
+24,AGO,947,wdi_region,Sub-Saharan Africa,
+72,BWA,947,wdi_region,Sub-Saharan Africa,
+108,BDI,947,wdi_region,Sub-Saharan Africa,
+120,CMR,947,wdi_region,Sub-Saharan Africa,
+132,CPV,947,wdi_region,Sub-Saharan Africa,
+140,CAF,947,wdi_region,Sub-Saharan Africa,
+148,TCD,947,wdi_region,Sub-Saharan Africa,
+174,COM,947,wdi_region,Sub-Saharan Africa,
+178,COG,947,wdi_region,Sub-Saharan Africa,
+180,COD,947,wdi_region,Sub-Saharan Africa,
+204,BEN,947,wdi_region,Sub-Saharan Africa,
+226,GNQ,947,wdi_region,Sub-Saharan Africa,
+231,ETH,947,wdi_region,Sub-Saharan Africa,
+232,ERI,947,wdi_region,Sub-Saharan Africa,
+266,GAB,947,wdi_region,Sub-Saharan Africa,
+270,GMB,947,wdi_region,Sub-Saharan Africa,
+288,GHA,947,wdi_region,Sub-Saharan Africa,
+324,GIN,947,wdi_region,Sub-Saharan Africa,
+384,CIV,947,wdi_region,Sub-Saharan Africa,
+404,KEN,947,wdi_region,Sub-Saharan Africa,
+426,LSO,947,wdi_region,Sub-Saharan Africa,
+430,LBR,947,wdi_region,Sub-Saharan Africa,
+450,MDG,947,wdi_region,Sub-Saharan Africa,
+454,MWI,947,wdi_region,Sub-Saharan Africa,
+466,MLI,947,wdi_region,Sub-Saharan Africa,
+478,MRT,947,wdi_region,Sub-Saharan Africa,
+480,MUS,947,wdi_region,Sub-Saharan Africa,
+508,MOZ,947,wdi_region,Sub-Saharan Africa,
+516,NAM,947,wdi_region,Sub-Saharan Africa,
+562,NER,947,wdi_region,Sub-Saharan Africa,
+566,NGA,947,wdi_region,Sub-Saharan Africa,
+624,GNB,947,wdi_region,Sub-Saharan Africa,
+646,RWA,947,wdi_region,Sub-Saharan Africa,
+678,STP,947,wdi_region,Sub-Saharan Africa,
+686,SEN,947,wdi_region,Sub-Saharan Africa,
+690,SYC,947,wdi_region,Sub-Saharan Africa,
+694,SLE,947,wdi_region,Sub-Saharan Africa,
+706,SOM,947,wdi_region,Sub-Saharan Africa,
+710,ZAF,947,wdi_region,Sub-Saharan Africa,
+716,ZWE,947,wdi_region,Sub-Saharan Africa,
+728,SSD,947,wdi_region,Sub-Saharan Africa,
+729,SDN,947,wdi_region,Sub-Saharan Africa,
+748,SWZ,947,wdi_region,Sub-Saharan Africa,
+768,TGO,947,wdi_region,Sub-Saharan Africa,
+800,UGA,947,wdi_region,Sub-Saharan Africa,
+834,TZA,947,wdi_region,Sub-Saharan Africa,
+854,BFA,947,wdi_region,Sub-Saharan Africa,
+894,ZMB,947,wdi_region,Sub-Saharan Africa,
+8,ALB,948,wdi_region,Europe & Central Asia,
+20,AND,948,wdi_region,Europe & Central Asia,
+31,AZE,948,wdi_region,Europe & Central Asia,
+40,AUT,948,wdi_region,Europe & Central Asia,
+51,ARM,948,wdi_region,Europe & Central Asia,
+56,BEL,948,wdi_region,Europe & Central Asia,
+70,BIH,948,wdi_region,Europe & Central Asia,
+100,BGR,948,wdi_region,Europe & Central Asia,
+112,BLR,948,wdi_region,Europe & Central Asia,
+191,HRV,948,wdi_region,Europe & Central Asia,
+196,CYP,948,wdi_region,Europe & Central Asia,
+203,CZE,948,wdi_region,Europe & Central Asia,
+208,DNK,948,wdi_region,Europe & Central Asia,
+233,EST,948,wdi_region,Europe & Central Asia,
+234,FRO,948,wdi_region,Europe & Central Asia,
+246,FIN,948,wdi_region,Europe & Central Asia,
+250,FRA,948,wdi_region,Europe & Central Asia,
+268,GEO,948,wdi_region,Europe & Central Asia,
+276,DEU,948,wdi_region,Europe & Central Asia,
+292,GIB,948,wdi_region,Europe & Central Asia,
+300,GRC,948,wdi_region,Europe & Central Asia,
+304,GRL,948,wdi_region,Europe & Central Asia,
+348,HUN,948,wdi_region,Europe & Central Asia,
+352,ISL,948,wdi_region,Europe & Central Asia,
+372,IRL,948,wdi_region,Europe & Central Asia,
+380,ITA,948,wdi_region,Europe & Central Asia,
+398,KAZ,948,wdi_region,Europe & Central Asia,
+417,KGZ,948,wdi_region,Europe & Central Asia,
+428,LVA,948,wdi_region,Europe & Central Asia,
+440,LTU,948,wdi_region,Europe & Central Asia,
+442,LUX,948,wdi_region,Europe & Central Asia,
+498,MDA,948,wdi_region,Europe & Central Asia,
+499,MNE,948,wdi_region,Europe & Central Asia,
+528,NLD,948,wdi_region,Europe & Central Asia,
+578,NOR,948,wdi_region,Europe & Central Asia,
+616,POL,948,wdi_region,Europe & Central Asia,
+620,PRT,948,wdi_region,Europe & Central Asia,
+642,ROU,948,wdi_region,Europe & Central Asia,
+643,RUS,948,wdi_region,Europe & Central Asia,
+674,SMR,948,wdi_region,Europe & Central Asia,
+688,SRB,948,wdi_region,Europe & Central Asia,
+703,SVK,948,wdi_region,Europe & Central Asia,
+705,SVN,948,wdi_region,Europe & Central Asia,
+724,ESP,948,wdi_region,Europe & Central Asia,
+752,SWE,948,wdi_region,Europe & Central Asia,
+756,CHE,948,wdi_region,Europe & Central Asia,
+762,TJK,948,wdi_region,Europe & Central Asia,
+792,TUR,948,wdi_region,Europe & Central Asia,
+795,TKM,948,wdi_region,Europe & Central Asia,
+804,UKR,948,wdi_region,Europe & Central Asia,
+807,MKD,948,wdi_region,Europe & Central Asia,
+826,GBR,948,wdi_region,Europe & Central Asia,
+860,UZB,948,wdi_region,Europe & Central Asia,
+12,DZA,949,wdi_region,Middle East & North Africa,
+48,BHR,949,wdi_region,Middle East & North Africa,
+262,DJI,949,wdi_region,Middle East & North Africa,
+275,PSE,949,wdi_region,Middle East & North Africa,
+364,IRN,949,wdi_region,Middle East & North Africa,
+368,IRQ,949,wdi_region,Middle East & North Africa,
+376,ISR,949,wdi_region,Middle East & North Africa,
+400,JOR,949,wdi_region,Middle East & North Africa,
+414,KWT,949,wdi_region,Middle East & North Africa,
+422,LBN,949,wdi_region,Middle East & North Africa,
+434,LBY,949,wdi_region,Middle East & North Africa,
+470,MLT,949,wdi_region,Middle East & North Africa,
+504,MAR,949,wdi_region,Middle East & North Africa,
+512,OMN,949,wdi_region,Middle East & North Africa,
+634,QAT,949,wdi_region,Middle East & North Africa,
+682,SAU,949,wdi_region,Middle East & North Africa,
+760,SYR,949,wdi_region,Middle East & North Africa,
+784,ARE,949,wdi_region,Middle East & North Africa,
+788,TUN,949,wdi_region,Middle East & North Africa,
+818,EGY,949,wdi_region,Middle East & North Africa,
+887,YEM,949,wdi_region,Middle East & North Africa,
+16,ASM,950,wdi_region,East Asia & Pacific,
+36,AUS,950,wdi_region,East Asia & Pacific,
+90,SLB,950,wdi_region,East Asia & Pacific,
+96,BRN,950,wdi_region,East Asia & Pacific,
+104,MMR,950,wdi_region,East Asia & Pacific,
+116,KHM,950,wdi_region,East Asia & Pacific,
+156,CHN,950,wdi_region,East Asia & Pacific,
+242,FJI,950,wdi_region,East Asia & Pacific,
+258,PYF,950,wdi_region,East Asia & Pacific,
+296,KIR,950,wdi_region,East Asia & Pacific,
+316,GUM,950,wdi_region,East Asia & Pacific,
+344,HKG,950,wdi_region,East Asia & Pacific,
+360,IDN,950,wdi_region,East Asia & Pacific,
+392,JPN,950,wdi_region,East Asia & Pacific,
+408,PRK,950,wdi_region,East Asia & Pacific,
+410,KOR,950,wdi_region,East Asia & Pacific,
+418,LAO,950,wdi_region,East Asia & Pacific,
+446,MAC,950,wdi_region,East Asia & Pacific,
+458,MYS,950,wdi_region,East Asia & Pacific,
+496,MNG,950,wdi_region,East Asia & Pacific,
+520,NRU,950,wdi_region,East Asia & Pacific,
+540,NCL,950,wdi_region,East Asia & Pacific,
+548,VUT,950,wdi_region,East Asia & Pacific,
+554,NZL,950,wdi_region,East Asia & Pacific,
+580,MNP,950,wdi_region,East Asia & Pacific,
+583,FSM,950,wdi_region,East Asia & Pacific,
+584,MHL,950,wdi_region,East Asia & Pacific,
+585,PLW,950,wdi_region,East Asia & Pacific,
+598,PNG,950,wdi_region,East Asia & Pacific,
+608,PHL,950,wdi_region,East Asia & Pacific,
+626,TLS,950,wdi_region,East Asia & Pacific,
+702,SGP,950,wdi_region,East Asia & Pacific,
+704,VNM,950,wdi_region,East Asia & Pacific,
+764,THA,950,wdi_region,East Asia & Pacific,
+776,TON,950,wdi_region,East Asia & Pacific,
+798,TUV,950,wdi_region,East Asia & Pacific,
+882,WSM,950,wdi_region,East Asia & Pacific,
+60,BMU,951,wdi_region,North America,
+124,CAN,951,wdi_region,North America,
+840,USA,951,wdi_region,North America,
+4,AFG,1,world,world,
+8,ALB,1,world,world,
+10,ATA,1,world,world,
+12,DZA,1,world,world,
+16,ASM,1,world,world,
+20,AND,1,world,world,
+24,AGO,1,world,world,
+28,ATG,1,world,world,
+31,AZE,1,world,world,
+32,ARG,1,world,world,
+36,AUS,1,world,world,
+40,AUT,1,world,world,
+44,BHS,1,world,world,
+48,BHR,1,world,world,
+50,BGD,1,world,world,
+51,ARM,1,world,world,
+52,BRB,1,world,world,
+56,BEL,1,world,world,
+60,BMU,1,world,world,
+64,BTN,1,world,world,
+68,BOL,1,world,world,
+70,BIH,1,world,world,
+72,BWA,1,world,world,
+74,BVT,1,world,world,
+76,BRA,1,world,world,
+84,BLZ,1,world,world,
+86,IOT,1,world,world,
+90,SLB,1,world,world,
+92,VGB,1,world,world,
+96,BRN,1,world,world,
+100,BGR,1,world,world,
+104,MMR,1,world,world,
+108,BDI,1,world,world,
+112,BLR,1,world,world,
+116,KHM,1,world,world,
+120,CMR,1,world,world,
+124,CAN,1,world,world,
+132,CPV,1,world,world,
+136,CYM,1,world,world,
+140,CAF,1,world,world,
+144,LKA,1,world,world,
+148,TCD,1,world,world,
+152,CHL,1,world,world,
+156,CHN,1,world,world,
+158,TWN,1,world,world,
+162,CXR,1,world,world,
+166,CCK,1,world,world,
+170,COL,1,world,world,
+174,COM,1,world,world,
+175,MYT,1,world,world,
+178,COG,1,world,world,
+180,COD,1,world,world,
+184,COK,1,world,world,
+188,CRI,1,world,world,
+191,HRV,1,world,world,
+192,CUB,1,world,world,
+196,CYP,1,world,world,
+200,CSK,1,world,world,
+203,CZE,1,world,world,
+204,BEN,1,world,world,
+208,DNK,1,world,world,
+212,DMA,1,world,world,
+214,DOM,1,world,world,
+218,ECU,1,world,world,
+222,SLV,1,world,world,
+226,GNQ,1,world,world,
+231,ETH,1,world,world,
+232,ERI,1,world,world,
+233,EST,1,world,world,
+234,FRO,1,world,world,
+238,FLK,1,world,world,
+239,SGS,1,world,world,
+242,FJI,1,world,world,
+246,FIN,1,world,world,
+250,FRA,1,world,world,
+254,GUF,1,world,world,
+258,PYF,1,world,world,
+260,ATF,1,world,world,
+262,DJI,1,world,world,
+266,GAB,1,world,world,
+268,GEO,1,world,world,
+270,GMB,1,world,world,
+275,PSE,1,world,world,
+276,DEU,1,world,world,
+278,DDR,1,world,world,
+288,GHA,1,world,world,
+292,GIB,1,world,world,
+296,KIR,1,world,world,
+300,GRC,1,world,world,
+304,GRL,1,world,world,
+308,GRD,1,world,world,
+312,GLP,1,world,world,
+316,GUM,1,world,world,
+320,GTM,1,world,world,
+324,GIN,1,world,world,
+328,GUY,1,world,world,
+332,HTI,1,world,world,
+334,HMD,1,world,world,
+336,VAT,1,world,world,
+340,HND,1,world,world,
+344,HKG,1,world,world,
+348,HUN,1,world,world,
+352,ISL,1,world,world,
+356,IND,1,world,world,
+360,IDN,1,world,world,
+364,IRN,1,world,world,
+368,IRQ,1,world,world,
+372,IRL,1,world,world,
+376,ISR,1,world,world,
+380,ITA,1,world,world,
+384,CIV,1,world,world,
+388,JAM,1,world,world,
+392,JPN,1,world,world,
+398,KAZ,1,world,world,
+400,JOR,1,world,world,
+404,KEN,1,world,world,
+408,PRK,1,world,world,
+410,KOR,1,world,world,
+414,KWT,1,world,world,
+417,KGZ,1,world,world,
+418,LAO,1,world,world,
+422,LBN,1,world,world,
+426,LSO,1,world,world,
+428,LVA,1,world,world,
+430,LBR,1,world,world,
+434,LBY,1,world,world,
+440,LTU,1,world,world,
+442,LUX,1,world,world,
+446,MAC,1,world,world,
+450,MDG,1,world,world,
+454,MWI,1,world,world,
+458,MYS,1,world,world,
+462,MDV,1,world,world,
+466,MLI,1,world,world,
+470,MLT,1,world,world,
+474,MTQ,1,world,world,
+478,MRT,1,world,world,
+480,MUS,1,world,world,
+484,MEX,1,world,world,
+496,MNG,1,world,world,
+498,MDA,1,world,world,
+499,MNE,1,world,world,
+500,MSR,1,world,world,
+504,MAR,1,world,world,
+508,MOZ,1,world,world,
+512,OMN,1,world,world,
+516,NAM,1,world,world,
+520,NRU,1,world,world,
+524,NPL,1,world,world,
+528,NLD,1,world,world,
+530,ANT,1,world,world,
+531,CUW,1,world,world,
+533,ABW,1,world,world,
+534,SXM,1,world,world,
+535,BES,1,world,world,
+540,NCL,1,world,world,
+548,VUT,1,world,world,
+554,NZL,1,world,world,
+558,NIC,1,world,world,
+562,NER,1,world,world,
+566,NGA,1,world,world,
+570,NIU,1,world,world,
+574,NFK,1,world,world,
+578,NOR,1,world,world,
+580,MNP,1,world,world,
+581,UMI,1,world,world,
+582,PCI,1,world,world,
+583,FSM,1,world,world,
+584,MHL,1,world,world,
+585,PLW,1,world,world,
+586,PAK,1,world,world,
+591,PAN,1,world,world,
+592,PCZ,1,world,world,
+598,PNG,1,world,world,
+600,PRY,1,world,world,
+604,PER,1,world,world,
+608,PHL,1,world,world,
+612,PCN,1,world,world,
+616,POL,1,world,world,
+620,PRT,1,world,world,
+624,GNB,1,world,world,
+626,TLS,1,world,world,
+634,QAT,1,world,world,
+638,REU,1,world,world,
+642,ROU,1,world,world,
+643,RUS,1,world,world,
+646,RWA,1,world,world,
+652,BLM,1,world,world,
+654,SHN,1,world,world,
+659,KNA,1,world,world,
+660,AIA,1,world,world,
+662,LCA,1,world,world,
+666,SPM,1,world,world,
+670,VCT,1,world,world,
+674,SMR,1,world,world,
+678,STP,1,world,world,
+682,SAU,1,world,world,
+686,SEN,1,world,world,
+688,SRB,1,world,world,
+690,SYC,1,world,world,
+694,SLE,1,world,world,
+702,SGP,1,world,world,
+703,SVK,1,world,world,
+704,VNM,1,world,world,
+705,SVN,1,world,world,
+706,SOM,1,world,world,
+710,ZAF,1,world,world,
+716,ZWE,1,world,world,
+720,YMD,1,world,world,
+724,ESP,1,world,world,
+728,SSD,1,world,world,
+729,SDN,1,world,world,
+732,ESH,1,world,world,
+740,SUR,1,world,world,
+748,SWZ,1,world,world,
+752,SWE,1,world,world,
+756,CHE,1,world,world,
+760,SYR,1,world,world,
+762,TJK,1,world,world,
+764,THA,1,world,world,
+768,TGO,1,world,world,
+772,TKL,1,world,world,
+776,TON,1,world,world,
+780,TTO,1,world,world,
+784,ARE,1,world,world,
+788,TUN,1,world,world,
+792,TUR,1,world,world,
+795,TKM,1,world,world,
+796,TCA,1,world,world,
+798,TUV,1,world,world,
+800,UGA,1,world,world,
+804,UKR,1,world,world,
+807,MKD,1,world,world,
+810,SUN,1,world,world,
+818,EGY,1,world,world,
+826,GBR,1,world,world,
+834,TZA,1,world,world,
+840,USA,1,world,world,
+850,VIR,1,world,world,
+854,BFA,1,world,world,
+858,URY,1,world,world,
+860,UZB,1,world,world,
+862,VEN,1,world,world,
+868,VDR,1,world,world,
+876,WLF,1,world,world,
+882,WSM,1,world,world,
+887,YEM,1,world,world,
+890,YUG,1,world,world,
+891,SCG,1,world,world,
+894,ZMB,1,world,world,
+914,USP,1,world,world,
+999,ANS,1,world,world,
