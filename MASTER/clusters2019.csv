@@ -1,0 +1,55 @@
+,Country,Country Code,Year,PC1,PC2,PC3,Cluster,hover_text
+0,Algeria,DZA,2019,3.9879738477608653,-1.4171673915983751,0.2979474882790797,0,<b>Algeria</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $354<br>  Natural Gas: $128<br>  Gold: $0
+1,Angola,AGO,2019,1.5244059376820993,-2.8241946389917336,2.732036567091887,2,<b>Angola</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $452<br>  Gold: $0
+2,Azerbaijan,AZE,2019,4.5309078814218795,0.32760597298981065,0.13075323140892361,0,<b>Azerbaijan</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $784<br>  Natural Gas: $152<br>  Gold: $11
+3,Bahrain,BHR,2019,2.286446295233872,0.30647615806279177,-8.069489221592319,0,<b>Bahrain</b><br>Cluster: 0<br><br>Top Resources:<br>  Aluminium: $1.3K<br>  Natural Gas: $696
+4,Bolivia,BOL,2019,-1.9506055882768105,3.5333211277302556,-2.1203287044970924,3,<b>Bolivia</b><br>Cluster: 3<br><br>Top Resources:<br>  Gold: $103<br>  Natural Gas: $82<br>  Zinc: $79
+5,Burkina Faso,BFA,2019,-4.034231270847013,-0.27789886147483367,-0.35895263383831016,1,<b>Burkina Faso</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $70<br>  Zinc: $8<br>  Silver: $0
+6,Cameroon,CMR,2019,-2.805317015286806,-2.238860728643689,-1.7555655161397872,1,<b>Cameroon</b><br>Cluster: 1<br><br>Top Resources:<br>  Aluminium: $4<br>  Gold: $1
+7,Chad,TCD,2019,0.20524751452568124,-2.7814916782935057,1.6920262133507633,2,<b>Chad</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $78
+8,Chile,CHL,2019,-4.870820646705105,4.794368969012142,1.3760716256497951,3,<b>Chile</b><br>Cluster: 3<br><br>Top Resources:<br>  Copper: $1.2K<br>  Gold: $57<br>  Silver: $22
+9,"Congo, Dem. Rep.",COD,2019,-4.201616819024949,0.9899652403262297,0.1947855243650879,1,"<b>Congo, Dem. Rep.</b><br>Cluster: 1<br><br>Top Resources:<br>  Copper: $55<br>  Cobalt: $20<br>  Gold: $13"
+10,"Congo, Rep.",COG,2019,1.6405154467192682,-2.3788430513812697,3.006853499075452,2,"<b>Congo, Rep.</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $617<br>  Zinc: $1<br>  Gold: $1"
+11,Cote d'Ivoire,CIV,2019,-3.8656003650990876,-1.1531794764529464,-0.5159337400378373,1,<b>Cote d'Ivoire</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $33<br>  Silver: $0
+12,Ecuador,ECU,2019,0.6464164458833587,-1.2568950796817004,2.976605022067061,2,<b>Ecuador</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $315<br>  Gold: $10<br>  Copper: $1
+13,"Egypt, Arab Rep.",EGY,2019,2.0776003919053716,-0.8245923715912366,-0.8249379735506636,2,"<b>Egypt, Arab Rep.</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $63<br>  Natural Gas: $38<br>  Gold: $4"
+14,Equatorial Guinea,GNQ,2019,1.8066843967942088,-2.2233725768408457,3.3628944739655267,2,<b>Equatorial Guinea</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $989<br>  Gold: $3
+15,Ethiopia,ETH,2019,-3.240448542398408,-2.4055736842359665,-0.847792527022233,1,<b>Ethiopia</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $1<br>  Silver: $0<br>  Coal: $0
+16,Gabon,GAB,2019,1.9313288515142866,-2.9162560669776427,4.289943984954495,2,<b>Gabon</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $990<br>  Manganese: $917<br>  Gold: $1
+17,Ghana,GHA,2019,-3.883860099610141,-0.5971549915469397,-0.4264118942305281,1,<b>Ghana</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $132<br>  Manganese: $41<br>  Aluminium: $2
+18,Guinea,GIN,2019,-3.9835869780760316,-0.6285966189132639,-0.41161856771840405,1,<b>Guinea</b><br>Cluster: 1<br><br>Top Resources:<br>  Bauxite: $106<br>  Gold: $60
+19,Indonesia,IDN,2019,0.39730729520641783,3.1974194532790445,0.6287033400146059,3,<b>Indonesia</b><br>Cluster: 3<br><br>Top Resources:<br>  Coal: $82<br>  Oil: $30<br>  Nickel: $22
+20,"Iran, Islamic Rep.",IRN,2019,4.113144444980344,1.8180293577612625,0.13281673986028467,0,"<b>Iran, Islamic Rep.</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $414<br>  Natural Gas: $167<br>  Copper: $14"
+21,Iraq,IRQ,2019,3.8436674239855715,-2.0417670580735576,1.9462583951141839,2,<b>Iraq</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $1.2K<br>  Natural Gas: $17
+22,Kazakhstan,KAZ,2019,3.6778482168465163,8.247276819869326,1.7850534236397217,3,<b>Kazakhstan</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $1.0K<br>  Coal: $216<br>  Gold: $159
+23,Kenya,KEN,2019,-3.4124258903810976,-2.061635226449627,-0.7566241380955567,1,<b>Kenya</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $3
+24,Kuwait,KWT,2019,6.4676658375812,-1.421706937366533,1.8741193178779354,0,<b>Kuwait</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $6.9K<br>  Natural Gas: $189
+25,Lao PDR,LAO,2019,-4.367667186702992,3.5177275511603137,0.9430894614612062,3,<b>Lao PDR</b><br>Cluster: 3<br><br>Top Resources:<br>  Coal: $77<br>  Copper: $77<br>  Gold: $21
+26,Liberia,LBR,2019,-3.8373936940440943,-1.210354166560848,-0.53101788987085,1,<b>Liberia</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $29
+27,Libya,LBY,2019,5.295702646262454,-1.454140378791555,1.184800075963668,0,<b>Libya</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $1.8K<br>  Natural Gas: $147
+28,Madagascar,MDG,2019,-3.402063392750139,-2.1381994036933714,-0.7980055281390342,1,<b>Madagascar</b><br>Cluster: 1<br><br>Top Resources:<br>  Cobalt: $2<br>  Gold: $2<br>  Natural Graphite: $1
+29,Malawi,MWI,2019,-3.119967981095755,-2.606981190925305,-0.9006839443087737,1,<b>Malawi</b><br>Cluster: 1<br><br>Top Resources:<br>  Coal: $0
+30,Malaysia,MYS,2019,4.252905180108247,0.45775709147929305,-1.7539290149266065,0,<b>Malaysia</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $207<br>  Natural Gas: $147<br>  Aluminium: $33
+31,Mali,MLI,2019,-4.065333236426187,-0.7459147451330591,-0.40872858112164107,1,<b>Mali</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $86<br>  Silver: $0
+32,Mongolia,MNG,2019,-5.071063587735946,7.635136824312412,1.9715079503359834,3,<b>Mongolia</b><br>Cluster: 3<br><br>Top Resources:<br>  Coal: $632<br>  Copper: $531<br>  Gold: $142
+33,Mozambique,MOZ,2019,-2.4256331562681126,-0.8007327905791798,-2.4631109815252596,1,<b>Mozambique</b><br>Cluster: 1<br><br>Top Resources:<br>  Aluminium: $27<br>  Coal: $12<br>  Natural Graphite: $4
+34,Myanmar,MMR,2019,-1.7827922566517675,0.7277315584655226,-1.7798399404426997,1,<b>Myanmar</b><br>Cluster: 1<br><br>Top Resources:<br>  Natural Gas: $22<br>  Copper: $16<br>  Tin: $10
+35,Niger,NER,2019,-3.553509859237824,-1.6542979207115882,-0.6472410615921932,1,<b>Niger</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $7<br>  Coal: $0<br>  Silver: $0
+36,Nigeria,NGA,2019,1.7428362458263211,-1.4210592302698821,0.6913475056184605,2,<b>Nigeria</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $103<br>  Natural Gas: $15<br>  Gold: $1
+37,Oman,OMN,2019,7.348998133523881,-0.373543419424241,-1.9949207868636434,0,<b>Oman</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $2.2K<br>  Natural Gas: $507<br>  Aluminium: $119
+38,Papua New Guinea,PNG,2019,-4.7690660928473525,2.35168137129736,0.5696324253173514,1,<b>Papua New Guinea</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $221<br>  Copper: $41<br>  Cobalt: $7
+39,Qatar,QAT,2019,9.64423291008632,0.36011443206495897,-2.925255669301625,0,<b>Qatar</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $6.8K<br>  Natural Gas: $4.3K<br>  Aluminium: $346
+40,Russian Federation,RUS,2019,4.681265505536126,6.286920203154816,0.24889558084964972,3,<b>Russian Federation</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $827<br>  Natural Gas: $296<br>  Coal: $109
+41,Rwanda,RWA,2019,-3.8130822839098895,-1.259053957010973,-0.543924293561093,1,<b>Rwanda</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $26
+42,Saudi Arabia,SAU,2019,6.322662155094708,1.9603698800724045,0.20931774586556498,0,<b>Saudi Arabia</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $4.1K<br>  Natural Gas: $235<br>  Aluminium: $36
+43,Tanzania,TZA,2019,-3.8599992829606853,-0.8128546671115595,-0.39850189601932384,1,<b>Tanzania</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $23<br>  Copper: $1<br>  Coal: $0
+44,Togo,TGO,2019,-3.8306093654173154,-1.2239443030706185,-0.534619543725608,1,<b>Togo</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $28
+45,Trinidad and Tobago,TTO,2019,5.80621493498523,-0.744548535792979,-0.5672508950041497,0,<b>Trinidad and Tobago</b><br>Cluster: 0<br><br>Top Resources:<br>  Natural Gas: $1.6K<br>  Oil: $621
+46,Uganda,UGA,2019,-3.140043287562936,-2.607262798288429,-0.9012261916483421,1,<b>Uganda</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $0
+47,United Arab Emirates,ARE,2019,7.985149098422187,-0.3110199876165517,-2.0863219279351597,0,<b>United Arab Emirates</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $4.3K<br>  Aluminium: $385<br>  Natural Gas: $361
+48,Uzbekistan,UZB,2019,0.44222961701150887,3.530280596186955,0.04933832668897192,3,<b>Uzbekistan</b><br>Cluster: 3<br><br>Top Resources:<br>  Natural Gas: $111<br>  Gold: $81<br>  Oil: $19
+49,"Venezuela, RB",VEN,2019,3.1996692370827606,-0.4513260493665919,0.7957492566710994,2,"<b>Venezuela, RB</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $375<br>  Natural Gas: $56<br>  Gold: $9"
+50,Viet Nam,VNM,2019,0.26408673989191,-0.202428910506957,0.6460691546714519,2,<b>Viet Nam</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $25<br>  Coal: $17<br>  Natural Gas: $6
+51,"Yemen, Rep.",YEM,2019,-0.5653339363604725,-2.7516475671995346,1.0877877215644318,2,"<b>Yemen, Rep.</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $28"
+52,Zambia,ZMB,2019,-4.118762794914711,1.4980246884032735,0.45557044826717685,1,<b>Zambia</b><br>Cluster: 1<br><br>Top Resources:<br>  Copper: $167<br>  Gold: $7<br>  Coal: $1
+53,Zimbabwe,ZWE,2019,-4.1522780212809245,0.6782891649387146,0.04225856271891806,1,<b>Zimbabwe</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $55<br>  Coal: $6<br>  Copper: $2
