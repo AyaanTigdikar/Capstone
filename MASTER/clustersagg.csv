@@ -1,55 +1,55 @@
-,Country,Country Code,Year,PC1,PC2,PC3,Cluster,hover_text
-0,Algeria,DZA,1995,4.171255104279877,-0.7519876978314981,0.38982516776343823,1,<b>Algeria</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $332<br>  Natural Gas: $147<br>  Zinc: $0
-1,Angola,AGO,1995,1.4757296624531637,-2.1936643124865296,-2.1423208499089474,3,<b>Angola</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $334
-2,Azerbaijan,AZE,1995,3.2910821816050864,-0.7416991446357664,1.0737075674840937,1,<b>Azerbaijan</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $174<br>  Natural Gas: $57<br>  Aluminium: $3
-3,Bahrain,BHR,1995,1.2163214811869978,1.6457090209933494,8.645418574916343,1,<b>Bahrain</b><br>Cluster: 1<br><br>Top Resources:<br>  Aluminium: $1.6K<br>  Natural Gas: $921
-4,Bolivia,BOL,1995,-1.879874439306485,2.0142625067610953,1.6153270564724227,0,<b>Bolivia</b><br>Cluster: 0<br><br>Top Resources:<br>  Natural Gas: $26<br>  Zinc: $24<br>  Gold: $24
-5,Burkina Faso,BFA,1995,-3.40841824584725,-1.0575034417774452,0.3658848885445197,0,<b>Burkina Faso</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $2
-6,Cameroon,CMR,1995,-3.063370940403952,-0.8838073850429886,2.073565512701158,0,<b>Cameroon</b><br>Cluster: 0<br><br>Top Resources:<br>  Aluminium: $12<br>  Gold: $1
-7,Chad,TCD,1995,-3.3254766858628555,-1.5293104209965434,0.49033854601988,0,<b>Chad</b><br>Cluster: 0<br><br>Top Resources:<br>  (No significant production)
-8,Chile,CHL,1995,-4.097667689222148,5.570736196048408,-2.2135768095192723,2,<b>Chile</b><br>Cluster: 2<br><br>Top Resources:<br>  Copper: $558<br>  Gold: $41<br>  Silver: $13
-9,"Congo, Dem. Rep.",COD,1995,-3.4623901385577316,-0.48531322292758133,0.08696303445241557,0,"<b>Congo, Dem. Rep.</b><br>Cluster: 0<br><br>Top Resources:<br>  Copper: $3<br>  Cobalt: $2<br>  Tin: $1"
-10,"Congo, Rep.",COG,1995,1.7618421505757222,-2.233254351134791,-2.299205739976758,3,"<b>Congo, Rep.</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $472"
-11,Cote d'Ivoire,CIV,1995,-3.408241908617946,-1.0585065231699329,0.36614948223121946,0,<b>Cote d'Ivoire</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $2
-12,Ecuador,ECU,1995,1.040322157044235,-1.1061376246860157,-2.28279766815725,3,<b>Ecuador</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $246<br>  Gold: $9
-13,"Egypt, Arab Rep.",EGY,1995,2.1216587308669554,-1.0068326988108292,0.903265803848433,3,"<b>Egypt, Arab Rep.</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $102<br>  Natural Gas: $13<br>  Aluminium: $6"
-14,Equatorial Guinea,GNQ,1995,0.3866000042612523,-2.0429589534030286,-1.5451152269868316,3,<b>Equatorial Guinea</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $89
-15,Ethiopia,ETH,1995,-3.345348524641942,-1.4162709239379592,0.46052088865626817,0,<b>Ethiopia</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $0
-16,Gabon,GAB,1995,3.1642301412722107,-2.8300753200763005,-3.737159586006094,3,<b>Gabon</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $2.3K<br>  Manganese: $462
-17,Ghana,GHA,1995,-3.2693410322306864,0.5730473330188386,1.5801706626001304,0,<b>Ghana</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $39<br>  Aluminium: $16<br>  Manganese: $7
-18,Guinea,GIN,1995,-3.543248560482574,0.010522660503851646,0.17058130491169693,0,<b>Guinea</b><br>Cluster: 0<br><br>Top Resources:<br>  Bauxite: $59<br>  Gold: $14
-19,Indonesia,IDN,1995,1.5852716437401413,2.6366623768630646,-0.1828506182193599,1,<b>Indonesia</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $57<br>  Natural Gas: $21<br>  Copper: $10
-20,"Iran, Islamic Rep.",IRN,1995,3.6860016381931042,0.793789711080145,-0.15090373613365107,1,"<b>Iran, Islamic Rep.</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $435<br>  Natural Gas: $35<br>  Copper: $5"
-21,Iraq,IRQ,1995,2.2735026348454053,-1.4511508470644758,-0.6639771200062508,3,<b>Iraq</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $184<br>  Natural Gas: $10
-22,Kazakhstan,KAZ,1995,2.2026853295641318,5.4630548406521475,-2.7430784049963988,1,<b>Kazakhstan</b><br>Cluster: 1<br><br>Top Resources:<br>  Coal: $228<br>  Oil: $195<br>  Copper: $45
-23,Kenya,KEN,1995,-3.331459279586976,-1.4952696327324193,0.4813604266753641,0,<b>Kenya</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $0<br>  Lead: $0
-24,Kuwait,KWT,1995,7.383159666598934,-0.9080045017538053,-0.6576161340264166,1,<b>Kuwait</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $9.2K<br>  Natural Gas: $358
-25,Lao PDR,LAO,1995,-3.321243451332313,-1.3968844735425057,0.44952741671106605,0,<b>Lao PDR</b><br>Cluster: 0<br><br>Top Resources:<br>  Coal: $0
-26,Liberia,LBR,1995,-3.471458613420247,-0.6989029356008858,0.2712929335038045,0,<b>Liberia</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $5
-27,Libya,LBY,1995,5.396431898678738,-1.1488880060358544,-0.7267976654238006,1,<b>Libya</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $2.1K<br>  Natural Gas: $84
-28,Madagascar,MDG,1995,-3.326511108814909,-1.5305392627664922,0.4913123240816737,0,<b>Madagascar</b><br>Cluster: 0<br><br>Top Resources:<br>  Natural Graphite: $1
-29,Malawi,MWI,1995,-3.324503833735191,-1.4988772229752068,0.4809596198833659,0,<b>Malawi</b><br>Cluster: 0<br><br>Top Resources:<br>  Coal: $0
-30,Malaysia,MYS,1995,3.509982764980141,0.6807362557369856,-0.28818476686280486,1,<b>Malaysia</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $250<br>  Natural Gas: $95<br>  Copper: $3
-31,Mali,MLI,1995,-3.5239690939139368,-0.4002009195822243,0.1925010545656957,0,<b>Mali</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $10
-32,Mongolia,MNG,1995,-3.910575403091321,5.517773655391655,-2.114074896229929,2,<b>Mongolia</b><br>Cluster: 2<br><br>Top Resources:<br>  Copper: $179<br>  Coal: $103<br>  Gold: $27
-33,Mozambique,MOZ,1995,-3.340427289107027,-1.4444727753577953,0.4684417966316647,0,<b>Mozambique</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $0<br>  Natural Graphite: $0<br>  Bauxite: $0
-34,Myanmar,MMR,1995,-2.6814422055487936,-0.8741056998129071,1.0848952687013662,0,<b>Myanmar</b><br>Cluster: 0<br><br>Top Resources:<br>  Tin: $4<br>  Natural Gas: $3<br>  Copper: $0
-35,Niger,NER,1995,-3.327243960237474,-1.1946268584780038,0.38985956790218906,0,<b>Niger</b><br>Cluster: 0<br><br>Top Resources:<br>  Coal: $1<br>  Gold: $0
-36,Nigeria,NGA,1995,1.4065253791192123,-1.7005630251556147,-1.0277823025040567,3,<b>Nigeria</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $127<br>  Natural Gas: $3<br>  Coal: $0
-37,Oman,OMN,1995,5.7469823733639585,-0.3430357768705359,-0.8796718270679291,1,<b>Oman</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $3.0K<br>  Natural Gas: $123<br>  Gold: $4
-38,Papua New Guinea,PNG,1995,-4.110703562716375,4.082307590012249,-1.6216395170700841,2,<b>Papua New Guinea</b><br>Cluster: 2<br><br>Top Resources:<br>  Copper: $149<br>  Gold: $148<br>  Silver: $2
-39,Qatar,QAT,1995,7.765202750816734,-0.518515555694417,0.12650955187296925,1,<b>Qatar</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $6.5K<br>  Natural Gas: $1.2K
-40,Russian Federation,RUS,1995,4.502289386802509,5.199853014635067,1.3367855957988612,1,<b>Russian Federation</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $304<br>  Natural Gas: $249<br>  Coal: $83
-41,Rwanda,RWA,1999,-3.326360767500447,-1.5242813874590297,0.48901198315651273,0,<b>Rwanda</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $0
-42,Saudi Arabia,SAU,1995,6.375840175619131,0.20621597209700518,-0.9859795822080358,1,<b>Saudi Arabia</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $4.9K<br>  Natural Gas: $209<br>  Gold: $8
-43,Tanzania,TZA,1995,-3.335316264802245,-1.4386921262028243,0.46513355619322544,0,<b>Tanzania</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $0<br>  Coal: $0
-44,Togo,TGO,2005,-3.539922275648834,-0.3094524156393179,0.16856333485496805,0,<b>Togo</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $13
-45,Trinidad and Tobago,TTO,1995,5.408309774441343,-0.6049110302419745,0.492260813358585,1,<b>Trinidad and Tobago</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $792<br>  Natural Gas: $389
-46,Uganda,UGA,1995,-3.4155479915410663,-1.0169464064500076,0.3551867183071668,0,<b>Uganda</b><br>Cluster: 0<br><br>Top Resources:<br>  Gold: $2
-47,United Arab Emirates,ARE,1995,8.27794427443982,0.2604752875384676,3.2676654982532884,1,<b>United Arab Emirates</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $7.3K<br>  Natural Gas: $856<br>  Aluminium: $205
-48,Uzbekistan,UZB,1995,2.212515781140496,3.368741833308709,-0.17120648464731592,1,<b>Uzbekistan</b><br>Cluster: 1<br><br>Top Resources:<br>  Natural Gas: $129<br>  Oil: $54<br>  Gold: $37
-49,"Venezuela, RB",VEN,1995,5.175378964272069,1.6384018426931455,1.7343745280869394,1,"<b>Venezuela, RB</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $964<br>  Natural Gas: $94<br>  Aluminium: $57"
-50,Viet Nam,VNM,1995,-0.9151256325149952,-0.9284561262084072,-0.984823729119079,3,<b>Viet Nam</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $15<br>  Coal: $5<br>  Zinc: $0
-51,"Yemen, Rep.",YEM,1995,0.8274745003317474,-2.103963764667983,-1.7868612175361591,3,"<b>Yemen, Rep.</b><br>Cluster: 3<br><br>Top Resources:<br>  Oil: $152"
-52,Zambia,ZMB,1995,-3.711413050818157,1.8802610825043913,-1.0161164486855712,2,<b>Zambia</b><br>Cluster: 2<br><br>Top Resources:<br>  Copper: $127<br>  Cobalt: $21<br>  Coal: $1
-53,Zimbabwe,ZWE,1995,-3.6479386009892822,2.3255115913713356,-0.7456201478487117,2,<b>Zimbabwe</b><br>Cluster: 2<br><br>Top Resources:<br>  Gold: $29<br>  Coal: $23<br>  Copper: $2
+,Country,Country Code,Year,PC1,PC2,Cluster,hover_text
+0,Algeria,DZA,1995,4.171255104279877,-0.7519876978314981,2,<b>Algeria</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $332<br>  Natural Gas: $147<br>  Zinc: $0
+1,Angola,AGO,1995,1.4757296624531637,-2.1936643124865296,2,<b>Angola</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $334
+2,Azerbaijan,AZE,1995,3.2910821816050864,-0.7416991446357664,2,<b>Azerbaijan</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $174<br>  Natural Gas: $57<br>  Aluminium: $3
+3,Bahrain,BHR,1995,1.2163214811869978,1.6457090209933494,2,<b>Bahrain</b><br>Cluster: 2<br><br>Top Resources:<br>  Aluminium: $1.6K<br>  Natural Gas: $921
+4,Bolivia,BOL,1995,-1.879874439306485,2.0142625067610953,3,<b>Bolivia</b><br>Cluster: 3<br><br>Top Resources:<br>  Natural Gas: $26<br>  Zinc: $24<br>  Gold: $24
+5,Burkina Faso,BFA,1995,-3.40841824584725,-1.0575034417774452,1,<b>Burkina Faso</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $2
+6,Cameroon,CMR,1995,-3.063370940403952,-0.8838073850429886,1,<b>Cameroon</b><br>Cluster: 1<br><br>Top Resources:<br>  Aluminium: $12<br>  Gold: $1
+7,Chad,TCD,1995,-3.3254766858628555,-1.5293104209965434,1,<b>Chad</b><br>Cluster: 1<br><br>Top Resources:<br>  (No significant production)
+8,Chile,CHL,1995,-4.097667689222148,5.570736196048408,3,<b>Chile</b><br>Cluster: 3<br><br>Top Resources:<br>  Copper: $558<br>  Gold: $41<br>  Silver: $13
+9,"Congo, Dem. Rep.",COD,1995,-3.4623901385577316,-0.48531322292758133,1,"<b>Congo, Dem. Rep.</b><br>Cluster: 1<br><br>Top Resources:<br>  Copper: $3<br>  Cobalt: $2<br>  Tin: $1"
+10,"Congo, Rep.",COG,1995,1.7618421505757222,-2.233254351134791,2,"<b>Congo, Rep.</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $472"
+11,Cote d'Ivoire,CIV,1995,-3.408241908617946,-1.0585065231699329,1,<b>Cote d'Ivoire</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $2
+12,Ecuador,ECU,1995,1.040322157044235,-1.1061376246860157,2,<b>Ecuador</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $246<br>  Gold: $9
+13,"Egypt, Arab Rep.",EGY,1995,2.1216587308669554,-1.0068326988108292,2,"<b>Egypt, Arab Rep.</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $102<br>  Natural Gas: $13<br>  Aluminium: $6"
+14,Equatorial Guinea,GNQ,1995,0.3866000042612523,-2.0429589534030286,2,<b>Equatorial Guinea</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $89
+15,Ethiopia,ETH,1995,-3.345348524641942,-1.4162709239379592,1,<b>Ethiopia</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $0
+16,Gabon,GAB,1995,3.1642301412722107,-2.8300753200763005,2,<b>Gabon</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $2.3K<br>  Manganese: $462
+17,Ghana,GHA,1995,-3.2693410322306864,0.5730473330188386,1,<b>Ghana</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $39<br>  Aluminium: $16<br>  Manganese: $7
+18,Guinea,GIN,1995,-3.543248560482574,0.010522660503851646,1,<b>Guinea</b><br>Cluster: 1<br><br>Top Resources:<br>  Bauxite: $59<br>  Gold: $14
+19,Indonesia,IDN,1995,1.5852716437401413,2.6366623768630646,2,<b>Indonesia</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $57<br>  Natural Gas: $21<br>  Copper: $10
+20,"Iran, Islamic Rep.",IRN,1995,3.6860016381931042,0.793789711080145,2,"<b>Iran, Islamic Rep.</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $435<br>  Natural Gas: $35<br>  Copper: $5"
+21,Iraq,IRQ,1995,2.2735026348454053,-1.4511508470644758,2,<b>Iraq</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $184<br>  Natural Gas: $10
+22,Kazakhstan,KAZ,1995,2.2026853295641318,5.4630548406521475,3,<b>Kazakhstan</b><br>Cluster: 3<br><br>Top Resources:<br>  Coal: $228<br>  Oil: $195<br>  Copper: $45
+23,Kenya,KEN,1995,-3.331459279586976,-1.4952696327324193,1,<b>Kenya</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $0<br>  Lead: $0
+24,Kuwait,KWT,1995,7.383159666598934,-0.9080045017538053,0,<b>Kuwait</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $9.2K<br>  Natural Gas: $358
+25,Lao PDR,LAO,1995,-3.321243451332313,-1.3968844735425057,1,<b>Lao PDR</b><br>Cluster: 1<br><br>Top Resources:<br>  Coal: $0
+26,Liberia,LBR,1995,-3.471458613420247,-0.6989029356008858,1,<b>Liberia</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $5
+27,Libya,LBY,1995,5.396431898678738,-1.1488880060358544,0,<b>Libya</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $2.1K<br>  Natural Gas: $84
+28,Madagascar,MDG,1995,-3.326511108814909,-1.5305392627664922,1,<b>Madagascar</b><br>Cluster: 1<br><br>Top Resources:<br>  Natural Graphite: $1
+29,Malawi,MWI,1995,-3.324503833735191,-1.4988772229752068,1,<b>Malawi</b><br>Cluster: 1<br><br>Top Resources:<br>  Coal: $0
+30,Malaysia,MYS,1995,3.509982764980141,0.6807362557369856,2,<b>Malaysia</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $250<br>  Natural Gas: $95<br>  Copper: $3
+31,Mali,MLI,1995,-3.5239690939139368,-0.4002009195822243,1,<b>Mali</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $10
+32,Mongolia,MNG,1995,-3.910575403091321,5.517773655391655,3,<b>Mongolia</b><br>Cluster: 3<br><br>Top Resources:<br>  Copper: $179<br>  Coal: $103<br>  Gold: $27
+33,Mozambique,MOZ,1995,-3.340427289107027,-1.4444727753577953,1,<b>Mozambique</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $0<br>  Natural Graphite: $0<br>  Bauxite: $0
+34,Myanmar,MMR,1995,-2.6814422055487936,-0.8741056998129071,1,<b>Myanmar</b><br>Cluster: 1<br><br>Top Resources:<br>  Tin: $4<br>  Natural Gas: $3<br>  Copper: $0
+35,Niger,NER,1995,-3.327243960237474,-1.1946268584780038,1,<b>Niger</b><br>Cluster: 1<br><br>Top Resources:<br>  Coal: $1<br>  Gold: $0
+36,Nigeria,NGA,1995,1.4065253791192123,-1.7005630251556147,2,<b>Nigeria</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $127<br>  Natural Gas: $3<br>  Coal: $0
+37,Oman,OMN,1995,5.7469823733639585,-0.3430357768705359,0,<b>Oman</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $3.0K<br>  Natural Gas: $123<br>  Gold: $4
+38,Papua New Guinea,PNG,1995,-4.110703562716375,4.082307590012249,3,<b>Papua New Guinea</b><br>Cluster: 3<br><br>Top Resources:<br>  Copper: $149<br>  Gold: $148<br>  Silver: $2
+39,Qatar,QAT,1995,7.765202750816734,-0.518515555694417,0,<b>Qatar</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $6.5K<br>  Natural Gas: $1.2K
+40,Russian Federation,RUS,1995,4.502289386802509,5.199853014635067,0,<b>Russian Federation</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $304<br>  Natural Gas: $249<br>  Coal: $83
+41,Rwanda,RWA,1999,-3.326360767500447,-1.5242813874590297,1,<b>Rwanda</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $0
+42,Saudi Arabia,SAU,1995,6.375840175619131,0.20621597209700518,0,<b>Saudi Arabia</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $4.9K<br>  Natural Gas: $209<br>  Gold: $8
+43,Tanzania,TZA,1995,-3.335316264802245,-1.4386921262028243,1,<b>Tanzania</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $0<br>  Coal: $0
+44,Togo,TGO,2005,-3.539922275648834,-0.3094524156393179,1,<b>Togo</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $13
+45,Trinidad and Tobago,TTO,1995,5.408309774441343,-0.6049110302419745,0,<b>Trinidad and Tobago</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $792<br>  Natural Gas: $389
+46,Uganda,UGA,1995,-3.4155479915410663,-1.0169464064500076,1,<b>Uganda</b><br>Cluster: 1<br><br>Top Resources:<br>  Gold: $2
+47,United Arab Emirates,ARE,1995,8.27794427443982,0.2604752875384676,0,<b>United Arab Emirates</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $7.3K<br>  Natural Gas: $856<br>  Aluminium: $205
+48,Uzbekistan,UZB,1995,2.212515781140496,3.368741833308709,2,<b>Uzbekistan</b><br>Cluster: 2<br><br>Top Resources:<br>  Natural Gas: $129<br>  Oil: $54<br>  Gold: $37
+49,"Venezuela, RB",VEN,1995,5.175378964272069,1.6384018426931455,0,"<b>Venezuela, RB</b><br>Cluster: 0<br><br>Top Resources:<br>  Oil: $964<br>  Natural Gas: $94<br>  Aluminium: $57"
+50,Viet Nam,VNM,1995,-0.9151256325149952,-0.9284561262084072,1,<b>Viet Nam</b><br>Cluster: 1<br><br>Top Resources:<br>  Oil: $15<br>  Coal: $5<br>  Zinc: $0
+51,"Yemen, Rep.",YEM,1995,0.8274745003317474,-2.103963764667983,2,"<b>Yemen, Rep.</b><br>Cluster: 2<br><br>Top Resources:<br>  Oil: $152"
+52,Zambia,ZMB,1995,-3.711413050818157,1.8802610825043913,3,<b>Zambia</b><br>Cluster: 3<br><br>Top Resources:<br>  Copper: $127<br>  Cobalt: $21<br>  Coal: $1
+53,Zimbabwe,ZWE,1995,-3.6479386009892822,2.3255115913713356,3,<b>Zimbabwe</b><br>Cluster: 3<br><br>Top Resources:<br>  Gold: $29<br>  Coal: $23<br>  Copper: $2
