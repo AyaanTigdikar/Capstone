@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            text-align: left;
+            padding: 12px;
+            font-weight: 600;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .positive {
+            color: #27ae60;
+            font-weight: 600;
+        }
+        .negative {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+        .country {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h2>Top 10 ECI Improvers (Resource-Rich Countries)</h2>
+    <table style="width:100%" border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ECI Change</th>
+      <th>Start Year</th>
+      <th>End Year</th>
+      <th>Avg. Production Value Per Capita</th>
+    </tr>
+    <tr>
+      <th>Country Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Papua New Guinea</th>
+      <td>1.011</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>249.890</td>
+    </tr>
+    <tr>
+      <th>Viet Nam</th>
+      <td>0.985</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>71.310</td>
+    </tr>
+    <tr>
+      <th>Bahrain</th>
+      <td>0.903</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>2677.890</td>
+    </tr>
+    <tr>
+      <th>Malaysia</th>
+      <td>0.876</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>613.370</td>
+    </tr>
+    <tr>
+      <th>Iran, Islamic Rep.</th>
+      <td>0.855</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>880.180</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>0.710</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>780.570</td>
+    </tr>
+    <tr>
+      <th>Kuwait</th>
+      <td>0.676</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>12613.660</td>
+    </tr>
+    <tr>
+      <th>Qatar</th>
+      <td>0.660</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>20294.650</td>
+    </tr>
+    <tr>
+      <th>Nigeria</th>
+      <td>0.609</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>195.440</td>
+    </tr>
+    <tr>
+      <th>Lao PDR</th>
+      <td>0.552</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>86.420</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h2>Top 10 ECI Decliners (Resource-Rich Countries)</h2>
+    <table style="width:100%" border="1" class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ECI Change</th>
+      <th>Start Year</th>
+      <th>End Year</th>
+      <th>Avg. Production Value Per Capita</th>
+    </tr>
+    <tr>
+      <th>Country Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Mozambique</th>
+      <td>-0.395</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>32.150</td>
+    </tr>
+    <tr>
+      <th>Bolivia</th>
+      <td>-0.399</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>281.610</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>-0.493</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>878.760</td>
+    </tr>
+    <tr>
+      <th>Mongolia</th>
+      <td>-0.609</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>665.770</td>
+    </tr>
+    <tr>
+      <th>Azerbaijan</th>
+      <td>-0.680</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>1098.360</td>
+    </tr>
+    <tr>
+      <th>Zimbabwe</th>
+      <td>-0.806</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>38.940</td>
+    </tr>
+    <tr>
+      <th>Iraq</th>
+      <td>-1.053</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>1048.540</td>
+    </tr>
+    <tr>
+      <th>Libya</th>
+      <td>-1.116</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>2910.070</td>
+    </tr>
+    <tr>
+      <th>Chad</th>
+      <td>-1.134</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>95.340</td>
+    </tr>
+    <tr>
+      <th>Venezuela, RB</th>
+      <td>-1.560</td>
+      <td>1995</td>
+      <td>2019</td>
+      <td>1465.980</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
