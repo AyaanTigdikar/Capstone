@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .equation-container {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        .equation {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+        .note {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Regression Model Specifications</h2>
+
+    <div class="equation-container">
+        <h3>Model 2: Interactions (No Lags)</h3>
+        <div class="equation">
+            $$
+            \begin{aligned}
+            \log(ECI_{it}) = \beta_0 &+ \beta_1 \log(HCI_{it}) + \beta_2 \log(GFCF_{it}) + \beta_3 \log(Production_{it}) \\
+            &+ \beta_4 PoliticalStability_{it} + \beta_5 RuleOfLaw_{it} + \beta_6 Trade_{it} \\
+            &+ \beta_7 [\log(HCI_{it}) \times \log(Production_{it})] \\
+            &+ \beta_8 [\log(GFCF_{it}) \times \log(Production_{it})] \\
+            &+ \epsilon_{it}
+            \end{aligned}
+            $$
+        </div>
+        <div class="note">
+            <strong>Note:</strong> Interaction terms are mean-centered. Standard errors clustered by country.
+        </div>
+    </div>
+
+    <div class="equation-container">
+        <h3>Model 3: With Lagged ECI</h3>
+        <div class="equation">
+            $$
+            \begin{aligned}
+            \log(ECI_{it}) = \beta_0 &+ \beta_1 \log(HCI_{it}) + \beta_2 \log(GFCF_{it}) + \beta_3 \log(Production_{it}) \\
+            &+ \beta_4 PoliticalStability_{it} + \beta_5 RuleOfLaw_{it} + \beta_6 Trade_{it} \\
+            &+ \beta_7 [\log(HCI_{it}) \times \log(Production_{it})] \\
+            &+ \beta_8 [\log(GFCF_{it}) \times \log(Production_{it})] \\
+            &+ \beta_9 \log(ECI_{i,t-1}) \\
+            &+ \epsilon_{it}
+            \end{aligned}
+            $$
+        </div>
+        <div class="note">
+            <strong>Note:</strong> Includes lagged dependent variable to capture persistence in economic complexity. Standard errors clustered by country.
+        </div>
+    </div>
+
+    <div class="equation-container">
+        <h3>Model 4: Fully Lagged Dynamic Panel</h3>
+        <div class="equation">
+            $$
+            \begin{aligned}
+            \log(ECI_{it}) = \beta_0 &+ \beta_1 \log(HCI_{i,t-1}) + \beta_2 \log(GFCF_{i,t-1}) + \beta_3 \log(Production_{i,t-1}) \\
+            &+ \beta_4 PoliticalStability_{i,t-1} + \beta_5 RuleOfLaw_{i,t-1} + \beta_6 Trade_{i,t-1} \\
+            &+ \beta_7 [\log(HCI_{i,t-1}) \times \log(Production_{i,t-1})] \\
+            &+ \beta_8 [\log(GFCF_{i,t-1}) \times \log(Production_{i,t-1})] \\
+            &+ \beta_9 \log(ECI_{i,t-1}) \\
+            &+ \epsilon_{it}
+            \end{aligned}
+            $$
+        </div>
+        <div class="note">
+            <strong>Note:</strong> All explanatory variables are lagged one period to address endogeneity and reverse causality concerns. Interaction terms created from mean-centered lagged variables. Standard errors clustered by country.
+        </div>
+    </div>
+
+    <div class="equation-container">
+        <h3>Variable Definitions</h3>
+        <ul style="line-height: 2;">
+            <li><strong>ECI<sub>it</sub></strong>: Economic Complexity Index for country <em>i</em> at time <em>t</em></li>
+            <li><strong>HCI<sub>it</sub></strong>: Human Capital Index</li>
+            <li><strong>GFCF<sub>it</sub></strong>: Gross Fixed Capital Formation (% of GDP)</li>
+            <li><strong>Production<sub>it</sub></strong>: Total mineral production value per capita</li>
+            <li><strong>PoliticalStability<sub>it</sub></strong>: Political Stability and Absence of Violence index</li>
+            <li><strong>RuleOfLaw<sub>it</sub></strong>: Rule of Law index</li>
+            <li><strong>Trade<sub>it</sub></strong>: Trade openness (% of GDP)</li>
+            <li><strong>ε<sub>it</sub></strong>: Error term</li>
+        </ul>
+    </div>
+
+    <div class="equation-container">
+        <h3>Estimation Details</h3>
+        <ul style="line-height: 2;">
+            <li><strong>Method:</strong> Ordinary Least Squares (OLS)</li>
+            <li><strong>Standard Errors:</strong> Clustered by country to account for within-country correlation</li>
+            <li><strong>Sample:</strong> Resource-rich countries (mineral production ≥ $10 per capita)</li>
+            <li><strong>Centering:</strong> Interaction terms use mean-centered variables to reduce multicollinearity</li>
+        </ul>
+    </div>
+</body>
+</html>
