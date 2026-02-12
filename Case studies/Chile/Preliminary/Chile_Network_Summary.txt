@@ -10,7 +10,7 @@ BIPARTITE GRAPH
 
 COMMUNITY DETECTION (Louvain)
   Communities: 16
-  Modularity: 0.8109
+  Modularity: 0.7937
 
 MINE-MINE PROJECTION (shared plants)
   Nodes: 206, Edges: 3074

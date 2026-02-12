@@ -1,285 +1,285 @@
-NODE,NODE_TYPE,FACILITY_TYPE,STATUS,REGION,OPERATOR,LAT,LON,DEGREE,DEGREE_CENTRALITY,BETWEENNESS_CENTRALITY,EIGENVECTOR_CENTRALITY,CLOSENESS_CENTRALITY,COMMUNITY
-Aguas Blancas,mine,Mine (idle),Idle,Antofagasta,Atacama Minerals Chile Minera ,-24.13999999999993,-69.85999999999996,1,0.00353,0.0,0.0,0.01472,9
-Alhué,mine,Mine (active),Active,Metropolitana de Santiago,None,-34.00799999999998,-70.97799999999995,3,0.0106,0.00023,0.0,0.10032,10
-Altamira,mine,Mine (active),Active,Antofagasta,None,-25.835999999999956,-69.85699999999997,5,0.01767,0.0,0.00073,0.1657,11
-Amancaya,mine,Mine (active),Active,Antofagasta,None,-25.57899999999995,-69.81299999999999,3,0.0106,0.0834,0.0,0.17861,12
-Amos,mine,Prospect/Project,Prospect/Project,Valparaíso,None,-32.27999999999997,-70.30699999999996,8,0.02827,0.0098,0.0,0.1257,10
-Andina,mine,Mine (active),Active,Valparaíso,Corporación Nacional del Cobre (CODELCO),-33.148999999999944,-70.25399999999996,10,0.03534,8e-05,0.0,0.11748,10
-Antucoya,mine,Mine (active),Active,Antofagasta,Antofagasta plc,-22.637999999999977,-69.88299999999998,15,0.053,0.00088,0.0,0.14981,8
-Arqueros,mine,Mine (idle),Idle,Coquimbo,None,-29.84499999999997,-70.91899999999998,1,0.00353,0.0,0.0,0.15432,2
-Barreal Seco,mine,Mine (active),Active,Antofagasta,None,-25.92199999999997,-70.05499999999995,5,0.01767,0.0,6e-05,0.1657,11
-Berta,mine,Prospect/Project,Prospect/Project,Atacama,Minera Pacífico Ltda.,-26.71799999999996,-70.05599999999998,7,0.02473,0.0,2e-05,0.18441,11
-Boqueron Chañar,mine,Mine (idle),Idle,Atacama,None,-28.06950999999998,-70.69988999999998,5,0.01767,0.00261,0.0,0.161,5
-Bornita,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-30.90599999999995,-70.39199999999994,4,0.01413,0.1438,0.0,0.15633,2
-Brujulina,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-21.93599999999998,-68.86099999999993,12,0.0424,0.0,0.0,0.12824,8
-Buena Esperanza,mine,Mine (idle),Idle,Antofagasta,None,-22.164999999999964,-70.20999999999998,11,0.03887,0.00075,0.0,0.12749,8
-Búfalo,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-23.635999999999967,-69.29399999999998,13,0.04594,0.00015,0.0,0.1496,13
-Cachinal,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-24.964999999999975,-69.54833299999996,3,0.0106,0.0,0.0,0.17205,12
-Cachorro,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-22.975999999999942,-69.74499999999995,14,0.04947,5e-05,0.0,0.1496,8
-Cala Cala,mine,Mine (active),Active,Tarapacá,None,-20.234999999999957,-69.79299999999995,3,0.0106,0.0,0.02078,0.0225,0
-Calichera,mine,Mine (idle),Idle,Tarapacá,None,-19.869999999999948,-69.85999999999996,3,0.0106,0.0,0.00841,0.0225,0
-Can Can,mine,Mine (idle),Idle,Atacama,None,-26.802221999999972,-69.26305599999995,2,0.00707,0.0,0.0,0.1591,11
-Canchas,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-25.458999999999946,-70.20699999999994,5,0.01767,5e-05,3e-05,0.1657,11
-Candelaria,mine,Mine (active),Active,Atacama,Cía. Contractual Minera Candelaria ,-27.51699999999994,-70.29099999999994,8,0.02827,0.07781,0.0,0.19231,11
-Carmen,mine,Mine (idle),Idle,Atacama,Compañía Minera Carmen de Andacollo ,-26.346089999999947,-70.14299999999997,1,0.00353,0.0,0.0,0.14174,5
-Carmen de Andacollo,mine,Mine (active),Active,Coquimbo,Compañía Minera Carmen de Andacollo ,-30.249999999999943,-71.09999999999997,3,0.0106,0.0,0.0,0.15107,2
-Carmen-Margarita,mine,Mine (active),Active,Valparaíso,None,-32.49199999999996,-71.07099999999997,6,0.0212,0.0,0.0,0.12512,10
-Caserones,mine,Mine (active),Active,Atacama,Minera Lumina Copper Chile (MILCC),-28.16599999999994,-69.54099999999994,4,0.01413,0.0,0.0,0.16751,11
-Caspiche,mine,Prospect/Project,Prospect/Project,Atacama,None,-27.68999999999994,-69.29399999999998,4,0.01413,0.0,0.0,0.16076,11
-Casualidad,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-25.74599999999998,-69.96499999999997,5,0.01767,0.0,9e-05,0.1657,11
-Casuto,mine,Mine (idle),Idle,Coquimbo,None,-31.787399999999934,-71.44476999999995,2,0.00707,0.0,0.0,0.12242,10
-Catemu,mine,Mine (active),Active,Valparaíso,None,-32.72399999999993,-70.95699999999994,6,0.0212,0.0,0.0,0.12512,10
-Centinela,mine,Mine (active),Active,Antofagasta,Antofagasta plc,-22.987999999999943,-69.07599999999996,19,0.06714,5e-05,0.0,0.15278,8
-Cerro Bayo,mine,Mine (active),Active,Aysén del General Carlos Ibáñez del Campo,Compañía Minera Cerro Bayo Ltda. ,-46.509999999999934,-71.96999999999997,2,0.00707,3e-05,0.0,0.00707,1
-Cerro Casale,mine,Prospect/Project,Prospect/Project,Atacama,None,-27.793999999999983,-69.27899999999994,4,0.01413,0.0,0.0,0.16076,11
-Cerro Colorado,mine,Mine (idle),Idle,Tarapacá,Compañía Minera Cerro Colorado ,-20.043999999999983,-69.26499999999999,4,0.01413,0.0,0.0,0.10222,6
-Cerro Imán,mine,Mine (idle),Idle,Atacama,None,-27.26499999999993,-70.41666699999996,3,0.0106,0.0,0.0,0.16028,5
-Cerro Negro,mine,Mine (active),Active,Valparaíso,None,-32.577999999999975,-70.85699999999997,9,0.0318,0.00441,0.0,0.12659,10
-Cerro Negro Norte,mine,Mine (active),Active,Atacama,None,-27.10833299999996,-70.34305599999993,3,0.0106,0.00183,0.0,0.16028,5
-Challacollo,mine,Prospect/Project,Prospect/Project,Tarapacá,None,-20.89539999999994,-69.33932999999996,1,0.00353,0.0,0.0,0.1006,6
-Chañarcillo,mine,Mine (idle),Idle,Atacama,None,-27.81388899999996,-70.41888899999998,2,0.00707,0.0,0.0,0.16751,11
-Chimborazo,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-24.147999999999968,-69.13599999999997,10,0.03534,0.0,2e-05,0.14898,13
-Chiquinquira,mine,Mine (idle),Idle,Tarapacá,None,-19.749999999999943,-69.91999999999996,3,0.0106,0.00033,0.00746,0.0225,0
-Chuquicamata,mine,Mine (active),Active,Antofagasta,Corporación Nacional del Cobre (CODELCO),-22.299999999999955,-68.89499999999998,16,0.05654,0.03509,0.0,0.12886,8
-Ciclón-Exploradora,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-25.84299999999996,-69.30499999999995,7,0.02473,0.0,2e-05,0.16988,11
-Cinabrio,mine,Mine (active),Active,Coquimbo,None,-30.71999999999997,-71.21299999999997,3,0.0106,0.0,0.0,0.15498,2
-Collahuasi,mine,Mine (active),Active,Tarapacá,Compañía Minera Doña Inés de Collahuasi SCM ,-20.972999999999956,-68.70299999999997,8,0.02827,0.01198,0.0,0.12614,6
-Colliguay,mine,Mine (active),Active,Valparaíso,None,-33.190999999999974,-71.14899999999994,2,0.00707,0.0,0.0,0.10022,10
-Copaquire,mine,Prospect/Project,Prospect/Project,Tarapacá,None,-20.91599999999994,-68.89399999999995,7,0.02473,0.00015,0.0,0.1257,6
-Costa Fuego,mine,Prospect/Project,Prospect/Project,Atacama,None,-28.714999999999975,-70.80499999999995,4,0.01413,0.18588,0.0,0.18223,2
-Cristales,mine,Mine (idle),Idle,Atacama,Compañía Minera del Pacífico S.A. (CMP),-29.15095999999994,-71.04173899999995,6,0.0212,0.0003,0.0,0.13365,5
-Diego de Almagro,mine,Prospect/Project,Prospect/Project,Atacama,None,-26.375999999999976,-70.16299999999995,11,0.03887,0.0,2e-05,0.19197,11
-Distrito Algarrobo-El Roble,mine,Mine (idle),Idle,Atacama,None,-27.029999999999973,-70.52999999999997,7,0.02473,0.02276,1e-05,0.18441,11
-Distrito Arqueros,mine,Mine (idle),Idle,Coquimbo,None,-29.786999999999978,-70.91399999999999,5,0.01767,0.01223,0.0,0.17096,2
-Distrito Astilla,mine,Mine (idle),Idle,Atacama,None,-28.289999999999964,-70.86999999999995,5,0.01767,0.0,0.0,0.16829,2
-Distrito Caracoles,mine,Mine (idle),Idle,Antofagasta,None,-23.053610999999933,-69.00888899999995,1,0.00353,0.0,0.0,0.14026,13
-Distrito Carrizal Alto,mine,Mine (idle),Idle,Atacama,None,-28.085999999999956,-70.90199999999999,5,0.01767,0.0,0.0,0.16829,11
-Distrito Cerro El Álamo,mine,Mine (idle),Idle,Valparaíso,None,-33.22399999999993,-71.23499999999996,2,0.00707,0.0,0.0,0.10022,10
-Distrito Condoriaco,mine,Mine (idle),Idle,Coquimbo,None,-29.68799999999993,-70.86599999999999,4,0.01413,0.0,0.0,0.17042,2
-Distrito Corral Quemado,mine,Mine (idle),Idle,Coquimbo,None,-30.247999999999934,-70.94399999999996,1,0.00353,0.0,0.0,0.1234,2
-Distrito El Algarrobo,mine,Mine (active),Active,Atacama,None,-28.64584099999996,-70.91579699999994,7,0.02473,0.01213,0.0,0.16148,5
-Distrito El Inca,mine,Mine (idle),Idle,Antofagasta,None,-22.259999999999934,-69.08599999999996,1,0.00353,0.0,0.0,0.12118,8
-Distrito Fraguita,mine,Mine (idle),Idle,Atacama,None,-29.075999999999965,-70.79399999999998,4,0.01413,0.0,0.0,0.17042,2
-Distrito Gatico,mine,Mine (idle),Idle,Antofagasta,None,-22.473999999999933,-70.21599999999995,13,0.04594,0.00193,0.0,0.1284,8
-Distrito Huara,mine,Mine (idle),Idle,Tarapacá,None,-20.047999999999945,-69.91099999999994,2,0.00707,0.0,0.0,0.09912,6
-Distrito Julia,mine,Mine (active),Active,Antofagasta,None,-24.900999999999954,-70.27099999999996,7,0.02473,0.07017,1e-05,0.1804,11
-Distrito La Campana,mine,Mine (idle),Idle,Valparaíso,None,-32.96199999999993,-71.12199999999996,8,0.02827,0.02248,0.0,0.12556,10
-Distrito Lambert,mine,Mine (idle),Idle,Coquimbo,None,-29.84699999999998,-71.10099999999994,5,0.01767,0.0,0.0,0.17096,2
-Distrito Las Pintadas,mine,Mine (idle),Idle,Atacama,None,-27.559999999999945,-70.31999999999994,6,0.0212,0.00576,0.0,0.17096,11
-Distrito Las Ánimas,mine,Mine (idle),Idle,Atacama,None,-26.42999999999995,-70.46999999999997,8,0.02827,0.0003,2e-05,0.18473,11
-Distrito Marga Marga,mine,Mine (idle),Idle,Valparaíso,None,-33.087999999999965,-71.42199999999997,2,0.00707,0.0,0.0,0.10022,10
-Distrito Michilla,mine,Mine (active),Active,Antofagasta,None,-22.682999999999936,-70.17799999999994,13,0.04594,0.0002,0.0,0.1494,8
-Distrito Montecristo,mine,Mine (active),Active,Antofagasta,None,-24.96799999999996,-70.39299999999997,3,0.0106,0.06817,1e-05,0.17627,11
-Distrito Relincho,mine,Mine (idle),Idle,Atacama,None,-27.249999999999943,-70.61999999999995,7,0.02473,0.0309,0.0,0.17123,11
-Distrito San Juan,mine,Prospect/Project,Prospect/Project,Atacama,None,-28.720999999999947,-71.21199999999999,3,0.0106,0.0,0.0,0.16751,2
-Distrito Sierra Overa,mine,Mine (idle),Idle,Antofagasta,None,-25.77472199999994,-69.90749999999997,7,0.02473,0.0,0.00014,0.16988,11
-Distrito Tambillos,mine,Mine (idle),Idle,Coquimbo,None,-30.196999999999946,-71.20899999999995,3,0.0106,0.0,0.0,0.15107,2
-Distrito Tocopilla,mine,Mine (idle),Idle,Antofagasta,None,-22.06699999999995,-70.16699999999997,10,0.03534,0.00203,0.0,0.12734,8
-Distrito Tres Puntas-Chimberos,mine,Mine (idle),Idle,Atacama,None,-26.892999999999972,-69.95899999999995,2,0.00707,0.0,0.0,0.1591,11
-Domeyko,mine,Prospect/Project,Prospect/Project,Atacama,None,-28.99099999999993,-70.87999999999994,4,0.01413,0.0,0.0,0.17042,2
-Dominga,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-29.37999999999994,-71.18699999999995,10,0.03534,0.09508,0.0,0.17541,5
-Don Jaime,mine,Mine (active),Active,Valparaíso,None,-32.537999999999954,-71.00399999999996,6,0.0212,0.0,0.0,0.12512,10
-Doña Elba,mine,Mine (active),Active,Antofagasta,None,-25.611999999999966,-70.39699999999993,5,0.01767,0.0,2e-05,0.1657,11
-El Abra,mine,Mine (active),Active,Antofagasta,Sociedad Contractual Minera El Abra ,-21.923999999999978,-68.83399999999995,15,0.053,0.02125,0.0,0.12963,8
-El Algarrobo,mine,Mine (active),Active,Atacama,Compañía Minera del Pacífico S.A. (CMP),-28.798610999999937,-70.99249999999995,6,0.0212,0.0,0.0,0.13365,5
-El Bronce,mine,Mine (idle),Idle,Valparaíso,None,-32.18333299999995,-70.93333299999995,9,0.0318,0.0003,0.0,0.12659,10
-El Espino,mine,Mine (active),Active,Coquimbo,None,-31.372999999999934,-71.09799999999996,5,0.01767,0.05877,0.0,0.14655,10
-El Hueso,mine,Mine (idle),Idle,Atacama,None,-26.466666999999973,-69.38333299999994,2,0.00707,0.0,0.0,0.1591,11
-El Laco,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-23.82666699999993,-67.47666699999996,1,0.00353,0.0,0.0,0.00353,3
-El Loa,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-21.256999999999948,-68.58299999999997,7,0.02473,0.00541,0.0,0.126,6
-El Peñón,mine,Mine (active),Active,Antofagasta,Minera Meridian Ltda. ,-24.39416699999998,-69.49305599999997,3,0.0106,0.0,0.0,0.17205,12
-El Sauce,mine,Mine (idle),Idle,Valparaíso,None,-32.87399999999997,-70.89299999999997,7,0.02473,0.0,0.0,0.12541,10
-El Soldado,mine,Mine (active),Active,Valparaíso,Anglo American Sur S.A. ,-32.611999999999966,-71.12799999999999,6,0.0212,0.0,0.0,0.12512,10
-El Teniente,mine,Mine (active),Active,Libertador General Bernardo O'Higgins,Corporación Nacional del Cobre (CODELCO),-34.091999999999985,-70.33799999999997,6,0.0212,0.0004,0.0,0.10183,10
-El Toqui,mine,Mine (active),Active,Aysén del General Carlos Ibáñez del Campo,Sociedad Contractual Minera El Toqui Ltda. ,-45.01699999999994,-71.89999999999998,1,0.00353,0.0,0.0,0.00471,4
-Encierro,mine,Prospect/Project,Prospect/Project,Atacama,None,-29.063999999999965,-69.92699999999996,3,0.0106,0.0,0.0,0.16751,2
-Escalones,mine,Prospect/Project,Prospect/Project,Metropolitana de Santiago,None,-34.12099999999998,-69.96499999999997,7,0.02473,0.01464,0.0,0.10251,10
-Escondida,mine,Mine (active),Active,Antofagasta,Minera Escondida Ltda.,-24.274999999999977,-69.05799999999994,10,0.03534,0.00236,6e-05,0.14898,13
-Exploradora,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-25.805999999999983,-69.23699999999997,7,0.02473,0.01624,2e-05,0.16988,11
-Faride,mine,Mine (idle),Idle,Antofagasta,None,-22.809999999999945,-69.39999999999998,1,0.00353,0.0,0.0,0.12118,8
-Fenix,mine,Prospect/Project,Prospect/Project,Atacama,None,-27.010999999999967,-69.20299999999997,2,0.00707,0.00529,0.0,0.1591,11
-Florencia,mine,Mine (idle),Idle,Antofagasta,None,-23.41999999999996,-69.54999999999995,4,0.01413,0.00053,0.0,0.02208,9
-Franke,mine,Mine (active),Active,Antofagasta,Sociedad Contractual Minera Franke ,-25.82899999999995,-69.86399999999998,5,0.01767,0.0,0.00083,0.1657,11
-Frontera,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-31.728999999999928,-70.47799999999995,7,0.02473,0.00088,0.0,0.12585,10
-Gabriela Mistral,mine,Mine (active),Active,Antofagasta,Minera Gaby S.A. ,-23.41799999999995,-68.81099999999998,14,0.04947,0.0012,1e-05,0.15107,8
-Genoveva,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-22.408999999999935,-68.96399999999994,13,0.04594,0.0,0.0,0.12779,8
-Guanaco,mine,Mine (active),Active,Antofagasta,None,-25.108888999999976,-69.55694399999999,3,0.0106,0.0,0.0,0.17205,12
-Inca de Oro,mine,Mine (active),Active,Atacama,None,-26.837999999999965,-69.95399999999995,7,0.02473,0.0,1e-05,0.18441,11
-Inesperada,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-25.146999999999935,-69.60299999999995,3,0.0106,0.0,0.0,0.17205,12
-Iván Zar,mine,Mine (idle),Idle,Antofagasta,None,-23.347999999999956,-70.27199999999993,9,0.0318,0.0,0.0,0.14715,8
-La Coipa,mine,Mine (active),Active,Atacama,Compañía Minera Mantos de Oro ,-26.83499999999998,-69.25249999999994,2,0.00707,0.0,0.0,0.1591,11
-La Esperanza,mine,Prospect/Project,Prospect/Project,Los Lagos,None,-43.83972199999994,-71.82444399999997,1,0.00353,0.0,0.0,0.00471,4
-La Fortuna,mine,Prospect/Project,Prospect/Project,Atacama,None,-28.633999999999958,-69.88399999999996,6,0.0212,0.01629,0.0,0.17123,11
-La Golondrina,mine,Mine (idle),Idle,Metropolitana de Santiago,None,-33.83099999999996,-70.19199999999995,4,0.01413,0.00018,0.0,0.10183,10
-La Higuera,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-29.522999999999968,-71.20799999999997,4,0.01413,0.00165,0.0,0.17042,2
-La Huifa,mine,Prospect/Project,Prospect/Project,Libertador General Bernardo O'Higgins,None,-34.06299999999993,-70.33299999999997,5,0.01767,0.0,0.0,0.10174,10
-La Pepa,mine,Prospect/Project,Prospect/Project,Atacama,None,-27.285999999999945,-69.23899999999998,2,0.00707,0.0,0.0,0.1591,11
-La Planada,mine,Prospect/Project,Prospect/Project,Tarapacá,None,-20.17199999999997,-69.06399999999996,5,0.01767,0.0,0.0,0.10232,6
-La Suerte,mine,Mine (idle),Idle,Atacama,None,-26.339999999999975,-70.40999999999997,1,0.00353,0.0,0.0,0.14174,5
-Lagunas,mine,Mine (idle),Idle,Tarapacá,ACF Minera S.A.,-20.95999999999998,-69.66999999999996,3,0.0106,0.0,0.55999,0.0225,0
-Lana Corina,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-31.124999999999943,-71.11599999999999,4,0.01413,0.0,0.0,0.15633,10
-Las Luces,mine,Mine (active),Active,Antofagasta,Groupo Cenizas,-25.69799999999998,-70.49599999999998,5,0.01767,0.0,2e-05,0.1657,11
-Las Palmas,mine,Mine (idle),Idle,Maule,None,-35.17249999999996,-71.76666699999998,1,0.00353,0.0,0.0,0.08379,10
-Lavadero El Toro,mine,Mine (idle),Idle,Valparaíso,None,-33.289999999999964,-71.48599999999993,2,0.00707,0.0002,0.0,0.10022,10
-Lila,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-23.82699999999994,-68.95099999999996,11,0.03887,0.0001,1e-05,0.14919,13
-Llahuín,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-31.333999999999946,-71.02099999999996,5,0.01767,3e-05,0.0,0.14655,10
-Lo Aguirre,mine,Mine (idle),Idle,Metropolitana de Santiago,None,-33.43999999999994,-70.91999999999996,7,0.02473,0.0,0.0,0.1171,10
-Lobo-Marte,mine,Prospect/Project,Prospect/Project,Atacama,None,-27.16666699999996,-69.03333299999997,1,0.00353,0.0,0.0,0.14576,11
-Loica,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-31.063999999999965,-70.66099999999994,4,0.01413,0.00301,0.0,0.15633,10
-Lomas Bayas,mine,Mine (active),Active,Antofagasta,Compañía Minera Xstrata Lomas Bayas ,-23.430999999999983,-69.50699999999995,16,0.05654,0.00744,2e-05,0.1515,14
-Los Bronces,mine,Mine (active),Active,Metropolitana de Santiago,Anglo American Sur S.A. ,-33.150999999999954,-70.28499999999997,10,0.03534,0.0,0.0,0.11748,10
-Los Bronces Subterráneo,mine,Prospect/Project,Prospect/Project,Metropolitana de Santiago,Anglo American Sur S.A. ,-33.19999999999993,-70.23999999999995,10,0.03534,0.00093,0.0,0.11748,10
-Los Bronces Sur,mine,Prospect/Project,Prospect/Project,Valparaíso,Anglo American Sur S.A. ,-33.12999999999994,-70.25999999999993,11,0.03887,0.02724,0.0,0.12585,10
-Los Colorados,mine,Mine (active),Active,Atacama,Compañía Minera del Pacífico S.A. (CMP),-28.312299999999937,-70.81779999999998,5,0.01767,0.0,0.0,0.161,5
-Los Helados,mine,Prospect/Project,Prospect/Project,Atacama,None,-28.34099999999995,-69.58599999999996,6,0.0212,0.02579,0.0,0.17123,11
-Los Pelambres,mine,Mine (active),Active,Coquimbo,Antofagasta plc,-31.714999999999975,-70.49899999999997,7,0.02473,0.01241,0.0,0.12585,10
-Los Sulfatos,mine,Prospect/Project,Prospect/Project,Metropolitana de Santiago,None,-33.198999999999955,-70.25599999999997,9,0.0318,0.0,0.0,0.11735,10
-Los Volcanes,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-21.987999999999943,-68.76099999999997,12,0.0424,0.00033,0.0,0.12824,8
-Mantos Blancos,mine,Mine (active),Active,Antofagasta,Empresa Minera de Mantos Blancos S.A. ,-23.42199999999997,-70.07199999999995,15,0.053,0.02288,0.0,0.1584,8
-Mantos de Catemu,mine,Mine (active),Active,Valparaíso,Compania Mantos de la Luna,-32.67599999999993,-70.89699999999993,6,0.0212,0.0,0.0,0.12512,10
-Mantos de Punitaqui,mine,Mine (active),Active,Coquimbo,Compania Mantos de la Luna,-30.860999999999933,-71.22699999999998,4,0.01413,0.04185,0.0,0.15633,2
-Mantos de la Luna,mine,Mine (active),Active,Antofagasta,Compania Mantos de la Luna,-22.38299999999998,-70.21799999999996,12,0.0424,0.00175,0.0,0.12764,8
-Mantos del Pacífico,mine,Mine (active),Active,Antofagasta,Compania Mantos de la Luna,-22.53099999999995,-70.22099999999995,13,0.04594,0.00747,0.0,0.1494,8
-Mantoverde,mine,Mine (active),Active,Atacama,Empresa Minera de Mantos Blancos S.A. ,-26.55899999999997,-70.31499999999994,11,0.03887,0.00516,5e-05,0.19197,11
-Maricunga,mine,Mine (idle),Idle,Atacama,Compañía Minera Maricunga ,-27.549999999999955,-69.29999999999995,1,0.00353,0.0,0.0,0.14576,11
-Marimaca,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-23.18799999999993,-70.22199999999998,11,0.03887,0.00043,0.0,0.14756,8
-María Elena,mine,Mine (active),Active,Antofagasta,None,-22.378999999999962,-69.74599999999998,3,0.0106,0.0,0.0,0.01472,9
-Mercedita,mine,Mine (idle),Idle,Metropolitana de Santiago,None,-33.50399999999996,-70.18499999999995,7,0.02473,0.0011,0.0,0.1171,10
-Ministro Hales,mine,Mine (active),Active,Antofagasta,CODELCO,-22.378999999999962,-68.91299999999995,13,0.04594,0.0,0.0,0.12779,8
-Mirador,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-22.950999999999965,-69.02399999999994,19,0.06714,0.08395,0.0,0.15278,8
-Mocha,mine,Prospect/Project,Prospect/Project,Tarapacá,None,-19.809999999999945,-69.28099999999995,4,0.01413,0.0,0.0,0.10222,6
-Mollacas,mine,Prospect/Project,Prospect/Project,Coquimbo,None,-30.738999999999976,-70.66799999999995,3,0.0106,0.0,0.0,0.15498,2
-Negreiros,mine,Mine (active),Active,Tarapacá,None,-19.872999999999934,-69.87299999999993,3,0.0106,0.0,0.00842,0.0225,0
-Novicio,mine,Prospect/Project,Prospect/Project,Valparaíso,None,-32.54899999999998,-70.25299999999999,6,0.0212,0.0,0.0,0.12512,10
-Nueva Victoria,mine,Mine (active),Active,Tarapacá,SQM Químicos S.A. ,-20.951,-69.67,3,0.0106,0.0,0.43029,0.0225,0
-Nuevo Cobre,mine,Prospect/Project,Prospect/Project,Atacama,None,-26.498999999999967,-69.36899999999997,7,0.02473,0.08631,2e-05,0.18441,11
-Opache,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-22.448999999999955,-68.97199999999998,13,0.04594,0.0,0.0,0.12779,8
-Paguanta,mine,Prospect/Project,Prospect/Project,Tarapacá,None,-19.77899999999994,-69.06699999999995,1,0.00353,0.0,0.0,0.1006,6
-Palmira,mine,Mine (idle),Idle,Coquimbo,None,-29.811999999999955,-70.94999999999999,5,0.01767,0.0,0.0,0.17096,2
-Pampa Blanca,mine,Mine (active),Active,Antofagasta,SQM Químicos S.A. ,-23.159,-69.637,4,0.01413,0.0,0.0,0.02208,9
-Pampa Escondida,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-24.24599999999998,-69.03399999999993,12,0.0424,0.01393,5e-05,0.1584,13
-Pampa Orcoma ,mine,Mine (active),Active,Tarapacá,None,-19.919,-69.95,3,0.0106,0.0,0.00866,0.0225,0
-Pampa Paciencia,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-22.727999999999952,-69.41299999999995,1,0.00353,0.0,0.0,0.12118,8
-Pantanillo,mine,Prospect/Project,Prospect/Project,Atacama,None,-27.482999999999947,-69.07499999999999,1,0.00353,0.0,0.0,0.14576,11
-Panulcillo,mine,Mine (active),Active,Coquimbo,None,-30.460999999999956,-71.21899999999994,3,0.0106,0.0,0.0,0.15498,2
-Pascua Lama,mine,Prospect/Project,Prospect/Project,Atacama,None,-29.32099999999997,-70.02699999999999,1,0.00353,0.0,0.0,0.15432,2
-Pedro de Valdivia,mine,Mine (idle),Idle,Antofagasta,SQM Químicos S.A. ,-22.801999999999964,-69.80199999999996,4,0.01413,0.0,0.0,0.02208,9
-Penacho Blanco,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-23.146999999999935,-69.16299999999995,20,0.07067,0.05293,0.0,0.16197,8
-Pimentón,mine,Prospect/Project,Prospect/Project,Valparaíso,None,-32.48299999999995,-70.20199999999994,8,0.02827,0.05308,0.0,0.12644,10
-Pinta Verde,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-24.22999999999996,-69.08099999999996,10,0.03534,0.0,5e-05,0.14898,13
-Playa,mine,Prospect/Project,Prospect/Project,Atacama,None,-26.789999999999964,-70.37399999999997,7,0.02473,0.0,1e-05,0.18441,11
-Polo Sur,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-23.299999999999955,-69.23299999999995,19,0.06714,0.02015,0.0,0.16173,8
-Pullalli,mine,Mine (active),Active,Valparaíso,None,-32.422999999999945,-71.28899999999999,2,0.00707,0.0,0.0,0.12242,10
-Quebrada Blanca,mine,Mine (active),Active,Tarapacá,Compañía Minera Quebrada Blanca ,-21.006999999999948,-68.81199999999995,10,0.03534,8e-05,0.0,0.12674,6
-Queen Elizabeth,mine,Prospect/Project,Prospect/Project,Tarapacá,None,-19.874999999999943,-68.95899999999995,5,0.01767,0.00055,0.0,0.10232,6
-Quetena,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-22.409999999999968,-68.95999999999998,13,0.04594,0.0,0.0,0.12779,8
-Radomiro Tomic,mine,Mine (active),Active,Antofagasta,Corporación Nacional del Cobre (CODELCO),-22.226999999999975,-68.88299999999998,16,0.05654,0.00223,0.0,0.12886,8
-Relincho,mine,Prospect/Project,Prospect/Project,Atacama,None,-28.520999999999958,-70.30999999999995,6,0.0212,0.0,0.0,0.17123,11
-Romeral,mine,Mine (active),Active,Coquimbo,Compañía Minera del Pacífico S.A. (CMP),-29.715832999999975,-71.24166699999995,4,0.01413,3e-05,0.0,0.13299,5
-Rosario de Rengo,mine,Prospect/Project,Prospect/Project,Libertador General Bernardo O'Higgins,None,-34.557999999999936,-70.50899999999996,3,0.0106,0.0,0.0,0.10032,10
-Salar Colpitas,mine,Prospect/Project,Prospect/Project,Arica y Parinacota,None,-17.95999999999998,-69.41999999999996,1,0.00353,0.0,0.0,0.00471,15
-Salar Surire,mine,Prospect/Project,Prospect/Project,Arica y Parinacota,None,-18.819999999999936,-69.04999999999995,1,0.00353,0.0,0.0,0.00471,15
-Salar de Atacama,mine,Mine (active),Active,Antofagasta,Química Industrial del Bórax Ltda. ,-23.46999999999997,-68.29999999999995,1,0.00353,0.0,0.0,0.00353,7
-Salares Norte,mine,Mine (active),Active,Atacama,None,-26.011999999999944,-68.89027999999996,1,0.00353,0.0,0.0,0.15588,11
-Salvador,mine,Mine (active),Active,Atacama,Corporación Nacional del Cobre (CODELCO),-26.24099999999993,-69.56999999999994,7,0.02473,0.00273,3e-05,0.16908,11
-San Cristóbal,mine,Mine (idle),Idle,Antofagasta,None,-23.529999999999973,-69.57999999999998,3,0.0106,0.00551,0.0,0.15128,8
-San Lorenzo,mine,Mine (idle),Idle,Tarapacá,None,-20.519999999999982,-69.95999999999998,3,0.0106,0.0,0.01715,0.0225,0
-San Pietro,mine,Prospect/Project,Prospect/Project,Atacama,None,-26.474999999999966,-70.10299999999995,8,0.02827,0.0,2e-05,0.18473,11
-Santa Herminia,mine,Mine (idle),Idle,Metropolitana de Santiago,None,-33.82099999999997,-70.20199999999994,4,0.01413,0.0,0.0,0.10183,10
-Santa Luisa,mine,Mine (idle),Idle,Antofagasta,None,-25.22999999999996,-70.12999999999994,1,0.00353,0.0,0.0,0.01472,9
-Santo Domingo,mine,Prospect/Project,Prospect/Project,Atacama,None,-26.42599999999993,-70.01599999999996,12,0.0424,0.14443,2e-05,0.19833,11
-Sierra,mine,Prospect/Project,Prospect/Project,Antofagasta,KGHM International Ltd.,-23.15199999999993,-69.96999999999997,14,0.04947,0.02817,0.0,0.1494,8
-Sierra Atacama,mine,Mine (active),Active,Antofagasta,None,-23.238999999999976,-70.11899999999997,11,0.03887,0.0,0.0,0.14756,8
-Sierra Gorda,mine,Mine (active),Active,Antofagasta,KGHM International Ltd.,-22.84699999999998,-69.33899999999994,16,0.05654,8e-05,0.0,0.15086,8
-Sierra Jardín,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-25.90599999999995,-69.48399999999998,5,0.01767,0.0,3e-05,0.1657,11
-Soledad,mine,Mine (active),Active,Tarapacá,None,-20.408999999999935,-69.79299999999995,3,0.0106,0.0,0.01631,0.0225,0
-Spence,mine,Mine (active),Active,Antofagasta,Minera Spence S.A. ,-22.785999999999945,-69.24399999999997,14,0.04947,0.0,0.0,0.12794,8
-Talcuna,mine,Mine (active),Active,Coquimbo,None,-29.888999999999953,-70.88199999999995,4,0.01413,0.0,0.0,0.17042,2
-Tofo,mine,Mine (active),Active,Coquimbo,Compañía Minera del Pacífico S.A. (CMP),-29.448999999999955,-71.23569999999995,6,0.0212,0.00045,0.0,0.13365,5
-Toki,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-22.41599999999994,-68.94799999999998,13,0.04594,0.0,0.0,0.12779,8
-Tovaku,mine,Prospect/Project,Prospect/Project,Antofagasta,None,-21.94599999999997,-69.78299999999996,12,0.0424,0.00286,0.0,0.12824,8
-Valeriano,mine,Prospect/Project,Prospect/Project,Atacama,None,-29.113999999999976,-69.87099999999998,3,0.0106,0.02328,0.0,0.16751,2
-Vaquillas,mine,Mine (idle),Idle,Antofagasta,None,-25.369999999999948,-69.30638899999997,3,0.0106,0.1045,0.0,0.17205,12
-Vizcachitas,mine,Prospect/Project,Prospect/Project,Valparaíso,None,-32.40599999999995,-70.42499999999995,10,0.03534,0.00075,0.0,0.12674,10
-Volcán,mine,Prospect/Project,Prospect/Project,Atacama,None,-27.378999999999962,-69.16399999999999,1,0.00353,0.0,0.0,0.14576,11
-West Wall,mine,Prospect/Project,Prospect/Project,Valparaíso,None,-32.567999999999984,-70.33299999999997,8,0.02827,5e-05,0.0,0.1257,10
-Yumbes,mine,Mine (idle),Idle,Antofagasta,None,-24.829999999999927,-70.32999999999998,1,0.00353,0.0,0.0,0.01472,9
-Zaldivar,mine,Mine (active),Active,Antofagasta,None,-24.20799999999997,-69.06699999999995,10,0.03534,0.0,8e-05,0.14898,13
-Plant in Aguas Blancas,plant,Processing Plant,Active,,Atacama Minerals Chile Minera ,-24.1357,-69.8671,6,0.0212,0.00065,0.0,0.02356,9
-Minera Florida concentration plant,plant,Concentrator,Active,,Minera Florida S.A. ,-34.0348,-71.0265,7,0.02473,0.00824,0.0,0.09264,10
-Los Bronces Plants,plant,Processing Plant,Active,,Anglo American Sur S.A. ,-33.1462,-70.2863,5,0.01767,0.00053,0.0,0.11187,10
-Ventanas refinery and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-32.7618,-71.4812,13,0.04594,0.02932,0.0,0.11234,10
-Franke SX-EW Plant,plant,SX-EW Plant,Active,,Sociedad Contractual Minera Franke ,-25.8334,-69.8639,24,0.08481,0.12876,0.00112,0.19163,11
-Potrerillos SX-EW refinery and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-26.283,-69.5965,23,0.08127,0.03265,5e-05,0.17484,11
-José Antonio Moreno,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-25.3963,-70.4742,19,0.06714,0.02506,3e-05,0.18994,11
-Osvaldo Martínez,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-26.4196,-70.3172,25,0.08834,0.0072,4e-05,0.17541,11
-Mantoverde SX-EW plant,plant,SX-EW Plant,Active,,Empresa Minera de Mantos Blancos S.A. ,-26.5615,-70.3253,25,0.08834,0.01616,5e-05,0.17541,11
-José Antonio Moreno plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-25.3963,-70.4742,12,0.0424,0.12525,0.0,0.18378,12
-Osvaldo Martínez plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-26.4196,-70.3172,15,0.053,0.10111,1e-05,0.1896,11
-El Peñón concentration plant,plant,Concentrator,Active,,Minera Meridian Ltda. ,-24.4116,-69.4969,11,0.03887,0.08651,0.0,0.16882,12
-Los Pelambres plant,plant,Processing Plant,Active,,Antofagasta plc,-31.8134,-70.5823,17,0.06007,0.0423,0.0,0.14081,10
-Plant at Cabildo,plant,Processing Plant,Active,,Compañía Minera Cerro Negro,-32.5838,-70.8762,25,0.08834,0.00396,0.0,0.13283,10
-Chagres smelter (anodes and blister),plant,Smelter,Active,,Empresa Nacional de Minería (ENAMI),-32.8047,-70.9554,25,0.08834,0.01123,0.0,0.11412,10
-El Soldado SX-EW plant,plant,SX-EW Plant,Active,,Anglo American Sur S.A. ,-32.6593,-71.1448,25,0.08834,0.04729,0.0,0.13283,10
-Tres Valles SX-EW plant,plant,SX-EW Plant,Active,,Vecchiola SA,-31.7364,-71.0165,25,0.08834,0.14854,0.0,0.14192,10
-Los Bronces (Tortolas) SX-EW plant (cathodes),plant,SX-EW Plant,Active,,Anglo American Sur S.A. ,-33.1409,-70.7086,26,0.09187,0.02723,0.0,0.11449,10
-Tortolas molybdenum flotation plant,plant,Concentrator,Active,,Anglo American Sur S.A. ,-33.1409,-70.7086,11,0.03887,0.00257,0.0,0.11269,10
-Las Ventanas refinery and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-32.7618,-71.4812,23,0.08127,0.00759,0.0,0.11388,10
-Nos plant,plant,Processing Plant,Active,,Molibdenos y Metales S.A. (MOLYMET),-33.6065,-70.7441,5,0.01767,0.00013,0.0,0.1105,10
-El Teniente plant,plant,Processing Plant,Active,,Corporación Nacional del Cobre (CODELCO),-34.0886,-70.4555,9,0.0318,0.00058,0.0,0.11187,10
-"Caletones smelter (anodes). refinery (fire-refined ingots), and SX-EW plant",plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-34.1046,-70.4505,15,0.053,0.00581,0.0,0.11305,10
-Facilities near Rancagua,plant,Processing Plant,Active,,Minera Valle Central S.A. ,-34.2383,-70.685,14,0.04947,0.0104,0.0,0.11293,10
-Antucoya SX-EW plant,plant,SX-EW Plant,Active,,Antofagasta plc,-22.6298,-69.8832,33,0.11661,0.00321,0.0,0.14459,8
-Michilla SX-EW/sulfide-leaching plant,plant,SX-EW Plant,Active,,Minera Michilla S.A. ,-22.6791,-70.1883,29,0.10247,0.00246,0.0,0.14324,8
-Mantos de la Luna SX-EW plant,plant,SX-EW Plant,Active,,Compania Mantos de la Luna,-22.3851,-70.1782,30,0.10601,0.09315,0.0,0.14401,8
-Spence SX-EW plant,plant,SX-EW Plant,Active,,Minera Spence S.A. ,-22.8015,-69.2818,34,0.12014,0.0004,0.0,0.14478,8
-Plant near Tocopilla,plant,Processing Plant,Active,,Minera Capacho Viejo Ltda. ,-21.9459,-69.8715,26,0.09187,0.00995,0.0,0.13618,8
-El Tesoro SX-EW plant,plant,SX-EW Plant,Active,,Minera El Tesoro S.A. ,-22.9277,-69.0976,39,0.13781,0.00105,0.0,0.14576,8
-Centinela oxide and sulfide plant,plant,Processing Plant,Active,,Antofagasta plc,-22.9275,-69.0965,39,0.13781,0.01163,0.0,0.14576,8
-Mantos Blancos SX-EW plant,plant,SX-EW Plant,Active,,Empresa Minera de Mantos Blancos S.A. ,-23.4397,-70.0734,27,0.09541,0.00363,0.0,0.14155,8
-Lomas Bayas SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Xstrata Lomas Bayas ,-23.4318,-69.5017,33,0.11661,0.00474,2e-05,0.14401,14
-Chuquicamata SX-EW plant (oxide) and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-22.3137,-68.8895,30,0.10601,0.0002,0.0,0.14459,8
-Chuquicamata Mine (plant to acid-leach fine copper),plant,Processing Plant,Active,,EcoMetales Ltd. ,-22.3013,-68.8404,31,0.10954,0.03854,0.0,0.14478,8
-Radomiro Tomic SX-EW plant,plant,SX-EW Plant,Active,,Corporación Nacional del Cobre (CODELCO),-22.1927,-68.8674,30,0.10601,0.01697,0.0,0.14459,8
-Altonorte smelter,plant,Smelter,Active,,Glencore Copper Chile S.A. ,-23.8247,-70.3178,22,0.07774,0.07997,0.0,0.16673,8
-Gabriela Mistral SX-EW plant,plant,SX-EW Plant,Active,,Minera Gaby S.A. ,-23.4173,-68.7838,28,0.09894,0.00506,1e-05,0.14305,8
-Al Elbra SX-EW plant,plant,SX-EW Plant,Active,,Sociedad Contractual Minera El Abra ,-21.9859,-68.6886,21,0.0742,0.00782,0.0,0.14286,8
-Vallenar plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-28.5652,-70.7387,25,0.08834,0.15134,0.0,0.1873,2
-Manuel Antonio Matta,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-27.4131,-70.2517,22,0.07774,0.00652,0.0,0.17541,11
-Hernán Videla Lira smelter (anodes and blister),plant,Smelter,Active,,Empresa Nacional de Minería (ENAMI),-27.4198,-70.2577,22,0.07774,0.01804,0.0,0.17541,11
-Biocobre refinery,plant,Refinery,Active,,Sociedad Punta del Cobre S.A (Pucobre),-27.5734,-70.2484,22,0.07774,0.20861,0.0,0.19163,11
-Huasco concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.2907,-70.8125,9,0.0318,0.00987,0.0,0.15633,5
-Los Colorados concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.291,-70.8129,9,0.0318,0.01243,0.0,0.15633,5
-Huasco pellet plant,plant,Pellet Plant,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.4808,-71.2485,8,0.02827,0.009,0.0,0.1561,5
-Magnetite plant to process tailings from the Candelaria Mine and other iron-bearing raw materials from third parties,plant,Processing Plant,Active,,Compañía Minera del Pacífico S.A. (CMP),-27.5218,-70.3192,8,0.02827,0.04498,0.0,0.16908,5
-El Algarrobito concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.8028,-70.9839,8,0.02827,0.0006,0.0,0.1561,5
-SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Carmen de Andacollo ,-30.261,-71.0917,20,0.07067,0.07909,0.0,0.16221,2
-Plant near Coquimbo (Region IV),plant,Processing Plant,Active,,Compañía Minera San Gerónimo,-29.8353,-71.1035,22,0.07774,0.21582,0.0,0.17343,2
-Quebrada Blanca SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Quebrada Blanca ,-21.0027,-68.7964,14,0.04947,0.00243,0.0,0.11522,6
-Collahuasi SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Doña Inés de Collahuasi SCM ,-20.9779,-68.6315,13,0.04594,0.0111,0.0,0.1151,6
-Zaldívar SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Zaldívar ,-24.201,-69.0689,16,0.05654,0.0308,8e-05,0.1652,13
-Escondida oxide plant for cathode production (SX-EW),plant,SX-EW Plant,Active,,Minera Escondida Ltda. ,-24.2536,-69.1008,15,0.053,0.0,5e-05,0.16494,13
-Escondida concentrator,plant,Concentrator,Active,,Minera Escondida Ltda.,-24.2628,-69.0581,22,0.07774,0.11307,7e-05,0.16699,13
-Escondida sulfide-leach plant for cathode production,plant,Processing Plant,Active,,Minera Escondida Ltda. ,-24.2601,-68.9925,15,0.053,0.02223,4e-05,0.16494,13
-Plant near Iquique,plant,Processing Plant,Active,,Cosayach Nitratos S.A. ,-20.223,-69.7966,9,0.0318,0.00048,0.02201,0.03289,0
-Nueva Victoria plant,plant,Processing Plant,Active,,SQM Químicos S.A. ,-20.9592,-69.6633,9,0.0318,0.0,0.52414,0.03289,0
-Iris Plant,plant,Processing Plant,Active,,SQM Químicos S.A. ,-20.9622,-69.6625,9,0.0318,0.00068,0.47412,0.03289,0
-Manuel Antonio Matta plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-27.4131,-70.2517,20,0.07067,0.04143,0.0,0.17484,11
-Dos Amigos SX-EW plant,plant,SX-EW Plant,Active,,CEMIN,-28.9869,-70.8859,20,0.07067,0.01348,0.0,0.16494,2
-Esperanza milling/flotation plant,plant,Concentrator,Active,,Minera Esperanza S.A. ,-22.9998,-69.1036,12,0.0424,0.01897,0.0,0.14063,8
-Cerro Bayo concentration plant,plant,Concentrator,Active,,Compañía Minera Cerro Bayo Ltda. ,-46.5463,-71.9995,1,0.00353,0.0,0.0,0.00471,1
-Concentration plant,plant,Concentrator,Active,,Compañía Minera Cerro Bayo Ltda. ,-46.5463,-71.9995,1,0.00353,0.0,0.0,0.00471,1
-Cerro Colorado SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Cerro Colorado ,-20.0624,-69.2663,8,0.02827,0.00586,0.0,0.11153,6
-La Cascada SX-EW plant,plant,SX-EW Plant,Active,,Haldeman Mining Company S.A. ,-20.1873,-69.3329,9,0.0318,0.00043,0.0,0.11164,6
-Collahuasi plants,plant,Processing Plant,Active,,Compañía Minera Doña Inés de Collahuasi SCM ,-20.9761,-68.6272,4,0.01413,0.0123,0.0,0.11364,6
-Molybdenum plant,plant,Processing Plant,Active,,Compañía Minera Doña Inés de Collahuasi SCM ,-20.9761,-68.6272,9,0.0318,0.01108,0.0,0.11461,6
-El Romeral concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-29.7282,-71.2317,6,0.0212,0.0,0.0,0.15565,5
-El Romeral pellet-feed plant,plant,Pellet Plant,Active,,Compañía Minera del Pacífico S.A. (CMP),-29.7308,-71.2325,6,0.0212,0.00476,0.0,0.15565,5
-Plant in Coquimbo city,plant,Processing Plant,Care & Maintenance,,Manganesos Atacama S.A. ,-29.9512,-71.2918,4,0.01413,0.00616,0.0,0.14362,2
-El Laco concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-23.8435,-67.4856,1,0.00353,0.0,0.0,0.00353,3
-Doña Rosa concentration plant,plant,Concentrator,Active,,Sociedad Contractual Minera El Toqui Ltda. ,-45.0341,-71.9341,2,0.00707,3e-05,0.0,0.00707,4
-Coya Sur plant,plant,Processing Plant,Active,,SQM Nitratos S.A. ,-22.3962,-69.6207,4,0.01413,0.00023,0.0,0.0186,9
-Maria Elena plant,plant,Processing Plant,Active,,SQM Nitratos S.A. ,-22.3367,-69.6595,4,0.01413,1e-05,0.0,0.0186,9
-María Elena plant,plant,Processing Plant,Active,,SQM Químicos S.A. ,-22.3367,-69.6595,4,0.01413,1e-05,0.0,0.0186,9
-Boric acid and agrochemical plants,plant,Processing Plant,Active,,Química Industrial del Bórax Ltda. ,-18.4414,-69.879,2,0.00707,3e-05,0.0,0.00707,15
-Mine brines of Atacama Salar,plant,Processing Plant,Active,,S.Q.M. Salar S.A. ,-23.4874,-68.3354,1,0.00353,0.0,0.0,0.00353,7
+NODE,NODE_TYPE,FACILITY_TYPE,STATUS,REGION,OPERATOR,LAT,LON,SCALE_FACTOR,DEGREE,DEGREE_CENTRALITY,BETWEENNESS_CENTRALITY,EIGENVECTOR_CENTRALITY,CLOSENESS_CENTRALITY,COMMUNITY
+Aguas Blancas,mine,Mine (idle),Idle,Antofagasta,Atacama Minerals Chile Minera ,-24.13999999999993,-69.85999999999996,3.865,1,0.00353,0.0,0.0,0.01472,10
+Alhué,mine,Mine (active),Active,Metropolitana de Santiago,nan,-34.00799999999998,-70.97799999999995,3.232,3,0.0106,0.0001,0.0,0.10032,1
+Altamira,mine,Mine (active),Active,Antofagasta,nan,-25.835999999999956,-69.85699999999997,3.451,5,0.01767,0.0,1e-05,0.1657,11
+Amancaya,mine,Mine (active),Active,Antofagasta,nan,-25.57899999999995,-69.81299999999999,1.444,3,0.0106,0.02539,2e-05,0.17861,11
+Amos,mine,Prospect/Project,Prospect/Project,Valparaíso,nan,-32.27999999999997,-70.30699999999996,1.0,8,0.02827,0.06889,0.0,0.1257,1
+Andina,mine,Mine (active),Active,Valparaíso,Corporación Nacional del Cobre (CODELCO),-33.148999999999944,-70.25399999999996,4.598,10,0.03534,0.0,0.0,0.11748,1
+Antucoya,mine,Mine (active),Active,Antofagasta,Antofagasta plc,-22.637999999999977,-69.88299999999998,3.941,15,0.053,0.0,0.01144,0.14981,2
+Arqueros,mine,Mine (idle),Idle,Coquimbo,nan,-29.84499999999997,-70.91899999999998,1.0,1,0.00353,0.0,0.0,0.15432,13
+Barreal Seco,mine,Mine (active),Active,Antofagasta,nan,-25.92199999999997,-70.05499999999995,3.497,5,0.01767,0.0,0.0,0.1657,11
+Berta,mine,Prospect/Project,Prospect/Project,Atacama,Minera Pacífico Ltda.,-26.71799999999996,-70.05599999999998,1.0,7,0.02473,0.0,0.0,0.18441,11
+Boqueron Chañar,mine,Mine (idle),Idle,Atacama,nan,-28.06950999999998,-70.69988999999998,3.259,5,0.01767,0.0096,0.0,0.161,5
+Bornita,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-30.90599999999995,-70.39199999999994,1.0,4,0.01413,0.24918,0.0,0.15633,13
+Brujulina,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-21.93599999999998,-68.86099999999993,3.453,12,0.0424,0.00013,0.00419,0.12824,7
+Buena Esperanza,mine,Mine (idle),Idle,Antofagasta,nan,-22.164999999999964,-70.20999999999998,3.303,11,0.03887,0.0,0.00251,0.12749,2
+Búfalo,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-23.635999999999967,-69.29399999999998,1.0,13,0.04594,0.11651,0.01533,0.1496,2
+Cachinal,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-24.964999999999975,-69.54833299999996,2.147,3,0.0106,0.0,0.00128,0.17205,11
+Cachorro,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-22.975999999999942,-69.74499999999995,3.849,14,0.04947,0.0,0.01021,0.1496,2
+Cala Cala,mine,Mine (active),Active,Tarapacá,nan,-20.234999999999957,-69.79299999999995,2.91,3,0.0106,0.0,0.0,0.0225,15
+Calichera,mine,Mine (idle),Idle,Tarapacá,nan,-19.869999999999948,-69.85999999999996,1.0,3,0.0106,0.0,0.0,0.0225,15
+Can Can,mine,Mine (idle),Idle,Atacama,nan,-26.802221999999972,-69.26305599999995,1.0,2,0.00707,0.00872,0.0,0.1591,11
+Canchas,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-25.458999999999943,-70.20699999999994,3.114,5,0.01767,0.0,0.0,0.1657,11
+Candelaria,mine,Mine (active),Active,Atacama,Cía. Contractual Minera Candelaria ,-27.51699999999994,-70.29099999999994,4.103,8,0.02827,0.0013,0.0,0.19231,11
+Carmen,mine,Mine (idle),Idle,Atacama,Compañía Minera Carmen de Andacollo ,-26.346089999999947,-70.14299999999997,1.0,1,0.00353,0.0,0.0,0.14174,5
+Carmen de Andacollo,mine,Mine (active),Active,Coquimbo,Compañía Minera Carmen de Andacollo ,-30.249999999999943,-71.09999999999997,3.749,3,0.0106,0.0,0.0,0.15107,13
+Carmen-Margarita,mine,Mine (active),Active,Valparaíso,nan,-32.49199999999996,-71.07099999999997,2.891,6,0.0212,0.0,0.0,0.12512,1
+Caserones,mine,Mine (active),Active,Atacama,Minera Lumina Copper Chile (MILCC),-28.16599999999994,-69.54099999999994,3.997,4,0.01413,0.0,0.0,0.16751,11
+Caspiche,mine,Prospect/Project,Prospect/Project,Atacama,nan,-27.68999999999994,-69.29399999999998,3.686,4,0.01413,0.0,0.0,0.16076,11
+Casualidad,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-25.74599999999998,-69.96499999999997,3.698,5,0.01767,0.0,0.0,0.1657,11
+Casuto,mine,Mine (idle),Idle,Coquimbo,nan,-31.787399999999938,-71.44476999999995,1.0,2,0.00707,0.00611,0.0,0.12242,1
+Catemu,mine,Mine (active),Active,Valparaíso,nan,-32.72399999999993,-70.95699999999994,3.059,6,0.0212,0.0,0.0,0.12512,1
+Centinela,mine,Mine (active),Active,Antofagasta,Antofagasta plc,-22.987999999999943,-69.07599999999996,4.288,19,0.06714,0.0,0.0345,0.15278,2
+Cerro Bayo,mine,Mine (active),Active,Aysén del General Carlos Ibáñez del Campo,Compañía Minera Cerro Bayo Ltda. ,-46.509999999999934,-71.96999999999997,2.277,2,0.00707,3e-05,0.0,0.00707,0
+Cerro Casale,mine,Prospect/Project,Prospect/Project,Atacama,nan,-27.793999999999983,-69.27899999999994,3.758,4,0.01413,0.0,0.0,0.16076,11
+Cerro Colorado,mine,Mine (idle),Idle,Tarapacá,Compañía Minera Cerro Colorado ,-20.043999999999983,-69.26499999999999,4.056,4,0.01413,0.0,8e-05,0.10222,6
+Cerro Imán,mine,Mine (idle),Idle,Atacama,nan,-27.26499999999993,-70.41666699999996,1.0,3,0.0106,0.01271,0.0,0.16028,5
+Cerro Negro,mine,Mine (active),Active,Valparaíso,nan,-32.577999999999975,-70.85699999999997,3.331,9,0.0318,0.01022,0.0,0.12659,1
+Cerro Negro Norte,mine,Mine (active),Active,Atacama,nan,-27.10833299999996,-70.34305599999993,4.756,3,0.0106,0.0,0.0,0.16028,5
+Challacollo,mine,Prospect/Project,Prospect/Project,Tarapacá,nan,-20.89539999999994,-69.33932999999996,2.325,1,0.00353,0.0,0.0,0.1006,6
+Chañarcillo,mine,Mine (idle),Idle,Atacama,nan,-27.81388899999996,-70.41888899999998,1.0,2,0.00707,0.0008,0.0,0.16751,11
+Chimborazo,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-24.147999999999968,-69.13599999999997,3.648,10,0.03534,0.0,0.11081,0.14898,14
+Chiquinquira,mine,Mine (idle),Idle,Tarapacá,nan,-19.749999999999943,-69.91999999999996,1.0,3,0.0106,0.00048,0.0,0.0225,15
+Chuquicamata,mine,Mine (active),Active,Antofagasta,Corporación Nacional del Cobre (CODELCO),-22.299999999999955,-68.89499999999998,4.457,16,0.05654,0.02351,0.03319,0.12886,7
+Ciclón-Exploradora,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-25.84299999999996,-69.30499999999995,3.416,7,0.02473,0.0,0.0,0.16988,11
+Cinabrio,mine,Mine (active),Active,Coquimbo,nan,-30.71999999999997,-71.21299999999997,2.991,3,0.0106,0.0,0.0,0.15498,13
+Collahuasi,mine,Mine (active),Active,Tarapacá,Compañía Minera Doña Inés de Collahuasi SCM ,-20.972999999999956,-68.70299999999997,4.492,8,0.02827,0.00579,0.00096,0.12614,6
+Colliguay,mine,Mine (active),Active,Valparaíso,nan,-33.190999999999974,-71.14899999999994,1.0,2,0.00707,0.0,0.0,0.10022,1
+Copaquire,mine,Prospect/Project,Prospect/Project,Tarapacá,nan,-20.91599999999994,-68.89399999999995,3.172,7,0.02473,8e-05,0.00046,0.1257,6
+Costa Fuego,mine,Prospect/Project,Prospect/Project,Atacama,nan,-28.714999999999975,-70.80499999999995,3.953,4,0.01413,0.23818,0.0,0.18223,13
+Cristales,mine,Mine (idle),Idle,Atacama,Compañía Minera del Pacífico S.A. (CMP),-29.15095999999994,-71.04173899999995,4.387,6,0.0212,0.00035,0.0,0.13365,5
+Diego de Almagro,mine,Prospect/Project,Prospect/Project,Atacama,nan,-26.375999999999976,-70.16299999999995,3.467,11,0.03887,0.00789,0.0,0.19197,11
+Distrito Algarrobo-El Roble,mine,Mine (idle),Idle,Atacama,nan,-27.029999999999973,-70.52999999999997,1.0,7,0.02473,0.01381,0.0,0.18441,11
+Distrito Arqueros,mine,Mine (idle),Idle,Coquimbo,nan,-29.786999999999978,-70.91399999999999,1.0,5,0.01767,0.01218,0.0,0.17096,13
+Distrito Astilla,mine,Mine (idle),Idle,Atacama,nan,-28.289999999999964,-70.86999999999995,1.0,5,0.01767,0.0007,0.0,0.16829,13
+Distrito Caracoles,mine,Mine (idle),Idle,Antofagasta,nan,-23.053610999999933,-69.00888899999995,1.0,1,0.00353,0.0,0.00058,0.14026,14
+Distrito Carrizal Alto,mine,Mine (idle),Idle,Atacama,nan,-28.085999999999956,-70.90199999999999,1.0,5,0.01767,0.04313,0.0,0.16829,11
+Distrito Cerro El Álamo,mine,Mine (idle),Idle,Valparaíso,nan,-33.22399999999993,-71.23499999999996,1.0,2,0.00707,0.0,0.0,0.10022,1
+Distrito Condoriaco,mine,Mine (idle),Idle,Coquimbo,nan,-29.68799999999993,-70.86599999999999,1.0,4,0.01413,0.0,0.0,0.17042,13
+Distrito Corral Quemado,mine,Mine (idle),Idle,Coquimbo,nan,-30.247999999999937,-70.94399999999996,1.0,1,0.00353,0.0,0.0,0.1234,13
+Distrito El Algarrobo,mine,Mine (active),Active,Atacama,nan,-28.64584099999996,-70.91579699999994,4.794,7,0.02473,0.0122,0.0,0.16148,5
+Distrito El Inca,mine,Mine (idle),Idle,Antofagasta,nan,-22.259999999999938,-69.08599999999996,1.0,1,0.00353,0.0,5e-05,0.12118,2
+Distrito Fraguita,mine,Mine (idle),Idle,Atacama,nan,-29.075999999999965,-70.79399999999998,1.0,4,0.01413,0.00288,0.0,0.17042,13
+Distrito Gatico,mine,Mine (idle),Idle,Antofagasta,nan,-22.473999999999933,-70.21599999999995,1.0,13,0.04594,0.02336,0.00298,0.1284,2
+Distrito Huara,mine,Mine (idle),Idle,Tarapacá,nan,-20.047999999999945,-69.91099999999994,1.0,2,0.00707,0.0002,0.0,0.09912,6
+Distrito Julia,mine,Mine (active),Active,Antofagasta,nan,-24.900999999999954,-70.27099999999996,1.0,7,0.02473,0.32113,0.00444,0.1804,11
+Distrito La Campana,mine,Mine (idle),Idle,Valparaíso,nan,-32.96199999999993,-71.12199999999996,1.0,8,0.02827,0.05168,0.0,0.12556,1
+Distrito Lambert,mine,Mine (idle),Idle,Coquimbo,nan,-29.84699999999998,-71.10099999999994,1.0,5,0.01767,0.00118,0.0,0.17096,13
+Distrito Las Pintadas,mine,Mine (idle),Idle,Atacama,nan,-27.559999999999945,-70.31999999999994,1.0,6,0.0212,0.00544,0.0,0.17096,11
+Distrito Las Ánimas,mine,Mine (idle),Idle,Atacama,nan,-26.42999999999995,-70.46999999999997,1.0,8,0.02827,0.00253,0.0,0.18473,11
+Distrito Marga Marga,mine,Mine (idle),Idle,Valparaíso,nan,-33.087999999999965,-71.42199999999997,1.0,2,0.00707,0.0,0.0,0.10022,1
+Distrito Michilla,mine,Mine (active),Active,Antofagasta,nan,-22.682999999999936,-70.17799999999994,3.519,13,0.04594,0.0,0.01424,0.1494,2
+Distrito Montecristo,mine,Mine (active),Active,Antofagasta,nan,-24.96799999999996,-70.39299999999997,3.336,3,0.0106,0.0,0.00028,0.17627,11
+Distrito Relincho,mine,Mine (idle),Idle,Atacama,nan,-27.249999999999943,-70.61999999999995,1.0,7,0.02473,0.01361,0.0,0.17123,11
+Distrito San Juan,mine,Prospect/Project,Prospect/Project,Atacama,nan,-28.720999999999947,-71.21199999999999,1.0,3,0.0106,0.00672,0.0,0.16751,13
+Distrito Sierra Overa,mine,Mine (idle),Idle,Antofagasta,nan,-25.77472199999994,-69.90749999999997,1.0,7,0.02473,0.00787,0.0,0.16988,11
+Distrito Tambillos,mine,Mine (idle),Idle,Coquimbo,nan,-30.196999999999942,-71.20899999999995,1.0,3,0.0106,0.0,0.0,0.15107,13
+Distrito Tocopilla,mine,Mine (idle),Idle,Antofagasta,nan,-22.06699999999995,-70.16699999999997,1.0,10,0.03534,0.00501,0.00114,0.12734,2
+Distrito Tres Puntas-Chimberos,mine,Mine (idle),Idle,Atacama,nan,-26.892999999999972,-69.95899999999995,1.0,2,0.00707,0.0,0.0,0.1591,11
+Domeyko,mine,Prospect/Project,Prospect/Project,Atacama,nan,-28.99099999999993,-70.87999999999994,3.648,4,0.01413,0.0,0.0,0.17042,13
+Dominga,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-29.37999999999994,-71.18699999999995,4.842,10,0.03534,0.03012,0.0,0.17541,5
+Don Jaime,mine,Mine (active),Active,Valparaíso,nan,-32.537999999999954,-71.00399999999996,2.815,6,0.0212,0.0,0.0,0.12512,1
+Doña Elba,mine,Mine (active),Active,Antofagasta,nan,-25.611999999999966,-70.39699999999993,3.063,5,0.01767,0.0,0.0,0.1657,11
+El Abra,mine,Mine (active),Active,Antofagasta,Sociedad Contractual Minera El Abra ,-21.923999999999975,-68.83399999999995,4.217,15,0.053,0.02005,0.00463,0.12963,7
+El Algarrobo,mine,Mine (active),Active,Atacama,Compañía Minera del Pacífico S.A. (CMP),-28.798610999999937,-70.99249999999995,4.532,6,0.0212,0.0,0.0,0.13365,5
+El Bronce,mine,Mine (idle),Idle,Valparaíso,nan,-32.18333299999995,-70.93333299999995,2.458,9,0.0318,0.00063,0.0,0.12659,1
+El Espino,mine,Mine (active),Active,Coquimbo,nan,-31.372999999999937,-71.09799999999996,3.548,5,0.01767,0.0,0.0,0.14655,1
+El Hueso,mine,Mine (idle),Idle,Atacama,nan,-26.466666999999973,-69.38333299999994,1.695,2,0.00707,0.0,0.0,0.1591,11
+El Laco,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-23.82666699999993,-67.47666699999996,4.875,1,0.00353,0.0,0.0,0.00353,3
+El Loa,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-21.256999999999948,-68.58299999999997,1.0,7,0.02473,0.01296,0.00055,0.126,6
+El Peñón,mine,Mine (active),Active,Antofagasta,Minera Meridian Ltda. ,-24.39416699999998,-69.49305599999997,2.42,3,0.0106,0.0,0.00344,0.17205,12
+El Sauce,mine,Mine (idle),Idle,Valparaíso,nan,-32.87399999999997,-70.89299999999997,2.92,7,0.02473,0.0,0.0,0.12541,1
+El Soldado,mine,Mine (active),Active,Valparaíso,Anglo American Sur S.A. ,-32.611999999999966,-71.12799999999999,3.677,6,0.0212,0.0,0.0,0.12512,1
+El Teniente,mine,Mine (active),Active,Libertador General Bernardo O'Higgins,Corporación Nacional del Cobre (CODELCO),-34.091999999999985,-70.33799999999997,4.531,6,0.0212,0.00025,0.0,0.10183,1
+El Toqui,mine,Mine (active),Active,Aysén del General Carlos Ibáñez del Campo,Sociedad Contractual Minera El Toqui Ltda. ,-45.01699999999994,-71.89999999999998,3.53,1,0.00353,0.0,0.0,0.00471,4
+Encierro,mine,Prospect/Project,Prospect/Project,Atacama,nan,-29.063999999999965,-69.92699999999996,3.862,3,0.0106,0.0,0.0,0.16751,13
+Escalones,mine,Prospect/Project,Prospect/Project,Metropolitana de Santiago,nan,-34.12099999999998,-69.96499999999997,3.729,7,0.02473,0.03569,0.0,0.10251,1
+Escondida,mine,Mine (active),Active,Antofagasta,Minera Escondida Ltda.,-24.274999999999977,-69.05799999999994,4.591,10,0.03534,0.0,0.20989,0.14898,14
+Exploradora,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-25.805999999999983,-69.23699999999997,3.481,7,0.02473,0.0005,0.0,0.16988,11
+Faride,mine,Mine (idle),Idle,Antofagasta,nan,-22.809999999999945,-69.39999999999998,1.0,1,0.00353,0.0,0.00011,0.12118,2
+Fenix,mine,Prospect/Project,Prospect/Project,Atacama,nan,-27.010999999999967,-69.20299999999997,1.965,2,0.00707,0.0,0.0,0.1591,11
+Florencia,mine,Mine (idle),Idle,Antofagasta,nan,-23.41999999999996,-69.54999999999995,1.0,4,0.01413,0.00068,0.0,0.02208,10
+Franke,mine,Mine (active),Active,Antofagasta,Sociedad Contractual Minera Franke ,-25.82899999999995,-69.86399999999998,3.174,5,0.01767,0.0,1e-05,0.1657,11
+Frontera,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-31.728999999999928,-70.47799999999995,3.874,7,0.02473,0.0002,0.0,0.12585,1
+Gabriela Mistral,mine,Mine (active),Active,Antofagasta,Minera Gaby S.A. ,-23.41799999999995,-68.81099999999998,4.018,14,0.04947,0.0,0.03802,0.15107,2
+Genoveva,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-22.408999999999935,-68.96399999999994,1.0,13,0.04594,0.0001,0.0058,0.12779,7
+Guanaco,mine,Mine (active),Active,Antofagasta,nan,-25.108888999999976,-69.55694399999999,1.829,3,0.0106,0.0,0.00102,0.17205,11
+Inca de Oro,mine,Mine (active),Active,Atacama,nan,-26.837999999999965,-69.95399999999995,3.701,7,0.02473,0.0,0.0,0.18441,11
+Inesperada,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-25.146999999999935,-69.60299999999995,1.67,3,0.0106,0.0,0.00092,0.17205,11
+Iván Zar,mine,Mine (idle),Idle,Antofagasta,nan,-23.347999999999956,-70.27199999999993,3.063,9,0.0318,0.0,0.00702,0.14715,2
+La Coipa,mine,Mine (active),Active,Atacama,Compañía Minera Mantos de Oro ,-26.83499999999998,-69.25249999999994,2.366,2,0.00707,0.0,0.0,0.1591,11
+La Esperanza,mine,Prospect/Project,Prospect/Project,Los Lagos,nan,-43.83972199999994,-71.82444399999997,1.0,1,0.00353,0.0,0.0,0.00471,4
+La Fortuna,mine,Prospect/Project,Prospect/Project,Atacama,nan,-28.63399999999996,-69.88399999999996,3.997,6,0.0212,0.02183,0.0,0.17123,11
+La Golondrina,mine,Mine (idle),Idle,Metropolitana de Santiago,nan,-33.83099999999996,-70.19199999999995,1.0,4,0.01413,8e-05,0.0,0.10183,1
+La Higuera,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-29.522999999999968,-71.20799999999997,1.0,4,0.01413,0.01326,0.0,0.17042,13
+La Huifa,mine,Prospect/Project,Prospect/Project,Libertador General Bernardo O'Higgins,nan,-34.06299999999993,-70.33299999999997,1.0,5,0.01767,3e-05,0.0,0.10174,1
+La Pepa,mine,Prospect/Project,Prospect/Project,Atacama,nan,-27.285999999999945,-69.23899999999998,1.71,2,0.00707,0.0,0.0,0.1591,11
+La Planada,mine,Prospect/Project,Prospect/Project,Tarapacá,nan,-20.17199999999997,-69.06399999999996,3.199,5,0.01767,0.0,5e-05,0.10232,6
+La Suerte,mine,Mine (idle),Idle,Atacama,nan,-26.339999999999975,-70.40999999999997,1.0,1,0.00353,0.0,0.0,0.14174,5
+Lagunas,mine,Mine (idle),Idle,Tarapacá,ACF Minera S.A.,-20.95999999999998,-69.66999999999996,2.801,3,0.0106,0.0,0.0,0.0225,15
+Lana Corina,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-31.124999999999943,-71.11599999999999,1.0,4,0.01413,0.0,0.0,0.15633,13
+Las Luces,mine,Mine (active),Active,Antofagasta,Groupo Cenizas,-25.69799999999998,-70.49599999999998,3.497,5,0.01767,0.0,0.0,0.1657,11
+Las Palmas,mine,Mine (idle),Idle,Maule,nan,-35.17249999999996,-71.76666699999998,1.341,1,0.00353,0.0,0.0,0.08379,1
+Lavadero El Toro,mine,Mine (idle),Idle,Valparaíso,nan,-33.289999999999964,-71.48599999999993,1.0,2,0.00707,0.0003,0.0,0.10022,1
+Lila,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-23.82699999999994,-68.95099999999996,1.0,11,0.03887,0.00819,0.01714,0.14919,14
+Llahuín,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-31.333999999999943,-71.02099999999996,3.475,5,0.01767,0.00273,0.0,0.14655,1
+Lo Aguirre,mine,Mine (idle),Idle,Metropolitana de Santiago,nan,-33.43999999999994,-70.91999999999996,1.0,7,0.02473,3e-05,0.0,0.1171,1
+Lobo-Marte,mine,Prospect/Project,Prospect/Project,Atacama,nan,-27.16666699999996,-69.03333299999997,2.009,1,0.00353,0.0,0.0,0.14576,11
+Loica,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-31.063999999999965,-70.66099999999994,3.662,4,0.01413,0.0,0.0,0.15633,13
+Lomas Bayas,mine,Mine (active),Active,Antofagasta,Compañía Minera Xstrata Lomas Bayas ,-23.430999999999983,-69.50699999999995,4.0,16,0.05654,0.02742,0.20668,0.1515,2
+Los Bronces,mine,Mine (active),Active,Metropolitana de Santiago,Anglo American Sur S.A. ,-33.150999999999954,-70.28499999999997,4.246,10,0.03534,0.0,0.0,0.11748,1
+Los Bronces Subterráneo,mine,Prospect/Project,Prospect/Project,Metropolitana de Santiago,Anglo American Sur S.A. ,-33.19999999999993,-70.23999999999995,4.394,10,0.03534,0.0,0.0,0.11748,1
+Los Bronces Sur,mine,Prospect/Project,Prospect/Project,Valparaíso,Anglo American Sur S.A. ,-33.12999999999994,-70.25999999999993,4.085,11,0.03887,0.01734,0.0,0.12585,1
+Los Colorados,mine,Mine (active),Active,Atacama,Compañía Minera del Pacífico S.A. (CMP),-28.312299999999937,-70.81779999999998,4.781,5,0.01767,0.0,0.0,0.161,5
+Los Helados,mine,Prospect/Project,Prospect/Project,Atacama,nan,-28.34099999999995,-69.58599999999996,4.11,6,0.0212,0.00549,0.0,0.17123,11
+Los Pelambres,mine,Mine (active),Active,Coquimbo,Antofagasta plc,-31.714999999999975,-70.49899999999997,4.32,7,0.02473,0.0,0.0,0.12585,1
+Los Sulfatos,mine,Prospect/Project,Prospect/Project,Metropolitana de Santiago,nan,-33.198999999999955,-70.25599999999997,4.187,9,0.0318,0.0001,0.0,0.11735,1
+Los Volcanes,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-21.987999999999943,-68.76099999999997,4.067,12,0.0424,0.01248,0.00546,0.12824,7
+Mantos Blancos,mine,Mine (active),Active,Antofagasta,Empresa Minera de Mantos Blancos S.A. ,-23.42199999999997,-70.07199999999995,3.774,15,0.053,0.00431,0.03359,0.1584,2
+Mantos de Catemu,mine,Mine (active),Active,Valparaíso,Compania Mantos de la Luna,-32.67599999999993,-70.89699999999993,2.999,6,0.0212,0.0,0.0,0.12512,1
+Mantos de Punitaqui,mine,Mine (active),Active,Coquimbo,Compania Mantos de la Luna,-30.860999999999933,-71.22699999999998,2.492,4,0.01413,0.0,0.0,0.15633,13
+Mantos de la Luna,mine,Mine (active),Active,Antofagasta,Compania Mantos de la Luna,-22.38299999999998,-70.21799999999996,3.367,12,0.0424,0.0,0.00534,0.12764,2
+Mantos del Pacífico,mine,Mine (active),Active,Antofagasta,Compania Mantos de la Luna,-22.53099999999995,-70.22099999999995,3.092,13,0.04594,0.00025,0.0057,0.1494,2
+Mantoverde,mine,Mine (active),Active,Atacama,Empresa Minera de Mantos Blancos S.A. ,-26.55899999999997,-70.31499999999994,4.051,11,0.03887,0.0,0.0,0.19197,11
+Maricunga,mine,Mine (idle),Idle,Atacama,Compañía Minera Maricunga ,-27.549999999999955,-69.29999999999995,2.034,1,0.00353,0.0,0.0,0.14576,11
+Marimaca,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-23.18799999999993,-70.22199999999998,3.609,11,0.03887,0.0,0.00751,0.14756,2
+María Elena,mine,Mine (active),Active,Antofagasta,nan,-22.37899999999996,-69.74599999999998,4.333,3,0.0106,0.0,0.0,0.01472,10
+Mercedita,mine,Mine (idle),Idle,Metropolitana de Santiago,nan,-33.50399999999996,-70.18499999999995,1.0,7,0.02473,0.0008,0.0,0.1171,1
+Ministro Hales,mine,Mine (active),Active,Antofagasta,CODELCO,-22.37899999999996,-68.91299999999995,4.225,13,0.04594,0.0,0.0149,0.12779,7
+Mirador,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-22.950999999999965,-69.02399999999994,3.419,19,0.06714,0.0297,0.0277,0.15278,2
+Mocha,mine,Prospect/Project,Prospect/Project,Tarapacá,nan,-19.809999999999945,-69.28099999999995,3.643,4,0.01413,3e-05,3e-05,0.10222,6
+Mollacas,mine,Prospect/Project,Prospect/Project,Coquimbo,nan,-30.738999999999976,-70.66799999999995,1.0,3,0.0106,0.0,0.0,0.15498,13
+Negreiros,mine,Mine (active),Active,Tarapacá,nan,-19.872999999999937,-69.87299999999993,3.238,3,0.0106,0.0,0.0,0.0225,15
+Novicio,mine,Prospect/Project,Prospect/Project,Valparaíso,nan,-32.54899999999998,-70.25299999999999,1.0,6,0.0212,0.00945,0.0,0.12512,1
+Nueva Victoria,mine,Mine (active),Active,Tarapacá,SQM Químicos S.A. ,-20.951,-69.67,4.435,3,0.0106,0.0,0.0,0.0225,15
+Nuevo Cobre,mine,Prospect/Project,Prospect/Project,Atacama,nan,-26.498999999999967,-69.36899999999997,1.0,7,0.02473,0.26617,0.0,0.18441,11
+Opache,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-22.448999999999955,-68.97199999999998,1.0,13,0.04594,0.00078,0.00533,0.12779,7
+Paguanta,mine,Prospect/Project,Prospect/Project,Tarapacá,nan,-19.77899999999994,-69.06699999999995,3.26,1,0.00353,0.0,0.0,0.1006,6
+Palmira,mine,Mine (idle),Idle,Coquimbo,nan,-29.811999999999955,-70.94999999999999,1.0,5,0.01767,0.0,0.0,0.17096,13
+Pampa Blanca,mine,Mine (active),Active,Antofagasta,SQM Químicos S.A. ,-23.159,-69.637,4.401,4,0.01413,0.0,0.0,0.02208,10
+Pampa Escondida,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-24.24599999999998,-69.03399999999993,4.3,12,0.0424,0.0001,0.20492,0.1584,14
+Pampa Orcoma ,mine,Mine (active),Active,Tarapacá,nan,-19.919,-69.95,4.236,3,0.0106,0.0,0.0,0.0225,15
+Pampa Paciencia,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-22.727999999999952,-69.41299999999995,1.0,1,0.00353,0.0,0.0001,0.12118,2
+Pantanillo,mine,Prospect/Project,Prospect/Project,Atacama,nan,-27.482999999999947,-69.07499999999999,1.582,1,0.00353,0.0,0.0,0.14576,11
+Panulcillo,mine,Mine (active),Active,Coquimbo,nan,-30.460999999999956,-71.21899999999994,3.141,3,0.0106,0.0,0.0,0.15498,13
+Pascua Lama,mine,Prospect/Project,Prospect/Project,Atacama,nan,-29.32099999999997,-70.02699999999999,2.894,1,0.00353,0.0,0.0,0.15432,13
+Pedro de Valdivia,mine,Mine (idle),Idle,Antofagasta,SQM Químicos S.A. ,-22.801999999999964,-69.80199999999996,4.285,4,0.01413,0.0,0.0,0.02208,10
+Penacho Blanco,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-23.146999999999935,-69.16299999999995,3.745,20,0.07067,0.019,0.02432,0.16197,2
+Pimentón,mine,Prospect/Project,Prospect/Project,Valparaíso,nan,-32.48299999999995,-70.20199999999994,3.716,8,0.02827,0.00033,0.0,0.12644,1
+Pinta Verde,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-24.22999999999996,-69.08099999999996,3.675,10,0.03534,0.0,0.25405,0.14898,14
+Playa,mine,Prospect/Project,Prospect/Project,Atacama,nan,-26.789999999999964,-70.37399999999997,1.0,7,0.02473,0.0,0.0,0.18441,11
+Polo Sur,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-23.299999999999955,-69.23299999999995,3.965,19,0.06714,0.00426,0.02724,0.16173,2
+Pullalli,mine,Mine (active),Active,Valparaíso,nan,-32.422999999999945,-71.28899999999999,1.427,2,0.00707,0.0,0.0,0.12242,1
+Quebrada Blanca,mine,Mine (active),Active,Tarapacá,Compañía Minera Quebrada Blanca ,-21.006999999999948,-68.81199999999995,4.337,10,0.03534,3e-05,0.00201,0.12674,6
+Queen Elizabeth,mine,Prospect/Project,Prospect/Project,Tarapacá,nan,-19.874999999999943,-68.95899999999995,3.481,5,0.01767,0.00033,4e-05,0.10232,6
+Quetena,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-22.409999999999968,-68.95999999999998,1.0,13,0.04594,0.00078,0.00583,0.12779,7
+Radomiro Tomic,mine,Mine (active),Active,Antofagasta,Corporación Nacional del Cobre (CODELCO),-22.226999999999975,-68.88299999999998,4.361,16,0.05654,0.00085,0.01756,0.12886,7
+Relincho,mine,Prospect/Project,Prospect/Project,Atacama,nan,-28.52099999999996,-70.30999999999995,4.079,6,0.0212,0.0,0.0,0.17123,11
+Romeral,mine,Mine (active),Active,Coquimbo,Compañía Minera del Pacífico S.A. (CMP),-29.715832999999975,-71.24166699999995,4.668,4,0.01413,3e-05,0.0,0.13299,5
+Rosario de Rengo,mine,Prospect/Project,Prospect/Project,Libertador General Bernardo O'Higgins,nan,-34.557999999999936,-70.50899999999996,3.751,3,0.0106,0.0,0.0,0.10032,1
+Salar Colpitas,mine,Prospect/Project,Prospect/Project,Arica y Parinacota,nan,-17.95999999999998,-69.41999999999996,1.0,1,0.00353,0.0,0.0,0.00471,8
+Salar Surire,mine,Prospect/Project,Prospect/Project,Arica y Parinacota,nan,-18.819999999999936,-69.04999999999995,4.008,1,0.00353,0.0,0.0,0.00471,8
+Salar de Atacama,mine,Mine (active),Active,Antofagasta,Química Industrial del Bórax Ltda. ,-23.46999999999997,-68.29999999999995,4.59,1,0.00353,0.0,0.0,0.00353,9
+Salares Norte,mine,Mine (active),Active,Atacama,nan,-26.011999999999944,-68.89027999999996,2.48,1,0.00353,0.0,0.0,0.15588,11
+Salvador,mine,Mine (active),Active,Atacama,Corporación Nacional del Cobre (CODELCO),-26.24099999999993,-69.56999999999994,4.195,7,0.02473,0.0,0.0,0.16908,11
+San Cristóbal,mine,Mine (idle),Idle,Antofagasta,nan,-23.529999999999973,-69.57999999999998,1.0,3,0.0106,0.03899,0.00088,0.15128,2
+San Lorenzo,mine,Mine (idle),Idle,Tarapacá,nan,-20.519999999999985,-69.95999999999998,1.0,3,0.0106,0.0,0.0,0.0225,15
+San Pietro,mine,Prospect/Project,Prospect/Project,Atacama,nan,-26.47499999999997,-70.10299999999995,1.0,8,0.02827,0.00251,0.0,0.18473,11
+Santa Herminia,mine,Mine (idle),Idle,Metropolitana de Santiago,nan,-33.82099999999997,-70.20199999999994,1.0,4,0.01413,0.0,0.0,0.10183,1
+Santa Luisa,mine,Mine (idle),Idle,Antofagasta,nan,-25.22999999999996,-70.12999999999994,1.0,1,0.00353,0.0,0.0,0.01472,10
+Santo Domingo,mine,Prospect/Project,Prospect/Project,Atacama,nan,-26.42599999999993,-70.01599999999996,4.72,12,0.0424,0.07273,0.0,0.19833,11
+Sierra,mine,Prospect/Project,Prospect/Project,Antofagasta,KGHM International Ltd.,-23.15199999999993,-69.96999999999997,3.42,14,0.04947,0.0007,0.01467,0.1494,2
+Sierra Atacama,mine,Mine (active),Active,Antofagasta,nan,-23.238999999999976,-70.11899999999997,3.42,11,0.03887,0.0,0.00857,0.14756,2
+Sierra Gorda,mine,Mine (active),Active,Antofagasta,KGHM International Ltd.,-22.84699999999998,-69.33899999999994,4.076,16,0.05654,0.0,0.0156,0.15086,2
+Sierra Jardín,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-25.90599999999995,-69.48399999999998,3.207,5,0.01767,0.0,0.0,0.1657,11
+Soledad,mine,Mine (active),Active,Tarapacá,nan,-20.408999999999935,-69.79299999999995,3.192,3,0.0106,0.0,0.0,0.0225,15
+Spence,mine,Mine (active),Active,Antofagasta,Minera Spence S.A. ,-22.785999999999945,-69.24399999999997,4.16,14,0.04947,0.0,0.01816,0.12794,2
+Talcuna,mine,Mine (active),Active,Coquimbo,nan,-29.888999999999953,-70.88199999999995,3.327,4,0.01413,0.0,0.0,0.17042,13
+Tofo,mine,Mine (active),Active,Coquimbo,Compañía Minera del Pacífico S.A. (CMP),-29.448999999999955,-71.23569999999995,5.0,6,0.0212,0.00038,0.0,0.13365,5
+Toki,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-22.41599999999994,-68.94799999999998,1.0,13,0.04594,0.00221,0.00584,0.12779,7
+Tovaku,mine,Prospect/Project,Prospect/Project,Antofagasta,nan,-21.94599999999997,-69.78299999999996,3.691,12,0.0424,0.001,0.00263,0.12824,2
+Valeriano,mine,Prospect/Project,Prospect/Project,Atacama,nan,-29.113999999999976,-69.87099999999998,4.008,3,0.0106,0.0,0.0,0.16751,13
+Vaquillas,mine,Mine (idle),Idle,Antofagasta,nan,-25.369999999999948,-69.30638899999997,1.0,3,0.0106,0.01366,0.00064,0.17205,11
+Vizcachitas,mine,Prospect/Project,Prospect/Project,Valparaíso,nan,-32.40599999999995,-70.42499999999995,4.18,10,0.03534,0.0,0.0,0.12674,1
+Volcán,mine,Prospect/Project,Prospect/Project,Atacama,nan,-27.37899999999996,-69.16399999999999,2.042,1,0.00353,0.0,0.0,0.14576,11
+West Wall,mine,Prospect/Project,Prospect/Project,Valparaíso,nan,-32.567999999999984,-70.33299999999997,4.078,8,0.02827,0.0,0.0,0.1257,1
+Yumbes,mine,Mine (idle),Idle,Antofagasta,nan,-24.829999999999927,-70.32999999999998,1.0,1,0.00353,0.0,0.0,0.01472,10
+Zaldivar,mine,Mine (active),Active,Antofagasta,nan,-24.20799999999997,-69.06699999999995,3.936,10,0.03534,0.0,0.53354,0.14898,14
+Plant in Aguas Blancas,plant,Processing Plant,Active,,Atacama Minerals Chile Minera ,-24.1357,-69.8671,1.0,6,0.0212,0.00083,0.0,0.02356,10
+Minera Florida concentration plant,plant,Concentrator,Active,,Minera Florida S.A. ,-34.0348,-71.0265,1.0,7,0.02473,0.02957,0.0,0.09264,1
+Los Bronces Plants,plant,Processing Plant,Active,,Anglo American Sur S.A. ,-33.1462,-70.2863,1.0,5,0.01767,0.00622,0.0,0.11187,1
+Ventanas refinery and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-32.7618,-71.4812,4.331,13,0.04594,0.00168,0.0,0.11234,1
+Franke SX-EW Plant,plant,SX-EW Plant,Active,,Sociedad Contractual Minera Franke ,-25.8334,-69.8639,1.0,24,0.08481,0.3313,3e-05,0.19163,11
+Potrerillos SX-EW refinery and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-26.283,-69.5965,3.103,23,0.08127,0.01376,0.0,0.17484,11
+José Antonio Moreno,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-25.3963,-70.4742,3.787,19,0.06714,0.00221,6e-05,0.18994,11
+Osvaldo Martínez,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-26.4196,-70.3172,3.787,25,0.08834,8e-05,0.0,0.17541,11
+Mantoverde SX-EW plant,plant,SX-EW Plant,Active,,Empresa Minera de Mantos Blancos S.A. ,-26.5615,-70.3253,3.05,25,0.08834,0.04446,0.0,0.17541,11
+José Antonio Moreno plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-25.3963,-70.4742,4.369,12,0.0424,0.00474,7e-05,0.18378,11
+Osvaldo Martínez plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-26.4196,-70.3172,4.369,15,0.053,0.03198,0.0,0.1896,11
+El Peñón concentration plant,plant,Concentrator,Active,,Minera Meridian Ltda. ,-24.4116,-69.4969,1.0,11,0.03887,0.03072,0.00432,0.16882,12
+Los Pelambres plant,plant,Processing Plant,Active,,Antofagasta plc,-31.8134,-70.5823,1.0,17,0.06007,0.05035,0.0,0.14081,1
+Plant at Cabildo,plant,Processing Plant,Active,,Compañía Minera Cerro Negro,-32.5838,-70.8762,3.864,25,0.08834,0.0,0.0,0.13283,1
+Chagres smelter (anodes and blister),plant,Smelter,Active,,Empresa Nacional de Minería (ENAMI),-32.8047,-70.9554,3.767,25,0.08834,0.00078,0.0,0.11412,1
+El Soldado SX-EW plant,plant,SX-EW Plant,Active,,Anglo American Sur S.A. ,-32.6593,-71.1448,2.861,25,0.08834,0.00266,0.0,0.13283,1
+Tres Valles SX-EW plant,plant,SX-EW Plant,Active,,Vecchiola SA,-31.7364,-71.0165,1.0,25,0.08834,0.21397,0.0,0.14192,1
+Los Bronces (Tortolas) SX-EW plant (cathodes),plant,SX-EW Plant,Active,,Anglo American Sur S.A. ,-33.1409,-70.7086,4.517,26,0.09187,0.00063,0.0,0.11449,1
+Tortolas molybdenum flotation plant,plant,Concentrator,Active,,Anglo American Sur S.A. ,-33.1409,-70.7086,1.0,11,0.03887,0.0505,0.0,0.11269,1
+Las Ventanas refinery and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-32.7618,-71.4812,4.372,23,0.08127,0.0012,0.0,0.11388,1
+Nos plant,plant,Processing Plant,Active,,Molibdenos y Metales S.A. (MOLYMET),-33.6065,-70.7441,2.368,5,0.01767,0.0,0.0,0.1105,1
+El Teniente plant,plant,Processing Plant,Active,,Corporación Nacional del Cobre (CODELCO),-34.0886,-70.4555,1.0,9,0.0318,0.00709,0.0,0.11187,1
+"Caletones smelter (anodes). refinery (fire-refined ingots), and SX-EW plant",plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-34.1046,-70.4505,4.421,15,0.053,8e-05,0.0,0.11305,1
+Facilities near Rancagua,plant,Processing Plant,Active,,Minera Valle Central S.A. ,-34.2383,-70.685,2.497,14,0.04947,0.04188,0.0,0.11293,1
+Antucoya SX-EW plant,plant,SX-EW Plant,Active,,Antofagasta plc,-22.6298,-69.8832,1.0,33,0.11661,0.10227,0.00973,0.14459,2
+Michilla SX-EW/sulfide-leaching plant,plant,SX-EW Plant,Active,,Minera Michilla S.A. ,-22.6791,-70.1883,2.786,29,0.10247,0.0,0.01542,0.14324,2
+Mantos de la Luna SX-EW plant,plant,SX-EW Plant,Active,,Compania Mantos de la Luna,-22.3851,-70.1782,1.0,30,0.10601,0.01817,0.00476,0.14401,2
+Spence SX-EW plant,plant,SX-EW Plant,Active,,Minera Spence S.A. ,-22.8015,-69.2818,3.864,34,0.12014,0.0,0.02148,0.14478,2
+Plant near Tocopilla,plant,Processing Plant,Active,,Minera Capacho Viejo Ltda. ,-21.9459,-69.8715,1.0,26,0.09187,0.03346,0.00202,0.13618,2
+El Tesoro SX-EW plant,plant,SX-EW Plant,Active,,Minera El Tesoro S.A. ,-22.9277,-69.0976,3.43,39,0.13781,0.00662,0.03549,0.14576,2
+Centinela oxide and sulfide plant,plant,Processing Plant,Active,,Antofagasta plc,-22.9275,-69.0965,4.159,39,0.13781,0.0,0.0392,0.14576,2
+Mantos Blancos SX-EW plant,plant,SX-EW Plant,Active,,Empresa Minera de Mantos Blancos S.A. ,-23.4397,-70.0734,3.361,27,0.09541,0.00098,0.0385,0.14155,2
+Lomas Bayas SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Xstrata Lomas Bayas ,-23.4318,-69.5017,3.153,33,0.11661,0.0017,0.21092,0.14401,2
+Chuquicamata SX-EW plant (oxide) and smelter,plant,Smelter,Active,,Corporación Nacional del Cobre (CODELCO),-22.3137,-68.8895,4.455,30,0.10601,0.0,0.0354,0.14459,7
+Chuquicamata Mine (plant to acid-leach fine copper),plant,Processing Plant,Active,,EcoMetales Ltd. ,-22.3013,-68.8404,2.368,31,0.10954,0.03992,0.01541,0.14478,7
+Radomiro Tomic SX-EW plant,plant,SX-EW Plant,Active,,Corporación Nacional del Cobre (CODELCO),-22.1927,-68.8674,4.502,30,0.10601,0.00123,0.01614,0.14459,7
+Altonorte smelter,plant,Smelter,Active,,Glencore Copper Chile S.A. ,-23.8247,-70.3178,4.961,22,0.07774,0.03183,0.02357,0.16673,2
+Gabriela Mistral SX-EW plant,plant,SX-EW Plant,Active,,Minera Gaby S.A. ,-23.4173,-68.7838,3.746,28,0.09894,3e-05,0.04496,0.14305,2
+Al Elbra SX-EW plant,plant,SX-EW Plant,Active,,Sociedad Contractual Minera El Abra ,-21.9859,-68.6886,3.949,21,0.0742,0.00446,0.00622,0.14286,7
+Vallenar plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-28.5652,-70.7387,4.369,25,0.08834,0.03113,0.0,0.1873,13
+Manuel Antonio Matta,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-27.4131,-70.2517,3.787,22,0.07774,0.00298,0.0,0.17541,11
+Hernán Videla Lira smelter (anodes and blister),plant,Smelter,Active,,Empresa Nacional de Minería (ENAMI),-27.4198,-70.2577,4.25,22,0.07774,0.0,0.0,0.17541,11
+Biocobre refinery,plant,Refinery,Active,,Sociedad Punta del Cobre S.A (Pucobre),-27.5734,-70.2484,1.0,22,0.07774,0.32419,0.0,0.19163,11
+Huasco concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.2907,-70.8125,1.0,9,0.0318,0.0063,0.0,0.15633,5
+Los Colorados concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.291,-70.8129,1.0,9,0.0318,0.01279,0.0,0.15633,5
+Huasco pellet plant,plant,Pellet Plant,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.4808,-71.2485,1.0,8,0.02827,0.00784,0.0,0.1561,5
+Magnetite plant to process tailings from the Candelaria Mine and other iron-bearing raw materials from third parties,plant,Processing Plant,Active,,Compañía Minera del Pacífico S.A. (CMP),-27.5218,-70.3192,1.0,8,0.02827,0.06877,0.0,0.16908,5
+El Algarrobito concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-28.8028,-70.9839,1.0,8,0.02827,5e-05,0.0,0.1561,5
+SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Carmen de Andacollo ,-30.261,-71.0917,2.279,20,0.07067,0.04238,0.0,0.16221,13
+Plant near Coquimbo (Region IV),plant,Processing Plant,Active,,Compañía Minera San Gerónimo,-29.8353,-71.1035,1.0,22,0.07774,0.2576,0.0,0.17343,13
+Quebrada Blanca SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Quebrada Blanca ,-21.0027,-68.7964,3.361,14,0.04947,0.0118,0.00198,0.11522,6
+Collahuasi SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Doña Inés de Collahuasi SCM ,-20.9779,-68.6315,4.369,13,0.04594,0.0,0.00117,0.1151,6
+Zaldívar SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Zaldívar ,-24.201,-69.0689,3.655,16,0.05654,0.00378,0.60381,0.1652,14
+Escondida oxide plant for cathode production (SX-EW),plant,SX-EW Plant,Active,,Minera Escondida Ltda. ,-24.2536,-69.1008,1.0,15,0.053,3e-05,0.1578,0.16494,14
+Escondida concentrator,plant,Concentrator,Active,,Minera Escondida Ltda.,-24.2628,-69.0581,1.0,22,0.07774,0.09413,0.20864,0.16699,14
+Escondida sulfide-leach plant for cathode production,plant,Processing Plant,Active,,Minera Escondida Ltda. ,-24.2601,-68.9925,1.0,15,0.053,0.19395,0.11346,0.16494,14
+Plant near Iquique,plant,Processing Plant,Active,,Cosayach Nitratos S.A. ,-20.223,-69.7966,1.0,9,0.0318,0.00048,0.0,0.03289,15
+Nueva Victoria plant,plant,Processing Plant,Active,,SQM Químicos S.A. ,-20.9592,-69.6633,1.0,9,0.0318,0.0,0.0,0.03289,15
+Iris Plant,plant,Processing Plant,Active,,SQM Químicos S.A. ,-20.9622,-69.6625,1.0,9,0.0318,0.00083,0.0,0.03289,15
+Manuel Antonio Matta plant,plant,Processing Plant,Active,,Empresa Nacional de Minería (ENAMI),-27.4131,-70.2517,4.369,20,0.07067,0.04461,0.0,0.17484,11
+Dos Amigos SX-EW plant,plant,SX-EW Plant,Active,,CEMIN,-28.9869,-70.8859,1.0,20,0.07067,0.05939,0.0,0.16494,13
+Esperanza milling/flotation plant,plant,Concentrator,Active,,Minera Esperanza S.A. ,-22.9998,-69.1036,1.0,12,0.0424,0.04363,0.01151,0.14063,2
+Cerro Bayo concentration plant,plant,Concentrator,Active,,Compañía Minera Cerro Bayo Ltda. ,-46.5463,-71.9995,5.0,1,0.00353,0.0,0.0,0.00471,0
+Concentration plant,plant,Concentrator,Active,,Compañía Minera Cerro Bayo Ltda. ,-46.5463,-71.9995,1.0,1,0.00353,0.0,0.0,0.00471,0
+Cerro Colorado SX-EW plant,plant,SX-EW Plant,Active,,Compañía Minera Cerro Colorado ,-20.0624,-69.2663,3.493,8,0.02827,0.0,9e-05,0.11153,6
+La Cascada SX-EW plant,plant,SX-EW Plant,Active,,Haldeman Mining Company S.A. ,-20.1873,-69.3329,1.0,9,0.0318,0.00757,3e-05,0.11164,6
+Collahuasi plants,plant,Processing Plant,Active,,Compañía Minera Doña Inés de Collahuasi SCM ,-20.9761,-68.6272,1.0,4,0.01413,0.0123,0.00011,0.11364,6
+Molybdenum plant,plant,Processing Plant,Active,,Compañía Minera Doña Inés de Collahuasi SCM ,-20.9761,-68.6272,1.0,9,0.0318,0.01173,0.00052,0.11461,6
+El Romeral concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-29.7282,-71.2317,1.0,6,0.0212,0.0,0.0,0.15565,5
+El Romeral pellet-feed plant,plant,Pellet Plant,Active,,Compañía Minera del Pacífico S.A. (CMP),-29.7308,-71.2325,1.0,6,0.0212,0.00378,0.0,0.15565,5
+Plant in Coquimbo city,plant,Processing Plant,Care & Maintenance,,Manganesos Atacama S.A. ,-29.9512,-71.2918,1.0,4,0.01413,0.00616,0.0,0.14362,13
+El Laco concentration plant,plant,Concentrator,Active,,Compañía Minera del Pacífico S.A. (CMP),-23.8435,-67.4856,1.0,1,0.00353,0.0,0.0,0.00353,3
+Doña Rosa concentration plant,plant,Concentrator,Active,,Sociedad Contractual Minera El Toqui Ltda. ,-45.0341,-71.9341,1.0,2,0.00707,3e-05,0.0,0.00707,4
+Coya Sur plant,plant,Processing Plant,Active,,SQM Nitratos S.A. ,-22.3962,-69.6207,4.847,4,0.01413,0.0,0.0,0.0186,10
+Maria Elena plant,plant,Processing Plant,Active,,SQM Nitratos S.A. ,-22.3367,-69.6595,4.847,4,0.01413,0.0,0.0,0.0186,10
+María Elena plant,plant,Processing Plant,Active,,SQM Químicos S.A. ,-22.3367,-69.6595,1.0,4,0.01413,0.00023,0.0,0.0186,10
+Boric acid and agrochemical plants,plant,Processing Plant,Active,,Química Industrial del Bórax Ltda. ,-18.4414,-69.879,4.601,2,0.00707,3e-05,0.0,0.00707,8
+Mine brines of Atacama Salar,plant,Processing Plant,Active,,S.Q.M. Salar S.A. ,-23.4874,-68.3354,1.0,1,0.00353,0.0,0.0,0.00353,9
