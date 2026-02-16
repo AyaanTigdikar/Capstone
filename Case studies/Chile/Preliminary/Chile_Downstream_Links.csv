@@ -1,0 +1,57 @@
+FROM_NAME,FROM_TYPE,FROM_LAT,FROM_LON,TO_NAME,TO_TYPE,TO_LAT,TO_LON,EDGE_TYPE,PRODUCT_FORM,OPERATOR,DISTANCE_KM,COMMODITIES
+Chuquicamata smelter,smelter,-22.32,-68.93,Angamos,port,-23.1,-70.42,smelter_to_port,cathode,Codelco,175.7,Copper
+Chuquicamata smelter,smelter,-22.32,-68.93,Mejillones,port,-23.1,-70.45,smelter_to_port,cathode,Codelco,178.4,Copper
+Potrerillos smelter,smelter,-26.39,-69.46,Barquito,port,-27.07,-70.84,smelter_to_port,cathode,Codelco,156.5,Copper
+Caletones smelter,smelter,-34.12,-70.48,San Antonio,port,-33.59,-71.62,smelter_to_port,cathode,Codelco,120.6,Copper
+Caletones smelter,smelter,-34.12,-70.48,Ventanas,port,-32.74,-71.49,smelter_to_port,cathode,Codelco,179.8,Copper
+Altonorte smelter,smelter,-23.78,-70.31,Mejillones,port,-23.1,-70.45,smelter_to_port,blister,Glencore,76.9,Copper
+Paipote smelter (H.V. Lira),smelter,-27.37,-70.3,Barquito,port,-27.07,-70.84,smelter_to_port,blister,ENAMI,63.0,Copper
+Paipote smelter (H.V. Lira),smelter,-27.37,-70.3,Caldera,port,-27.07,-70.82,smelter_to_port,blister,ENAMI,61.3,Copper
+Chagres smelter,smelter,-32.78,-70.97,Ventanas,port,-32.74,-71.49,smelter_to_port,blister,Anglo American,48.8,Copper
+Escondida concentrator,concentrator,-24.2628,-69.0581,Coloso,port,-23.76,-70.45,concentrate_to_port,concentrate,Minera Escondida Ltda.,152.0,Copper
+Escondida concentrator,concentrator,-24.2628,-69.0581,Coloso,port,-23.76,-70.45,concentrate_to_port,concentrate,Minera Escondida Ltda.,152.0,Copper
+Escondida concentrator,concentrator,-24.2628,-69.0581,Coloso,port,-23.76,-70.45,concentrate_to_port,concentrate,Minera Escondida Ltda.,152.0,Copper
+Cerro Bayo concentration plant,concentrator,-46.5463,-71.9995,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Compañía Minera Cerro Bayo Ltda. ,1845.2,Copper
+Concentration plant,concentrator,-46.5463,-71.9995,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Compañía Minera Cerro Bayo Ltda. ,1845.2,Copper
+Doña Rosa concentration plant,concentrator,-45.0341,-71.9341,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Sociedad Contractual Minera El Toqui Ltda. ,1676.9,Copper
+Doña Rosa concentration plant,concentrator,-45.0341,-71.9341,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Sociedad Contractual Minera El Toqui Ltda. ,1676.9,Copper
+Doña Rosa concentration plant,concentrator,-45.0341,-71.9341,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Sociedad Contractual Minera El Toqui Ltda. ,1676.9,Copper
+Doña Rosa concentration plant,concentrator,-45.0341,-71.9341,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Sociedad Contractual Minera El Toqui Ltda. ,1676.9,Copper
+El Algarrobito concentration plant,concentrator,-28.8028,-70.9839,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Compañía Minera del Pacífico S.A. (CMP),133.5,Copper
+El Laco concentration plant,concentrator,-23.8435,-67.4856,Coloso,port,-23.76,-70.45,concentrate_to_port,concentrate,Compañía Minera del Pacífico S.A. (CMP),301.7,Copper
+El Peñón concentration plant,concentrator,-24.4116,-69.4969,Coloso,port,-23.76,-70.45,concentrate_to_port,concentrate,Minera Meridian Ltda. ,120.9,Copper
+El Peñón concentration plant,concentrator,-24.4116,-69.4969,Coloso,port,-23.76,-70.45,concentrate_to_port,concentrate,Minera Meridian Ltds. ,120.9,Copper
+El Romeral concentration plant,concentrator,-29.7282,-71.2317,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Compañía Minera del Pacífico S.A. (CMP),28.2,Copper
+Esperanza milling/flotation plant,concentrator,-22.9998,-69.1036,Angamos,port,-23.1,-70.42,concentrate_to_port,concentrate,Minera Esperanza S.A. ,135.2,Copper
+Huasco concentration plant,concentrator,-28.2907,-70.8125,Caldera,port,-27.07,-70.82,concentrate_to_port,concentrate,Compañía Minera del Pacífico S.A. (CMP),135.7,Copper
+Los Colorados concentration plant,concentrator,-28.291,-70.8129,Caldera,port,-27.07,-70.82,concentrate_to_port,concentrate,Compañía Minera del Pacífico S.A. (CMP),135.8,Copper
+Minera Florida concentration plant,concentrator,-34.0348,-71.0265,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Minera Florida S.A. ,454.1,Copper
+Minera Florida concentration plant,concentrator,-34.0348,-71.0265,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Minera Florida S.A. ,454.1,Copper
+Minera Florida concentration plant,concentrator,-34.0348,-71.0265,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Minera Florida S.A. ,454.1,Copper
+Minera Florida concentration plant,concentrator,-34.0348,-71.0265,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Minera Florida S.A. ,454.1,Copper
+Tortolas molybdenum flotation plant,concentrator,-33.1409,-70.7086,Coquimbo,port,-29.96,-71.35,concentrate_to_port,concentrate,Anglo American Sur S.A. ,358.9,Copper
+Al Elbra SX-EW plant,sx_ew,-21.9859,-68.6886,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,Sociedad Contractual Minera El Abra ,216.7,Copper
+Antucoya SX-EW plant,sx_ew,-22.6298,-69.8832,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,Antofagasta plc,75.9,Copper
+Cerro Colorado SX-EW plant,sx_ew,-20.0624,-69.2663,Iquique,port,-20.21,-70.15,sxew_to_port,cathode_sxew,Compañía Minera Cerro Colorado ,93.7,Copper
+Chuquicamata Mine (plant to acid-leach fine copper),sx_ew,-22.3013,-68.8404,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,EcoMetales Ltd. ,184.8,Copper
+Collahuasi SX-EW plant,sx_ew,-20.9779,-68.6315,Iquique,port,-20.21,-70.15,sxew_to_port,cathode_sxew,Compañía Minera Doña Inés de Collahuasi SCM ,179.6,Copper
+Dos Amigos SX-EW plant,sx_ew,-28.9869,-70.8859,Barquito,port,-27.07,-70.84,sxew_to_port,cathode_sxew,CEMIN,213.2,Copper
+El Soldado SX-EW plant,sx_ew,-32.6593,-71.1448,Ventanas,port,-32.74,-71.49,sxew_to_port,cathode_sxew,Anglo American Sur S.A. ,33.5,Copper
+El Tesoro SX-EW plant,sx_ew,-22.9277,-69.0976,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,Minera El Tesoro S.A. ,136.7,Copper
+Escondida oxide plant for cathode production (SX-EW),sx_ew,-24.2536,-69.1008,Antofagasta (ATI),port,-23.65,-70.4,sxew_to_port,cathode_sxew,Minera Escondida Ltda. ,148.1,Copper
+Escondida sulfide-leach plant for cathode production,sx_ew,-24.2601,-68.9925,Antofagasta (ATI),port,-23.65,-70.4,sxew_to_port,cathode_sxew,Minera Escondida Ltda. ,158.3,Copper
+Franke SX-EW Plant,sx_ew,-25.8334,-69.8639,Barquito,port,-27.07,-70.84,sxew_to_port,cathode_sxew,Sociedad Contractual Minera Franke ,168.4,Copper
+Gabriela Mistral SX-EW plant,sx_ew,-23.4173,-68.7838,Antofagasta (ATI),port,-23.65,-70.4,sxew_to_port,cathode_sxew,Minera Gaby S.A. ,166.8,Copper
+La Cascada SX-EW plant,sx_ew,-20.1873,-69.3329,Iquique,port,-20.21,-70.15,sxew_to_port,cathode_sxew,Haldeman Mining Company S.A. ,85.3,Copper
+Lomas Bayas SX-EW plant,sx_ew,-23.4318,-69.5017,Antofagasta (ATI),port,-23.65,-70.4,sxew_to_port,cathode_sxew,Compañía Minera Xstrata Lomas Bayas ,94.7,Copper
+Los Bronces (Tortolas) SX-EW plant (cathodes),sx_ew,-33.1409,-70.7086,Ventanas,port,-32.74,-71.49,sxew_to_port,cathode_sxew,Anglo American Sur S.A. ,85.5,Copper
+Mantos Blancos SX-EW plant,sx_ew,-23.4397,-70.0734,Antofagasta (ATI),port,-23.65,-70.4,sxew_to_port,cathode_sxew,Empresa Minera de Mantos Blancos S.A. ,40.7,Copper
+Mantos de la Luna SX-EW plant,sx_ew,-22.3851,-70.1782,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,Compania Mantos de la Luna,83.3,Copper
+Mantoverde SX-EW plant,sx_ew,-26.5615,-70.3253,Barquito,port,-27.07,-70.84,sxew_to_port,cathode_sxew,Empresa Minera de Mantos Blancos S.A. ,76.2,Copper
+Michilla SX-EW/sulfide-leaching plant,sx_ew,-22.6791,-70.1883,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,Minera Michilla S.A. ,52.5,Copper
+Quebrada Blanca SX-EW plant,sx_ew,-21.0027,-68.7964,Iquique,port,-20.21,-70.15,sxew_to_port,cathode_sxew,Compañía Minera Quebrada Blanca ,166.2,Copper
+Radomiro Tomic SX-EW plant,sx_ew,-22.1927,-68.8674,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,Corporación Nacional del Cobre (CODELCO),188.6,Copper
+Spence SX-EW plant,sx_ew,-22.8015,-69.2818,Angamos,port,-23.1,-70.42,sxew_to_port,cathode_sxew,Minera Spence S.A. ,121.2,Copper
+SX-EW plant,sx_ew,-30.261,-71.0917,Ventanas,port,-32.74,-71.49,sxew_to_port,cathode_sxew,Compañía Minera Carmen de Andacollo ,278.2,Copper
+Tres Valles SX-EW plant,sx_ew,-31.7364,-71.0165,Ventanas,port,-32.74,-71.49,sxew_to_port,cathode_sxew,Vecchiola SA,120.2,Copper
+Zaldívar SX-EW plant,sx_ew,-24.201,-69.0689,Antofagasta (ATI),port,-23.65,-70.4,sxew_to_port,cathode_sxew,Compañía Minera Zaldívar ,148.5,Copper
