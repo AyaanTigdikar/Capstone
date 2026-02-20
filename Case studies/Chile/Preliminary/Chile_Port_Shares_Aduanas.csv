@@ -1,16 +1,17 @@
 PRODUCT,PORT,FOB_SHARE
-concentrate,Angamos,0.05715907722180388
-concentrate,Antofagasta (ATI),0.045873075247330836
-concentrate,Barquito,0.012217708849864537
-concentrate,Caldera,0.08178098352817399
-concentrate,Coloso,0.34055495387715656
-concentrate,Coquimbo,0.026197652160690702
-concentrate,Los Vilos,0.10030302836392765
-concentrate,Mejillones,0.059905443198201375
-concentrate,Patache,0.10821086425813913
-concentrate,San Antonio,0.013513384638211017
-concentrate,Unknown (827),0.050187572013113135
-concentrate,Ventanas,0.10330138279528746
+concentrate,Angamos,0.05368679675310531
+concentrate,Antofagasta (ATI),0.04308639304456626
+concentrate,Barquito,0.011475511566885175
+concentrate,Caldera,0.07681297974613399
+concentrate,Coloso,0.31986703566116553
+concentrate,Coquimbo,0.0246062059662335
+concentrate,Iquique,0.060747664893618096
+concentrate,Los Vilos,0.09420985360906073
+concentrate,Mejillones,0.05626632740949337
+concentrate,Patache,0.1016373069383369
+concentrate,San Antonio,0.012692478076630409
+concentrate,Unknown (827),0.04713879420663622
+concentrate,Ventanas,0.09702606501019198
 cathode,Angamos,0.6555731931414502
 cathode,Antofagasta (ATI),0.12510842192047783
 cathode,Barquito,0.02211316141502524

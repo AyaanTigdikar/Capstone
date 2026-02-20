@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chile Mining Supply Chain Pipeline — Code Summary</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg:       #f7f4ef;
+    --surface:  #ffffff;
+    --ink:      #1c1a17;
+    --muted:    #6b6357;
+    --rule:     #d6cfc4;
+    --accent:   #b84a2e;
+    --accent2:  #2e6eb8;
+    --badge-bg: #1c1a17;
+    --badge-fg: #f7f4ef;
+    --tag-cu:   #c97b1a;
+    --tag-mo:   #5b7fa6;
+    --tag-li:   #3e8a66;
+    --tag-au:   #a07c25;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--ink);
+    color: var(--badge-fg);
+    padding: 56px 8vw 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 28px,
+      rgba(255,255,255,.03) 28px,
+      rgba(255,255,255,.03) 29px
+    );
+    pointer-events: none;
+  }
+  .header-eyebrow {
+    font-family: 'Source Serif 4', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    max-width: 720px;
+    margin-bottom: 18px;
+  }
+  header p.sub {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(247,244,239,.65);
+    max-width: 640px;
+    line-height: 1.65;
+  }
+  .meta-row {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .meta-pill {
+    display: inline-block;
+    border: 1px solid rgba(247,244,239,.25);
+    padding: 4px 12px;
+    font-size: 12px;
+    letter-spacing: .06em;
+    border-radius: 2px;
+    color: rgba(247,244,239,.7);
+  }
+
+  /* ── Layout ── */
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 5vw 80px;
+  }
+
+  /* ── Section heading ── */
+  .section-label {
+    margin-top: 64px;
+    margin-bottom: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin-bottom: 14px; }
+
+  /* ── Notebook cards ── */
+  .notebook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+  .nb-card {
+    background: var(--surface);
+    padding: 24px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeUp .45s ease forwards;
+  }
+  .nb-card:nth-child(1) { animation-delay: .05s; }
+  .nb-card:nth-child(2) { animation-delay: .12s; }
+  .nb-card:nth-child(3) { animation-delay: .19s; }
+  .nb-card:nth-child(4) { animation-delay: .26s; }
+  .nb-card:nth-child(5) { animation-delay: .33s; }
+  .nb-card:nth-child(6) { animation-delay: .40s; }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .nb-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--rule);
+    line-height: 1;
+    user-select: none;
+  }
+  .nb-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  .nb-desc {
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.6;
+    flex: 1;
+  }
+  .nb-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .tag {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: .07em;
+    padding: 2px 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .tag-cu  { background: rgba(201,123,26,.12); color: var(--tag-cu); }
+  .tag-mo  { background: rgba(91,127,166,.12); color: var(--tag-mo); }
+  .tag-li  { background: rgba(62,138,102,.12); color: var(--tag-li); }
+  .tag-au  { background: rgba(160,124,37,.12); color: var(--tag-au); }
+  .tag-net { background: rgba(28,26,23,.08); color: var(--ink); }
+  .tag-geo { background: rgba(46,110,184,.1); color: var(--accent2); }
+
+  /* ── Flow diagram ── */
+  .flow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 28px 0;
+  }
+  .flow-step {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 400;
+    white-space: nowrap;
+    position: relative;
+  }
+  .flow-arrow {
+    width: 28px;
+    text-align: center;
+    color: var(--accent);
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  /* ── Data sources ── */
+  .sources {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-top: 18px;
+  }
+  .source-item {
+    background: var(--surface);
+    padding: 16px 18px;
+  }
+  .source-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .source-desc {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.55;
+  }
+
+  /* ── Glossary ── */
+  .glossary {
+    margin-top: 18px;
+  }
+  .gloss-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 14px;
+  }
+  .gloss-term {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .gloss-def {
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.55;
+  }
+
+  /* ── Output box ── */
+  .output-box {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    padding: 20px 22px;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  .output-box strong {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+  }
+
+  /* ── Footer ── */
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 64px;
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+
+  @media (max-width: 560px) {
+    .sources { grid-template-columns: 1fr; }
+    .gloss-row { grid-template-columns: 1fr; }
+    .gloss-term { border-bottom: none; padding-bottom: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="header-eyebrow">Code Documentation</p>
+  <h1>Chile Mineral Supply Chain Pipeline</h1>
+  <p class="sub">A six-part Python/Jupyter pipeline that constructs a directed supply chain network for Chilean mining, linking individual extraction sites to processing facilities, export ports, and destination countries using official Chilean and international trade statistics.</p>
+  <div class="meta-row">
+    <span class="meta-pill">6 Notebooks</span>
+    <span class="meta-pill">Python · Pandas · NumPy</span>
+    <span class="meta-pill">2005–2024</span>
+    <span class="meta-pill">Cu · Mo · Li · Au · Ag · Fe · Zn</span>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- OVERVIEW -->
+  <p class="section-label">Overview</p>
+  <h2 class="section-title">What the Pipeline Does</h2>
+
+  <p>The pipeline takes raw, heterogeneous data from multiple Chilean government and international trade sources and assembles them into a single, validated network representation of Chile's mineral supply chain. Each run produces two core outputs: an inventory of facilities (mines, concentrators, smelters, refineries, ports) with production figures attached, and an edge table encoding directed material flows between those facilities.</p>
+
+  <p>The work is divided into six sequential notebooks, each saving an intermediate state file (<code>_pipeline_state_N.pkl</code>) that the next notebook loads. This avoids reprocessing expensive steps and allows any part to be debugged or rerun in isolation.</p>
+
+  <div class="flow">
+    <div class="flow-step">Setup &amp; Load</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Production Matching</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Edges &amp; Stages</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Export Destinations</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Cleanup &amp; Validate</div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">Distance Analysis</div>
+  </div>
+
+
+  <!-- DATA SOURCES -->
+  <p class="section-label">Inputs</p>
+  <h2 class="section-title">Data Sources</h2>
+
+  <p>Four distinct sources feed the pipeline. They differ in granularity, update frequency, and the layer of the supply chain they cover.</p>
+
+  <div class="sources">
+    <div class="source-item">
+      <p class="source-name">COCHILCO Production Statistics</p>
+      <p class="source-desc">Chile's copper commission (Comisión Chilena del Cobre) publishes company-level annual production tables for copper and molybdenum. This is the primary source for matching production volumes to individual facilities.</p>
+    </div>
+    <div class="source-item">
+      <p class="source-name">COCHILCO Anuario (Yearbook)</p>
+      <p class="source-desc">A companion publication with regional and national aggregate figures for all minerals including gold, silver, iron, and zinc, as well as tables of export quantities by destination country. Read directly from Excel sheets.</p>
+    </div>
+    <div class="source-item">
+      <p class="source-name">Sernageomin Inventory</p>
+      <p class="source-desc">The Chilean geological survey (Servicio Nacional de Geología y Minería) maintains a georeferenced register of all mining facilities with facility type, operator, coordinates, and reserve/resource tonnages. Used as the base inventory throughout.</p>
+    </div>
+    <div class="source-item">
+      <p class="source-name">Aduanas &amp; COMTRADE</p>
+      <p class="source-desc">Customs agency (Aduanas) port-level export records (<code>salidas_2024_clean.csv</code>) assign shipment volumes to specific Chilean ports. UN COMTRADE data provides national-level export figures used to cross-validate the Aduanas port shares.</p>
+    </div>
+  </div>
+
+
+  <!-- NOTEBOOKS -->
+  <p class="section-label" style="margin-top:64px;">Notebooks</p>
+  <h2 class="section-title">Pipeline Steps in Detail</h2>
+
+  <div class="notebook-grid">
+
+    <div class="nb-card">
+      <div class="nb-num">00</div>
+      <div class="nb-title">Setup &amp; Data Loading</div>
+      <div class="nb-desc">Declares all shared paths, constants, and utility functions (e.g. the section header printer, fuzzy search helpers). Loads the raw Sernageomin facility inventory and the COCHILCO production workbook, and saves the initial pipeline state. Every downstream notebook re-imports these constants from this common block.</div>
+      <div class="nb-tags">
+        <span class="tag tag-net">Config</span>
+        <span class="tag tag-net">I/O</span>
+      </div>
+    </div>
+
+    <div class="nb-card">
+      <div class="nb-num">01</div>
+      <div class="nb-title">Production Matching</div>
+      <div class="nb-desc">Matches COCHILCO company-level production figures to specific facility rows in the Sernageomin inventory. Codelco's multiple operating divisions are handled first via a dedicated mapping. Copper and molybdenum volumes are matched directly from company tables. Lithium figures are attached via manual fixes. For gold, silver, iron, and zinc — where COCHILCO only publishes regional totals — production is allocated to individual mines by weighting on Sernageomin reserve and resource tonnages.</div>
+      <div class="nb-tags">
+        <span class="tag tag-cu">Cu</span>
+        <span class="tag tag-mo">Mo</span>
+        <span class="tag tag-li">Li</span>
+        <span class="tag tag-au">Au/Ag/Fe/Zn</span>
+      </div>
+    </div>
+
+    <div class="nb-card">
+      <div class="nb-num">02</div>
+      <div class="nb-title">Processing Stages &amp; Supply Chain Edges</div>
+      <div class="nb-desc">Assigns each facility a chain stage label: extraction, concentration, SX-EW (solvent extraction/electrowinning), smelting, or refining. Mines are then matched to downstream smelters and refineries by operator name and geographic proximity. Product form (concentrate, cathode, anode, etc.) is assigned per edge. The section closes by assembling a unified directed edge table covering the full mine-to-refinery portion of the chain.</div>
+      <div class="nb-tags">
+        <span class="tag tag-net">Network</span>
+        <span class="tag tag-geo">Spatial</span>
+        <span class="tag tag-cu">Cu</span>
+      </div>
+    </div>
+
+    <div class="nb-card">
+      <div class="nb-num">03</div>
+      <div class="nb-title">Export Destinations</div>
+      <div class="nb-desc">Parses the COCHILCO Anuario destination tables to extract 2024 export volumes by country and region for each product type. Port-level shares derived from the Aduanas customs data are then applied to distribute exports across Chilean ports. COMTRADE national totals are loaded as a cross-check on the Aduanas-derived figures, flagging significant discrepancies.</div>
+      <div class="nb-tags">
+        <span class="tag tag-net">Exports</span>
+        <span class="tag tag-geo">Trade</span>
+      </div>
+    </div>
+
+    <div class="nb-card">
+      <div class="nb-num">04</div>
+      <div class="nb-title">Cleanup &amp; Validation</div>
+      <div class="nb-desc">Standardizes smelter names across the inventory and the edge table (resolving ambiguities such as "Las Ventanas" vs "Ventanas refinery"). Deduplicates facility records and repairs edges where a referenced facility name was not present in the inventory. Runs a full validation pass with diagnostic counts and exports the final inventory and edge table as clean files.</div>
+      <div class="nb-tags">
+        <span class="tag tag-net">QA</span>
+        <span class="tag tag-net">Output</span>
+      </div>
+    </div>
+
+    <div class="nb-card">
+      <div class="nb-num">05</div>
+      <div class="nb-title">Distance-Based Port Assignment Analysis</div>
+      <div class="nb-desc">Tests whether the ports assigned to mines in the pipeline are geographically reasonable. Haversine distances are computed from each producing mine (and SX-EW facility) to all candidate export ports. The nearest-port assignment is then compared against the Aduanas-derived assignment, quantifying the share of production volume where the modelled route matches the observed one.</div>
+      <div class="nb-tags">
+        <span class="tag tag-geo">Haversine</span>
+        <span class="tag tag-geo">Validation</span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- KEY CONCEPTS -->
+  <p class="section-label">Terminology</p>
+  <h2 class="section-title">Key Terms and Methods</h2>
+
+  <p>Several domain-specific terms and modeling choices appear throughout the notebooks. The glossary below covers the most important ones for readers who have not previously worked with Chilean mining data.</p>
+
+  <div class="glossary">
+    <div class="gloss-row">
+      <div class="gloss-term">SX-EW</div>
+      <div class="gloss-def">Solvent extraction / electrowinning. A hydrometallurgical process that leaches copper from oxide ores and deposits it directly as copper cathode, bypassing the concentrator-smelter route used for sulphide ores.</div>
+    </div>
+    <div class="gloss-row">
+      <div class="gloss-term">Chain stage</div>
+      <div class="gloss-def">A label applied to each facility indicating where it sits in the supply chain: extraction → concentration → smelting → refining, or the parallel sx_ew pathway.</div>
+    </div>
+    <div class="gloss-row">
+      <div class="gloss-term">Edge table</div>
+      <div class="gloss-def">A tabular representation of directed material flows. Each row describes a link from one facility (FROM_NAME) to another (TO_NAME), with the commodity, product form, and volume attached.</div>
+    </div>
+    <div class="gloss-row">
+      <div class="gloss-term">COCHILCO kMT</div>
+      <div class="gloss-def">Production volumes reported by COCHILCO in thousands of metric tonnes of fine metal content. Column names follow the pattern <code>COCHILCO_CU_2024_KMT</code>.</div>
+    </div>
+    <div class="gloss-row">
+      <div class="gloss-term">Haversine distance</div>
+      <div class="gloss-def">A formula that computes the great-circle distance between two points on the Earth's surface given their latitude and longitude. Used here to measure mine-to-port distances without requiring a road network.</div>
+    </div>
+    <div class="gloss-row">
+      <div class="gloss-term">Resource weighting</div>
+      <div class="gloss-def">When company-level data is unavailable (Au, Ag, Fe, Zn), a mine's share of a regional production total is estimated in proportion to its declared reserve or resource tonnage from Sernageomin, under the assumption that larger deposits contribute more to regional output.</div>
+    </div>
+    <div class="gloss-row">
+      <div class="gloss-term">Port share (Aduanas)</div>
+      <div class="gloss-def">The fraction of a product type's exports that passed through each Chilean port in 2024, derived from customs declaration records. Applied to allocate export volumes to specific port nodes in the network.</div>
+    </div>
+    <div class="gloss-row">
+      <div class="gloss-term">Pipeline state (.pkl)</div>
+      <div class="gloss-def">A Python pickle file containing the full working state (inventory DataFrame, edge table, and supporting dictionaries) at the end of each notebook. Allows subsequent notebooks to resume without rerunning earlier steps.</div>
+    </div>
+  </div>
+
+
+  <!-- OUTPUT -->
+  <p class="section-label">Outputs</p>
+  <h2 class="section-title">What the Pipeline Produces</h2>
+
+  <div class="output-box">
+    <strong>Facility Inventory</strong>
+    A georeferenced table of Chilean mining facilities (mines, concentrators, smelters, refineries, ports) with operator names, chain stage labels, product forms, and annual production figures attached for copper, molybdenum, lithium, gold, silver, iron, and zinc for the period 2005–2024.
+  </div>
+
+  <div class="output-box">
+    <strong>Supply Chain Edge Table</strong>
+    A directed graph edge list linking each facility to its downstream counterpart, annotated with commodity, product form, and volume. The full chain runs from extraction sites through processing nodes to export ports and, via destination shares, to receiving countries.
+  </div>
+
+  <div class="output-box">
+    <strong>Distance Validation Report</strong>
+    A comparison of modelled port-routing against observed customs-derived port assignments, expressed as a share of total copper production volume. Provides a quantitative indication of how well the spatial assumptions in the network hold against real shipment data.
+  </div>
+
+
+  <footer>
+    Chile Mining Pipeline &mdash; Automated documentation generated from source notebooks (Parts 0–5). Data covers 2005–2024. Primary sources: COCHILCO, Sernageomin, Aduanas, COMTRADE.
+  </footer>
+
+</div>
+</body>
+</html>
