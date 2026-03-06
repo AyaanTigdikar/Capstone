@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chile Mineral Supply Chain Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Barlow+Condensed:wght@300;500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+  :root {
+    --bg: #0b0e14;
+    --surface: #111520;
+    --border: #1e2535;
+    --text: #c8d4e8;
+    --muted: #5a6a84;
+    --cu: #e07d28;
+    --mo: #9baab8;
+    --li: #00c4d8;
+    --au: #f0c040;
+    --fe: #c03030;
+    --zn: #5898d8;
+    --port-col: #60a8e0;
+    --dest-col: #70d090;
+    --smelter-col: #d04858;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); font-family: 'IBM Plex Mono', monospace; color: var(--text); height: 100vh; overflow: hidden; }
+
+  #map { width: 100vw; height: 100vh; }
+
+  /* ── header bar ── */
+  #header {
+    position: absolute; top: 0; left: 0; right: 0; z-index: 900;
+    background: linear-gradient(to bottom, rgba(11,14,20,.98), rgba(11,14,20,.0));
+    padding: 18px 24px 40px;
+    pointer-events: none;
+  }
+  #header h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px; font-weight: 700; letter-spacing: .1em;
+    text-transform: uppercase; color: #e8eef8;
+    display: inline-block;
+  }
+  #header .sub {
+    font-size: 10px; color: var(--muted); letter-spacing: .08em;
+    margin-top: 3px;
+  }
+
+  /* ── filter panel ── */
+  #filters {
+    position: absolute; top: 72px; left: 16px; z-index: 1000;
+    background: rgba(11,14,20,.92); border: 1px solid var(--border);
+    padding: 14px 16px; width: 214px;
+    backdrop-filter: blur(8px);
+  }
+  .filter-section { margin-bottom: 14px; }
+  .filter-section:last-child { margin-bottom: 0; }
+  .filter-label {
+    font-size: 9px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 8px; display: block;
+  }
+  .filter-row { display: flex; flex-wrap: wrap; gap: 5px; }
+  .fbtn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; font-weight: 500;
+    padding: 4px 9px; border: 1px solid; cursor: pointer;
+    background: transparent; transition: all .18s;
+    letter-spacing: .04em;
+  }
+  .fbtn.active { color: #0b0e14; }
+  .fbtn[data-comm="Cu"]     { border-color: var(--cu); color: var(--cu); }
+  .fbtn[data-comm="Cu"].active  { background: var(--cu); }
+  .fbtn[data-comm="Mo"]     { border-color: var(--mo); color: var(--mo); }
+  .fbtn[data-comm="Mo"].active  { background: var(--mo); }
+  .fbtn[data-comm="Li"]     { border-color: var(--li); color: var(--li); }
+  .fbtn[data-comm="Li"].active  { background: var(--li); }
+  .fbtn[data-comm="Au"]     { border-color: var(--au); color: var(--au); }
+  .fbtn[data-comm="Au"].active  { background: var(--au); }
+  .fbtn[data-comm="Fe"]     { border-color: var(--fe); color: var(--fe); }
+  .fbtn[data-comm="Fe"].active  { background: var(--fe); }
+  .fbtn[data-comm="Zn"]     { border-color: var(--zn); color: var(--zn); }
+  .fbtn[data-comm="Zn"].active  { background: var(--zn); }
+
+  .etype-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; padding: 4px 9px; border: 1px solid var(--border);
+    color: var(--muted); cursor: pointer; background: transparent;
+    transition: all .18s; width: 100%; text-align: left;
+    margin-bottom: 4px; letter-spacing: .04em;
+  }
+  .etype-btn.active { border-color: #3a4a6a; color: var(--text); background: rgba(60,80,120,.15); }
+
+  /* ── legend ── */
+  #legend {
+    position: absolute; bottom: 28px; left: 16px; z-index: 1000;
+    background: rgba(11,14,20,.92); border: 1px solid var(--border);
+    padding: 14px 16px; width: 214px;
+    backdrop-filter: blur(8px);
+  }
+  .leg-title { font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .leg-row { display: flex; align-items: center; gap: 9px; margin-bottom: 6px; font-size: 10px; color: var(--text); }
+  .leg-circle { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+  .leg-diamond { width: 10px; height: 10px; transform: rotate(45deg); flex-shrink: 0; }
+  .leg-square  { width: 10px; height: 10px; flex-shrink: 0; }
+  .leg-line  { width: 22px; height: 2px; flex-shrink: 0; }
+
+  /* ── info panel ── */
+  #info {
+    position: absolute; bottom: 28px; right: 16px; z-index: 1000;
+    background: rgba(11,14,20,.95); border: 1px solid var(--border);
+    padding: 16px 18px; width: 240px; min-height: 80px;
+    backdrop-filter: blur(8px);
+    display: none;
+  }
+  #info.visible { display: block; }
+  #info .info-type {
+    font-size: 9px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 6px;
+  }
+  #info .info-name { font-size: 14px; font-weight: 600; font-family: 'Barlow Condensed', sans-serif; letter-spacing: .04em; margin-bottom: 10px; }
+  #info .info-row  { font-size: 10px; color: var(--muted); margin-bottom: 4px; }
+  #info .info-row span { color: var(--text); }
+  #info-close {
+    position: absolute; top: 10px; right: 12px; font-size: 14px;
+    color: var(--muted); cursor: pointer; line-height: 1;
+  }
+
+  /* Leaflet overrides */
+  .leaflet-container { background: #06090f; }
+  .leaflet-control-zoom { display: none; }
+  .leaflet-tooltip {
+    background: rgba(11,14,20,.95) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: 11px !important;
+    border-radius: 0 !important;
+    padding: 6px 10px !important;
+    box-shadow: none !important;
+    white-space: nowrap;
+  }
+  .leaflet-tooltip::before { display: none !important; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Chile Mineral Supply Chain</h1>
+  <div class="sub">Extraction &rarr; Processing &rarr; Export Ports &rarr; Destination Countries &nbsp;&middot;&nbsp; 2024</div>
+</div>
+
+<div id="map"></div>
+
+<div id="filters">
+  <div class="filter-section">
+    <span class="filter-label">Commodity</span>
+    <div class="filter-row">
+      <button class="fbtn active" data-comm="Cu">Cu</button>
+      <button class="fbtn active" data-comm="Mo">Mo</button>
+      <button class="fbtn active" data-comm="Li">Li</button>
+      <button class="fbtn active" data-comm="Au">Au</button>
+      <button class="fbtn active" data-comm="Fe">Fe</button>
+      <button class="fbtn active" data-comm="Zn">Zn</button>
+    </div>
+  </div>
+  <div class="filter-section">
+    <span class="filter-label">Flow Layer</span>
+    <button class="etype-btn active" data-layer="internal">Mine &rarr; Plant &rarr; Port</button>
+    <button class="etype-btn active" data-layer="export">Port &rarr; Destination</button>
+  </div>
+</div>
+
+<div id="legend">
+  <div class="leg-title">Stage</div>
+  <div class="leg-row"><div class="leg-circle" style="background:#e07d28;border:2px solid #f0a060;"></div> Mine (extraction)</div>
+  <div class="leg-row"><div class="leg-diamond" style="background:var(--smelter-col);"></div> Smelter / Refinery</div>
+  <div class="leg-row"><div class="leg-circle" style="background:transparent;border:2px solid var(--port-col);"></div> Export Port</div>
+  <div class="leg-row"><div class="leg-square" style="background:transparent;border:2px solid var(--dest-col);"></div> Destination Country</div>
+  <div style="margin-top:10px;" class="leg-title">Flow</div>
+  <div class="leg-row"><div class="leg-line" style="background:rgba(200,140,60,.7);border-top: 2px dashed rgba(200,140,60,.7);"></div> Mine &rarr; Smelter</div>
+  <div class="leg-row"><div class="leg-line" style="background:rgba(180,80,80,.7);"></div> Smelter &rarr; Port</div>
+  <div class="leg-row"><div class="leg-line" style="background:rgba(100,150,200,.5);"></div> Mine &rarr; Port (direct)</div>
+  <div class="leg-row"><div class="leg-line" style="background:rgba(90,160,120,.4);"></div> Port &rarr; Country</div>
+</div>
+
+<div id="info">
+  <span id="info-close" onclick="document.getElementById('info').classList.remove('visible')">&#215;</span>
+  <div class="info-type" id="info-type"></div>
+  <div class="info-name" id="info-name"></div>
+  <div id="info-body"></div>
+</div>
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+
+const COMM_COLOR = {
+  Cu: '#e07d28', Mo: '#9baab8', Li: '#00c4d8', Au: '#f0c040', Fe: '#c03030', Zn: '#5898d8'
+};
+
+const nodes = [
+  // ── MINES ──────────────────────────────────────────────────────────────
+  // Copper — Codelco
+  { id:'chuqui',    name:'Chuquicamata',       lat:-22.32, lon:-68.93, stage:'mine',    comm:'Cu', operator:'Codelco',          prod:321,  product:'cathode' },
+  { id:'radtomic',  name:'Radomiro Tomic',      lat:-22.67, lon:-68.91, stage:'mine',    comm:'Cu', operator:'Codelco',          prod:278,  product:'cathode' },
+  { id:'ministro',  name:'Ministro Hales',      lat:-22.78, lon:-69.60, stage:'mine',    comm:'Cu', operator:'Codelco',          prod:84,   product:'cathode' },
+  { id:'gaby',      name:'Gabriela Mistral',    lat:-22.90, lon:-69.10, stage:'mine',    comm:'Cu', operator:'Codelco',          prod:57,   product:'cathode' },
+  { id:'elteniente',name:'El Teniente',         lat:-34.12, lon:-70.49, stage:'mine',    comm:'Cu', operator:'Codelco',          prod:453,  product:'cathode' },
+  { id:'andina',    name:'Andina',              lat:-33.08, lon:-70.26, stage:'mine',    comm:'Cu', operator:'Codelco',          prod:203,  product:'cathode' },
+  { id:'salvador',  name:'Salvador',            lat:-26.25, lon:-69.52, stage:'mine',    comm:'Cu', operator:'Codelco',          prod:61,   product:'cathode' },
+  // Copper — private
+  { id:'escondida', name:'Escondida',           lat:-24.27, lon:-69.06, stage:'mine',    comm:'Cu', operator:'BHP',              prod:1040, product:'concentrate' },
+  { id:'collahuasi',name:'Collahuasi',          lat:-20.97, lon:-68.72, stage:'mine',    comm:'Cu', operator:'JX/Glencore',      prod:471,  product:'concentrate' },
+  { id:'pelambres', name:'Los Pelambres',       lat:-31.75, lon:-70.73, stage:'mine',    comm:'Cu', operator:'Antofagasta Min.', prod:377,  product:'concentrate' },
+  { id:'spence',    name:'Spence',              lat:-22.58, lon:-69.38, stage:'mine',    comm:'Cu', operator:'BHP',              prod:222,  product:'concentrate' },
+  { id:'qb',        name:'Quebrada Blanca',     lat:-20.83, lon:-68.87, stage:'mine',    comm:'Cu', operator:'Teck',             prod:190,  product:'concentrate' },
+  { id:'losbronces',name:'Los Bronces',         lat:-33.17, lon:-70.32, stage:'mine',    comm:'Cu', operator:'Anglo American',   prod:223,  product:'concentrate' },
+  { id:'centinela', name:'Centinela',           lat:-22.88, lon:-69.50, stage:'mine',    comm:'Cu', operator:'Antofagasta Min.', prod:175,  product:'concentrate' },
+  { id:'caserones', name:'Caserones',           lat:-26.30, lon:-69.40, stage:'mine',    comm:'Cu', operator:'JX Holdings',     prod:125,  product:'concentrate' },
+  { id:'candelaria',name:'Candelaria',          lat:-27.43, lon:-70.22, stage:'mine',    comm:'Cu', operator:'Lundin',           prod:102,  product:'concentrate' },
+  { id:'sierragorda',name:'Sierra Gorda',       lat:-22.98, lon:-69.27, stage:'mine',    comm:'Cu', operator:'KGHM',             prod:96,   product:'concentrate' },
+  { id:'elabra',    name:'El Abra',             lat:-22.27, lon:-68.69, stage:'mine',    comm:'Cu', operator:'Freeport',         prod:74,   product:'cathode' },
+  { id:'zaldivar',  name:'Zaldívar',            lat:-23.98, lon:-69.30, stage:'mine',    comm:'Cu', operator:'Antofagasta Min.', prod:93,   product:'cathode' },
+  { id:'andacollo', name:'Carmen de Andacollo', lat:-30.24, lon:-71.08, stage:'mine',    comm:'Cu', operator:'Teck',             prod:55,   product:'cathode' },
+  { id:'antucoya',  name:'Antucoya',            lat:-23.67, lon:-69.48, stage:'mine',    comm:'Cu', operator:'Antofagasta Min.', prod:68,   product:'cathode' },
+  { id:'mantoverde',name:'Mantoverde',          lat:-27.53, lon:-70.40, stage:'mine',    comm:'Cu', operator:'Capstone',         prod:72,   product:'cathode' },
+  { id:'elsoldado', name:'El Soldado',          lat:-32.36, lon:-71.11, stage:'mine',    comm:'Cu', operator:'Anglo American',   prod:39,   product:'concentrate' },
+  // Molybdenum co-produced — shown at Cu mine locations
+  { id:'mo_elteniente', name:'El Teniente (Mo)', lat:-34.28, lon:-70.49, stage:'mine', comm:'Mo', operator:'Codelco', prod:null, product:'concentrate' },
+  { id:'mo_collahuasi', name:'Collahuasi (Mo)',  lat:-21.10, lon:-68.72, stage:'mine', comm:'Mo', operator:'JX/Glencore', prod:null, product:'concentrate' },
+  { id:'mo_pelambres',  name:'Los Pelambres (Mo)',lat:-31.90, lon:-70.73, stage:'mine', comm:'Mo', operator:'Antofagasta Min.', prod:null, product:'concentrate' },
+  // Lithium
+  { id:'salar',     name:'Salar de Atacama',    lat:-23.50, lon:-68.25, stage:'mine',    comm:'Li', operator:'SQM / Albemarle', prod:null, product:'LiCO₃' },
+  // Iron
+  { id:'colorados', name:'Los Colorados',       lat:-28.40, lon:-70.80, stage:'mine',    comm:'Fe', operator:'CMP',             prod:null, product:'pellets' },
+  { id:'cerronegro',name:'Cerro Negro Norte',   lat:-27.95, lon:-70.75, stage:'mine',    comm:'Fe', operator:'CMP',             prod:null, product:'pellets' },
+  // Zinc
+  { id:'eltoqui',   name:'El Toqui',            lat:-46.50, lon:-72.50, stage:'mine',    comm:'Zn', operator:'ENAMI',           prod:null, product:'concentrate' },
+
+  // ── SMELTERS ────────────────────────────────────────────────────────────
+  { id:'sm_chuqui',  name:'Chuquicamata Smelter',  lat:-22.32, lon:-69.18, stage:'smelter', comm:'Cu', operator:'Codelco' },
+  { id:'sm_caletones',name:'Caletones Smelter',    lat:-34.25, lon:-70.56, stage:'smelter', comm:'Cu', operator:'Codelco' },
+  { id:'sm_potrerillos',name:'Potrerillos Smelter',lat:-26.39, lon:-69.63, stage:'smelter', comm:'Cu', operator:'Codelco' },
+  { id:'sm_altonorte',name:'Altonorte Smelter',    lat:-23.78, lon:-70.40, stage:'smelter', comm:'Cu', operator:'Glencore' },
+  { id:'sm_paipote', name:'Paipote Smelter',       lat:-27.37, lon:-70.43, stage:'smelter', comm:'Cu', operator:'ENAMI' },
+  { id:'sm_chagres', name:'Chagres Smelter',       lat:-32.78, lon:-70.97, stage:'smelter', comm:'Cu', operator:'Anglo American' },
+  // Li processing
+  { id:'li_plant',   name:'Salar del Carmen (Li plant)', lat:-23.67, lon:-70.34, stage:'smelter', comm:'Li', operator:'SQM' },
+
+  // ── PORTS ────────────────────────────────────────────────────────────────
+  { id:'p_iquique',    name:'Iquique',           lat:-20.21, lon:-70.10, stage:'port', comm:'Cu',    products:'Cu cathode' },
+  { id:'p_patache',    name:'Patache',           lat:-20.80, lon:-70.16, stage:'port', comm:'Cu',    products:'Cu concentrate' },
+  { id:'p_angamos',    name:'Angamos',           lat:-23.09, lon:-70.37, stage:'port', comm:'Cu',    products:'Cu cathode, concentrate' },
+  { id:'p_mejillones', name:'Mejillones',        lat:-23.14, lon:-70.45, stage:'port', comm:'Cu',    products:'Cu cathode, concentrate, blister' },
+  { id:'p_antofagasta',name:'Antofagasta (ATI)', lat:-23.65, lon:-70.38, stage:'port', comm:'Cu',    products:'Cu cathode, Li compounds' },
+  { id:'p_coloso',     name:'Coloso',            lat:-23.76, lon:-70.43, stage:'port', comm:'Cu',    products:'Cu concentrate (Escondida)' },
+  { id:'p_barquito',   name:'Barquito',          lat:-27.07, lon:-70.81, stage:'port', comm:'Cu',    products:'Cu cathode, blister' },
+  { id:'p_caldera',    name:'Caldera',           lat:-27.08, lon:-70.82, stage:'port', comm:'Cu',    products:'Cu concentrate' },
+  { id:'p_coquimbo',   name:'Coquimbo',          lat:-29.96, lon:-71.33, stage:'port', comm:'Fe',    products:'Cu cathode, Fe pellets' },
+  { id:'p_losvilos',   name:'Los Vilos',         lat:-31.91, lon:-71.50, stage:'port', comm:'Cu',    products:'Cu concentrate (Los Pelambres)' },
+  { id:'p_ventanas',   name:'Ventanas',          lat:-32.74, lon:-71.47, stage:'port', comm:'Cu',    products:'Cu blister, cathode' },
+  { id:'p_sanantonio', name:'San Antonio',       lat:-33.59, lon:-71.60, stage:'port', comm:'Cu',    products:'Cu cathode' },
+  { id:'p_sanvicente', name:'San Vicente',       lat:-36.73, lon:-73.10, stage:'port', comm:'Cu',    products:'Cu general' },
+
+  // ── DESTINATION COUNTRIES ─────────────────────────────────────────────
+  { id:'d_china',    name:'China',         lat:31.23, lon: 121.47, stage:'country', comm:'Cu',  note:'Dominant buyer; cathode + concentrate' },
+  { id:'d_japan',    name:'Japan',         lat:35.68, lon: 139.69, stage:'country', comm:'Cu',  note:'Concentrate + cathode' },
+  { id:'d_korea',    name:'South Korea',   lat:37.57, lon: 126.98, stage:'country', comm:'Cu',  note:'Concentrate' },
+  { id:'d_taiwan',   name:'Taiwan',        lat:25.03, lon: 121.57, stage:'country', comm:'Cu',  note:'Cathode + concentrate' },
+  { id:'d_india',    name:'India',         lat:19.08, lon:  72.88, stage:'country', comm:'Cu',  note:'Blister, cathode' },
+  { id:'d_germany',  name:'Germany',       lat:53.55, lon:   9.99, stage:'country', comm:'Cu',  note:'Blister, cathode' },
+  { id:'d_spain',    name:'Spain',         lat:36.72, lon:  -4.42, stage:'country', comm:'Cu',  note:'Blister' },
+  { id:'d_netherlands',name:'Netherlands', lat:51.92, lon:   4.48, stage:'country', comm:'Cu',  note:'Blister, transit hub' },
+  { id:'d_usa',      name:'USA',           lat:32.00, lon: -95.37, stage:'country', comm:'Cu',  note:'Cathode' },
+  { id:'d_brazil',   name:'Brazil',        lat:-23.55, lon:-46.63, stage:'country', comm:'Cu',  note:'Li compounds' },
+];
+
+const edges = [
+  // ── Mine → Smelter ──────────────────────────────────────────────────
+  { from:'chuqui',    to:'sm_chuqui',      type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+  { from:'radtomic',  to:'sm_chuqui',      type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+  { from:'ministro',  to:'sm_chuqui',      type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+  { from:'elteniente',to:'sm_caletones',   type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+  { from:'andina',    to:'sm_caletones',   type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+  { from:'salvador',  to:'sm_potrerillos', type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+  { from:'losbronces',to:'sm_chagres',     type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+  { from:'elsoldado', to:'sm_chagres',     type:'mine_to_smelter', comm:'Cu', product:'concentrate' },
+
+  // ── Smelter → Port ──────────────────────────────────────────────────
+  { from:'sm_chuqui',      to:'p_angamos',    type:'smelter_to_port', comm:'Cu', product:'cathode' },
+  { from:'sm_chuqui',      to:'p_mejillones', type:'smelter_to_port', comm:'Cu', product:'cathode' },
+  { from:'sm_caletones',   to:'p_sanantonio', type:'smelter_to_port', comm:'Cu', product:'cathode' },
+  { from:'sm_caletones',   to:'p_ventanas',   type:'smelter_to_port', comm:'Cu', product:'cathode' },
+  { from:'sm_potrerillos', to:'p_barquito',   type:'smelter_to_port', comm:'Cu', product:'cathode' },
+  { from:'sm_altonorte',   to:'p_antofagasta',type:'smelter_to_port', comm:'Cu', product:'blister' },
+  { from:'sm_altonorte',   to:'p_mejillones', type:'smelter_to_port', comm:'Cu', product:'blister' },
+  { from:'sm_paipote',     to:'p_barquito',   type:'smelter_to_port', comm:'Cu', product:'blister' },
+  { from:'sm_paipote',     to:'p_caldera',    type:'smelter_to_port', comm:'Cu', product:'blister' },
+  { from:'sm_chagres',     to:'p_ventanas',   type:'smelter_to_port', comm:'Cu', product:'blister' },
+
+  // ── Mine → Port (direct — SX-EW cathode or dedicated concentrate) ───
+  // Dedicated port contracts
+  { from:'escondida', to:'p_coloso',      type:'mine_to_port', comm:'Cu', product:'concentrate', note:'Dedicated terminal' },
+  { from:'pelambres', to:'p_losvilos',    type:'mine_to_port', comm:'Cu', product:'concentrate', note:'Dedicated terminal' },
+  // Codelco cathode routing overrides
+  { from:'gaby',      to:'p_angamos',     type:'mine_to_port', comm:'Cu', product:'cathode', note:'Codelco routing' },
+  // Independent mines to nearest/designated port
+  { from:'collahuasi',to:'p_patache',     type:'mine_to_port', comm:'Cu', product:'concentrate' },
+  { from:'qb',        to:'p_iquique',     type:'mine_to_port', comm:'Cu', product:'concentrate' },
+  { from:'spence',    to:'p_angamos',     type:'mine_to_port', comm:'Cu', product:'concentrate' },
+  { from:'centinela', to:'p_mejillones',  type:'mine_to_port', comm:'Cu', product:'concentrate' },
+  { from:'sierragorda',to:'p_mejillones', type:'mine_to_port', comm:'Cu', product:'concentrate' },
+  { from:'caserones', to:'p_barquito',    type:'mine_to_port', comm:'Cu', product:'concentrate' },
+  { from:'candelaria',to:'p_barquito',    type:'mine_to_port', comm:'Cu', product:'concentrate' },
+  { from:'zaldivar',  to:'p_angamos',     type:'mine_to_port', comm:'Cu', product:'cathode' },
+  { from:'elabra',    to:'p_antofagasta', type:'mine_to_port', comm:'Cu', product:'cathode' },
+  { from:'antucoya',  to:'p_angamos',     type:'mine_to_port', comm:'Cu', product:'cathode' },
+  { from:'andacollo', to:'p_coquimbo',    type:'mine_to_port', comm:'Cu', product:'cathode' },
+  { from:'mantoverde',to:'p_barquito',    type:'mine_to_port', comm:'Cu', product:'cathode' },
+  // Molybdenum direct to port
+  { from:'mo_elteniente', to:'p_sanantonio', type:'mine_to_port', comm:'Mo', product:'Mo concentrate' },
+  { from:'mo_collahuasi', to:'p_patache',    type:'mine_to_port', comm:'Mo', product:'Mo concentrate' },
+  { from:'mo_pelambres',  to:'p_losvilos',   type:'mine_to_port', comm:'Mo', product:'Mo concentrate' },
+  // Lithium: mine → plant → port
+  { from:'salar',     to:'li_plant',      type:'mine_to_smelter', comm:'Li', product:'brine' },
+  { from:'li_plant',  to:'p_antofagasta', type:'smelter_to_port', comm:'Li', product:'LiCO₃' },
+  // Iron: mine → port
+  { from:'colorados', to:'p_coquimbo',    type:'mine_to_port', comm:'Fe', product:'pellets' },
+  { from:'cerronegro',to:'p_coquimbo',    type:'mine_to_port', comm:'Fe', product:'pellets' },
+  // Zinc: mine → port
+  { from:'eltoqui',   to:'p_sanvicente',  type:'mine_to_port', comm:'Zn', product:'concentrate' },
+
+  // ── Port → Destination ───────────────────────────────────────────────
+  // Coloso (Escondida concentrate — largest single port flow)
+  { from:'p_coloso', to:'d_china',  type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_coloso', to:'d_japan',  type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_coloso', to:'d_korea',  type:'port_to_country', comm:'Cu', product:'concentrate' },
+  // Patache (Collahuasi)
+  { from:'p_patache', to:'d_china',  type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_patache', to:'d_japan',  type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_patache', to:'d_india',  type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_patache', to:'d_china',  type:'port_to_country', comm:'Mo', product:'Mo concentrate' },
+  // Iquique (QB)
+  { from:'p_iquique', to:'d_china',  type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_iquique', to:'d_japan',  type:'port_to_country', comm:'Cu', product:'cathode' },
+  // Angamos (Codelco cathode + Spence/Zaldivar)
+  { from:'p_angamos', to:'d_china',   type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_angamos', to:'d_germany', type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_angamos', to:'d_taiwan',  type:'port_to_country', comm:'Cu', product:'concentrate' },
+  // Mejillones (mixed product)
+  { from:'p_mejillones', to:'d_china', type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_mejillones', to:'d_india', type:'port_to_country', comm:'Cu', product:'blister' },
+  { from:'p_mejillones', to:'d_japan', type:'port_to_country', comm:'Cu', product:'cathode' },
+  // Antofagasta ATI
+  { from:'p_antofagasta', to:'d_china', type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_antofagasta', to:'d_usa',   type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_antofagasta', to:'d_china', type:'port_to_country', comm:'Li', product:'LiCO₃' },
+  { from:'p_antofagasta', to:'d_japan', type:'port_to_country', comm:'Li', product:'LiCO₃' },
+  { from:'p_antofagasta', to:'d_korea', type:'port_to_country', comm:'Li', product:'LiCO₃' },
+  { from:'p_antofagasta', to:'d_usa',   type:'port_to_country', comm:'Li', product:'LiCO₃' },
+  // Barquito (Salvador, Paipote, Candelaria)
+  { from:'p_barquito', to:'d_china',  type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_barquito', to:'d_india',  type:'port_to_country', comm:'Cu', product:'blister' },
+  // Los Vilos (Los Pelambres concentrate)
+  { from:'p_losvilos', to:'d_china', type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_losvilos', to:'d_japan', type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_losvilos', to:'d_korea', type:'port_to_country', comm:'Cu', product:'concentrate' },
+  { from:'p_losvilos', to:'d_china', type:'port_to_country', comm:'Mo', product:'Mo concentrate' },
+  // Ventanas (blister from Chagres + Caletones refinery cathode)
+  { from:'p_ventanas', to:'d_germany',     type:'port_to_country', comm:'Cu', product:'blister' },
+  { from:'p_ventanas', to:'d_spain',       type:'port_to_country', comm:'Cu', product:'blister' },
+  { from:'p_ventanas', to:'d_netherlands', type:'port_to_country', comm:'Cu', product:'blister' },
+  // San Antonio (El Teniente cathode)
+  { from:'p_sanantonio', to:'d_china',   type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_sanantonio', to:'d_usa',     type:'port_to_country', comm:'Cu', product:'cathode' },
+  { from:'p_sanantonio', to:'d_germany', type:'port_to_country', comm:'Mo', product:'Mo concentrate' },
+  // Coquimbo (Andacollo Cu + Fe pellets)
+  { from:'p_coquimbo', to:'d_china', type:'port_to_country', comm:'Fe', product:'pellets' },
+  { from:'p_coquimbo', to:'d_japan', type:'port_to_country', comm:'Fe', product:'pellets' },
+  // San Vicente (Zn concentrate)
+  { from:'p_sanvicente', to:'d_china',   type:'port_to_country', comm:'Zn', product:'concentrate' },
+  { from:'p_sanvicente', to:'d_germany', type:'port_to_country', comm:'Zn', product:'concentrate' },
+];
+
+// ============================================================
+// MAP INIT
+// ============================================================
+
+const map = L.map('map', {
+  center: [-20, -60], zoom: 3,
+  worldCopyJump: false,
+  minZoom: 2, maxZoom: 12,
+  zoomControl: false
+});
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; CartoDB',
+  subdomains: 'abcd', maxZoom: 20
+}).addTo(map);
+
+// ============================================================
+// UTILITY
+// ============================================================
+
+const nodeById = {};
+nodes.forEach(n => nodeById[n.id] = n);
+
+// Pacific-westward crossing: adjust destination longitude
+const PACIFIC_WEST = new Set(['d_china','d_japan','d_korea','d_taiwan']);
+// Direct east (Americas or stay west): 'd_usa','d_brazil' stay as-is
+// Europe: 'd_germany','d_spain','d_netherlands' go east (positive lon)
+
+function adjustLon(fromNode, toNode) {
+  if (PACIFIC_WEST.has(toNode.id)) {
+    // Go west across Pacific
+    return toNode.lon - 360;
+  }
+  return toNode.lon;
+}
+
+function makeArc(lat1, lon1, lat2, lon2, lift = 14, steps = 40) {
+  const pts = [];
+  for (let i = 0; i <= steps; i++) {
+    const t = i / steps;
+    const lat = lat1 + (lat2 - lat1) * t;
+    const lon = lon1 + (lon2 - lon1) * t;
+    const up = Math.sin(Math.PI * t) * lift;
+    pts.push([lat + up, lon]);
+  }
+  return pts;
+}
+
+function commColor(comm) {
+  return COMM_COLOR[comm] || '#aaa';
+}
+
+function sizeForProd(prod) {
+  if (!prod) return 5;
+  if (prod >= 800) return 13;
+  if (prod >= 400) return 11;
+  if (prod >= 200) return 9;
+  if (prod >= 100) return 7.5;
+  return 6;
+}
+
+// ============================================================
+// LAYER GROUPS
+// ============================================================
+
+const layerNodes = L.layerGroup().addTo(map);
+const layerInternal = L.layerGroup().addTo(map);   // mine->smelter, smelter->port, mine->port
+const layerExport = L.layerGroup().addTo(map);     // port->country
+
+// track all drawn items for filter refresh
+const drawnItems = { nodes: {}, edges: [] };
+
+// ============================================================
+// DRAW NODES
+// ============================================================
+
+function showInfo(node) {
+  const panel = document.getElementById('info');
+  document.getElementById('info-type').textContent = node.stage.toUpperCase() + ' · ' + node.comm;
+  document.getElementById('info-name').textContent = node.name;
+  let body = '';
+  if (node.operator) body += `<div class="info-row">Operator <span>${node.operator}</span></div>`;
+  if (node.prod) body += `<div class="info-row">Cu 2024 <span>${node.prod.toLocaleString()} kMT</span></div>`;
+  if (node.product) body += `<div class="info-row">Product <span>${node.product}</span></div>`;
+  if (node.products) body += `<div class="info-row">Handles <span>${node.products}</span></div>`;
+  if (node.note) body += `<div class="info-row">Note <span>${node.note}</span></div>`;
+  document.getElementById('info-body').innerHTML = body;
+  panel.classList.add('visible');
+}
+
+function drawNodes() {
+  layerNodes.clearLayers();
+  drawnItems.nodes = {};
+
+  nodes.forEach(node => {
+    const col = commColor(node.comm);
+    const stage = node.stage;
+    let marker;
+
+    const ttext = `<b>${node.name}</b><br/>${stage} · ${node.comm}${node.prod ? '<br/>'+node.prod+' kMT' : ''}`;
+
+    if (stage === 'mine') {
+      const r = sizeForProd(node.prod);
+      const icon = L.divIcon({
+        className: '',
+        iconSize: [r*2, r*2],
+        iconAnchor: [r, r],
+        html: `<svg width="${r*2}" height="${r*2}"><circle cx="${r}" cy="${r}" r="${r-1}" fill="${col}" fill-opacity=".85" stroke="${col}" stroke-width="1.5"/></svg>`
+      });
+      marker = L.marker([node.lat, node.lon], { icon })
+        .bindTooltip(ttext, { direction: 'top', offset: [0, -r] });
+
+    } else if (stage === 'smelter') {
+      const s = 10;
+      const icon = L.divIcon({
+        className: '',
+        iconSize: [s*2, s*2],
+        iconAnchor: [s, s],
+        html: `<svg width="${s*2}" height="${s*2}"><polygon points="${s},2 ${s*2-2},${s} ${s},${s*2-2} 2,${s}" fill="${col}" fill-opacity=".8" stroke="${col}" stroke-width="1.5"/></svg>`
+      });
+      marker = L.marker([node.lat, node.lon], { icon })
+        .bindTooltip(ttext, { direction: 'top', offset: [0, -s] });
+
+    } else if (stage === 'port') {
+      const icon = L.divIcon({
+        className: '',
+        iconSize: [16, 16],
+        iconAnchor: [8, 8],
+        html: `<svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="none" stroke="#60a8e0" stroke-width="2"/><circle cx="8" cy="8" r="2" fill="#60a8e0"/></svg>`
+      });
+      marker = L.marker([node.lat, node.lon], { icon })
+        .bindTooltip(ttext, { direction: 'right', offset: [8, 0] });
+
+    } else if (stage === 'country') {
+      const icon = L.divIcon({
+        className: '',
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
+        html: `<svg width="20" height="20"><rect x="3" y="3" width="14" height="14" fill="none" stroke="#70d090" stroke-width="2"/></svg>`
+      });
+      marker = L.marker([node.lat, node.lon], { icon })
+        .bindTooltip(`<b>${node.name}</b>${node.note ? '<br/>'+node.note : ''}`, { direction: 'right', offset: [10, 0] });
+    }
+
+    if (marker) {
+      marker.on('click', () => showInfo(node));
+      marker.addTo(layerNodes);
+      drawnItems.nodes[node.id] = { marker, node };
+    }
+  });
+}
+
+// ============================================================
+// DRAW EDGES
+// ============================================================
+
+function getEdgeStyle(type, comm) {
+  const col = commColor(comm);
+  const hex = col;
+  switch(type) {
+    case 'mine_to_smelter':
+      return { color: col, weight: 1.5, opacity: 0.75, dashArray: '5 4' };
+    case 'smelter_to_port':
+      return { color: col, weight: 2,   opacity: 0.8 };
+    case 'mine_to_port':
+      return { color: col, weight: 1,   opacity: 0.55 };
+    case 'port_to_country':
+      return { color: col, weight: 1.5, opacity: 0.4 };
+    default:
+      return { color: '#888', weight: 1, opacity: 0.4 };
+  }
+}
+
+function drawEdges() {
+  layerInternal.clearLayers();
+  layerExport.clearLayers();
+  drawnItems.edges = [];
+
+  edges.forEach(edge => {
+    const from = nodeById[edge.from];
+    const to = nodeById[edge.to];
+    if (!from || !to) return;
+
+    const style = getEdgeStyle(edge.type, edge.comm);
+    const isExport = (edge.type === 'port_to_country');
+    const layer = isExport ? layerExport : layerInternal;
+
+    let pts;
+    if (isExport) {
+      // arced route
+      const toLon = adjustLon(from, to);
+      const liftAmt = Math.abs(from.lat - to.lat) > 20 ? 18 : 10;
+      pts = makeArc(from.lat, from.lon, to.lat, toLon, liftAmt, 50);
+    } else {
+      pts = [[from.lat, from.lon], [to.lat, to.lon]];
+    }
+
+    const line = L.polyline(pts, {
+      ...style,
+      interactive: true
+    });
+    line.bindTooltip(`${from.name} → ${to.name}<br/>${edge.product}`, { sticky: true });
+    line.addTo(layer);
+    drawnItems.edges.push({ line, edge, layer });
+  });
+}
+
+// ============================================================
+// FILTERS
+// ============================================================
+
+let activeComms = new Set(['Cu','Mo','Li','Au','Fe','Zn']);
+let activeLayers = new Set(['internal','export']);
+
+function applyFilters() {
+  // nodes
+  Object.values(drawnItems.nodes).forEach(({ marker, node }) => {
+    if (activeComms.has(node.comm)) {
+      if (!map.hasLayer(marker)) layerNodes.addLayer(marker);
+    } else {
+      layerNodes.removeLayer(marker);
+    }
+  });
+
+  // edges
+  drawnItems.edges.forEach(({ line, edge, layer }) => {
+    const commOk = activeComms.has(edge.comm);
+    const isExport = edge.type === 'port_to_country';
+    const layerOk = isExport ? activeLayers.has('export') : activeLayers.has('internal');
+    if (commOk && layerOk) {
+      if (!layer.hasLayer(line)) layer.addLayer(line);
+    } else {
+      layer.removeLayer(line);
+    }
+  });
+}
+
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const comm = btn.dataset.comm;
+    if (btn.classList.toggle('active')) {
+      activeComms.add(comm);
+    } else {
+      activeComms.delete(comm);
+    }
+    applyFilters();
+  });
+});
+
+document.querySelectorAll('.etype-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const lyr = btn.dataset.layer;
+    if (btn.classList.toggle('active')) {
+      activeLayers.add(lyr);
+    } else {
+      activeLayers.delete(lyr);
+    }
+    applyFilters();
+  });
+});
+
+// ============================================================
+// INIT
+// ============================================================
+
+drawNodes();
+drawEdges();
+</script>
+</body>
+</html>
