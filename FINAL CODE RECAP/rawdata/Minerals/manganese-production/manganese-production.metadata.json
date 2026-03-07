@@ -1,0 +1,34 @@
+{
+  "chart": {
+    "citation": "USGS - Mineral Commodity Summaries (2025); USGS - Historical Statistics for Mineral and Material Commodities (2024)",
+    "originalChartUrl": "https://ourworldindata.org/explorers/minerals?Mineral=Manganese&Metric=Production&Type=Mine&Share+of+global=false&country=OWID_WRL~AUS~CHL~CHN~USA",
+    "selection": [
+      "World",
+      "Australia",
+      "Chile",
+      "China",
+      "United States"
+    ]
+  },
+  "columns": {
+    "production|Manganese|Mine|tonnes": {
+      "titleShort": "Manganese production",
+      "titleLong": "Manganese production",
+      "descriptionShort": "Based on mined, rather than [refined](#dod:refined-production), production. Measured in tonnes.",
+      "descriptionProcessing": "- The majority of the data is sourced from USGS, supplemented by BGS data where available. Where both overlap, USGS data is prioritized.\n- As BGS does not provide global data, we calculated the world total by summing the data from individual countries, using this as a cross-check against USGS global figures.\n- Due to the inherent uncertainties in the data for certain minerals and countries, we allowed a maximum deviation of 10% between the global totals reported by USGS and the calculated ones for BGS. If the deviation exceeded this threshold, we excluded the BGS data.\n- The calculated global total from BGS data was used only on exceptional occasions, after ensuring that the resulting aggregate was sufficiently complete.\n- Both BGS and USGS datasets include numerous notes and footnotes. We have retained most of these, making only minor edits or deletions where necessary to maintain clarity.",
+      "shortUnit": "t",
+      "unit": "tonnes",
+      "timespan": "1900-2024",
+      "type": "Numeric",
+      "owidVariableId": 1131122,
+      "shortName": "production_manganese_mine_tonnes",
+      "lastUpdated": "2025-12-15",
+      "nextUpdate": "2026-12-15",
+      "citationShort": "USGS - Mineral Commodity Summaries (2025); USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data",
+      "citationLong": "USGS - Mineral Commodity Summaries (2025); USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data. “Manganese production” [dataset]. United States Geological Survey, “Mineral Commodity Summaries”; United States Geological Survey, “Historical Statistics for Mineral and Material Commodities” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1131122.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-01-08",
+  "activeFilters": {}
+}
