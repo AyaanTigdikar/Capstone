@@ -1,0 +1,100 @@
+COMMIT:1befaa201759ce61c08c3f475326406681660646 2026-02-20 15:55:25 +0000
+
+Case studies/Chile/Code/Pre-processing/Chile_Part0_Setup.ipynb
+Case studies/Chile/Code/Pre-processing/Chile_Part1_Production.ipynb
+Case studies/Chile/Code/Pre-processing/Chile_Part2_Processing_Edges.ipynb
+Case studies/Chile/Code/Pre-processing/Chile_Part3_Export_Destinations.ipynb
+Case studies/Chile/Code/Pre-processing/Chile_Part4_Cleanup_Validation.ipynb
+Case studies/Chile/Code/Pre-processing/Chile_Part5_Distance_Analysis.ipynb
+Case studies/Chile/Code/html_viz_file.ipynb
+COMMIT:bfa0c0df8015ecccf8ffd3829822d904a5641461 2026-02-19 13:33:16 +0000
+
+Case studies/Chile/Code/Chile_print_diagnostics.ipynb
+COMMIT:3aa9d4cf2d93c1ff01a658a4a0ffd12e48e75a57 2026-02-16 18:54:01 +0000
+
+Case studies/Chile/Code/Chile_MainAn.ipynb
+Case studies/Chile/Code/Chile_viz.ipynb
+COMMIT:63e80ffa0a44e5c3142bbb882083475c76efb310 2026-02-13 14:49:11 +0000
+
+Case studies/Chile/Scapre.ipynb
+COMMIT:c370b34a816a97eca9ab2c24d4f87f07d0245204 2026-02-12 18:27:39 +0000
+
+Case studies/Chile/Chile-SNA.ipynb
+COMMIT:e3f876e38f47d34d5ee9a853cb61dcc4f43c4223 2026-02-12 18:17:29 +0000
+
+Case studies/Chile/Chile_Network_Analysis.ipynb
+COMMIT:a4a1690ea021e62ffeb59187e895cae8f59ec8a9 2026-01-27 08:52:00 +0000
+
+code/Descriptive Statistics and Regressions.ipynb
+COMMIT:22483bdda8acfb0688315ff2587414c334131edd 2026-01-26 21:55:49 +0000
+
+code/ML_model1.ipynb
+code/ML_model2.ipynb
+code/ML_model3.ipynb
+COMMIT:65a4320bcfc4341451b76351fefc8e4429133262 2026-01-26 20:01:41 +0000
+
+figures/Generate_reg_table.ipynb
+COMMIT:1577a39de401e97a0f6d4a8c3a5f732c4d86bfe0 2026-01-26 18:35:32 +0000
+
+code/ML_models.ipynb
+COMMIT:90fc4651aebc1972bafac493db4cecd35c9f5ff6 2026-01-26 15:15:56 +0000
+
+code/ML-PCA_clusters.ipynb
+COMMIT:8069017b352fa5f5136a0323194aab4a303ea6b6 2026-01-26 09:49:11 +0000
+
+code/Imputing.ipynb
+COMMIT:a1f3e24508072077065aeb9deccfb07c702402d7 2026-01-25 17:50:39 +0000
+
+code/Clustering_Ayaan_25012026.ipynb
+COMMIT:d796c022d1461b21a2f07dafd725e09de0b294f3 2026-01-22 14:19:51 +0000
+
+code/4_LASSO_RF.ipynb
+COMMIT:4e046cd622739b1501ed6396a4f5131bc9695efc 2026-01-18 23:37:14 +0000
+
+code/Clustering_Ayaan_18012026.ipynb
+code/Imputing.ipynb
+COMMIT:af006d4b9d2501ec294781fb93698daf34e4c466 2026-01-18 14:09:40 +0400
+
+code/natural_resource_clustering_reserves.ipynb
+COMMIT:ab13e482638d9671e78c835412d62f66c0a9d7b2 2026-01-11 20:02:03 +0000
+
+Emilio prices/commodities price code.ipynb
+COMMIT:8cf0cd14a92709feb4735c22c79ca8157a89e29f 2026-01-04 10:55:18 +0000
+
+code/MissingCheck.ipynb
+COMMIT:83042960e802fa7e474362a43b6c9415e6d12153 2025-12-30 14:20:51 +0000
+
+code/3_LASSO_RF.ipynb
+COMMIT:9910f19042352cd03eed64eefaa54cbbdbde7c2a 2025-12-25 16:37:24 +0000
+
+code/4_variable_selection.ipynb
+COMMIT:11d58d10b7658d3b8a8adfc89a5ec14627c50494 2025-12-24 11:05:36 +0100
+
+code/natural_resource_reserves.ipynb
+COMMIT:fa50abd2d92bc47ae6d1a2e6b929427bd43c8c96 2025-12-18 10:36:59 +0000
+
+code/1_cleaning_master_data.ipynb
+code/2_LL_clustering.ipynb
+code/3_label_clustering.ipynb
+COMMIT:e249a0dee68b5f0d62577c00de50b9ba74053960 2025-11-25 17:02:35 +0000
+
+code/cleaning_master_data.ipynb
+code/second_clustering_Ignacio.ipynb
+COMMIT:7adff3d3dbcad0f682a160494c82377dd50d81ae 2025-11-17 12:39:38 +0000
+
+code/Clustering_Ignacio_20251112.ipynb
+COMMIT:22ae52b56ab2268be2b8fea3794977b6a9604e7d 2025-11-17 12:30:26 +0000
+
+code/data_cleaning_clustering.ipynb
+COMMIT:3d9b5ebbd7d4d4f37d0b515d90529a41f3070dbc 2025-11-13 11:11:17 +0000
+
+code/clustering.ipynb
+COMMIT:dcd82ffb164d42dae8900fcc44efe09bc47ca23d 2025-11-12 23:55:15 +0000
+
+code/Clustering_Ayaan_12112025.ipynb
+COMMIT:a35aae01f35d89dc4f83be8182cc507e9bdc2fd8 2025-10-28 12:42:20 +0000
+
+code/trade_cleaning.ipynb
+COMMIT:cf1cd7ac228fa40b726b2cd3d29c6a7a9651d243 2025-10-14 11:22:47 +0100
+
+code/comtrade_api.ipynb

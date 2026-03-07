@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"/Users/leoss/Desktop/GitHub/Capstone/rawdata\" && python3 -c \"\nimport pandas as pd\n\nem = pd.read_csv\\('production_values_w_prices-EM.csv', index_col=0\\)\nl1 = pd.read_csv\\('NR_Production-Price-Reserves-LEO.csv'\\)\nl2 = pd.read_csv\\('NR_final_LEO.csv'\\)\n\nprint\\('=== EMILIO \\(EM\\) ==='\\)\nprint\\('Shape:', em.shape\\)\nprint\\('Columns:', list\\(em.columns\\)\\)\nprint\\('Metrics:', em['Metric'].unique\\(\\) if 'Metric' in em.columns else 'N/A'\\)\nprint\\('Resources:', sorted\\(em['Resource'].unique\\(\\)\\)\\)\nprint\\('Year range:', em['Year'].min\\(\\), '-', em['Year'].max\\(\\)\\)\nprint\\('Countries:', em['Country'].nunique\\(\\)\\)\nprint\\(\\)\n\nprint\\('=== LEO L1 \\(NR_Production-Price-Reserves-LEO\\) ==='\\)\nprint\\('Shape:', l1.shape\\)\nprint\\('Columns:', list\\(l1.columns\\)\\)\nprint\\('Metrics:', l1['Metric'].unique\\(\\) if 'Metric' in l1.columns else 'N/A'\\)\nprint\\('Resources:', sorted\\(l1['Resource'].unique\\(\\)\\)\\)\nprint\\('Year range:', l1['Year'].min\\(\\), '-', l1['Year'].max\\(\\)\\)\nprint\\('Country Code col:', 'Country Code' in l1.columns\\)\nprint\\(\\)\n\nprint\\('=== LEO L2 \\(NR_final_LEO\\) ==='\\)\nprint\\('Shape:', l2.shape\\)\nprint\\('Columns:', list\\(l2.columns\\)\\)\nprint\\('Metrics:', l2['Metric'].unique\\(\\) if 'Metric' in l2.columns else 'N/A'\\)\nprint\\('Resources:', sorted\\(l2['Resource'].unique\\(\\)\\)\\)\nprint\\('Year range:', l2['Year'].min\\(\\), '-', l2['Year'].max\\(\\)\\)\nprint\\('Countries:', l2['Country'].nunique\\(\\)\\)\n\")",
+      "Bash(xargs ls -lh)",
+      "Bash(grep -rn \"natural_resources_final_clean\" --include=\"*.ipynb\" --include=\"*.py\" /Users/leoss/Desktop/GitHub/ 2>/dev/null | grep -v \".ipynb_checkpoints\")",
+      "Bash(grep -rn \"natural_resources_final_clean\" --include=\"*.ipynb\" --include=\"*.py\" /Users/leoss/ 2>/dev/null | grep -v \".ipynb_checkpoints\" | grep -v \"/Portfolio/\")",
+      "Bash(while kill -0 16649 2>/dev/null; do sleep 5; done; cat /private/tmp/claude-501/-Users-leoss-Desktop-GitHub-Capstone/tasks/bndzwwnp3.output; echo \"EXIT:$?\")",
+      "Bash(xattr -l /Users/leoss/Downloads/natural_resources_final_clean.csv)",
+      "Bash(mdls /Users/leoss/Downloads/natural_resources_final_clean.csv)",
+      "Bash(xargs ls -la)",
+      "Bash(find /Users/leoss/Downloads -name \"*.csv\" -newer /Users/leoss/Downloads -newermt \"2026-01-15\" ! -newermt \"2026-01-21\" 2>/dev/null | xargs ls -lh 2>/dev/null | sort -k6,7)",
+      "Bash(find /Users/leoss/Downloads -name \"*.csv\" -newermt \"2026-01-15\" ! -newermt \"2026-01-21\" 2>/dev/null | xargs ls -lh 2>/dev/null)",
+      "Bash(python3 -c \"\nimport pandas as pd\ndf = pd.read_csv\\('/Users/leoss/Downloads/natural_resources_complete.csv'\\)\nprint\\('Shape:', df.shape\\)\nprint\\('Columns:', list\\(df.columns\\)\\)\nprint\\('Metrics:', df['Metric'].unique\\(\\) if 'Metric' in df.columns else 'N/A'\\)\n\" 2>&1)",
+      "Bash(grep -rn \"natural_resources_complete\\\\|natural_resources_final_clean\\\\|final_clean\\\\|unit_consistency\" --include=\"*.ipynb\" --include=\"*.py\" /Users/leoss/Documents/GitHub/Capstone/ 2>/dev/null | grep -v \".ipynb_checkpoints\" | head -30)",
+      "Bash(find /Users/leoss/Documents/GitHub/Capstone -name *.ipynb -o -name *.py)",
+      "Bash(find /Users/leoss/Desktop /Users/leoss/Documents -name \"*.ipynb\" -newermt \"2026-01-15\" ! -newermt \"2026-01-20\" 2>/dev/null | grep -v \".ipynb_checkpoints\" | xargs ls -lh 2>/dev/null)",
+      "Bash(find /Users/leoss/Desktop /Users/leoss/Documents -name \"*.ipynb\" 2>/dev/null | xargs stat -f \"%Sm %N\" -t \"%Y-%m-%d %H:%M\" 2>/dev/null | grep \"2026-01-1[5-9]\\\\|2026-01-20\" | grep -v \".ipynb_checkpoints\" | sort)"
+    ]
+  }
+}
