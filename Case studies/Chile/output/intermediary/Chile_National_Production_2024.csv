@@ -1,0 +1,49 @@
+MINERAL,COCHILCO_LABEL,NATIONAL_PRODUCTION_2024,UNIT,USD_PRICE,PRICE_UNIT,PRICE_SOURCE,EST_VALUE_USD,N_FACILITIES_ALLOCATED,PRODUCTION_ALLOCATED,ALLOCATION_COVERAGE_PCT,HAS_SUPPLY_CHAIN
+Copper,COBRE (Miles de TM de fino) / Copper (kMT Fine Content)(1),5506.030110239221,kMT,9146.769964199999,USD/MT,COCHILCO Tabla 96 — LME Grade A Settlement 2024,50362390834.316925,31,5281.605996945521,95.92403040302389,True
+Lithium Compounds,COMPUESTOS DE LITIO / Lithium Compounds,325484.0,MT,13250.0,USD/MT,"Approx. LiCO3 price (dominant compound, aggregate)",4312663000.0,0,0.0,0.0,True
+Lithium Carbonate,CARBONATO DE LITIO / Lithium Carbonate,250605.0,MT,13250.0,USD/MT,COCHILCO Tabla 98,3320516250.0,9,250605.0,100.0,True
+Gold,ORO (Kg de fino) / Gold (Kg Fine Content),37247.0,Kg,76580.94190589999,USD/kg,COCHILCO Tabla 97 — Handy & Harman 2024,2852410343.169057,20,28890.011999999995,77.56332590544204,True
+Molybdenum,MOLIBDENO (TM de fino) / Molybdenum (MT Fine Content),38486.9,MT,46953.996759999995,USD/MT,"COCHILCO Tabla 97 — Molybdenum Oxide, US Dealers 2024",1807113777.902444,12,37901.5,98.47896297181637,True
+Iodine,YODO / Iodine,22711.0,MT,76689.5,USD/MT,COCHILCO Tabla 98 — Crude Iodine 2024 (midpoint),1741695234.5,21,22711.0,100.0,True
+Silver,PLATA (Kg de fino) / Silver (Kg Fine Content),1354564.0,Kg,906.6449173950001,USD/kg,COCHILCO Tabla 97 — Handy & Harman 2024,1228108565.886241,12,1184914.5320000001,87.47571410431696,True
+Iron,HIERRO (Miles de TM de fino) / Iron (kMT Fine Content),9770.9475539,kMT,110.0,USD/MT,Platts IODEX 62% Fe CFR China 2024 avg,1074804230.929,6,9770.947553900001,100.00000000000003,True
+Nitrates,NITRATOS / Nitrates,756262.0,MT,1258.0,USD/MT,"Implied FOB: COCHILCO Tabla 7/9 ($52.42M / 41,657 MT)",951377596.0,21,756262.0,100.0,True
+Lithium Sulfate,SULFATO DE LITIO / Lithium Sulfate,53515.0,MT,9275.0,USD/MT,"~0.70x LiCO3 midpoint (LITHIUM_PRICE_MULTIPLIERS, pipeline_constants.py)",496351625.0,9,53515.0,100.0,True
+Lithium Hydroxide,HIDRÓXIDO DE LITIO / Lithium Hydroxide,21364.0,MT,14575.000000000002,USD/MT,"~1.10x LiCO3 midpoint (LITHIUM_PRICE_MULTIPLIERS, pipeline_constants.py)",311380300.00000006,9,21364.0,100.0,True
+Potash (KCl),CLORURO DE POTASIO / Potash,1063180.0,MT,260.0,USD/MT,USGS MCS 2024 avg KCl FOB,276426800.0,1,1063180.0,100.0,False
+Salt (NaCl),CLORURO DE SODIO / Sodium Chloride,8938398.0,MT,22.0,USD/MT,"Implied FOB: COCHILCO Tabla 7/9 ($140.6M / 6,400 kMT)",196644756.0,2,8938398.0,100.0,False
+Boric Acid,ÁCIDO BÓRICO / Boric Acid,99846.0,MT,988.2,USD/MT,COCHILCO Tabla 98 — Boric Acid Technical Grade 2024 (midpoint),98667817.2,1,99846.0,100.0,False
+Zinc,ZINC (TM de fino) / Zinc (MT Fine Content),31959.0,MT,2779.3644339999996,USD/MT,COCHILCO Tabla 97 — LME HG Settlement 2024,88825707.94620599,2,31959.0,100.0,True
+Boron (Ulexite),ULEXITA / Ulexite,252317.0,MT,301.0,USD/MT,"Implied FOB: COCHILCO Tabla 7/9 ($9.4M / 31,176 MT)",75947417.0,3,252317.0,100.0,True
+Calcium Carbonate,CARBONATO DE CALCIO / Calcium Carbonate,6219001.0,MT,12.0,USD/MT,USGS MCS 2024 avg crushed limestone (aggregate proxy),74628012.0,0,0.0,0.0,False
+Limestone,CALIZA / Limestone,5479483.0,MT,12.0,USD/MT,USGS MCS 2024 avg crushed limestone,65753796.0,0,0.0,0.0,False
+Silica Ores,RECURSOS SILÍCEOS / Silica Ores,1335898.0,MT,45.0,USD/MT,USGS MCS 2024 avg industrial sand/gravel (aggregate),60115410.0,0,0.0,0.0,False
+Silica Sand,ARENA SILÍCEA / Silica Sand,792211.0,MT,40.0,USD/MT,USGS MCS 2024 avg industrial silica sand,31688440.0,5,762597.0,96.26185448068759,False
+Quartz,CUARZO / Quartz,543687.0,MT,50.0,USD/MT,USGS MCS 2024 avg industrial quartz,27184350.0,3,500649.0,92.08404835870638,False
+Copper Sulfate,SULFATO DE COBRE / Copper Sulfate,11951.0,MT,1800.0,USD/MT,Industry avg CuSO4·5H₂O 2024,21511800.0,0,0.0,0.0,True
+Pumicite,PUMICITA / Pumicite,577628.0,MT,35.0,USD/MT,USGS MCS 2024 avg pumice/pumicite,20216980.0,4,521358.0,90.25843622539074,False
+Talc,TALCO / Talc,106140.0,MT,150.0,USD/MT,USGS MCS 2024 avg talc,15921000.0,0,0.0,0.0,False
+Gypsum,YESO / Gypsum,1021560.0,MT,10.0,USD/MT,USGS MCS 2024 avg crude gypsum,10215600.0,1,936031.0,91.62760875523709,False
+Kaolin,CAOLÍN / Kaolin,53736.0,MT,175.0,USD/MT,USGS MCS 2024 avg kaolin,9403800.0,2,53736.0,100.0,False
+Diatomite,DIATOMITA / Diatomite,18937.0,MT,400.0,USD/MT,USGS MCS 2024 avg diatomite,7574800.0,1,1614.0,8.522997306859587,False
+Coquina,COQUINA / Coquina,542068.0,MT,12.0,USD/MT,USGS MCS 2024 avg crushed limestone (proxy for coquina),6504816.0,0,0.0,0.0,False
+Clay,ARCILLAS / Clay,109792.0,MT,30.0,USD/MT,USGS MCS 2024 avg common clay (aggregate proxy),3293760.0,0,0.0,0.0,False
+Bauxitic Clay,ARCILLA BAUXÍTICA / Bauxitic Clay,53591.0,MT,50.0,USD/MT,USGS MCS 2024 avg bauxitic kaolin (estimate),2679550.0,0,0.0,0.0,False
+Calcium Carbonate,CARBONATO DE CALCIO BLANCO / White Calcium Carbonate,197450.0,MT,12.0,USD/MT,USGS MCS 2024 avg crushed limestone (aggregate proxy),2369400.0,0,0.0,0.0,False
+Lead,PLOMO (TM de fino) / Lead (MT Fine Content),367.0,MT,2072.563262,USD/MT,COCHILCO Tabla 97 — LME Settlement 2024,760630.7171540001,0,0.0,0.0,False
+Dolomite,DOLOMITA / Dolomite,30404.0,MT,25.0,USD/MT,USGS MCS 2024 avg dolomite,760100.0,1,30404.0,100.0,False
+Phosphate Rocks,ROCAS FOSFÓRICAS / Phosphate Rocks,5406.0,MT,120.0,USD/MT,USGS MCS 2024 avg phosphate rock,648720.0,1,459.0,8.49056603773585,False
+Perlite,PERLITA / Perlite,4213.0,MT,125.0,USD/MT,USGS MCS 2024 avg perlite,526625.0,0,0.0,0.0,False
+Bentonite,BENTONITA / Bentonite,2465.0,MT,80.0,USD/MT,USGS MCS 2024 avg bentonite,197200.0,1,2465.0,100.0,False
+Peat,TURBA / Peat,3836.0,MT,32.0,USD/MT,USGS MCS 2024 avg peat,122752.0,0,0.0,0.0,False
+Zeolite,ZEOLITA / Zeolite,230.0,MT,150.0,USD/MT,USGS MCS 2024 avg natural zeolite,34500.0,1,230.0,100.0,False
+Baritina,BARITINA / Barite,,MT,,,,,0,0.0,0.0,False
+Compuestos De Boro,COMPUESTOS DE BORO / Boron Compounds (2),252317.0,MT,,,,,0,0.0,0.0,False
+Compuestos De Potasio,COMPUESTOS DE POTASIO / Potassium Compounds,1063180.0,MT,,,,,0,0.0,0.0,False
+Feldespato,FELDESPATO / Feldspar,4.0,MT,,,,,0,0.0,0.0,False
+Pirofilita,PIROFILITA / Pyrophyllite,,MT,,,,,0,0.0,0.0,False
+Fosforita,FOSFORITA / Phosphorite,4947.0,MT,,,,,0,0.0,0.0,False
+Guano,GUANO / Guano,459.0,MT,,,,,0,0.0,0.0,False
+Carbón (Tm Netas),"CARBÓN (TM netas) / Coal (MT, Net)",17486.0,MT,,,,,0,0.0,0.0,False
+Petróleo Crudo (Metros Cúbicos),PETRÓLEO CRUDO (Metros cúbicos) / Crude oil (CBM),144658.0,MT,,,,,0,0.0,0.0,False
+Gas Natural (Millones Metros Cúbicos),GAS NATURAL (Millones metros cúbicos) / Natural gas (Mn CBM),1328596.0,MT,,,,,0,0.0,0.0,False

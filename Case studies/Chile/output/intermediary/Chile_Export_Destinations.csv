@@ -1,0 +1,1052 @@
+FROM_NAME,FROM_TYPE,FROM_LAT,FROM_LON,TO_NAME,TO_TYPE,TO_LAT,TO_LON,EDGE_TYPE,PRODUCT_FORM,COMMODITIES,DISTANCE_KM,EXPORT_VALUE,EXPORT_UNIT,DESTINATION_TOTAL
+Coloso,port,-23.76,-70.45,Germany,country,53.55,9.99,port_to_country,concentrate,Copper,,21.07,kMT,60.2
+Mejillones,port,-23.1,-70.45,Germany,country,53.55,9.99,port_to_country,concentrate,Copper,,12.04,kMT,60.2
+Patache,port,-20.8,-70.22,Germany,country,53.55,9.99,port_to_country,concentrate,Copper,,9.03,kMT,60.2
+Barquito,port,-27.07,-70.84,Germany,country,53.55,9.99,port_to_country,concentrate,Copper,,4.82,kMT,60.2
+Coquimbo,port,-29.96,-71.35,Germany,country,53.55,9.99,port_to_country,concentrate,Copper,,7.22,kMT,60.2
+Angamos,port,-23.1,-70.42,Germany,country,53.55,9.99,port_to_country,concentrate,Copper,,3.01,kMT,60.2
+Caldera,port,-27.07,-70.82,Germany,country,53.55,9.99,port_to_country,concentrate,Copper,,3.01,kMT,60.2
+Coloso,port,-23.76,-70.45,Belgium,country,51.26,4.35,port_to_country,concentrate,Copper,,0.1,kMT,0.3
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,concentrate,Copper,,0.06,kMT,0.3
+Patache,port,-20.8,-70.22,Belgium,country,51.26,4.35,port_to_country,concentrate,Copper,,0.04,kMT,0.3
+Barquito,port,-27.07,-70.84,Belgium,country,51.26,4.35,port_to_country,concentrate,Copper,,0.02,kMT,0.3
+Coquimbo,port,-29.96,-71.35,Belgium,country,51.26,4.35,port_to_country,concentrate,Copper,,0.04,kMT,0.3
+Angamos,port,-23.1,-70.42,Belgium,country,51.26,4.35,port_to_country,concentrate,Copper,,0.01,kMT,0.3
+Caldera,port,-27.07,-70.82,Belgium,country,51.26,4.35,port_to_country,concentrate,Copper,,0.01,kMT,0.3
+Coloso,port,-23.76,-70.45,Bulgaria,country,42.7,23.32,port_to_country,concentrate,Copper,,12.67,kMT,36.21
+Mejillones,port,-23.1,-70.45,Bulgaria,country,42.7,23.32,port_to_country,concentrate,Copper,,7.24,kMT,36.21
+Patache,port,-20.8,-70.22,Bulgaria,country,42.7,23.32,port_to_country,concentrate,Copper,,5.43,kMT,36.21
+Barquito,port,-27.07,-70.84,Bulgaria,country,42.7,23.32,port_to_country,concentrate,Copper,,2.9,kMT,36.21
+Coquimbo,port,-29.96,-71.35,Bulgaria,country,42.7,23.32,port_to_country,concentrate,Copper,,4.35,kMT,36.21
+Angamos,port,-23.1,-70.42,Bulgaria,country,42.7,23.32,port_to_country,concentrate,Copper,,1.81,kMT,36.21
+Caldera,port,-27.07,-70.82,Bulgaria,country,42.7,23.32,port_to_country,concentrate,Copper,,1.81,kMT,36.21
+Coloso,port,-23.76,-70.45,Spain,country,36.72,-4.42,port_to_country,concentrate,Copper,,22.89,kMT,65.4
+Mejillones,port,-23.1,-70.45,Spain,country,36.72,-4.42,port_to_country,concentrate,Copper,,13.08,kMT,65.4
+Patache,port,-20.8,-70.22,Spain,country,36.72,-4.42,port_to_country,concentrate,Copper,,9.81,kMT,65.4
+Barquito,port,-27.07,-70.84,Spain,country,36.72,-4.42,port_to_country,concentrate,Copper,,5.23,kMT,65.4
+Coquimbo,port,-29.96,-71.35,Spain,country,36.72,-4.42,port_to_country,concentrate,Copper,,7.85,kMT,65.4
+Angamos,port,-23.1,-70.42,Spain,country,36.72,-4.42,port_to_country,concentrate,Copper,,3.27,kMT,65.4
+Caldera,port,-27.07,-70.82,Spain,country,36.72,-4.42,port_to_country,concentrate,Copper,,3.27,kMT,65.4
+Coloso,port,-23.76,-70.45,Finland,country,60.17,24.94,port_to_country,concentrate,Copper,,3.4,kMT,9.7
+Mejillones,port,-23.1,-70.45,Finland,country,60.17,24.94,port_to_country,concentrate,Copper,,1.94,kMT,9.7
+Patache,port,-20.8,-70.22,Finland,country,60.17,24.94,port_to_country,concentrate,Copper,,1.46,kMT,9.7
+Barquito,port,-27.07,-70.84,Finland,country,60.17,24.94,port_to_country,concentrate,Copper,,0.78,kMT,9.7
+Coquimbo,port,-29.96,-71.35,Finland,country,60.17,24.94,port_to_country,concentrate,Copper,,1.16,kMT,9.7
+Angamos,port,-23.1,-70.42,Finland,country,60.17,24.94,port_to_country,concentrate,Copper,,0.49,kMT,9.7
+Caldera,port,-27.07,-70.82,Finland,country,60.17,24.94,port_to_country,concentrate,Copper,,0.49,kMT,9.7
+Coloso,port,-23.76,-70.45,Netherlands,country,51.92,4.48,port_to_country,concentrate,Copper,,0.04,kMT,0.12
+Mejillones,port,-23.1,-70.45,Netherlands,country,51.92,4.48,port_to_country,concentrate,Copper,,0.02,kMT,0.12
+Patache,port,-20.8,-70.22,Netherlands,country,51.92,4.48,port_to_country,concentrate,Copper,,0.02,kMT,0.12
+Barquito,port,-27.07,-70.84,Netherlands,country,51.92,4.48,port_to_country,concentrate,Copper,,0.01,kMT,0.12
+Coquimbo,port,-29.96,-71.35,Netherlands,country,51.92,4.48,port_to_country,concentrate,Copper,,0.01,kMT,0.12
+Angamos,port,-23.1,-70.42,Netherlands,country,51.92,4.48,port_to_country,concentrate,Copper,,0.01,kMT,0.12
+Caldera,port,-27.07,-70.82,Netherlands,country,51.92,4.48,port_to_country,concentrate,Copper,,0.01,kMT,0.12
+Coloso,port,-23.76,-70.45,Sweden,country,57.71,11.97,port_to_country,concentrate,Copper,,1.99,kMT,5.7
+Mejillones,port,-23.1,-70.45,Sweden,country,57.71,11.97,port_to_country,concentrate,Copper,,1.14,kMT,5.7
+Patache,port,-20.8,-70.22,Sweden,country,57.71,11.97,port_to_country,concentrate,Copper,,0.85,kMT,5.7
+Barquito,port,-27.07,-70.84,Sweden,country,57.71,11.97,port_to_country,concentrate,Copper,,0.46,kMT,5.7
+Coquimbo,port,-29.96,-71.35,Sweden,country,57.71,11.97,port_to_country,concentrate,Copper,,0.68,kMT,5.7
+Angamos,port,-23.1,-70.42,Sweden,country,57.71,11.97,port_to_country,concentrate,Copper,,0.28,kMT,5.7
+Caldera,port,-27.07,-70.82,Sweden,country,57.71,11.97,port_to_country,concentrate,Copper,,0.28,kMT,5.7
+Coloso,port,-23.76,-70.45,Switzerland,country,47.38,8.54,port_to_country,concentrate,Copper,,0.02,kMT,0.05
+Mejillones,port,-23.1,-70.45,Switzerland,country,47.38,8.54,port_to_country,concentrate,Copper,,0.01,kMT,0.05
+Patache,port,-20.8,-70.22,Switzerland,country,47.38,8.54,port_to_country,concentrate,Copper,,0.01,kMT,0.05
+Barquito,port,-27.07,-70.84,Switzerland,country,47.38,8.54,port_to_country,concentrate,Copper,,0.0,kMT,0.05
+Coquimbo,port,-29.96,-71.35,Switzerland,country,47.38,8.54,port_to_country,concentrate,Copper,,0.01,kMT,0.05
+Angamos,port,-23.1,-70.42,Switzerland,country,47.38,8.54,port_to_country,concentrate,Copper,,0.0,kMT,0.05
+Caldera,port,-27.07,-70.82,Switzerland,country,47.38,8.54,port_to_country,concentrate,Copper,,0.0,kMT,0.05
+Coloso,port,-23.76,-70.45,Brazil,country,-23.55,-46.63,port_to_country,concentrate,Copper,,0.01,kMT,0.03
+Mejillones,port,-23.1,-70.45,Brazil,country,-23.55,-46.63,port_to_country,concentrate,Copper,,0.01,kMT,0.03
+Patache,port,-20.8,-70.22,Brazil,country,-23.55,-46.63,port_to_country,concentrate,Copper,,0.0,kMT,0.03
+Barquito,port,-27.07,-70.84,Brazil,country,-23.55,-46.63,port_to_country,concentrate,Copper,,0.0,kMT,0.03
+Coquimbo,port,-29.96,-71.35,Brazil,country,-23.55,-46.63,port_to_country,concentrate,Copper,,0.0,kMT,0.03
+Angamos,port,-23.1,-70.42,Brazil,country,-23.55,-46.63,port_to_country,concentrate,Copper,,0.0,kMT,0.03
+Caldera,port,-27.07,-70.82,Brazil,country,-23.55,-46.63,port_to_country,concentrate,Copper,,0.0,kMT,0.03
+Coloso,port,-23.76,-70.45,Canada,country,49.28,-123.12,port_to_country,concentrate,Copper,,1.68,kMT,4.79
+Mejillones,port,-23.1,-70.45,Canada,country,49.28,-123.12,port_to_country,concentrate,Copper,,0.96,kMT,4.79
+Patache,port,-20.8,-70.22,Canada,country,49.28,-123.12,port_to_country,concentrate,Copper,,0.72,kMT,4.79
+Barquito,port,-27.07,-70.84,Canada,country,49.28,-123.12,port_to_country,concentrate,Copper,,0.38,kMT,4.79
+Coquimbo,port,-29.96,-71.35,Canada,country,49.28,-123.12,port_to_country,concentrate,Copper,,0.58,kMT,4.79
+Angamos,port,-23.1,-70.42,Canada,country,49.28,-123.12,port_to_country,concentrate,Copper,,0.24,kMT,4.79
+Caldera,port,-27.07,-70.82,Canada,country,49.28,-123.12,port_to_country,concentrate,Copper,,0.24,kMT,4.79
+Coloso,port,-23.76,-70.45,USA,country,29.76,-95.37,port_to_country,concentrate,Copper,,0.01,kMT,0.02
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Patache,port,-20.8,-70.22,USA,country,29.76,-95.37,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Barquito,port,-27.07,-70.84,USA,country,29.76,-95.37,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Coquimbo,port,-29.96,-71.35,USA,country,29.76,-95.37,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Angamos,port,-23.1,-70.42,USA,country,29.76,-95.37,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Caldera,port,-27.07,-70.82,USA,country,29.76,-95.37,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Coloso,port,-23.76,-70.45,Mexico,country,19.43,-99.13,port_to_country,concentrate,Copper,,2.86,kMT,8.17
+Mejillones,port,-23.1,-70.45,Mexico,country,19.43,-99.13,port_to_country,concentrate,Copper,,1.63,kMT,8.17
+Patache,port,-20.8,-70.22,Mexico,country,19.43,-99.13,port_to_country,concentrate,Copper,,1.22,kMT,8.17
+Barquito,port,-27.07,-70.84,Mexico,country,19.43,-99.13,port_to_country,concentrate,Copper,,0.65,kMT,8.17
+Coquimbo,port,-29.96,-71.35,Mexico,country,19.43,-99.13,port_to_country,concentrate,Copper,,0.98,kMT,8.17
+Angamos,port,-23.1,-70.42,Mexico,country,19.43,-99.13,port_to_country,concentrate,Copper,,0.41,kMT,8.17
+Caldera,port,-27.07,-70.82,Mexico,country,19.43,-99.13,port_to_country,concentrate,Copper,,0.41,kMT,8.17
+Coloso,port,-23.76,-70.45,Peru,country,-12.05,-77.04,port_to_country,concentrate,Copper,,2.14,kMT,6.12
+Mejillones,port,-23.1,-70.45,Peru,country,-12.05,-77.04,port_to_country,concentrate,Copper,,1.22,kMT,6.12
+Patache,port,-20.8,-70.22,Peru,country,-12.05,-77.04,port_to_country,concentrate,Copper,,0.92,kMT,6.12
+Barquito,port,-27.07,-70.84,Peru,country,-12.05,-77.04,port_to_country,concentrate,Copper,,0.49,kMT,6.12
+Coquimbo,port,-29.96,-71.35,Peru,country,-12.05,-77.04,port_to_country,concentrate,Copper,,0.73,kMT,6.12
+Angamos,port,-23.1,-70.42,Peru,country,-12.05,-77.04,port_to_country,concentrate,Copper,,0.31,kMT,6.12
+Caldera,port,-27.07,-70.82,Peru,country,-12.05,-77.04,port_to_country,concentrate,Copper,,0.31,kMT,6.12
+Coloso,port,-23.76,-70.45,China,country,31.23,121.47,port_to_country,concentrate,Copper,,872.05,kMT,2491.58
+Mejillones,port,-23.1,-70.45,China,country,31.23,121.47,port_to_country,concentrate,Copper,,498.32,kMT,2491.58
+Patache,port,-20.8,-70.22,China,country,31.23,121.47,port_to_country,concentrate,Copper,,373.74,kMT,2491.58
+Barquito,port,-27.07,-70.84,China,country,31.23,121.47,port_to_country,concentrate,Copper,,199.33,kMT,2491.58
+Coquimbo,port,-29.96,-71.35,China,country,31.23,121.47,port_to_country,concentrate,Copper,,298.99,kMT,2491.58
+Angamos,port,-23.1,-70.42,China,country,31.23,121.47,port_to_country,concentrate,Copper,,124.58,kMT,2491.58
+Caldera,port,-27.07,-70.82,China,country,31.23,121.47,port_to_country,concentrate,Copper,,124.58,kMT,2491.58
+Coloso,port,-23.76,-70.45,South Korea,country,37.57,126.98,port_to_country,concentrate,Copper,,64.48,kMT,184.23
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,concentrate,Copper,,36.85,kMT,184.23
+Patache,port,-20.8,-70.22,South Korea,country,37.57,126.98,port_to_country,concentrate,Copper,,27.63,kMT,184.23
+Barquito,port,-27.07,-70.84,South Korea,country,37.57,126.98,port_to_country,concentrate,Copper,,14.74,kMT,184.23
+Coquimbo,port,-29.96,-71.35,South Korea,country,37.57,126.98,port_to_country,concentrate,Copper,,22.11,kMT,184.23
+Angamos,port,-23.1,-70.42,South Korea,country,37.57,126.98,port_to_country,concentrate,Copper,,9.21,kMT,184.23
+Caldera,port,-27.07,-70.82,South Korea,country,37.57,126.98,port_to_country,concentrate,Copper,,9.21,kMT,184.23
+Coloso,port,-23.76,-70.45,Philippines,country,14.6,120.98,port_to_country,concentrate,Copper,,12.17,kMT,34.78
+Mejillones,port,-23.1,-70.45,Philippines,country,14.6,120.98,port_to_country,concentrate,Copper,,6.96,kMT,34.78
+Patache,port,-20.8,-70.22,Philippines,country,14.6,120.98,port_to_country,concentrate,Copper,,5.22,kMT,34.78
+Barquito,port,-27.07,-70.84,Philippines,country,14.6,120.98,port_to_country,concentrate,Copper,,2.78,kMT,34.78
+Coquimbo,port,-29.96,-71.35,Philippines,country,14.6,120.98,port_to_country,concentrate,Copper,,4.17,kMT,34.78
+Angamos,port,-23.1,-70.42,Philippines,country,14.6,120.98,port_to_country,concentrate,Copper,,1.74,kMT,34.78
+Caldera,port,-27.07,-70.82,Philippines,country,14.6,120.98,port_to_country,concentrate,Copper,,1.74,kMT,34.78
+Coloso,port,-23.76,-70.45,Hong Kong,country,22.32,114.17,port_to_country,concentrate,Copper,,0.01,kMT,0.02
+Mejillones,port,-23.1,-70.45,Hong Kong,country,22.32,114.17,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Patache,port,-20.8,-70.22,Hong Kong,country,22.32,114.17,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Barquito,port,-27.07,-70.84,Hong Kong,country,22.32,114.17,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Coquimbo,port,-29.96,-71.35,Hong Kong,country,22.32,114.17,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Angamos,port,-23.1,-70.42,Hong Kong,country,22.32,114.17,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Caldera,port,-27.07,-70.82,Hong Kong,country,22.32,114.17,port_to_country,concentrate,Copper,,0.0,kMT,0.02
+Coloso,port,-23.76,-70.45,India,country,19.08,72.88,port_to_country,concentrate,Copper,,59.88,kMT,171.08
+Mejillones,port,-23.1,-70.45,India,country,19.08,72.88,port_to_country,concentrate,Copper,,34.22,kMT,171.08
+Patache,port,-20.8,-70.22,India,country,19.08,72.88,port_to_country,concentrate,Copper,,25.66,kMT,171.08
+Barquito,port,-27.07,-70.84,India,country,19.08,72.88,port_to_country,concentrate,Copper,,13.69,kMT,171.08
+Coquimbo,port,-29.96,-71.35,India,country,19.08,72.88,port_to_country,concentrate,Copper,,20.53,kMT,171.08
+Angamos,port,-23.1,-70.42,India,country,19.08,72.88,port_to_country,concentrate,Copper,,8.55,kMT,171.08
+Caldera,port,-27.07,-70.82,India,country,19.08,72.88,port_to_country,concentrate,Copper,,8.55,kMT,171.08
+Coloso,port,-23.76,-70.45,Indonesia,country,-6.21,106.85,port_to_country,concentrate,Copper,,0.02,kMT,0.07
+Mejillones,port,-23.1,-70.45,Indonesia,country,-6.21,106.85,port_to_country,concentrate,Copper,,0.01,kMT,0.07
+Patache,port,-20.8,-70.22,Indonesia,country,-6.21,106.85,port_to_country,concentrate,Copper,,0.01,kMT,0.07
+Barquito,port,-27.07,-70.84,Indonesia,country,-6.21,106.85,port_to_country,concentrate,Copper,,0.01,kMT,0.07
+Coquimbo,port,-29.96,-71.35,Indonesia,country,-6.21,106.85,port_to_country,concentrate,Copper,,0.01,kMT,0.07
+Angamos,port,-23.1,-70.42,Indonesia,country,-6.21,106.85,port_to_country,concentrate,Copper,,0.0,kMT,0.07
+Caldera,port,-27.07,-70.82,Indonesia,country,-6.21,106.85,port_to_country,concentrate,Copper,,0.0,kMT,0.07
+Coloso,port,-23.76,-70.45,Japan,country,35.68,139.69,port_to_country,concentrate,Copper,,217.38,kMT,621.09
+Mejillones,port,-23.1,-70.45,Japan,country,35.68,139.69,port_to_country,concentrate,Copper,,124.22,kMT,621.09
+Patache,port,-20.8,-70.22,Japan,country,35.68,139.69,port_to_country,concentrate,Copper,,93.16,kMT,621.09
+Barquito,port,-27.07,-70.84,Japan,country,35.68,139.69,port_to_country,concentrate,Copper,,49.69,kMT,621.09
+Coquimbo,port,-29.96,-71.35,Japan,country,35.68,139.69,port_to_country,concentrate,Copper,,74.53,kMT,621.09
+Angamos,port,-23.1,-70.42,Japan,country,35.68,139.69,port_to_country,concentrate,Copper,,31.05,kMT,621.09
+Caldera,port,-27.07,-70.82,Japan,country,35.68,139.69,port_to_country,concentrate,Copper,,31.05,kMT,621.09
+Coloso,port,-23.76,-70.45,Malaysia,country,3.14,101.69,port_to_country,concentrate,Copper,,1.11,kMT,3.18
+Mejillones,port,-23.1,-70.45,Malaysia,country,3.14,101.69,port_to_country,concentrate,Copper,,0.64,kMT,3.18
+Patache,port,-20.8,-70.22,Malaysia,country,3.14,101.69,port_to_country,concentrate,Copper,,0.48,kMT,3.18
+Barquito,port,-27.07,-70.84,Malaysia,country,3.14,101.69,port_to_country,concentrate,Copper,,0.25,kMT,3.18
+Coquimbo,port,-29.96,-71.35,Malaysia,country,3.14,101.69,port_to_country,concentrate,Copper,,0.38,kMT,3.18
+Angamos,port,-23.1,-70.42,Malaysia,country,3.14,101.69,port_to_country,concentrate,Copper,,0.16,kMT,3.18
+Caldera,port,-27.07,-70.82,Malaysia,country,3.14,101.69,port_to_country,concentrate,Copper,,0.16,kMT,3.18
+Coloso,port,-23.76,-70.45,Thailand,country,13.76,100.5,port_to_country,concentrate,Copper,,0.24,kMT,0.69
+Mejillones,port,-23.1,-70.45,Thailand,country,13.76,100.5,port_to_country,concentrate,Copper,,0.14,kMT,0.69
+Patache,port,-20.8,-70.22,Thailand,country,13.76,100.5,port_to_country,concentrate,Copper,,0.1,kMT,0.69
+Barquito,port,-27.07,-70.84,Thailand,country,13.76,100.5,port_to_country,concentrate,Copper,,0.06,kMT,0.69
+Coquimbo,port,-29.96,-71.35,Thailand,country,13.76,100.5,port_to_country,concentrate,Copper,,0.08,kMT,0.69
+Angamos,port,-23.1,-70.42,Thailand,country,13.76,100.5,port_to_country,concentrate,Copper,,0.03,kMT,0.69
+Caldera,port,-27.07,-70.82,Thailand,country,13.76,100.5,port_to_country,concentrate,Copper,,0.03,kMT,0.69
+Coloso,port,-23.76,-70.45,Taiwan,country,25.03,121.57,port_to_country,concentrate,Copper,,5.13,kMT,14.66
+Mejillones,port,-23.1,-70.45,Taiwan,country,25.03,121.57,port_to_country,concentrate,Copper,,2.93,kMT,14.66
+Patache,port,-20.8,-70.22,Taiwan,country,25.03,121.57,port_to_country,concentrate,Copper,,2.2,kMT,14.66
+Barquito,port,-27.07,-70.84,Taiwan,country,25.03,121.57,port_to_country,concentrate,Copper,,1.17,kMT,14.66
+Coquimbo,port,-29.96,-71.35,Taiwan,country,25.03,121.57,port_to_country,concentrate,Copper,,1.76,kMT,14.66
+Angamos,port,-23.1,-70.42,Taiwan,country,25.03,121.57,port_to_country,concentrate,Copper,,0.73,kMT,14.66
+Caldera,port,-27.07,-70.82,Taiwan,country,25.03,121.57,port_to_country,concentrate,Copper,,0.73,kMT,14.66
+Coloso,port,-23.76,-70.45,Turkey,country,41.01,28.98,port_to_country,concentrate,Copper,,2.66,kMT,7.59
+Mejillones,port,-23.1,-70.45,Turkey,country,41.01,28.98,port_to_country,concentrate,Copper,,1.52,kMT,7.59
+Patache,port,-20.8,-70.22,Turkey,country,41.01,28.98,port_to_country,concentrate,Copper,,1.14,kMT,7.59
+Barquito,port,-27.07,-70.84,Turkey,country,41.01,28.98,port_to_country,concentrate,Copper,,0.61,kMT,7.59
+Coquimbo,port,-29.96,-71.35,Turkey,country,41.01,28.98,port_to_country,concentrate,Copper,,0.91,kMT,7.59
+Angamos,port,-23.1,-70.42,Turkey,country,41.01,28.98,port_to_country,concentrate,Copper,,0.38,kMT,7.59
+Caldera,port,-27.07,-70.82,Turkey,country,41.01,28.98,port_to_country,concentrate,Copper,,0.38,kMT,7.59
+Angamos,port,-23.1,-70.42,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,3.9,kMT,15.59
+Mejillones,port,-23.1,-70.45,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,2.34,kMT,15.59
+Antofagasta (ATI),port,-23.65,-70.4,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,2.34,kMT,15.59
+Iquique,port,-20.21,-70.15,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,2.34,kMT,15.59
+San Antonio,port,-33.59,-71.62,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,1.56,kMT,15.59
+Ventanas,port,-32.74,-71.49,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,1.56,kMT,15.59
+Barquito,port,-27.07,-70.84,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,0.78,kMT,15.59
+Coquimbo,port,-29.96,-71.35,Germany,country,53.55,9.99,port_to_country,cathode,Copper,,0.78,kMT,15.59
+Angamos,port,-23.1,-70.42,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.02,kMT,0.1
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.01,kMT,0.1
+Antofagasta (ATI),port,-23.65,-70.4,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.01,kMT,0.1
+Iquique,port,-20.21,-70.15,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.01,kMT,0.1
+San Antonio,port,-33.59,-71.62,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.01,kMT,0.1
+Ventanas,port,-32.74,-71.49,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.01,kMT,0.1
+Barquito,port,-27.07,-70.84,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.0,kMT,0.1
+Coquimbo,port,-29.96,-71.35,Belgium,country,51.26,4.35,port_to_country,cathode,Copper,,0.0,kMT,0.1
+Angamos,port,-23.1,-70.42,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,9.82,kMT,39.26
+Mejillones,port,-23.1,-70.45,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,5.89,kMT,39.26
+Antofagasta (ATI),port,-23.65,-70.4,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,5.89,kMT,39.26
+Iquique,port,-20.21,-70.15,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,5.89,kMT,39.26
+San Antonio,port,-33.59,-71.62,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,3.93,kMT,39.26
+Ventanas,port,-32.74,-71.49,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,3.93,kMT,39.26
+Barquito,port,-27.07,-70.84,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,1.96,kMT,39.26
+Coquimbo,port,-29.96,-71.35,Spain,country,36.72,-4.42,port_to_country,cathode,Copper,,1.96,kMT,39.26
+Angamos,port,-23.1,-70.42,France,country,48.86,2.35,port_to_country,cathode,Copper,,22.38,kMT,89.52
+Mejillones,port,-23.1,-70.45,France,country,48.86,2.35,port_to_country,cathode,Copper,,13.43,kMT,89.52
+Antofagasta (ATI),port,-23.65,-70.4,France,country,48.86,2.35,port_to_country,cathode,Copper,,13.43,kMT,89.52
+Iquique,port,-20.21,-70.15,France,country,48.86,2.35,port_to_country,cathode,Copper,,13.43,kMT,89.52
+San Antonio,port,-33.59,-71.62,France,country,48.86,2.35,port_to_country,cathode,Copper,,8.95,kMT,89.52
+Ventanas,port,-32.74,-71.49,France,country,48.86,2.35,port_to_country,cathode,Copper,,8.95,kMT,89.52
+Barquito,port,-27.07,-70.84,France,country,48.86,2.35,port_to_country,cathode,Copper,,4.48,kMT,89.52
+Coquimbo,port,-29.96,-71.35,France,country,48.86,2.35,port_to_country,cathode,Copper,,4.48,kMT,89.52
+Angamos,port,-23.1,-70.42,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.31,kMT,1.23
+Mejillones,port,-23.1,-70.45,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.19,kMT,1.23
+Antofagasta (ATI),port,-23.65,-70.4,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.19,kMT,1.23
+Iquique,port,-20.21,-70.15,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.19,kMT,1.23
+San Antonio,port,-33.59,-71.62,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.12,kMT,1.23
+Ventanas,port,-32.74,-71.49,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.12,kMT,1.23
+Barquito,port,-27.07,-70.84,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.06,kMT,1.23
+Coquimbo,port,-29.96,-71.35,Greece,country,37.98,23.73,port_to_country,cathode,Copper,,0.06,kMT,1.23
+Angamos,port,-23.1,-70.42,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,11.78,kMT,47.14
+Mejillones,port,-23.1,-70.45,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,7.07,kMT,47.14
+Antofagasta (ATI),port,-23.65,-70.4,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,7.07,kMT,47.14
+Iquique,port,-20.21,-70.15,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,7.07,kMT,47.14
+San Antonio,port,-33.59,-71.62,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,4.71,kMT,47.14
+Ventanas,port,-32.74,-71.49,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,4.71,kMT,47.14
+Barquito,port,-27.07,-70.84,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,2.36,kMT,47.14
+Coquimbo,port,-29.96,-71.35,Italy,country,45.46,9.19,port_to_country,cathode,Copper,,2.36,kMT,47.14
+Angamos,port,-23.1,-70.42,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,10.09,kMT,40.38
+Mejillones,port,-23.1,-70.45,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,6.06,kMT,40.38
+Antofagasta (ATI),port,-23.65,-70.4,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,6.06,kMT,40.38
+Iquique,port,-20.21,-70.15,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,6.06,kMT,40.38
+San Antonio,port,-33.59,-71.62,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,4.04,kMT,40.38
+Ventanas,port,-32.74,-71.49,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,4.04,kMT,40.38
+Barquito,port,-27.07,-70.84,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,2.02,kMT,40.38
+Coquimbo,port,-29.96,-71.35,Netherlands,country,51.92,4.48,port_to_country,cathode,Copper,,2.02,kMT,40.38
+Angamos,port,-23.1,-70.42,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.02,kMT,0.08
+Mejillones,port,-23.1,-70.45,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.01,kMT,0.08
+Antofagasta (ATI),port,-23.65,-70.4,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.01,kMT,0.08
+Iquique,port,-20.21,-70.15,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.01,kMT,0.08
+San Antonio,port,-33.59,-71.62,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.01,kMT,0.08
+Ventanas,port,-32.74,-71.49,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.01,kMT,0.08
+Barquito,port,-27.07,-70.84,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.0,kMT,0.08
+Coquimbo,port,-29.96,-71.35,United Kingdom,country,51.51,-0.13,port_to_country,cathode,Copper,,0.0,kMT,0.08
+Angamos,port,-23.1,-70.42,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,7.05,kMT,28.21
+Mejillones,port,-23.1,-70.45,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,4.23,kMT,28.21
+Antofagasta (ATI),port,-23.65,-70.4,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,4.23,kMT,28.21
+Iquique,port,-20.21,-70.15,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,4.23,kMT,28.21
+San Antonio,port,-33.59,-71.62,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,2.82,kMT,28.21
+Ventanas,port,-32.74,-71.49,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,2.82,kMT,28.21
+Barquito,port,-27.07,-70.84,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,1.41,kMT,28.21
+Coquimbo,port,-29.96,-71.35,Sweden,country,57.71,11.97,port_to_country,cathode,Copper,,1.41,kMT,28.21
+Angamos,port,-23.1,-70.42,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.13,kMT,0.52
+Mejillones,port,-23.1,-70.45,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.08,kMT,0.52
+Antofagasta (ATI),port,-23.65,-70.4,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.08,kMT,0.52
+Iquique,port,-20.21,-70.15,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.08,kMT,0.52
+San Antonio,port,-33.59,-71.62,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.05,kMT,0.52
+Ventanas,port,-32.74,-71.49,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.05,kMT,0.52
+Barquito,port,-27.07,-70.84,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.03,kMT,0.52
+Coquimbo,port,-29.96,-71.35,Argentina,country,-34.6,-58.38,port_to_country,cathode,Copper,,0.03,kMT,0.52
+Angamos,port,-23.1,-70.42,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,56.51,kMT,226.04
+Mejillones,port,-23.1,-70.45,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,33.91,kMT,226.04
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,33.91,kMT,226.04
+Iquique,port,-20.21,-70.15,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,33.91,kMT,226.04
+San Antonio,port,-33.59,-71.62,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,22.6,kMT,226.04
+Ventanas,port,-32.74,-71.49,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,22.6,kMT,226.04
+Barquito,port,-27.07,-70.84,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,11.3,kMT,226.04
+Coquimbo,port,-29.96,-71.35,Brazil,country,-23.55,-46.63,port_to_country,cathode,Copper,,11.3,kMT,226.04
+Angamos,port,-23.1,-70.42,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.28,kMT,1.12
+Mejillones,port,-23.1,-70.45,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.17,kMT,1.12
+Antofagasta (ATI),port,-23.65,-70.4,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.17,kMT,1.12
+Iquique,port,-20.21,-70.15,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.17,kMT,1.12
+San Antonio,port,-33.59,-71.62,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.11,kMT,1.12
+Ventanas,port,-32.74,-71.49,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.11,kMT,1.12
+Barquito,port,-27.07,-70.84,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.06,kMT,1.12
+Coquimbo,port,-29.96,-71.35,Colombia,country,4.71,-74.07,port_to_country,cathode,Copper,,0.06,kMT,1.12
+Angamos,port,-23.1,-70.42,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,151.57,kMT,606.29
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,90.94,kMT,606.29
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,90.94,kMT,606.29
+Iquique,port,-20.21,-70.15,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,90.94,kMT,606.29
+San Antonio,port,-33.59,-71.62,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,60.63,kMT,606.29
+Ventanas,port,-32.74,-71.49,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,60.63,kMT,606.29
+Barquito,port,-27.07,-70.84,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,30.31,kMT,606.29
+Coquimbo,port,-29.96,-71.35,USA,country,29.76,-95.37,port_to_country,cathode,Copper,,30.31,kMT,606.29
+Angamos,port,-23.1,-70.42,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,2.93,kMT,11.73
+Mejillones,port,-23.1,-70.45,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,1.76,kMT,11.73
+Antofagasta (ATI),port,-23.65,-70.4,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,1.76,kMT,11.73
+Iquique,port,-20.21,-70.15,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,1.76,kMT,11.73
+San Antonio,port,-33.59,-71.62,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,1.17,kMT,11.73
+Ventanas,port,-32.74,-71.49,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,1.17,kMT,11.73
+Barquito,port,-27.07,-70.84,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,0.59,kMT,11.73
+Coquimbo,port,-29.96,-71.35,Mexico,country,19.43,-99.13,port_to_country,cathode,Copper,,0.59,kMT,11.73
+Angamos,port,-23.1,-70.42,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.17,kMT,0.68
+Mejillones,port,-23.1,-70.45,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.1,kMT,0.68
+Antofagasta (ATI),port,-23.65,-70.4,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.1,kMT,0.68
+Iquique,port,-20.21,-70.15,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.1,kMT,0.68
+San Antonio,port,-33.59,-71.62,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.07,kMT,0.68
+Ventanas,port,-32.74,-71.49,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.07,kMT,0.68
+Barquito,port,-27.07,-70.84,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.03,kMT,0.68
+Coquimbo,port,-29.96,-71.35,Panama,country,8.98,-79.52,port_to_country,cathode,Copper,,0.03,kMT,0.68
+Angamos,port,-23.1,-70.42,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.49,kMT,1.96
+Mejillones,port,-23.1,-70.45,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.29,kMT,1.96
+Antofagasta (ATI),port,-23.65,-70.4,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.29,kMT,1.96
+Iquique,port,-20.21,-70.15,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.29,kMT,1.96
+San Antonio,port,-33.59,-71.62,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.2,kMT,1.96
+Ventanas,port,-32.74,-71.49,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.2,kMT,1.96
+Barquito,port,-27.07,-70.84,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.1,kMT,1.96
+Coquimbo,port,-29.96,-71.35,Peru,country,-12.05,-77.04,port_to_country,cathode,Copper,,0.1,kMT,1.96
+Angamos,port,-23.1,-70.42,China,country,31.23,121.47,port_to_country,cathode,Copper,,135.21,kMT,540.82
+Mejillones,port,-23.1,-70.45,China,country,31.23,121.47,port_to_country,cathode,Copper,,81.12,kMT,540.82
+Antofagasta (ATI),port,-23.65,-70.4,China,country,31.23,121.47,port_to_country,cathode,Copper,,81.12,kMT,540.82
+Iquique,port,-20.21,-70.15,China,country,31.23,121.47,port_to_country,cathode,Copper,,81.12,kMT,540.82
+San Antonio,port,-33.59,-71.62,China,country,31.23,121.47,port_to_country,cathode,Copper,,54.08,kMT,540.82
+Ventanas,port,-32.74,-71.49,China,country,31.23,121.47,port_to_country,cathode,Copper,,54.08,kMT,540.82
+Barquito,port,-27.07,-70.84,China,country,31.23,121.47,port_to_country,cathode,Copper,,27.04,kMT,540.82
+Coquimbo,port,-29.96,-71.35,China,country,31.23,121.47,port_to_country,cathode,Copper,,27.04,kMT,540.82
+Angamos,port,-23.1,-70.42,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,32.25,kMT,128.98
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,19.35,kMT,128.98
+Antofagasta (ATI),port,-23.65,-70.4,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,19.35,kMT,128.98
+Iquique,port,-20.21,-70.15,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,19.35,kMT,128.98
+San Antonio,port,-33.59,-71.62,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,12.9,kMT,128.98
+Ventanas,port,-32.74,-71.49,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,12.9,kMT,128.98
+Barquito,port,-27.07,-70.84,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,6.45,kMT,128.98
+Coquimbo,port,-29.96,-71.35,South Korea,country,37.57,126.98,port_to_country,cathode,Copper,,6.45,kMT,128.98
+Angamos,port,-23.1,-70.42,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.02,kMT,0.06
+Mejillones,port,-23.1,-70.45,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.01,kMT,0.06
+Antofagasta (ATI),port,-23.65,-70.4,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.01,kMT,0.06
+Iquique,port,-20.21,-70.15,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.01,kMT,0.06
+San Antonio,port,-33.59,-71.62,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.01,kMT,0.06
+Ventanas,port,-32.74,-71.49,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.01,kMT,0.06
+Barquito,port,-27.07,-70.84,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.0,kMT,0.06
+Coquimbo,port,-29.96,-71.35,UAE,country,25.2,55.27,port_to_country,cathode,Copper,,0.0,kMT,0.06
+Angamos,port,-23.1,-70.42,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.81,kMT,3.26
+Mejillones,port,-23.1,-70.45,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.49,kMT,3.26
+Antofagasta (ATI),port,-23.65,-70.4,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.49,kMT,3.26
+Iquique,port,-20.21,-70.15,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.49,kMT,3.26
+San Antonio,port,-33.59,-71.62,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.33,kMT,3.26
+Ventanas,port,-32.74,-71.49,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.33,kMT,3.26
+Barquito,port,-27.07,-70.84,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.16,kMT,3.26
+Coquimbo,port,-29.96,-71.35,Indonesia,country,-6.21,106.85,port_to_country,cathode,Copper,,0.16,kMT,3.26
+Angamos,port,-23.1,-70.42,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.25,kMT,1.0
+Mejillones,port,-23.1,-70.45,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.15,kMT,1.0
+Antofagasta (ATI),port,-23.65,-70.4,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.15,kMT,1.0
+Iquique,port,-20.21,-70.15,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.15,kMT,1.0
+San Antonio,port,-33.59,-71.62,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.1,kMT,1.0
+Ventanas,port,-32.74,-71.49,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.1,kMT,1.0
+Barquito,port,-27.07,-70.84,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.05,kMT,1.0
+Coquimbo,port,-29.96,-71.35,Japan,country,35.68,139.69,port_to_country,cathode,Copper,,0.05,kMT,1.0
+Angamos,port,-23.1,-70.42,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,1.79,kMT,7.17
+Mejillones,port,-23.1,-70.45,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,1.08,kMT,7.17
+Antofagasta (ATI),port,-23.65,-70.4,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,1.08,kMT,7.17
+Iquique,port,-20.21,-70.15,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,1.08,kMT,7.17
+San Antonio,port,-33.59,-71.62,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,0.72,kMT,7.17
+Ventanas,port,-32.74,-71.49,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,0.72,kMT,7.17
+Barquito,port,-27.07,-70.84,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,0.36,kMT,7.17
+Coquimbo,port,-29.96,-71.35,Malaysia,country,3.14,101.69,port_to_country,cathode,Copper,,0.36,kMT,7.17
+Angamos,port,-23.1,-70.42,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.75,kMT,3.01
+Mejillones,port,-23.1,-70.45,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.45,kMT,3.01
+Antofagasta (ATI),port,-23.65,-70.4,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.45,kMT,3.01
+Iquique,port,-20.21,-70.15,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.45,kMT,3.01
+San Antonio,port,-33.59,-71.62,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.3,kMT,3.01
+Ventanas,port,-32.74,-71.49,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.3,kMT,3.01
+Barquito,port,-27.07,-70.84,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.15,kMT,3.01
+Coquimbo,port,-29.96,-71.35,Singapore,country,1.35,103.82,port_to_country,cathode,Copper,,0.15,kMT,3.01
+Angamos,port,-23.1,-70.42,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,9.44,kMT,37.76
+Mejillones,port,-23.1,-70.45,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,5.66,kMT,37.76
+Antofagasta (ATI),port,-23.65,-70.4,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,5.66,kMT,37.76
+Iquique,port,-20.21,-70.15,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,5.66,kMT,37.76
+San Antonio,port,-33.59,-71.62,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,3.78,kMT,37.76
+Ventanas,port,-32.74,-71.49,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,3.78,kMT,37.76
+Barquito,port,-27.07,-70.84,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,1.89,kMT,37.76
+Coquimbo,port,-29.96,-71.35,Thailand,country,13.76,100.5,port_to_country,cathode,Copper,,1.89,kMT,37.76
+Angamos,port,-23.1,-70.42,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,14.74,kMT,58.97
+Mejillones,port,-23.1,-70.45,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,8.85,kMT,58.97
+Antofagasta (ATI),port,-23.65,-70.4,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,8.85,kMT,58.97
+Iquique,port,-20.21,-70.15,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,8.85,kMT,58.97
+San Antonio,port,-33.59,-71.62,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,5.9,kMT,58.97
+Ventanas,port,-32.74,-71.49,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,5.9,kMT,58.97
+Barquito,port,-27.07,-70.84,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,2.95,kMT,58.97
+Coquimbo,port,-29.96,-71.35,Taiwan,country,25.03,121.57,port_to_country,cathode,Copper,,2.95,kMT,58.97
+Angamos,port,-23.1,-70.42,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.36,kMT,1.46
+Mejillones,port,-23.1,-70.45,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.22,kMT,1.46
+Antofagasta (ATI),port,-23.65,-70.4,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.22,kMT,1.46
+Iquique,port,-20.21,-70.15,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.22,kMT,1.46
+San Antonio,port,-33.59,-71.62,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.15,kMT,1.46
+Ventanas,port,-32.74,-71.49,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.15,kMT,1.46
+Barquito,port,-27.07,-70.84,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.07,kMT,1.46
+Coquimbo,port,-29.96,-71.35,Vietnam,country,10.82,106.63,port_to_country,cathode,Copper,,0.07,kMT,1.46
+Mejillones,port,-23.1,-70.45,Germany,country,53.55,9.99,port_to_country,blister,Copper,,0.01,kMT,0.02
+Ventanas,port,-32.74,-71.49,Germany,country,53.55,9.99,port_to_country,blister,Copper,,0.01,kMT,0.02
+Barquito,port,-27.07,-70.84,Germany,country,53.55,9.99,port_to_country,blister,Copper,,0.0,kMT,0.02
+Antofagasta (ATI),port,-23.65,-70.4,Germany,country,53.55,9.99,port_to_country,blister,Copper,,0.0,kMT,0.02
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,blister,Copper,,0.17,kMT,0.43
+Ventanas,port,-32.74,-71.49,Belgium,country,51.26,4.35,port_to_country,blister,Copper,,0.13,kMT,0.43
+Barquito,port,-27.07,-70.84,Belgium,country,51.26,4.35,port_to_country,blister,Copper,,0.09,kMT,0.43
+Antofagasta (ATI),port,-23.65,-70.4,Belgium,country,51.26,4.35,port_to_country,blister,Copper,,0.04,kMT,0.43
+Mejillones,port,-23.1,-70.45,Spain,country,36.72,-4.42,port_to_country,blister,Copper,,4.48,kMT,11.21
+Ventanas,port,-32.74,-71.49,Spain,country,36.72,-4.42,port_to_country,blister,Copper,,3.36,kMT,11.21
+Barquito,port,-27.07,-70.84,Spain,country,36.72,-4.42,port_to_country,blister,Copper,,2.24,kMT,11.21
+Antofagasta (ATI),port,-23.65,-70.4,Spain,country,36.72,-4.42,port_to_country,blister,Copper,,1.12,kMT,11.21
+Mejillones,port,-23.1,-70.45,Greece,country,37.98,23.73,port_to_country,blister,Copper,,0.04,kMT,0.09
+Ventanas,port,-32.74,-71.49,Greece,country,37.98,23.73,port_to_country,blister,Copper,,0.03,kMT,0.09
+Barquito,port,-27.07,-70.84,Greece,country,37.98,23.73,port_to_country,blister,Copper,,0.02,kMT,0.09
+Antofagasta (ATI),port,-23.65,-70.4,Greece,country,37.98,23.73,port_to_country,blister,Copper,,0.01,kMT,0.09
+Mejillones,port,-23.1,-70.45,Brazil,country,-23.55,-46.63,port_to_country,blister,Copper,,0.07,kMT,0.17
+Ventanas,port,-32.74,-71.49,Brazil,country,-23.55,-46.63,port_to_country,blister,Copper,,0.05,kMT,0.17
+Barquito,port,-27.07,-70.84,Brazil,country,-23.55,-46.63,port_to_country,blister,Copper,,0.03,kMT,0.17
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,blister,Copper,,0.02,kMT,0.17
+Mejillones,port,-23.1,-70.45,Canada,country,49.28,-123.12,port_to_country,blister,Copper,,11.27,kMT,28.18
+Ventanas,port,-32.74,-71.49,Canada,country,49.28,-123.12,port_to_country,blister,Copper,,8.45,kMT,28.18
+Barquito,port,-27.07,-70.84,Canada,country,49.28,-123.12,port_to_country,blister,Copper,,5.64,kMT,28.18
+Antofagasta (ATI),port,-23.65,-70.4,Canada,country,49.28,-123.12,port_to_country,blister,Copper,,2.82,kMT,28.18
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,blister,Copper,,0.03,kMT,0.07
+Ventanas,port,-32.74,-71.49,USA,country,29.76,-95.37,port_to_country,blister,Copper,,0.02,kMT,0.07
+Barquito,port,-27.07,-70.84,USA,country,29.76,-95.37,port_to_country,blister,Copper,,0.01,kMT,0.07
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,blister,Copper,,0.01,kMT,0.07
+Mejillones,port,-23.1,-70.45,China,country,31.23,121.47,port_to_country,blister,Copper,,46.4,kMT,116.0
+Ventanas,port,-32.74,-71.49,China,country,31.23,121.47,port_to_country,blister,Copper,,34.8,kMT,116.0
+Barquito,port,-27.07,-70.84,China,country,31.23,121.47,port_to_country,blister,Copper,,23.2,kMT,116.0
+Antofagasta (ATI),port,-23.65,-70.4,China,country,31.23,121.47,port_to_country,blister,Copper,,11.6,kMT,116.0
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,blister,Copper,,14.33,kMT,35.82
+Ventanas,port,-32.74,-71.49,South Korea,country,37.57,126.98,port_to_country,blister,Copper,,10.75,kMT,35.82
+Barquito,port,-27.07,-70.84,South Korea,country,37.57,126.98,port_to_country,blister,Copper,,7.16,kMT,35.82
+Antofagasta (ATI),port,-23.65,-70.4,South Korea,country,37.57,126.98,port_to_country,blister,Copper,,3.58,kMT,35.82
+Mejillones,port,-23.1,-70.45,India,country,19.08,72.88,port_to_country,blister,Copper,,15.17,kMT,37.92
+Ventanas,port,-32.74,-71.49,India,country,19.08,72.88,port_to_country,blister,Copper,,11.38,kMT,37.92
+Barquito,port,-27.07,-70.84,India,country,19.08,72.88,port_to_country,blister,Copper,,7.58,kMT,37.92
+Antofagasta (ATI),port,-23.65,-70.4,India,country,19.08,72.88,port_to_country,blister,Copper,,3.79,kMT,37.92
+Mejillones,port,-23.1,-70.45,Japan,country,35.68,139.69,port_to_country,blister,Copper,,1.22,kMT,3.04
+Ventanas,port,-32.74,-71.49,Japan,country,35.68,139.69,port_to_country,blister,Copper,,0.91,kMT,3.04
+Barquito,port,-27.07,-70.84,Japan,country,35.68,139.69,port_to_country,blister,Copper,,0.61,kMT,3.04
+Antofagasta (ATI),port,-23.65,-70.4,Japan,country,35.68,139.69,port_to_country,blister,Copper,,0.3,kMT,3.04
+Mejillones,port,-23.1,-70.45,Malaysia,country,3.14,101.69,port_to_country,blister,Copper,,0.09,kMT,0.22
+Ventanas,port,-32.74,-71.49,Malaysia,country,3.14,101.69,port_to_country,blister,Copper,,0.07,kMT,0.22
+Barquito,port,-27.07,-70.84,Malaysia,country,3.14,101.69,port_to_country,blister,Copper,,0.04,kMT,0.22
+Antofagasta (ATI),port,-23.65,-70.4,Malaysia,country,3.14,101.69,port_to_country,blister,Copper,,0.02,kMT,0.22
+Mejillones,port,-23.1,-70.45,Thailand,country,13.76,100.5,port_to_country,blister,Copper,,0.45,kMT,1.13
+Ventanas,port,-32.74,-71.49,Thailand,country,13.76,100.5,port_to_country,blister,Copper,,0.34,kMT,1.13
+Barquito,port,-27.07,-70.84,Thailand,country,13.76,100.5,port_to_country,blister,Copper,,0.23,kMT,1.13
+Antofagasta (ATI),port,-23.65,-70.4,Thailand,country,13.76,100.5,port_to_country,blister,Copper,,0.11,kMT,1.13
+Mejillones,port,-23.1,-70.45,Taiwan,country,25.03,121.57,port_to_country,blister,Copper,,0.01,kMT,0.02
+Ventanas,port,-32.74,-71.49,Taiwan,country,25.03,121.57,port_to_country,blister,Copper,,0.01,kMT,0.02
+Barquito,port,-27.07,-70.84,Taiwan,country,25.03,121.57,port_to_country,blister,Copper,,0.0,kMT,0.02
+Antofagasta (ATI),port,-23.65,-70.4,Taiwan,country,25.03,121.57,port_to_country,blister,Copper,,0.0,kMT,0.02
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,mo_concentrate,Molybdenum,,1404.99,MT,2809.99
+Antofagasta (ATI),port,-23.65,-70.4,Belgium,country,51.26,4.35,port_to_country,mo_concentrate,Molybdenum,,843.0,MT,2809.99
+Barquito,port,-27.07,-70.84,Belgium,country,51.26,4.35,port_to_country,mo_concentrate,Molybdenum,,562.0,MT,2809.99
+Mejillones,port,-23.1,-70.45,Netherlands,country,51.92,4.48,port_to_country,mo_concentrate,Molybdenum,,517.2,MT,1034.4
+Antofagasta (ATI),port,-23.65,-70.4,Netherlands,country,51.92,4.48,port_to_country,mo_concentrate,Molybdenum,,310.32,MT,1034.4
+Barquito,port,-27.07,-70.84,Netherlands,country,51.92,4.48,port_to_country,mo_concentrate,Molybdenum,,206.88,MT,1034.4
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,mo_concentrate,Molybdenum,,857.57,MT,1715.13
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,mo_concentrate,Molybdenum,,514.54,MT,1715.13
+Barquito,port,-27.07,-70.84,USA,country,29.76,-95.37,port_to_country,mo_concentrate,Molybdenum,,343.03,MT,1715.13
+Mejillones,port,-23.1,-70.45,China,country,31.23,121.47,port_to_country,mo_concentrate,Molybdenum,,1060.63,MT,2121.26
+Antofagasta (ATI),port,-23.65,-70.4,China,country,31.23,121.47,port_to_country,mo_concentrate,Molybdenum,,636.38,MT,2121.26
+Barquito,port,-27.07,-70.84,China,country,31.23,121.47,port_to_country,mo_concentrate,Molybdenum,,424.25,MT,2121.26
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,mo_concentrate,Molybdenum,,1106.39,MT,2212.79
+Antofagasta (ATI),port,-23.65,-70.4,South Korea,country,37.57,126.98,port_to_country,mo_concentrate,Molybdenum,,663.84,MT,2212.79
+Barquito,port,-27.07,-70.84,South Korea,country,37.57,126.98,port_to_country,mo_concentrate,Molybdenum,,442.56,MT,2212.79
+Mejillones,port,-23.1,-70.45,India,country,19.08,72.88,port_to_country,mo_concentrate,Molybdenum,,55.68,MT,111.36
+Antofagasta (ATI),port,-23.65,-70.4,India,country,19.08,72.88,port_to_country,mo_concentrate,Molybdenum,,33.41,MT,111.36
+Barquito,port,-27.07,-70.84,India,country,19.08,72.88,port_to_country,mo_concentrate,Molybdenum,,22.27,MT,111.36
+Mejillones,port,-23.1,-70.45,Japan,country,35.68,139.69,port_to_country,mo_concentrate,Molybdenum,,4.86,MT,9.72
+Antofagasta (ATI),port,-23.65,-70.4,Japan,country,35.68,139.69,port_to_country,mo_concentrate,Molybdenum,,2.92,MT,9.72
+Barquito,port,-27.07,-70.84,Japan,country,35.68,139.69,port_to_country,mo_concentrate,Molybdenum,,1.94,MT,9.72
+Mejillones,port,-23.1,-70.45,Thailand,country,13.76,100.5,port_to_country,mo_concentrate,Molybdenum,,467.55,MT,935.1
+Antofagasta (ATI),port,-23.65,-70.4,Thailand,country,13.76,100.5,port_to_country,mo_concentrate,Molybdenum,,280.53,MT,935.1
+Barquito,port,-27.07,-70.84,Thailand,country,13.76,100.5,port_to_country,mo_concentrate,Molybdenum,,187.02,MT,935.1
+Mejillones,port,-23.1,-70.45,Vietnam,country,10.82,106.63,port_to_country,mo_concentrate,Molybdenum,,108.06,MT,216.12
+Antofagasta (ATI),port,-23.65,-70.4,Vietnam,country,10.82,106.63,port_to_country,mo_concentrate,Molybdenum,,64.84,MT,216.12
+Barquito,port,-27.07,-70.84,Vietnam,country,10.82,106.63,port_to_country,mo_concentrate,Molybdenum,,43.22,MT,216.12
+Antofagasta (ATI),port,-23.65,-70.4,Germany,country,53.55,9.99,port_to_country,lithium_compounds,Lithium,,9.67,$M_FOB,19.35
+Mejillones,port,-23.1,-70.45,Germany,country,53.55,9.99,port_to_country,lithium_compounds,Lithium,,5.8,$M_FOB,19.35
+Iquique,port,-20.21,-70.15,Germany,country,53.55,9.99,port_to_country,lithium_compounds,Lithium,,3.87,$M_FOB,19.35
+Antofagasta (ATI),port,-23.65,-70.4,Belgium,country,51.26,4.35,port_to_country,lithium_compounds,Lithium,,39.46,$M_FOB,78.92
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,lithium_compounds,Lithium,,23.68,$M_FOB,78.92
+Iquique,port,-20.21,-70.15,Belgium,country,51.26,4.35,port_to_country,lithium_compounds,Lithium,,15.78,$M_FOB,78.92
+Antofagasta (ATI),port,-23.65,-70.4,Canada,country,49.28,-123.12,port_to_country,lithium_compounds,Lithium,,1.24,$M_FOB,2.49
+Mejillones,port,-23.1,-70.45,Canada,country,49.28,-123.12,port_to_country,lithium_compounds,Lithium,,0.75,$M_FOB,2.49
+Iquique,port,-20.21,-70.15,Canada,country,49.28,-123.12,port_to_country,lithium_compounds,Lithium,,0.5,$M_FOB,2.49
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,lithium_compounds,Lithium,,54.65,$M_FOB,109.3
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,lithium_compounds,Lithium,,32.79,$M_FOB,109.3
+Iquique,port,-20.21,-70.15,USA,country,29.76,-95.37,port_to_country,lithium_compounds,Lithium,,21.86,$M_FOB,109.3
+Antofagasta (ATI),port,-23.65,-70.4,Mexico,country,19.43,-99.13,port_to_country,lithium_compounds,Lithium,,0.08,$M_FOB,0.15
+Mejillones,port,-23.1,-70.45,Mexico,country,19.43,-99.13,port_to_country,lithium_compounds,Lithium,,0.05,$M_FOB,0.15
+Iquique,port,-20.21,-70.15,Mexico,country,19.43,-99.13,port_to_country,lithium_compounds,Lithium,,0.03,$M_FOB,0.15
+Antofagasta (ATI),port,-23.65,-70.4,China,country,31.23,121.47,port_to_country,lithium_compounds,Lithium,,1012.18,$M_FOB,2024.36
+Mejillones,port,-23.1,-70.45,China,country,31.23,121.47,port_to_country,lithium_compounds,Lithium,,607.31,$M_FOB,2024.36
+Iquique,port,-20.21,-70.15,China,country,31.23,121.47,port_to_country,lithium_compounds,Lithium,,404.87,$M_FOB,2024.36
+Antofagasta (ATI),port,-23.65,-70.4,South Korea,country,37.57,126.98,port_to_country,lithium_compounds,Lithium,,143.28,$M_FOB,286.56
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,lithium_compounds,Lithium,,85.97,$M_FOB,286.56
+Iquique,port,-20.21,-70.15,South Korea,country,37.57,126.98,port_to_country,lithium_compounds,Lithium,,57.31,$M_FOB,286.56
+Antofagasta (ATI),port,-23.65,-70.4,Japan,country,35.68,139.69,port_to_country,lithium_compounds,Lithium,,50.45,$M_FOB,100.9
+Mejillones,port,-23.1,-70.45,Japan,country,35.68,139.69,port_to_country,lithium_compounds,Lithium,,30.27,$M_FOB,100.9
+Iquique,port,-20.21,-70.15,Japan,country,35.68,139.69,port_to_country,lithium_compounds,Lithium,,20.18,$M_FOB,100.9
+Antofagasta (ATI),port,-23.65,-70.4,Taiwan,country,25.03,121.57,port_to_country,lithium_compounds,Lithium,,1.64,$M_FOB,3.27
+Mejillones,port,-23.1,-70.45,Taiwan,country,25.03,121.57,port_to_country,lithium_compounds,Lithium,,0.98,$M_FOB,3.27
+Iquique,port,-20.21,-70.15,Taiwan,country,25.03,121.57,port_to_country,lithium_compounds,Lithium,,0.65,$M_FOB,3.27
+Antofagasta (ATI),port,-23.65,-70.4,Vietnam,country,10.82,106.63,port_to_country,lithium_compounds,Lithium,,0.63,$M_FOB,1.27
+Mejillones,port,-23.1,-70.45,Vietnam,country,10.82,106.63,port_to_country,lithium_compounds,Lithium,,0.38,$M_FOB,1.27
+Iquique,port,-20.21,-70.15,Vietnam,country,10.82,106.63,port_to_country,lithium_compounds,Lithium,,0.25,$M_FOB,1.27
+Iquique,port,-20.21,-70.15,Belgium,country,51.26,4.35,port_to_country,iodine,Iodine,,75.99,$M_FOB,189.97
+Patache,port,-20.8,-70.22,Belgium,country,51.26,4.35,port_to_country,iodine,Iodine,,56.99,$M_FOB,189.97
+Antofagasta (ATI),port,-23.65,-70.4,Belgium,country,51.26,4.35,port_to_country,iodine,Iodine,,37.99,$M_FOB,189.97
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,iodine,Iodine,,19.0,$M_FOB,189.97
+Iquique,port,-20.21,-70.15,Spain,country,36.72,-4.42,port_to_country,iodine,Iodine,,0.75,$M_FOB,1.88
+Patache,port,-20.8,-70.22,Spain,country,36.72,-4.42,port_to_country,iodine,Iodine,,0.56,$M_FOB,1.88
+Antofagasta (ATI),port,-23.65,-70.4,Spain,country,36.72,-4.42,port_to_country,iodine,Iodine,,0.38,$M_FOB,1.88
+Mejillones,port,-23.1,-70.45,Spain,country,36.72,-4.42,port_to_country,iodine,Iodine,,0.19,$M_FOB,1.88
+Iquique,port,-20.21,-70.15,France,country,48.86,2.35,port_to_country,iodine,Iodine,,2.67,$M_FOB,6.67
+Patache,port,-20.8,-70.22,France,country,48.86,2.35,port_to_country,iodine,Iodine,,2.0,$M_FOB,6.67
+Antofagasta (ATI),port,-23.65,-70.4,France,country,48.86,2.35,port_to_country,iodine,Iodine,,1.33,$M_FOB,6.67
+Mejillones,port,-23.1,-70.45,France,country,48.86,2.35,port_to_country,iodine,Iodine,,0.67,$M_FOB,6.67
+Iquique,port,-20.21,-70.15,Italy,country,45.46,9.19,port_to_country,iodine,Iodine,,11.59,$M_FOB,28.98
+Patache,port,-20.8,-70.22,Italy,country,45.46,9.19,port_to_country,iodine,Iodine,,8.69,$M_FOB,28.98
+Antofagasta (ATI),port,-23.65,-70.4,Italy,country,45.46,9.19,port_to_country,iodine,Iodine,,5.8,$M_FOB,28.98
+Mejillones,port,-23.1,-70.45,Italy,country,45.46,9.19,port_to_country,iodine,Iodine,,2.9,$M_FOB,28.98
+Iquique,port,-20.21,-70.15,Norway,country,59.91,10.75,port_to_country,iodine,Iodine,,17.38,$M_FOB,43.44
+Patache,port,-20.8,-70.22,Norway,country,59.91,10.75,port_to_country,iodine,Iodine,,13.03,$M_FOB,43.44
+Antofagasta (ATI),port,-23.65,-70.4,Norway,country,59.91,10.75,port_to_country,iodine,Iodine,,8.69,$M_FOB,43.44
+Mejillones,port,-23.1,-70.45,Norway,country,59.91,10.75,port_to_country,iodine,Iodine,,4.34,$M_FOB,43.44
+Iquique,port,-20.21,-70.15,Netherlands,country,51.92,4.48,port_to_country,iodine,Iodine,,55.78,$M_FOB,139.46
+Patache,port,-20.8,-70.22,Netherlands,country,51.92,4.48,port_to_country,iodine,Iodine,,41.84,$M_FOB,139.46
+Antofagasta (ATI),port,-23.65,-70.4,Netherlands,country,51.92,4.48,port_to_country,iodine,Iodine,,27.89,$M_FOB,139.46
+Mejillones,port,-23.1,-70.45,Netherlands,country,51.92,4.48,port_to_country,iodine,Iodine,,13.95,$M_FOB,139.46
+Iquique,port,-20.21,-70.15,United Kingdom,country,51.51,-0.13,port_to_country,iodine,Iodine,,2.77,$M_FOB,6.92
+Patache,port,-20.8,-70.22,United Kingdom,country,51.51,-0.13,port_to_country,iodine,Iodine,,2.08,$M_FOB,6.92
+Antofagasta (ATI),port,-23.65,-70.4,United Kingdom,country,51.51,-0.13,port_to_country,iodine,Iodine,,1.38,$M_FOB,6.92
+Mejillones,port,-23.1,-70.45,United Kingdom,country,51.51,-0.13,port_to_country,iodine,Iodine,,0.69,$M_FOB,6.92
+Iquique,port,-20.21,-70.15,Argentina,country,-34.6,-58.38,port_to_country,iodine,Iodine,,1.08,$M_FOB,2.69
+Patache,port,-20.8,-70.22,Argentina,country,-34.6,-58.38,port_to_country,iodine,Iodine,,0.81,$M_FOB,2.69
+Antofagasta (ATI),port,-23.65,-70.4,Argentina,country,-34.6,-58.38,port_to_country,iodine,Iodine,,0.54,$M_FOB,2.69
+Mejillones,port,-23.1,-70.45,Argentina,country,-34.6,-58.38,port_to_country,iodine,Iodine,,0.27,$M_FOB,2.69
+Iquique,port,-20.21,-70.15,Brazil,country,-23.55,-46.63,port_to_country,iodine,Iodine,,28.93,$M_FOB,72.32
+Patache,port,-20.8,-70.22,Brazil,country,-23.55,-46.63,port_to_country,iodine,Iodine,,21.7,$M_FOB,72.32
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,iodine,Iodine,,14.46,$M_FOB,72.32
+Mejillones,port,-23.1,-70.45,Brazil,country,-23.55,-46.63,port_to_country,iodine,Iodine,,7.23,$M_FOB,72.32
+Iquique,port,-20.21,-70.15,Colombia,country,4.71,-74.07,port_to_country,iodine,Iodine,,0.47,$M_FOB,1.17
+Patache,port,-20.8,-70.22,Colombia,country,4.71,-74.07,port_to_country,iodine,Iodine,,0.35,$M_FOB,1.17
+Antofagasta (ATI),port,-23.65,-70.4,Colombia,country,4.71,-74.07,port_to_country,iodine,Iodine,,0.23,$M_FOB,1.17
+Mejillones,port,-23.1,-70.45,Colombia,country,4.71,-74.07,port_to_country,iodine,Iodine,,0.12,$M_FOB,1.17
+Iquique,port,-20.21,-70.15,USA,country,29.76,-95.37,port_to_country,iodine,Iodine,,79.79,$M_FOB,199.48
+Patache,port,-20.8,-70.22,USA,country,29.76,-95.37,port_to_country,iodine,Iodine,,59.84,$M_FOB,199.48
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,iodine,Iodine,,39.9,$M_FOB,199.48
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,iodine,Iodine,,19.95,$M_FOB,199.48
+Iquique,port,-20.21,-70.15,Mexico,country,19.43,-99.13,port_to_country,iodine,Iodine,,8.88,$M_FOB,22.19
+Patache,port,-20.8,-70.22,Mexico,country,19.43,-99.13,port_to_country,iodine,Iodine,,6.66,$M_FOB,22.19
+Antofagasta (ATI),port,-23.65,-70.4,Mexico,country,19.43,-99.13,port_to_country,iodine,Iodine,,4.44,$M_FOB,22.19
+Mejillones,port,-23.1,-70.45,Mexico,country,19.43,-99.13,port_to_country,iodine,Iodine,,2.22,$M_FOB,22.19
+Iquique,port,-20.21,-70.15,Peru,country,-12.05,-77.04,port_to_country,iodine,Iodine,,0.11,$M_FOB,0.28
+Patache,port,-20.8,-70.22,Peru,country,-12.05,-77.04,port_to_country,iodine,Iodine,,0.08,$M_FOB,0.28
+Antofagasta (ATI),port,-23.65,-70.4,Peru,country,-12.05,-77.04,port_to_country,iodine,Iodine,,0.06,$M_FOB,0.28
+Mejillones,port,-23.1,-70.45,Peru,country,-12.05,-77.04,port_to_country,iodine,Iodine,,0.03,$M_FOB,0.28
+Iquique,port,-20.21,-70.15,Uruguay,country,-34.88,-56.16,port_to_country,iodine,Iodine,,0.04,$M_FOB,0.1
+Patache,port,-20.8,-70.22,Uruguay,country,-34.88,-56.16,port_to_country,iodine,Iodine,,0.03,$M_FOB,0.1
+Antofagasta (ATI),port,-23.65,-70.4,Uruguay,country,-34.88,-56.16,port_to_country,iodine,Iodine,,0.02,$M_FOB,0.1
+Mejillones,port,-23.1,-70.45,Uruguay,country,-34.88,-56.16,port_to_country,iodine,Iodine,,0.01,$M_FOB,0.1
+Iquique,port,-20.21,-70.15,China,country,31.23,121.47,port_to_country,iodine,Iodine,,187.7,$M_FOB,469.26
+Patache,port,-20.8,-70.22,China,country,31.23,121.47,port_to_country,iodine,Iodine,,140.78,$M_FOB,469.26
+Antofagasta (ATI),port,-23.65,-70.4,China,country,31.23,121.47,port_to_country,iodine,Iodine,,93.85,$M_FOB,469.26
+Mejillones,port,-23.1,-70.45,China,country,31.23,121.47,port_to_country,iodine,Iodine,,46.93,$M_FOB,469.26
+Iquique,port,-20.21,-70.15,South Korea,country,37.57,126.98,port_to_country,iodine,Iodine,,3.59,$M_FOB,8.98
+Patache,port,-20.8,-70.22,South Korea,country,37.57,126.98,port_to_country,iodine,Iodine,,2.7,$M_FOB,8.98
+Antofagasta (ATI),port,-23.65,-70.4,South Korea,country,37.57,126.98,port_to_country,iodine,Iodine,,1.8,$M_FOB,8.98
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,iodine,Iodine,,0.9,$M_FOB,8.98
+Iquique,port,-20.21,-70.15,India,country,19.08,72.88,port_to_country,iodine,Iodine,,86.1,$M_FOB,215.25
+Patache,port,-20.8,-70.22,India,country,19.08,72.88,port_to_country,iodine,Iodine,,64.58,$M_FOB,215.25
+Antofagasta (ATI),port,-23.65,-70.4,India,country,19.08,72.88,port_to_country,iodine,Iodine,,43.05,$M_FOB,215.25
+Mejillones,port,-23.1,-70.45,India,country,19.08,72.88,port_to_country,iodine,Iodine,,21.53,$M_FOB,215.25
+Iquique,port,-20.21,-70.15,Japan,country,35.68,139.69,port_to_country,iodine,Iodine,,3.23,$M_FOB,8.08
+Patache,port,-20.8,-70.22,Japan,country,35.68,139.69,port_to_country,iodine,Iodine,,2.42,$M_FOB,8.08
+Antofagasta (ATI),port,-23.65,-70.4,Japan,country,35.68,139.69,port_to_country,iodine,Iodine,,1.62,$M_FOB,8.08
+Mejillones,port,-23.1,-70.45,Japan,country,35.68,139.69,port_to_country,iodine,Iodine,,0.81,$M_FOB,8.08
+Iquique,port,-20.21,-70.15,Vietnam,country,10.82,106.63,port_to_country,iodine,Iodine,,5.14,$M_FOB,12.84
+Patache,port,-20.8,-70.22,Vietnam,country,10.82,106.63,port_to_country,iodine,Iodine,,3.85,$M_FOB,12.84
+Antofagasta (ATI),port,-23.65,-70.4,Vietnam,country,10.82,106.63,port_to_country,iodine,Iodine,,2.57,$M_FOB,12.84
+Mejillones,port,-23.1,-70.45,Vietnam,country,10.82,106.63,port_to_country,iodine,Iodine,,1.28,$M_FOB,12.84
+Iquique,port,-20.21,-70.15,Australia,country,-33.87,151.21,port_to_country,iodine,Iodine,,2.96,$M_FOB,7.41
+Patache,port,-20.8,-70.22,Australia,country,-33.87,151.21,port_to_country,iodine,Iodine,,2.22,$M_FOB,7.41
+Antofagasta (ATI),port,-23.65,-70.4,Australia,country,-33.87,151.21,port_to_country,iodine,Iodine,,1.48,$M_FOB,7.41
+Mejillones,port,-23.1,-70.45,Australia,country,-33.87,151.21,port_to_country,iodine,Iodine,,0.74,$M_FOB,7.41
+Iquique,port,-20.21,-70.15,New Zealand,country,-36.85,174.76,port_to_country,iodine,Iodine,,0.63,$M_FOB,1.59
+Patache,port,-20.8,-70.22,New Zealand,country,-36.85,174.76,port_to_country,iodine,Iodine,,0.48,$M_FOB,1.59
+Antofagasta (ATI),port,-23.65,-70.4,New Zealand,country,-36.85,174.76,port_to_country,iodine,Iodine,,0.32,$M_FOB,1.59
+Mejillones,port,-23.1,-70.45,New Zealand,country,-36.85,174.76,port_to_country,iodine,Iodine,,0.16,$M_FOB,1.59
+San Antonio,port,-33.59,-71.62,Switzerland,country,47.38,8.54,port_to_country,gold_refined,Gold,,354975072.14,$USD,709950144.28
+Antofagasta (ATI),port,-23.65,-70.4,Switzerland,country,47.38,8.54,port_to_country,gold_refined,Gold,,212985043.28,$USD,709950144.28
+Mejillones,port,-23.1,-70.45,Switzerland,country,47.38,8.54,port_to_country,gold_refined,Gold,,141990028.86,$USD,709950144.28
+San Antonio,port,-33.59,-71.62,Canada,country,49.28,-123.12,port_to_country,gold_refined,Gold,,133920781.82,$USD,267841563.64
+Antofagasta (ATI),port,-23.65,-70.4,Canada,country,49.28,-123.12,port_to_country,gold_refined,Gold,,80352469.09,$USD,267841563.64
+Mejillones,port,-23.1,-70.45,Canada,country,49.28,-123.12,port_to_country,gold_refined,Gold,,53568312.73,$USD,267841563.64
+San Antonio,port,-33.59,-71.62,USA,country,29.76,-95.37,port_to_country,gold_refined,Gold,,105673835.54,$USD,211347671.08
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,gold_refined,Gold,,63404301.32,$USD,211347671.08
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,gold_refined,Gold,,42269534.22,$USD,211347671.08
+San Antonio,port,-33.59,-71.62,China,country,31.23,121.47,port_to_country,gold_refined,Gold,,34884899.16,$USD,69769798.31
+Antofagasta (ATI),port,-23.65,-70.4,China,country,31.23,121.47,port_to_country,gold_refined,Gold,,20930939.49,$USD,69769798.31
+Mejillones,port,-23.1,-70.45,China,country,31.23,121.47,port_to_country,gold_refined,Gold,,13953959.66,$USD,69769798.31
+San Antonio,port,-33.59,-71.62,UAE,country,25.2,55.27,port_to_country,gold_refined,Gold,,6191887.67,$USD,12383775.34
+Antofagasta (ATI),port,-23.65,-70.4,UAE,country,25.2,55.27,port_to_country,gold_refined,Gold,,3715132.6,$USD,12383775.34
+Mejillones,port,-23.1,-70.45,UAE,country,25.2,55.27,port_to_country,gold_refined,Gold,,2476755.07,$USD,12383775.34
+San Antonio,port,-33.59,-71.62,Singapore,country,1.35,103.82,port_to_country,gold_refined,Gold,,3094503.71,$USD,6189007.41
+Antofagasta (ATI),port,-23.65,-70.4,Singapore,country,1.35,103.82,port_to_country,gold_refined,Gold,,1856702.22,$USD,6189007.41
+Mejillones,port,-23.1,-70.45,Singapore,country,1.35,103.82,port_to_country,gold_refined,Gold,,1237801.48,$USD,6189007.41
+San Antonio,port,-33.59,-71.62,Turkey,country,41.01,28.98,port_to_country,gold_refined,Gold,,649506.86,$USD,1299013.72
+Antofagasta (ATI),port,-23.65,-70.4,Turkey,country,41.01,28.98,port_to_country,gold_refined,Gold,,389704.12,$USD,1299013.72
+Mejillones,port,-23.1,-70.45,Turkey,country,41.01,28.98,port_to_country,gold_refined,Gold,,259802.74,$USD,1299013.72
+San Antonio,port,-33.59,-71.62,Belgium,country,51.26,4.35,port_to_country,gold_refined,Gold,,378583.46,$USD,757166.91
+Antofagasta (ATI),port,-23.65,-70.4,Belgium,country,51.26,4.35,port_to_country,gold_refined,Gold,,227150.07,$USD,757166.91
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,gold_refined,Gold,,151433.38,$USD,757166.91
+San Antonio,port,-33.59,-71.62,Peru,country,-12.05,-77.04,port_to_country,gold_refined,Gold,,21356.5,$USD,42713.0
+Antofagasta (ATI),port,-23.65,-70.4,Peru,country,-12.05,-77.04,port_to_country,gold_refined,Gold,,12813.9,$USD,42713.0
+Mejillones,port,-23.1,-70.45,Peru,country,-12.05,-77.04,port_to_country,gold_refined,Gold,,8542.6,$USD,42713.0
+San Antonio,port,-33.59,-71.62,USA,country,29.76,-95.37,port_to_country,silver_refined,Silver,,99057686.77,$USD,247644216.94
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,silver_refined,Silver,,86675475.93,$USD,247644216.94
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,silver_refined,Silver,,61911054.23,$USD,247644216.94
+San Antonio,port,-33.59,-71.62,Switzerland,country,47.38,8.54,port_to_country,silver_refined,Silver,,65154715.78,$USD,162886789.46
+Antofagasta (ATI),port,-23.65,-70.4,Switzerland,country,47.38,8.54,port_to_country,silver_refined,Silver,,57010376.31,$USD,162886789.46
+Mejillones,port,-23.1,-70.45,Switzerland,country,47.38,8.54,port_to_country,silver_refined,Silver,,40721697.37,$USD,162886789.46
+San Antonio,port,-33.59,-71.62,Canada,country,49.28,-123.12,port_to_country,silver_refined,Silver,,26373587.52,$USD,65933968.8
+Antofagasta (ATI),port,-23.65,-70.4,Canada,country,49.28,-123.12,port_to_country,silver_refined,Silver,,23076889.08,$USD,65933968.8
+Mejillones,port,-23.1,-70.45,Canada,country,49.28,-123.12,port_to_country,silver_refined,Silver,,16483492.2,$USD,65933968.8
+San Antonio,port,-33.59,-71.62,Brazil,country,-23.55,-46.63,port_to_country,silver_refined,Silver,,230275.6,$USD,575689.0
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,silver_refined,Silver,,201491.15,$USD,575689.0
+Mejillones,port,-23.1,-70.45,Brazil,country,-23.55,-46.63,port_to_country,silver_refined,Silver,,143922.25,$USD,575689.0
+San Antonio,port,-33.59,-71.62,United Kingdom,country,51.51,-0.13,port_to_country,silver_refined,Silver,,127365.75,$USD,318414.37
+Antofagasta (ATI),port,-23.65,-70.4,United Kingdom,country,51.51,-0.13,port_to_country,silver_refined,Silver,,111445.03,$USD,318414.37
+Mejillones,port,-23.1,-70.45,United Kingdom,country,51.51,-0.13,port_to_country,silver_refined,Silver,,79603.59,$USD,318414.37
+San Antonio,port,-33.59,-71.62,Argentina,country,-34.6,-58.38,port_to_country,silver_refined,Silver,,19340.8,$USD,48352.01
+Antofagasta (ATI),port,-23.65,-70.4,Argentina,country,-34.6,-58.38,port_to_country,silver_refined,Silver,,16923.2,$USD,48352.01
+Mejillones,port,-23.1,-70.45,Argentina,country,-34.6,-58.38,port_to_country,silver_refined,Silver,,12088.0,$USD,48352.01
+San Antonio,port,-33.59,-71.62,UAE,country,25.2,55.27,port_to_country,silver_refined,Silver,,6235.19,$USD,15587.96
+Antofagasta (ATI),port,-23.65,-70.4,UAE,country,25.2,55.27,port_to_country,silver_refined,Silver,,5455.79,$USD,15587.96
+Mejillones,port,-23.1,-70.45,UAE,country,25.2,55.27,port_to_country,silver_refined,Silver,,3896.99,$USD,15587.96
+San Antonio,port,-33.59,-71.62,Turkey,country,41.01,28.98,port_to_country,silver_refined,Silver,,851.31,$USD,2128.28
+Antofagasta (ATI),port,-23.65,-70.4,Turkey,country,41.01,28.98,port_to_country,silver_refined,Silver,,744.9,$USD,2128.28
+Mejillones,port,-23.1,-70.45,Turkey,country,41.01,28.98,port_to_country,silver_refined,Silver,,532.07,$USD,2128.28
+Caldera,port,-27.07,-70.82,China,country,31.23,121.47,port_to_country,iron_ore,Iron,,541143971.54,$USD,1127383274.04
+Caldera,port,-27.07,-70.82,Bahrain,country,26.07,50.56,port_to_country,iron_ore,Iron,,106847182.81,$USD,222598297.52
+Caldera,port,-27.07,-70.82,South Korea,country,37.57,126.98,port_to_country,iron_ore,Iron,,68951108.87,$USD,143648143.47
+Caldera,port,-27.07,-70.82,Japan,country,35.68,139.69,port_to_country,iron_ore,Iron,,22587377.38,$USD,47057036.2
+Caldera,port,-27.07,-70.82,USA,country,29.76,-95.37,port_to_country,iron_ore,Iron,,6597596.28,$USD,13744992.26
+Caldera,port,-27.07,-70.82,Netherlands,country,51.92,4.48,port_to_country,iron_ore,Iron,,657.47,$USD,1369.72
+Caldera,port,-27.07,-70.82,Sweden,country,57.71,11.97,port_to_country,iron_ore,Iron,,300.0,$USD,625.0
+San Vicente,port,-36.73,-73.13,China,country,31.23,121.47,port_to_country,zinc_concentrate,Zinc,,39022183.83,$USD,65036973.05
+San Antonio,port,-33.59,-71.62,China,country,31.23,121.47,port_to_country,zinc_concentrate,Zinc,,26014789.22,$USD,65036973.05
+San Vicente,port,-36.73,-73.13,Japan,country,35.68,139.69,port_to_country,zinc_concentrate,Zinc,,754146.39,$USD,1256910.65
+San Antonio,port,-33.59,-71.62,Japan,country,35.68,139.69,port_to_country,zinc_concentrate,Zinc,,502764.26,$USD,1256910.65
+Patache,port,-20.8,-70.22,USA,country,29.76,-95.37,port_to_country,nitrate,Nitrate,,66635821.27,$USD,148079602.82
+Iquique,port,-20.21,-70.15,USA,country,29.76,-95.37,port_to_country,nitrate,Nitrate,,51827860.99,$USD,148079602.82
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,nitrate,Nitrate,,29615920.56,$USD,148079602.82
+Patache,port,-20.8,-70.22,Netherlands,country,51.92,4.48,port_to_country,nitrate,Nitrate,,59099116.98,$USD,131331371.06
+Iquique,port,-20.21,-70.15,Netherlands,country,51.92,4.48,port_to_country,nitrate,Nitrate,,45965979.87,$USD,131331371.06
+Mejillones,port,-23.1,-70.45,Netherlands,country,51.92,4.48,port_to_country,nitrate,Nitrate,,26266274.21,$USD,131331371.06
+Patache,port,-20.8,-70.22,Mexico,country,19.43,-99.13,port_to_country,nitrate,Nitrate,,47647634.99,$USD,105883633.32
+Iquique,port,-20.21,-70.15,Mexico,country,19.43,-99.13,port_to_country,nitrate,Nitrate,,37059271.66,$USD,105883633.32
+Mejillones,port,-23.1,-70.45,Mexico,country,19.43,-99.13,port_to_country,nitrate,Nitrate,,21176726.66,$USD,105883633.32
+Patache,port,-20.8,-70.22,Spain,country,36.72,-4.42,port_to_country,nitrate,Nitrate,,36662500.7,$USD,81472223.78
+Iquique,port,-20.21,-70.15,Spain,country,36.72,-4.42,port_to_country,nitrate,Nitrate,,28515278.32,$USD,81472223.78
+Mejillones,port,-23.1,-70.45,Spain,country,36.72,-4.42,port_to_country,nitrate,Nitrate,,16294444.76,$USD,81472223.78
+Patache,port,-20.8,-70.22,Peru,country,-12.05,-77.04,port_to_country,nitrate,Nitrate,,36294316.07,$USD,80654035.71
+Iquique,port,-20.21,-70.15,Peru,country,-12.05,-77.04,port_to_country,nitrate,Nitrate,,28228912.5,$USD,80654035.71
+Mejillones,port,-23.1,-70.45,Peru,country,-12.05,-77.04,port_to_country,nitrate,Nitrate,,16130807.14,$USD,80654035.71
+Patache,port,-20.8,-70.22,Brazil,country,-23.55,-46.63,port_to_country,nitrate,Nitrate,,18950243.04,$USD,42111651.2
+Iquique,port,-20.21,-70.15,Brazil,country,-23.55,-46.63,port_to_country,nitrate,Nitrate,,14739077.92,$USD,42111651.2
+Mejillones,port,-23.1,-70.45,Brazil,country,-23.55,-46.63,port_to_country,nitrate,Nitrate,,8422330.24,$USD,42111651.2
+Patache,port,-20.8,-70.22,South Africa,country,-33.92,18.42,port_to_country,nitrate,Nitrate,,10763991.53,$USD,23919981.17
+Iquique,port,-20.21,-70.15,South Africa,country,-33.92,18.42,port_to_country,nitrate,Nitrate,,8371993.41,$USD,23919981.17
+Mejillones,port,-23.1,-70.45,South Africa,country,-33.92,18.42,port_to_country,nitrate,Nitrate,,4783996.23,$USD,23919981.17
+Patache,port,-20.8,-70.22,Argentina,country,-34.6,-58.38,port_to_country,nitrate,Nitrate,,8180448.27,$USD,18178773.94
+Iquique,port,-20.21,-70.15,Argentina,country,-34.6,-58.38,port_to_country,nitrate,Nitrate,,6362570.88,$USD,18178773.94
+Mejillones,port,-23.1,-70.45,Argentina,country,-34.6,-58.38,port_to_country,nitrate,Nitrate,,3635754.79,$USD,18178773.94
+Patache,port,-20.8,-70.22,Ecuador,country,-0.18,-78.47,port_to_country,nitrate,Nitrate,,7443048.63,$USD,16540108.06
+Iquique,port,-20.21,-70.15,Ecuador,country,-0.18,-78.47,port_to_country,nitrate,Nitrate,,5789037.82,$USD,16540108.06
+Mejillones,port,-23.1,-70.45,Ecuador,country,-0.18,-78.47,port_to_country,nitrate,Nitrate,,3308021.61,$USD,16540108.06
+Patache,port,-20.8,-70.22,Japan,country,35.68,139.69,port_to_country,nitrate,Nitrate,,6190189.86,$USD,13755977.47
+Iquique,port,-20.21,-70.15,Japan,country,35.68,139.69,port_to_country,nitrate,Nitrate,,4814592.11,$USD,13755977.47
+Mejillones,port,-23.1,-70.45,Japan,country,35.68,139.69,port_to_country,nitrate,Nitrate,,2751195.49,$USD,13755977.47
+Patache,port,-20.8,-70.22,Bolivia,country,-16.5,-68.15,port_to_country,nitrate,Nitrate,,6149687.31,$USD,13665971.81
+Iquique,port,-20.21,-70.15,Bolivia,country,-16.5,-68.15,port_to_country,nitrate,Nitrate,,4783090.13,$USD,13665971.81
+Mejillones,port,-23.1,-70.45,Bolivia,country,-16.5,-68.15,port_to_country,nitrate,Nitrate,,2733194.36,$USD,13665971.81
+Patache,port,-20.8,-70.22,Indonesia,country,-6.21,106.85,port_to_country,nitrate,Nitrate,,3824088.55,$USD,8497974.55
+Iquique,port,-20.21,-70.15,Indonesia,country,-6.21,106.85,port_to_country,nitrate,Nitrate,,2974291.09,$USD,8497974.55
+Mejillones,port,-23.1,-70.45,Indonesia,country,-6.21,106.85,port_to_country,nitrate,Nitrate,,1699594.91,$USD,8497974.55
+Patache,port,-20.8,-70.22,Italy,country,45.46,9.19,port_to_country,nitrate,Nitrate,,2875570.37,$USD,6390156.38
+Iquique,port,-20.21,-70.15,Italy,country,45.46,9.19,port_to_country,nitrate,Nitrate,,2236554.73,$USD,6390156.38
+Mejillones,port,-23.1,-70.45,Italy,country,45.46,9.19,port_to_country,nitrate,Nitrate,,1278031.28,$USD,6390156.38
+Patache,port,-20.8,-70.22,South Korea,country,37.57,126.98,port_to_country,nitrate,Nitrate,,2372797.34,$USD,5272882.97
+Iquique,port,-20.21,-70.15,South Korea,country,37.57,126.98,port_to_country,nitrate,Nitrate,,1845509.04,$USD,5272882.97
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,nitrate,Nitrate,,1054576.59,$USD,5272882.97
+Patache,port,-20.8,-70.22,Dominican Rep.,country,18.49,-69.88,port_to_country,nitrate,Nitrate,,1918547.3,$USD,4263438.45
+Iquique,port,-20.21,-70.15,Dominican Rep.,country,18.49,-69.88,port_to_country,nitrate,Nitrate,,1492203.46,$USD,4263438.45
+Mejillones,port,-23.1,-70.45,Dominican Rep.,country,18.49,-69.88,port_to_country,nitrate,Nitrate,,852687.69,$USD,4263438.45
+Patache,port,-20.8,-70.22,Costa Rica,country,9.93,-84.09,port_to_country,nitrate,Nitrate,,1323150.53,$USD,2940334.5
+Iquique,port,-20.21,-70.15,Costa Rica,country,9.93,-84.09,port_to_country,nitrate,Nitrate,,1029117.07,$USD,2940334.5
+Mejillones,port,-23.1,-70.45,Costa Rica,country,9.93,-84.09,port_to_country,nitrate,Nitrate,,588066.9,$USD,2940334.5
+Patache,port,-20.8,-70.22,Colombia,country,4.71,-74.07,port_to_country,nitrate,Nitrate,,1320933.1,$USD,2935406.9
+Iquique,port,-20.21,-70.15,Colombia,country,4.71,-74.07,port_to_country,nitrate,Nitrate,,1027392.41,$USD,2935406.9
+Mejillones,port,-23.1,-70.45,Colombia,country,4.71,-74.07,port_to_country,nitrate,Nitrate,,587081.38,$USD,2935406.9
+Patache,port,-20.8,-70.22,Guatemala,country,14.63,-90.51,port_to_country,nitrate,Nitrate,,1201171.85,$USD,2669270.78
+Iquique,port,-20.21,-70.15,Guatemala,country,14.63,-90.51,port_to_country,nitrate,Nitrate,,934244.77,$USD,2669270.78
+Mejillones,port,-23.1,-70.45,Guatemala,country,14.63,-90.51,port_to_country,nitrate,Nitrate,,533854.16,$USD,2669270.78
+Patache,port,-20.8,-70.22,Thailand,country,13.76,100.5,port_to_country,nitrate,Nitrate,,1193596.68,$USD,2652437.06
+Iquique,port,-20.21,-70.15,Thailand,country,13.76,100.5,port_to_country,nitrate,Nitrate,,928352.97,$USD,2652437.06
+Mejillones,port,-23.1,-70.45,Thailand,country,13.76,100.5,port_to_country,nitrate,Nitrate,,530487.41,$USD,2652437.06
+Patache,port,-20.8,-70.22,Belgium,country,51.26,4.35,port_to_country,nitrate,Nitrate,,992090.72,$USD,2204646.04
+Iquique,port,-20.21,-70.15,Belgium,country,51.26,4.35,port_to_country,nitrate,Nitrate,,771626.11,$USD,2204646.04
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,nitrate,Nitrate,,440929.21,$USD,2204646.04
+Patache,port,-20.8,-70.22,Honduras,country,14.07,-87.19,port_to_country,nitrate,Nitrate,,754604.15,$USD,1676898.12
+Iquique,port,-20.21,-70.15,Honduras,country,14.07,-87.19,port_to_country,nitrate,Nitrate,,586914.34,$USD,1676898.12
+Mejillones,port,-23.1,-70.45,Honduras,country,14.07,-87.19,port_to_country,nitrate,Nitrate,,335379.62,$USD,1676898.12
+Patache,port,-20.8,-70.22,Nicaragua,country,12.11,-86.27,port_to_country,nitrate,Nitrate,,691749.83,$USD,1537221.85
+Iquique,port,-20.21,-70.15,Nicaragua,country,12.11,-86.27,port_to_country,nitrate,Nitrate,,538027.65,$USD,1537221.85
+Mejillones,port,-23.1,-70.45,Nicaragua,country,12.11,-86.27,port_to_country,nitrate,Nitrate,,307444.37,$USD,1537221.85
+Patache,port,-20.8,-70.22,India,country,19.08,72.88,port_to_country,nitrate,Nitrate,,380140.62,$USD,844756.94
+Iquique,port,-20.21,-70.15,India,country,19.08,72.88,port_to_country,nitrate,Nitrate,,295664.93,$USD,844756.94
+Mejillones,port,-23.1,-70.45,India,country,19.08,72.88,port_to_country,nitrate,Nitrate,,168951.39,$USD,844756.94
+Patache,port,-20.8,-70.22,Morocco,country,33.97,-6.85,port_to_country,nitrate,Nitrate,,205667.73,$USD,457039.4
+Iquique,port,-20.21,-70.15,Morocco,country,33.97,-6.85,port_to_country,nitrate,Nitrate,,159963.79,$USD,457039.4
+Mejillones,port,-23.1,-70.45,Morocco,country,33.97,-6.85,port_to_country,nitrate,Nitrate,,91407.88,$USD,457039.4
+Patache,port,-20.8,-70.22,Turkey,country,41.01,28.98,port_to_country,nitrate,Nitrate,,197297.78,$USD,438439.52
+Iquique,port,-20.21,-70.15,Turkey,country,41.01,28.98,port_to_country,nitrate,Nitrate,,153453.83,$USD,438439.52
+Mejillones,port,-23.1,-70.45,Turkey,country,41.01,28.98,port_to_country,nitrate,Nitrate,,87687.9,$USD,438439.52
+Patache,port,-20.8,-70.22,Poland,country,52.23,21.01,port_to_country,nitrate,Nitrate,,195486.92,$USD,434415.38
+Iquique,port,-20.21,-70.15,Poland,country,52.23,21.01,port_to_country,nitrate,Nitrate,,152045.38,$USD,434415.38
+Mejillones,port,-23.1,-70.45,Poland,country,52.23,21.01,port_to_country,nitrate,Nitrate,,86883.08,$USD,434415.38
+Patache,port,-20.8,-70.22,Jamaica,country,18.0,-76.79,port_to_country,nitrate,Nitrate,,163360.88,$USD,363024.18
+Iquique,port,-20.21,-70.15,Jamaica,country,18.0,-76.79,port_to_country,nitrate,Nitrate,,127058.46,$USD,363024.18
+Mejillones,port,-23.1,-70.45,Jamaica,country,18.0,-76.79,port_to_country,nitrate,Nitrate,,72604.84,$USD,363024.18
+Patache,port,-20.8,-70.22,Algeria,country,36.75,3.04,port_to_country,nitrate,Nitrate,,84002.97,$USD,186673.26
+Iquique,port,-20.21,-70.15,Algeria,country,36.75,3.04,port_to_country,nitrate,Nitrate,,65335.64,$USD,186673.26
+Mejillones,port,-23.1,-70.45,Algeria,country,36.75,3.04,port_to_country,nitrate,Nitrate,,37334.65,$USD,186673.26
+Patache,port,-20.8,-70.22,Mozambique,country,-25.97,32.57,port_to_country,nitrate,Nitrate,,83752.9,$USD,186117.56
+Iquique,port,-20.21,-70.15,Mozambique,country,-25.97,32.57,port_to_country,nitrate,Nitrate,,65141.15,$USD,186117.56
+Mejillones,port,-23.1,-70.45,Mozambique,country,-25.97,32.57,port_to_country,nitrate,Nitrate,,37223.51,$USD,186117.56
+Patache,port,-20.8,-70.22,Australia,country,-33.87,151.21,port_to_country,nitrate,Nitrate,,71211.15,$USD,158247.01
+Iquique,port,-20.21,-70.15,Australia,country,-33.87,151.21,port_to_country,nitrate,Nitrate,,55386.45,$USD,158247.01
+Mejillones,port,-23.1,-70.45,Australia,country,-33.87,151.21,port_to_country,nitrate,Nitrate,,31649.4,$USD,158247.01
+Patache,port,-20.8,-70.22,Panama,country,8.98,-79.52,port_to_country,nitrate,Nitrate,,64528.05,$USD,143395.67
+Iquique,port,-20.21,-70.15,Panama,country,8.98,-79.52,port_to_country,nitrate,Nitrate,,50188.48,$USD,143395.67
+Mejillones,port,-23.1,-70.45,Panama,country,8.98,-79.52,port_to_country,nitrate,Nitrate,,28679.13,$USD,143395.67
+Patache,port,-20.8,-70.22,Hungary,country,47.5,19.04,port_to_country,nitrate,Nitrate,,61288.64,$USD,136196.98
+Iquique,port,-20.21,-70.15,Hungary,country,47.5,19.04,port_to_country,nitrate,Nitrate,,47668.94,$USD,136196.98
+Mejillones,port,-23.1,-70.45,Hungary,country,47.5,19.04,port_to_country,nitrate,Nitrate,,27239.4,$USD,136196.98
+Patache,port,-20.8,-70.22,France,country,48.86,2.35,port_to_country,nitrate,Nitrate,,50418.8,$USD,112041.77
+Iquique,port,-20.21,-70.15,France,country,48.86,2.35,port_to_country,nitrate,Nitrate,,39214.62,$USD,112041.77
+Mejillones,port,-23.1,-70.45,France,country,48.86,2.35,port_to_country,nitrate,Nitrate,,22408.35,$USD,112041.77
+Patache,port,-20.8,-70.22,Uruguay,country,-34.88,-56.16,port_to_country,nitrate,Nitrate,,50108.53,$USD,111352.28
+Iquique,port,-20.21,-70.15,Uruguay,country,-34.88,-56.16,port_to_country,nitrate,Nitrate,,38973.3,$USD,111352.28
+Mejillones,port,-23.1,-70.45,Uruguay,country,-34.88,-56.16,port_to_country,nitrate,Nitrate,,22270.46,$USD,111352.28
+Patache,port,-20.8,-70.22,Greece,country,37.98,23.73,port_to_country,nitrate,Nitrate,,49352.01,$USD,109671.13
+Iquique,port,-20.21,-70.15,Greece,country,37.98,23.73,port_to_country,nitrate,Nitrate,,38384.9,$USD,109671.13
+Mejillones,port,-23.1,-70.45,Greece,country,37.98,23.73,port_to_country,nitrate,Nitrate,,21934.23,$USD,109671.13
+Patache,port,-20.8,-70.22,Cambodia,country,11.56,104.92,port_to_country,nitrate,Nitrate,,40867.51,$USD,90816.7
+Iquique,port,-20.21,-70.15,Cambodia,country,11.56,104.92,port_to_country,nitrate,Nitrate,,31785.84,$USD,90816.7
+Mejillones,port,-23.1,-70.45,Cambodia,country,11.56,104.92,port_to_country,nitrate,Nitrate,,18163.34,$USD,90816.7
+Patache,port,-20.8,-70.22,Paraguay,country,-25.26,-57.58,port_to_country,nitrate,Nitrate,,39943.47,$USD,88763.26
+Iquique,port,-20.21,-70.15,Paraguay,country,-25.26,-57.58,port_to_country,nitrate,Nitrate,,31067.14,$USD,88763.26
+Mejillones,port,-23.1,-70.45,Paraguay,country,-25.26,-57.58,port_to_country,nitrate,Nitrate,,17752.65,$USD,88763.26
+Patache,port,-20.8,-70.22,Ghana,country,5.6,-0.19,port_to_country,nitrate,Nitrate,,36876.2,$USD,81947.11
+Iquique,port,-20.21,-70.15,Ghana,country,5.6,-0.19,port_to_country,nitrate,Nitrate,,28681.49,$USD,81947.11
+Mejillones,port,-23.1,-70.45,Ghana,country,5.6,-0.19,port_to_country,nitrate,Nitrate,,16389.42,$USD,81947.11
+Patache,port,-20.8,-70.22,Lebanon,country,33.89,35.5,port_to_country,nitrate,Nitrate,,34984.61,$USD,77743.58
+Iquique,port,-20.21,-70.15,Lebanon,country,33.89,35.5,port_to_country,nitrate,Nitrate,,27210.25,$USD,77743.58
+Mejillones,port,-23.1,-70.45,Lebanon,country,33.89,35.5,port_to_country,nitrate,Nitrate,,15548.72,$USD,77743.58
+Patache,port,-20.8,-70.22,Germany,country,53.55,9.99,port_to_country,nitrate,Nitrate,,31215.55,$USD,69367.9
+Iquique,port,-20.21,-70.15,Germany,country,53.55,9.99,port_to_country,nitrate,Nitrate,,24278.76,$USD,69367.9
+Mejillones,port,-23.1,-70.45,Germany,country,53.55,9.99,port_to_country,nitrate,Nitrate,,13873.58,$USD,69367.9
+Patache,port,-20.8,-70.22,Vietnam,country,10.82,106.63,port_to_country,nitrate,Nitrate,,22564.31,$USD,50142.92
+Iquique,port,-20.21,-70.15,Vietnam,country,10.82,106.63,port_to_country,nitrate,Nitrate,,17550.02,$USD,50142.92
+Mejillones,port,-23.1,-70.45,Vietnam,country,10.82,106.63,port_to_country,nitrate,Nitrate,,10028.58,$USD,50142.92
+Patache,port,-20.8,-70.22,El Salvador,country,13.69,-89.19,port_to_country,nitrate,Nitrate,,19397.46,$USD,43105.47
+Iquique,port,-20.21,-70.15,El Salvador,country,13.69,-89.19,port_to_country,nitrate,Nitrate,,15086.91,$USD,43105.47
+Mejillones,port,-23.1,-70.45,El Salvador,country,13.69,-89.19,port_to_country,nitrate,Nitrate,,8621.09,$USD,43105.47
+Patache,port,-20.8,-70.22,Kuwait,country,29.38,47.99,port_to_country,nitrate,Nitrate,,19368.02,$USD,43040.05
+Iquique,port,-20.21,-70.15,Kuwait,country,29.38,47.99,port_to_country,nitrate,Nitrate,,15064.02,$USD,43040.05
+Mejillones,port,-23.1,-70.45,Kuwait,country,29.38,47.99,port_to_country,nitrate,Nitrate,,8608.01,$USD,43040.05
+Patache,port,-20.8,-70.22,Bangladesh,country,23.81,90.41,port_to_country,nitrate,Nitrate,,19330.2,$USD,42956.0
+Iquique,port,-20.21,-70.15,Bangladesh,country,23.81,90.41,port_to_country,nitrate,Nitrate,,15034.6,$USD,42956.0
+Mejillones,port,-23.1,-70.45,Bangladesh,country,23.81,90.41,port_to_country,nitrate,Nitrate,,8591.2,$USD,42956.0
+Patache,port,-20.8,-70.22,Philippines,country,14.6,120.98,port_to_country,nitrate,Nitrate,,16413.21,$USD,36473.8
+Iquique,port,-20.21,-70.15,Philippines,country,14.6,120.98,port_to_country,nitrate,Nitrate,,12765.83,$USD,36473.8
+Mejillones,port,-23.1,-70.45,Philippines,country,14.6,120.98,port_to_country,nitrate,Nitrate,,7294.76,$USD,36473.8
+Patache,port,-20.8,-70.22,New Zealand,country,-36.85,174.76,port_to_country,nitrate,Nitrate,,14731.9,$USD,32737.56
+Iquique,port,-20.21,-70.15,New Zealand,country,-36.85,174.76,port_to_country,nitrate,Nitrate,,11458.15,$USD,32737.56
+Mejillones,port,-23.1,-70.45,New Zealand,country,-36.85,174.76,port_to_country,nitrate,Nitrate,,6547.51,$USD,32737.56
+Patache,port,-20.8,-70.22,UAE,country,25.2,55.27,port_to_country,nitrate,Nitrate,,9102.6,$USD,20228.0
+Iquique,port,-20.21,-70.15,UAE,country,25.2,55.27,port_to_country,nitrate,Nitrate,,7079.8,$USD,20228.0
+Mejillones,port,-23.1,-70.45,UAE,country,25.2,55.27,port_to_country,nitrate,Nitrate,,4045.6,$USD,20228.0
+Patache,port,-20.8,-70.22,Denmark,country,55.68,12.57,port_to_country,nitrate,Nitrate,,8958.6,$USD,19908.0
+Iquique,port,-20.21,-70.15,Denmark,country,55.68,12.57,port_to_country,nitrate,Nitrate,,6967.8,$USD,19908.0
+Mejillones,port,-23.1,-70.45,Denmark,country,55.68,12.57,port_to_country,nitrate,Nitrate,,3981.6,$USD,19908.0
+Patache,port,-20.8,-70.22,United Kingdom,country,51.51,-0.13,port_to_country,nitrate,Nitrate,,8897.4,$USD,19772.0
+Iquique,port,-20.21,-70.15,United Kingdom,country,51.51,-0.13,port_to_country,nitrate,Nitrate,,6920.2,$USD,19772.0
+Mejillones,port,-23.1,-70.45,United Kingdom,country,51.51,-0.13,port_to_country,nitrate,Nitrate,,3954.4,$USD,19772.0
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,borate,Boron,,30041423.52,$USD,42916319.31
+Iquique,port,-20.21,-70.15,Brazil,country,-23.55,-46.63,port_to_country,borate,Boron,,12874895.79,$USD,42916319.31
+Antofagasta (ATI),port,-23.65,-70.4,China,country,31.23,121.47,port_to_country,borate,Boron,,25879570.5,$USD,36970815.0
+Iquique,port,-20.21,-70.15,China,country,31.23,121.47,port_to_country,borate,Boron,,11091244.5,$USD,36970815.0
+Antofagasta (ATI),port,-23.65,-70.4,Japan,country,35.68,139.69,port_to_country,borate,Boron,,1820147.0,$USD,2600210.0
+Iquique,port,-20.21,-70.15,Japan,country,35.68,139.69,port_to_country,borate,Boron,,780063.0,$USD,2600210.0
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,borate,Boron,,1683639.3,$USD,2405199.0
+Iquique,port,-20.21,-70.15,USA,country,29.76,-95.37,port_to_country,borate,Boron,,721559.7,$USD,2405199.0
+Antofagasta (ATI),port,-23.65,-70.4,South Korea,country,37.57,126.98,port_to_country,borate,Boron,,734292.39,$USD,1048989.13
+Iquique,port,-20.21,-70.15,South Korea,country,37.57,126.98,port_to_country,borate,Boron,,314696.74,$USD,1048989.13
+Antofagasta (ATI),port,-23.65,-70.4,Vietnam,country,10.82,106.63,port_to_country,borate,Boron,,700118.3,$USD,1000169.0
+Iquique,port,-20.21,-70.15,Vietnam,country,10.82,106.63,port_to_country,borate,Boron,,300050.7,$USD,1000169.0
+Antofagasta (ATI),port,-23.65,-70.4,Spain,country,36.72,-4.42,port_to_country,borate,Boron,,661973.0,$USD,945675.72
+Iquique,port,-20.21,-70.15,Spain,country,36.72,-4.42,port_to_country,borate,Boron,,283702.72,$USD,945675.72
+Antofagasta (ATI),port,-23.65,-70.4,Pakistan,country,24.86,67.01,port_to_country,borate,Boron,,490399.7,$USD,700571.0
+Iquique,port,-20.21,-70.15,Pakistan,country,24.86,67.01,port_to_country,borate,Boron,,210171.3,$USD,700571.0
+Antofagasta (ATI),port,-23.65,-70.4,Malaysia,country,3.14,101.69,port_to_country,borate,Boron,,396436.24,$USD,566337.48
+Iquique,port,-20.21,-70.15,Malaysia,country,3.14,101.69,port_to_country,borate,Boron,,169901.24,$USD,566337.48
+Antofagasta (ATI),port,-23.65,-70.4,Bangladesh,country,23.81,90.41,port_to_country,borate,Boron,,351157.8,$USD,501654.0
+Iquique,port,-20.21,-70.15,Bangladesh,country,23.81,90.41,port_to_country,borate,Boron,,150496.2,$USD,501654.0
+Antofagasta (ATI),port,-23.65,-70.4,Nigeria,country,6.52,3.38,port_to_country,borate,Boron,,253397.2,$USD,361996.0
+Iquique,port,-20.21,-70.15,Nigeria,country,6.52,3.38,port_to_country,borate,Boron,,108598.8,$USD,361996.0
+Antofagasta (ATI),port,-23.65,-70.4,Mexico,country,19.43,-99.13,port_to_country,borate,Boron,,195536.75,$USD,279338.22
+Iquique,port,-20.21,-70.15,Mexico,country,19.43,-99.13,port_to_country,borate,Boron,,83801.47,$USD,279338.22
+Antofagasta (ATI),port,-23.65,-70.4,Germany,country,53.55,9.99,port_to_country,borate,Boron,,180600.0,$USD,258000.0
+Iquique,port,-20.21,-70.15,Germany,country,53.55,9.99,port_to_country,borate,Boron,,77400.0,$USD,258000.0
+Antofagasta (ATI),port,-23.65,-70.4,Colombia,country,4.71,-74.07,port_to_country,borate,Boron,,133128.28,$USD,190183.26
+Iquique,port,-20.21,-70.15,Colombia,country,4.71,-74.07,port_to_country,borate,Boron,,57054.98,$USD,190183.26
+Antofagasta (ATI),port,-23.65,-70.4,Costa Rica,country,9.93,-84.09,port_to_country,borate,Boron,,128588.01,$USD,183697.16
+Iquique,port,-20.21,-70.15,Costa Rica,country,9.93,-84.09,port_to_country,borate,Boron,,55109.15,$USD,183697.16
+Antofagasta (ATI),port,-23.65,-70.4,Ecuador,country,-0.18,-78.47,port_to_country,borate,Boron,,124461.4,$USD,177802.0
+Iquique,port,-20.21,-70.15,Ecuador,country,-0.18,-78.47,port_to_country,borate,Boron,,53340.6,$USD,177802.0
+Antofagasta (ATI),port,-23.65,-70.4,France,country,48.86,2.35,port_to_country,borate,Boron,,109125.8,$USD,155894.0
+Iquique,port,-20.21,-70.15,France,country,48.86,2.35,port_to_country,borate,Boron,,46768.2,$USD,155894.0
+Antofagasta (ATI),port,-23.65,-70.4,Paraguay,country,-25.26,-57.58,port_to_country,borate,Boron,,106624.0,$USD,152320.0
+Iquique,port,-20.21,-70.15,Paraguay,country,-25.26,-57.58,port_to_country,borate,Boron,,45696.0,$USD,152320.0
+Antofagasta (ATI),port,-23.65,-70.4,South Africa,country,-33.92,18.42,port_to_country,borate,Boron,,91562.1,$USD,130803.0
+Iquique,port,-20.21,-70.15,South Africa,country,-33.92,18.42,port_to_country,borate,Boron,,39240.9,$USD,130803.0
+Antofagasta (ATI),port,-23.65,-70.4,United Kingdom,country,51.51,-0.13,port_to_country,borate,Boron,,88699.8,$USD,126714.0
+Iquique,port,-20.21,-70.15,United Kingdom,country,51.51,-0.13,port_to_country,borate,Boron,,38014.2,$USD,126714.0
+Antofagasta (ATI),port,-23.65,-70.4,Venezuela,country,10.48,-66.9,port_to_country,borate,Boron,,60589.2,$USD,86556.0
+Iquique,port,-20.21,-70.15,Venezuela,country,10.48,-66.9,port_to_country,borate,Boron,,25966.8,$USD,86556.0
+Antofagasta (ATI),port,-23.65,-70.4,Italy,country,45.46,9.19,port_to_country,borate,Boron,,35784.78,$USD,51121.12
+Iquique,port,-20.21,-70.15,Italy,country,45.46,9.19,port_to_country,borate,Boron,,15336.34,$USD,51121.12
+Antofagasta (ATI),port,-23.65,-70.4,Saudi Arabia,country,24.77,46.74,port_to_country,borate,Boron,,34402.01,$USD,49145.73
+Iquique,port,-20.21,-70.15,Saudi Arabia,country,24.77,46.74,port_to_country,borate,Boron,,14743.72,$USD,49145.73
+Antofagasta (ATI),port,-23.65,-70.4,Philippines,country,14.6,120.98,port_to_country,borate,Boron,,33457.9,$USD,47797.0
+Iquique,port,-20.21,-70.15,Philippines,country,14.6,120.98,port_to_country,borate,Boron,,14339.1,$USD,47797.0
+Antofagasta (ATI),port,-23.65,-70.4,Algeria,country,36.75,3.04,port_to_country,borate,Boron,,29439.84,$USD,42056.92
+Iquique,port,-20.21,-70.15,Algeria,country,36.75,3.04,port_to_country,borate,Boron,,12617.08,$USD,42056.92
+Antofagasta (ATI),port,-23.65,-70.4,Australia,country,-33.87,151.21,port_to_country,borate,Boron,,16716.0,$USD,23880.0
+Iquique,port,-20.21,-70.15,Australia,country,-33.87,151.21,port_to_country,borate,Boron,,7164.0,$USD,23880.0
+Antofagasta (ATI),port,-23.65,-70.4,UAE,country,25.2,55.27,port_to_country,borate,Boron,,16640.4,$USD,23772.0
+Iquique,port,-20.21,-70.15,UAE,country,25.2,55.27,port_to_country,borate,Boron,,7131.6,$USD,23772.0
+Antofagasta (ATI),port,-23.65,-70.4,Sri Lanka,country,6.93,79.85,port_to_country,borate,Boron,,16292.5,$USD,23275.0
+Iquique,port,-20.21,-70.15,Sri Lanka,country,6.93,79.85,port_to_country,borate,Boron,,6982.5,$USD,23275.0
+Antofagasta (ATI),port,-23.65,-70.4,Honduras,country,14.07,-87.19,port_to_country,borate,Boron,,13877.5,$USD,19825.0
+Iquique,port,-20.21,-70.15,Honduras,country,14.07,-87.19,port_to_country,borate,Boron,,5947.5,$USD,19825.0
+Antofagasta (ATI),port,-23.65,-70.4,Canada,country,49.28,-123.12,port_to_country,borate,Boron,,12734.4,$USD,18192.0
+Iquique,port,-20.21,-70.15,Canada,country,49.28,-123.12,port_to_country,borate,Boron,,5457.6,$USD,18192.0
+Antofagasta (ATI),port,-23.65,-70.4,Israel,country,32.09,34.77,port_to_country,borate,Boron,,5575.5,$USD,7965.0
+Iquique,port,-20.21,-70.15,Israel,country,32.09,34.77,port_to_country,borate,Boron,,2389.5,$USD,7965.0
+Patache,port,-20.8,-70.22,USA,country,29.76,-95.37,port_to_country,salt,Salt,,26158312.46,$USD,65395781.16
+Iquique,port,-20.21,-70.15,USA,country,29.76,-95.37,port_to_country,salt,Salt,,19618734.35,$USD,65395781.16
+Coquimbo,port,-29.96,-71.35,USA,country,29.76,-95.37,port_to_country,salt,Salt,,13079156.23,$USD,65395781.16
+San Antonio,port,-33.59,-71.62,USA,country,29.76,-95.37,port_to_country,salt,Salt,,6539578.12,$USD,65395781.16
+Patache,port,-20.8,-70.22,Brazil,country,-23.55,-46.63,port_to_country,salt,Salt,,20831422.73,$USD,52078556.82
+Iquique,port,-20.21,-70.15,Brazil,country,-23.55,-46.63,port_to_country,salt,Salt,,15623567.05,$USD,52078556.82
+Coquimbo,port,-29.96,-71.35,Brazil,country,-23.55,-46.63,port_to_country,salt,Salt,,10415711.36,$USD,52078556.82
+San Antonio,port,-33.59,-71.62,Brazil,country,-23.55,-46.63,port_to_country,salt,Salt,,5207855.68,$USD,52078556.82
+Patache,port,-20.8,-70.22,Canada,country,49.28,-123.12,port_to_country,salt,Salt,,1521856.8,$USD,3804641.99
+Iquique,port,-20.21,-70.15,Canada,country,49.28,-123.12,port_to_country,salt,Salt,,1141392.6,$USD,3804641.99
+Coquimbo,port,-29.96,-71.35,Canada,country,49.28,-123.12,port_to_country,salt,Salt,,760928.4,$USD,3804641.99
+San Antonio,port,-33.59,-71.62,Canada,country,49.28,-123.12,port_to_country,salt,Salt,,380464.2,$USD,3804641.99
+Patache,port,-20.8,-70.22,Uruguay,country,-34.88,-56.16,port_to_country,salt,Salt,,1395738.03,$USD,3489345.07
+Iquique,port,-20.21,-70.15,Uruguay,country,-34.88,-56.16,port_to_country,salt,Salt,,1046803.52,$USD,3489345.07
+Coquimbo,port,-29.96,-71.35,Uruguay,country,-34.88,-56.16,port_to_country,salt,Salt,,697869.01,$USD,3489345.07
+San Antonio,port,-33.59,-71.62,Uruguay,country,-34.88,-56.16,port_to_country,salt,Salt,,348934.51,$USD,3489345.07
+Patache,port,-20.8,-70.22,Guatemala,country,14.63,-90.51,port_to_country,salt,Salt,,1351874.61,$USD,3379686.52
+Iquique,port,-20.21,-70.15,Guatemala,country,14.63,-90.51,port_to_country,salt,Salt,,1013905.96,$USD,3379686.52
+Coquimbo,port,-29.96,-71.35,Guatemala,country,14.63,-90.51,port_to_country,salt,Salt,,675937.3,$USD,3379686.52
+San Antonio,port,-33.59,-71.62,Guatemala,country,14.63,-90.51,port_to_country,salt,Salt,,337968.65,$USD,3379686.52
+Patache,port,-20.8,-70.22,Mexico,country,19.43,-99.13,port_to_country,salt,Salt,,1141422.77,$USD,2853556.93
+Iquique,port,-20.21,-70.15,Mexico,country,19.43,-99.13,port_to_country,salt,Salt,,856067.08,$USD,2853556.93
+Coquimbo,port,-29.96,-71.35,Mexico,country,19.43,-99.13,port_to_country,salt,Salt,,570711.39,$USD,2853556.93
+San Antonio,port,-33.59,-71.62,Mexico,country,19.43,-99.13,port_to_country,salt,Salt,,285355.69,$USD,2853556.93
+Patache,port,-20.8,-70.22,Cyprus,country,35.17,33.36,port_to_country,salt,Salt,,1092080.0,$USD,2730200.0
+Iquique,port,-20.21,-70.15,Cyprus,country,35.17,33.36,port_to_country,salt,Salt,,819060.0,$USD,2730200.0
+Coquimbo,port,-29.96,-71.35,Cyprus,country,35.17,33.36,port_to_country,salt,Salt,,546040.0,$USD,2730200.0
+San Antonio,port,-33.59,-71.62,Cyprus,country,35.17,33.36,port_to_country,salt,Salt,,273020.0,$USD,2730200.0
+Patache,port,-20.8,-70.22,Argentina,country,-34.6,-58.38,port_to_country,salt,Salt,,900692.24,$USD,2251730.61
+Iquique,port,-20.21,-70.15,Argentina,country,-34.6,-58.38,port_to_country,salt,Salt,,675519.18,$USD,2251730.61
+Coquimbo,port,-29.96,-71.35,Argentina,country,-34.6,-58.38,port_to_country,salt,Salt,,450346.12,$USD,2251730.61
+San Antonio,port,-33.59,-71.62,Argentina,country,-34.6,-58.38,port_to_country,salt,Salt,,225173.06,$USD,2251730.61
+Patache,port,-20.8,-70.22,Netherlands,country,51.92,4.48,port_to_country,salt,Salt,,848646.91,$USD,2121617.27
+Iquique,port,-20.21,-70.15,Netherlands,country,51.92,4.48,port_to_country,salt,Salt,,636485.18,$USD,2121617.27
+Coquimbo,port,-29.96,-71.35,Netherlands,country,51.92,4.48,port_to_country,salt,Salt,,424323.45,$USD,2121617.27
+San Antonio,port,-33.59,-71.62,Netherlands,country,51.92,4.48,port_to_country,salt,Salt,,212161.73,$USD,2121617.27
+Patache,port,-20.8,-70.22,Ecuador,country,-0.18,-78.47,port_to_country,salt,Salt,,614435.04,$USD,1536087.59
+Iquique,port,-20.21,-70.15,Ecuador,country,-0.18,-78.47,port_to_country,salt,Salt,,460826.28,$USD,1536087.59
+Coquimbo,port,-29.96,-71.35,Ecuador,country,-0.18,-78.47,port_to_country,salt,Salt,,307217.52,$USD,1536087.59
+San Antonio,port,-33.59,-71.62,Ecuador,country,-0.18,-78.47,port_to_country,salt,Salt,,153608.76,$USD,1536087.59
+Patache,port,-20.8,-70.22,Honduras,country,14.07,-87.19,port_to_country,salt,Salt,,586087.68,$USD,1465219.2
+Iquique,port,-20.21,-70.15,Honduras,country,14.07,-87.19,port_to_country,salt,Salt,,439565.76,$USD,1465219.2
+Coquimbo,port,-29.96,-71.35,Honduras,country,14.07,-87.19,port_to_country,salt,Salt,,293043.84,$USD,1465219.2
+San Antonio,port,-33.59,-71.62,Honduras,country,14.07,-87.19,port_to_country,salt,Salt,,146521.92,$USD,1465219.2
+Patache,port,-20.8,-70.22,Peru,country,-12.05,-77.04,port_to_country,salt,Salt,,353210.1,$USD,883025.26
+Iquique,port,-20.21,-70.15,Peru,country,-12.05,-77.04,port_to_country,salt,Salt,,264907.58,$USD,883025.26
+Coquimbo,port,-29.96,-71.35,Peru,country,-12.05,-77.04,port_to_country,salt,Salt,,176605.05,$USD,883025.26
+San Antonio,port,-33.59,-71.62,Peru,country,-12.05,-77.04,port_to_country,salt,Salt,,88302.53,$USD,883025.26
+Patache,port,-20.8,-70.22,China,country,31.23,121.47,port_to_country,salt,Salt,,255428.54,$USD,638571.35
+Iquique,port,-20.21,-70.15,China,country,31.23,121.47,port_to_country,salt,Salt,,191571.4,$USD,638571.35
+Coquimbo,port,-29.96,-71.35,China,country,31.23,121.47,port_to_country,salt,Salt,,127714.27,$USD,638571.35
+San Antonio,port,-33.59,-71.62,China,country,31.23,121.47,port_to_country,salt,Salt,,63857.14,$USD,638571.35
+Patache,port,-20.8,-70.22,Panama,country,8.98,-79.52,port_to_country,salt,Salt,,126919.87,$USD,317299.67
+Iquique,port,-20.21,-70.15,Panama,country,8.98,-79.52,port_to_country,salt,Salt,,95189.9,$USD,317299.67
+Coquimbo,port,-29.96,-71.35,Panama,country,8.98,-79.52,port_to_country,salt,Salt,,63459.93,$USD,317299.67
+San Antonio,port,-33.59,-71.62,Panama,country,8.98,-79.52,port_to_country,salt,Salt,,31729.97,$USD,317299.67
+Patache,port,-20.8,-70.22,Bolivia,country,-16.5,-68.15,port_to_country,salt,Salt,,64059.64,$USD,160149.11
+Iquique,port,-20.21,-70.15,Bolivia,country,-16.5,-68.15,port_to_country,salt,Salt,,48044.73,$USD,160149.11
+Coquimbo,port,-29.96,-71.35,Bolivia,country,-16.5,-68.15,port_to_country,salt,Salt,,32029.82,$USD,160149.11
+San Antonio,port,-33.59,-71.62,Bolivia,country,-16.5,-68.15,port_to_country,salt,Salt,,16014.91,$USD,160149.11
+Patache,port,-20.8,-70.22,Paraguay,country,-25.26,-57.58,port_to_country,salt,Salt,,63746.08,$USD,159365.2
+Iquique,port,-20.21,-70.15,Paraguay,country,-25.26,-57.58,port_to_country,salt,Salt,,47809.56,$USD,159365.2
+Coquimbo,port,-29.96,-71.35,Paraguay,country,-25.26,-57.58,port_to_country,salt,Salt,,31873.04,$USD,159365.2
+San Antonio,port,-33.59,-71.62,Paraguay,country,-25.26,-57.58,port_to_country,salt,Salt,,15936.52,$USD,159365.2
+Patache,port,-20.8,-70.22,Japan,country,35.68,139.69,port_to_country,salt,Salt,,2544.0,$USD,6360.0
+Iquique,port,-20.21,-70.15,Japan,country,35.68,139.69,port_to_country,salt,Salt,,1908.0,$USD,6360.0
+Coquimbo,port,-29.96,-71.35,Japan,country,35.68,139.69,port_to_country,salt,Salt,,1272.0,$USD,6360.0
+San Antonio,port,-33.59,-71.62,Japan,country,35.68,139.69,port_to_country,salt,Salt,,636.0,$USD,6360.0
+Patache,port,-20.8,-70.22,Colombia,country,4.71,-74.07,port_to_country,salt,Salt,,459.2,$USD,1148.0
+Iquique,port,-20.21,-70.15,Colombia,country,4.71,-74.07,port_to_country,salt,Salt,,344.4,$USD,1148.0
+Coquimbo,port,-29.96,-71.35,Colombia,country,4.71,-74.07,port_to_country,salt,Salt,,229.6,$USD,1148.0
+San Antonio,port,-33.59,-71.62,Colombia,country,4.71,-74.07,port_to_country,salt,Salt,,114.8,$USD,1148.0
+Patache,port,-20.8,-70.22,Costa Rica,country,9.93,-84.09,port_to_country,salt,Salt,,4.0,$USD,10.0
+Iquique,port,-20.21,-70.15,Costa Rica,country,9.93,-84.09,port_to_country,salt,Salt,,3.0,$USD,10.0
+Coquimbo,port,-29.96,-71.35,Costa Rica,country,9.93,-84.09,port_to_country,salt,Salt,,2.0,$USD,10.0
+San Antonio,port,-33.59,-71.62,Costa Rica,country,9.93,-84.09,port_to_country,salt,Salt,,1.0,$USD,10.0
+Patache,port,-20.8,-70.22,Dominican Rep.,country,18.49,-69.88,port_to_country,salt,Salt,,0.08,$USD,0.2
+Iquique,port,-20.21,-70.15,Dominican Rep.,country,18.49,-69.88,port_to_country,salt,Salt,,0.06,$USD,0.2
+Coquimbo,port,-29.96,-71.35,Dominican Rep.,country,18.49,-69.88,port_to_country,salt,Salt,,0.04,$USD,0.2
+San Antonio,port,-33.59,-71.62,Dominican Rep.,country,18.49,-69.88,port_to_country,salt,Salt,,0.02,$USD,0.2
+Patache,port,-20.8,-70.22,Brazil,country,-23.55,-46.63,port_to_country,potassium_chloride,Potash,,14394553.27,$USD,28789106.53
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,potassium_chloride,Potash,,8636731.96,$USD,28789106.53
+Iquique,port,-20.21,-70.15,Brazil,country,-23.55,-46.63,port_to_country,potassium_chloride,Potash,,5757821.31,$USD,28789106.53
+Patache,port,-20.8,-70.22,South Africa,country,-33.92,18.42,port_to_country,potassium_chloride,Potash,,14075764.65,$USD,28151529.31
+Antofagasta (ATI),port,-23.65,-70.4,South Africa,country,-33.92,18.42,port_to_country,potassium_chloride,Potash,,8445458.79,$USD,28151529.31
+Iquique,port,-20.21,-70.15,South Africa,country,-33.92,18.42,port_to_country,potassium_chloride,Potash,,5630305.86,$USD,28151529.31
+Patache,port,-20.8,-70.22,Ecuador,country,-0.18,-78.47,port_to_country,potassium_chloride,Potash,,7244811.81,$USD,14489623.62
+Antofagasta (ATI),port,-23.65,-70.4,Ecuador,country,-0.18,-78.47,port_to_country,potassium_chloride,Potash,,4346887.09,$USD,14489623.62
+Iquique,port,-20.21,-70.15,Ecuador,country,-0.18,-78.47,port_to_country,potassium_chloride,Potash,,2897924.72,$USD,14489623.62
+Patache,port,-20.8,-70.22,Mexico,country,19.43,-99.13,port_to_country,potassium_chloride,Potash,,6944663.15,$USD,13889326.3
+Antofagasta (ATI),port,-23.65,-70.4,Mexico,country,19.43,-99.13,port_to_country,potassium_chloride,Potash,,4166797.89,$USD,13889326.3
+Iquique,port,-20.21,-70.15,Mexico,country,19.43,-99.13,port_to_country,potassium_chloride,Potash,,2777865.26,$USD,13889326.3
+Patache,port,-20.8,-70.22,Netherlands,country,51.92,4.48,port_to_country,potassium_chloride,Potash,,6082126.38,$USD,12164252.75
+Antofagasta (ATI),port,-23.65,-70.4,Netherlands,country,51.92,4.48,port_to_country,potassium_chloride,Potash,,3649275.82,$USD,12164252.75
+Iquique,port,-20.21,-70.15,Netherlands,country,51.92,4.48,port_to_country,potassium_chloride,Potash,,2432850.55,$USD,12164252.75
+Patache,port,-20.8,-70.22,Spain,country,36.72,-4.42,port_to_country,potassium_chloride,Potash,,5357993.29,$USD,10715986.57
+Antofagasta (ATI),port,-23.65,-70.4,Spain,country,36.72,-4.42,port_to_country,potassium_chloride,Potash,,3214795.97,$USD,10715986.57
+Iquique,port,-20.21,-70.15,Spain,country,36.72,-4.42,port_to_country,potassium_chloride,Potash,,2143197.31,$USD,10715986.57
+Patache,port,-20.8,-70.22,USA,country,29.76,-95.37,port_to_country,potassium_chloride,Potash,,3733606.19,$USD,7467212.39
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,potassium_chloride,Potash,,2240163.72,$USD,7467212.39
+Iquique,port,-20.21,-70.15,USA,country,29.76,-95.37,port_to_country,potassium_chloride,Potash,,1493442.48,$USD,7467212.39
+Patache,port,-20.8,-70.22,Colombia,country,4.71,-74.07,port_to_country,potassium_chloride,Potash,,3298884.44,$USD,6597768.87
+Antofagasta (ATI),port,-23.65,-70.4,Colombia,country,4.71,-74.07,port_to_country,potassium_chloride,Potash,,1979330.66,$USD,6597768.87
+Iquique,port,-20.21,-70.15,Colombia,country,4.71,-74.07,port_to_country,potassium_chloride,Potash,,1319553.77,$USD,6597768.87
+Patache,port,-20.8,-70.22,Peru,country,-12.05,-77.04,port_to_country,potassium_chloride,Potash,,2224959.5,$USD,4449918.99
+Antofagasta (ATI),port,-23.65,-70.4,Peru,country,-12.05,-77.04,port_to_country,potassium_chloride,Potash,,1334975.7,$USD,4449918.99
+Iquique,port,-20.21,-70.15,Peru,country,-12.05,-77.04,port_to_country,potassium_chloride,Potash,,889983.8,$USD,4449918.99
+Patache,port,-20.8,-70.22,Argentina,country,-34.6,-58.38,port_to_country,potassium_chloride,Potash,,244050.68,$USD,488101.36
+Antofagasta (ATI),port,-23.65,-70.4,Argentina,country,-34.6,-58.38,port_to_country,potassium_chloride,Potash,,146430.41,$USD,488101.36
+Iquique,port,-20.21,-70.15,Argentina,country,-34.6,-58.38,port_to_country,potassium_chloride,Potash,,97620.27,$USD,488101.36
+Patache,port,-20.8,-70.22,Paraguay,country,-25.26,-57.58,port_to_country,potassium_chloride,Potash,,121825.0,$USD,243650.0
+Antofagasta (ATI),port,-23.65,-70.4,Paraguay,country,-25.26,-57.58,port_to_country,potassium_chloride,Potash,,73095.0,$USD,243650.0
+Iquique,port,-20.21,-70.15,Paraguay,country,-25.26,-57.58,port_to_country,potassium_chloride,Potash,,48730.0,$USD,243650.0
+Patache,port,-20.8,-70.22,Costa Rica,country,9.93,-84.09,port_to_country,potassium_chloride,Potash,,38748.0,$USD,77496.0
+Antofagasta (ATI),port,-23.65,-70.4,Costa Rica,country,9.93,-84.09,port_to_country,potassium_chloride,Potash,,23248.8,$USD,77496.0
+Iquique,port,-20.21,-70.15,Costa Rica,country,9.93,-84.09,port_to_country,potassium_chloride,Potash,,15499.2,$USD,77496.0
+Patache,port,-20.8,-70.22,Guatemala,country,14.63,-90.51,port_to_country,potassium_chloride,Potash,,15237.36,$USD,30474.72
+Antofagasta (ATI),port,-23.65,-70.4,Guatemala,country,14.63,-90.51,port_to_country,potassium_chloride,Potash,,9142.42,$USD,30474.72
+Iquique,port,-20.21,-70.15,Guatemala,country,14.63,-90.51,port_to_country,potassium_chloride,Potash,,6094.94,$USD,30474.72
+Patache,port,-20.8,-70.22,Bolivia,country,-16.5,-68.15,port_to_country,potassium_chloride,Potash,,4325.0,$USD,8650.0
+Antofagasta (ATI),port,-23.65,-70.4,Bolivia,country,-16.5,-68.15,port_to_country,potassium_chloride,Potash,,2595.0,$USD,8650.0
+Iquique,port,-20.21,-70.15,Bolivia,country,-16.5,-68.15,port_to_country,potassium_chloride,Potash,,1730.0,$USD,8650.0
+Patache,port,-20.8,-70.22,Switzerland,country,47.38,8.54,port_to_country,potassium_chloride,Potash,,4.15,$USD,8.3
+Antofagasta (ATI),port,-23.65,-70.4,Switzerland,country,47.38,8.54,port_to_country,potassium_chloride,Potash,,2.49,$USD,8.3
+Iquique,port,-20.21,-70.15,Switzerland,country,47.38,8.54,port_to_country,potassium_chloride,Potash,,1.66,$USD,8.3
+San Antonio,port,-33.59,-71.62,USA,country,29.76,-95.37,port_to_country,perrhenate,Rhenium,,24484999.27,$USD,40808332.11
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,perrhenate,Rhenium,,16323332.84,$USD,40808332.11
+San Antonio,port,-33.59,-71.62,Austria,country,48.21,16.37,port_to_country,perrhenate,Rhenium,,255635.9,$USD,426059.83
+Mejillones,port,-23.1,-70.45,Austria,country,48.21,16.37,port_to_country,perrhenate,Rhenium,,170423.93,$USD,426059.83
+San Antonio,port,-33.59,-71.62,South Korea,country,37.57,126.98,port_to_country,perrhenate,Rhenium,,252804.65,$USD,421341.09
+Mejillones,port,-23.1,-70.45,South Korea,country,37.57,126.98,port_to_country,perrhenate,Rhenium,,168536.44,$USD,421341.09
+San Antonio,port,-33.59,-71.62,Germany,country,53.55,9.99,port_to_country,perrhenate,Rhenium,,81592.96,$USD,135988.27
+Mejillones,port,-23.1,-70.45,Germany,country,53.55,9.99,port_to_country,perrhenate,Rhenium,,54395.31,$USD,135988.27
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,lead_unwrought,Lead,,9462366.97,$USD,18924733.95
+San Antonio,port,-33.59,-71.62,Brazil,country,-23.55,-46.63,port_to_country,lead_unwrought,Lead,,9462366.97,$USD,18924733.95
+Antofagasta (ATI),port,-23.65,-70.4,India,country,19.08,72.88,port_to_country,lead_unwrought,Lead,,2678767.29,$USD,5357534.59
+San Antonio,port,-33.59,-71.62,India,country,19.08,72.88,port_to_country,lead_unwrought,Lead,,2678767.29,$USD,5357534.59
+Antofagasta (ATI),port,-23.65,-70.4,Colombia,country,4.71,-74.07,port_to_country,lead_unwrought,Lead,,2065350.56,$USD,4130701.13
+San Antonio,port,-33.59,-71.62,Colombia,country,4.71,-74.07,port_to_country,lead_unwrought,Lead,,2065350.56,$USD,4130701.13
+Antofagasta (ATI),port,-23.65,-70.4,Spain,country,36.72,-4.42,port_to_country,lead_unwrought,Lead,,820571.22,$USD,1641142.45
+San Antonio,port,-33.59,-71.62,Spain,country,36.72,-4.42,port_to_country,lead_unwrought,Lead,,820571.22,$USD,1641142.45
+Antofagasta (ATI),port,-23.65,-70.4,Japan,country,35.68,139.69,port_to_country,lead_unwrought,Lead,,268147.04,$USD,536294.08
+San Antonio,port,-33.59,-71.62,Japan,country,35.68,139.69,port_to_country,lead_unwrought,Lead,,268147.04,$USD,536294.08
+Antofagasta (ATI),port,-23.65,-70.4,Ecuador,country,-0.18,-78.47,port_to_country,lead_unwrought,Lead,,77230.1,$USD,154460.21
+San Antonio,port,-33.59,-71.62,Ecuador,country,-0.18,-78.47,port_to_country,lead_unwrought,Lead,,77230.1,$USD,154460.21
+Antofagasta (ATI),port,-23.65,-70.4,Netherlands,country,51.92,4.48,port_to_country,copper_sulfate,Copper Sulfate,,1898873.78,$USD,4747184.45
+Mejillones,port,-23.1,-70.45,Netherlands,country,51.92,4.48,port_to_country,copper_sulfate,Copper Sulfate,,1424155.33,$USD,4747184.45
+San Antonio,port,-33.59,-71.62,Netherlands,country,51.92,4.48,port_to_country,copper_sulfate,Copper Sulfate,,1424155.33,$USD,4747184.45
+Antofagasta (ATI),port,-23.65,-70.4,Canada,country,49.28,-123.12,port_to_country,copper_sulfate,Copper Sulfate,,1808309.7,$USD,4520774.26
+Mejillones,port,-23.1,-70.45,Canada,country,49.28,-123.12,port_to_country,copper_sulfate,Copper Sulfate,,1356232.28,$USD,4520774.26
+San Antonio,port,-33.59,-71.62,Canada,country,49.28,-123.12,port_to_country,copper_sulfate,Copper Sulfate,,1356232.28,$USD,4520774.26
+Antofagasta (ATI),port,-23.65,-70.4,USA,country,29.76,-95.37,port_to_country,copper_sulfate,Copper Sulfate,,1580549.65,$USD,3951374.12
+Mejillones,port,-23.1,-70.45,USA,country,29.76,-95.37,port_to_country,copper_sulfate,Copper Sulfate,,1185412.24,$USD,3951374.12
+San Antonio,port,-33.59,-71.62,USA,country,29.76,-95.37,port_to_country,copper_sulfate,Copper Sulfate,,1185412.24,$USD,3951374.12
+Antofagasta (ATI),port,-23.65,-70.4,United Kingdom,country,51.51,-0.13,port_to_country,copper_sulfate,Copper Sulfate,,953518.9,$USD,2383797.25
+Mejillones,port,-23.1,-70.45,United Kingdom,country,51.51,-0.13,port_to_country,copper_sulfate,Copper Sulfate,,715139.17,$USD,2383797.25
+San Antonio,port,-33.59,-71.62,United Kingdom,country,51.51,-0.13,port_to_country,copper_sulfate,Copper Sulfate,,715139.17,$USD,2383797.25
+Antofagasta (ATI),port,-23.65,-70.4,Spain,country,36.72,-4.42,port_to_country,copper_sulfate,Copper Sulfate,,830317.8,$USD,2075794.5
+Mejillones,port,-23.1,-70.45,Spain,country,36.72,-4.42,port_to_country,copper_sulfate,Copper Sulfate,,622738.35,$USD,2075794.5
+San Antonio,port,-33.59,-71.62,Spain,country,36.72,-4.42,port_to_country,copper_sulfate,Copper Sulfate,,622738.35,$USD,2075794.5
+Antofagasta (ATI),port,-23.65,-70.4,South Africa,country,-33.92,18.42,port_to_country,copper_sulfate,Copper Sulfate,,563261.0,$USD,1408152.5
+Mejillones,port,-23.1,-70.45,South Africa,country,-33.92,18.42,port_to_country,copper_sulfate,Copper Sulfate,,422445.75,$USD,1408152.5
+San Antonio,port,-33.59,-71.62,South Africa,country,-33.92,18.42,port_to_country,copper_sulfate,Copper Sulfate,,422445.75,$USD,1408152.5
+Antofagasta (ATI),port,-23.65,-70.4,Ireland,country,53.35,-6.26,port_to_country,copper_sulfate,Copper Sulfate,,521947.9,$USD,1304869.75
+Mejillones,port,-23.1,-70.45,Ireland,country,53.35,-6.26,port_to_country,copper_sulfate,Copper Sulfate,,391460.92,$USD,1304869.75
+San Antonio,port,-33.59,-71.62,Ireland,country,53.35,-6.26,port_to_country,copper_sulfate,Copper Sulfate,,391460.92,$USD,1304869.75
+Antofagasta (ATI),port,-23.65,-70.4,Argentina,country,-34.6,-58.38,port_to_country,copper_sulfate,Copper Sulfate,,340744.2,$USD,851860.5
+Mejillones,port,-23.1,-70.45,Argentina,country,-34.6,-58.38,port_to_country,copper_sulfate,Copper Sulfate,,255558.15,$USD,851860.5
+San Antonio,port,-33.59,-71.62,Argentina,country,-34.6,-58.38,port_to_country,copper_sulfate,Copper Sulfate,,255558.15,$USD,851860.5
+Antofagasta (ATI),port,-23.65,-70.4,Denmark,country,55.68,12.57,port_to_country,copper_sulfate,Copper Sulfate,,336069.3,$USD,840173.25
+Mejillones,port,-23.1,-70.45,Denmark,country,55.68,12.57,port_to_country,copper_sulfate,Copper Sulfate,,252051.97,$USD,840173.25
+San Antonio,port,-33.59,-71.62,Denmark,country,55.68,12.57,port_to_country,copper_sulfate,Copper Sulfate,,252051.97,$USD,840173.25
+Antofagasta (ATI),port,-23.65,-70.4,Belgium,country,51.26,4.35,port_to_country,copper_sulfate,Copper Sulfate,,273135.29,$USD,682838.22
+Mejillones,port,-23.1,-70.45,Belgium,country,51.26,4.35,port_to_country,copper_sulfate,Copper Sulfate,,204851.47,$USD,682838.22
+San Antonio,port,-33.59,-71.62,Belgium,country,51.26,4.35,port_to_country,copper_sulfate,Copper Sulfate,,204851.47,$USD,682838.22
+Antofagasta (ATI),port,-23.65,-70.4,Ecuador,country,-0.18,-78.47,port_to_country,copper_sulfate,Copper Sulfate,,165180.68,$USD,412951.7
+Mejillones,port,-23.1,-70.45,Ecuador,country,-0.18,-78.47,port_to_country,copper_sulfate,Copper Sulfate,,123885.51,$USD,412951.7
+San Antonio,port,-33.59,-71.62,Ecuador,country,-0.18,-78.47,port_to_country,copper_sulfate,Copper Sulfate,,123885.51,$USD,412951.7
+Antofagasta (ATI),port,-23.65,-70.4,Australia,country,-33.87,151.21,port_to_country,copper_sulfate,Copper Sulfate,,95059.0,$USD,237647.5
+Mejillones,port,-23.1,-70.45,Australia,country,-33.87,151.21,port_to_country,copper_sulfate,Copper Sulfate,,71294.25,$USD,237647.5
+San Antonio,port,-33.59,-71.62,Australia,country,-33.87,151.21,port_to_country,copper_sulfate,Copper Sulfate,,71294.25,$USD,237647.5
+Antofagasta (ATI),port,-23.65,-70.4,Italy,country,45.46,9.19,port_to_country,copper_sulfate,Copper Sulfate,,71787.7,$USD,179469.25
+Mejillones,port,-23.1,-70.45,Italy,country,45.46,9.19,port_to_country,copper_sulfate,Copper Sulfate,,53840.78,$USD,179469.25
+San Antonio,port,-33.59,-71.62,Italy,country,45.46,9.19,port_to_country,copper_sulfate,Copper Sulfate,,53840.78,$USD,179469.25
+Antofagasta (ATI),port,-23.65,-70.4,Cyprus,country,35.17,33.36,port_to_country,copper_sulfate,Copper Sulfate,,21970.6,$USD,54926.5
+Mejillones,port,-23.1,-70.45,Cyprus,country,35.17,33.36,port_to_country,copper_sulfate,Copper Sulfate,,16477.95,$USD,54926.5
+San Antonio,port,-33.59,-71.62,Cyprus,country,35.17,33.36,port_to_country,copper_sulfate,Copper Sulfate,,16477.95,$USD,54926.5
+Antofagasta (ATI),port,-23.65,-70.4,Bolivia,country,-16.5,-68.15,port_to_country,copper_sulfate,Copper Sulfate,,14467.3,$USD,36168.25
+Mejillones,port,-23.1,-70.45,Bolivia,country,-16.5,-68.15,port_to_country,copper_sulfate,Copper Sulfate,,10850.48,$USD,36168.25
+San Antonio,port,-33.59,-71.62,Bolivia,country,-16.5,-68.15,port_to_country,copper_sulfate,Copper Sulfate,,10850.48,$USD,36168.25
+Antofagasta (ATI),port,-23.65,-70.4,Peru,country,-12.05,-77.04,port_to_country,copper_sulfate,Copper Sulfate,,4139.09,$USD,10347.73
+Mejillones,port,-23.1,-70.45,Peru,country,-12.05,-77.04,port_to_country,copper_sulfate,Copper Sulfate,,3104.32,$USD,10347.73
+San Antonio,port,-33.59,-71.62,Peru,country,-12.05,-77.04,port_to_country,copper_sulfate,Copper Sulfate,,3104.32,$USD,10347.73
+Mejillones,port,-23.1,-70.45,Bolivia,country,-16.5,-68.15,port_to_country,sulfuric_acid,Sulfuric Acid,,894965.3,$USD,1789930.6
+Antofagasta (ATI),port,-23.65,-70.4,Bolivia,country,-16.5,-68.15,port_to_country,sulfuric_acid,Sulfuric Acid,,536979.18,$USD,1789930.6
+Barquito,port,-27.07,-70.84,Bolivia,country,-16.5,-68.15,port_to_country,sulfuric_acid,Sulfuric Acid,,357986.12,$USD,1789930.6
+Mejillones,port,-23.1,-70.45,Brazil,country,-23.55,-46.63,port_to_country,sulfuric_acid,Sulfuric Acid,,304684.28,$USD,609368.55
+Antofagasta (ATI),port,-23.65,-70.4,Brazil,country,-23.55,-46.63,port_to_country,sulfuric_acid,Sulfuric Acid,,182810.57,$USD,609368.55
+Barquito,port,-27.07,-70.84,Brazil,country,-23.55,-46.63,port_to_country,sulfuric_acid,Sulfuric Acid,,121873.71,$USD,609368.55
+Mejillones,port,-23.1,-70.45,Uruguay,country,-34.88,-56.16,port_to_country,sulfuric_acid,Sulfuric Acid,,254356.0,$USD,508712.0
+Antofagasta (ATI),port,-23.65,-70.4,Uruguay,country,-34.88,-56.16,port_to_country,sulfuric_acid,Sulfuric Acid,,152613.6,$USD,508712.0
+Barquito,port,-27.07,-70.84,Uruguay,country,-34.88,-56.16,port_to_country,sulfuric_acid,Sulfuric Acid,,101742.4,$USD,508712.0
+Mejillones,port,-23.1,-70.45,Costa Rica,country,9.93,-84.09,port_to_country,sulfuric_acid,Sulfuric Acid,,1310.5,$USD,2621.0
+Antofagasta (ATI),port,-23.65,-70.4,Costa Rica,country,9.93,-84.09,port_to_country,sulfuric_acid,Sulfuric Acid,,786.3,$USD,2621.0
+Barquito,port,-27.07,-70.84,Costa Rica,country,9.93,-84.09,port_to_country,sulfuric_acid,Sulfuric Acid,,524.2,$USD,2621.0
+Mejillones,port,-23.1,-70.45,Hong Kong,country,22.32,114.17,port_to_country,selenium,Selenium,,748292.22,$USD,1496584.45
+Antofagasta (ATI),port,-23.65,-70.4,Hong Kong,country,22.32,114.17,port_to_country,selenium,Selenium,,748292.22,$USD,1496584.45
