@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <style>
+      body  { font-family: "Times New Roman", Times, serif; font-size: 13px;
+              margin: 40px; color: #000; }
+      h2    { font-size: 14px; font-weight: normal; text-align: center;
+              margin-bottom: 4px; }
+      table { border-collapse: collapse; width: 480px; margin: 0 auto; }
+      th, td { padding: 3px 10px; text-align: center; }
+      td.varname { text-align: left; padding-left: 4px; min-width: 240px; }
+      tr.se-row td { padding-top: 0; padding-bottom: 4px; }
+      .top-border { border-top: 2px solid #000; }
+      .mid-border { border-top: 1px solid #000; }
+      .bot-border { border-bottom: 2px solid #000; }
+      .section-lbl td { font-style: italic; font-size: 11px;
+                        padding-top: 6px; color: #444; text-align: left;
+                        padding-left: 4px; }
+      .note { font-size: 11px; text-align: left; width: 480px; margin: 4px auto 0; }
+      sup { font-size: 9px; }
+    </style>
+    </head>
+<body>
+<h2>Economic Complexity in Resource-Rich Countries — All-Lagged Specification</h2>
+<table>
+    <thead>
+      <tr class="top-border">
+        <th></th>
+        <th><em>Dependent variable: Economic Complexity Index</em></th>
+      </tr>
+      <tr class="mid-border bot-border">
+        <th></th><th>(1)</th>
+      </tr>
+    </thead><tbody><tr><td class="varname">Human Capital Index (log)</td><td>0.311***</td></tr>
+<tr class="se-row"><td></td><td>(0.107)</td></tr>
+<tr><td class="varname">Gross Fixed Capital Formation (log)</td><td>0.033***</td></tr>
+<tr class="se-row"><td></td><td>(0.012)</td></tr>
+<tr><td class="varname">Production Value (log)</td><td>-0.002</td></tr>
+<tr class="se-row"><td></td><td>(0.007)</td></tr>
+<tr><td class="varname">Political Stability</td><td>0.007</td></tr>
+<tr class="se-row"><td></td><td>(0.013)</td></tr>
+<tr><td class="varname">Rule of Law</td><td>0.078</td></tr>
+<tr class="se-row"><td></td><td>(0.049)</td></tr>
+<tr><td class="varname">Trade Openness (% GDP)</td><td>0.000</td></tr>
+<tr class="se-row"><td></td><td>(0.001)</td></tr>
+<tr class="section-lbl mid-border"><td colspan="2">Interaction terms</td></tr>
+<tr><td class="varname">HCI × Production (log)</td><td>0.062**</td></tr>
+<tr class="se-row"><td></td><td>(0.024)</td></tr>
+<tr><td class="varname">GFCF × Production (log)</td><td>-0.001</td></tr>
+<tr class="se-row"><td></td><td>(0.004)</td></tr>
+<tr class="section-lbl mid-border"><td colspan="2">Lagged dependent variable</td></tr>
+<tr><td class="varname">Economic Complexity Index (t−1)</td><td>0.812***</td></tr>
+<tr class="se-row"><td></td><td>(0.044)</td></tr>
+<tr class="mid-border"><td colspan="2"></td></tr>
+<tr><td class="varname">Constant</td><td>-0.620***</td></tr>
+<tr class="se-row"><td></td><td>(0.160)</td></tr>
+
+    <tr class="mid-border">
+      <td class="varname">Observations</td><td>1,296</td>
+    </tr>
+    <tr>
+      <td class="varname">Countries</td><td>54</td>
+    </tr>
+    <tr>
+      <td class="varname">R<sup>2</sup></td><td>0.779</td>
+    </tr>
+    <tr>
+      <td class="varname">Adjusted R<sup>2</sup></td><td>0.778</td>
+    </tr>
+    <tr class="bot-border">
+      <td class="varname">Clustered SE</td><td>Country</td>
+    </tr></tbody></table>
+<p class="note"><em>Note:</em>&nbsp;<sup>*</sup>p&lt;0.1;&nbsp;<sup>**</sup>p&lt;0.05;&nbsp;<sup>***</sup>p&lt;0.01.&nbsp;Clustered standard errors by country in parentheses.&nbsp;All regressors lagged one period (t&#8722;1) to address endogeneity and reverse causality.&nbsp;Interaction terms computed on mean-centered lagged logged variables.</p>
+</body></html>
