@@ -20,7 +20,7 @@ results for the same chart:
      viz_improved_1_7.py  → {0: 'No Oil, No Minerals',  1: 'Some Oil, No Minerals', ...}
      viz_charts_14_24.py  → {0: 'Some Oil, No Minerals', 1: 'No Oil, No Minerals', ...}
    Clusters 0 and 1 were swapped, and cluster 3 was named differently.
-   Labels renamed in 2026-03 to: Petrostates / Oil Exporters / Diversified Exporters / Gold & Coal.
+   Labels renamed in 2026-03 to: Petrostates / Oil Exporters / Major Producers / Gold & Coal.
 
 2. viz_improved_1_7.py re-ran KMeans from scratch with its own centroid
    re-ordering, which can produce different cluster assignments than the
@@ -86,8 +86,8 @@ PALETTE = dict(
 _LABEL_COLORS = {
     'Petrostates':           '#d4853b',   # orange
     'Oil Exporters':         '#4a6fa5',   # blue
-    'Diversified Exporters': '#2e7d4a',   # green
-    'Gold & Coal':           '#c23a3a',   # red
+    'Major Producers': '#2e7d4a',   # green
+    'Limited Resources':     '#c23a3a',   # red
 }
 
 
@@ -142,8 +142,8 @@ def _build_cluster_maps(csv_path: str):
     # Fallback: NB4 rank-based defaults
     fallback_labels = {
         0: 'Oil Exporters',
-        1: 'Gold & Coal',
-        2: 'Diversified Exporters',
+        1: 'Limited Resources',
+        2: 'Major Producers',
         3: 'Petrostates',
     }
     fallback_l2c    = {lbl: _LABEL_COLORS.get(lbl, '#aaa') for lbl in fallback_labels.values()}

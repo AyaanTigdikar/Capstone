@@ -26,6 +26,101 @@ NB5 = 'Final/NB5'
 
 os.makedirs(OUT, exist_ok=True)
 
+LABEL_EXCL = ['L1_ECI', 'Inflation_roll5', 'RealRate_roll5', 'Resource_HHI']
+
+
+
+# =============================================================================
+# CHART 07 — Feature Importance Consensus (LASSO / Ridge / Elastic Net)
+# =============================================================================
+print("\n[07] Feature importance consensus...")
+
+imp = pd.read_csv(os.path.join(NB5, 'all_importance.csv'))
+imp = imp[~imp['Feature'].apply(lambda f: any(e in f for e in LABEL_EXCL))]
+
+lin_cols = [c for c in ['LASSO', 'Ridge', 'Elastic Net'] if c in imp.columns]
+imp = (imp.sort_values('Elastic Net' if 'Elastic Net' in imp.columns else lin_cols[0],
+                       ascending=False)
+         .head(12).reset_index(drop=True))
+imp = imp.iloc[::-1].reset_index(drop=True)
+imp['Label'] = imp['Feature'].apply(shorten_feat)
+
+fig = go.Figure()
+for _, row in imp.iterrows():
+    vals = [row[c] for c in lin_cols if not pd.isna(row[c])]
+    if len(vals) >= 2:
+        fig.add_trace(go.Scatter(
+            x=[min(vals), max(vals)], y=[row['Label'], row['Label']],
+            mode='lines', line=dict(color='#c0c8d4', width=3),
+            showlegend=False, hoverinfo='skip',
+        ))
+
+model_cfg07 = [
+    ('LASSO',       'circle',      PALETTE['lasso']),
+    ('Ridge',       'square',      PALETTE['ridge']),
+    ('Elastic Net', 'triangle-up', PALETTE['en']),
+]
+for mname, sym, col in model_cfg07:
+    if mname not in imp.columns:
+        continue
+    fig.add_trace(go.Scatter(
+        x=imp[mname], y=imp['Label'],
+        mode='markers',
+        marker=dict(symbol=sym, size=13, color=col, line=dict(color='white', width=1.5)),
+        name=mname,
+        hovertemplate=f'%{{y}}: %{{x:.3f}}<extra>{mname}</extra>',
+    ))
+
+x_max = imp[lin_cols].max().max()
+fig.update_layout(**base_layout(
+    height=560,
+    margin=dict(l=200, r=80, t=70, b=80),
+    xaxis=dict(title=dict(text='Normalised Feature Importance (min-max, 0–1)', font=dict(size=13)),
+               range=[-0.02, x_max + 0.1], gridcolor=GRID, gridwidth=0.5),
+    yaxis=dict(tickfont=dict(size=11)),
+    legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='center', x=0.5, font=dict(size=11)),
+))
+save(fig, '07_ml__feature_importance_consensus_three_models', OUT, w=1100, h=560)
+
+
+# =============================================================================
+# CHART 08 — Standardised Coefficients (LASSO / Ridge / Elastic Net)
+# =============================================================================
+print("\n[08] Standardised coefficients...")
+
+tbl = pd.read_csv(os.path.join(NB5, 'coefficient_summary_table.csv'))
+tbl = tbl[~tbl['Feature'].apply(lambda f: any(e in f for e in LABEL_EXCL))]
+tbl['abs_en'] = tbl['Elastic Net'].abs()
+top = tbl.nlargest(12, 'abs_en').sort_values('abs_en', ascending=True).reset_index(drop=True)
+
+fig = go.Figure()
+fig.add_vline(x=0, line=dict(color='#444', width=1.5))
+
+model_cfg08 = [
+    ('LASSO',       PALETTE['lasso']),
+    ('Ridge',       PALETTE['ridge']),
+    ('Elastic Net', PALETTE['en']),
+]
+for mname, col in model_cfg08:
+    if mname not in top.columns:
+        continue
+    fig.add_trace(go.Bar(
+        y=top['Feature'], x=top[mname], orientation='h',
+        name=mname,
+        marker=dict(color=col, opacity=0.88, line=dict(color='white', width=0.5)),
+        hovertemplate=f'%{{y}}: %{{x:+.3f}}<extra>{mname}</extra>',
+    ))
+
+fig.update_layout(**base_layout(
+    barmode='group', height=620,
+    margin=dict(l=200, r=80, t=70, b=60),
+    xaxis=dict(title=dict(text='Coefficient (standardised inputs)', font=dict(size=13)),
+               gridcolor=GRID, gridwidth=0.5, zeroline=False),
+    yaxis=dict(tickfont=dict(size=11)),
+    legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='center', x=0.5, font=dict(size=11)),
+))
+save(fig, '08_ml__standardised_coefficients_lasso_ridge_en', OUT, w=1100, h=620)
+
 def _hex_to_rgb(h):
     h = h.lstrip('#')
     return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
@@ -539,8 +634,8 @@ fig = go.Figure(go.Heatmap(
     ),
 ))
 
-fig.update_xaxes(tickangle=-40, tickfont=dict(size=10, family=FONT), showgrid=False)
-fig.update_yaxes(tickfont=dict(size=12, family=FONT), showgrid=False)
+fig.update_xaxes(title_text='Resource/Feature', tickangle=-40, tickfont=dict(size=10, family=FONT), showgrid=False)
+fig.update_yaxes(title_text='Principal Component', tickfont=dict(size=12, family=FONT), showgrid=False)
 fig.update_layout(**base_layout(
     height=420,
     margin=dict(l=260, r=120, t=60, b=160),

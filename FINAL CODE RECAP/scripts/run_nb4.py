@@ -51,12 +51,15 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score, silhouette_samples
 
+import sys; sys.path.insert(0, os.path.join(os.getcwd(), 'scripts'))
+from viz_utils import base_layout, GRID, FONT
+
 # Fixed colour palette keyed by cluster label (label-stable, not cluster-ID-stable)
 _LABEL_COLORS = {
     'Petrostates':          '#d4853b',   # orange
     'Oil Exporters':        '#4a6fa5',   # blue
-    'Diversified Exporters':'#2e7d4a',   # green
-    'Gold & Coal':          '#c23a3a',   # red
+    'Major Producers':'#2e7d4a',   # green
+    'Limited Resources':    '#c23a3a',   # red
 }
 
 # ## 1. Load Data and Define Sample
@@ -196,13 +199,13 @@ def run_clustering(nr_data, year_filter=None, agg_years=None, n_clusters=4, rand
 
     # 2. Highest PC2 not yet labeled → Mineral/diversified (copper, coal, gold mix)
     mineral_id = next(c for c in pc2_rank if c not in labeled)
-    label_map[mineral_id] = "Diversified Exporters"
+    label_map[mineral_id] = "Major Producers"
     labeled.add(mineral_id)
 
     # 3 & 4. Remaining two by PC1 rank
     remaining = [c for c in pc1_rank if c not in labeled]
     label_map[remaining[0]] = "Oil Exporters"
-    label_map[remaining[1]] = "Gold & Coal"
+    label_map[remaining[1]] = "Limited Resources"
 
     pca_df["ClusterLabels"] = pca_df["Cluster"].map(label_map)
 
@@ -355,46 +358,82 @@ for pc in ["PC1", "PC2"]:
 # The biplot overlays cluster assignments onto the PCA space, with arrows showing the direction and strength of each resource's contribution to the principal components. This is Figure 2 in the report.
 
 def create_biplot(pca_df, pca_model, feature_cols, title_suffix=""):
-    """Create PCA biplot with cluster colours and loading arrows."""
+    """PCA biplot — top-5 bold arrows, top-10 grey arrows, one trace per cluster."""
 
-    loadings_plot = pca_model.components_.T * np.sqrt(pca_model.explained_variance_)
-    loadings_df = pd.DataFrame(loadings_plot[:, :2], columns=["PC1", "PC2"], index=feature_cols)
-    scale_factor = 2.5
-    loadings_scaled = loadings_df * scale_factor
-
-    # Top features by combined loading magnitude
-    importance = loadings_df.abs().sum(axis=1)
-    top_n = min(15, len(feature_cols))
-    top_feats = importance.nlargest(top_n).index
-
-    fig = px.scatter(
-        pca_df, x="PC1", y="PC2",
-        color="ClusterLabels",
-        hover_data=["Country", "Country Code", "Year"],
-        color_discrete_sequence=px.colors.qualitative.Bold,
+    loadings_df = pd.DataFrame(
+        pca_model.components_.T * np.sqrt(pca_model.explained_variance_),
+        columns=["PC1", "PC2"], index=feature_cols,
     )
-
-    for feat in top_feats:
-        fig.add_annotation(
-            x=loadings_scaled.loc[feat, "PC1"],
-            y=loadings_scaled.loc[feat, "PC2"],
-            ax=0, ay=0, xref="x", yref="y", axref="x", ayref="y",
-            showarrow=True, arrowhead=2, arrowsize=1, arrowwidth=2, arrowcolor="black",
-        )
-        fig.add_annotation(
-            x=loadings_scaled.loc[feat, "PC1"] * 1.15,
-            y=loadings_scaled.loc[feat, "PC2"] * 1.15,
-            text=feat, showarrow=False,
-            font=dict(size=9, color="black"),
-        )
+    importance = loadings_df.abs().sum(axis=1)
+    top5  = importance.nlargest(5).index
+    top10 = importance.nlargest(10).index
+    scale = 2.8
 
     var1 = pca_model.explained_variance_ratio_[0] * 100
     var2 = pca_model.explained_variance_ratio_[1] * 100
-    fig.update_layout(
-        width=1000, height=700,
-        xaxis_title=f"PC1 ({var1:.1f}%)",
-        yaxis_title=f"PC2 ({var2:.1f}%)",
-    )
+
+    fig = go.Figure()
+
+    # One scatter trace per cluster
+    for cid in sorted(pca_df["Cluster"].unique()):
+        sub   = pca_df[pca_df["Cluster"] == cid]
+        lbl   = sub["ClusterLabels"].iloc[0]
+        color = _LABEL_COLORS.get(lbl, "#999")
+        fig.add_trace(go.Scatter(
+            x=sub["PC1"], y=sub["PC2"],
+            mode="markers+text",
+            marker=dict(size=10, color=color, opacity=0.82,
+                        line=dict(width=1.2, color="white")),
+            text=sub["Country Code"],
+            textposition="top center",
+            textfont=dict(size=8, color="#333"),
+            name=lbl,
+            hovertemplate="<b>%{text}</b><br>PC1=%{x:.2f}, PC2=%{y:.2f}<extra></extra>",
+        ))
+
+    # Thin grey arrows — ranks 6–10
+    for feat_name in top10:
+        if feat_name in top5:
+            continue
+        fig.add_annotation(
+            x=loadings_df.loc[feat_name, "PC1"] * scale,
+            y=loadings_df.loc[feat_name, "PC2"] * scale,
+            ax=0, ay=0, xref="x", yref="y", axref="x", ayref="y",
+            showarrow=True, arrowhead=2, arrowsize=0.8,
+            arrowwidth=1.2, arrowcolor="rgba(150,150,150,0.5)",
+        )
+
+    # Bold black arrows + labels — top 5
+    for feat_name in top5:
+        x1 = loadings_df.loc[feat_name, "PC1"] * scale
+        y1 = loadings_df.loc[feat_name, "PC2"] * scale
+        fig.add_annotation(
+            x=x1, y=y1, ax=0, ay=0,
+            xref="x", yref="y", axref="x", ayref="y",
+            showarrow=True, arrowhead=3, arrowsize=1.2,
+            arrowwidth=2.2, arrowcolor="#222",
+        )
+        fig.add_annotation(
+            x=x1 * 1.18, y=y1 * 1.18,
+            text=f"<b>{feat_name}</b>", showarrow=False,
+            font=dict(size=10, color="#111", family=FONT),
+            bgcolor="rgba(255,255,255,0.7)", borderpad=2,
+        )
+
+    fig.add_hline(y=0, line=dict(color=GRID, width=1))
+    fig.add_vline(x=0, line=dict(color=GRID, width=1))
+
+    fig.update_layout(**base_layout(
+        height=680,
+        margin=dict(l=60, r=60, t=50, b=60),
+        xaxis=dict(title=f"PC1 ({var1:.1f}% variance explained)",
+                   gridcolor=GRID, gridwidth=0.5),
+        yaxis=dict(title=f"PC2 ({var2:.1f}% variance explained)",
+                   gridcolor=GRID, gridwidth=0.5),
+        legend=dict(title="Resource profile (1995)", font=dict(size=10),
+                    bgcolor="rgba(250,250,250,0.85)",
+                    bordercolor=GRID, borderwidth=1),
+    ))
     return fig
 
 
@@ -531,11 +570,17 @@ def create_cluster_map(pca_df, nr_data, cluster_names_map=None, dominance_thresh
     return fig
 
 
-# Use 1995 for the main map (matches report Figure 3)
-nr_1995_full = nr_sample[nr_sample["Year"] == 1995]
-fig_map = create_cluster_map(pca_1995, nr_1995_full)
-fig_map.write_html(os.path.join(CHARTS, '04_cluster__world_map_four_resource_profiles.html'))
-print(f'Saved: Final/charts/04_cluster__world_map_four_resource_profiles.html')
+# Generate maps for 1995, 2014, and aggregated
+for map_label, pca_df_map, nr_year_filter, fname in [
+    ("1995", pca_1995, 1995, '04a_cluster__world_map_1995_resource_profiles'),
+    ("2019", pca_2019, 2019, '04b_cluster__world_map_2019_resource_profiles'),
+    ("agg",  pca_agg,  None, '04c_cluster__world_map_agg_resource_profiles'),
+]:
+    nr_subset = nr_sample[nr_sample["Year"] == nr_year_filter] if nr_year_filter else nr_sample
+    cluster_names_map = dict(zip(pca_df_map["Cluster"], pca_df_map["ClusterLabels"]))
+    fig_map = create_cluster_map(pca_df_map, nr_subset, cluster_names_map=cluster_names_map)
+    fig_map.write_html(os.path.join(CHARTS, f'{fname}.html'))
+    print(f'Saved: Final/charts/{fname}.html')
 
 # ## 8. ECI vs GDP Evolution (Rosling Chart)
 # 
@@ -704,10 +749,10 @@ def create_rosling_chart(df, cluster_colors, cluster_names, arrow_opacity=0.5, a
     eci_vals = data["Economic Complexity Index"]
     x_vals = data["Log GDP per capita"]
     fig.update_layout(
-        xaxis=dict(range=[x_vals.min()-0.2, x_vals.max()+0.2], title="Log GDP per capita (PPP)"),
+        xaxis=dict(range=[x_vals.min()-0.2, x_vals.max()+0.2], title="Log GDP per capita (PPP, constant 2017 USD)"),
         yaxis=dict(range=[eci_vals.min()-0.5, eci_vals.max()+0.5], title="Economic Complexity Index"),
         plot_bgcolor="white", width=850, height=650,
-        legend=dict(title="Resource Profile (1995)", x=1.02, y=0.99),
+        legend=dict(title="Resource profile (1995 cluster)", x=1.02, y=0.99),
         updatemenus=[dict(
             type="buttons", showactive=True, x=1.0, y=-0.02,
             buttons=[
@@ -776,6 +821,112 @@ for label, df, nr_subset in [
     print(f"Saved {out_path}: {len(out)} countries")
 
 print("\nDone. All cluster CSVs exported.")
+
+# ## 10. Simplified 4-Feature Clustering Map (Oil / Gas / Coal / Minerals)
+#
+# Re-clusters countries using only four aggregated features:
+#   Oil, Natural Gas, Coal, Minerals (all other resources summed).
+# This gives a simpler, more interpretable typology for the map.
+
+def run_clustering_4feat(nr_data, year_filter=None, n_clusters=5, random_state=42):
+    """Cluster on Oil / Natural Gas / Coal / Minerals (aggregate), k=5.
+
+    k=5 is used because with aggregated features, k=4 can't separate
+    'no oil, high minerals' (CHL, ZMB, MNG) from 'no oil, low minerals'.
+    k=5 cleanly recovers this group (silhouette 0.522 vs 0.449 for k=4).
+    """
+    df = nr_data.copy()
+    if year_filter is not None:
+        df = df[df["Year"] == year_filter]
+
+    KEEP = ["Oil", "Natural Gas", "Coal"]
+    df["_Category"] = df["Resource"].apply(lambda r: r if r in KEEP else "Minerals")
+    df_agg = (df.groupby(["Country", "Country Code", "Year", "Population", "_Category"])
+              ["Production_TotalValue"].sum().reset_index())
+
+    pivot = df_agg.pivot_table(
+        index=["Country", "Country Code", "Year", "Population"],
+        columns="_Category", values="Production_TotalValue",
+    ).reset_index().fillna(0)
+
+    feat_cols = ["Coal", "Minerals", "Natural Gas", "Oil"]
+    feat_cols = [c for c in feat_cols if c in pivot.columns]
+
+    pivot[feat_cols] = pivot[feat_cols].div(pivot["Population"], axis=0)
+    pivot = pivot.fillna(0)
+
+    X = np.log1p(pivot[feat_cols])
+    pca = PCA(n_components=2)
+    Xp  = pca.fit_transform(X)
+
+    km = KMeans(n_clusters=n_clusters, n_init=10, random_state=random_state)
+    labels = km.fit_predict(Xp)
+
+    pca_df = pd.DataFrame({
+        "Country":      pivot["Country"],
+        "Country Code": pivot["Country Code"],
+        "Year":         pivot["Year"],
+        "PC1": Xp[:, 0], "PC2": Xp[:, 1],
+        "Cluster": labels,
+    })
+
+    # Auto-label from centroids:
+    #   highest PC1          → Petrostates
+    #   highest PC2 (remain) → Mineral Exporters  (CHL, ZMB, MNG etc.)
+    #   2nd highest PC1      → Oil Exporters
+    #   3rd highest PC1      → Oil & Minerals Mix
+    #   lowest PC1           → Low Resource
+    centroids = km.cluster_centers_
+    pc1_rank  = list(np.argsort(-centroids[:, 0]))
+    pc2_rank  = list(np.argsort(-centroids[:, 1]))
+
+    label_map, labeled = {}, set()
+    # 1. Highest PC1 → Petrostates
+    label_map[pc1_rank[0]] = "Petrostates";        labeled.add(pc1_rank[0])
+    # 2. Highest PC2 (not yet labeled) → Mineral Exporters (CHL, ZMB, MNG etc.)
+    min_id = next(c for c in pc2_rank if c not in labeled)
+    label_map[min_id] = "Mineral Exporters";        labeled.add(min_id)
+    # 3. Remaining three sorted by PC1 (descending):
+    #    highest PC1 → Oil & Minerals, middle → Oil Exporters, lowest → Low Resource
+    remaining = [c for c in pc1_rank if c not in labeled]  # already in descending PC1 order
+    label_map[remaining[0]] = "Oil & Minerals"
+    label_map[remaining[1]] = "Oil Exporters"
+    label_map[remaining[2]] = "Low Resource"
+
+    pca_df["ClusterLabels"] = pca_df["Cluster"].map(label_map)
+
+    sil = silhouette_score(Xp, labels)
+    print(f"  4-feat silhouette (k={n_clusters}): {sil:.3f}")
+    for cid in sorted(pca_df["Cluster"].unique()):
+        sub = pca_df[pca_df["Cluster"] == cid]
+        print(f"  {label_map[cid]} ({len(sub)}): {', '.join(sorted(sub['Country Code']))}")
+
+    return pca_df
+
+_LABEL_COLORS_4F = {
+    "Petrostates":      "#d4853b",
+    "Oil Exporters":    "#c23a3a",
+    "Oil & Minerals":   "#7a5c9e",
+    "Mineral Exporters":"#2e7d4a",
+    "Low Resource":     "#4a6fa5",
+}
+
+print("\n" + "="*60)
+print("4-FEATURE CLUSTERING (Oil / Gas / Coal / Minerals)")
+print("="*60)
+pca_4f = run_clustering_4feat(nr_sample, year_filter=1995)
+
+nr_1995_full = nr_sample[nr_sample["Year"] == 1995]
+cnames_4f    = dict(zip(pca_4f["Cluster"], pca_4f["ClusterLabels"]))
+
+# Build map using same create_cluster_map but override palette via monkey-patch
+_orig_label_colors = _LABEL_COLORS.copy()
+_LABEL_COLORS.update(_LABEL_COLORS_4F)
+fig_4f = create_cluster_map(pca_4f, nr_1995_full, cluster_names_map=cnames_4f)
+_LABEL_COLORS.clear(); _LABEL_COLORS.update(_orig_label_colors)  # restore
+
+fig_4f.write_html(os.path.join(CHARTS, '04d_cluster__world_map_4feat_oil_gas_coal_minerals.html'))
+print(f'Saved: Final/charts/04d_cluster__world_map_4feat_oil_gas_coal_minerals.html')
 
 # ---
 # 
