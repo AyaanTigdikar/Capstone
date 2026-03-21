@@ -5,13 +5,23 @@ Output:   Final/charts_png/<name>.png
 """
 import os
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+#os.chdir(r'C:\Users\Usuario\Github\Capstone\FINAL CODE RECAP')
 
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
 CHARTS_DIR = Path('Final/charts')
 OUT_DIR    = Path('Final/charts_png')
 OUT_DIR.mkdir(exist_ok=True)
+
+print("Working dir:", os.getcwd())
+print("CHARTS_DIR absolute:", CHARTS_DIR.resolve())
+print("CHARTS_DIR exists:", CHARTS_DIR.exists())
+print("Files in CHARTS_DIR:", list(CHARTS_DIR.glob('*.html'))[:5])
+
+
+from pathlib import Path
 
 VIEWPORT_W   = 1400
 SCALE_FACTOR = 2          # 2× pixel density → ~192 DPI, crisp on retina/print
