@@ -3,10 +3,10 @@
 chile_visualisations.py  –  Improved v2
 Generates 8 interactive Plotly HTML figures + 1 priority supply-chain map.
 
-Reads:  output/intermediary/_pipeline_state_6.pkl
-Writes: output/New graphs/*.html
+Reads:  intermediary/_pipeline_state_6.pkl
+Writes: outputs/*.html
 
-Run:  python3 chile_visualisations.py
+Run from anywhere:  python3 scripts/chile_visualisations.py
 """
 
 import sys, os, pickle, math
@@ -17,12 +17,14 @@ import plotly.express as px
 from plotly.colors import sample_colorscale
 
 # ── PATHS ─────────────────────────────────────────────────────────────────────
+# Derive root from this file's location:  scripts/ → Chile/ (parent)
 
-_script_dir = os.path.dirname(os.path.abspath(__file__))
-DIR_OUTPUT   = "/Users/leoss/Desktop/Website-/Portfolio/Website-/projects/Chile/output"
-DIR_INTERMED = os.path.join(DIR_OUTPUT, "intermediary")
+_script_dir  = os.path.dirname(os.path.abspath(__file__))
+_chile_root  = os.path.dirname(_script_dir)
+DIR_OUTPUT   = os.path.join(_chile_root, "outputs")
+DIR_INTERMED = os.path.join(_chile_root, "intermediary")
 PKL_PATH     = os.path.join(DIR_INTERMED, "_pipeline_state_6.pkl")
-NEW_OUT_DIR  = os.path.join(DIR_OUTPUT, "New graphs")
+NEW_OUT_DIR  = DIR_OUTPUT
 
 # ── DESIGN SYSTEM ─────────────────────────────────────────────────────────────
 
@@ -1242,8 +1244,8 @@ if __name__ == "__main__":
     pc_total = (exp_aug.groupby(["FROM_NAME","TO_NAME","FROM_LAT","FROM_LON",
                                   "TO_LAT","TO_LON"])["USD_EST"]
                 .sum().reset_index())
-    dominant_comm = (pc_comm.loc[pc_comm.groupby(["FROM_NAME","TO_NAME"])["USD_EST"].idxmax(),
-                                 ["FROM_NAME","TO_NAME","COMMODITIES"]])
+    _idx = pc_comm.groupby(["FROM_NAME","TO_NAME"])["USD_EST"].idxmax().dropna()
+    dominant_comm = pc_comm.loc[_idx, ["FROM_NAME","TO_NAME","COMMODITIES"]]
     pc_total = pc_total.merge(dominant_comm, on=["FROM_NAME","TO_NAME"], how="left")
     # Keep top N port→country flows by value
     arc_df = pc_total.nlargest(SC_TOP_ARCS, "USD_EST")
@@ -1533,8 +1535,9 @@ if __name__ == "__main__":
         dists = np.sqrt((_big_cl["lat"] - srow["lat"])**2 +
                         (_big_cl["lon"] - srow["lon"])**2)
         nearest_dist = dists.min()
-        if nearest_dist <= _MERGE_DEG:
-            nb = _big_cl.loc[dists.idxmin()]
+        _nearest_idx = dists.idxmin() if dists.notna().any() else None
+        if nearest_dist <= _MERGE_DEG and _nearest_idx is not None:
+            nb = _big_cl.loc[_nearest_idx]
             mask = ((_fcn["_gb_lat"] == srow["_gb_lat"]) &
                     (_fcn["_gb_lon"] == srow["_gb_lon"]))
             _fcn.loc[mask, "_gb_lat"] = nb["_gb_lat"]

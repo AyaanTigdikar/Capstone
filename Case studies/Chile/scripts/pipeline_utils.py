@@ -27,13 +27,16 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # ── Paths ─────────────────────────────────────────────────────────────────
+# BASE_DIR is derived from this file's location:  scripts/ → Chile/ (parent)
+# This makes the whole project portable — copy the Chile/ folder anywhere and
+# paths resolve automatically.
 
-BASE_DIR        = "/Users/leoss/Desktop/Website-/Portfolio/Website-/projects/Chile"
-DIR_CODE        = os.path.join(BASE_DIR, "Code")
-DIR_DATA        = os.path.join(BASE_DIR, "data")
-DIR_OUTPUT      = os.path.join(BASE_DIR, "output")
-DIR_INTERMED    = os.path.join(DIR_OUTPUT, "intermediary")   # pkl states, processed CSVs
-DIR_TEMP        = os.path.join(DIR_OUTPUT, "temporary")      # scratch outputs
+BASE_DIR        = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DIR_CODE        = os.path.join(BASE_DIR, "scripts")
+DIR_DATA        = os.path.join(BASE_DIR, "inputs")
+DIR_OUTPUT      = os.path.join(BASE_DIR, "outputs")
+DIR_INTERMED    = os.path.join(BASE_DIR, "intermediary")  # pkl states, processed CSVs
+DIR_TEMP        = os.path.join(DIR_INTERMED, "temporary") # scratch outputs
 
 # Legacy alias so any code that still references DIR_PRELIM keeps working
 DIR_PRELIM = DIR_INTERMED
@@ -47,11 +50,6 @@ _cochilco_orig_candidates = [
                  "1771263160312_Anuario-de-Estadisticas-del-Cobre-y-otros-Minerales-2005-2024.xlsx"),
     os.path.join(DIR_DATA,
                  "Anuario-de-Estadisticas-del-Cobre-y-otros-Minerales-2005-2024.xlsx"),
-    # Fallback to old capstone location
-    "/Users/leoss/Desktop/GitHub/Capstone/Case studies/Chile/data/"
-    "1771263160312_Anuario-de-Estadisticas-del-Cobre-y-otros-Minerales-2005-2024.xlsx",
-    "/Users/leoss/Downloads/"
-    "1771263160312_Anuario-de-Estadisticas-del-Cobre-y-otros-Minerales-2005-2024.xlsx",
 ]
 COCHILCO_ORIG = next(
     (p for p in _cochilco_orig_candidates if os.path.exists(p)),
@@ -61,9 +59,6 @@ COCHILCO_ORIG = next(
 _salidas_candidates = [
     os.path.join(DIR_DATA, "Salidas2024.csv"),
     os.path.join(DIR_DATA, "Salidas2025.csv"),
-    # Fallback to old capstone location
-    "/Users/leoss/Desktop/GitHub/Capstone/Case studies/Chile/data/Salidas2024.csv",
-    "/Users/leoss/Desktop/GitHub/Capstone/Case studies/Chile/data/Salidas2025.csv",
 ]
 SALIDAS_PATH = next(
     (p for p in _salidas_candidates if os.path.exists(p)),
@@ -301,10 +296,12 @@ _STATE_KEYS = [
     "MATCH_DISAMBIGUATION", "IRON_MINE_NAMES", "ZINC_MINE_NAMES",
     "n_idle_links", "cu_total", "edges", "common_cols", "smelter_inv_map",
     "export_df", "PORT_PRODUCT_MAP", "ports_df",
-    "inv_path", "links_path", "cu_total",
+    "inv_path", "links_path",
 ]
 
 _STATE_DEFAULTS = {
+    "inv":                     pd.DataFrame(),
+    "links":                   pd.DataFrame(),
     "comm_col":                "COMMODITY_LIST_STR",
     "idle_mines":              set(),
     "COMPANY_TO_DEPOSIT":      COMPANY_TO_DEPOSIT,
@@ -327,6 +324,8 @@ _STATE_DEFAULTS = {
     "export_df":               pd.DataFrame(),
     "PORT_PRODUCT_MAP":        {},
     "ports_df":                pd.DataFrame(PORTS),
+    "inv_path":                "",
+    "links_path":              "",
 }
 
 

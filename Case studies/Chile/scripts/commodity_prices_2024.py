@@ -28,11 +28,15 @@ import openpyxl
 LB_TO_MT = 2204.62   # pounds per metric ton
 OZ_TO_KG = 32.1507   # troy oz per kg
 
-ANUARIO_PATH = os.environ.get(
-    'COCHILCO_ANUARIO_PATH',
-    '/Users/leoss/Desktop/Website-/Portfolio/Website-/projects/Chile/Data/'
-    'Anuario-de-Estadisticas-del-Cobre-y-otros-Minerales-2005-2024.xlsx'
+# Derive inputs/ path from this file's location:  scripts/ → Chile/ → inputs/
+_script_dir  = os.path.dirname(os.path.abspath(__file__))
+_chile_root  = os.path.dirname(_script_dir)
+_default_anuario = os.path.join(
+    _chile_root, "inputs",
+    "Anuario-de-Estadisticas-del-Cobre-y-otros-Minerales-2005-2024.xlsx"
 )
+
+ANUARIO_PATH = os.environ.get('COCHILCO_ANUARIO_PATH', _default_anuario)
 
 
 def _load_workbook(path):
