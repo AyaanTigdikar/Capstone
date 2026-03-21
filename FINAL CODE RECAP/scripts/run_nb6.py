@@ -186,9 +186,18 @@ def base_layout(**kwargs) -> dict:
     return layout
 
 
+_WRITE_CONFIG = {'displayModeBar': False, 'responsive': True}
+
 def save_chart(fig, path_no_ext: str, width: int = 1100, height: int = 600):
-    """No-op: chart output is handled by viz_updates.py / Final/charts/."""
-    pass
+    """Write HTML + PNG for a Plotly figure."""
+    os.makedirs(os.path.dirname(path_no_ext) or '.', exist_ok=True)
+    fig.write_html(f"{path_no_ext}.html", config=_WRITE_CONFIG)
+    print(f"  Saved: {path_no_ext}.html")
+    try:
+        fig.write_image(f"{path_no_ext}.png", width=width, height=height, scale=2)
+        print(f"  Saved: {path_no_ext}.png")
+    except Exception as e:
+        print(f"  PNG skipped ({e})")
 
 # ## 0. Data Loading
 # 

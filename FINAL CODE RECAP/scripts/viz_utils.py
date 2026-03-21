@@ -172,11 +172,16 @@ def base_layout(**kw) -> dict:
 
 
 def save(fig: go.Figure, name: str, out_dir: str, w: int = 1100, h: int = 600) -> None:
-    """Write a Plotly figure to <out_dir>/<name>.html."""
+    """Write a Plotly figure to <out_dir>/<name>.html and <out_dir>/<name>.png."""
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, name)
     fig.write_html(f"{path}.html", config=WRITE_CONFIG)
     print(f"  Saved: {path}.html")
+    try:
+        fig.write_image(f"{path}.png", width=w, height=h, scale=2)
+        print(f"  Saved: {path}.png")
+    except Exception as e:
+        print(f"  PNG skipped ({e})")
 
 
 # ---------------------------------------------------------------------------

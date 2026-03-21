@@ -617,15 +617,12 @@ fig = go.Figure(go.Heatmap(
     x=plot_df.index.tolist(),
     y=y_labels,
     colorscale=[
-        [0.0, '#c23a3a'],
+        [0.0, '#1a4a8a'],
         [0.5, '#ffffff'],
-        [1.0, '#1a4a8a'],
+        [1.0, '#c23a3a'],
     ],
     zmid=0, zmin=-1, zmax=1,
-    text=z_values.round(2),
-    texttemplate='%{text:.2f}',
-    textfont=dict(size=8, family=FONT),
-    hovertemplate='%{x} / %{y}: %{z:.3f}<extra></extra>',
+    hovertemplate='<b>%{x}</b><br>%{y}: %{z:.3f}<extra></extra>',
     colorbar=dict(
         title=dict(text='Loading', font=dict(size=12)),
         thickness=20, len=1.0,

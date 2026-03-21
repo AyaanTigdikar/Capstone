@@ -4,6 +4,19 @@ import os; os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.makedirs('Final/charts', exist_ok=True)
 CHARTS = 'Final/charts'
 
+_WRITE_CONFIG = {'displayModeBar': False, 'responsive': True}
+
+def _save(fig, html_path: str, width: int = 1100, height: int = 600):
+    """Write both HTML and PNG for a Plotly figure."""
+    fig.write_html(html_path, config=_WRITE_CONFIG)
+    print(f"  Saved: {html_path}")
+    png_path = html_path.replace('.html', '.png')
+    try:
+        fig.write_image(png_path, width=width, height=height, scale=2)
+        print(f"  Saved: {png_path}")
+    except Exception as e:
+        print(f"  PNG skipped ({e})")
+
 # # Clustering: Natural Resource Profiles
 # 
 # **Capstone Project — Moody's Ratings**  
@@ -438,8 +451,7 @@ def create_biplot(pca_df, pca_model, feature_cols, title_suffix=""):
 
 
 fig_biplot = create_biplot(pca_1995, pca_model_1995, feat_1995, " — 1995")
-fig_biplot.write_html(os.path.join(CHARTS, '03_cluster__pca_biplot_country_resource_groups.html'))
-print(f'Saved: Final/charts/03_cluster__pca_biplot_country_resource_groups.html')
+_save(fig_biplot, os.path.join(CHARTS, '03_cluster__pca_biplot_country_resource_groups.html'))
 
 # ## 7. Choropleth Map with Dominance Flags
 # 
@@ -579,8 +591,7 @@ for map_label, pca_df_map, nr_year_filter, fname in [
     nr_subset = nr_sample[nr_sample["Year"] == nr_year_filter] if nr_year_filter else nr_sample
     cluster_names_map = dict(zip(pca_df_map["Cluster"], pca_df_map["ClusterLabels"]))
     fig_map = create_cluster_map(pca_df_map, nr_subset, cluster_names_map=cluster_names_map)
-    fig_map.write_html(os.path.join(CHARTS, f'{fname}.html'))
-    print(f'Saved: Final/charts/{fname}.html')
+    _save(fig_map, os.path.join(CHARTS, f'{fname}.html'))
 
 # ## 8. ECI vs GDP Evolution (Rosling Chart)
 # 
@@ -773,8 +784,7 @@ def create_rosling_chart(df, cluster_colors, cluster_names, arrow_opacity=0.5, a
 
 
 fig_rosling = create_rosling_chart(master, CLUSTER_COLORS, CLUSTER_NAMES)
-fig_rosling.write_html(os.path.join(CHARTS, '05_cluster__eci_vs_gdp_animated_1995_to_2019.html'))
-print(f'Saved: Final/charts/05_cluster__eci_vs_gdp_animated_1995_to_2019.html')
+_save(fig_rosling, os.path.join(CHARTS, '05_cluster__eci_vs_gdp_animated_1995_to_2019.html'), width=1200, height=700)
 
 # ## 9. Add Hover Text and Export
 # 
@@ -925,8 +935,7 @@ _LABEL_COLORS.update(_LABEL_COLORS_4F)
 fig_4f = create_cluster_map(pca_4f, nr_1995_full, cluster_names_map=cnames_4f)
 _LABEL_COLORS.clear(); _LABEL_COLORS.update(_orig_label_colors)  # restore
 
-fig_4f.write_html(os.path.join(CHARTS, '04d_cluster__world_map_4feat_oil_gas_coal_minerals.html'))
-print(f'Saved: Final/charts/04d_cluster__world_map_4feat_oil_gas_coal_minerals.html')
+_save(fig_4f, os.path.join(CHARTS, '04d_cluster__world_map_4feat_oil_gas_coal_minerals.html'))
 
 # ---
 # 
