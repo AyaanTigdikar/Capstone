@@ -23,7 +23,7 @@ import pandas as pd
 from pathlib import Path
 
 # ── Load mapping from CSV (same directory as this module) ──
-_MAP_PATH = Path(__file__).parent / "country_mapping.csv"
+_MAP_PATH = Path(__file__).parent.parent / "country_mapping.csv"
 _map_df = pd.read_csv(_MAP_PATH)
 
 ALIAS_TO_ISO3 = dict(zip(_map_df["alias"], _map_df["iso3"]))

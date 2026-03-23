@@ -25,7 +25,7 @@ AGO,2006,Production_Hydrocarbons,1401.4402849315068
 AGO,2006,Reserves_Hydrocarbons,9.33
 AGO,2007,Production_Hydrocarbons,1655.9906047916097
 AGO,2007,Reserves_Hydrocarbons,9.5
-AGO,2008,Production_Hydrocarbons,1876.3228850133196
+AGO,2008,Production_Hydrocarbons,1876.32288501332
 AGO,2008,Reserves_Hydrocarbons,9.5
 AGO,2009,Production_Hydrocarbons,1753.8328767123287
 AGO,2009,Reserves_Hydrocarbons,9.5
@@ -259,7 +259,7 @@ AZE,1995,Production_Hydrocarbons,185.30053694744797
 AZE,1995,Reserves_Hydrocarbons,1.157
 AZE,1996,Production_Hydrocarbons,183.49599896220232
 AZE,1996,Reserves_Hydrocarbons,1.157
-AZE,1997,Production_Hydrocarbons,182.50333228652607
+AZE,1997,Production_Hydrocarbons,182.50333228652605
 AZE,1997,Reserves_Hydrocarbons,1.8126890235818949
 AZE,1998,Production_Hydrocarbons,230.87922577497073
 AZE,1998,Reserves_Hydrocarbons,1.8126890235818949
@@ -519,7 +519,7 @@ BRA,2004,Reserves_Hydrocarbons,11.579229145589876
 BRA,2005,Production_Hydrocarbons,1706.0996091668592
 BRA,2005,Production_Metals,76.284
 BRA,2005,Reserves_Hydrocarbons,12.088154472421916
-BRA,2006,Production_Hydrocarbons,1806.6615880460768
+BRA,2006,Production_Hydrocarbons,1806.6615880460763
 BRA,2006,Production_Metals,76.96300000000001
 BRA,2006,Reserves_Hydrocarbons,12.540687819000002
 BRA,2007,Production_Hydrocarbons,1831.5916774188622
@@ -821,7 +821,7 @@ COG,1995,Production_Hydrocarbons,179.75441095890412
 COG,1995,Reserves_Hydrocarbons,1.3497
 COG,1996,Production_Hydrocarbons,200.3872131147541
 COG,1996,Reserves_Hydrocarbons,1.6
-COG,1997,Production_Hydrocarbons,224.73665753424655
+COG,1997,Production_Hydrocarbons,224.73665753424652
 COG,1997,Reserves_Hydrocarbons,1.615
 COG,1998,Production_Hydrocarbons,263.78334246575344
 COG,1998,Reserves_Hydrocarbons,1.6999999999999995
@@ -837,7 +837,7 @@ COG,2003,Production_Hydrocarbons,217.0
 COG,2003,Reserves_Hydrocarbons,1.785
 COG,2004,Production_Hydrocarbons,225.0
 COG,2004,Reserves_Hydrocarbons,1.784
-COG,2005,Production_Hydrocarbons,246.77609999999996
+COG,2005,Production_Hydrocarbons,246.7761
 COG,2005,Reserves_Hydrocarbons,1.905
 COG,2006,Production_Hydrocarbons,278.434
 COG,2006,Reserves_Hydrocarbons,1.94
@@ -1087,7 +1087,7 @@ DZA,2003,Production_Hydrocarbons,1829.6602977673515
 DZA,2003,Reserves_Hydrocarbons,16.1745625
 DZA,2004,Production_Hydrocarbons,1923.9764367347466
 DZA,2004,Reserves_Hydrocarbons,16.1745625
-DZA,2005,Production_Hydrocarbons,1992.9885654809661
+DZA,2005,Production_Hydrocarbons,1992.988565480966
 DZA,2005,Reserves_Hydrocarbons,16.6052925
 DZA,2006,Production_Hydrocarbons,1982.4262337087948
 DZA,2006,Reserves_Hydrocarbons,16.6052925
@@ -1278,7 +1278,7 @@ GAB,2011,Production_Hydrocarbons,236.28200000000007
 GAB,2011,Reserves_Hydrocarbons,2.0
 GAB,2012,Production_Hydrocarbons,221.14800000000005
 GAB,2012,Reserves_Hydrocarbons,2.0
-GAB,2013,Production_Hydrocarbons,213.40499999999997
+GAB,2013,Production_Hydrocarbons,213.405
 GAB,2013,Reserves_Hydrocarbons,2.0
 GAB,2014,Production_Hydrocarbons,210.905
 GAB,2014,Production_Metals,1860.0
@@ -1516,9 +1516,9 @@ IDN,2008,Reserves_Hydrocarbons,6.980068061000001
 IDN,2009,Production_Hydrocarbons,1003.4171119772338
 IDN,2009,Reserves_Hydrocarbons,7.418589738
 IDN,2010,Production_Hydrocarbons,1012.3471624841529
-IDN,2010,Reserves_Hydrocarbons,7.239533223952499
+IDN,2010,Reserves_Hydrocarbons,7.2395332239525
 IDN,2011,Production_Hydrocarbons,963.4374571114287
-IDN,2011,Reserves_Hydrocarbons,6.750863223952499
+IDN,2011,Reserves_Hydrocarbons,6.7508632239525
 IDN,2012,Production_Hydrocarbons,928.7685964576141
 IDN,2012,Reserves_Hydrocarbons,6.711774644
 IDN,2013,Production_Hydrocarbons,884.4107745750322
@@ -1890,7 +1890,7 @@ KAZ,2017,Production_Hydrocarbons,1816.3240627153423
 KAZ,2017,Reserves_Hydrocarbons,32.25711544697588
 KAZ,2018,Production_Hydrocarbons,1903.1969530193396
 KAZ,2018,Reserves_Hydrocarbons,32.25711544697588
-KAZ,2019,Production_Hydrocarbons,1906.1857501543311
+KAZ,2019,Production_Hydrocarbons,1906.1857501543316
 KAZ,2019,Reserves_Hydrocarbons,32.25711544697588
 KOR,1995,Production_Hydrocarbons,0.1077682301402092
 KOR,1996,Production_Hydrocarbons,0.093279809
@@ -1927,7 +1927,7 @@ KWT,1998,Production_Hydrocarbons,2232.3245922029023
 KWT,1998,Reserves_Hydrocarbons,97.9079
 KWT,1999,Production_Hydrocarbons,2085.29712960124
 KWT,1999,Reserves_Hydrocarbons,97.9079
-KWT,2000,Production_Hydrocarbons,2244.750888302607
+KWT,2000,Production_Hydrocarbons,2244.7508883026076
 KWT,2000,Reserves_Hydrocarbons,97.97915
 KWT,2001,Production_Hydrocarbons,2183.8685986314244
 KWT,2001,Reserves_Hydrocarbons,97.97915
@@ -2161,7 +2161,7 @@ MEX,2016,Reserves_Hydrocarbons,7.836502838000001
 MEX,2017,Production_Hydrocarbons,2225.9672738089203
 MEX,2017,Production_Metals,675.746
 MEX,2017,Reserves_Hydrocarbons,7.221844472000001
-MEX,2018,Production_Hydrocarbons,2070.0831372608714
+MEX,2018,Production_Hydrocarbons,2070.083137260872
 MEX,2018,Production_Metals,695.13
 MEX,2018,Reserves_Hydrocarbons,6.642680074
 MEX,2019,Production_Hydrocarbons,1919.7624091586115
@@ -2378,13 +2378,13 @@ NGA,2008,Production_Hydrocarbons,2171.749265037552
 NGA,2008,Reserves_Hydrocarbons,42.2274
 NGA,2009,Production_Hydrocarbons,2209.96351253644
 NGA,2009,Reserves_Hydrocarbons,42.2274
-NGA,2010,Production_Hydrocarbons,2531.8233413930952
+NGA,2010,Production_Hydrocarbons,2531.8233413930957
 NGA,2010,Reserves_Hydrocarbons,42.11869158878505
 NGA,2011,Production_Hydrocarbons,2460.1399101866937
 NGA,2011,Reserves_Hydrocarbons,41.163808269612005
 NGA,2012,Production_Hydrocarbons,2410.667292704291
 NGA,2012,Reserves_Hydrocarbons,42.001461059190035
-NGA,2013,Production_Hydrocarbons,2276.717343491207
+NGA,2013,Production_Hydrocarbons,2276.7173434912065
 NGA,2013,Reserves_Hydrocarbons,41.9226992353441
 NGA,2014,Production_Hydrocarbons,2274.905642461095
 NGA,2014,Reserves_Hydrocarbons,42.505788162
@@ -2424,7 +2424,7 @@ NLD,2006,Production_Hydrocarbons,2.3220999240875244
 NLD,2006,Reserves_Hydrocarbons,1.27190332
 NLD,2007,Production_Hydrocarbons,2.232100009918213
 NLD,2007,Reserves_Hydrocarbons,1.2285932
-NLD,2008,Production_Hydrocarbons,2.55270004272461
+NLD,2008,Production_Hydrocarbons,2.5527000427246094
 NLD,2008,Reserves_Hydrocarbons,1.1888186
 NLD,2009,Production_Hydrocarbons,2.3580000400543213
 NLD,2009,Reserves_Hydrocarbons,1.2285932
@@ -2493,7 +2493,7 @@ NOR,2008,Reserves_Hydrocarbons,9.689185435583699
 NOR,2009,Production_Hydrocarbons,2378.258885963268
 NOR,2009,Production_Metals,4.562
 NOR,2009,Reserves_Hydrocarbons,9.108354102
-NOR,2010,Production_Hydrocarbons,2162.414879819227
+NOR,2010,Production_Hydrocarbons,2162.4148798192273
 NOR,2010,Production_Metals,6.27
 NOR,2010,Reserves_Hydrocarbons,8.830677191107503
 NOR,2011,Production_Hydrocarbons,2061.8281216768255
@@ -2782,7 +2782,7 @@ PNG,2019,Production_Metals,2.91
 PNG,2019,Reserves_Hydrocarbons,0.1760194448846056
 POL,1995,Production_Hydrocarbons,3.993360802531243
 POL,1995,Reserves_Hydrocarbons,0.1128375
-POL,1996,Production_Hydrocarbons,3.9584093838930126
+POL,1996,Production_Hydrocarbons,3.9584093838930117
 POL,1996,Reserves_Hydrocarbons,0.1098875
 POL,1997,Production_Hydrocarbons,4.028108969330788
 POL,1997,Reserves_Hydrocarbons,0.1143125
@@ -2794,7 +2794,7 @@ POL,2000,Production_Hydrocarbons,3.1488224118947983
 POL,2000,Reserves_Hydrocarbons,0.0877625
 POL,2001,Production_Hydrocarbons,3.163060531059105
 POL,2001,Reserves_Hydrocarbons,0.0848125
-POL,2002,Production_Hydrocarbons,3.154377862811089
+POL,2002,Production_Hydrocarbons,3.1543778628110895
 POL,2002,Reserves_Hydrocarbons,0.08555
 POL,2003,Production_Hydrocarbons,3.141790494322777
 POL,2003,Reserves_Hydrocarbons,0.081125
@@ -2884,11 +2884,11 @@ QAT,2007,Reserves_Hydrocarbons,53.67919059807875
 QAT,2008,Production_Hydrocarbons,1435.2266454537707
 QAT,2008,Reserves_Hydrocarbons,53.085850802520255
 QAT,2009,Production_Hydrocarbons,1418.734323432562
-QAT,2009,Reserves_Hydrocarbons,52.11483380706426
+QAT,2009,Reserves_Hydrocarbons,52.11483380706425
 QAT,2010,Production_Hydrocarbons,1634.6701506109055
 QAT,2010,Reserves_Hydrocarbons,50.60772263912776
 QAT,2011,Production_Hydrocarbons,1829.7616423699576
-QAT,2011,Reserves_Hydrocarbons,49.82372263912775
+QAT,2011,Reserves_Hydrocarbons,49.82372263912776
 QAT,2012,Production_Hydrocarbons,1926.1867646183327
 QAT,2012,Reserves_Hydrocarbons,50.98774825
 QAT,2013,Production_Hydrocarbons,1939.8660611662556
@@ -3178,7 +3178,7 @@ SSD,2008,Production_Hydrocarbons,0.0
 SSD,2009,Production_Hydrocarbons,0.0
 SSD,2010,Production_Hydrocarbons,0.0
 SSD,2011,Production_Hydrocarbons,0.0
-SSD,2012,Production_Hydrocarbons,31.040999999999997
+SSD,2012,Production_Hydrocarbons,31.041
 SSD,2012,Reserves_Hydrocarbons,3.5
 SSD,2013,Production_Hydrocarbons,99.72880000000002
 SSD,2013,Reserves_Hydrocarbons,3.5
@@ -3238,7 +3238,7 @@ SYR,2015,Production_Hydrocarbons,27.14589899778366
 SYR,2015,Reserves_Hydrocarbons,2.7686125
 SYR,2016,Production_Hydrocarbons,25.127237498760223
 SYR,2016,Reserves_Hydrocarbons,2.7686125
-SYR,2017,Production_Hydrocarbons,24.73524025082588
+SYR,2017,Production_Hydrocarbons,24.735240250825875
 SYR,2017,Reserves_Hydrocarbons,2.7686125
 SYR,2018,Production_Hydrocarbons,24.176763266647463
 SYR,2018,Reserves_Hydrocarbons,2.7686125
@@ -3397,7 +3397,7 @@ TKM,2007,Production_Hydrocarbons,210.56280558664508
 TKM,2007,Reserves_Hydrocarbons,6.312524999999999
 TKM,2008,Production_Hydrocarbons,217.55639792140067
 TKM,2008,Reserves_Hydrocarbons,6.312524999999999
-TKM,2009,Production_Hydrocarbons,222.48725428646563
+TKM,2009,Production_Hydrocarbons,222.48725428646566
 TKM,2009,Reserves_Hydrocarbons,8.510174999999998
 TKM,2010,Production_Hydrocarbons,227.93227300709242
 TKM,2010,Reserves_Hydrocarbons,14.20125
@@ -3731,7 +3731,7 @@ UZB,1997,Production_Hydrocarbons,183.1750806668578
 UZB,1997,Reserves_Hydrocarbons,1.45785
 UZB,1998,Production_Hydrocarbons,193.26968203343986
 UZB,1998,Reserves_Hydrocarbons,1.45785
-UZB,1999,Production_Hydrocarbons,192.71810974097534
+UZB,1999,Production_Hydrocarbons,192.7181097409754
 UZB,1999,Reserves_Hydrocarbons,1.507575
 UZB,2000,Production_Hydrocarbons,161.8274836640818
 UZB,2000,Reserves_Hydrocarbons,1.507575
@@ -3802,7 +3802,7 @@ VEN,2007,Reserves_Hydrocarbons,124.74930676199999
 VEN,2008,Production_Hydrocarbons,3229.532394102692
 VEN,2008,Reserves_Hydrocarbons,272.02238261400004
 VEN,2009,Production_Hydrocarbons,3039.080768957839
-VEN,2009,Reserves_Hydrocarbons,350.2034088269999
+VEN,2009,Reserves_Hydrocarbons,350.203408827
 VEN,2010,Production_Hydrocarbons,2842.748697126405
 VEN,2010,Reserves_Hydrocarbons,522.633199626036
 VEN,2011,Production_Hydrocarbons,2756.1894073870967
