@@ -86,8 +86,13 @@ PALETTE = dict(
 _LABEL_COLORS = {
     'Petrostates':           '#d4853b',   # orange
     'Oil Exporters':         '#4a6fa5',   # blue
-    'Major Producers': '#2e7d4a',   # green
-    'Limited Resources':     '#c23a3a',   # red
+    'Major Producers':       '#2e7d4a',   # green  (k=4 default)
+    'Forestry Intensive':    '#c23a3a',   # red
+    # k=5
+    'Diversified Producers': '#2e7d4a',   # green  (replaces Major Producers in k=5/6)
+    'Mining Exporters':      '#7a5c9e',   # purple
+    # k=6
+    'Oil & Minerals':        '#3a8fa5',   # teal
 }
 
 
@@ -142,7 +147,7 @@ def _build_cluster_maps(csv_path: str):
     # Fallback: NB4 rank-based defaults
     fallback_labels = {
         0: 'Oil Exporters',
-        1: 'Limited Resources',
+        1: 'Forestry Intensive',
         2: 'Major Producers',
         3: 'Petrostates',
     }
