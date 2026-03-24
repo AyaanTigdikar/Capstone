@@ -30,14 +30,6 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score, adjusted_rand_score
 
-try:
-    import kaleido  # noqa — needed by plotly.write_image
-    HAS_KALEIDO = True
-except ImportError:
-    HAS_KALEIDO = False
-    print('NOTE: kaleido not installed. PNGs will be skipped, HTML still saved.')
-    print('      To enable PNG: open Terminal.app and run   pip install -U kaleido')
-
 # ── locate project root ──────────────────────────────────────────────────────
 def _find_root(marker='intermediary'):
     d = os.path.dirname(os.path.abspath(__file__))
@@ -64,6 +56,7 @@ HYDROCARBONS = {'Oil', 'Natural Gas', 'Coal'}
 _COLORS = {
     'Petrostates':           '#d4853b',
     'Oil Exporters':         '#4a6fa5',
+    'Major Producers':       '#2e7d4a',
     'Diversified Producers': '#d4a017',
     'Forestry Intensive':    '#c23a3a',
     'Mining Exporters':      '#7a5c9e',
@@ -130,8 +123,8 @@ def _assign_labels(pca_df, centroids, label_override=None):
     lmap[mid] = 'Mining Exporters';           done.add(mid)
     remaining = [c for c in pc1_rank if c not in done]
 
-    names = ['Oil Exporters', 'Diversified Producers', 'Forestry Intensive',
-             'Oil & Minerals']
+    names = ['Oil Exporters', 'Major Producers', 'Forestry Intensive',
+             'Diversified Producers', 'Oil & Minerals']
     for i, cid in enumerate(remaining):
         lmap[cid] = names[i] if i < len(names) else f'Cluster {cid}'
 
@@ -165,29 +158,16 @@ def _world_map(pca_df, title, label_col='ClusterLabel'):
         showframe=False,
     )
     fig.update_layout(
-        title=dict(text=title, font=dict(family=FONT, size=14, color=NAVY), x=0.5),
-        width=1400, height=700,
-        margin=dict(l=0, r=0, t=50, b=80),
+        title=dict(text=title, font=dict(family=FONT, size=13, color=NAVY), x=0.5),
+        margin=dict(l=0, r=0, t=45, b=70),
         legend=dict(
-            orientation='h', x=0.5, y=-0.06, xanchor='center', yanchor='top',
-            font=dict(size=12, family=FONT),
+            orientation='h', x=0.5, y=-0.08, xanchor='center', yanchor='top',
+            font=dict(size=11, family=FONT),
             bgcolor='rgba(250,250,250,0.9)', bordercolor='#d0d0d0', borderwidth=1,
         ),
         paper_bgcolor=BG, font=dict(family=FONT),
     )
     return fig
-
-# PNG export settings
-PNG_SCALE = 3   # 3x → 4200×2100 px
-
-def _save_fig(fig, path_stem):
-    """Save as HTML always, PNG if kaleido available."""
-    fig.write_html(path_stem + '.html', config=WRITE_CONFIG)
-    if HAS_KALEIDO:
-        fig.write_image(path_stem + '.png', scale=PNG_SCALE)
-        print(f'  Saved: {os.path.basename(path_stem)}.png  +  .html')
-    else:
-        print(f'  Saved: {os.path.basename(path_stem)}.html  (no PNG — kaleido missing)')
 
 
 # ── load data ─────────────────────────────────────────────────────────────────
@@ -223,9 +203,9 @@ for k in [3, 4, 5, 6]:
 
 # Label-name pools for different k values
 _NAMES_BY_K = {
-    3: ['Forestry Intensive'],                     # Petrostates + Mining assigned first, 1 left
+    3: ['Oil Exporters'],                          # Petrostates + Mining assigned first, 1 left
     4: ['Oil Exporters', 'Forestry Intensive'],     # 2 remaining after Petrostates + Mining
-    5: ['Oil Exporters', 'Diversified Producers', 'Forestry Intensive'],
+    5: ['Oil Exporters', 'Major Producers', 'Forestry Intensive'],
     6: ['Oil Exporters', 'Diversified Producers', 'Forestry Intensive', 'Oil & Minerals'],
 }
 
@@ -240,8 +220,8 @@ def _assign_labels_flex(pca_df, centroids, k):
     lmap[mid] = 'Mining Exporters';     done.add(mid)
 
     remaining = [c for c in pc1_rank if c not in done]
-    names = _NAMES_BY_K.get(k, ['Oil Exporters', 'Diversified Producers',
-                                 'Forestry Intensive', 'Oil & Minerals'])
+    names = _NAMES_BY_K.get(k, ['Oil Exporters', 'Major Producers',
+                                 'Forestry Intensive', 'Diversified Producers'])
     for i, cid in enumerate(remaining):
         lmap[cid] = names[i] if i < len(names) else f'Cluster {cid}'
 
@@ -261,7 +241,9 @@ for k in [3, 4, 6]:
     sil = sil_scores[k]
     title = f'k={k} — 1995 cross-section (silhouette = {sil:.3f})'
     fig = _world_map(pca_df, title)
-    _save_fig(fig, os.path.join(OUT, f'silhouette_k{k}__1995'))
+    fname = f'silhouette_k{k}__1995.html'
+    fig.write_html(os.path.join(OUT, fname), config=WRITE_CONFIG)
+    print(f'  Saved: {fname}')
 
     print(f'\n  k={k} cluster composition:')
     for lbl in sorted(pca_df['ClusterLabel'].unique()):
@@ -295,7 +277,8 @@ print(pca_a.groupby('ClusterLabel')['Country'].count().sort_values(ascending=Fal
 
 fig_a = _world_map(pca_a,
     title='Robustness A — 1995, minerals aggregated (Oil / Gas / Coal / Minerals), k=5')
-_save_fig(fig_a, os.path.join(OUT, 'rob_A__1995_minerals_merged_k5'))
+fig_a.write_html(os.path.join(OUT, 'rob_A__1995_minerals_merged_k5.html'), config=WRITE_CONFIG)
+print(f'  Saved: {os.path.join(OUT, "rob_A__1995_minerals_merged_k5.html")}')
 
 
 # ── rob_B: PCA(3) instead of PCA(2), 1995, k=5 ───────────────────────────────
@@ -313,7 +296,8 @@ print(pca_b.groupby('ClusterLabel')['Country'].count().sort_values(ascending=Fal
 
 fig_b = _world_map(pca_b,
     title='Robustness B — 1995, PCA(3), k=5')
-_save_fig(fig_b, os.path.join(OUT, 'rob_B__1995_pca3_k5'))
+fig_b.write_html(os.path.join(OUT, 'rob_B__1995_pca3_k5.html'), config=WRITE_CONFIG)
+print(f'  Saved: {os.path.join(OUT, "rob_B__1995_pca3_k5.html")}')
 
 
 # ── rob_C: 2019, standard pipeline, k=5, PCA(2) ──────────────────────────────
@@ -327,7 +311,8 @@ print(pca_c.groupby('ClusterLabel')['Country'].count().sort_values(ascending=Fal
 
 fig_c = _world_map(pca_c,
     title='Robustness C — 2019, standard pipeline, k=5')
-_save_fig(fig_c, os.path.join(OUT, 'rob_C__2019_standard_k5'))
+fig_c.write_html(os.path.join(OUT, 'rob_C__2019_standard_k5.html'), config=WRITE_CONFIG)
+print(f'  Saved: {os.path.join(OUT, "rob_C__2019_standard_k5.html")}')
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -388,176 +373,4 @@ for _, r in unstable.iterrows():
           f'A={r["RobA"]:25s}  B={r["RobB"]:25s}  C={r["RobC"]}')
 
 print(f'\n  Saved: country_label_comparison.csv')
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# PART 4: STABILITY VISUALISATIONS
-# ══════════════════════════════════════════════════════════════════════════════
-
-print('\n' + '='*70)
-print('PART 4: Stability visualisations')
-print('='*70)
-
-# ── 4a. Stability world map ──────────────────────────────────────────────────
-# Countries coloured by how many robustness checks changed their label (0–3)
-
-STABILITY_COLORS = {
-    0: '#1a7a3a',   # dark green  — stable in all 3
-    1: '#a3c466',   # light green — shifted in 1
-    2: '#e8a838',   # amber       — shifted in 2
-    3: '#c23a3a',   # red         — shifted in all 3
-}
-STABILITY_LABELS = {
-    0: 'Stable (0/3 changed)',
-    1: 'Minor shift (1/3)',
-    2: 'Moderate shift (2/3)',
-    3: 'Unstable (3/3 changed)',
-}
-
-fig_stab = go.Figure()
-for nd in [0, 1, 2, 3]:
-    sub = compare[compare['n_diff'] == nd]
-    if len(sub) == 0:
-        continue
-    color = STABILITY_COLORS[nd]
-    fig_stab.add_trace(go.Choropleth(
-        locations=sub['Country Code'],
-        z=[1] * len(sub),
-        colorscale=[[0, color], [1, color]],
-        showscale=False,
-        showlegend=True,
-        name=STABILITY_LABELS[nd],
-        hovertemplate=(
-            '<b>%{location}</b><br>'
-            + STABILITY_LABELS[nd]
-            + '<extra></extra>'
-        ),
-        marker=dict(line=dict(color='white', width=0.6)),
-    ))
-
-fig_stab.update_geos(
-    projection_type='natural earth',
-    showcountries=True,  countrycolor='#ccc',
-    showcoastlines=True, coastlinecolor='#ccc',
-    showland=True,       landcolor='#f0f0f0',
-    showocean=True,      oceancolor='#dde8f0',
-    showframe=False,
-)
-fig_stab.update_layout(
-    title=dict(
-        text='Cluster Assignment Stability across Three Robustness Checks',
-        font=dict(family=FONT, size=14, color=NAVY), x=0.5,
-    ),
-    width=1400, height=700,
-    margin=dict(l=0, r=0, t=50, b=80),
-    legend=dict(
-        orientation='h', x=0.5, y=-0.06, xanchor='center', yanchor='top',
-        font=dict(size=12, family=FONT),
-        bgcolor='rgba(250,250,250,0.9)', bordercolor='#d0d0d0', borderwidth=1,
-    ),
-    paper_bgcolor=BG, font=dict(family=FONT),
-)
-_save_fig(fig_stab, os.path.join(OUT, 'stability_world_map'))
-
-
-# ── 4b. Heatmap table: countries × specs, coloured by cluster label ──────────
-
-# Sort: by n_diff (most stable first), then by baseline label, then country
-compare_sorted = compare.sort_values(
-    ['n_diff', 'Main_k5', 'Country'], ascending=[True, True, True]
-).reset_index(drop=True)
-
-# Assign numeric code per label for colouring
-all_labels = sorted(set(
-    compare_sorted['Main_k5'].tolist() +
-    compare_sorted['RobA'].dropna().tolist() +
-    compare_sorted['RobB'].dropna().tolist() +
-    compare_sorted['RobC'].dropna().tolist()
-))
-
-# Colour scale: map each label to its colour
-label_to_num = {lbl: i for i, lbl in enumerate(all_labels)}
-n_labels = len(all_labels)
-
-# Build the z-matrix (countries × 4 specs)
-spec_cols = ['Main_k5', 'RobA', 'RobB', 'RobC']
-spec_names = ['Baseline (k=5)', 'Rob A: Minerals merged', 'Rob B: PCA(3)', 'Rob C: 2019']
-z_matrix = []
-text_matrix = []
-for _, row in compare_sorted.iterrows():
-    z_row = []
-    t_row = []
-    for col in spec_cols:
-        lbl = row[col] if pd.notna(row[col]) else 'N/A'
-        z_row.append(label_to_num.get(lbl, -1))
-        t_row.append(lbl)
-    z_matrix.append(z_row)
-    text_matrix.append(t_row)
-
-# Build discrete colorscale from label colours
-colorscale = []
-for lbl in all_labels:
-    idx = label_to_num[lbl]
-    c = _COLORS.get(lbl, '#aaa')
-    colorscale.append([idx / max(n_labels - 1, 1), c])
-# Ensure 0 and 1 boundaries
-if len(colorscale) > 0:
-    discrete_cs = []
-    for i, lbl in enumerate(all_labels):
-        lo = i / n_labels
-        hi = (i + 1) / n_labels
-        c = _COLORS.get(lbl, '#aaa')
-        discrete_cs.append([lo, c])
-        discrete_cs.append([hi, c])
-
-countries = compare_sorted['Country'].tolist()
-
-fig_heat = go.Figure(data=go.Heatmap(
-    z=z_matrix,
-    x=spec_names,
-    y=countries,
-    text=text_matrix,
-    texttemplate='%{text}',
-    textfont=dict(size=9, family=FONT),
-    colorscale=discrete_cs,
-    showscale=False,
-    hovertemplate='<b>%{y}</b><br>%{x}: %{text}<extra></extra>',
-    xgap=2, ygap=1,
-    zmin=0, zmax=n_labels,
-))
-
-fig_heat.update_layout(
-    title=dict(
-        text='Cluster Label Assignments: Baseline vs Robustness Checks',
-        font=dict(family=FONT, size=14, color=NAVY), x=0.5,
-    ),
-    width=800,
-    height=max(500, len(countries) * 22 + 120),
-    margin=dict(l=180, r=30, t=60, b=40),
-    xaxis=dict(
-        side='top', tickfont=dict(size=11, family=FONT),
-        tickangle=0,
-    ),
-    yaxis=dict(
-        tickfont=dict(size=9, family=FONT),
-        autorange='reversed',   # most stable at top
-    ),
-    paper_bgcolor=BG,
-    font=dict(family=FONT),
-)
-
-# Add a horizontal line separating stability groups
-cumulative = 0
-for nd in [0, 1, 2]:
-    count = (compare_sorted['n_diff'] == nd).sum()
-    cumulative += count
-    if cumulative < len(compare_sorted):
-        fig_heat.add_hline(
-            y=cumulative - 0.5,
-            line=dict(color='#333', width=1.5, dash='dot'),
-        )
-
-_save_fig(fig_heat, os.path.join(OUT, 'stability_heatmap'))
-
-
 print(f'\nDone. All outputs in: {OUT}')

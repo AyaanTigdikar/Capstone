@@ -1,0 +1,52 @@
+Country Code,Main_k5,Country,RobA,RobB,RobC,n_diff
+DZA,Petrostates,Algeria,Petrostates,Oil Exporters,Petrostates,1
+AGO,Diversified Producers,Angola,Diversified Producers,Diversified Producers,Oil Exporters,1
+AZE,Diversified Producers,Azerbaijan,Diversified Producers,Oil Exporters,Petrostates,2
+BHR,Petrostates,Bahrain,Oil Exporters,Petrostates,Petrostates,1
+BOL,Oil Exporters,Bolivia,Oil Exporters,Diversified Producers,Diversified Producers,2
+BFA,Forestry Intensive,Burkina Faso,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+CMR,Diversified Producers,Cameroon,Diversified Producers,Diversified Producers,Oil Exporters,1
+CHL,Mining Exporters,Chile,Mining Exporters,Mining Exporters,Diversified Producers,1
+COD,Forestry Intensive,"Congo, Dem. Rep.",Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+COG,Diversified Producers,"Congo, Rep.",Diversified Producers,Diversified Producers,Oil Exporters,1
+CIV,Forestry Intensive,Cote d'Ivoire,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+ECU,Diversified Producers,Ecuador,Diversified Producers,Diversified Producers,Oil Exporters,1
+EGY,Diversified Producers,"Egypt, Arab Rep.",Diversified Producers,Diversified Producers,Oil Exporters,1
+GNQ,Diversified Producers,Equatorial Guinea,Diversified Producers,Diversified Producers,Oil Exporters,1
+ETH,Forestry Intensive,Ethiopia,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+GAB,Diversified Producers,Gabon,Oil Exporters,Diversified Producers,Oil Exporters,2
+GHA,Forestry Intensive,Ghana,Mining Exporters,Forestry Intensive,Oil Exporters,2
+GIN,Forestry Intensive,Guinea,Mining Exporters,Forestry Intensive,Forestry Intensive,1
+IDN,Oil Exporters,Indonesia,Oil Exporters,Diversified Producers,Diversified Producers,2
+IRN,Petrostates,"Iran, Islamic Rep.",Oil Exporters,Oil Exporters,Petrostates,2
+IRQ,Diversified Producers,Iraq,Diversified Producers,Diversified Producers,Petrostates,1
+KAZ,Oil Exporters,Kazakhstan,Oil Exporters,Mining Exporters,Mining Exporters,2
+KEN,Forestry Intensive,Kenya,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+KWT,Petrostates,Kuwait,Petrostates,Oil Exporters,Petrostates,1
+LAO,Forestry Intensive,Lao PDR,Forestry Intensive,Forestry Intensive,Diversified Producers,1
+LBR,Forestry Intensive,Liberia,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+LBY,Petrostates,Libya,Petrostates,Oil Exporters,Petrostates,1
+MDG,Forestry Intensive,Madagascar,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+MWI,Forestry Intensive,Malawi,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+MYS,Petrostates,Malaysia,Petrostates,Oil Exporters,Petrostates,1
+MLI,Forestry Intensive,Mali,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+MNG,Mining Exporters,Mongolia,Mining Exporters,Mining Exporters,Diversified Producers,1
+MOZ,Forestry Intensive,Mozambique,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+MMR,Forestry Intensive,Myanmar,Forestry Intensive,Forestry Intensive,Oil Exporters,1
+NER,Forestry Intensive,Niger,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+NGA,Diversified Producers,Nigeria,Diversified Producers,Diversified Producers,Oil Exporters,1
+OMN,Petrostates,Oman,Petrostates,Oil Exporters,Petrostates,1
+PNG,Oil Exporters,Papua New Guinea,Oil Exporters,Mining Exporters,Diversified Producers,2
+QAT,Petrostates,Qatar,Petrostates,Oil Exporters,Petrostates,1
+RUS,Oil Exporters,Russian Federation,Oil Exporters,Petrostates,Mining Exporters,2
+SAU,Petrostates,Saudi Arabia,Petrostates,Oil Exporters,Petrostates,1
+TZA,Forestry Intensive,Tanzania,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+TTO,Petrostates,Trinidad and Tobago,Petrostates,Oil Exporters,Petrostates,1
+UGA,Forestry Intensive,Uganda,Forestry Intensive,Forestry Intensive,Forestry Intensive,0
+ARE,Petrostates,United Arab Emirates,Petrostates,Petrostates,Petrostates,0
+UZB,Oil Exporters,Uzbekistan,Oil Exporters,Diversified Producers,Diversified Producers,2
+VEN,Petrostates,"Venezuela, RB",Oil Exporters,Petrostates,Petrostates,1
+VNM,Forestry Intensive,Viet Nam,Forestry Intensive,Forestry Intensive,Oil Exporters,1
+YEM,Diversified Producers,"Yemen, Rep.",Diversified Producers,Diversified Producers,Oil Exporters,1
+ZMB,Forestry Intensive,Zambia,Mining Exporters,Forestry Intensive,Forestry Intensive,1
+ZWE,Forestry Intensive,Zimbabwe,Mining Exporters,Forestry Intensive,Forestry Intensive,1
