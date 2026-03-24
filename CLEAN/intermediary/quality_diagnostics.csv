@@ -1,0 +1,53 @@
+Country Code,Country Name,Gulf,Raw Miss. (%),Fully Missing Vars,KNN Reliance (%),Pass Missingness,Pass FullyMissing,Pass KNN,Pass All Quality
+TKM,Turkmenistan,False,19.7,8,23.16,False,False,False,False
+LBY,Libya,False,16.9,5,19.68,False,True,False,False
+PNG,Papua New Guinea,False,16.3,5,18.95,False,True,False,False
+UZB,Uzbekistan,False,11.3,1,12.63,True,True,False,False
+ARE,United Arab Emirates,True,10.3,3,12.11,True,True,False,False
+QAT,Qatar,True,9.0,1,9.79,True,True,True,True
+ZWE,Zimbabwe,False,8.5,0,8.95,True,True,True,True
+VEN,"Venezuela, RB",False,8.5,0,9.16,True,True,True,True
+MMR,Myanmar,False,8.3,1,9.05,True,True,True,True
+YEM,"Yemen, Rep.",True,7.9,2,7.68,True,True,True,True
+KAZ,Kazakhstan,False,7.1,2,8.21,True,True,True,True
+GIN,Guinea,False,7.0,1,7.89,True,True,True,True
+MRT,Mauritania,False,7.0,0,3.68,True,True,True,True
+COD,"Congo, Dem. Rep.",False,6.9,1,4.0,True,True,True,True
+BIH,Bosnia and Herzegovina,False,6.8,1,7.37,True,True,True,True
+IRQ,Iraq,True,6.5,0,6.84,True,True,True,True
+AGO,Angola,False,6.3,0,6.84,True,True,True,True
+BHR,Bahrain,True,6.2,0,6.95,True,True,True,True
+EST,Estonia,False,6.0,2,6.74,True,True,True,True
+COG,"Congo, Rep.",False,5.7,2,5.79,True,True,True,True
+CMR,Cameroon,False,5.7,2,6.42,True,True,True,True
+GAB,Gabon,False,5.6,2,6.21,True,True,True,True
+ECU,Ecuador,False,5.4,2,6.0,True,True,True,True
+IRN,"Iran, Islamic Rep.",True,5.4,0,5.16,True,True,True,True
+AZE,Azerbaijan,False,5.2,1,5.26,True,True,True,True
+ARG,Argentina,False,5.0,0,5.58,True,True,True,True
+SAU,Saudi Arabia,True,4.9,2,5.26,True,True,True,True
+GHA,Ghana,False,4.7,2,5.26,True,True,True,True
+TUN,Tunisia,False,4.7,2,5.26,True,True,True,True
+OMN,Oman,True,3.6,1,3.26,True,True,True,True
+DOM,Dominican Republic,False,3.4,0,0.95,True,True,True,True
+KWT,Kuwait,True,3.0,0,3.16,True,True,True,True
+DZA,Algeria,False,3.0,0,3.26,True,True,True,True
+ROU,Romania,False,2.6,1,0.0,True,True,True,True
+NGA,Nigeria,False,2.5,1,2.63,True,True,True,True
+JAM,Jamaica,False,2.5,1,2.63,True,True,True,True
+RUS,Russian Federation,False,2.4,0,1.79,True,True,True,True
+VNM,Viet Nam,False,2.3,0,1.47,True,True,True,True
+PAK,Pakistan,False,2.2,0,1.89,True,True,True,True
+ALB,Albania,False,2.2,0,1.47,True,True,True,True
+BWA,Botswana,False,1.6,0,1.47,True,True,True,True
+IDN,Indonesia,False,1.6,0,1.47,True,True,True,True
+UKR,Ukraine,False,1.6,0,1.37,True,True,True,True
+ZAF,South Africa,False,1.4,0,1.16,True,True,True,True
+MNG,Mongolia,False,1.3,0,0.53,True,True,True,True
+PER,Peru,False,1.3,0,1.16,True,True,True,True
+EGY,"Egypt, Arab Rep.",False,1.1,0,0.95,True,True,True,True
+CHL,Chile,False,1.0,0,0.63,True,True,True,True
+MYS,Malaysia,False,0.8,0,0.53,True,True,True,True
+MEX,Mexico,False,0.5,0,0.0,True,True,True,True
+COL,Colombia,False,0.3,0,0.0,True,True,True,True
+BOL,Bolivia,False,0.3,0,0.0,True,True,True,True

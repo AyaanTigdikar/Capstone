@@ -1,0 +1,69 @@
+# Silver unit value - Data package
+
+This data package contains the data that powers the chart ["Silver unit value"](https://ourworldindata.org/explorers/minerals?Mineral=Silver&Metric=Unit+value&Type=Mine%2C+palladium&Share+of+global=false&country=OWID_WRL~AUS~CHL~CHN~USA) on the Our World in Data website. It was downloaded on January 08, 2026.
+
+### Active Filters
+
+A filtered subset of the full data was downloaded. The following filters were applied:
+
+## CSV Structure
+
+The high level structure of the CSV file is that each row is an observation for an entity (usually a country or region) and a timepoint (usually a year).
+
+The first two columns in the CSV file are "Entity" and "Code". "Entity" is the name of the entity (e.g. "United States"). "Code" is the OWID internal entity code that we use if the entity is a country or region. For normal countries, this is the same as the [iso alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) code of the entity (e.g. "USA") - for non-standard countries like historical countries these are custom codes.
+
+The third column is either "Year" or "Day". If the data is annual, this is "Year" and contains only the year as an integer. If the column is "Day", the column contains a date string in the form "YYYY-MM-DD".
+
+The final column is the data column, which is the time series that powers the chart. If the CSV data is downloaded using the "full data" option, then the column corresponds to the time series below. If the CSV data is downloaded using the "only selected data visible in the chart" option then the data column is transformed depending on the chart type and thus the association with the time series might not be as straightforward.
+
+## Metadata.json structure
+
+The .metadata.json file contains metadata about the data package. The "charts" key contains information to recreate the chart, like the title, subtitle etc.. The "columns" key contains information about each of the columns in the csv, like the unit, timespan covered, citation for the data etc..
+
+## About the data
+
+Our World in Data is almost never the original producer of the data - almost all of the data we use has been compiled by others. If you want to re-use data, it is your responsibility to ensure that you adhere to the sources' license and to credit them correctly. Please note that a single time series may have more than one source - e.g. when we stich together data from different time periods by different producers or when we calculate per capita metrics using population data from a second source.
+
+## Detailed information about the data
+
+
+## Silver unit value
+Value of 1 tonne of silver, in constant 1998 US$ per tonne.
+Last updated: December 15, 2025  
+Next update: December 2026  
+Date range: 1900–2021  
+Unit: constant 1998 US$ per tonne  
+
+
+### How to cite this data
+
+#### In-line citation
+If you have limited space (e.g. in data visualizations), you can use this abbreviated in-line citation:  
+USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data
+
+#### Full citation
+USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data. “Silver unit value” [dataset]. United States Geological Survey, “Historical Statistics for Mineral and Material Commodities” [original data].
+Source: USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World In Data
+
+### What you should know about this data
+* Unit value represents the price of a physical unit of apparent consumption (such as a metric ton) in dollars. Apparent consumption itself is determined by the formula: Apparent Consumption = Production + Imports - Exports ± (Stock Change).
+* For commodities that exist in a single physical form, like copper, a straightforward price series can estimate the unit value.
+* However, for commodities like chromium, which encompass multiple forms (e.g., metal, ferroalloys, ore), weighted averages are used, with each form's price weighted by its contribution to total consumption.
+* When no direct price series is available, unit values are derived using export, import, and production data.
+* To ensure consistency over time, these values are reported in 1998 constant dollars, adjusted for inflation.
+
+### Source
+
+#### United States Geological Survey – Historical Statistics for Mineral and Material Commodities
+Retrieved on: 2024-07-15  
+Retrieved from: https://www.usgs.gov/centers/national-minerals-information-center/historical-statistics-mineral-and-material-commodities  
+
+#### Notes on our processing step for this indicator
+- The majority of the data is sourced from USGS, supplemented by BGS data where available. Where both overlap, USGS data is prioritized.
+- As BGS does not provide global data, we calculated the world total by summing the data from individual countries, using this as a cross-check against USGS global figures.
+- Due to the inherent uncertainties in the data for certain minerals and countries, we allowed a maximum deviation of 10% between the global totals reported by USGS and the calculated ones for BGS. If the deviation exceeded this threshold, we excluded the BGS data.
+- The calculated global total from BGS data was used only on exceptional occasions, after ensuring that the resulting aggregate was sufficiently complete.
+- Both BGS and USGS datasets include numerous notes and footnotes. We have retained most of these, making only minor edits or deletions where necessary to maintain clarity.
+
+
+    
