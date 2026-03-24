@@ -172,16 +172,14 @@ def base_layout(**kw) -> dict:
 
 
 def save(fig: go.Figure, name: str, out_dir: str, w: int = 1100, h: int = 600) -> None:
-    """Write a Plotly figure to <out_dir>/<name>.html and <out_dir>/<name>.png."""
+    """Write a Plotly figure to <out_dir>/<n>.png."""
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, name)
-    fig.write_html(f"{path}.html", config=WRITE_CONFIG)
-    print(f"  Saved: {path}.html")
     try:
         fig.write_image(f"{path}.png", width=w, height=h, scale=2)
         print(f"  Saved: {path}.png")
     except Exception as e:
-        print(f"  PNG skipped ({e})")
+        print(f"  PNG failed ({e})")
 
 
 # ---------------------------------------------------------------------------
@@ -353,35 +351,47 @@ def analyze_country_missingness(df: pd.DataFrame) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 _FEAT_SHORT = {
     'Domestic credit to private sector (% of GDP)':                        'Domestic Credit',
-    'Access to electricity (% of population)':                             'Electricity',
+    'Access to electricity (% of population)':                             'Electricity Access',
     'Human capital index':                                                  'Human Capital',
-    'HCI_x_ProductionValue':                                               'HC × Production',
-    'GFCF_x_ProductionValue':                                              'GFCF × Production',
-    'RuleOfLaw_x_ProductionValue':                                         'RuleLaw × Production',
+    'HCI_x_ProductionValue':                                               'HC x Production',
+    'GFCF_x_ProductionValue':                                              'GFCF x Production',
     'Rule of law index':                                                    'Rule of Law',
-    'Political stability — estimate':                                       'Political Stability',
+    'Political stability — estimate':                                  'Political Stability',
     'Trade (% of GDP)':                                                     'Trade',
     'Gross fixed capital formation, all, Constant prices, Percent of GDP': 'Capital Formation',
     'Urban population (% of total population)':                           'Urban Population',
-    'Government revenue':                                                   'Gov Revenue',
     'Use of IMF credit (DOD, current US$)':                               'IMF Credit',
     'Total_Production_Value_Per_Capita':                                   'Prod Value p.c.',
     'Capital depreciation rate':                                           'Depreciation',
-    'Share of investment in GDP':                                          'Investment Share',
     'Landlocked':                                                          'Landlocked',
-    'Adjusted savings: gross savings (% of GNI)':                        'Savings',
     'Real interest rate (%)':                                              'Interest Rate',
     'Inflation, consumer prices (annual %)':                               'Inflation',
+    'GDP per capita (constant prices, PPP)':                               'GDP per Capita',
+    'Total natural resources rents (% of GDP)':                           'NR Rents (% GDP)',
+    'Oil rents (% of GDP)':                                                'Oil Rents',
+    'Mineral rents (% of GDP)':                                            'Mineral Rents',
+    'Natural gas rents (% of GDP)':                                        'Gas Rents',
+    'Forest rents (% of GDP)':                                             'Forest Rents',
+    'Economic Complexity Index':                                           'ECI',
+    'Adjusted savings: gross savings (% of GNI)':                        'Savings',
+    'Government revenue':                                                   'Gov Revenue',
+    'Share of investment in GDP':                                          'Investment Share',
+    'Life expectancy at birth, total (years)':                            'Life Expectancy',
+    'Death rate, crude (per 1,000 people)':                               'Death Rate',
+    'Manufacturing, value added (% of GDP)':                              'Manufacturing',
+    'Agriculture, forestry, and fishing, value added (% of GDP)':        'Agriculture (% GDP)',
+    'Mobile cellular subscriptions (per 100 people)':                     'Mobile Subs',
+    'Political corruption index':                                          'Pol. Corruption',
+    'Property rights':                                                     'Property Rights',
+    'Services, value added (% of GDP)':                                   'Services (% GDP)',
+    'Industry (including construction), value added (% of GDP)':         'Industry (% GDP)',
+    'prod_pc':                                                             'Prod Value p.c.',
+    'Lending interest rate (%)':                                           'Lending Rate',
+    'L1_ECI':                                                              'Lagged ECI',
     'Inflation_roll5':                                                     'Inflation (5yr avg)',
     'RealRate_roll5':                                                      'Real Rate (5yr avg)',
     'Resource_HHI':                                                        'Resource HHI',
-    'GDP per capita (constant prices, PPP)':                               'GDP per Capita',
-    'Total natural resources rents (% of GDP)':                           'NR Rents (% GDP)',
-    'Oil rents (% of GDP)':                                                'Oil Rents (% GDP)',
-    'Mineral rents (% of GDP)':                                            'Mineral Rents (% GDP)',
-    'Natural gas rents (% of GDP)':                                        'Gas Rents (% GDP)',
-    'Economic Complexity Index':                                           'ECI',
-    'L1_ECI':                                                              'Lagged ECI',
+    'RuleOfLaw_x_ProductionValue':                                         'RuleLaw x Production',
 }
 
 
