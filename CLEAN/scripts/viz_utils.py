@@ -170,15 +170,14 @@ def base_layout(**kw) -> dict:
     return d
 
 
-CHARTS_DIR = 'outputs/charts'   # single output folder for all charts
-
-def save(fig: go.Figure, name: str, out_dir: str = None, w: int = 1100, h: int = 600) -> None:
-    """Write a Plotly figure to outputs/charts/<name>.png (HTML disabled, out_dir ignored)."""
-    os.makedirs(CHARTS_DIR, exist_ok=True)
-    path = os.path.join(CHARTS_DIR, name)
-    # fig.write_html(f"{path}.html", config=WRITE_CONFIG)  # disabled: save disk space
+def save(fig: go.Figure, name: str, out_dir: str, w: int = 1100, h: int = 600) -> None:
+    """Write a Plotly figure to <out_dir>/<name>.html and <out_dir>/<name>.png."""
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, name)
+    fig.write_html(f"{path}.html", config=WRITE_CONFIG)
+    print(f"  Saved: {path}.html")
     try:
-        fig.write_image(f"{path}.png", width=w, height=h, scale=4)
+        fig.write_image(f"{path}.png", width=w, height=h, scale=3)
         print(f"  Saved: {path}.png")
     except Exception as e:
         print(f"  PNG skipped ({e})")
