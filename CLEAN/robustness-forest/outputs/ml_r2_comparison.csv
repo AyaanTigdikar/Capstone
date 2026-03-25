@@ -1,0 +1,21 @@
+Sample,Model,R2_train,R2_test
+A — Original 54 (NB4),LASSO,0.7689,0.8571
+A — Original 54 (NB4),Ridge,0.7843,0.8444
+A — Original 54 (NB4),Elastic Net,0.7703,0.8545
+A — Original 54 (NB4),Random Forest,0.8175,0.8683
+"B — Adj. rent, 3% sample (38 ctry)",LASSO,0.8377,0.9139
+"B — Adj. rent, 3% sample (38 ctry)",Ridge,0.8474,0.9055
+"B — Adj. rent, 3% sample (38 ctry)",Elastic Net,0.8386,0.9094
+"B — Adj. rent, 3% sample (38 ctry)",Random Forest,0.8765,0.9265
+"C — Adj. rent, 2% sample",LASSO,0.8698,0.9298
+"C — Adj. rent, 2% sample",Ridge,0.8753,0.9244
+"C — Adj. rent, 2% sample",Elastic Net,0.8729,0.9261
+"C — Adj. rent, 2% sample",Random Forest,0.8984,0.9389
+"D — Adj. rent, 1% sample (58 ctry)",LASSO,0.8736,0.9321
+"D — Adj. rent, 1% sample (58 ctry)",Ridge,0.8777,0.9288
+"D — Adj. rent, 1% sample (58 ctry)",Elastic Net,0.8769,0.9288
+"D — Adj. rent, 1% sample (58 ctry)",Random Forest,0.8969,0.9396
+E — All non-HIC countries,LASSO,0.8625,0.9139
+E — All non-HIC countries,Ridge,0.8639,0.911
+E — All non-HIC countries,Elastic Net,0.8628,0.9128
+E — All non-HIC countries,Random Forest,0.8794,0.9135

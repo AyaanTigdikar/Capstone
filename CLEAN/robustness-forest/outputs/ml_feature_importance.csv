@@ -1,0 +1,96 @@
+Sample,Feature,Feature_short,LASSO_coef,Ridge_coef,EN_coef,RF_imp
+A — Original 54 (NB4),Total_Production_Value_Per_Capita,Prod. Value p.c.,-0.0,-0.06091,-0.0,0.00209
+A — Original 54 (NB4),Human capital index,Human Capital,0.00499,0.03492,0.01354,0.00793
+A — Original 54 (NB4),Rule of law index,Rule of Law,0.0,-0.02107,0.0,0.00279
+A — Original 54 (NB4),Political stability — estimate,Pol. Stability,0.0,0.03842,0.0,0.00223
+A — Original 54 (NB4),Trade (% of GDP),Trade,-0.0,-0.00546,-0.0,0.00237
+A — Original 54 (NB4),"Gross fixed capital formation, all, Constant prices, Percent of GDP",GFCF,0.0,0.00939,0.0,0.00082
+A — Original 54 (NB4),Share of investment in GDP,Investment Share,0.0,0.01143,-0.0,0.00331
+A — Original 54 (NB4),Domestic credit to private sector (% of GDP),Domestic Credit,0.06167,0.06817,0.0694,0.01639
+A — Original 54 (NB4),Landlocked,Landlocked,-0.0,0.00511,0.0,7e-05
+A — Original 54 (NB4),Urban population (% of total population),Urban Pop.,0.00266,0.0313,0.00876,0.00382
+A — Original 54 (NB4),Government revenue,Gov. Revenue,-0.0,-0.02119,-0.0,0.00296
+A — Original 54 (NB4),Capital depreciation rate,Depreciation,-0.0,-0.02597,-0.00227,0.00107
+A — Original 54 (NB4),"Use of IMF credit (DOD, current US$)",IMF Credit,-0.0,-0.02829,-0.0,0.00203
+A — Original 54 (NB4),Real interest rate (%),Real Rate,0.0,-0.01096,0.0,0.00038
+A — Original 54 (NB4),"Inflation, consumer prices (annual %)",Inflation,-0.0,-0.02597,-0.0,0.00112
+A — Original 54 (NB4),Access to electricity (% of population),Electricity,0.01643,0.07669,0.02203,0.00649
+A — Original 54 (NB4),Adjusted savings: gross savings (% of GNI),Savings,-0.0,-0.02512,-0.0,0.00126
+A — Original 54 (NB4),HCI_x_ProductionValue,HCI × Prod.,0.00547,0.03296,0.01605,0.00489
+A — Original 54 (NB4),GFCF_x_ProductionValue,GFCF × Prod.,0.0,-0.00436,0.0,0.00059
+"B — Adj. rent, 3% sample (38 ctry)",Total_Production_Value_Per_Capita,Prod. Value p.c.,-0.0,-0.02802,-0.0,0.00117
+"B — Adj. rent, 3% sample (38 ctry)",Human capital index,Human Capital,0.01238,0.01463,0.02577,0.00424
+"B — Adj. rent, 3% sample (38 ctry)",Rule of law index,Rule of Law,0.0,-0.02024,0.0,0.00297
+"B — Adj. rent, 3% sample (38 ctry)",Political stability — estimate,Pol. Stability,0.0,0.0436,0.0,0.00154
+"B — Adj. rent, 3% sample (38 ctry)",Trade (% of GDP),Trade,-0.0,0.01018,-0.0,0.00196
+"B — Adj. rent, 3% sample (38 ctry)","Gross fixed capital formation, all, Constant prices, Percent of GDP",GFCF,0.0,0.00241,0.0,0.00068
+"B — Adj. rent, 3% sample (38 ctry)",Share of investment in GDP,Investment Share,0.0,0.00446,-0.0,0.00099
+"B — Adj. rent, 3% sample (38 ctry)",Domestic credit to private sector (% of GDP),Domestic Credit,0.04957,0.06431,0.0658,0.006
+"B — Adj. rent, 3% sample (38 ctry)",Landlocked,Landlocked,-0.0,-0.0062,-0.0,4e-05
+"B — Adj. rent, 3% sample (38 ctry)",Urban population (% of total population),Urban Pop.,0.00985,0.06357,0.02415,0.00218
+"B — Adj. rent, 3% sample (38 ctry)",Government revenue,Gov. Revenue,-0.0,0.01016,-0.0,0.00223
+"B — Adj. rent, 3% sample (38 ctry)",Capital depreciation rate,Depreciation,-0.0,-0.01697,-0.0,0.00049
+"B — Adj. rent, 3% sample (38 ctry)","Use of IMF credit (DOD, current US$)",IMF Credit,-0.0,-0.02109,-0.0,0.00198
+"B — Adj. rent, 3% sample (38 ctry)",Real interest rate (%),Real Rate,0.0,-0.00262,0.0,0.00076
+"B — Adj. rent, 3% sample (38 ctry)","Inflation, consumer prices (annual %)",Inflation,-0.0,-0.02719,-0.0,0.00022
+"B — Adj. rent, 3% sample (38 ctry)",Access to electricity (% of population),Electricity,0.03007,0.0894,0.03931,0.00456
+"B — Adj. rent, 3% sample (38 ctry)",Adjusted savings: gross savings (% of GNI),Savings,-0.0,-0.04044,-0.0,0.00101
+"B — Adj. rent, 3% sample (38 ctry)",HCI_x_ProductionValue,HCI × Prod.,0.0,0.0417,0.0,0.00101
+"B — Adj. rent, 3% sample (38 ctry)",GFCF_x_ProductionValue,GFCF × Prod.,0.0,0.0129,0.0,0.00079
+"C — Adj. rent, 2% sample",Total_Production_Value_Per_Capita,Prod. Value p.c.,-0.0,-0.01514,-0.0,0.00064
+"C — Adj. rent, 2% sample",Human capital index,Human Capital,0.00959,0.02522,0.02124,0.00386
+"C — Adj. rent, 2% sample",Rule of law index,Rule of Law,0.0,-0.00786,0.0,0.002
+"C — Adj. rent, 2% sample",Political stability — estimate,Pol. Stability,0.0,0.0169,0.0,0.0011
+"C — Adj. rent, 2% sample",Trade (% of GDP),Trade,-0.0,0.00511,-0.0,0.00106
+"C — Adj. rent, 2% sample","Gross fixed capital formation, all, Constant prices, Percent of GDP",GFCF,0.0,0.00663,0.0,0.0004
+"C — Adj. rent, 2% sample",Share of investment in GDP,Investment Share,-0.0,0.0012,-0.0,0.00102
+"C — Adj. rent, 2% sample",Domestic credit to private sector (% of GDP),Domestic Credit,0.05335,0.05421,0.06235,0.00453
+"C — Adj. rent, 2% sample",Landlocked,Landlocked,-0.0,-0.0215,-0.00552,3e-05
+"C — Adj. rent, 2% sample",Urban population (% of total population),Urban Pop.,0.00914,0.0358,0.02386,0.00169
+"C — Adj. rent, 2% sample",Government revenue,Gov. Revenue,-0.0,-0.0129,-0.00499,0.001
+"C — Adj. rent, 2% sample",Capital depreciation rate,Depreciation,-0.0067,-0.02194,-0.01469,0.00028
+"C — Adj. rent, 2% sample","Use of IMF credit (DOD, current US$)",IMF Credit,0.0,0.00335,0.0,0.00125
+"C — Adj. rent, 2% sample",Real interest rate (%),Real Rate,0.0,-0.00152,0.0,0.00064
+"C — Adj. rent, 2% sample","Inflation, consumer prices (annual %)",Inflation,-0.0,-0.02095,-0.00843,0.00041
+"C — Adj. rent, 2% sample",Access to electricity (% of population),Electricity,0.03604,0.08594,0.05788,0.00349
+"C — Adj. rent, 2% sample",Adjusted savings: gross savings (% of GNI),Savings,-0.0,-0.03192,-0.01539,0.00101
+"C — Adj. rent, 2% sample",HCI_x_ProductionValue,HCI × Prod.,0.0,0.01933,0.00465,0.0005
+"C — Adj. rent, 2% sample",GFCF_x_ProductionValue,GFCF × Prod.,0.0,0.0071,0.0,0.00022
+"D — Adj. rent, 1% sample (58 ctry)",Total_Production_Value_Per_Capita,Prod. Value p.c.,-0.0,-0.02122,-0.01173,0.00034
+"D — Adj. rent, 1% sample (58 ctry)",Human capital index,Human Capital,0.01433,0.022,0.02348,0.00227
+"D — Adj. rent, 1% sample (58 ctry)",Rule of law index,Rule of Law,0.0,0.00072,0.0,0.00199
+"D — Adj. rent, 1% sample (58 ctry)",Political stability — estimate,Pol. Stability,0.0,0.02075,0.01154,0.00095
+"D — Adj. rent, 1% sample (58 ctry)",Trade (% of GDP),Trade,-0.0,0.01243,0.0,0.00055
+"D — Adj. rent, 1% sample (58 ctry)","Gross fixed capital formation, all, Constant prices, Percent of GDP",GFCF,0.0,0.007,0.00075,0.00017
+"D — Adj. rent, 1% sample (58 ctry)",Share of investment in GDP,Investment Share,0.0,-0.00019,0.0,0.00158
+"D — Adj. rent, 1% sample (58 ctry)",Domestic credit to private sector (% of GDP),Domestic Credit,0.0417,0.03698,0.04487,0.004
+"D — Adj. rent, 1% sample (58 ctry)",Landlocked,Landlocked,-0.0,-0.01456,-0.00966,0.0
+"D — Adj. rent, 1% sample (58 ctry)",Urban population (% of total population),Urban Pop.,0.0103,0.03766,0.02794,0.00082
+"D — Adj. rent, 1% sample (58 ctry)",Government revenue,Gov. Revenue,-0.0,-0.00503,-0.0,0.00055
+"D — Adj. rent, 1% sample (58 ctry)",Capital depreciation rate,Depreciation,-0.00228,-0.01682,-0.01233,0.00022
+"D — Adj. rent, 1% sample (58 ctry)","Use of IMF credit (DOD, current US$)",IMF Credit,0.0,0.00102,-0.0,0.00072
+"D — Adj. rent, 1% sample (58 ctry)",Real interest rate (%),Real Rate,0.0,-0.0024,0.0,0.00072
+"D — Adj. rent, 1% sample (58 ctry)","Inflation, consumer prices (annual %)",Inflation,-0.0,-0.01872,-0.01195,0.0004
+"D — Adj. rent, 1% sample (58 ctry)",Access to electricity (% of population),Electricity,0.03591,0.07125,0.05704,0.00208
+"D — Adj. rent, 1% sample (58 ctry)",Adjusted savings: gross savings (% of GNI),Savings,-0.0046,-0.02917,-0.02004,0.00088
+"D — Adj. rent, 1% sample (58 ctry)",HCI_x_ProductionValue,HCI × Prod.,0.0,0.00945,0.00164,0.00034
+"D — Adj. rent, 1% sample (58 ctry)",GFCF_x_ProductionValue,GFCF × Prod.,-0.0,0.00459,0.0,0.00049
+E — All non-HIC countries,Total_Production_Value_Per_Capita,Prod. Value p.c.,-0.01345,-0.03331,-0.01588,0.00092
+E — All non-HIC countries,Human capital index,Human Capital,0.00815,0.01551,0.01103,0.00124
+E — All non-HIC countries,Rule of law index,Rule of Law,0.00307,0.00455,0.00407,0.00172
+E — All non-HIC countries,Political stability — estimate,Pol. Stability,0.01343,0.02214,0.01455,0.00027
+E — All non-HIC countries,Trade (% of GDP),Trade,-0.0,0.00207,-0.0,0.00011
+E — All non-HIC countries,"Gross fixed capital formation, all, Constant prices, Percent of GDP",GFCF,0.0,-0.00046,0.0,0.00017
+E — All non-HIC countries,Share of investment in GDP,Investment Share,0.0,0.00315,0.0,0.00111
+E — All non-HIC countries,Domestic credit to private sector (% of GDP),Domestic Credit,0.03215,0.0311,0.03402,0.00446
+E — All non-HIC countries,Landlocked,Landlocked,-0.0,-0.00492,-0.0,1e-05
+E — All non-HIC countries,Urban population (% of total population),Urban Pop.,0.01766,0.02906,0.02007,0.00022
+E — All non-HIC countries,Government revenue,Gov. Revenue,-0.0,-0.00074,-0.0,0.00032
+E — All non-HIC countries,Capital depreciation rate,Depreciation,-0.0067,-0.01214,-0.00793,0.00012
+E — All non-HIC countries,"Use of IMF credit (DOD, current US$)",IMF Credit,0.0,-0.00146,0.0,0.00064
+E — All non-HIC countries,Real interest rate (%),Real Rate,0.0,-0.00129,0.0,0.00023
+E — All non-HIC countries,"Inflation, consumer prices (annual %)",Inflation,-0.00567,-0.0137,-0.00629,0.00023
+E — All non-HIC countries,Access to electricity (% of population),Electricity,0.04452,0.06459,0.04897,0.00252
+E — All non-HIC countries,Adjusted savings: gross savings (% of GNI),Savings,-0.01219,-0.02157,-0.01364,0.0007
+E — All non-HIC countries,HCI_x_ProductionValue,HCI × Prod.,0.007,0.01741,0.00894,0.00291
+E — All non-HIC countries,GFCF_x_ProductionValue,GFCF × Prod.,0.0,0.00623,0.0,0.00041
