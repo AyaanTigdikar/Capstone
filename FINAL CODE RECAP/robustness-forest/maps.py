@@ -37,20 +37,18 @@ GULF = {'ARE', 'BHR', 'KWT', 'OMN', 'QAT', 'SAU', 'IRQ', 'IRN', 'YEM'}
 RENT_ADJ = 'NR rents excl. forest (% of GDP)'
 
 # ── load adjusted master for 1995 threshold checks ────────────────────────────
-adj = pd.read_csv(os.path.join(ROOT, 'robustness-forest', 'outputs', 'master_adj.csv'),
+adj = pd.read_csv(os.path.join(ROOT, 'intermediary', 'Master.csv'),
                   dtype={'Country Code': str})
 name_lu = adj[['Country Code', 'Country Name']].drop_duplicates().set_index('Country Code')['Country Name']
 d95 = adj[adj['Year'] == 1995].set_index('Country Code')
 
 # ── sample sets ───────────────────────────────────────────────────────────────
 S1 = set(INCLUDE_LIST)
-S2 = set(INCLUDE_LIST)   # same countries, different variable
-_hic_excl = HIC - GULF - set(INCLUDE_LIST)   # excluded from all threshold-based specs
-S3 = ((set(d95[d95[RENT_ADJ] >= 3.0].index) | GULF) & set(d95.index)) - _hic_excl
-S4 = ((set(d95[d95[RENT_ADJ] >= 2.0].index) | GULF) & set(d95.index)) - _hic_excl
-S5 = ((set(d95[d95[RENT_ADJ] >= 1.0].index) | GULF) & set(d95.index)) - _hic_excl
-_hic_excl = HIC - GULF - S1
-S6  = set(d95.index) - _hic_excl
+S2 = set(INCLUDE_LIST)   # same countries, adjusted rent variable
+S3 = set(INCLUDE_LIST)   # same countries, 3% threshold spec
+S4 = set(INCLUDE_LIST)   # same countries, 2% threshold spec
+S5 = set(INCLUDE_LIST)   # same countries, 1% threshold spec
+S6 = set(INCLUDE_LIST)   # same countries, all non-HIC spec
 
 # ── colours ───────────────────────────────────────────────────────────────────
 C_IN   = '#4a6fa5'   # blue  — in sample
@@ -173,49 +171,43 @@ print('✓ Map 2')
 # ══════════════════════════════════════════════════════════════════════════════
 # MAP 3 — Re-selected countries (≥3% adj rents or Gulf)
 # ══════════════════════════════════════════════════════════════════════════════
-dropped_3 = S1 - S3   # in original 54 but dropped here
 make_map(
     sample_set=S3,
-    title=f'Spec 3 — Re-selected Sample ({len(S3)} Countries, ≥3% Threshold)',
-    subtitle='Adj. NR rents ≥ 3% of GDP in 1995 or Gulf state · Red = dropped from original 54',
+    title=f'Spec 3 — Same 54 Countries, ≥3% Adj. Rent Threshold',
+    subtitle='Same sample as baseline · Sensitivity: adj. NR rents variable, ≥3% threshold',
     fname='map_spec3_3pct',
-    highlight_dropped=dropped_3,
 )
 print('✓ Map 3')
 
 # ══════════════════════════════════════════════════════════════════════════════
-# MAP 4 — Re-selected countries (≥2% adj rents or Gulf)
+# MAP 4 — Same 54 countries, ≥2% adj rents spec
 # ══════════════════════════════════════════════════════════════════════════════
-dropped_4 = S1 - S4   # in original 54 but dropped at 2%
 make_map(
     sample_set=S4,
-    title=f'Spec 4 — Re-selected Sample ({len(S4)} Countries, ≥2% Threshold)',
-    subtitle='Adj. NR rents ≥ 2% of GDP in 1995 or Gulf state · Red = dropped from original 54',
+    title=f'Spec 4 — Same 54 Countries, ≥2% Adj. Rent Threshold',
+    subtitle='Same sample as baseline · Sensitivity: adj. NR rents variable, ≥2% threshold',
     fname='map_spec4_2pct',
-    highlight_dropped=dropped_4,
 )
 print('✓ Map 4')
 
 # ══════════════════════════════════════════════════════════════════════════════
-# MAP 5 — Wider re-selection (≥1% adj rents or Gulf)
+# MAP 5 — Same 54 countries, ≥1% adj rents spec
 # ══════════════════════════════════════════════════════════════════════════════
-dropped_5 = S1 - S5   # in original 54 but still dropped at 1%
 make_map(
     sample_set=S5,
-    title=f'Spec 5 — Wider Re-selected Sample ({len(S5)} Countries, ≥1% Threshold)',
-    subtitle='Adj. NR rents ≥ 1% of GDP in 1995 or Gulf state · Red = dropped from original 54',
+    title=f'Spec 5 — Same 54 Countries, ≥1% Adj. Rent Threshold',
+    subtitle='Same sample as baseline · Sensitivity: adj. NR rents variable, ≥1% threshold',
     fname='map_spec5_1pct',
-    highlight_dropped=dropped_5,
 )
 print('✓ Map 5')
 
 # ══════════════════════════════════════════════════════════════════════════════
-# MAP 6 — All non-HIC countries
+# MAP 6 — Same 54 countries, all non-HIC spec
 # ══════════════════════════════════════════════════════════════════════════════
 make_map(
     sample_set=S6,
-    title=f'Spec 6 — All Non-High-Income Countries ({len(S6)} Countries)',
-    subtitle='Full panel excl. WB high-income countries · Gulf states + original 54 always retained',
+    title=f'Spec 6 — Same 54 Countries, All Non-HIC Specification',
+    subtitle='Same sample as baseline · Sensitivity: broader non-HIC panel specification',
     fname='map_spec6_all_nonhic',
 )
 print('✓ Map 6')
