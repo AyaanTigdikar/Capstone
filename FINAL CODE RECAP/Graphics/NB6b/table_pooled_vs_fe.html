@@ -1,0 +1,435 @@
+<html><head><meta charset="utf-8"></head><body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+* { box-sizing: border-box; }
+body { font-family: 'IBM Plex Sans', Arial, sans-serif; background: #f4f4f8; margin: 0; padding: 24px; }
+
+.reg-wrap {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+h2.tbl-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 6px;
+  letter-spacing: 0.01em;
+}
+p.tbl-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 12px;
+  font-style: italic;
+}
+
+.reg-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12.5px;
+  color: #1a1a2e;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.09);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* ── Header ── */
+.reg-table thead tr.hdr-main th {
+  background: #1a1a2e;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 14px;
+  text-align: center;
+  white-space: nowrap;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+.reg-table thead tr.hdr-main th:first-child {
+  text-align: left;
+  min-width: 200px;
+  border-right: 2px solid rgba(255,255,255,0.15);
+}
+
+.reg-table thead tr.hdr-dv th {
+  background: #2b2b4a;
+  color: #a8aad0;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 11px;
+  padding: 4px 14px 5px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 2px solid #444470;
+}
+.reg-table thead tr.hdr-dv th:first-child {
+  text-align: left;
+  border-right: 2px solid rgba(255,255,255,0.12);
+}
+
+/* ── Section dividers ── */
+.reg-table tbody tr.section-hdr td {
+  background: #f0f0f8;
+  color: #444466;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 6px 14px 4px;
+  border-top: 1px solid #d8d8e8;
+}
+
+/* ── Body rows ── */
+.reg-table tbody tr.data-row td {
+  padding: 6px 14px;
+  text-align: center;
+  border-bottom: 1px solid #ebebf2;
+  border-right: 1px solid #f0f0f5;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.reg-table tbody tr.data-row td:first-child {
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 400;
+  border-right: 2px solid #e0e0ee;
+  white-space: nowrap;
+  color: #2a2a40;
+}
+.reg-table tbody tr.data-row:nth-child(even) { background: #fafafd; }
+.reg-table tbody tr.data-row:hover { background: #eef0fc; }
+
+.coef  { font-weight: 500; }
+.se    { color: #666; font-size: 0.84em; display: block; margin-top: 1px; }
+.stars { color: #c0392b; font-weight: 700; font-size: 0.8em; vertical-align: super; }
+.empty { color: #ccc; }
+
+/* ── Footer ── */
+.reg-table tfoot tr td {
+  padding: 7px 14px;
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #e8e8f0;
+  background: #f0f0f8;
+  color: #333;
+}
+.reg-table tfoot tr:first-child td { border-top: 2px solid #1a1a2e; }
+.reg-table tfoot tr td:first-child {
+  text-align: left;
+  font-weight: 600;
+  color: #1a1a2e;
+  border-right: 2px solid #d0d0e0;
+}
+
+/* ── Note ── */
+.tbl-note {
+  font-size: 11.5px;
+  color: #777;
+  font-style: italic;
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+</style>
+<div class="reg-wrap">
+<h2 class="tbl-title">Pooled OLS vs Country FE — side by side</h2>
+<p class="tbl-subtitle">Each pair shows the same specification: pooled OLS (left) and country FE within-estimator (right).</p>
+<table class="reg-table">
+<thead>
+<tr class="hdr-main">
+  <th>Variable</th>
+  <th>3a Pooled</th>
+  <th>FE-3a</th>
+  <th>3b Pooled</th>
+  <th>FE-3b</th>
+  <th>3c Pooled</th>
+  <th>FE-3c</th>
+  <th>3d Pooled</th>
+  <th>FE-3d</th>
+</tr>
+<tr class="hdr-dv">
+  <th></th>
+  <th>Dep. var: ECI</th>
+  <th>Dep. var: Economic Complexity Index</th>
+  <th>Dep. var: ECI</th>
+  <th>Dep. var: Economic Complexity Index</th>
+  <th>Dep. var: ECI</th>
+  <th>Dep. var: Economic Complexity Index</th>
+  <th>Dep. var: ECI</th>
+  <th>Dep. var: Economic Complexity Index</th>
+</tr>
+</thead>
+<tbody>
+<tr class="section-hdr"><td colspan="9">Levels</td></tr>
+<tr class="data-row">
+  <td>Human Capital (log)</td>
+  <td><span class="coef">1.827<span class="stars">***</span></span><span class="se">(0.384)</span></td>
+  <td><span class="coef">0.618<span class="stars">**</span></span><span class="se">(0.304)</span></td>
+  <td><span class="coef">0.316<span class="stars">***</span></span><span class="se">(0.107)</span></td>
+  <td><span class="coef">0.348<span class="stars">*</span></span><span class="se">(0.195)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.121<span class="stars"></span></span><span class="se">(0.103)</span></td>
+  <td><span class="coef">0.136<span class="stars"></span></span><span class="se">(0.215)</span></td>
+</tr>
+<tr class="data-row">
+  <td>GFCF (log)</td>
+  <td><span class="coef">0.142<span class="stars">**</span></span><span class="se">(0.056)</span></td>
+  <td><span class="coef">0.063<span class="stars"></span></span><span class="se">(0.057)</span></td>
+  <td><span class="coef">0.033<span class="stars">***</span></span><span class="se">(0.010)</span></td>
+  <td><span class="coef">0.054<span class="stars">*</span></span><span class="se">(0.028)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.017<span class="stars"></span></span><span class="se">(0.011)</span></td>
+  <td><span class="coef">0.034<span class="stars"></span></span><span class="se">(0.034)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Political Stability</td>
+  <td><span class="coef">0.044<span class="stars"></span></span><span class="se">(0.066)</span></td>
+  <td><span class="coef">0.047<span class="stars"></span></span><span class="se">(0.045)</span></td>
+  <td><span class="coef">0.016<span class="stars"></span></span><span class="se">(0.018)</span></td>
+  <td><span class="coef">0.034<span class="stars"></span></span><span class="se">(0.031)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.017<span class="stars"></span></span><span class="se">(0.023)</span></td>
+  <td><span class="coef">0.032<span class="stars"></span></span><span class="se">(0.031)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Rule of Law</td>
+  <td><span class="coef">0.355<span class="stars"></span></span><span class="se">(0.217)</span></td>
+  <td><span class="coef">0.467<span class="stars">*</span></span><span class="se">(0.245)</span></td>
+  <td><span class="coef">0.056<span class="stars"></span></span><span class="se">(0.045)</span></td>
+  <td><span class="coef">0.237<span class="stars"></span></span><span class="se">(0.150)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.073<span class="stars"></span></span><span class="se">(0.052)</span></td>
+  <td><span class="coef">0.251<span class="stars">*</span></span><span class="se">(0.138)</span></td>
+</tr>
+<tr class="data-row">
+  <td>NR Production (log, pc)</td>
+  <td><span class="coef">-0.017<span class="stars"></span></span><span class="se">(0.029)</span></td>
+  <td><span class="coef">-0.112<span class="stars">***</span></span><span class="se">(0.034)</span></td>
+  <td><span class="coef">-0.005<span class="stars"></span></span><span class="se">(0.007)</span></td>
+  <td><span class="coef">-0.072<span class="stars">***</span></span><span class="se">(0.025)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">-0.019<span class="stars">**</span></span><span class="se">(0.009)</span></td>
+  <td><span class="coef">-0.080<span class="stars">***</span></span><span class="se">(0.025)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Trade (% GDP)</td>
+  <td><span class="coef">0.000<span class="stars"></span></span><span class="se">(0.003)</span></td>
+  <td><span class="coef">0.001<span class="stars"></span></span><span class="se">(0.001)</span></td>
+  <td><span class="coef">0.000<span class="stars"></span></span><span class="se">(0.001)</span></td>
+  <td><span class="coef">0.001<span class="stars"></span></span><span class="se">(0.001)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.000<span class="stars"></span></span><span class="se">(0.001)</span></td>
+  <td><span class="coef">0.001<span class="stars"></span></span><span class="se">(0.001)</span></td>
+</tr>
+<tr class="data-row">
+  <td>HCI × Production</td>
+  <td><span class="coef">0.289<span class="stars">***</span></span><span class="se">(0.104)</span></td>
+  <td><span class="coef">-0.139<span class="stars"></span></span><span class="se">(0.096)</span></td>
+  <td><span class="coef">0.061<span class="stars">**</span></span><span class="se">(0.028)</span></td>
+  <td><span class="coef">-0.058<span class="stars"></span></span><span class="se">(0.065)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.066<span class="stars">**</span></span><span class="se">(0.031)</span></td>
+  <td><span class="coef">-0.031<span class="stars"></span></span><span class="se">(0.057)</span></td>
+</tr>
+<tr class="data-row">
+  <td>GFCF × Production</td>
+  <td><span class="coef">-0.001<span class="stars"></span></span><span class="se">(0.021)</span></td>
+  <td><span class="coef">0.048<span class="stars">***</span></span><span class="se">(0.015)</span></td>
+  <td><span class="coef">0.000<span class="stars"></span></span><span class="se">(0.005)</span></td>
+  <td><span class="coef">0.024<span class="stars">***</span></span><span class="se">(0.009)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.006<span class="stars"></span></span><span class="se">(0.005)</span></td>
+  <td><span class="coef">0.026<span class="stars">***</span></span><span class="se">(0.009)</span></td>
+</tr>
+<tr class="section-hdr"><td colspan="9">Lagged levels</td></tr>
+<tr class="data-row">
+  <td>Human Capital (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.305<span class="stars">***</span></span><span class="se">(0.105)</span></td>
+  <td><span class="coef">0.371<span class="stars">*</span></span><span class="se">(0.197)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="data-row">
+  <td>GFCF (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.032<span class="stars">***</span></span><span class="se">(0.012)</span></td>
+  <td><span class="coef">0.053<span class="stars">**</span></span><span class="se">(0.026)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="data-row">
+  <td>Political Stability (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.017<span class="stars"></span></span><span class="se">(0.015)</span></td>
+  <td><span class="coef">0.042<span class="stars"></span></span><span class="se">(0.030)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="data-row">
+  <td>Rule of Law (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.063<span class="stars"></span></span><span class="se">(0.046)</span></td>
+  <td><span class="coef">0.186<span class="stars"></span></span><span class="se">(0.174)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="data-row">
+  <td>NR Production (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">-0.004<span class="stars"></span></span><span class="se">(0.006)</span></td>
+  <td><span class="coef">-0.061<span class="stars">***</span></span><span class="se">(0.021)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="data-row">
+  <td>Trade (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.000<span class="stars"></span></span><span class="se">(0.001)</span></td>
+  <td><span class="coef">0.001<span class="stars"></span></span><span class="se">(0.001)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="data-row">
+  <td>HCI × Production (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.054<span class="stars">**</span></span><span class="se">(0.023)</span></td>
+  <td><span class="coef">-0.056<span class="stars"></span></span><span class="se">(0.063)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="data-row">
+  <td>GFCF × Production (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">-0.004<span class="stars"></span></span><span class="se">(0.004)</span></td>
+  <td><span class="coef">0.018<span class="stars">**</span></span><span class="se">(0.008)</span></td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+</tr>
+<tr class="section-hdr"><td colspan="9">Shared / controls</td></tr>
+<tr class="data-row">
+  <td>ECI (t−1)</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.812<span class="stars">***</span></span><span class="se">(0.044)</span></td>
+  <td><span class="coef">0.431<span class="stars">***</span></span><span class="se">(0.062)</span></td>
+  <td><span class="coef">0.817<span class="stars">***</span></span><span class="se">(0.043)</span></td>
+  <td><span class="coef">0.438<span class="stars">***</span></span><span class="se">(0.062)</span></td>
+  <td><span class="coef">0.776<span class="stars">***</span></span><span class="se">(0.050)</span></td>
+  <td><span class="coef">0.422<span class="stars">***</span></span><span class="se">(0.061)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Hydrocarbons dominant</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">-0.043<span class="stars"></span></span><span class="se">(0.085)</span></td>
+  <td><span class="coef">-0.131<span class="stars"></span></span><span class="se">(0.098)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Subsoil metals dominant</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">-0.037<span class="stars"></span></span><span class="se">(0.083)</span></td>
+  <td><span class="coef">-0.049<span class="stars"></span></span><span class="se">(0.104)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Precious metals dominant</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.022<span class="stars"></span></span><span class="se">(0.076)</span></td>
+  <td><span class="coef">-0.052<span class="stars"></span></span><span class="se">(0.082)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Electricity access</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td class="empty">—</td>
+  <td><span class="coef">0.003<span class="stars">***</span></span><span class="se">(0.001)</span></td>
+  <td><span class="coef">0.005<span class="stars">**</span></span><span class="se">(0.002)</span></td>
+</tr>
+<tr class="data-row">
+  <td>Constant</td>
+  <td><span class="coef">-3.285<span class="stars">***</span></span><span class="se">(0.492)</span></td>
+  <td><span class="coef">-1.230<span class="stars">***</span></span><span class="se">(0.393)</span></td>
+  <td><span class="coef">-0.603<span class="stars">***</span></span><span class="se">(0.141)</span></td>
+  <td><span class="coef">-0.685<span class="stars">***</span></span><span class="se">(0.220)</span></td>
+  <td><span class="coef">-0.594<span class="stars">***</span></span><span class="se">(0.154)</span></td>
+  <td><span class="coef">-0.758<span class="stars">***</span></span><span class="se">(0.199)</span></td>
+  <td><span class="coef">-0.479<span class="stars">***</span></span><span class="se">(0.098)</span></td>
+  <td><span class="coef">-0.597<span class="stars">***</span></span><span class="se">(0.214)</span></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+  <td>Observations</td>
+  <td>1,324</td>
+  <td>1,324</td>
+  <td>1,273</td>
+  <td>1,273</td>
+  <td>1,270</td>
+  <td>1,270</td>
+  <td>1,264</td>
+  <td>1,264</td>
+</tr>
+<tr>
+  <td>Within R²</td>
+  <td>0.359</td>
+  <td>0.090</td>
+  <td>0.785</td>
+  <td>0.267</td>
+  <td>0.788</td>
+  <td>0.266</td>
+  <td>0.793</td>
+  <td>0.285</td>
+</tr>
+</tfoot>
+</table>
+<p class="tbl-note">Columns 3a–3d: pooled OLS; columns FE-3a–FE-3d: same specification with country fixed effects (within-group demeaning). Clustered SE by country. R² for pooled models; within-R² for FE models. *** p&lt;0.01 &nbsp; ** p&lt;0.05 &nbsp; * p&lt;0.10.</p>
+</div>
+</body></html>

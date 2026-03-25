@@ -228,9 +228,13 @@ class PanelTemporalCV:
 
 reg3_input = [
     'log_HCI', 'log_GFCF', 'Political stability — estimate',
-    'Rule of law index', 'log_Production_Value', 'Trade (% of GDP)',
+    'Rule of law index', 'log_Production_Value',
+    'Forestry rents (% of GDP)', 'Trade (% of GDP)',
 ]
-INTERACT_VARS = ['log_HCI_x_log_Production', 'log_GFCF_x_log_Production']
+INTERACT_VARS = [
+    'log_HCI_x_log_Production', 'log_GFCF_x_log_Production',
+    'log_HCI_x_forestry_rents', 'log_GFCF_x_forestry_rents',
+]
 
 
 # ── NB5 feature lists ────────────────────────────────────────────────────────
@@ -386,11 +390,17 @@ def prepare_regression_df(filepath):
     )
     df["log_Production_Value"] = np.log1p(df["Total_Production_Value_Per_Capita"])
 
+    # Grand-mean centre log variables and forestry rents (matches NB6)
     for col in ["log_HCI", "log_GFCF", "log_Production_Value"]:
         df[f"{col}_c"] = df[col] - df[col].mean()
+    df["forestry_rents_c"] = (
+        df["Forestry rents (% of GDP)"] - df["Forestry rents (% of GDP)"].mean()
+    )
 
-    df["log_HCI_x_log_Production"] = df["log_HCI_c"] * df["log_Production_Value_c"]
+    df["log_HCI_x_log_Production"]  = df["log_HCI_c"]  * df["log_Production_Value_c"]
     df["log_GFCF_x_log_Production"] = df["log_GFCF_c"] * df["log_Production_Value_c"]
+    df["log_HCI_x_forestry_rents"]  = df["log_HCI_c"]  * df["forestry_rents_c"]
+    df["log_GFCF_x_forestry_rents"] = df["log_GFCF_c"] * df["forestry_rents_c"]
 
     df = df.sort_values(["Country Code", "Year"]).reset_index(drop=True)
     df["ECI_lag1"] = df.groupby("Country Code")["Economic Complexity Index"].shift(1)
@@ -441,22 +451,33 @@ def run_phase2():
         return
     print(f"Found {len(boot_files)} bootstrap files.")
 
-    # ── Fit original models from Master.csv for comparison ────────────────
+    # ── Fit original models from Master.csv for comparison (clustered SE, matches NB6)
     print("\nFitting original Models 3a/3b on Master.csv...")
     orig_df = prepare_regression_df("intermediary/Master.csv")
+
+    def fit_clustered(y, X, groups):
+        raw = sm.OLS(y, X).fit()
+        robust = raw.get_robustcov_results(cov_type='cluster', groups=groups)
+        return SimpleNamespace(
+            params=pd.Series(robust.params, index=X.columns),
+            bse=pd.Series(robust.bse, index=X.columns),
+            tvalues=pd.Series(robust.tvalues, index=X.columns),
+            pvalues=pd.Series(robust.pvalues, index=X.columns),
+            nobs=robust.nobs, rsquared=raw.rsquared,
+        )
 
     cols_3a = reg3_input + INTERACT_VARS + ['Economic Complexity Index', 'Country Code', 'Year']
     r3a_df = orig_df[cols_3a].dropna()
     y3a = r3a_df['Economic Complexity Index']
     X3a = sm.add_constant(r3a_df[reg3_input + INTERACT_VARS])
-    m3a = fit_driscoll_kraay(y3a, X3a, r3a_df['Year'], r3a_df['Country Code'])
+    m3a = fit_clustered(y3a, X3a, r3a_df['Country Code'].values)
     print(f"  Model 3a: N={int(m3a.nobs)}, R2={m3a.rsquared:.4f}")
 
     cols_3b = cols_3a + ['ECI_lag1']
     r3b_df = orig_df[cols_3b].dropna()
     y3b = r3b_df['Economic Complexity Index']
     X3b = sm.add_constant(r3b_df[reg3_input + INTERACT_VARS + ['ECI_lag1']])
-    m3b = fit_driscoll_kraay(y3b, X3b, r3b_df['Year'], r3b_df['Country Code'])
+    m3b = fit_clustered(y3b, X3b, r3b_df['Country Code'].values)
     print(f"  Model 3b: N={int(m3b.nobs)}, R2={m3b.rsquared:.4f}")
 
     # ── Bootstrap loop ────────────────────────────────────────────────────
@@ -500,7 +521,7 @@ def run_phase2():
         print(f"\n{'=' * 95}")
         print(f"  {label}")
         print(f"{'=' * 95}")
-        print(f"  {'Variable':<40} {'Orig':>8} {'DK-SE':>8} "
+        print(f"  {'Variable':<40} {'Orig':>8} {'Clust-SE':>8} "
               f"{'Bt med':>8} {'Bt SE':>8} {'CI lo':>8} {'CI hi':>8} {'Sign%':>6}")
         print("  " + "-" * 93)
 
@@ -528,7 +549,7 @@ def run_phase2():
 
             summary_rows.append({
                 "Model": label, "Variable": var,
-                "Original_Coef": orig_c, "DK_SE": orig_se,
+                "Original_Coef": orig_c, "Clustered_SE": orig_se,
                 "Boot_Median": bt_med, "Boot_SE": bt_se,
                 "Boot_CI_lo": ci_lo, "Boot_CI_hi": ci_hi,
                 "Sign_Stability": sign_pct,
@@ -556,7 +577,7 @@ def run_phase2():
             all_summary.append({
                 "Model": label, "Variable": var,
                 "Original_Coef": orig_c,
-                "DK_SE": orig_model.bse.get(var, np.nan),
+                "Clustered_SE": orig_model.bse.get(var, np.nan),
                 "Boot_Median": vals.median(), "Boot_SE": vals.std(),
                 "Boot_CI_lo": vals.quantile(lo), "Boot_CI_hi": vals.quantile(hi),
                 "Sign_Stability": (vals > 0).mean() if orig_c > 0 else (vals < 0).mean(),

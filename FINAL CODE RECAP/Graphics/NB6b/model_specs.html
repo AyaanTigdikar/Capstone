@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Model Specifications</title>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']], tags: 'ams' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea'] }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  background: #f4f4f8;
+  color: #1a1a2e;
+  line-height: 1.65;
+  padding: 40px 24px 60px;
+}
+
+.page { max-width: 960px; margin: 0 auto; }
+
+h1 {
+  font-size: 20px; font-weight: 600; color: #1a1a2e;
+  border-bottom: 3px solid #1a1a2e;
+  padding-bottom: 10px; margin-bottom: 6px;
+}
+.doc-subtitle {
+  font-size: 13px; color: #777; font-style: italic; margin-bottom: 36px;
+}
+
+/* ── Section headers ── */
+h2 {
+  font-size: 14px; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: #444466;
+  margin: 44px 0 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d0d0e0;
+}
+
+/* ── Model cards ── */
+.model-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.model-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  background: #1a1a2e;
+  padding: 10px 18px;
+}
+.model-label {
+  font-size: 13px; font-weight: 700; color: #fff;
+  white-space: nowrap;
+}
+.model-name {
+  font-size: 12px; color: #a8aad0; font-style: italic;
+}
+.model-body { padding: 16px 20px 18px; }
+
+.eq-block {
+  background: #f7f7fc;
+  border-left: 3px solid #1a1a2e;
+  border-radius: 0 4px 4px 0;
+  padding: 14px 20px;
+  margin: 10px 0 14px;
+  font-size: 14px;
+  overflow-x: auto;
+}
+.model-note {
+  font-size: 12.5px; color: #555; line-height: 1.6;
+}
+.model-note strong { color: #1a1a2e; font-weight: 600; }
+.model-note .tag {
+  display: inline-block;
+  background: #e8e8f4;
+  color: #3a3a60;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-right: 4px;
+}
+
+/* ── Diff table ── */
+.diff-table {
+  width: 100%; border-collapse: collapse;
+  font-size: 12.5px; margin-top: 4px;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.07);
+  border-radius: 5px; overflow: hidden;
+}
+.diff-table thead th {
+  background: #1a1a2e; color: #fff;
+  font-weight: 600; padding: 9px 14px;
+  text-align: left;
+}
+.diff-table thead th:first-child { width: 18%; }
+.diff-table tbody td {
+  padding: 8px 14px;
+  border-bottom: 1px solid #ebebf2;
+  vertical-align: top; line-height: 1.5;
+}
+.diff-table tbody td:first-child {
+  font-weight: 600; color: #3a3a60;
+  white-space: nowrap;
+  border-right: 2px solid #e0e0ee;
+}
+.diff-table tbody tr:nth-child(even) { background: #fafafd; }
+.diff-table tbody tr:hover { background: #eef0fc; }
+
+.pro  { color: #2e7d4a; font-weight: 600; }
+.con  { color: #c23a3a; font-weight: 600; }
+
+/* ── Variable legend ── */
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 6px 24px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.07);
+  padding: 18px 20px;
+  font-size: 12px;
+}
+.legend-item { display: flex; gap: 10px; align-items: baseline; }
+.legend-sym {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11.5px; color: #3a3a60; font-weight: 500;
+  white-space: nowrap; min-width: 130px;
+}
+.legend-desc { color: #555; line-height: 1.4; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Regression Specifications</h1>
+<p class="doc-subtitle">
+  54-country sample &nbsp;·&nbsp; 1995–2019 &nbsp;·&nbsp;
+  OLS with clustered standard errors by country &nbsp;·&nbsp;
+  All interaction terms are mean-centred before multiplication.
+</p>
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<h2>Pooled OLS models</h2>
+
+<!-- M1 -->
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">M1</span>
+    <span class="model-name">Kitchen-sink OLS &nbsp;·&nbsp; Dep. var: log(ECI)</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\log(\text{ECI}_{it}) = \alpha + \boldsymbol{\beta}'\mathbf{X}_{it} + \varepsilon_{it}$$
+    </div>
+    <p class="model-note">
+      <strong>Purpose:</strong> unrestricted benchmark with the full variable set (~40 regressors)
+      covering resource dependence, macroeconomic conditions, governance, human development, and finance.
+      Clustered SE by cluster group.<br>
+      <span class="tag">DV: log ECI</span>
+      <span class="tag">SE: clustered by cluster group</span>
+      <span class="tag">~40 regressors</span>
+    </p>
+  </div>
+</div>
+
+<!-- M2 -->
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">M2</span>
+    <span class="model-name">AR baseline &nbsp;·&nbsp; Dep. var: ECI</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\text{ECI}_{it} = \alpha + \rho\,\text{ECI}_{i,t-1} + \varepsilon_{it}$$
+    </div>
+    <p class="model-note">
+      <strong>Purpose:</strong> pure autoregressive benchmark. Establishes how much of ECI variation is
+      explained by inertia alone, before adding substantive regressors.
+      Any model that fails to substantially exceed this R² offers little explanatory power beyond persistence.<br>
+      <span class="tag">DV: ECI</span>
+      <span class="tag">1 regressor</span>
+    </p>
+  </div>
+</div>
+
+<!-- 3a -->
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">3a</span>
+    <span class="model-name">Parsimonious — no lag &nbsp;·&nbsp; Dep. var: ECI</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\text{ECI}_{it} = \alpha
+        + \beta_1 \log(\text{HCI}_{it})
+        + \beta_2 \log(\text{GFCF}_{it})
+        + \beta_3 \text{PolStab}_{it}
+        + \beta_4 \text{RoL}_{it}
+        + \beta_5 \log(\text{NRProd}_{it})
+        + \beta_6 \text{Trade}_{it}
+        + \gamma_1 \widetilde{\text{HCI}}_{it} \times \widetilde{\text{NRProd}}_{it}
+        + \gamma_2 \widetilde{\text{GFCF}}_{it} \times \widetilde{\text{NRProd}}_{it}
+        + \varepsilon_{it}$$
+    </div>
+    <p class="model-note">
+      <strong>Purpose:</strong> parsimonious specification with the core theoretical variables.
+      Interaction terms test whether the effect of human and physical capital on complexity
+      is moderated by natural resource dependence (resource-curse heterogeneity).
+      No lagged ECI — estimates the <em>level</em> association, not the dynamic adjustment.<br>
+      <span class="tag">DV: ECI</span>
+      <span class="tag">8 regressors</span>
+      <span class="tag">no ECI lag</span>
+    </p>
+  </div>
+</div>
+
+<!-- 3b -->
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">3b</span>
+    <span class="model-name">Parsimonious + ECI(t−1) &nbsp;·&nbsp; Dep. var: ECI</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\text{ECI}_{it} = \alpha
+        + \rho\,\text{ECI}_{i,t-1}
+        + \beta_1 \log(\text{HCI}_{it})
+        + \beta_2 \log(\text{GFCF}_{it})
+        + \beta_3 \text{PolStab}_{it}
+        + \beta_4 \text{RoL}_{it}
+        + \beta_5 \log(\text{NRProd}_{it})
+        + \beta_6 \text{Trade}_{it}
+        + \gamma_1 \widetilde{\text{HCI}}_{it} \times \widetilde{\text{NRProd}}_{it}
+        + \gamma_2 \widetilde{\text{GFCF}}_{it} \times \widetilde{\text{NRProd}}_{it}
+        + \varepsilon_{it}$$
+    </div>
+    <p class="model-note">
+      <strong>Purpose:</strong> adds ECI(t−1) to 3a, controlling for persistence. Coefficients now
+      measure the effect of each regressor <em>conditional on last year's complexity level</em> — i.e.
+      what drives improvement or deterioration relative to the country's own trajectory.
+      $\hat{\rho}$ close to 1 confirms high ECI persistence.<br>
+      <span class="tag">DV: ECI</span>
+      <span class="tag">9 regressors</span>
+      <span class="tag">main preferred spec</span>
+    </p>
+  </div>
+</div>
+
+<!-- 3c -->
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">3c</span>
+    <span class="model-name">All vars lagged &nbsp;·&nbsp; Dep. var: ECI</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\text{ECI}_{it} = \alpha
+        + \rho\,\text{ECI}_{i,t-1}
+        + \beta_1 \log(\text{HCI}_{i,t-1})
+        + \beta_2 \log(\text{GFCF}_{i,t-1})
+        + \beta_3 \text{PolStab}_{i,t-1}
+        + \beta_4 \text{RoL}_{i,t-1}
+        + \beta_5 \log(\text{NRProd}_{i,t-1})
+        + \beta_6 \text{Trade}_{i,t-1}
+        + \gamma_1 \widetilde{\text{HCI}}_{i,t-1} \times \widetilde{\text{NRProd}}_{i,t-1}
+        + \gamma_2 \widetilde{\text{GFCF}}_{i,t-1} \times \widetilde{\text{NRProd}}_{i,t-1}
+        + \varepsilon_{it}$$
+    </div>
+    <p class="model-note">
+      <strong>Purpose:</strong> lagging all regressors by one period reduces simultaneity bias — today's ECI
+      cannot cause last year's HCI or governance. Also mitigates reverse causality.
+      Compares to 3b to check whether contemporaneous vs lagged regressors give materially different estimates.<br>
+      <span class="tag">DV: ECI</span>
+      <span class="tag">9 regressors, all at t−1</span>
+      <span class="tag">simultaneity-robust</span>
+    </p>
+  </div>
+</div>
+
+<!-- 3d -->
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">3d</span>
+    <span class="model-name">Extended controls &nbsp;·&nbsp; Dep. var: ECI</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\text{ECI}_{it} = \alpha
+        + \rho\,\text{ECI}_{i,t-1}
+        + \boldsymbol{\beta}'\mathbf{X}_{it}
+        + \delta_1 \mathbf{1}[\text{Hydro}_{it}]
+        + \delta_2 \mathbf{1}[\text{SubsoilMet}_{it}]
+        + \delta_3 \mathbf{1}[\text{PrecMet}_{it}]
+        + \delta_4 \text{Elec}_{it}
+        + \varepsilon_{it}$$
+    </div>
+    <p class="model-note">
+      <strong>Purpose:</strong> augments 3b with resource-type dominance dummies and electricity access,
+      testing whether the <em>type</em> of resource dependence matters beyond the production level, and
+      whether infrastructure access is an independent channel. Note: high multicollinearity in pooled OLS
+      (max VIF = 49) — FE-3d is the preferred version of this spec.<br>
+      <span class="tag">DV: ECI</span>
+      <span class="tag">13 regressors</span>
+      <span class="tag">use FE version</span>
+    </p>
+  </div>
+</div>
+
+<!-- 3e -->
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">3e</span>
+    <span class="model-name">First differences (error-correction) &nbsp;·&nbsp; Dep. var: ΔECI</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\Delta\text{ECI}_{it} = \alpha
+        + \delta\,\text{ECI}_{i,t-1}
+        + \beta_1 \Delta\log(\text{HCI}_{it})
+        + \beta_2 \Delta\log(\text{GFCF}_{it})
+        + \beta_3 \Delta\text{PolStab}_{it}
+        + \beta_4 \Delta\text{RoL}_{it}
+        + \beta_5 \Delta\log(\text{NRProd}_{it})
+        + \beta_6 \Delta\text{Trade}_{it}
+        + \beta_7 \Delta\text{Elec}_{it}
+        + \gamma_1 \Delta(\widetilde{\text{HCI}} \times \widetilde{\text{NRProd}})_{it}
+        + \gamma_2 \Delta(\widetilde{\text{GFCF}} \times \widetilde{\text{NRProd}})_{it}
+        + \varepsilon_{it}$$
+    </div>
+    <p class="model-note">
+      <strong>Purpose:</strong> proper first-difference specification — both sides are differenced.
+      Time-invariant variables (dominance dummies) drop out by construction.
+      ECI(t−1) is retained as an <em>error-correction term</em>: a negative $\hat{\delta}$ implies
+      that countries farther above their long-run ECI path grow more slowly, consistent with mean-reversion.
+      Coefficients measure how year-on-year <em>changes</em> in regressors predict year-on-year
+      <em>changes</em> in complexity — a stricter and more causally interpretable test than levels.<br>
+      <span class="tag">DV: ΔECI</span>
+      <span class="tag">10 regressors, all first-differenced</span>
+      <span class="tag">error-correction term</span>
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<h2>Country FE models (FE-3a to FE-3d)</h2>
+
+<div class="model-card">
+  <div class="model-header">
+    <span class="model-label">FE-3a / FE-3b / FE-3c / FE-3d</span>
+    <span class="model-name">Within-group estimator &nbsp;·&nbsp; Dep. var: ECI</span>
+  </div>
+  <div class="model-body">
+    <div class="eq-block">
+      $$\text{ECI}_{it} = \mu_i + \boldsymbol{\beta}'\mathbf{X}_{it} + \varepsilon_{it}$$
+      <br>
+      $$\Longleftrightarrow \quad
+        \underbrace{(\text{ECI}_{it} - \overline{\text{ECI}}_i)}_{\text{within-country deviation}}
+        = \boldsymbol{\beta}'
+        \underbrace{(\mathbf{X}_{it} - \overline{\mathbf{X}}_i)}_{\text{within-country deviation}}
+        + (\varepsilon_{it} - \bar{\varepsilon}_i)$$
+    </div>
+    <p class="model-note">
+      Each FE model uses the same regressor set as its pooled counterpart (3a–3d) but absorbs
+      country-level intercepts $\mu_i$ via within-group demeaning. The variable set $\mathbf{X}_{it}$
+      corresponds to the respective pooled specification.<br><br>
+      <strong>Implementation:</strong> for each variable $v_{it}$, subtract the country time-mean
+      $\bar{v}_i$ and add back the grand mean, then run OLS with a constant.
+      This is the Frisch–Waugh–Lovell within-estimator, numerically identical to including
+      $N-1$ country dummies.
+    </p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<h2>Pooled OLS vs Country FE — key differences</h2>
+
+<table class="diff-table">
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>Pooled OLS</th>
+      <th>Country FE (within-estimator)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Variation used</td>
+      <td>Both <em>between</em>-country (cross-sectional) and <em>within</em>-country (over time) variation.</td>
+      <td>Only <em>within</em>-country, over-time variation. Cross-sectional differences across countries are removed.</td>
+    </tr>
+    <tr>
+      <td>Unobserved heterogeneity</td>
+      <td>Assumes no country-specific unobservables correlated with regressors (strict exogeneity). Violation → omitted variable bias.</td>
+      <td>Absorbs all time-invariant country characteristics (geography, institutions, culture) whether observed or not. Robust to this class of omitted variables.</td>
+    </tr>
+    <tr>
+      <td>Multicollinearity (VIF)</td>
+      <td>High: HCI and GFCF are both development-level proxies correlated in the cross-section. Max VIF = 28–49 across specs.</td>
+      <td><span class="pro">Resolved:</span> within-country variation in HCI and GFCF is nearly orthogonal. Max VIF = 1.7–1.9 across all specs.</td>
+    </tr>
+    <tr>
+      <td>Time-invariant variables</td>
+      <td><span class="pro">Identified:</span> variables like dominance dummies or Landlocked have non-zero coefficients.</td>
+      <td><span class="con">Absorbed:</span> variables with zero within-country variance (e.g. Landlocked) are collinear with the fixed effects and drop out. Dominance dummies survive because they do vary over time.</td>
+    </tr>
+    <tr>
+      <td>What the R² measures</td>
+      <td>Share of total ECI variation (across countries and years) explained. Inflated by between-country differences in ECI levels.</td>
+      <td><em>Within</em>-R²: share of within-country, year-to-year ECI variation explained. More demanding and more meaningful for causal inference.</td>
+    </tr>
+    <tr>
+      <td>R² in practice</td>
+      <td>0.36 – 0.79 depending on spec.</td>
+      <td>0.09 – 0.29. Lower because it ignores the easy between-country signal — not a sign of worse fit.</td>
+    </tr>
+    <tr>
+      <td>Causal interpretation</td>
+      <td>Estimates the association: "countries with higher HCI tend to have higher ECI." Confounded by omitted country-level factors.</td>
+      <td>Estimates the within-country effect: "when a country's HCI rises above its own historical average, does ECI follow?" Cleaner causal interpretation.</td>
+    </tr>
+    <tr>
+      <td>Assumption required</td>
+      <td>No omitted variable correlated with regressors (strong).</td>
+      <td>No <em>time-varying</em> omitted variable correlated with regressors (weaker). Fixed country characteristics are controlled for by construction.</td>
+    </tr>
+    <tr>
+      <td>Preferred for this study</td>
+      <td>M1, M2 as benchmarks. 3a–3e as robustness checks.</td>
+      <td><span class="pro">FE-3b / FE-3d as main specifications</span> — resolves multicollinearity, controls for unobserved country heterogeneity, and gives within-country causal estimates.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<h2>Variable notation</h2>
+
+<div class="legend">
+  <div class="legend-item">
+    <span class="legend-sym">$\text{ECI}_{it}$</span>
+    <span class="legend-desc">Economic Complexity Index, country $i$, year $t$</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\log(\text{HCI}_{it})$</span>
+    <span class="legend-desc">log(1 + Human Capital Index)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\log(\text{GFCF}_{it})$</span>
+    <span class="legend-desc">log(1 + Gross Fixed Capital Formation, % GDP)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\text{PolStab}_{it}$</span>
+    <span class="legend-desc">Political Stability estimate (WGI)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\text{RoL}_{it}$</span>
+    <span class="legend-desc">Rule of Law index (WGI)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\log(\text{NRProd}_{it})$</span>
+    <span class="legend-desc">log(1 + NR production value per capita)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\text{Trade}_{it}$</span>
+    <span class="legend-desc">Trade openness (% of GDP)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\text{Elec}_{it}$</span>
+    <span class="legend-desc">Access to electricity (% of population)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\widetilde{v}_{it}$</span>
+    <span class="legend-desc">Mean-centred version of variable $v$: $v_{it} - \bar{v}$</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\mathbf{1}[\cdot]$</span>
+    <span class="legend-desc">Indicator dummy (1 if resource type is dominant)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\mu_i$</span>
+    <span class="legend-desc">Country fixed effect (absorbed by within-group demeaning)</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\Delta v_{it}$</span>
+    <span class="legend-desc">First difference: $v_{it} - v_{i,t-1}$</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\overline{v}_i$</span>
+    <span class="legend-desc">Country time-mean: $T^{-1}\sum_t v_{it}$</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-sym">$\varepsilon_{it}$</span>
+    <span class="legend-desc">Error term, clustered by country</span>
+  </div>
+</div>
+
+</div><!-- .page -->
+</body>
+</html>
