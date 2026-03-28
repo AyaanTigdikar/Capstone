@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECI Performance Tables</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: transparent;
+            color: #3d4f5f;
+        }
+        h3 {
+            text-align: center; 
+            color: #1a2744; 
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        .tables-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .table-card {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 20px;
+        }
+        .table-card h4 {
+            margin-top: 0; 
+            font-size: 18px;
+            border-bottom: 2px solid #eee; 
+            padding-bottom: 10px;
+        }
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        .styled-table thead tr {
+            background-color: #f8f9fa;
+            text-align: left;
+        }
+        .styled-table th, .styled-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #fafafa;
+        }
+        .styled-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        .num-cell {
+            text-align: right;
+            font-weight: bold;
+        }
+        .val-positive { color: #27ae60; }
+        .val-negative { color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <h3>ECI Performance in Resource-Rich Countries (1995-2019)</h3>
+    <div class="tables-container">
+        
+        <div class="table-card" style="border-top: 5px solid #27ae60;">
+            <h4 style="color: #27ae60;">Top 10 ECI Improvers</h4>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th class="num-cell">Change</th>
+                        <th class="num-cell">Pct (1995)</th>
+                        <th class="num-cell">Pct (2019)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Papua New Guinea</td><td class="num-cell val-positive">+1.011</td><td class="num-cell">2</td><td class="num-cell">15</td></tr>
+                    <tr><td>Viet Nam</td><td class="num-cell val-positive">+0.985</td><td class="num-cell">31</td><td class="num-cell">83</td></tr>
+                    <tr><td>Bahrain</td><td class="num-cell val-positive">+0.903</td><td class="num-cell">63</td><td class="num-cell">96</td></tr>
+                    <tr><td>Malaysia</td><td class="num-cell val-positive">+0.876</td><td class="num-cell">96</td><td class="num-cell">100</td></tr>
+                    <tr><td>Iran, Islamic Rep.</td><td class="num-cell val-positive">+0.855</td><td class="num-cell">41</td><td class="num-cell">87</td></tr>
+                    <tr><td>Angola</td><td class="num-cell val-positive">+0.710</td><td class="num-cell">7</td><td class="num-cell">30</td></tr>
+                    <tr><td>Kuwait</td><td class="num-cell val-positive">+0.676</td><td class="num-cell">78</td><td class="num-cell">94</td></tr>
+                    <tr><td>Qatar</td><td class="num-cell val-positive">+0.660</td><td class="num-cell">54</td><td class="num-cell">85</td></tr>
+                    <tr><td>Nigeria</td><td class="num-cell val-positive">+0.609</td><td class="num-cell">6</td><td class="num-cell">7</td></tr>
+                    <tr><td>Lao PDR</td><td class="num-cell val-positive">+0.552</td><td class="num-cell">15</td><td class="num-cell">59</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-card" style="border-top: 5px solid #e74c3c;">
+            <h4 style="color: #e74c3c;">Top 10 ECI Decliners</h4>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th class="num-cell">Change</th>
+                        <th class="num-cell">Pct (1995)</th>
+                        <th class="num-cell">Pct (2019)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Liberia</td><td class="num-cell val-negative">-0.402</td><td class="num-cell">61</td><td class="num-cell">56</td></tr>
+                    <tr><td>Rwanda</td><td class="num-cell val-negative">-0.478</td><td class="num-cell">76</td><td class="num-cell">63</td></tr>
+                    <tr><td>Algeria</td><td class="num-cell val-negative">-0.493</td><td class="num-cell">57</td><td class="num-cell">43</td></tr>
+                    <tr><td>Mongolia</td><td class="num-cell val-negative">-0.609</td><td class="num-cell">50</td><td class="num-cell">24</td></tr>
+                    <tr><td>Azerbaijan</td><td class="num-cell val-negative">-0.680</td><td class="num-cell">81</td><td class="num-cell">57</td></tr>
+                    <tr><td>Zimbabwe</td><td class="num-cell val-negative">-0.806</td><td class="num-cell">85</td><td class="num-cell">50</td></tr>
+                    <tr><td>Iraq</td><td class="num-cell val-negative">-1.053</td><td class="num-cell">59</td><td class="num-cell">6</td></tr>
+                    <tr><td>Libya</td><td class="num-cell val-negative">-1.116</td><td class="num-cell">69</td><td class="num-cell">13</td></tr>
+                    <tr><td>Chad</td><td class="num-cell val-negative">-1.134</td><td class="num-cell">52</td><td class="num-cell">4</td></tr>
+                    <tr><td>Venezuela, RB</td><td class="num-cell val-negative">-1.560</td><td class="num-cell">94</td><td class="num-cell">26</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>

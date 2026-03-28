@@ -690,6 +690,26 @@
             font-size: 17px; 
             text-align: left;
         }
+
+        /* =========================================
+           11. IFRAME PREVIEWS
+           ========================================= */
+        .iframe-preview {
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* pointer-events: none hace que los clicks los reciba el div contenedor y se abra tu modal */
+            pointer-events: none; 
+            background: #fff;
+        }
+        
+        /* Modificamos el placeholder para quitarle el padding si tiene un iframe */
+        .visual-placeholder.has-iframe {
+            padding: 0;
+            background-color: transparent;
+            border: 1px solid var(--grid-color);
+        }
+
     </style>
 </head>
 <body>
@@ -931,7 +951,7 @@
         </div>
     </section>
 
-    <section id="sec-5" class="scroll-section">
+<section id="sec-5" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
             <h2>The Economic Complexity Framework</h2>
@@ -942,24 +962,28 @@
             </p>
 
             <div class="chart-grid">
+                
                 <div class="chart-card">
                     <h3>ECI vs Income Evolution</h3>
-                    <div class="visual-placeholder" onclick="openPlaceholder('ECI vs Income Evolution')">
-                        [Space for Visual: ECI vs Income Evolution]
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('ECI vs Income Evolution')">
+                        <iframe src="figures/01_eci_animated_scatter.html" class="iframe-preview" scrolling="no"></iframe>
                     </div>
                 </div>
+                
                 <div class="chart-card">
-                    <h3>An interesting case</h3>
-                    <div class="visual-placeholder" onclick="openPlaceholder('Azerbaijan: GDP vs ECI')">
-                        [Space for Visual: Azerbaijan GDP vs ECI]
+                    <h3>ECI Performance</h3>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('ECI Performance')">
+                        <iframe src="figures/00_eci_table.html" class="iframe-preview" scrolling="no"></iframe>
                     </div>
                 </div>
+                
                 <div class="chart-card">
                     <h3>Additional ECI Analysis</h3>
-                    <div class="visual-placeholder" onclick="openPlaceholder('The Vietnam Product Space')">
-                        [Space for Visual: Third Graphic]
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('The Vietnam Product Space')">
+                        <iframe src="figures/03_vietnam_product_space.html" class="iframe-preview" scrolling="no"></iframe>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
