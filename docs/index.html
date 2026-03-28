@@ -489,6 +489,89 @@
             
             .vault-btn { width: 100%; justify-content: center; }
         }
+
+        /* =========================================
+           10. LITERATURE TIMELINE (NEW SECTION)
+           ========================================= */
+        .lit-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .lit-item {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: var(--shadow-subtle);
+            border-top: 4px solid var(--grey);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s;
+        }
+        .lit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        .item-mehlum { border-color: var(--blue); }
+        .item-venables { border-color: var(--orange); }
+        .item-ploeg { border-color: var(--red); }
+        .item-isham { border-color: var(--green); }
+        
+        .lit-icon-wrapper {
+            font-size: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .item-mehlum .lit-icon-wrapper { color: var(--blue); }
+        .item-venables .lit-icon-wrapper { color: var(--orange); }
+        .item-ploeg .lit-icon-wrapper { color: var(--red); }
+        .item-isham .lit-icon-wrapper { color: var(--green); }
+
+        .lit-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--title-color);
+            text-align: left;
+            border: none;
+            padding: 0;
+            display: block;
+        }
+        .author-tag {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--grey);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .lit-card p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .mechanism {
+            font-style: italic;
+            color: var(--blue);
+            font-weight: bold;
+            font-size: 14px !important;
+            margin-top: auto; 
+            padding-top: 10px;
+            border-top: 1px dashed var(--grid-color);
+        }
+        .synthesis-box {
+            background: rgba(74, 111, 165, 0.1);
+            border-left: 4px solid var(--blue);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 10px;
+        }
+        .synthesis-box p {
+            margin: 0;
+            font-size: 17px;
+        }
     </style>
 </head>
 <body>
@@ -515,21 +598,22 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
-        <a href="#cover" class="nav-item">0. The team</a>
-        <a href="#sec-1" class="nav-item">1. Our research</a>
-        <a href="#sec-2" class="nav-item">2. Econometrics and machine learning approaches</a>
-        <a href="#sec-3" class="nav-item">3. The economic complexity framework</a>
-        <a href="#sec-4" class="nav-item">4. Three pillars behind industrial upgrading</a>
-        <a href="#sec-5" class="nav-item">5. Our data</a>
-        <a href="#sec-6" class="nav-item">6. The clustering strategy</a>
-        <a href="#sec-7" class="nav-item">7. Empirical results</a>
-        <a href="#sec-8" class="nav-item">8. The interaction effect</a>
-        <a href="#sec-9" class="nav-item">9. Machine learning insights</a>
-        <a href="#sec-10" class="nav-item">10. Comparative case studies</a>
-        <a href="#sec-11" class="nav-item">11. When the pillars are missing</a>
-        <a href="#sec-12" class="nav-item">12. Good institutions are not enough</a>
-        <a href="#sec-13" class="nav-item">13. Future risk and opportunities</a>
-        <a href="#sec-14" class="nav-item">14. Insights into Action</a>
+        <a href="#cover" class="nav-item">0. The Team</a>
+        <a href="#sec-1" class="nav-item">1. Our Research</a>
+        <a href="#sec-2" class="nav-item">2. The Resource Curse Is Conditional</a>
+        <a href="#sec-3" class="nav-item">3. Econometrics And Machine Learning Approaches</a>
+        <a href="#sec-4" class="nav-item">4. The Economic Complexity Framework</a>
+        <a href="#sec-5" class="nav-item">5. Three Pillars Behind Industrial Upgrading</a>
+        <a href="#sec-6" class="nav-item">6. Our Data</a>
+        <a href="#sec-7" class="nav-item">7. The Clustering Strategy</a>
+        <a href="#sec-8" class="nav-item">8. Empirical Results</a>
+        <a href="#sec-9" class="nav-item">9. The Interaction Effect</a>
+        <a href="#sec-10" class="nav-item">10. Machine Learning Insights</a>
+        <a href="#sec-11" class="nav-item">11. Comparative Case Studies</a>
+        <a href="#sec-12" class="nav-item">12. Why Do These Three Pillars Matter?</a>
+        <a href="#sec-13" class="nav-item">13. Beyond Just Good Institutions</a>
+        <a href="#sec-14" class="nav-item">14. Future Risk And Opportunities</a>
+        <a href="#sec-15" class="nav-item">15. Insights Into Action</a>
     </div>
 
     <div id="mediaModal" class="modal">
@@ -557,7 +641,7 @@
                 MPA DATA SCIENCE FOR PUBLIC POLICY
             </div>
             
-            <h2 style="margin-top: 0; margin-bottom: 20px;">The team</h2>
+            <h2 style="margin-top: 0; margin-bottom: 20px;">The Team</h2>
 
                 <div class="team-container">
                     <a href="https://www.linkedin.com/in/ayaan-tigdikar/" target="_blank" class="team-member" title="Go to LinkedIn">
@@ -566,7 +650,7 @@
                             <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
                         </div>
                         <span class="team-name">Ayaan Tigdikar</span>
-                        <span class="team-number">59234</span>
+                        <span class="team-number">BSc Economics & Management​ King’s College Londo</span>
                     </a>
                     <a href="https://www.linkedin.com/in/carlos-levi-gallegos-viza-806810172/" target="_blank" class="team-member" title="Go to LinkedIn">
                         <div class="team-photo-wrapper">
@@ -574,7 +658,7 @@
                             <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
                         </div>
                         <span class="team-name">Carlos Gallegos</span>
-                        <span class="team-number">64689</span>
+                        <span class="team-number">Analyst​ at Bank of Mexico​</span>
                     </a>
                     <a href="https://www.linkedin.com/in/emilio-gonzalez-islas/" target="_blank" class="team-member" title="Go to LinkedIn">
                         <div class="team-photo-wrapper">
@@ -582,7 +666,7 @@
                             <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
                         </div>
                         <span class="team-name">Emilio Gonzalez</span>
-                        <span class="team-number">67273</span>
+                        <span class="team-number">Researcher​ at Bank of Mexico​n</span>
                     </a>
                     <a href="https://www.linkedin.com/in/ignacio-orueta-bennett-586b85186/" target="_blank" class="team-member" title="Go to LinkedIn">
                         <div class="team-photo-wrapper">
@@ -590,7 +674,7 @@
                             <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
                         </div>
                         <span class="team-name">Ignacio Orueta</span>
-                        <span class="team-number">70416</span>
+                        <span class="team-number">Economist​ at Fiscalía Nacional Económica de Chile​</span>
                     </a>
                     <a href="https://www.linkedin.com/in/leonardo-luksic-3b9251240/" target="_blank" class="team-member" title="Go to LinkedIn">
                         <div class="team-photo-wrapper">
@@ -598,7 +682,7 @@
                             <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
                         </div>
                         <span class="team-name">Leonardo Luksic</span>
-                        <span class="team-number">73073</span>
+                        <span class="team-number">BSc International Policy Analysis​ Bocconi University​</span>
                     </a>
                 </div>
         </div>
@@ -607,7 +691,7 @@
     <section id="sec-1" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHAT DOES MOODY'S WANT TO KNOW?</div>
-            <h2>Our research</h2>
+            <h2>Our Research</h2>
             
             <p class="narrative-text">
                 <strong>The project aims to develop a framework that identifies and analyzes the economic indicators, institutional factors, and policy conditions that support or hinder industrial upgrading in resource‐rich emerging markets</strong> 
@@ -635,8 +719,56 @@
 
     <section id="sec-2" class="scroll-section">
         <div class="content-wrapper">
+            <div class="header-logos">FROM DETERMINISM TO CONDITIONAL MECHANISMS</div>
+            <h2>The Resource Curse Is Conditional</h2>
+            <p class="narrative-text">The debate has shifted from <em>whether</em> resources harm growth to identifying the <strong>conditions under which</strong> they do.</p>
+            <div class="lit-timeline">
+                <div class="lit-item item-mehlum">
+                    <div class="lit-icon-wrapper"><i class="fas fa-balance-scale"></i></div>
+                    <div class="lit-card">
+                        <span class="author-tag">Mehlum, Moene &amp; Torvik (2006)</span>
+                        <h3>Institutions determine outcomes</h3>
+                        <p>Resources impede growth only where institutions are <strong>"grabber-friendly"</strong>. Where rule of law is strong, resources accelerate growth.</p>
+                        <p class="mechanism">Channel: Institutional quality mediates the resource-growth relationship</p>
+                    </div>
+                </div>
+                <div class="lit-item item-venables">
+                    <div class="lit-icon-wrapper"><i class="fas fa-piggy-bank"></i></div>
+                    <div class="lit-card">
+                        <span class="author-tag">Venables (2016)</span>
+                        <h3>Consumption crowds out investment</h3>
+                        <p>Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>. Adjusted net savings are strongly negative.</p>
+                        <p class="mechanism">Channel: Intertemporal allocation failure</p>
+                    </div>
+                </div>
+                <div class="lit-item item-ploeg">
+                    <div class="lit-icon-wrapper"><i class="fas fa-chart-line"></i></div>
+                    <div class="lit-card">
+                        <span class="author-tag">Van der Ploeg &amp; Poelhekke (2009)</span>
+                        <h3>Volatility is the indirect curse</h3>
+                        <p>Resource abundance boosts growth directly but <strong>undermines it through macroeconomic volatility</strong>, shifting investment toward short-term, low-return projects.</p>
+                        <p class="mechanism">Channel: Price volatility &rarr; fiscal instability &rarr; underinvestment</p>
+                    </div>
+                </div>
+                <div class="lit-item item-isham">
+                    <div class="lit-icon-wrapper"><i class="fas fa-oil-well"></i></div>
+                    <div class="lit-card">
+                        <span class="author-tag">Isham et al. (2005)</span>
+                        <h3>Resource type matters</h3>
+                        <p><strong>Point-source</strong> resources (oil, diamonds) concentrate rents among elites. <strong>Diffuse</strong> resources (agriculture, forestry) spread benefits more broadly.</p>
+                        <p class="mechanism">Channel: Rent concentration &rarr; elite capture &rarr; institutional erosion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="synthesis-box">
+                <p><strong>Our approach:</strong> We test Venables' investment hypothesis using Mehlum et al.'s interaction methodology, while ML techniques explore which structural predictors emerge beyond the theory-driven specification.</p>
+            </div>
+        </div>
+    </section>
+    <section id="sec-3" class="scroll-section">
+        <div class="content-wrapper">
             <div class="header-logos">QUANTITATIVE ANALYSIS USING A DUAL APPROACH</div>
-            <h2>Econometrics and machine learning approaches</h2>
+            <h2>Econometrics And Machine Learning Approaches</h2>
             
             <p class="narrative-text" style="font-weight: bold; color: var(--blue);">
                 Two approaches providing complementary perspectives to identify key predictors of economic complexity in resource-rich economies beyond theory-driven specifications.
@@ -654,23 +786,18 @@
                 <div class="split-pane right" style="text-align: center;">
                     <i class="fas fa-network-wired fa-3x" style="color: var(--orange); margin-bottom: 15px;"></i>
                     <h3 style="color: var(--orange); text-align: center;">Data-Driven Machine Learning</h3>
-                    <p style="font-size: 16px; text-align: center; margin-bottom: 15px;"></p>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">LASSO</span>
-                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">Ridge Regression</span>
-                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">Elastic Net</span>
-                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">Random Forest</span>
-                    </div>
+                    <p style="font-size: 15px; text-align: center; color: var(--dark-color); font-weight: bold; margin-bottom: 0;">
+                        Linear regularisation techniques (LASSO, RIDGE, Elastic Net) along with non-linear approaches (Random Forest) for theory-agnostic modelling.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sec-3" class="scroll-section">
+    <section id="sec-4" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
-            <h2>The economic complexity framework</h2>
+            <h2>The Economic Complexity Framework</h2>
             
             <p class="narrative-text" style="text-align: left;">
                 The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
@@ -690,14 +817,20 @@
                         [Space for Visual: Azerbaijan GDP vs ECI]
                     </div>
                 </div>
+                <div class="chart-card">
+                    <h3>Additional ECI Analysis</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Additional ECI Analysis')">
+                        [Space for Visual: Third Graphic]
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="sec-4" class="scroll-section">
+    <section id="sec-5" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHICH FACTORS DRIVE ECONOMIC COMPLEXITY ACROSS COUNTRIES?</div>
-            <h2>Three pillars behind industrial upgrading</h2>
+            <h2>Three Pillars Behind Industrial Upgrading</h2>
             <p class="narrative-text">
                 <strong></strong> Our findings show that three pillars dominate the trajectory of a resource-rich country, needed to sustain long‐term productive diversification and value‐added in‐ dustries"
             </p>
@@ -721,10 +854,10 @@
         </div>
     </section>
 
-    <section id="sec-5" class="scroll-section">
+    <section id="sec-6" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHAT DATA DO WE USE?</div>
-            <h2>Our data</h2>
+            <h2>Our Data</h2>
             <p class="narrative-text">
                 <strong></strong> We analyzed 54 resource-rich economies over 24 years (1995–2019)
             </p>
@@ -745,10 +878,10 @@
         </div>
     </section>
 
-    <section id="sec-6" class="scroll-section">
+    <section id="sec-7" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">HOW DO WE COMPARE STRUCTURAL PEERS?</div>
-            <h2>The clustering strategy</h2>
+            <h2>The Clustering Strategy</h2>
             <p class="narrative-text">
                 <strong></strong> To analyze 54 diverse economies, we used K-means clustering to group them by 'Resource profile' and Principal Component Analysis to reduce dimensionality. This is useful to compare a a country against its structural peers.
             </p>
@@ -769,10 +902,10 @@
         </div>
     </section>
 
-    <section id="sec-7" class="scroll-section">
+    <section id="sec-8" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHAT DO THE MODELS REVEAL?</div>
-            <h2>Empirical results</h2>
+            <h2>Empirical Results</h2>
             
             <div class="split-container">
                 <div class="split-pane left">
@@ -799,10 +932,10 @@
         </div>
     </section>
 
-    <section id="sec-8" class="scroll-section">
+    <section id="sec-9" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">THE INTERACTION BETWEEN HUMAN CAPITAL AND RESOURCE WEALTH MATTERS</div>
-            <h2>The interaction effect</h2>
+            <h2>The Interaction Effect</h2>
             <p class="narrative-text">
                 <strong></strong> Our econometric results prove that Human Capital impact is magnified in resource-intensive countries."
             </p>
@@ -815,10 +948,10 @@
         </div>
     </section>
 
-    <section id="sec-9" class="scroll-section">
+    <section id="sec-10" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHICH VARIABLES MATTER MOST?</div>
-            <h2>Machine learning insights</h2>
+            <h2>Machine Learning Insights</h2>
             <p class="narrative-text">
                 <strong></strong> By observing ECI levels out-of-sample—reveal ML reveals that domestic credit is as a key factor, absent from traditional theory.
             </p>
@@ -831,10 +964,10 @@
         </div>
     </section>
 
-    <section id="sec-10" class="scroll-section">
+    <section id="sec-11" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">HOW DO THESE FINDINGS TRANSLATE ACROSS DIFFERENT COUNTRY CONTEXTS?</div>
-            <h2>Comparative case studies</h2>
+            <h2>Comparative Case Studies</h2>
             <div class="chart-card" style="margin-bottom: 20px; width: 100%;">
                 <div class="visual-placeholder" style="height: 300px;" onclick="openPlaceholder('Comparative Dashboard')">
                     [Space for Visual: Summary table comparing the three pillars across Congo, Azerbaijan, and Chile]
@@ -843,10 +976,10 @@
         </div>
     </section>
 
-    <section id="sec-11" class="scroll-section">
+    <section id="sec-12" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHAT HAPPENS WHEN RESOURCE WEALTH IS NOT SUPPORTED BY STRONG ECONOMIC FOUNDATIONS?</div>
-            <h2>Why do these three pillars matter?</h2>
+            <h2>Why Do These Three Pillars Matter?</h2>
             
             <div class="split-container">
                 <div class="split-pane" style="border-color: var(--red);">
@@ -869,10 +1002,10 @@
         </div>
     </section>
 
-    <section id="sec-12" class="scroll-section">
+    <section id="sec-13" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHY CAN STRONG INSTITUTIONS FAIL TO DRIVE VALUE-ADDED INDUSTRIAL UPGRADING?</div>
-            <h2>Beyond just good institutions</h2>
+            <h2>Beyond Just Good Institutions</h2>
             <p class="narrative-text">
                 <strong></strong> Chile is the most nuanced case. Best institutions in the region, yet complexity is falling because it lacks R&D and high-tier human capital.
             </p>
@@ -900,10 +1033,10 @@
         </div>
     </section>
 
-    <section id="sec-13" class="scroll-section">
+    <section id="sec-14" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHO IS STRENGTHENING THEIR ECONOMIC FOUNDATIONS?</div>
-            <h2>Future risk and opportunities</h2>
+            <h2>Future Risk And Opportunities</h2>
             <p class="narrative-text">
                 <strong></strong> Based on current trajectories in our three pillars, we can project which country are successfully de-risking their economies and which are becoming more vulnerable to commodity shocks
             </p>
@@ -917,10 +1050,10 @@
         </div>
     </section>
 
-    <section id="sec-14" class="scroll-section">
+    <section id="sec-15" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">THREE LEVERS TO TRACK THE WINNERS OF THE NEXT DECADE</div>
-            <h2>Insights into Action</h2>
+            <h2>Insights Into Action</h2>
             
             <div class="chart-card" style="margin-bottom: 30px; width: 100%;">
                 <div class="visual-placeholder" style="height: 200px; margin-bottom: 0;" onclick="openPlaceholder('Matrix of Actionable Points')">
