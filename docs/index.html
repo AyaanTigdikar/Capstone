@@ -1115,52 +1115,133 @@
         </div>
     </section>
 
-    <section id="sec-11" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">HOW DO THESE FINDINGS TRANSLATE ACROSS DIFFERENT COUNTRY CONTEXTS?</div>
-            <h2>Comparative Case Studies</h2>
-            <div class="chart-card" style="margin-bottom: 20px; width: 100%;">
-                <div class="visual-placeholder" style="height: 300px;" onclick="openPlaceholder('Comparative Dashboard')">
-                    [Space for Visual: Summary table comparing the three pillars across Congo, Azerbaijan, and Chile]
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="sec-11" class="scroll-section">
+    <div class="content-wrapper">
+        <div class="header-logos">WHERE DO THE THREE PILLARS BIND?</div>
+        <h2>Comparative case studies</h2>
+        <p class="narrative-text">Each case illustrates a different configuration of constraints. The binding bottleneck shifts as institutional and economic conditions improve.</p>
+        <table class="comp-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Republic of Congo</th>
+                    <th>Azerbaijan</th>
+                    <th>Chile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Resource</strong></td><td>Oil (80% exports)</td><td>Oil &amp; Gas (90% exports)</td><td>Copper &amp; Lithium (57% exports)</td></tr>
+                <tr><td><strong>ECI Rank</strong></td><td class="status-red">124th / 130</td><td class="status-orange">95th / 130</td><td class="status-orange">~70th / 130</td></tr>
+                <tr><td><strong>Financial Depth</strong></td><td class="status-red">8.5% firms use banks</td><td class="status-orange">Recovering post-2015 crisis</td><td class="status-green">OECD-quality banking sector</td></tr>
+                <tr><td><strong>Infrastructure</strong></td><td class="status-red">50% electricity access</td><td class="status-orange">Concentrated in Baku</td><td class="status-green">Adequate, rail bottlenecks</td></tr>
+                <tr><td><strong>Human Capital</strong></td><td class="status-red">HCI: 2.16</td><td class="status-orange">HCI: 3.35</td><td class="status-orange">R&amp;D at 0.34% GDP</td></tr>
+                <tr><td><strong>Institutions</strong></td><td class="status-red">Electoral autocracy</td><td class="status-red">Authoritarian</td><td class="status-green">Strongest in Latin America</td></tr>
+                <tr><td><strong>Binding Constraint</strong></td><td class="status-red">All three pillars fail</td><td class="status-orange">Dutch Disease + governance</td><td class="status-orange">Human capital quality + R&amp;D</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 
     <section id="sec-12" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">WHAT HAPPENS WHEN RESOURCE WEALTH IS NOT SUPPORTED BY STRONG ECONOMIC FOUNDATIONS?</div>
-            <h2>Why Do These Three Pillars Matter?</h2>
-            
-            <div class="split-container">
-                <div class="split-pane" style="border-color: var(--red);">
-                    <h3 style="color: var(--red);">Republic of Congo (ROC) – The Triple Deficit</h3>
-                    <p><strong></strong> Congo illustrates what our model predicts, when all three pillars fail, ECI collapses regardless of oil wealth</p>
-                    <ul style="font-size: 16px;">
-                        <li>50% population with electricity access</li>
-                        <li>13% paved roads</li>
-                        <li>Low HCI scores & Minimal private credit</li>
-                    </ul>
-                    <div class="visual-placeholder" style="height: 150px; margin-top: 15px;" onclick="openPlaceholder('Infographic ROC')">[Space for Visual: Infographic]</div>
+    <div class="content-wrapper">
+        <div class="header-logos">WHEN ALL THREE PILLARS COLLAPSE</div>
+        <h2>Republic of Congo</h2>
+        <div class="split-container">
+            <div class="split-pane" style="border-color: var(--red);">
+                <div class="case-header">
+                    <h3 style="color: var(--red); margin-bottom: 0;">The Triple Deficit</h3>
                 </div>
-
-                <div class="split-pane" style="border-color: var(--gold);">
-                    <h3 style="color: var(--gold);">Azerbaijan: The Dutch Disease </h3>
-                    <p><strong></strong> Azerbaijan and Malaysia started with similar resources. Malaysia used its wealth to build a manufacturing base, Azerbaijan did not.</p>
-                    <div class="visual-placeholder" style="height: 200px; margin-top: 15px;" onclick="openPlaceholder('Figure 4.2. ECI trajectory: Azerbaijan and comparators.')">[Space for Visual: Figure 4.2. ECI trajectory: Azerbaijan and comparators.]</div>
+                <div class="case-meta">
+                    <span class="case-tag">Oil: 40% GDP, 80% exports</span>
+                    <span class="case-tag">ECI rank: 124th</span>
+                    <span class="case-tag">Cluster: Oil Exporters</span>
+                </div>
+                <p style="font-size: 15px;">Congo illustrates what the model predicts: when all three pillars fail, ECI collapses regardless of oil wealth. Pro-cyclical fiscal spending means education and infrastructure budgets rise and fall with the oil price.</p>
+                <ul style="font-size: 15px; padding-left: 20px;">
+                    <li>50% electricity access (12% rural); distribution losses over 50%</li>
+                    <li>Only 13% of roads paved; rail system below capacity</li>
+                    <li>75% of workers in informal employment</li>
+                    <li>Education spending oscillated between 8.4% and 1.6% of GDP</li>
+                    <li>Only 18% of adults hold a formal account</li>
+                </ul>
+            </div>
+            <div class="split-pane" style="border-color: var(--blue);">
+                <h3 style="color: var(--blue);">Peer Comparison</h3>
+                <p style="font-size: 15px;"><strong>Angola</strong> shares a similar export structure but reached higher income levels via larger production volumes and Chinese-backed infrastructure programmes.</p>
+                <p style="font-size: 15px;"><strong>Azerbaijan</strong> expanded produced capital by 428% since 1995; Congo managed only 40%.</p>
+                <p style="font-size: 15px;"><strong>Malaysia</strong> reinvested oil revenues into technical education and vocational training, generating broader spillovers.</p>
+                <div class="visual-placeholder has-iframe" style="height: 180px; margin-top: 10px;" onclick="openPlaceholder('Figure 4.1: ECI trajectory: ROC and comparators')">
+                    <iframe src="figures/10_eci_trajectory_roc.html" class="iframe-preview" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section id="sec-13" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">WHY CAN STRONG INSTITUTIONS FAIL TO DRIVE VALUE-ADDED INDUSTRIAL UPGRADING?</div>
-            <h2>Beyond Just Good Institutions</h2>
-            <p class="narrative-text">
-                Chile is the most nuanced case. Best institutions in the region, yet complexity is falling because it lacks R&D and high-tier human capital.
-            </p>
-            
+    <div class="content-wrapper">
+        <div class="header-logos">GDP GREW. COMPLEXITY COLLAPSED.</div>
+        <h2>Azerbaijan</h2>
+        <div class="split-container">
+            <div class="split-pane" style="border-color: var(--orange);">
+                <div class="case-header">
+                    <h3 style="color: var(--orange); margin-bottom: 0;">Dutch Disease in Action</h3>
+                </div>
+                <div class="case-meta">
+                    <span class="case-tag">Oil &amp; Gas: 90% exports, 50% GDP</span>
+                    <span class="case-tag">ECI rank: 95th</span>
+                    <span class="case-tag">Cluster: Oil Exporters</span>
+                </div>
+                <p style="font-size: 15px;">Azerbaijan's ECI declined 0.68 points from 1995 to 2019 while GDP growth averaged 6.6% annually. The sharpest ECI deterioration (2000 to 2008) coincided with 20% annual GDP growth, a textbook Dutch Disease signal.</p>
+                <ul style="font-size: 15px; padding-left: 20px;">
+                    <li>Infrastructure spending concentrated on pipelines and Baku</li>
+                    <li>Rail freight halved between 2006 and 2016</li>
+                    <li>NPLs reached 21% after the 2015-16 banking crisis</li>
+                    <li>Over 45% of "non-oil" manufacturing is petroleum-related</li>
+                    <li>SOFAZ spending at times exceeded its own investment returns</li>
+                </ul>
+            </div>
+            <div class="split-pane" style="border-color: var(--blue);">
+                <h3 style="color: var(--blue);">The Malaysia Counterfactual</h3>
+                <p style="font-size: 15px;">Both countries were upper-middle-income hydrocarbon economies in the mid-1990s with comparable ECI levels. Malaysia channelled Petronas revenues into downstream manufacturing and electronics, reaching ECI +1.1 by 2019. Azerbaijan collapsed to -1.2 by the mid-2000s.</p>
+                <p style="font-size: 15px;">Two binding constraints: severely inadequate rule of law (-0.7 vs Malaysia's +0.5) and extreme hydrocarbon concentration crowding out non-oil tradables.</p>
+                <div class="visual-placeholder has-iframe" style="height: 180px; margin-top: 10px;" onclick="openPlaceholder('Figure 4.2: ECI trajectory: Azerbaijan and comparators')">
+                    <iframe src="figures/10_eci_trajectory_comparators.html" class="iframe-preview" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!-- ===== 14. CHILE ===== -->
+<section id="sec-14" class="scroll-section">
+    <div class="content-wrapper">
+        <div class="header-logos">STRONG INSTITUTIONS ARE NECESSARY BUT NOT SUFFICIENT</div>
+        <h2>Chile</h2>
+        <div class="split-container">
+            <div class="split-pane" style="border-color: var(--green);">
+                <div class="case-header"><span class="case-flag">🇨🇱</span><h3 style="color: var(--green); margin-bottom: 0;">The Human Capital Bottleneck</h3></div>
+                <div class="case-meta">
+                    <span class="case-tag">Copper: 57% exports</span>
+                    <span class="case-tag">ECI rank: ~70th (declining)</span>
+                    <span class="case-tag">Credit rating: A2/A/A-</span>
+                </div>
+                <p style="font-size: 15px;">Chile has the strongest institutions in Latin America, a structural fiscal balance rule, and two sovereign wealth funds. Yet its ECI has declined since the mid-2000s. The binding constraint is not governance but human capital quality and R&amp;D capacity.</p>
+                <ul style="font-size: 15px; padding-left: 20px;">
+                    <li>R&amp;D spending: 0.34% of GDP (one-sixth of OECD average)</li>
+                    <li>PISA maths scores 60 points below OECD average</li>
+                    <li>Worker productivity 50% below OECD average</li>
+                    <li>Exports cluster in the "periphery" of the product space</li>
+                    <li>54% of copper exports go to China for downstream processing</li>
+                </ul>
+            </div>
+            <div class="split-pane" style="border-color: var(--blue);">
+                <h3 style="color: var(--blue);">Supply Chain &amp; Peer Comparison</h3>
+                <p style="font-size: 15px;"><strong>363 producing facilities</strong> across 17 commodity groups generate ~$62bn in annual mineral value. Production is concentrated in three northern regions (85% of output).</p>
+                <p style="font-size: 15px;"><strong>Botswana</strong> mirrors Chile's fiscal discipline but also fails to diversify, confirming that sound institutions alone do not produce complexity gains.</p>
+                <p style="font-size: 15px;"><strong>Norway</strong> shows the counterfactual: universities and research institutes integrated into the oil industry, producing engineering firms that later diversified into offshore wind and subsea technology.</p>
+                <div class="visual-placeholder" style="height: 180px; margin-top: 10px;" onclick="openPlaceholder('Figure 4.7: ECI trajectory: Chile and comparators')">[Figure 4.7: ECI trajectory: Chile vs Norway, Botswana, Zambia]</div>
+            </div>
             <div class="chart-grid">
                 <div class="chart-card">
                     <h3 style="font-size: 18px;">Figure 4.4. Regional distribution of mineral production value</h3>
@@ -1182,9 +1263,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="sec-14" class="scroll-section">
+
+    <section id="sec-15" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHO IS STRENGTHENING THEIR ECONOMIC FOUNDATIONS?</div>
             <h2>Future Risk And Opportunities</h2>
@@ -1200,50 +1283,59 @@
                     Note: Solid lines show observed ECI (1995–2019); dashed lines show model projections.
                 </span>
             </div>
+            
+            <div class="split-container" style="margin-top: 30px;">
+            <div class="split-pane" style="border-color: var(--green);">
+                <h3 style="color: var(--green);"><i class="fas fa-arrow-trend-up" style="margin-right: 8px;"></i>Improving</h3>
+                <p style="font-size: 15px;"><strong>Ecuador:</strong> Expanding renewable energy infrastructure, diversifying beyond oil via trade agreements.</p>
+                <p style="font-size: 15px;"><strong>Mongolia:</strong> Heavy investment in education and financial infrastructure alongside mining-linked industrialisation.</p>
+                <p style="font-size: 15px; margin-bottom: 0;"><strong>Equatorial Guinea:</strong> Projected to diversify from a very low complexity base.</p>
+            </div>
+            <div class="split-pane" style="border-color: var(--red);">
+                <h3 style="color: var(--red);"><i class="fas fa-arrow-trend-down" style="margin-right: 8px;"></i>Declining</h3>
+                <p style="font-size: 15px;"><strong>Saudi Arabia:</strong> Projected decline despite Vision 2030, suggesting oil-dominant economies struggle to diversify even with favourable policies.</p>
+                <p style="font-size: 15px;"><strong>Libya:</strong> Hydrocarbons account for 95%+ of exports; political fragmentation blocks structural reform.</p>
+                <p style="font-size: 15px; margin-bottom: 0;"><strong>Zimbabwe:</strong> Governance and macroeconomic instability undermine preconditions for complexity gains.</p>
+            </div>
+        </div>
         </div>
     </section>
 
-    <section id="sec-15" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">THREE LEVERS TO TRACK THE WINNERS OF THE NEXT DECADE</div>
-            <h2>Insights Into Action</h2>
-            
-            <div class="chart-card" style="margin-bottom: 30px; width: 100%;">
-                <div class="visual-placeholder" style="height: 200px; margin-bottom: 0;" onclick="openPlaceholder('Matrix of Actionable Points')">
-                    [Space for Visual if works]
-                </div>
-            </div>
-            
-            <div class="pillars-container" style="margin-bottom: 0;">
-                <div class="pillar-card">
-                    <h4 style="color: var(--title-color);">1. Infraestructure is key</h4>
-                    <p style="font-size: 15px;">text</p>
-                </div>
-                <div class="pillar-card">
-                    <h4 style="color: var(--title-color);">2. Financial Depth</h4>
-                    <p style="font-size: 15px;">Monitor private sector credit as a filter for diversification capacity.</p>
-                </div>
-                <div class="pillar-card">
-                    <h4 style="color: var(--title-color);">3. Human Capital relevance</h4>
-                    <p style="font-size: 15px;">Evaluate HCI as an interactive force with resource intensity.</p>
-                </div>
-            </div>
+    <section id="sec-16" class="scroll-section">
+    <div class="content-wrapper">
+        <div class="header-logos">THREE LEVERS FOR THE NEXT DECADE</div>
+        <h2>Conclusions and implications</h2>
+        <p class="narrative-text">The most effective pathway is not to abandon resource dependence but to <strong>systematically convert resource rents into the structural foundations</strong> for long-term productive diversification.</p>
 
-            <p class="narrative-text" style="margin-top: 30px;">
-                <strong>Closing statement</strong> text
-            </p>
-
-            <div class="vault-box">
-                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="URL_DEL_REPORTE_PDF_AQUI" target="_blank" class="vault-btn" style="background: var(--red);">
-                        <i class="fas fa-file-pdf"></i> Access Full Report PDF
-                    </a>
-                    <a href="URL_DEL_REPOSITORIO_GITHUB_AQUI" target="_blank" class="vault-btn" style="background: var(--dark-color);">
-                        <i class="fab fa-github fa-lg"></i> View GitHub Repository
-                    </a>
-                </div>
+        <div class="pillars-container" style="margin-bottom: 30px;">
+            <div class="pillar-card">
+                <i class="fas fa-bolt pillar-icon" style="color: var(--orange);"></i>
+                <h4 style="color: var(--title-color);">1. Infrastructure is key</h4>
+                <p style="font-size: 14px;">Unreliable energy supply suppresses private investment. Electricity access is the most consistent infrastructure predictor of complexity across all models.</p>
+            </div>
+            <div class="pillar-card">
+                <i class="fas fa-money-check-alt pillar-icon" style="color: var(--blue);"></i>
+                <h4 style="color: var(--title-color);">2. Financial Depth</h4>
+                <p style="font-size: 14px;">Domestic credit to the private sector emerged as the single strongest ML predictor, yet is absent from most theory-driven specifications. Monitor it as a filter for diversification capacity.</p>
+            </div>
+            <div class="pillar-card">
+                <i class="fas fa-user-graduate pillar-icon" style="color: var(--green);"></i>
+                <h4 style="color: var(--title-color);">3. Human Capital</h4>
+                <p style="font-size: 14px;">Returns to education are highest where resource extraction is most intensive. Investment must be counter-cyclical and structurally insulated from commodity prices.</p>
             </div>
         </div>
+
+        <div class="synthesis-box" style="max-width: 1000px;">
+            <p style="font-size: 17px; line-height: 1.7;"><strong>For sovereign credit assessment:</strong> The constraints on industrial upgrading shift as institutional and economic conditions improve. In low-income resource economies (Congo), all three pillars are binding simultaneously. In middle-income settings (Azerbaijan), Dutch Disease and governance dominate. In upper-middle-income settings (Chile), human capital quality and R&amp;D become the bottleneck. No single policy lever is sufficient across all settings.</p>
+        </div>
+
+        <div class="vault-box">
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#" target="_blank" class="vault-btn" style="background: var(--red);"><i class="fas fa-file-pdf"></i> Full Report PDF</a>
+                <a href="#" target="_blank" class="vault-btn" style="background: var(--dark-color);"><i class="fab fa-github fa-lg"></i> GitHub Repository</a>
+            </div>
+        </div>
+    </div>
     </section>
 
     <script>
