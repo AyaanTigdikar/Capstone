@@ -545,8 +545,6 @@
         .flow-author { font-size: 14px; font-weight: 700; color: var(--grey); text-transform: uppercase; letter-spacing: 1px; display: block; }
         .flow-card h3 { font-size: 24px; font-weight: 800; color: var(--title-color); margin: 10px 0 15px 0; padding-bottom: 12px; border-bottom: 2px solid var(--grid-color); line-height: 1.3; text-align: left; }
         .flow-card p { font-size: 20px; color: var(--dark-color); margin-bottom: 0; line-height: 1.5; }
-        @media (min-width: 992px) { .flow-card:not(:last-child)::after { content: '➔'; position: absolute; right: -25px; top: 50%; transform: translateY(-50%); font-size: 28px; font-weight: bold; color: var(--zero-line); z-index: 10; } }
-        @media (max-width: 991px) { .flow-card:not(:last-child)::after { content: '↓'; position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%); font-size: 28px; font-weight: bold; color: var(--zero-line); z-index: 10; } }
         .synthesis-box { background: rgba(74, 111, 165, 0.08); border-left: 5px solid var(--blue); padding: 25px 30px; border-radius: 0 8px 8px 0; width: 100%; max-width: 1350px; margin-top: 15px; }
         .synthesis-box p { margin: 0; font-size: 22px; text-align: left; }
 
@@ -617,10 +615,10 @@
         <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
         <a href="#cover" class="nav-item">The Team</a>
         <a href="#sec-1" class="nav-item">1. Our Research</a>
-        <a href="#sec-2" class="nav-item">2. The Resource Curse is Conditional</a>
-        <a href="#sec-3" class="nav-item">3. Econometrics & Machine Learning</a>
-        <a href="#sec-4" class="nav-item">4. Three Pillars Behind Upgrading</a>
-        <a href="#sec-5" class="nav-item">5. Economic Complexity Framework</a>
+        <a href="#sec-2" class="nav-item">2. Econometrics & Machine Learning</a>
+        <a href="#sec-3" class="nav-item">3. Three Pillars Behind Upgrading</a>
+        <a href="#sec-4" class="nav-item">4. Economic Complexity Framework</a>
+        <a href="#sec-5" class="nav-item">5. The Resource Curse is Conditional</a>
         <a href="#sec-6" class="nav-item">6. Our Data</a>
         <a href="#sec-7" class="nav-item">7. The Clustering Strategy</a>
         <a href="#sec-8" class="nav-item">8. Econometric Results</a>
@@ -742,43 +740,6 @@
 
     <section id="sec-2" class="scroll-section">
         <div class="content-wrapper">
-            <div class="header-logos">FROM DETERMINISM TO CONDITIONAL MECHANISMS</div>
-            <h2>The Resource Curse is Conditional</h2>
-            <p class="narrative-text">The debate has shifted from whether resources harm growth to identifying the conditions under which they do.</p>
-            <div class="lit-timeline-flow">
-                <div class="flow-card card-1">
-                    <span class="flow-author">Mehlum, Moene &amp; Torvik (2006)</span>
-                    <h3>Institutions determine outcomes</h3>
-                    <p>Resources impede growth only where institutions are <strong>"grabber-friendly"</strong>. Where rule of law is strong, resources accelerate growth.</p>
-                </div>
-                
-                <div class="flow-card card-2">
-                    <span class="flow-author">Venables (2016)</span>
-                    <h3>Consumption crowds out investment</h3>
-                    <p>Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>. Adjusted net savings are strongly negative.</p>
-                </div>
-
-                <div class="flow-card card-3">
-                    <span class="flow-author">Van der Ploeg &amp; Poelhekke (2009)</span>
-                    <h3>Volatility is the indirect curse</h3>
-                    <p>Resource abundance boosts growth directly but <strong>undermines it through macroeconomic volatility</strong>, shifting investment toward short-term, low-return projects.</p>
-                </div>
-
-                <div class="flow-card card-4">
-                    <span class="flow-author">Isham et al. (2005)</span>
-                    <h3>Resource type matters</h3>
-                    <p><strong>Point-source</strong> resources (oil, diamonds) concentrate rents among elites. <strong>Diffuse</strong> resources (agriculture, forestry) spread benefits more broadly.</p>
-                </div>
-            </div>
-
-            <div class="synthesis-box">
-                <p><strong>Our approach:</strong> We test Venables' investment hypothesis using Mehlum et al.'s interaction methodology, while ML techniques explore which structural predictors emerge beyond the theory-driven specification.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="sec-3" class="scroll-section">
-        <div class="content-wrapper">
             <div class="header-logos">QUANTITATIVE ANALYSIS USING A DUAL APPROACH</div>
             <h2>Econometrics And Machine Learning Approaches</h2>
             
@@ -805,7 +766,7 @@
         </div>
     </section>
 
-    <section id="sec-4" class="scroll-section">
+    <section id="sec-3" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHICH FACTORS DRIVE DIVERSIFICATION ACROSS COUNTRIES?</div>
             <h2>Three Pillars Behind Industrial Upgrading</h2>
@@ -832,7 +793,7 @@
         </div>
     </section>
 
-    <section id="sec-5" class="scroll-section">
+    <section id="sec-4" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
             <h2>The Economic Complexity Framework</h2>
@@ -865,6 +826,43 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+        <section id="sec-5" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">FROM DETERMINISM TO CONDITIONAL MECHANISMS</div>
+            <h2>The Resource Curse is Conditional</h2>
+            <p class="narrative-text">The debate has shifted from whether resources harm growth to identifying the conditions under which they do.</p>
+            <div class="lit-timeline-flow">
+                <div class="flow-card card-1">
+                    <span class="flow-author">Mehlum, Moene &amp; Torvik (2006)</span>
+                    <h3>Institutions determine outcomes</h3>
+                    <p>Resources impede growth only where institutions are <strong>"grabber-friendly"</strong>. Where rule of law is strong, resources accelerate growth.</p>
+                </div>
+                
+                <div class="flow-card card-2">
+                    <span class="flow-author">Venables (2016)</span>
+                    <h3>Consumption crowds out investment</h3>
+                    <p>Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>. Adjusted net savings are strongly negative.</p>
+                </div>
+
+                <div class="flow-card card-3">
+                    <span class="flow-author">Van der Ploeg &amp; Poelhekke (2009)</span>
+                    <h3>Volatility is the indirect curse</h3>
+                    <p>Resource abundance boosts growth directly but <strong>undermines it through macroeconomic volatility</strong>, shifting investment toward short-term, low-return projects.</p>
+                </div>
+
+                <div class="flow-card card-4">
+                    <span class="flow-author">Isham et al. (2005)</span>
+                    <h3>Resource type matters</h3>
+                    <p><strong>Point-source</strong> resources (oil, diamonds) concentrate rents among elites. <strong>Diffuse</strong> resources (agriculture, forestry) spread benefits more broadly.</p>
+                </div>
+            </div>
+
+            <div class="synthesis-box">
+                <p><strong>Our approach:</strong> We test Venables' investment hypothesis using Mehlum et al.'s interaction methodology, while ML techniques explore which structural predictors emerge beyond the theory-driven specification.</p>
             </div>
         </div>
     </section>
