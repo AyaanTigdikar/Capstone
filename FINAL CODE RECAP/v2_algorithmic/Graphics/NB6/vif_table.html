@@ -1,0 +1,24 @@
+
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<style>
+  body  { font-family:'Times New Roman',serif; font-size:13px; margin:40px; }
+  h2    { font-size:14px; font-weight:normal; text-align:center; margin-bottom:4px; }
+  table { border-collapse:collapse; width:420px; margin:0 auto; }
+  th,td { padding:3px 12px; text-align:center; }
+  .top  { border-top:2px solid #000; }
+  .mid  { border-top:1px solid #000; }
+  .bot  { border-bottom:2px solid #000; }
+  .note { font-size:11px; width:420px; margin:6px auto 0; }
+</style></head><body>
+<h2>Variance Inflation Factors — Models 3a and 3b</h2>
+<table>
+  <thead>
+    <tr class="top mid"><th style="text-align:left">Variable</th><th>VIF (3a)</th><th>VIF (3b)</th></tr>
+  </thead>
+  <tbody class="bot">
+    {rows_html}
+  </tbody>
+</table>
+<p class="note"><em>Note:</em> Green = VIF &lt; 5 (acceptable); amber = 5–10 (moderate); red = &gt;10 (high). 
+Interaction terms are mean-centred before multiplication. Model 3b includes ECI_lag1 as an additional regressor.</p>
+</body></html>

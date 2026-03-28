@@ -30,7 +30,7 @@ _eco = _wb.economy.DataFrame()
 HIC  = set(_eco[_eco['incomeLevel'] == 'HIC'].index)
 from viz_utils import FONT, BG, NAVY, GRID, base_layout, save, INCLUDE_LIST
 
-OUT_MAPS = os.path.join(ROOT, 'robustness-forest', 'outputs', 'maps')
+OUT_MAPS = os.path.join(os.path.expanduser('~'), 'Downloads', 'capstone_charts', 'maps')
 os.makedirs(OUT_MAPS, exist_ok=True)
 
 GULF = {'ARE', 'BHR', 'KWT', 'OMN', 'QAT', 'SAU', 'IRQ', 'IRN', 'YEM'}
