@@ -1049,7 +1049,7 @@
         </div>
     </section>
 
-    <section id="sec-8" class="scroll-section">
+<section id="sec-8" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHAT DO THE MODELS REVEAL?</div>
             <h2>Empirical Results</h2>
@@ -1065,31 +1065,35 @@
                         \end{aligned}
                         $$
                     </div>
-                    <div class="visual-placeholder" style="height: 150px;" onclick="openPlaceholder('Table 3.3. Regression results')">[Space for Visual: Table 3.3. Regression results]</div>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('Table 3.3. Regression results')">
+                        <iframe src="figures/regression_table_combined.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
                 </div>
                 
                 <div class="split-pane right">
                     <h3 style="color: var(--orange);">Step 2: ML Regularization</h3>
                     <p class="narrative-text" style="text-align: left; font-size: 16px;">
-                        <strong></strong> We used LASSO, Ridge and Elastic Net to reduce noise. We found that traditional macro variables like trade openness often drop out, while structural indicators like domestic credit penetration are the most robust predictors.
+                        We used LASSO, Ridge and Elastic Net to reduce noise. We found that traditional macro variables like trade openness often drop out, while structural indicators like domestic credit penetration are the most robust predictors.
                     </p>
-                    <div class="visual-placeholder" style="height: 200px; margin-bottom: 0;" onclick="openPlaceholder('Figure 3.8. LASSO, Ridge and Elastic Net model agreement')">[Space for Visual: Figure 3.8. LASSO, Ridge and Elastic Net model agreement]</div>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('Figure 3.8. LASSO, Ridge and Elastic Net model agreement')">
+                        <iframe src="figures/07_lasso_ridge_en_coefficients.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sec-9" class="scroll-section">
+<section id="sec-9" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">THE INTERACTION BETWEEN HUMAN CAPITAL AND RESOURCE WEALTH MATTERS</div>
             <h2>The Interaction Effect</h2>
             <p class="narrative-text">
-                <strong></strong> Our econometric results prove that Human Capital impact is magnified in resource-intensive countries."
+                Our econometric results prove that Human Capital impact is magnified in resource-intensive countries.
             </p>
             <div class="chart-card" style="max-width: 900px; margin: 0 auto; width: 100%;">
-                <h3>Interaction Plot (HCI x Production)</h3>
-                <div class="visual-placeholder" style="height: 400px;" onclick="openPlaceholder('ECI and HCI')">
-                    [Space for Visual: ECI and HCI]
+                <h3>Interaction ECI and Human Capital</h3>
+                <div class="visual-placeholder has-iframe" style="height: 400px;" onclick="openPlaceholder('ECI and HCI')">
+                    <iframe src="figures/eci_hci.html" class="iframe-preview" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
@@ -1100,12 +1104,12 @@
             <div class="header-logos">WHICH VARIABLES MATTER MOST?</div>
             <h2>Machine Learning Insights</h2>
             <p class="narrative-text">
-                <strong></strong> By observing ECI levels out-of-sample—reveal ML reveals that domestic credit is as a key factor, absent from traditional theory.
+                By observing ECI levels out-of-sample, ML reveals that domestic credit is a key factor, absent from traditional theory.
             </p>
             <div class="chart-card" style="max-width: 900px; margin: 0 auto; width: 100%;">
-                <h3>Figure 3.10. Random Forest feature importance</h3>
-                <div class="visual-placeholder" style="height: 350px;" onclick="openPlaceholder('Figure 3.10. Random Forest feature importance')">
-                    [Space for Visual: Figure 3.10. Random Forest feature importance]
+                <h3>Random Forest feature importance</h3>
+                <div class="visual-placeholder has-iframe" style="height: 350px;" onclick="openPlaceholder('Figure 3.10. Random Forest feature importance')">
+                    <iframe src="figures/08_rf_feature_importance.html" class="iframe-preview" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
@@ -1154,26 +1158,26 @@
             <div class="header-logos">WHY CAN STRONG INSTITUTIONS FAIL TO DRIVE VALUE-ADDED INDUSTRIAL UPGRADING?</div>
             <h2>Beyond Just Good Institutions</h2>
             <p class="narrative-text">
-                <strong></strong> Chile is the most nuanced case. Best institutions in the region, yet complexity is falling because it lacks R&D and high-tier human capital.
+                Chile is the most nuanced case. Best institutions in the region, yet complexity is falling because it lacks R&D and high-tier human capital.
             </p>
             
             <div class="chart-grid">
                 <div class="chart-card">
                     <h3 style="font-size: 18px;">Figure 4.4. Regional distribution of mineral production value</h3>
-                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 4.4. Regional distribution of mineral production value')">
-                        [Space for Visual: Figure 4.4]
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('Figure 4.4. Regional distribution of mineral production value')">
+                        <iframe src="figures/11_chile_top_facilities_bar.html" class="iframe-preview" scrolling="no"></iframe>
                     </div>
                 </div>
                 <div class="chart-card">
                     <h3 style="font-size: 18px;">Figure 4.5. Top producing facilities by estimated annual output value (USD)</h3>
-                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 4.5. Top producing facilities by estimated annual output value (USD)')">
-                        [Space for Visual: Figure 4.5]
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('Figure 4.5. Top producing facilities by estimated annual output value (USD)')">
+                        <iframe src="figures/12_chile_export_choropleth.html" class="iframe-preview" scrolling="no"></iframe>
                     </div>
                 </div>
                 <div class="chart-card">
                     <h3 style="font-size: 18px;">Figure 4.6. Mineral export destinations by value</h3>
-                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 4.6. Mineral export destinations by value')">
-                        [Space for Visual: Figure 4.6]
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder('Figure 4.6. Mineral export destinations by value')">
+                        <iframe src="figures/13_chile_regional_tiles.html" class="iframe-preview" scrolling="no"></iframe>
                     </div>
                 </div>
             </div>
@@ -1185,14 +1189,16 @@
             <div class="header-logos">WHO IS STRENGTHENING THEIR ECONOMIC FOUNDATIONS?</div>
             <h2>Future Risk And Opportunities</h2>
             <p class="narrative-text">
-                <strong></strong> Based on current trajectories in our three pillars, we can project which country are successfully de-risking their economies and which are becoming more vulnerable to commodity shocks
+                Based on current trajectories in our three pillars, we can project which country are successfully de-risking their economies and which are becoming more vulnerable to commodity shocks.
             </p>
             <div class="chart-card" style="width: 100%; max-width: 1000px; margin: 0 auto;">
                 <h3 style="font-size: 20px;">Figure 3.13. Projected ECI trajectories, top improving and declining countries (2020–2030)</h3>
-                <div class="visual-placeholder" style="height: 400px;" onclick="openPlaceholder('Figure 3.13. Projected ECI trajectories, top improving and declining countries (2020–2030)\nNote: Solid lines show observed ECI (1995–2019); dashed lines show model projections.')">
-                    [Space for Visual: Figure 3.13. Projected ECI trajectories...]<br><br>
-                    <span style="font-size: 13px; font-weight: normal; color: var(--dark-color);">Note: Solid lines show observed ECI (1995–2019); dashed lines show model projections.</span>
+                <div class="visual-placeholder has-iframe" style="height: 400px;" onclick="openPlaceholder('Figure 3.13. Projected ECI trajectories, top improving and declining countries (2020–2030)')">
+                    <iframe src="figures/09_eci_forecast_trajectories.html" class="iframe-preview" scrolling="no"></iframe>
                 </div>
+                <span style="font-size: 13px; font-weight: normal; color: var(--dark-color); display: block; text-align: center; margin-top: 15px;">
+                    Note: Solid lines show observed ECI (1995–2019); dashed lines show model projections.
+                </span>
             </div>
         </div>
     </section>
