@@ -572,6 +572,124 @@
             margin: 0;
             font-size: 17px;
         }
+
+        /* =========================================
+           10. LITERATURE FLOW TIMELINE (SEC 2)
+           ========================================= */
+        .lit-timeline-flow {
+            display: flex;
+            flex-direction: column; 
+            gap: 25px;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        @media (min-width: 992px) {
+            .lit-timeline-flow {
+                flex-direction: row; 
+                align-items: stretch;
+            }
+        }
+
+        .flow-card {
+            flex: 1;
+            background: var(--white);
+            border-radius: 8px;
+            padding: 25px 20px;
+            box-shadow: var(--shadow-subtle);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid;
+            z-index: 2;
+        }
+
+        .flow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+     
+        .card-1 { border-color: var(--blue); }
+        .card-2 { border-color: var(--orange); }
+        .card-3 { border-color: var(--red); }
+        .card-4 { border-color: var(--green); }
+
+        .flow-author {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--grey);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+        }
+
+     
+        .flow-card h3 {
+            font-size: 19px;
+            font-weight: 800;
+            color: var(--title-color);
+            margin: 10px 0 15px 0;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--grid-color);
+            line-height: 1.3;
+            text-align: left;
+        }
+
+        .flow-card p {
+            font-size: 15px;
+            color: var(--dark-color);
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+   
+        @media (min-width: 992px) {
+            .flow-card:not(:last-child)::after {
+                content: '➔'; 
+                position: absolute;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 22px;
+                font-weight: bold;
+                color: var(--zero-line);
+                z-index: 10;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .flow-card:not(:last-child)::after {
+                content: '↓';
+                position: absolute;
+                bottom: -22px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 22px;
+                font-weight: bold;
+                color: var(--zero-line);
+                z-index: 10;
+            }
+        }
+
+        .synthesis-box {
+            background: rgba(74, 111, 165, 0.08);
+            border-left: 5px solid var(--blue);
+            padding: 20px 25px;
+            border-radius: 0 8px 8px 0;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 10px;
+        }
+        
+        .synthesis-box p { 
+            margin: 0; 
+            font-size: 17px; 
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -722,45 +840,41 @@
             <div class="header-logos">FROM DETERMINISM TO CONDITIONAL MECHANISMS</div>
             <h2>The Resource Curse Is Conditional</h2>
             <p class="narrative-text">The debate has shifted from whether resources harm growth to <strong>identifying the conditions under which they do.</strong></p>
-            <div class="lit-timeline">
-                <div class="lit-item item-mehlum">
-                    <div class="lit-card">
-                        <span class="author-tag">Mehlum, Moene &amp; Torvik (2006)</span>
-                        <h3>Institutions determine outcomes</h3>
-                        <p>Resources impede growth only where institutions are <strong>"grabber-friendly"</strong>. Where rule of law is strong, resources accelerate growth.</p>
-                        <p class="mechanism"></p>
-                    </div>
+            
+            <div class="lit-timeline-flow">
+                <div class="flow-card card-1">
+                    <span class="flow-author">Mehlum, Moene &amp; Torvik (2006)</span>
+                    <h3>Institutions determine outcomes</h3>
+                    <p>Resources impede growth only where institutions are <strong>"grabber-friendly"</strong>. Where rule of law is strong, resources accelerate growth.</p>
                 </div>
-                <div class="lit-item item-venables">
-                    <div class="lit-card">
-                        <span class="author-tag">Venables (2016)</span>
-                        <h3>Consumption crowds out investment</h3>
-                        <p>Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>. Adjusted net savings are strongly negative.</p>
-                        <p class="mechanism"></p>
-                    </div>
+                
+                <div class="flow-card card-2">
+                    <span class="flow-author">Venables (2016)</span>
+                    <h3>Consumption crowds out investment</h3>
+                    <p>Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>. Adjusted net savings are strongly negative.</p>
                 </div>
-                <div class="lit-item item-ploeg">
-                    <div class="lit-card">
-                        <span class="author-tag">Van der Ploeg &amp; Poelhekke (2009)</span>
-                        <h3>Volatility is the indirect curse</h3>
-                        <p>Resource abundance boosts growth directly but <strong>undermines it through macroeconomic volatility</strong>, shifting investment toward short-term, low-return projects.</p>
-                        <p class="mechanism"></p>
-                    </div>
+
+                <div class="flow-card card-3">
+                    <span class="flow-author">Van der Ploeg &amp; Poelhekke (2009)</span>
+                    <h3>Volatility is the indirect curse</h3>
+                    <p>Resource abundance boosts growth directly but <strong>undermines it through macroeconomic volatility</strong>, shifting investment toward short-term, low-return projects.</p>
                 </div>
-                <div class="lit-item item-isham">
-                    <div class="lit-card">
-                        <span class="author-tag">Isham et al. (2005)</span>
-                        <h3>Resource type matters</h3>
-                        <p><strong>Point-source</strong> resources (oil, diamonds) concentrate rents among elites. <strong>Diffuse</strong> resources (agriculture, forestry) spread benefits more broadly.</p>
-                        <p class="mechanism"></p>
-                    </div>
+
+                <div class="flow-card card-4">
+                    <span class="flow-author">Isham et al. (2005)</span>
+                    <h3>Resource type matters</h3>
+                    <p><strong>Point-source</strong> resources (oil, diamonds) concentrate rents among elites. <strong>Diffuse</strong> resources (agriculture, forestry) spread benefits more broadly.</p>
                 </div>
             </div>
+
             <div class="synthesis-box">
                 <p><strong>Our approach:</strong> We test Venables' investment hypothesis using Mehlum et al.'s interaction methodology, while ML techniques explore which structural predictors emerge beyond the theory-driven specification.</p>
             </div>
         </div>
     </section>
+
+
+
     <section id="sec-3" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">QUANTITATIVE ANALYSIS USING A DUAL APPROACH</div>
