@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the Resource Curse - Moody's Capstone</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        /* =========================================
+           1. MAIN VARIABLES (COLORS AND FONTS)
+           ========================================= */
+        :root {
+            /* STRICTLY ARIAL FONT AS REQUESTED */
+            --font-main: Arial, Helvetica, sans-serif;
+            
+            --title-color: #1a2744; /* Deep Blue from Header */
+            --dark-color: #3d4f5f;
+            --bg-plot: #fafafa;
+            --bg-paper: #fafafa;
+            --grid-color: #e5e7eb;
+            --zero-line: #c9cfd6;
+            
+            --blue: #4a6fa5;
+            --red: #c23a3a;
+            --green: #2e7d4a;
+            --orange: #d4853b;
+            --light-blue: #7a9dc4;
+            --grey: #999999;
+            --gold: #e6b980;
+            
+            --white: #ffffff;
+            --shadow-subtle: 0 4px 12px rgba(0,0,0,0.05);
+            --shadow-hover: 0 10px 25px rgba(26,39,68,0.15);
+        }
+
+        /* =========================================
+           2. GLOBAL STYLES & TYPOGRAPHY
+           ========================================= */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-main);
+            background-color: var(--bg-paper);
+            color: var(--dark-color);
+            scroll-behavior: smooth;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 { color: var(--title-color); margin-top: 0; }
+        
+        /* Section Titles (h2) */
+        h2 { 
+            font-size: 38px; 
+            font-weight: 600; 
+            border-bottom: 3px solid var(--blue); 
+            padding-bottom: 10px; 
+            margin-bottom: 30px; 
+            text-align: center; 
+            display: inline-block;
+        }
+        
+        h3 { font-size: 22px; font-weight: 600; margin-bottom: 15px; }
+        p { font-size: 18px; margin-bottom: 20px; color: var(--dark-color); }
+        
+        /* Narrative Text (Clean text over background, no boxes) */
+        .narrative-text {
+            font-size: 18px; 
+            color: var(--dark-color);
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 1000px; 
+            text-align: center;
+        }
+        .narrative-text strong { color: var(--title-color); }
+
+        /* Trigger questions / Pre-headers above H2 */
+        .header-logos {
+            font-size: 14px;
+            color: var(--grey);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* =========================================
+           3. DYNAMIC SMOOTH HEADER & SCROLL BAR
+           ========================================= */
+        #main-header {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            height: 40vh; /* Will be smoothly updated by JS */
+            background-color: var(--title-color);
+            z-index: 990; 
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        /* The 60px persistent top bar container */
+        #header-top-bar {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        /* The discreet text that stays visible forever */
+        #header-top-text {
+            color: var(--white);
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            text-align: center;
+            padding: 0 60px; /* Leaves space for the menu button */
+        }
+
+        /* Container for the big fading titles */
+        #header-titles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 60px; /* Starts right below the persistent top bar */
+            left: 0;
+            width: 100%;
+            height: calc(100% - 60px);
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        /* Massive, aesthetic main title */
+        #header-title {
+            color: var(--white);
+            /* Clamp ensures it scales perfectly from mobile to giant 4K monitors */
+            font-size: clamp(40px, 6vw, 85px); 
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+
+        #header-subtitle {
+            color: var(--light-blue);
+            font-size: 22px; 
+            max-width: 900px;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        /* Tiny horizontal scroll progress bar at the bottom of the header */
+        #scroll-progress-container {
+            position: absolute;
+            bottom: 0; left: 0; width: 100%;
+            height: 4px;
+            background: rgba(255,255,255,0.1); 
+            z-index: 3;
+        }
+        #scroll-progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: var(--red); 
+        }
+
+        /* =========================================
+           4. LAYOUT & FULL-SCREEN SECTIONS
+           ========================================= */
+        section {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 40px; 
+            box-sizing: border-box;
+            background-color: var(--bg-paper);
+            border-bottom: 1px solid var(--grid-color);
+            position: relative;
+        }
+
+        /* Alternate background colors */
+        section:nth-child(even) { background-color: var(--white); }
+
+        /* Cover Section Adjustments to ensure first-screen fit */
+        #cover {
+            padding-top: 40vh; /* Exactly matches the initial header height */
+            padding-bottom: 40px;
+            background-color: var(--white); 
+            justify-content: flex-start; /* Flows content tightly from top to bottom */
+            min-height: 100vh; /* Takes full screen at minimum */
+        }
+
+        .content-wrapper {
+            max-width: 1200px; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        /* Cover Logos */
+        .cover-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .logo-placeholder {
+            height: 45px; /* Perfect logo size to save space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-placeholder img {
+            max-height: 100%; 
+            width: auto;
+        }
+
+        /* Split Containers (Left/Right layouts) */
+        .split-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+            width: 100%;
+            justify-content: center;
+        }
+        .split-pane {
+            flex: 1;
+            min-width: 300px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-subtle);
+            text-align: left; 
+            border-top: 4px solid var(--title-color);
+        }
+        .split-pane.left { border-color: var(--blue); }
+        .split-pane.right { border-color: var(--orange); }
+
+        /* =========================================
+           5. TEAM AND LINKEDIN
+           ========================================= */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .team-member {
+            text-align: center;
+            width: 140px;
+            text-decoration: none;
+        }
+        .team-photo-wrapper {
+            position: relative;
+            width: 120px;
+            height: 150px;
+            margin: 0 auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* LinkedIn Overlay using the deep blue header color */
+        .linkedin-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(26, 39, 68, 0.9); /* Exact match for var(--title-color) */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0;
+            transition: 0.3s;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .team-photo-wrapper:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        .team-photo-wrapper:hover .linkedin-overlay { opacity: 1; }
+        .team-name { font-weight: 600; color: var(--title-color); margin-top: 15px; font-size: 16px; display: block;}
+        .team-number { font-size: 13px; color: var(--grey); display: block;}
+
+        /* =========================================
+           6. INTERACTIVE CHARTS (HOVER & 70% MODAL)
+           ========================================= */
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .chart-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: var(--shadow-subtle);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--grid-color);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .chart-card h3 { text-align: center; }
+        
+        .visual-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: #f0f2f5;
+            border: 2px dashed var(--zero-line);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--grey);
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+        }
+        
+        /* Subtle jump effect without colors or text overlays */
+        .visual-placeholder:hover {
+            transform: scale(1.04); 
+            border-color: var(--blue);
+            box-shadow: var(--shadow-hover);
+            z-index: 10;
+        }
+
+        /* Modal Background */
+        .modal {
+            display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.75); backdrop-filter: blur(4px);
+        }
+        #modalContainer {
+            height: 100%; width: 100%; display: flex; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box;
+        }
+        
+        /* Modal Box scaled to 70% of screen */
+        .modal-content {
+            background: var(--white); 
+            padding: 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+            width: 70vw; 
+            height: 70vh; 
+            max-width: 1200px;
+            position: relative;
+            display: flex; align-items: center; justify-content: center;
+        }
+        
+        .close-modal {
+            position: absolute; top: -15px; right: -15px; 
+            background: var(--red); color: var(--white); 
+            width: 40px; height: 40px; border-radius: 50%; 
+            display: flex; justify-content: center; align-items: center;
+            font-size: 24px; cursor: pointer; z-index: 2001; transition: 0.3s;
+            box-shadow: var(--shadow-hover);
+        }
+        .close-modal:hover { transform: scale(1.1); background: darkred; }
+
+        /* =========================================
+           7. PILLARS & VAULT SECTION
+           ========================================= */
+        .pillars-container {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin: 30px 0; width: 100%;
+        }
+        .pillar-card {
+            background: var(--white); border-radius: 10px; box-shadow: var(--shadow-subtle);
+            padding: 30px 20px; width: 250px; text-align: center; border-bottom: 4px solid var(--grid-color);
+            transition: 0.3s; flex: 1; min-width: 250px; max-width: 320px;
+        }
+        .pillar-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+        .pillar-card.credit:hover { border-color: var(--blue); }
+        .pillar-card.energy:hover { border-color: var(--orange); }
+        .pillar-card.human:hover { border-color: var(--green); }
+        .pillar-icon { font-size: 40px; margin-bottom: 15px; }
+        .credit .pillar-icon { color: var(--blue); }
+        .energy .pillar-icon { color: var(--orange); }
+        .human .pillar-icon { color: var(--green); }
+
+        .vault-box {
+            background: var(--title-color); color: var(--white); text-align: center;
+            padding: 40px 20px; border-radius: 12px; margin-top: 40px; width: 100%; max-width: 900px; box-sizing: border-box;
+        }
+        .vault-box h3 { color: var(--white); margin-bottom: 10px;}
+        .vault-btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 28px; text-decoration: none; border-radius: 5px; 
+            font-weight: bold; font-size: 16px; transition: 0.3s; color: var(--white);
+            box-shadow: var(--shadow-subtle);
+        }
+        .vault-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+
+        /* =========================================
+           8. NAVIGATION (SIDE MENU)
+           ========================================= */
+        /* Menu Hamburger Button */
+        .menu-btn {
+            position: fixed; top: 12px; left: 15px; z-index: 1005; 
+            background-color: transparent; color: var(--white);
+            border: 1px solid rgba(255,255,255,0.3); border-radius: 5px; padding: 6px 12px; cursor: pointer;
+            font-size: 16px; font-weight: 600; font-family: var(--font-main);
+            transition: background 0.3s;
+        }
+        .menu-btn:hover { background-color: rgba(255,255,255,0.1); }
+        
+        /* Sidebar container */
+        .sidenav {
+            height: 100%; width: 0; position: fixed; z-index: 2005; top: 0; left: 0;
+            background-color: var(--title-color); overflow-x: hidden; transition: 0.4s; padding-top: 70px;
+            box-shadow: 2px 0 15px rgba(0,0,0,0.5);
+        }
+        .sidenav a.nav-item {
+            padding: 12px 20px 12px 30px; text-decoration: none; font-size: 14px; color: var(--zero-line);
+            display: block; transition: 0.3s; font-weight: 500; border-left: 4px solid transparent;
+        }
+        .sidenav a.nav-item:hover { color: var(--white); background: rgba(255,255,255,0.05); }
+        .sidenav a.nav-item.active-link {
+            color: var(--white); background: rgba(255,255,255,0.1); border-left: 4px solid var(--red); font-weight: bold;
+        }
+        .sidenav .close-btn { position: absolute; top: 0; right: 20px; font-size: 36px; margin-left: 50px; border: none; padding: 5px; color: var(--white); text-decoration: none;}
+
+        /* =========================================
+           9. RESPONSIVE DESIGN (MOBILES/TABLETS)
+           ========================================= */
+        @media (max-width: 992px) {
+            section { padding: 80px 30px; }
+            #header-subtitle { font-size: 18px; }
+        }
+
+        @media (max-width: 768px) {
+            h2 { font-size: 28px; margin-bottom: 25px;}
+            #header-top-text { font-size: 11px; padding: 0 50px; line-height: 1.2; }
+            #header-subtitle { font-size: 16px; }
+            
+            section { padding: 70px 15px 40px 15px; }
+            .split-container { flex-direction: column; gap: 20px; }
+            .chart-grid { grid-template-columns: 1fr; }
+            .pillars-container { flex-direction: column; align-items: center; }
+            .pillar-card { width: 100%; max-width: 100%; }
+            
+            .team-container { gap: 15px; }
+            .team-photo-wrapper { width: 100px; height: 120px; }
+            .team-member { width: 120px; }
+            
+            .narrative-text { font-size: 16px; }
+            .split-pane { padding: 20px; min-width: 100%; box-sizing: border-box; }
+            .modal-content { width: 90vw; height: 85vh; } /* Modals slightly bigger on mobile */
+            
+            .vault-btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <button class="menu-btn" onclick="toggleNav()"><i class="fas fa-bars"></i> Menu</button>
+        
+        <div id="header-top-bar">
+            <span id="header-top-text">LSE - School of Public Policy | Moody's Capstone Project 2026</span>
+        </div>
+
+        <div id="header-titles">
+            <h1 id="header-title">Beyond the Resource Curse</h1>
+            <div id="header-subtitle">
+                The Challenge of Industrial Upgrading in Resource-Rich Emerging Economies;<br>
+                A Dual Econometric and Machine Learning Approach
+            </div>
+        </div>
+
+        <div id="scroll-progress-container">
+            <div id="scroll-progress-bar"></div>
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+        <a href="#cover" class="nav-item">0. The team</a>
+        <a href="#sec-1" class="nav-item">1. Our research</a>
+        <a href="#sec-2" class="nav-item">2. Econometrics and machine learning approaches</a>
+        <a href="#sec-3" class="nav-item">3. The economic complexity framework</a>
+        <a href="#sec-4" class="nav-item">4. Three pillars behind industrial upgrading</a>
+        <a href="#sec-5" class="nav-item">5. Our data</a>
+        <a href="#sec-6" class="nav-item">6. The clustering strategy</a>
+        <a href="#sec-7" class="nav-item">7. Empirical results</a>
+        <a href="#sec-8" class="nav-item">8. The interaction effect</a>
+        <a href="#sec-9" class="nav-item">9. Machine learning insights</a>
+        <a href="#sec-10" class="nav-item">10. Comparative case studies</a>
+        <a href="#sec-11" class="nav-item">11. When the pillars are missing</a>
+        <a href="#sec-12" class="nav-item">12. Good institutions are not enough</a>
+        <a href="#sec-13" class="nav-item">13. Future risk and opportunities</a>
+        <a href="#sec-14" class="nav-item">14. Insights into Action</a>
+    </div>
+
+    <div id="mediaModal" class="modal">
+        <div id="modalContainer">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <h2 style="color:var(--title-color); border:none; margin:0;" id="modal-title">[Graphic Expanded View]</h2>
+            </div>
+        </div>
+    </div>
+
+    <section id="cover" class="scroll-section">
+        <div class="content-wrapper">
+            
+            <div class="cover-logos">
+                <div class="logo-placeholder">
+                    <img src="URL_DEL_LOGO_LSE_AQUI" alt="LSE Logo"> 
+                </div>
+                <div class="logo-placeholder">
+                    <img src="URL_DEL_LOGO_MOODYS_AQUI" alt="Moody's Logo"> 
+                </div>
+            </div>
+            
+            <div class="header-logos" style="margin-top: 15px;">
+                MPA DATA SCIENCE FOR PUBLIC POLICY
+            </div>
+            
+            <h2 style="margin-top: 0; margin-bottom: 20px;">The team</h2>
+
+            <div class="team-container">
+                <a href="LINK_LINKEDIN_AYAAN" target="_blank" class="team-member" title="Go to LinkedIn">
+                    <div class="team-photo-wrapper">
+                        <img src="ayaan.jpg" alt="Ayaan Tigdikar" class="team-photo">
+                        <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
+                    </div>
+                    <span class="team-name">Ayaan Tigdikar</span>
+                    <span class="team-number">59234</span>
+                </a>
+                <a href="LINK_LINKEDIN_CARLOS" target="_blank" class="team-member" title="Go to LinkedIn">
+                    <div class="team-photo-wrapper">
+                        <img src="carlos.jpg" alt="Carlos Gallegos" class="team-photo">
+                        <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
+                    </div>
+                    <span class="team-name">Carlos Gallegos</span>
+                    <span class="team-number">64689</span>
+                </a>
+                <a href="LINK_LINKEDIN_EMILIO" target="_blank" class="team-member" title="Go to LinkedIn">
+                    <div class="team-photo-wrapper">
+                        <img src="emilio.jpg" alt="Emilio Gonzalez" class="team-photo">
+                        <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
+                    </div>
+                    <span class="team-name">Emilio Gonzalez</span>
+                    <span class="team-number">67273</span>
+                </a>
+                <a href="LINK_LINKEDIN_IGNACIO" target="_blank" class="team-member" title="Go to LinkedIn">
+                    <div class="team-photo-wrapper">
+                        <img src="ignacio.jpg" alt="Ignacio Orueta" class="team-photo">
+                        <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
+                    </div>
+                    <span class="team-name">Ignacio Orueta</span>
+                    <span class="team-number">70416</span>
+                </a>
+                <a href="LINK_LINKEDIN_LEO" target="_blank" class="team-member" title="Go to LinkedIn">
+                    <div class="team-photo-wrapper">
+                        <img src="leo.jpg" alt="Leonardo Luksic" class="team-photo">
+                        <div class="linkedin-overlay"><i class="fab fa-linkedin fa-2x"></i><br>Go to LinkedIn</div>
+                    </div>
+                    <span class="team-name">Leonardo Luksic</span>
+                    <span class="team-number">73073</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-1" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHAT DOES MOODY'S WANT TO KNOW?</div>
+            <h2>Our research</h2>
+            
+            <p class="narrative-text">
+                <strong>The project aims to develop a framework that identifies and analyzes the economic indicators, institutional factors, and policy conditions that support or hinder industrial upgrading in resource‐rich emerging markets</strong> 
+            </p>
+
+            <div class="split-container">
+                <div class="split-pane left">
+                    <h3 style="color: var(--blue);">Primary Questions</h3>
+                    <ul style="font-size: 17px; padding-left: 20px; margin-bottom: 0;">
+                        <li>How successful have emerging market economies been at developing value‐added in‐ dustries from natural resource extraction?</li>
+                        <li>What factors explain the divergence across countries?</li>
+                    </ul>
+                </div>
+                <div class="split-pane right">
+                    <h3 style="color: var(--orange);">Secondary Questions</h3>
+                    <ul style="font-size: 17px; padding-left: 20px; margin-bottom: 0;">
+                        <li>How sustainable are these shifts in terms of fiscal revenues, employment and export diversification?</li>
+                        <li>How have they supported or hindered credit quality?</li>
+                        <li>What policy levers and institutional conditions support or hinder the transition?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-2" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">QUANTITATIVE ANALYSIS USING A DUAL APPROACH</div>
+            <h2>Econometrics and machine learning approaches</h2>
+            
+            <p class="narrative-text" style="font-weight: bold; color: var(--blue);">
+                Two approaches providing complementary perspectives to identify key predictors of economic complexity in resource-rich economies beyond theory-driven specifications.
+            </p>
+
+            <div class="split-container">
+                <div class="split-pane left" style="text-align: center;">
+                    <i class="fas fa-chart-line fa-3x" style="color: var(--blue); margin-bottom: 15px;"></i>
+                    <h3 style="color: var(--blue); text-align: center;">Theory-Driven Econometrics</h3>
+                    <p style="font-size: 16px; text-align: center; margin-bottom: 10px;"> </p>
+                    <p style="font-size: 15px; text-align: center; color: var(--dark-color); font-weight: bold;">
+                        Econometric models based on analysis in investment theory
+                    </p>
+                </div>
+                <div class="split-pane right" style="text-align: center;">
+                    <i class="fas fa-network-wired fa-3x" style="color: var(--orange); margin-bottom: 15px;"></i>
+                    <h3 style="color: var(--orange); text-align: center;">Data-Driven Machine Learning</h3>
+                    <p style="font-size: 16px; text-align: center; margin-bottom: 15px;"></p>
+                    
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">LASSO</span>
+                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">Ridge Regression</span>
+                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">Elastic Net</span>
+                        <span style="background: rgba(212, 133, 59, 0.1); border: 1px solid var(--orange); color: var(--orange); padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 13px;">Random Forest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-3" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
+            <h2>The economic complexity framework</h2>
+            
+            <p class="narrative-text" style="text-align: left;">
+                The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
+                <strong>How it works:</strong> Based on trade data using two key matrix measures: <strong>Diversity</strong> (number of products exported) and <strong>Ubiquity</strong> (number of countries exporting those products).
+            </p>
+
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <h3>ECI vs Income Evolution</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('ECI vs Income Evolution')">
+                        [Space for Visual: ECI vs Income Evolution]
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>An interesting case</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Azerbaijan: GDP vs ECI')">
+                        [Space for Visual: Azerbaijan GDP vs ECI]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-4" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHICH FACTORS DRIVE ECONOMIC COMPLEXITY ACROSS COUNTRIES?</div>
+            <h2>Three pillars behind industrial upgrading</h2>
+            <p class="narrative-text">
+                <strong></strong> Our findings show that three pillars dominate the trajectory of a resource-rich country, needed to sustain long‐term productive diversification and value‐added in‐ dustries"
+            </p>
+            <div class="pillars-container">
+                <div class="pillar-card credit">
+                    <i class="fas fa-money-check-alt pillar-icon"></i>
+                    <h4>Financial Depth</h4>
+                    <p style="font-size: 15px; color: var(--grey);">Domestic Credit to Private Sector</p>
+                </div>
+                <div class="pillar-card energy">
+                    <i class="fas fa-bolt pillar-icon"></i>
+                    <h4>Energy Infrastructure</h4>
+                    <p style="font-size: 15px; color: var(--grey);">Electricity Access</p>
+                </div>
+                <div class="pillar-card human">
+                    <i class="fas fa-user-graduate pillar-icon"></i>
+                    <h4>Human Capital</h4>
+                    <p style="font-size: 15px; color: var(--grey);">Education & Skill Index</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-5" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHAT DATA DO WE USE?</div>
+            <h2>Our data</h2>
+            <p class="narrative-text">
+                <strong></strong> We analyzed 54 resource-rich economies over 24 years (1995–2019)
+            </p>
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <h3>Table 3.1: Data Variables</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Table 3.1: Data Variables')">[Space for Visual: Table 3.1]</div>
+                </div>
+                <div class="chart-card">
+                    <h3>Figure 3.1: Data Sources</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 3.1: Data Sources')">[Space for Visual: Figure 3.1]</div>
+                </div>
+                <div class="chart-card">
+                    <h3>Figure 3.3: ECI Correlation</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 3.3: ECI Correlation')">[Space for Visual: Figure 3.3]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-6" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">HOW DO WE COMPARE STRUCTURAL PEERS?</div>
+            <h2>The clustering strategy</h2>
+            <p class="narrative-text">
+                <strong></strong> To analyze 54 diverse economies, we used K-means clustering to group them by 'Resource profile' and Principal Component Analysis to reduce dimensionality. This is useful to compare a a country against its structural peers.
+            </p>
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <h3>Figure C.1: PCA Heatmap</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure C.1: PCA Heatmap')">[Space for Visual: Figure C.1]</div>
+                </div>
+                <div class="chart-card">
+                    <h3>Figure 3.4: K-means Clusters</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 3.4: K-means Clusters')">[Space for Visual: Figure 3.4]</div>
+                </div>
+                <div class="chart-card">
+                    <h3>Figure 3.5: Map (1995)</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 3.5: Map (1995)')">[Space for Visual: Figure 3.5]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-7" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHAT DO THE MODELS REVEAL?</div>
+            <h2>Empirical results</h2>
+            
+            <div class="split-container">
+                <div class="split-pane left">
+                    <h3 style="color: var(--blue);">Step 1: Panel Data Econometrics</h3>
+                    <div style="background: var(--bg-plot); padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--grid-color); text-align: center; overflow-x: auto;">
+                        <p style="font-weight: bold; margin-bottom: 10px; color: var(--dark-color);">Model Specification</p>
+                        $$
+                        \begin{aligned}
+                        \log(ECI_{it}) = \beta_0 &+ \beta_1 \log(HCI_{it}) + \beta_2 \log(GFCF_{it})\\ &+ \beta_3 \log(Prod_{it}) + \text{Controls} + \epsilon_{it}
+                        \end{aligned}
+                        $$
+                    </div>
+                    <div class="visual-placeholder" style="height: 150px;" onclick="openPlaceholder('Table 3.3. Regression results')">[Space for Visual: Table 3.3. Regression results]</div>
+                </div>
+                
+                <div class="split-pane right">
+                    <h3 style="color: var(--orange);">Step 2: ML Regularization</h3>
+                    <p class="narrative-text" style="text-align: left; font-size: 16px;">
+                        <strong></strong> We used LASSO, Ridge and Elastic Net to reduce noise. We found that traditional macro variables like trade openness often drop out, while structural indicators like domestic credit penetration are the most robust predictors.
+                    </p>
+                    <div class="visual-placeholder" style="height: 200px; margin-bottom: 0;" onclick="openPlaceholder('Figure 3.8. LASSO, Ridge and Elastic Net model agreement')">[Space for Visual: Figure 3.8. LASSO, Ridge and Elastic Net model agreement]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-8" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">THE INTERACTION BETWEEN HUMAN CAPITAL AND RESOURCE WEALTH MATTERS</div>
+            <h2>The interaction effect</h2>
+            <p class="narrative-text">
+                <strong></strong> Our econometric results prove that Human Capital impact is magnified in resource-intensive countries."
+            </p>
+            <div class="chart-card" style="max-width: 900px; margin: 0 auto; width: 100%;">
+                <h3>Interaction Plot (HCI x Production)</h3>
+                <div class="visual-placeholder" style="height: 400px;" onclick="openPlaceholder('ECI and HCI')">
+                    [Space for Visual: ECI and HCI]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-9" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHICH VARIABLES MATTER MOST?</div>
+            <h2>Machine learning insights</h2>
+            <p class="narrative-text">
+                <strong></strong> By observing ECI levels out-of-sample—reveal ML reveals that domestic credit is as a key factor, absent from traditional theory.
+            </p>
+            <div class="chart-card" style="max-width: 900px; margin: 0 auto; width: 100%;">
+                <h3>Figure 3.10. Random Forest feature importance</h3>
+                <div class="visual-placeholder" style="height: 350px;" onclick="openPlaceholder('Figure 3.10. Random Forest feature importance')">
+                    [Space for Visual: Figure 3.10. Random Forest feature importance]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-10" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">HOW DO THESE FINDINGS TRANSLATE ACROSS DIFFERENT COUNTRY CONTEXTS?</div>
+            <h2>Comparative case studies</h2>
+            <div class="chart-card" style="margin-bottom: 20px; width: 100%;">
+                <div class="visual-placeholder" style="height: 300px;" onclick="openPlaceholder('Comparative Dashboard')">
+                    [Space for Visual: Summary table comparing the three pillars across Congo, Azerbaijan, and Chile]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-11" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHAT HAPPENS WHEN RESOURCE WEALTH IS NOT SUPPORTED BY STRONG ECONOMIC FOUNDATIONS?</div>
+            <h2>Why do these three pillars matter?</h2>
+            
+            <div class="split-container">
+                <div class="split-pane" style="border-color: var(--red);">
+                    <h3 style="color: var(--red);">Republic of Congo (ROC) – The Triple Deficit</h3>
+                    <p><strong></strong> Congo illustrates what our model predicts, when all three pillars fail, ECI collapses regardless of oil wealth</p>
+                    <ul style="font-size: 16px;">
+                        <li>50% population with electricity access</li>
+                        <li>13% paved roads</li>
+                        <li>Low HCI scores & Minimal private credit</li>
+                    </ul>
+                    <div class="visual-placeholder" style="height: 150px; margin-top: 15px;" onclick="openPlaceholder('Infographic ROC')">[Space for Visual: Infographic]</div>
+                </div>
+
+                <div class="split-pane" style="border-color: var(--gold);">
+                    <h3 style="color: var(--gold);">Azerbaijan: The Dutch Disease </h3>
+                    <p><strong></strong> Azerbaijan and Malaysia started with similar resources. Malaysia used its wealth to build a manufacturing base, Azerbaijan did not.</p>
+                    <div class="visual-placeholder" style="height: 200px; margin-top: 15px;" onclick="openPlaceholder('Figure 4.2. ECI trajectory: Azerbaijan and comparators.')">[Space for Visual: Figure 4.2. ECI trajectory: Azerbaijan and comparators.]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-12" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHY CAN STRONG INSTITUTIONS FAIL TO DRIVE VALUE-ADDED INDUSTRIAL UPGRADING?</div>
+            <h2>Beyond just good institutions</h2>
+            <p class="narrative-text">
+                <strong></strong> Chile is the most nuanced case. Best institutions in the region, yet complexity is falling because it lacks R&D and high-tier human capital.
+            </p>
+            
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <h3 style="font-size: 18px;">Figure 4.4. Regional distribution of mineral production value</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 4.4. Regional distribution of mineral production value')">
+                        [Space for Visual: Figure 4.4]
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3 style="font-size: 18px;">Figure 4.5. Top producing facilities by estimated annual output value (USD)</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 4.5. Top producing facilities by estimated annual output value (USD)')">
+                        [Space for Visual: Figure 4.5]
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3 style="font-size: 18px;">Figure 4.6. Mineral export destinations by value</h3>
+                    <div class="visual-placeholder" onclick="openPlaceholder('Figure 4.6. Mineral export destinations by value')">
+                        [Space for Visual: Figure 4.6]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-13" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHO IS STRENGTHENING THEIR ECONOMIC FOUNDATIONS?</div>
+            <h2>Future risk and opportunities</h2>
+            <p class="narrative-text">
+                <strong></strong> Based on current trajectories in our three pillars, we can project which country are successfully de-risking their economies and which are becoming more vulnerable to commodity shocks
+            </p>
+            <div class="chart-card" style="width: 100%; max-width: 1000px; margin: 0 auto;">
+                <h3 style="font-size: 20px;">Figure 3.13. Projected ECI trajectories, top improving and declining countries (2020–2030)</h3>
+                <div class="visual-placeholder" style="height: 400px;" onclick="openPlaceholder('Figure 3.13. Projected ECI trajectories, top improving and declining countries (2020–2030)\nNote: Solid lines show observed ECI (1995–2019); dashed lines show model projections.')">
+                    [Space for Visual: Figure 3.13. Projected ECI trajectories...]<br><br>
+                    <span style="font-size: 13px; font-weight: normal; color: var(--dark-color);">Note: Solid lines show observed ECI (1995–2019); dashed lines show model projections.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-14" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">THREE LEVERS TO TRACK THE WINNERS OF THE NEXT DECADE</div>
+            <h2>Insights into Action</h2>
+            
+            <div class="chart-card" style="margin-bottom: 30px; width: 100%;">
+                <div class="visual-placeholder" style="height: 200px; margin-bottom: 0;" onclick="openPlaceholder('Matrix of Actionable Points')">
+                    [Space for Visual if works]
+                </div>
+            </div>
+            
+            <div class="pillars-container" style="margin-bottom: 0;">
+                <div class="pillar-card">
+                    <h4 style="color: var(--title-color);">1. Infraestructure is key</h4>
+                    <p style="font-size: 15px;">text</p>
+                </div>
+                <div class="pillar-card">
+                    <h4 style="color: var(--title-color);">2. Financial Depth</h4>
+                    <p style="font-size: 15px;">Monitor private sector credit as a filter for diversification capacity.</p>
+                </div>
+                <div class="pillar-card">
+                    <h4 style="color: var(--title-color);">3. Human Capital relevance</h4>
+                    <p style="font-size: 15px;">Evaluate HCI as an interactive force with resource intensity.</p>
+                </div>
+            </div>
+
+            <p class="narrative-text" style="margin-top: 30px;">
+                <strong>Closing statement</strong> text
+            </p>
+
+            <div class="vault-box">
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="URL_DEL_REPORTE_PDF_AQUI" target="_blank" class="vault-btn" style="background: var(--red);">
+                        <i class="fas fa-file-pdf"></i> Access Full Report PDF
+                    </a>
+                    <a href="URL_DEL_REPOSITORIO_GITHUB_AQUI" target="_blank" class="vault-btn" style="background: var(--dark-color);">
+                        <i class="fab fa-github fa-lg"></i> View GitHub Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Side Menu Logic
+        function toggleNav() {
+            var nav = document.getElementById("mySidenav");
+            nav.style.width = (nav.style.width === "280px") ? "0" : "280px";
+        }
+
+        // Mathematical Scroll Logic (Syncs header shrink exactly to scroll pixels)
+        const header = document.getElementById('main-header');
+        const titles = document.getElementById('header-titles');
+        const progressBar = document.getElementById('scroll-progress-bar');
+        const sections = document.querySelectorAll('.scroll-section');
+        const navLinks = document.querySelectorAll('.sidenav a.nav-item');
+
+        function handleScroll() {
+            let scrollY = window.scrollY || document.documentElement.scrollTop;
+            
+            // --- 1. Dynamic Header Shrink Logic ---
+            let vh = window.innerHeight;
+            let initialHeight = vh * 0.40; // 40vh initial height
+            let finalHeight = 60; // Locked sticky bar height
+            let shrinkAmount = initialHeight - finalHeight;
+            
+            // Calculate new height pixel by pixel
+            let newHeight = initialHeight - scrollY;
+            
+            if (newHeight <= finalHeight) {
+                // Header is fully shrunk
+                newHeight = finalHeight;
+                titles.style.opacity = 0;
+                titles.style.pointerEvents = 'none';
+            } else {
+                // Header is currently shrinking
+                let progress = (newHeight - finalHeight) / shrinkAmount;
+                titles.style.opacity = progress;
+                titles.style.pointerEvents = 'auto';
+            }
+            
+            header.style.height = newHeight + 'px';
+
+            // --- 2. Horizontal Scroll Progress Bar ---
+            let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolledProgress = (scrollY / totalHeight) * 100;
+            progressBar.style.width = scrolledProgress + "%";
+
+            // --- 3. Highlight Current Section in Menu ---
+            let current = '';
+            sections.forEach(sec => {
+                const sectionTop = sec.offsetTop;
+                const sectionHeight = sec.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = sec.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active-link');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active-link');
+                }
+            });
+        }
+
+        // Listen for scroll and resize events to update the UI
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+        // Initial call on page load
+        handleScroll();
+
+
+        // Modal (Float Box) Logic for viewing charts
+        var modal = document.getElementById("mediaModal");
+        var container = document.getElementById("modalContainer");
+
+        function openPlaceholder(title) {
+            modal.style.display = "block";
+            document.getElementById("modal-title").innerText = "[ Expanded: " + title + " ]";
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Closes modal or menu if clicked outside
+        window.onclick = function(event) {
+            // Graphic Modal
+            if (event.target == container || event.target == modal) {
+                closeModal();
+            }
+            // Side Menu
+            var nav = document.getElementById("mySidenav");
+            var menuBtn = document.querySelector(".menu-btn");
+            if (nav.style.width === "280px" && !nav.contains(event.target) && !menuBtn.contains(event.target)) {
+                nav.style.width = "0";
+            }
+        }
+    </script>
+</body>
+</html>
