@@ -572,149 +572,6 @@
             margin: 0;
             font-size: 17px;
         }
-
-        /* =========================================
-           10. LITERATURE FLOW TIMELINE
-           ========================================= */
-        .flow-container {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            width: 100%;
-            max-width: 1150px;
-            position: relative;
-            margin-bottom: 30px;
-        }
-        
-        @media (min-width: 992px) {
-            .flow-container {
-                flex-direction: row;
-                align-items: stretch;
-                justify-content: space-between;
-                gap: 25px;
-            }
-        }
-
-        .flow-step {
-            flex: 1;
-            background: var(--white);
-            border-radius: 12px;
-            padding: 30px 25px;
-            box-shadow: var(--shadow-subtle);
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 5px solid;
-            z-index: 2;
-        }
-
-        .flow-step:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        /* Colores para cada paso */
-        .step-1 { border-color: var(--blue); }
-        .step-2 { border-color: var(--orange); }
-        .step-3 { border-color: var(--red); }
-        .step-4 { border-color: var(--green); }
-
-        .step-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: var(--white);
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .step-1 .step-icon { background-color: var(--blue); }
-        .step-2 .step-icon { background-color: var(--orange); }
-        .step-3 .step-icon { background-color: var(--red); }
-        .step-4 .step-icon { background-color: var(--green); }
-
-        /* Flechas de flujo Izquierda a Derecha (Desktop) */
-        @media (min-width: 992px) {
-            .flow-step:not(:last-child)::after {
-                content: '\f054'; /* FontAwesome Chevron Right */
-                font-family: 'Font Awesome 6 Free';
-                font-weight: 900;
-                position: absolute;
-                top: 50%;
-                right: -18px;
-                transform: translateY(-50%);
-                font-size: 24px;
-                color: var(--grid-color);
-                z-index: 10;
-            }
-        }
-
-        /* Flechas de flujo Arriba a Abajo (Mobile) */
-        @media (max-width: 991px) {
-            .flow-step:not(:last-child)::after {
-                content: '\f078'; /* FontAwesome Chevron Down */
-                font-family: 'Font Awesome 6 Free';
-                font-weight: 900;
-                position: absolute;
-                bottom: -22px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 24px;
-                color: var(--grid-color);
-                z-index: 10;
-            }
-        }
-
-        .flow-author {
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--grey);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .flow-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: var(--title-color);
-            margin-bottom: 15px;
-            line-height: 1.3;
-        }
-
-        .flow-desc {
-            font-size: 15px;
-            color: var(--dark-color);
-            margin-bottom: 15px;
-            flex-grow: 1;
-        }
-
-        .flow-mechanism {
-            font-style: italic;
-            color: var(--title-color);
-            font-weight: 600;
-            font-size: 13px !important;
-            margin-top: auto;
-            padding-top: 15px;
-            border-top: 1px dashed var(--grid-color);
-        }
-
-        .synthesis-box {
-            background: rgba(74, 111, 165, 0.08);
-            border-left: 5px solid var(--blue);
-            padding: 25px;
-            border-radius: 0 12px 12px 0;
-            width: 100%;
-            max-width: 1150px;
-            margin-top: 10px;
-            box-shadow: inset 0 0 0 1px rgba(74, 111, 165, 0.1);
-        }
-        .synthesis-box p { margin: 0; font-size: 17px; }
     </style>
 </head>
 <body>
@@ -745,8 +602,8 @@
         <a href="#sec-1" class="nav-item">1. Our Research</a>
         <a href="#sec-2" class="nav-item">2. The Resource Curse Is Conditional</a>
         <a href="#sec-3" class="nav-item">3. Econometrics And Machine Learning Approaches</a>
-        <a href="#sec-4" class="nav-item">4. The Economic Complexity Framework</a>
-        <a href="#sec-5" class="nav-item">5. Three Pillars Behind Industrial Upgrading</a>
+        <a href="#sec-4" class="nav-item">4. Three Pillars Behind Industrial Upgrading</a>
+        <a href="#sec-5" class="nav-item">5. The Economic Complexity Framework</a>
         <a href="#sec-6" class="nav-item">6. Our Data</a>
         <a href="#sec-7" class="nav-item">7. The Clustering Strategy</a>
         <a href="#sec-8" class="nav-item">8. Empirical Results</a>
@@ -833,18 +690,18 @@
 
     <section id="sec-1" class="scroll-section">
         <div class="content-wrapper">
-            <div class="header-logos">WHAT DOES MOODY'S WANT TO KNOW?</div>
+            <div class="header-logos">MOTIVATION AND SCOPE</div>
             <h2>Our Research</h2>
             
             <p class="narrative-text">
-                <strong>The project aims to develop a framework that identifies and analyzes the economic indicators, institutional factors, and policy conditions that support or hinder industrial upgrading in resource‐rich emerging markets</strong> 
+                <strong>Resource wealth should accelerate development, yet most resource-rich emerging economies remain trapped in low-complexity exports.</strong> 
             </p>
 
             <div class="split-container">
                 <div class="split-pane left">
                     <h3 style="color: var(--blue);">Primary Questions</h3>
                     <ul style="font-size: 17px; padding-left: 20px; margin-bottom: 0;">
-                        <li>How successful have emerging market economies been at developing value‐added in‐ dustries from natural resource extraction?</li>
+                        <li>How successful have emerging market economies been at developing value‐added in‐dustries from natural resource extraction?</li>
                         <li>What factors explain the divergence across countries?</li>
                     </ul>
                 </div>
@@ -865,82 +722,109 @@
             <div class="header-logos">FROM DETERMINISM TO CONDITIONAL MECHANISMS</div>
             <h2>The Resource Curse Is Conditional</h2>
             <p class="narrative-text">The debate has shifted from whether resources harm growth to <strong>identifying the conditions under which they do.</strong></p>
-            
-            <div class="flow-container">
-                <div class="flow-step step-1">
-                    <span class="flow-author">Mehlum, Moene &amp; Torvik (2006)</span>
-                    <div class="flow-title">Institutions determine outcomes</div>
-                    <div class="flow-desc">Resources impede growth only where institutions are <strong>"grabber-friendly"</strong>. Where rule of law is strong, resources accelerate growth.</div>
-                    <div class="flow-mechanism">Channel: Institutional quality mediates</div>
+            <div class="lit-timeline">
+                <div class="lit-item item-mehlum">
+                    <div class="lit-card">
+                        <span class="author-tag">Mehlum, Moene &amp; Torvik (2006)</span>
+                        <h3>Institutions determine outcomes</h3>
+                        <p>Resources impede growth only where institutions are <strong>"grabber-friendly"</strong>. Where rule of law is strong, resources accelerate growth.</p>
+                        <p class="mechanism"></p>
+                    </div>
                 </div>
-                
-                <div class="flow-step step-2">
-                    <span class="flow-author">Venables (2016)</span>
-                    <div class="flow-title">Consumption crowds out investment</div>
-                    <div class="flow-desc">Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>.</div>
-                    <div class="flow-mechanism">Channel: Intertemporal allocation failure</div>
+                <div class="lit-item item-venables">
+                    <div class="lit-card">
+                        <span class="author-tag">Venables (2016)</span>
+                        <h3>Consumption crowds out investment</h3>
+                        <p>Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>. Adjusted net savings are strongly negative.</p>
+                        <p class="mechanism"></p>
+                    </div>
                 </div>
-
-                <div class="flow-step step-3">
-                    <span class="flow-author">Van der Ploeg &amp; Poelhekke (2009)</span>
-                    <div class="flow-title">Volatility is the indirect curse</div>
-                    <div class="flow-desc">Resource abundance boosts growth directly but <strong>undermines it through macroeconomic volatility</strong>, shifting investment toward short-term projects.</div>
-                    <div class="flow-mechanism">Channel: Fiscal instability &rarr; underinvestment</div>
+                <div class="lit-item item-ploeg">
+                    <div class="lit-card">
+                        <span class="author-tag">Van der Ploeg &amp; Poelhekke (2009)</span>
+                        <h3>Volatility is the indirect curse</h3>
+                        <p>Resource abundance boosts growth directly but <strong>undermines it through macroeconomic volatility</strong>, shifting investment toward short-term, low-return projects.</p>
+                        <p class="mechanism"></p>
+                    </div>
                 </div>
-
-                <div class="flow-step step-4">
-                    <span class="flow-author">Isham et al. (2005)</span>
-                    <div class="flow-title">Resource type matters</div>
-                    <div class="flow-desc"><strong>Point-source</strong> resources (oil, diamonds) concentrate rents among elites. <strong>Diffuse</strong> resources spread benefits more broadly.</div>
-                    <div class="flow-mechanism">Channel: Rent concentration &rarr; elite capture</div>
+                <div class="lit-item item-isham">
+                    <div class="lit-card">
+                        <span class="author-tag">Isham et al. (2005)</span>
+                        <h3>Resource type matters</h3>
+                        <p><strong>Point-source</strong> resources (oil, diamonds) concentrate rents among elites. <strong>Diffuse</strong> resources (agriculture, forestry) spread benefits more broadly.</p>
+                        <p class="mechanism"></p>
+                    </div>
                 </div>
             </div>
-
             <div class="synthesis-box">
                 <p><strong>Our approach:</strong> We test Venables' investment hypothesis using Mehlum et al.'s interaction methodology, while ML techniques explore which structural predictors emerge beyond the theory-driven specification.</p>
             </div>
         </div>
     </section>
-
-
-
     <section id="sec-3" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">QUANTITATIVE ANALYSIS USING A DUAL APPROACH</div>
             <h2>Econometrics And Machine Learning Approaches</h2>
             
             <p class="narrative-text" style="font-weight: bold; color: var(--blue);">
-                Two approaches providing complementary perspectives to identify key predictors of economic complexity in resource-rich economies beyond theory-driven specifications.
+                Two approaches providing complementary perspectives to identify key predictors of industrial upgrading.
             </p>
 
             <div class="split-container">
                 <div class="split-pane left" style="text-align: center;">
                     <i class="fas fa-chart-line fa-3x" style="color: var(--blue); margin-bottom: 15px;"></i>
-                    <h3 style="color: var(--blue); text-align: center;">Theory-Driven Econometrics</h3>
+                    <h3 style="color: var(--blue); text-align: center;">Econometrics</h3>
                     <p style="font-size: 16px; text-align: center; margin-bottom: 10px;"> </p>
                     <p style="font-size: 15px; text-align: center; color: var(--dark-color); font-weight: bold;">
-                        Econometric models based on analysis in investment theory
+                        Econometric models based on analysis in investment theory. Testing intertemporal investment theory of Venables (2016), using identification inspired by Mehlum et al. (2006).
                     </p>
                 </div>
                 <div class="split-pane right" style="text-align: center;">
                     <i class="fas fa-network-wired fa-3x" style="color: var(--orange); margin-bottom: 15px;"></i>
-                    <h3 style="color: var(--orange); text-align: center;">Data-Driven Machine Learning</h3>
+                    <h3 style="color: var(--orange); text-align: center;">Machine Learning</h3>
                     <p style="font-size: 15px; text-align: center; color: var(--dark-color); font-weight: bold; margin-bottom: 0;">
-                        Linear regularisation techniques (LASSO, RIDGE, Elastic Net) along with non-linear approaches (Random Forest) for theory-agnostic modelling.
+                        Employed supervised linear regularisation techniques (LASSO, RIDGE, Elastic Net) along with unsupervised non-linear approaches (Random Forest and PCA) to take a theory-agnostic modelling.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sec-4" class="scroll-section">
+        <section id="sec-4" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHICH FACTORS DRIVE DIVERSIFICATION ACROSS COUNTRIES?</div>
+            <h2>Three Pillars Behind Industrial Upgrading</h2>
+            <p class="narrative-text">
+                <strong></strong> Across both our econometric and ML models, three structural variables consistently emerge as the strongest predictors of sustained diversification and development of value-added industries
+            </p>
+            <div class="pillars-container">
+                <div class="pillar-card credit">
+                    <i class="fas fa-money-check-alt pillar-icon"></i>
+                    <h4>Financial Depth</h4>
+                    <p style="font-size: 15px; color: var(--grey);">Domestic Credit to Private Sector</p>
+                </div>
+                <div class="pillar-card energy">
+                    <i class="fas fa-bolt pillar-icon"></i>
+                    <h4>Energy Infrastructure</h4>
+                    <p style="font-size: 15px; color: var(--grey);">Electricity Access</p>
+                </div>
+                <div class="pillar-card human">
+                    <i class="fas fa-user-graduate pillar-icon"></i>
+                    <h4>Human Capital</h4>
+                    <p style="font-size: 15px; color: var(--grey);">Education & Skills Index</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-5" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
             <h2>The Economic Complexity Framework</h2>
             
             <p class="narrative-text" style="text-align: left;">
                 The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
-                <strong>How it works:</strong> Based on trade data using two key matrix measures: <strong>Diversity</strong> (number of products exported) and <strong>Ubiquity</strong> (number of countries exporting those products).
+                <strong>How it works:</strong> Based on trade data to calculate two key measures: <strong>Diversity</strong> (number of products exported) and <strong>Ubiquity</strong> (number of countries exporting those products).
             </p>
 
             <div class="chart-grid">
@@ -961,33 +845,6 @@
                     <div class="visual-placeholder" onclick="openPlaceholder('Additional ECI Analysis')">
                         [Space for Visual: Third Graphic]
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="sec-5" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">WHICH FACTORS DRIVE ECONOMIC COMPLEXITY ACROSS COUNTRIES?</div>
-            <h2>Three Pillars Behind Industrial Upgrading</h2>
-            <p class="narrative-text">
-                <strong></strong> Our findings show that three pillars dominate the trajectory of a resource-rich country, needed to sustain long‐term productive diversification and value‐added industries.
-            </p>
-            <div class="pillars-container">
-                <div class="pillar-card credit">
-                    <i class="fas fa-money-check-alt pillar-icon"></i>
-                    <h4>Financial Depth</h4>
-                    <p style="font-size: 15px; color: var(--grey);">Domestic Credit to Private Sector</p>
-                </div>
-                <div class="pillar-card energy">
-                    <i class="fas fa-bolt pillar-icon"></i>
-                    <h4>Energy Infrastructure</h4>
-                    <p style="font-size: 15px; color: var(--grey);">Electricity Access</p>
-                </div>
-                <div class="pillar-card human">
-                    <i class="fas fa-user-graduate pillar-icon"></i>
-                    <h4>Human Capital</h4>
-                    <p style="font-size: 15px; color: var(--grey);">Education & Skill Index</p>
                 </div>
             </div>
         </div>
