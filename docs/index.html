@@ -724,7 +724,7 @@
                 <div class="split-pane left">
                     <h3 style="color: var(--blue);">Primary Questions</h3>
                     <ul>
-                        <li>How successful have emerging market economies been at developing value‐added in‐dustries from natural resource extraction?</li>
+                        <li>How successful have emerging market economies been at developing value‐added industries from natural resource extraction?</li>
                         <li>What factors explain the divergence across countries?</li>
                     </ul>
                 </div>
@@ -874,7 +874,7 @@
             <div class="header-logos">WHAT DATA DO WE USE?</div>
             <h2>Our Data</h2>
             <p class="narrative-text">
-                We analyzed 54 resource-rich economies over 24 years (1995–2019).
+                54 resource-rich economies over 24 years (1995–2019).
             </p>
             <div class="chart-grid">
                 
@@ -908,7 +908,7 @@
             <div class="header-logos">HOW DO WE COMPARE STRUCTURAL PEERS?</div>
             <h2>The Clustering Strategy</h2>
             <p class="narrative-text">
-                To analyze 54 diverse economies, we used K-means clustering to group them by 'Resource profile' and Principal Component Analysis to reduce dimensionality. This is useful to compare a country against its structural peers.
+                We used PCA to compress 21 resource production variables into two dimensions, then K-means clustering (K=5) to group countries by extraction profile. This allows comparison against structural peers.
             </p>
             <div class="chart-grid">
                 
@@ -938,6 +938,9 @@
             <div class="split-container">
                 <div class="split-pane left">
                     <h3 style="color: var(--blue);">Step 1: Panel Data Econometrics</h3>
+                    <p style="text-align: left;"> 
+                        Panel OLS with country-clustered standard errors. Controls include political stability, rule of law, trade openness, and forestry rents.
+                    </p>
                     <div style="background: var(--bg-plot); padding: 25px; border-radius: 8px; margin-bottom: 25px; border: 1px solid var(--grid-color); text-align: center; overflow-x: auto;">
                         <p style="font-weight: bold; margin-bottom: 15px; color: var(--dark-color);">Model Specification</p>
                         $$
@@ -969,7 +972,7 @@
             <div class="header-logos">THE INTERACTION BETWEEN HUMAN CAPITAL AND RESOURCE WEALTH MATTERS</div>
             <h2>The Interaction Effect</h2>
             <p class="narrative-text">
-                Our econometric results prove that Human Capital impact is magnified in resource-intensive countries.
+                The association between human capital and complexity is stronger in countries with more intensive resource production, consistent with Venables (2016): investment returns are greatest where the gap between current and optimal capital stocks is widest.
             </p>
             <div class="chart-card" style="max-width: 1000px; margin: 0 auto; width: 100%;">
                 <h3>Interaction ECI and Human Capital</h3>
@@ -1193,7 +1196,7 @@
             <div class="header-logos">WHO IS STRENGTHENING THEIR ECONOMIC FOUNDATIONS?</div>
             <h2>Future Risk and Opportunities</h2>
             <p class="narrative-text">
-                Based on current trajectories in our three pillars, we can project which country are successfully de-risking their economies and which are becoming more vulnerable to commodity shocks.
+                Based on current trajectories in our three pillars, we project which countries are strengthening their productive foundations and which which are becoming more vulnerable to commodity shocks.
             </p>
             <div class="chart-card" style="width: 100%; max-width: 1200px; margin: 0 auto;">
                 <h3 style="font-size: 24px;">Projected ECI trajectories, top improving and declining countries (2020–2030)</h3>
