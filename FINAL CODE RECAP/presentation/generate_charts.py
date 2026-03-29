@@ -978,85 +978,37 @@ save(figZ, "09_eci_forecast_trajectories.html")
 # ══════════════════════════════════════════════════════════════════════════════
 print("10 ECI trajectory comparators …")
 
-CHART_GROUPS = [
-    dict(label="Azerbaijan vs comparators",
-         focus="AZE", comps=["MYS","UZB","IRQ"],
-         colors={"AZE":"#4a6fa5","MYS":"#2e7d4a","UZB":"#c97030","IRQ":"#8B5CF6"}),
-    dict(label="Congo vs comparators",
-         focus="COG", comps=["MYS","AZE","AGO"],
-         colors={"COG":"#c23a3a","MYS":"#2e7d4a","AZE":"#4a6fa5","AGO":"#c97030"}),
-    dict(label="Chile vs comparators",
-         focus="CHL", comps=["ZMB","NOR", "BWA"],
-         colors={"CHL":"#c23a3a","ZMB":"#8B5CF6","NOR":"#c97030"}),
-]
-
+colors = {"CHL": "#c23a3a", "AZE": "#4a6fa5", "COG": "#2e7d4a"}
 CODE_TO_NAME = master.groupby("Country Code")["Country Name"].first().to_dict()
 
-# Use full master (not include_lst filtered) so non-sample comparators like NOR are available
 traj_panel = master[master["Year"].between(1995, 2019)].dropna(
     subset=["Economic Complexity Index"]).copy()
 
-def traj_traces(group, visible):
-    traces = []
-    all_cc_g = [group["focus"]] + group["comps"]
-    colors_g  = group["colors"]
-    for cc in all_cc_g:
-        sub = traj_panel[traj_panel["Country Code"] == cc].sort_values("Year")
-        if len(sub) == 0:
-            continue
-        nm = CODE_TO_NAME.get(cc, cc)
-        col = colors_g.get(cc, "#aaa")
-        w = 2.8 if cc == group["focus"] else 1.8
-        traces.append(go.Scatter(
-            x=sub["Year"], y=sub["Economic Complexity Index"],
-            mode="lines+markers", name=nm, visible=visible,
-            line=dict(color=col, width=w),
-            marker=dict(size=4 if cc != group["focus"] else 5, color=col),
-            hovertemplate=f"<b>{nm}</b> · %{{x}}: ECI=%{{y:.3f}}<extra></extra>",
-        ))
-    return traces
-
-# Build all traces
-all_traces = []
-trace_groups = []
-for gi, grp in enumerate(CHART_GROUPS):
-    vis = True if gi == 0 else False
-    t   = traj_traces(grp, vis)
-    trace_groups.append((len(all_traces), len(all_traces)+len(t)))
-    all_traces.extend(t)
-
-fig10 = go.Figure(data=all_traces)
-
-# Dropdown buttons
-buttons = []
-for gi, grp in enumerate(CHART_GROUPS):
-    vis = [False]*len(all_traces)
-    s, e = trace_groups[gi]
-    for k in range(s, e):
-        vis[k] = True
-    buttons.append(dict(
-        label=grp["label"], method="update",
-        args=[{"visible": vis}, {"title.text": f"ECI Trajectory: {grp['label']}"}],
+fig10 = go.Figure()
+for cc, col in colors.items():
+    sub = traj_panel[traj_panel["Country Code"] == cc].sort_values("Year")
+    if len(sub) == 0:
+        continue
+    nm = CODE_TO_NAME.get(cc, cc)
+    fig10.add_trace(go.Scatter(
+        x=sub["Year"], y=sub["Economic Complexity Index"],
+        mode="lines+markers", name=nm,
+        line=dict(color=col, width=2.5),
+        marker=dict(size=5, color=col),
+        hovertemplate=f"<b>{nm}</b> · %{{x}}: ECI=%{{y:.3f}}<extra></extra>",
     ))
 
 fig10.update_layout(
-    **base_layout(height=500, margin=dict(l=70,r=40,t=100,b=60)),
-    title=title(f"ECI Trajectory: {CHART_GROUPS[0]['label']}",
-                "1995–2019 · select focal country from dropdown"),
+    **base_layout(height=500, margin=dict(l=70, r=40, t=100, b=60)),
+    title=title("ECI Trajectory: Case Study Countries",
+                "1995–2019 · Chile, Azerbaijan, Congo"),
     xaxis=dict(title="Year", gridcolor=GRID, dtick=5),
     yaxis=dict(title="Economic Complexity Index", gridcolor=GRID,
                zeroline=True, zerolinecolor="#ccc"),
     legend=dict(x=1.01, y=0.99, font=dict(size=11),
                 bgcolor="rgba(250,250,250,0.9)", bordercolor=GRID, borderwidth=1),
-    updatemenus=[dict(
-        buttons=buttons, direction="down",
-        x=0.0, y=1.18, showactive=True,
-        font=dict(family=FONT, size=11),
-        bgcolor="white", bordercolor=GRID,
-    )],
 )
 save(fig10, "10_eci_trajectory_comparators.html")
-
 
 # ══════════════════════════════════════════════════════════════════════════════
 # 11–13  CHILE CHARTS  (from pipeline state)

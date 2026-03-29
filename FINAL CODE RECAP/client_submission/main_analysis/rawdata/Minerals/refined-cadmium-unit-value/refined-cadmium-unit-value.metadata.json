@@ -1,0 +1,42 @@
+{
+  "chart": {
+    "note": "This data is adjusted for inflation.",
+    "citation": "USGS - Historical Statistics for Mineral and Material Commodities (2024)",
+    "originalChartUrl": "https://ourworldindata.org/explorers/minerals?Mineral=Cadmium&Metric=Unit+value&Type=Mine&Share+of+global=false&country=OWID_WRL~AUS~CHL~CHN~USA",
+    "selection": [
+      "World",
+      "Australia",
+      "Chile",
+      "China",
+      "United States"
+    ]
+  },
+  "columns": {
+    "unit value|Cadmium|Refinery|constant 1998 US$ per tonne": {
+      "titleShort": "Refined cadmium unit value",
+      "titleLong": "Refined cadmium unit value",
+      "descriptionShort": "Value of 1 tonne of [cadmium](#dod:cadmium), in constant 1998 US$ per tonne.",
+      "descriptionKey": [
+        "Unit value represents the price of a physical unit of apparent consumption (such as a metric ton) in dollars. Apparent consumption itself is determined by the formula: Apparent Consumption = Production + Imports - Exports ± (Stock Change).",
+        "For commodities that exist in a single physical form, like copper, a straightforward price series can estimate the unit value.",
+        "However, for commodities like chromium, which encompass multiple forms (e.g., metal, ferroalloys, ore), weighted averages are used, with each form's price weighted by its contribution to total consumption.",
+        "When no direct price series is available, unit values are derived using export, import, and production data.",
+        "To ensure consistency over time, these values are reported in 1998 constant dollars, adjusted for inflation."
+      ],
+      "descriptionProcessing": "- The majority of the data is sourced from USGS, supplemented by BGS data where available. Where both overlap, USGS data is prioritized.\n- As BGS does not provide global data, we calculated the world total by summing the data from individual countries, using this as a cross-check against USGS global figures.\n- Due to the inherent uncertainties in the data for certain minerals and countries, we allowed a maximum deviation of 10% between the global totals reported by USGS and the calculated ones for BGS. If the deviation exceeded this threshold, we excluded the BGS data.\n- The calculated global total from BGS data was used only on exceptional occasions, after ensuring that the resulting aggregate was sufficiently complete.\n- Both BGS and USGS datasets include numerous notes and footnotes. We have retained most of these, making only minor edits or deletions where necessary to maintain clarity.",
+      "shortUnit": "$/t",
+      "unit": "constant 1998 US$ per tonne",
+      "timespan": "1900-2022",
+      "type": "Integer",
+      "owidVariableId": 1131230,
+      "shortName": "unit_value_cadmium_refinery_constant_1998_usd_per_tonne",
+      "lastUpdated": "2025-12-15",
+      "nextUpdate": "2026-12-15",
+      "citationShort": "USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data",
+      "citationLong": "USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data. “Refined cadmium unit value” [dataset]. United States Geological Survey, “Historical Statistics for Mineral and Material Commodities” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1131230.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-01-08",
+  "activeFilters": {}
+}
