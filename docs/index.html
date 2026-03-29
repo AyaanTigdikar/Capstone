@@ -804,28 +804,152 @@
     </section>
 
     <section id="sec-3" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">WHICH FACTORS DRIVE DIVERSIFICATION ACROSS COUNTRIES?</div>
-            <h2>Three Pillars Behind Industrial Upgrading</h2>
-            <p class="narrative-text">
-                Across both our econometric and ML models, three structural variables consistently emerge as the strongest predictors of sustained diversification and development of value-added industries
-            </p>
-            <div class="pillars-container">
-                <div class="pillar-card credit">
-                    <h4>Financial Depth</h4>
-                    <p style="font-size: 18px; color: var(--grey);">Domestic Credit to Private Sector</p>
-                </div>
-                <div class="pillar-card energy">
-                    <h4>Energy Infrastructure</h4>
-                    <p style="font-size: 18px; color: var(--grey);">Electricity Access</p>
-                </div>
-                <div class="pillar-card human">
-                    <h4>Human Capital</h4>
-                    <p style="font-size: 18px; color: var(--grey);">Education & Skills Index</p>
-                </div>
-            </div>
+      <div class="content-wrapper">
+    
+        <div class="header-logos">WHICH FACTORS DRIVE DIVERSIFICATION ACROSS COUNTRIES?</div>
+        <h2>Three Pillars Behind Industrial Upgrading</h2>
+        <p class="narrative-text">
+          Across both our econometric and ML models, three structural variables consistently emerge as the strongest predictors of sustained diversification and development of value-added industries.
+        </p>
+    
+        <div class="pillars-container">
+    
+          <div class="pillar-card credit">
+            <div class="pillar-icon">🏦</div>
+            <div class="pillar-tag">Pillar I</div>
+            <h4>Financial Depth</h4>
+            <p class="pillar-metric">Domestic Credit to Private Sector</p>
+            <p class="pillar-why">Does capital actually reach producers — or stay locked in resource rents?</p>
+            <div class="pillar-bar"></div>
+          </div>
+    
+          <div class="pillar-card energy">
+            <div class="pillar-icon">⚡</div>
+            <div class="pillar-tag">Pillar II</div>
+            <h4>Energy Infrastructure</h4>
+            <p class="pillar-metric">Electricity Access</p>
+            <p class="pillar-why">The backbone of industrial diversification and manufacturing capacity.</p>
+            <div class="pillar-bar"></div>
+          </div>
+    
+          <div class="pillar-card human">
+            <div class="pillar-icon">🎓</div>
+            <div class="pillar-tag">Pillar III</div>
+            <h4>Human Capital</h4>
+            <p class="pillar-metric">Education &amp; Skills Index</p>
+            <p class="pillar-why">Without knowledge accumulation, complexity gains cannot compound.</p>
+            <div class="pillar-bar"></div>
+          </div>
+    
         </div>
+      </div>
     </section>
+    
+    <style>
+      .pillars-container {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 16px 0;
+      }
+    
+      .pillar-card {
+        position: relative;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 16px;
+        padding: 32px 28px 28px;
+        width: 260px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        cursor: default;
+      }
+    
+      .pillar-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      }
+    
+      /* Accent glow top-left corner */
+      .pillar-card::before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        opacity: 0.12;
+        transition: opacity 0.3s ease;
+      }
+      .pillar-card:hover::before { opacity: 0.22; }
+    
+      .credit::before { background: #4e9af1; }
+      .energy::before { background: #f5a623; }
+      .human::before  { background: #7ed321; }
+    
+      .credit:hover { border-color: rgba(78,154,241,0.45); }
+      .energy:hover { border-color: rgba(245,166,35,0.45); }
+      .human:hover  { border-color: rgba(126,211,33,0.45); }
+    
+      /* Animated bottom bar */
+      .pillar-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        border-radius: 0 0 0 16px;
+        transition: width 0.4s ease;
+      }
+      .credit .pillar-bar { background: #4e9af1; }
+      .energy .pillar-bar { background: #f5a623; }
+      .human  .pillar-bar { background: #7ed321; }
+      .pillar-card:hover .pillar-bar { width: 100%; }
+    
+      .pillar-icon {
+        font-size: 28px;
+        margin-bottom: 10px;
+        display: block;
+      }
+    
+      .pillar-tag {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        opacity: 0.5;
+        color: var(--grey, #aaa);
+      }
+    
+      .pillar-card h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 6px;
+        color: var(--white, #fff);
+        line-height: 1.2;
+      }
+    
+      .pillar-metric {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+        opacity: 0.55;
+        color: var(--grey, #aaa);
+      }
+    
+      .pillar-why {
+        font-size: 14px;
+        color: var(--grey, #bbb);
+        line-height: 1.55;
+        margin: 0;
+        opacity: 0.8;
+      }
+    </style>
 
     <section id="sec-4" class="scroll-section">
         <div class="content-wrapper">
