@@ -989,7 +989,9 @@
                 The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
                 <strong>How it works:</strong> Based on trade data to calculate two key measures: <strong>Diversity</strong> (number of products exported) and <strong>Ubiquity</strong> (number of countries exporting those products).
             </p>
-
+            <br><br>
+            <br><br>
+            <br><br>
             <div class="chart-grid">
                 
                 <div class="chart-card">
@@ -1010,6 +1012,51 @@
                     <h3>Additional ECI Analysis</h3>
                     <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'The Vietnam Product Space')">
                         <iframe src="figures/03_vietnam_product_space.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-4" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
+            <h2>The Economic Complexity Framework</h2>
+            
+            <p class="narrative-text" style="text-align: left;">
+                The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
+                <strong>How it works:</strong> Based on trade data to calculate two key measures: <strong>Diversity</strong> (number of products exported) and <strong>Ubiquity</strong> (number of countries exporting those products).
+            </p>
+            
+            <div style="width: 100%; margin-top: 100px; border-top: 2px dashed var(--grid-color); padding-top: 80px;"></div>
+
+            <div class="chart-grid">
+                
+                <div class="chart-card">
+                    <h3>ECI vs Income Evolution</h3>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI vs Income Evolution')">
+                        <iframe src="figures/01_eci_animated_scatter.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>ECI Performance</h3>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI Performance')">
+                        <iframe src="figures/00_eci_table.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Additional ECI Analysis</h3>
+                    <div class="visual-placeholder has-iframe" style="display: flex; flex-direction: column; gap: 10px; padding: 15px; cursor: pointer;" 
+                         onclick="
+                            document.getElementById('mediaModal').style.display = 'block';
+                            document.getElementById('modal-title').innerText = 'The Vietnam Product Space (1995 vs 2024)';
+                            document.getElementById('modal-body').innerHTML = '<div style=\'display: flex; flex-direction: column; height: 100%; width: 100%; padding: 20px; box-sizing: border-box; gap: 20px; align-items: center; justify-content: center; background: var(--bg-plot);\'><img src=\'vietnam_1995.png\' style=\'max-width: 100%; height: 48%; object-fit: contain;\'><img src=\'vietnam_2024.png\' style=\'max-width: 100%; height: 48%; object-fit: contain;\'></div>';
+                         ">
+                        <img src="vietnam_1995.png" alt="Vietnam 1995" style="width: 100%; height: 48%; object-fit: contain;">
+                        <img src="vietnam_2024.png" alt="Vietnam 2024" style="width: 100%; height: 48%; object-fit: contain;">
                     </div>
                 </div>
 
