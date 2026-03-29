@@ -924,32 +924,50 @@
     </section>
 
     <section id="sec-8" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">TESTING VENABLES' INVESTMENT HYPOTHESIS</div>
-            <h2>Econometric results</h2>
-            <div class="split-container">
-                <div class="split-pane left">
-                    <h3 style="color: var(--blue);">Model Specification</h3>
-                    <p style="font-size: 20px;">Panel OLS with country-clustered standard errors. Controls include political stability, rule of law, trade openness, and forestry rents.</p>
-                    <div style="background: var(--bg-plot); padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--grid-color); text-align: center; overflow-x: auto;">
-                        $$\begin{aligned} ECI_{it} = \beta_0 &+ \beta_1 HCI_{it} + \beta_2 GFCF_{it} + \beta_3 Prod_{it} \\ &+ \beta_4 HCI \times Prod + \beta_5 GFCF \times Prod \\ &+ \text{Controls} + \beta_{12} ECI_{i,t-1} + \epsilon_{it} \end{aligned}$$
-                    </div>
-                </div>
-                <div class="split-pane right">
-                    <h3 style="color: var(--orange);">Key Findings</h3>
-                    <p style="font-size: 20px;"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating HCI contributes to complexity growth beyond existing trajectory.</p>
-                    <p style="font-size: 20px;"><strong>Gross Fixed Capital Formation</strong> is positive and significant.</p>
-                    <p style="font-size: 20px;"><strong>Production Value</strong> is negative but not significant, consistent with the conditional curse view.</p>
-                    <p style="font-size: 20px;"><strong>Institutional controls</strong> lose significance once lagged ECI is included.</p>
+    <div class="content-wrapper">
+        <div class="header-logos">TESTING VENABLES' INVESTMENT HYPOTHESIS</div>
+        <h2>Econometric results</h2>
+        <div class="split-container">
+            <div class="split-pane left">
+                <h3 style="color: var(--blue);">Model Specification</h3>
+                <p style="font-size: 20px;">Panel OLS with country-clustered standard errors. Controls include political stability, rule of law, trade openness, and forestry rents.</p>
+                <div style="background: var(--bg-plot); padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--grid-color); text-align: center; overflow-x: auto;">
+                    $$
+                    \begin{aligned}
+                    ECI_{it} = \beta_0 
+                    &+ \beta_1 HCI_{it} 
+                    + \beta_2 GFCF_{it} 
+                    + \beta_3 Production_{it} \\
+                    &+ \beta_4 PoliticalStability_{it} 
+                    + \beta_5 RuleOfLaw_{it} 
+                    + \beta_6 Trade_{it} 
+                    + \beta_7 ForestryRents_{it} \\
+                    &+ \beta_8 (HCI_{it} \times Production_{it}) 
+                    + \beta_9 (GFCF_{it} \times Production_{it}) \\
+                    &+ \beta_{10} (HCI_{it} \times ForestryRents_{it}) 
+                    + \beta_{11} (GFCF_{it} \times ForestryRents_{it}) \\
+                    &+ \beta_{12} ECI_{i,t-1} 
+                    + \epsilon_{it}
+                    \end{aligned}
+                    $$
                 </div>
             </div>
-            <div class="chart-card" style="max-width: 900px; margin: 0 auto; width: 100%;">
-                <h3>Regression Results</h3>
-                <div class="visual-placeholder has-iframe" style="height: 300px;" onclick="openPlaceholder(this, 'Table 3.3: Regression results')">
-                    <iframe src="figures/regression_table_combined.html" class="iframe-preview" scrolling="no"></iframe>
-                </div>
+            <div class="split-pane right">
+                <h3 style="color: var(--orange);">Key Findings</h3>
+                <p style="font-size: 20px;"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating HCI contributes to complexity growth beyond existing trajectory.</p>
+                <p style="font-size: 20px;"><strong>Gross Fixed Capital Formation</strong> is positive and significant.</p>
+                <p style="font-size: 20px;"><strong>Production Value</strong> is negative but not significant, consistent with the conditional curse view.</p>
+                <p style="font-size: 20px;"><strong>Institutional controls</strong> lose significance once lagged ECI is included.</p>
+                <p style="font-size: 20px;">None of the four<strong> Interaction terms</strong> s significant, however 3 out of 4 have a positive sign.</p>
             </div>
         </div>
+        <div class="chart-card" style="max-width: 900px; margin: 0 auto; width: 100%;">
+            <h3>Regression Results</h3>
+            <div class="visual-placeholder has-iframe" style="height: 300px;" onclick="openPlaceholder(this, 'Table 3.3: Regression results')">
+                <iframe src="figures/regression_table_combined.html" class="iframe-preview" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
     </section>
 
     <section id="sec-9" class="scroll-section">
@@ -965,6 +983,27 @@
                     <iframe src="figures/eci_hci.html" class="iframe-preview-large" scrolling="no"></iframe>
                 </div>
             </div>
+        </div>
+    </section>
+
+        <section id="sec-4" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">THE MACHINE LEARNING APPROACH</div>
+            <h2>Why ML after Econometrics?
+</h2>
+            
+            <p class="narrative-text" style="text-align: left;">
+                <strong>Econometrics vs. ML: How it works:</strong> ⁠The econometric model selects variables based on theory,  which risks omitting important predictors and misspecifying the functional form.
+                <br><br>
+                <strong>ML techniques:</strong> Take a data-driven approach, letting a broad set of possible predictors compete on predictive power rather than theoretical justification.
+                <br><br>
+                <strong>Regularisation (LASSO, Ridge, Elastic Net):</strong> Penalise weak coefficients to prevent overfitting, each handling correlated predictors differently. LASSO selects, Ridge retains all, Elastic Net balances both.
+                <br><br>
+                <strong>Random Forest:</strong> Relaxes the linearity assumption, capturing non-linear relationships and interaction effects that the econometric specification would miss.
+                <br><br>
+                <strong>Robustness:</strong> When the same variables emerge as important across both theory-driven and data-driven methods, the findings are more credible and less dependent on model choice.
+            </p>
+
         </div>
     </section>
 
@@ -989,6 +1028,39 @@
             </div>
             <div class="synthesis-box" style="margin-top: 20px;">
                 <p><strong>Convergence across methods:</strong> Domestic credit, human capital (and its interaction with production), and electricity access rank as top predictors in both linear regularisation and Random Forest models.</p>
+            </div>
+        </div>
+    </section>
+
+        <section id="sec-15" class="scroll-section">
+        <div class="content-wrapper">
+            <div class="header-logos">WHO IS STRENGTHENING THEIR ECONOMIC FOUNDATIONS?</div>
+            <h2>Future Risk and Opportunities</h2>
+            <p class="narrative-text">
+                Based on current trajectories in our three pillars, we project which countries are strengthening their productive foundations and which which are becoming more vulnerable to commodity shocks.
+            </p>
+            <div class="chart-card" style="width: 100%; max-width: 1200px; margin: 0 auto;">
+                <h3 style="font-size: 24px;">Projected ECI trajectories, top improving and declining countries (2020–2030)</h3>
+                <div class="visual-placeholder has-iframe" style="height: 480px;" onclick="openPlaceholder(this, 'Figure 3.13. Projected ECI trajectories, top improving and declining countries (2020–2030)')">
+                    <iframe src="figures/09_eci_forecast_trajectories.html" class="iframe-preview" scrolling="no"></iframe>
+                </div>
+                <span style="font-size: 16px; font-weight: normal; color: var(--dark-color); display: block; text-align: center; margin-top: 20px;">
+                </span>
+            </div>
+            
+            <div class="split-container" style="margin-top: 40px;">
+                <div class="split-pane" style="border-color: var(--green);">
+                    <h3 style="color: var(--green);"><i style="margin-right: 12px;"></i>Improving</h3>
+                    <p><strong>Ecuador:</strong> Expanding renewable energy infrastructure, diversifying beyond oil via trade agreements.</p>
+                    <p><strong>Mongolia:</strong> Heavy investment in education and financial infrastructure alongside mining-linked industrialisation.</p>
+                    <p style="margin-bottom: 0;"><strong>Equatorial Guinea:</strong> Projected to diversify from a very low complexity base.</p>
+                </div>
+                <div class="split-pane" style="border-color: var(--red);">
+                    <h3 style="color: var(--red);"><i style="margin-right: 12px;"></i>Declining</h3>
+                    <p><strong>Saudi Arabia:</strong> Projected decline despite Vision 2030, suggesting oil-dominant economies struggle to diversify even with favourable policies.</p>
+                    <p><strong>Libya:</strong> Hydrocarbons account for 95%+ of exports; political fragmentation blocks structural reform.</p>
+                    <p style="margin-bottom: 0;"><strong>Zimbabwe:</strong> Governance and macroeconomic instability undermine preconditions for complexity gains.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1019,13 +1091,13 @@
                         <td><strong>ECI Rank</strong></td>
                         <td >124th / 130</td>
                         <td >95th / 130</td>
-                        <td >~70th / 130</td>
+                        <td >70th / 130</td>
                     </tr>
                     <tr>
-                        <td><strong>Financial Depth</strong></td>
-                        <td >8.5% firms use banks</td>
-                        <td >Recovering post-2015 crisis</td>
-                        <td >OECD-quality banking sector</td>
+                        <td><strong>Financial Depth (Financial assets/GDP)</strong></td>
+                        <td >35%</td>
+                        <td >61%</td>
+                        <td >200%</td>
                     </tr>
                     <tr>
                         <td><strong>Infrastructure</strong></td>
@@ -1037,7 +1109,7 @@
                         <td><strong>Human Capital</strong></td>
                         <td >HCI: 2.16</td>
                         <td >HCI: 3.35</td>
-                        <td >R&amp;D at 0.34% GDP</td>
+                        <td >HCI: 3.15</td>
                     </tr>
                     <tr>
                         <td><strong>Institutions</strong></td>
@@ -1103,7 +1175,7 @@
                     </ul>
                 </div>
                 <div class="split-pane" style="border-color: var(--blue);">
-                    <h3 style="color: var(--blue);">The Malaysia Counterfactual</h3>
+                    <h3 style="color: var(--blue);">The Malaysia Comparison</h3>
                     <p>Both countries were upper-middle-income hydrocarbon economies in the mid-1990s with comparable ECI levels. Malaysia channelled Petronas revenues into downstream manufacturing and electronics, reaching ECI +1.1 by 2019. Azerbaijan collapsed to -1.2 by the mid-2000s.</p>
                     <p><strong>Two binding constraints:</strong> severely inadequate rule of law (-0.7 vs Malaysia's +0.5) and extreme hydrocarbon concentration crowding out non-oil tradables.</p>
                 </div>
