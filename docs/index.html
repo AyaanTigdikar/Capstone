@@ -971,22 +971,26 @@
         </div>
     </section>
 
-        <section id="sec-10" class="scroll-section">
+    <section id="sec-10" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">THE MACHINE LEARNING APPROACH</div>
-            <h2>Why ML after Econometrics?
-</h2>
+            <h2>Why ML after Econometrics?</h2>
             
             <p class="narrative-text" style="text-align: left;">
-                <strong>Econometrics vs. ML: </strong> ⁠The econometric model selects variables based on theory,  which risks omitting important predictors and misspecifying the functional form.
+                <strong><span style="color: var(--green);">1) We may be missing relevant predictors of ECI:</span></strong> 
+                    Econometric models select variables based on theory, which risks omitting important predictors but lack theoretical rationale.
                 <br><br>
-                <strong>ML techniques:</strong> Take a data-driven approach, letting a broad set of possible predictors compete on predictive power rather than theoretical justification.
+                <strong><span style="color: var(--green);">2) Robustness check:</span></strong>
+                    ML may validate/invalidate variables identified as significant in the econometric model.
                 <br><br>
-                <strong>Regularisation (LASSO, Ridge, Elastic Net):</strong> Penalise weak coefficients to prevent overfitting, each handling correlated predictors differently. LASSO selects, Ridge retains all, Elastic Net balances both.
+                <strong style="display: block; text-align: center; color: var(--green); font-size: 25px;">Solution:</strong>
+                <br>
+                <strong>Machine Learning:</strong> all available variables are fed into the models. The ML algorithms themselves identify which predictors carry the most explanatory power.
                 <br><br>
-                <strong>Random Forest:</strong> Relaxes the linearity assumption, capturing non-linear relationships and interaction effects that the econometric specification would miss.
+                <strong>Regularization techniques (LASSO, Ridge and Elastic Net):</strong>  they penalise weak coefficients, shrinking them towards zero.
                 <br><br>
-                <strong>Robustness:</strong> When the same variables emerge as important across both theory-driven and data-driven methods, the findings are more credible and less dependent on model choice.
+                <strong>Random Forest:</strong> also calculates feature importance, but by capturing non-linear relationships between predictors and ECI.
+                <br><br>
             </p>
 
         </div>
@@ -996,7 +1000,10 @@
         <div class="content-wrapper">
             <div class="header-logos">WHAT THE DATA REVEALS WITHOUT THEORETICAL PRIORS</div>
             <h2>Machine Learning Insights</h2>
-            <p class="narrative-text">Out-of-sample prediction reveals <strong>domestic credit</strong> as the strongest predictor of ECI, a factor absent from the theory-driven econometric specification.</p>
+            <p class="narrative-text">Domestic credit is the strongest predictor of ECI, <strong>a factor absent from the econometrics specification.</strong>
+                <br><br>
+                ⁠Convergence across methods: <strong>Human Capital, HCI x Production and Electricity Access</strong> rank as top predictors in both approaches. (esto subelo arriba de los gráficos pls)
+            </p>
             <div class="chart-grid">
                 <div class="chart-card">
                     <h3>Model Agreement</h3>
