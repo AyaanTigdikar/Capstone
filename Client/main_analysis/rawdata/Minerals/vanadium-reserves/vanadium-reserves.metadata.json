@@ -1,0 +1,35 @@
+{
+  "chart": {
+    "note": "Reserves can increase over time as new mineral deposits are discovered and others become economically feasible to extract.",
+    "citation": "USGS - Mineral Commodity Summaries (2025)",
+    "originalChartUrl": "https://ourworldindata.org/explorers/minerals?Mineral=Vanadium&Metric=Reserves&Type=Mine&Share+of+global=false&country=OWID_WRL~AUS~CHL~CHN~USA",
+    "selection": [
+      "World",
+      "Australia",
+      "Chile",
+      "China",
+      "United States"
+    ]
+  },
+  "columns": {
+    "reserves|Vanadium|Mine|tonnes": {
+      "titleShort": "Vanadium reserves",
+      "titleLong": "Vanadium reserves",
+      "descriptionShort": "Reserves of [vanadium](#dod:vandium), in tonnes. Mineral [reserves](#dod:mineral-reserve) are resources that have been evaluated and can be mined economically with current technologies.",
+      "descriptionProcessing": "- The majority of the data is sourced from USGS, supplemented by BGS data where available. Where both overlap, USGS data is prioritized.\n- As BGS does not provide global data, we calculated the world total by summing the data from individual countries, using this as a cross-check against USGS global figures.\n- Due to the inherent uncertainties in the data for certain minerals and countries, we allowed a maximum deviation of 10% between the global totals reported by USGS and the calculated ones for BGS. If the deviation exceeded this threshold, we excluded the BGS data.\n- The calculated global total from BGS data was used only on exceptional occasions, after ensuring that the resulting aggregate was sufficiently complete.\n- Both BGS and USGS datasets include numerous notes and footnotes. We have retained most of these, making only minor edits or deletions where necessary to maintain clarity.",
+      "shortUnit": "t",
+      "unit": "tonnes",
+      "timespan": "2022-2024",
+      "type": "Integer",
+      "owidVariableId": 1131217,
+      "shortName": "reserves_vanadium_mine_tonnes",
+      "lastUpdated": "2025-12-15",
+      "nextUpdate": "2026-12-15",
+      "citationShort": "USGS - Mineral Commodity Summaries (2025) – with major processing by Our World in Data",
+      "citationLong": "USGS - Mineral Commodity Summaries (2025) – with major processing by Our World in Data. “Vanadium reserves” [dataset]. United States Geological Survey, “Mineral Commodity Summaries” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1131217.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-01-08",
+  "activeFilters": {}
+}
