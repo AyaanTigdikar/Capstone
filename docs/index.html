@@ -634,6 +634,7 @@
         <a href="#sec-references" class="nav-item">Sources</a>
         <a href="#sec-annex-1" class="nav-item">Annex 1</a>
         <a href="#sec-annex-2" class="nav-item">Annex 2</a>
+        <a href="#sec-annex-3" class="nav-item">Annex 3</a>
     </div>
 
     <div id="mediaModal" class="modal">
@@ -1271,6 +1272,104 @@
             <p class="narrative-text" style="text-align: left; font-size: 20px;">
                 <strong>Imputation:</strong> Missing values are filled in two passes. First, linear interpolation estimates gaps between observed values within each country's time series, capped at three years beyond the nearest observation. Second, remaining gaps (where a country has no observed value at all for a variable) are filled using K-Nearest Neighbours imputation (k=5, distance-weighted), which draws on the five most similar country-year observations. Median prediction error across all variables is 5.24%, though volatile series such as inflation (31.1%) and mineral rents (44.4%) carry higher uncertainty. Twenty-five of 54 countries have more than 10% of their data cells filled by KNN.
             </p>
+        </div>
+    </section>
+
+    <section id="sec-annex-3" class="scroll-section">
+        <div class="content-wrapper">
+            <h2>Annex 3: Clustering Techniques</h2>
+
+            <div class="split-container">
+                <div class="split-pane left">
+                    <h3 style="color: var(--blue);">C.1 Principal Component Analysis</h3>
+                    <p style="font-size: 20px;">
+                        PCA is a dimensionality reduction technique that transforms a set of potentially correlated variables into a smaller set of uncorrelated variables called principal components (PCs). Each PC is a linear combination of the original variables, constructed to capture the maximum variance remaining in the data (Jolliffe, 2002).
+                    </p>
+                    <p style="font-size: 20px;">The procedure follows four steps:</p>
+                    <ul style="font-size: 20px;">
+                        <li><strong>Standardisation:</strong> Each variable is rescaled to mean zero and unit variance.</li>
+                        <li><strong>Covariance matrix:</strong> Computed from the standardised data.</li>
+                        <li><strong>Eigendecomposition:</strong> Eigenvalues represent the variance explained by each component; eigenvectors define the component directions.</li>
+                        <li><strong>Scores:</strong> Observations are projected onto the new coordinate system defined by the eigenvectors.</li>
+                    </ul>
+                    <p style="font-size: 20px;">
+                        We apply PCA to 21 resource production variables. The first two components account for 69.5% of total variance: PC1 (51.8%) is driven by oil and natural gas; PC2 (17.7%) captures mining activity, particularly copper, gold, and coal. Most smaller minerals load weakly on both components.
+                    </p>
+                </div>
+                <div class="split-pane right">
+                    <h3 style="color: var(--orange);">C.2 K-means Clustering</h3>
+                    <p style="font-size: 20px;">
+                        K-means is an unsupervised algorithm that partitions <em>n</em> observations into <em>k</em> clusters by minimising within-cluster variance, defined as the sum of squared Euclidean distances between each observation and its cluster centroid (MacQueen, 1967).
+                    </p>
+                    <p style="font-size: 20px;">The algorithm iterates three steps until convergence:</p>
+                    <ul style="font-size: 20px;">
+                        <li><strong>Assignment:</strong> Each observation is assigned to the nearest centroid.</li>
+                        <li><strong>Update:</strong> Centroids are recalculated as the mean of all assigned observations.</li>
+                        <li><strong>Convergence:</strong> Steps repeat until assignments stabilise.</li>
+                    </ul>
+                    <p style="font-size: 20px;">
+                        We apply K-means (k=5) to the first two principal components, using the 1995 cross-section of 54 countries. The silhouette score analysis restricts the optimal range to k=3 through k=6.
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 40px;">C.3 Cluster Robustness</h3>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                Agreement with the baseline is measured by the Adjusted Rand Index (ARI), which compares two partitions on a scale from 0 (random) to 1 (identical), corrected for chance.
+            </p>
+
+            <table class="comp-table" style="margin-bottom: 30px;">
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Specification</th>
+                        <th>Change from Baseline</th>
+                        <th>ARI</th>
+                        <th>Key Observations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>k = 3</strong></td>
+                        <td>Fewer clusters</td>
+                        <td>-</td>
+                        <td style="text-align: left;">Petrostates and Oil Exporters merge, losing the distinction between Gulf producers and lower-income oil economies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>k = 4</strong></td>
+                        <td>Fewer clusters</td>
+                        <td>-</td>
+                        <td style="text-align: left;">Mining Exporters and Diversified Producers collapse into one group, mixing mineral-dominant and mixed portfolios.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>k = 6</strong></td>
+                        <td>More clusters</td>
+                        <td>-</td>
+                        <td style="text-align: left;">Forestry Intensive splits further but the extra cluster contains only 2-3 countries with no clear interpretive profile.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A: Merged minerals</strong></td>
+                        <td>4 features instead of 21</td>
+                        <td class="status-green">0.70</td>
+                        <td style="text-align: left;">Hydrocarbon clusters stable. Divergence in mineral-dependent economies where copper/gold distinction is lost.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>B: Three PCs</strong></td>
+                        <td>3 components instead of 2</td>
+                        <td class="status-green">0.81</td>
+                        <td style="text-align: left;">Highest ARI. Third component (11.4% variance) adds limited clustering power.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>C: 2019 data</strong></td>
+                        <td>End-of-panel production</td>
+                        <td class="status-orange">0.67</td>
+                        <td style="text-align: left;">Azerbaijan and Iraq move to Petrostates; Kazakhstan and Russia shift to Mining Exporters; Ghana and Vietnam leave Forestry Intensive.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="synthesis-box">
+                <p style="font-size: 20px;"><strong>Country-level stability:</strong> 14 countries (27%) receive the same label across all four specifications, drawn almost entirely from Forestry Intensive plus the UAE. The least stable are mixed hydrocarbon-mineral economies (Bolivia, Indonesia, Kazakhstan, Russia, Iran), whose resource composition is not well summarised by a single cluster. The clustering is used as a descriptive device only and is not included as a predictor in the econometric or ML specifications.</p>
+            </div>
         </div>
     </section>
 
