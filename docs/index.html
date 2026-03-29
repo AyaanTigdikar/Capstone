@@ -867,18 +867,18 @@
         <div class="content-wrapper">
             <div class="header-logos">WHAT DATA DO WE USE?</div>
             <h2>Our Data</h2>
-            <p class="narrative-text">
-                54 resource-rich economies over 24 years (1995–2019).
+            <p class="narrative-text" style="text-align: left;">
+                A panel of 54 resource-rich developing economies over 1995 to 2019, covering 48 variables across nine thematic groups (see Annex 1). Thirteen countries were excluded for insufficient coverage (Annex 2). Missing values were filled by linear interpolation (capped at three years) and K-Nearest Neighbours imputation.<br><br>
+                <strong>Key patterns:</strong> Resource-rich countries show lower mean ECI than the full sample. The strongest positive correlations with ECI are domestic credit, the human capital index, and life expectancy; the strongest negative are political corruption and agricultural share of GDP.
             </p>
             <div class="chart-grid">
-                
-            <div class="chart-card" style="max-width: 1000px; margin: 0 auto; width: 100%;">
-                <h3>ECI Correlation</h3>
-                <div class="visual-placeholder has-iframe" style="height: 500px;" onclick="openPlaceholder(this, 'ECI and HCI')">
-                    <iframe src="figures/04_correlation_bar.html" class="iframe-preview-large" scrolling="no"></iframe>
+                <div class="chart-card">
+                    <h3>ECI Correlation</h3>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI Correlation')">
+                        <iframe src="figures/04_correlation_bar.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="sec-7" class="scroll-section">
@@ -1238,8 +1238,10 @@
 
         <section id="sec-annex-1" class="scroll-section">
         <div class="content-wrapper">
-            <h2>Annex 1</h2>
-            <p class="narrative-text">Variables and Sources </p>
+            <h2>Annex 1: Data Sources</h2>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                The panel draws on six primary sources. The World Bank WDI supplies 26 variables covering resource rents, sectoral GDP composition, savings, infrastructure, financial depth, and demographics. The IMF WEO and Investment and Capital Stock datasets provide GDP per capita (PPP), fiscal balances, government revenue, and gross fixed capital formation. Governance indicators come from V-Dem; human capital and capital stock from the Penn World Table 11.0; and the landlocked indicator from CEPII GeoDist. Natural resource production quantities and reserves are compiled from the Energy Institute, Our World in Data, and USGS Data Series 140, converted to dollar values using a consolidated price file covering 19 minerals plus oil, coal, and natural gas. For the Chile case study, facility-level data from Sernageomin, COCHILCO, and customs records produce a directed network of approximately 460 facilities and 1,900 edges across 17 commodity groups.
+            </p>
              <div class="chart-grid">
                 
                 <div class="chart-card">
@@ -1262,8 +1264,13 @@
 
     <section id="sec-annex-2" class="scroll-section">
         <div class="content-wrapper">
-            <h2>Annex 2</h2>
-            <p class="narrative-text">Additional info here</p>
+            <h2>Annex 2: Missing Data Procedures</h2>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                <strong>Excluded countries:</strong> 13 countries were dropped from the sample due to insufficient data coverage, including North Korea, Cuba, South Sudan, Turkmenistan, Syria, and others with extensive missing economic or governance variables. The full list is in the report appendix (Table B.1).
+            </p>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                <strong>Imputation:</strong> Missing values are filled in two passes. First, linear interpolation estimates gaps between observed values within each country's time series, capped at three years beyond the nearest observation. Second, remaining gaps (where a country has no observed value at all for a variable) are filled using K-Nearest Neighbours imputation (k=5, distance-weighted), which draws on the five most similar country-year observations. Median prediction error across all variables is 5.24%, though volatile series such as inflation (31.1%) and mineral rents (44.4%) carry higher uncertainty. Twenty-five of 54 countries have more than 10% of their data cells filled by KNN.
+            </p>
         </div>
     </section>
 
