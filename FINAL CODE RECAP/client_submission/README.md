@@ -20,7 +20,17 @@ client_submission/
 │   ├── 6_Regressions_Unified.ipynb
 │   ├── 7_Viz_Descriptive_Clustering.ipynb
 │   ├── 8_Viz_ML.ipynb
-│   └── 9_Viz_Regression.ipynb
+│   ├── scripts/
+│   │   ├── standardize_country.py   ← country name harmonisation (used by NB0/NB1)
+│   │   └── viz_utils.py             ← shared Plotly styling helpers
+│   ├── rawdata/
+│   │   ├── base_dataset.xlsx
+│   │   ├── Statistical Review of World Energy Narrow File-1.csv
+│   │   ├── Oil Gas Coal Uranium Price.xlsx
+│   │   ├── PopulationWDI.csv
+│   │   ├── production_values_w_prices-EM.csv
+│   │   └── Minerals/
+│   └── intermediary/                ← empty; populated as notebooks run
 ├── chile_analysis/
 │   ├── Chile_A_Setup_Production.ipynb
 │   ├── Chile_B_Supply_Chain.ipynb
@@ -34,9 +44,6 @@ client_submission/
 │   ├── inputs/
 │   ├── intermediary/
 │   └── outputs/
-└── shared_scripts/
-    ├── standardize_country.py
-    └── viz_utils.py
 ```
 
 > **Note on NB0 and NB1:** These come from `v2/` (the data extraction/cleaning layer that feeds the v1 analysis). The `v1/` folder starts at NB3 because it assumes a pre-built master dataset. Run NB0 → NB1 first if building from raw sources.
@@ -324,12 +331,12 @@ python3.10 chile_analysis/scripts/chile_visualisations.py
 
 ---
 
-## Shared Scripts
+## Shared Scripts (`main_analysis/scripts/`)
 
 | Script | What it does |
 |--------|-------------|
-| `shared_scripts/standardize_country.py` | Harmonises country name strings to ISO3 across datasets (World Bank, UN, and common variant spellings) |
-| `shared_scripts/viz_utils.py` | Shared Plotly styling: IBM Plex Sans font, colour palette, margin defaults used across all visualisation notebooks |
+| `standardize_country.py` | Harmonises country name strings to ISO3 across datasets (World Bank, UN, and common variant spellings). Auto-imported by NB0 and NB1 via `sys.path`. |
+| `viz_utils.py` | Shared Plotly styling: IBM Plex Sans font, colour palette, margin defaults used across all visualisation notebooks |
 
 ---
 
