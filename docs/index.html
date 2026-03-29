@@ -823,23 +823,27 @@
                 Three complementary methods to identify the drivers of industrial upgrading and translate cross-country patterns into context-specific policy insights.
             </p>
 
-            <div class="approach-row">
-                <div class="approach-item approach-blue">
-                    <span class="approach-number">01</span>
-                    <h3>Econometrics</h3>
-                    <p>Panel OLS models that test Venables' (2016) investment theory empirically, using an interaction strategy inspired by Mehlum et al. (2006).</p>
+            <div class="approach-cards">
+                <div class="approach-card">
+                    <div class="approach-accent accent-blue"></div>
+                    <div class="approach-body">
+                        <span class="approach-label label-blue">Econometrics</span>
+                        <p>Panel OLS models that test Venables' (2016) investment theory empirically, using an interaction strategy inspired by Mehlum et al. (2006).</p>
+                    </div>
                 </div>
-                <div class="approach-divider"></div>
-                <div class="approach-item approach-orange">
-                    <span class="approach-number">02</span>
-                    <h3>Machine Learning</h3>
-                    <p>PCA and K-Means clustering group countries by extraction profile. LASSO, Ridge, Elastic Net, and Random Forest then take a theory-agnostic approach to surface predictors a standard linear model may miss.</p>
+                <div class="approach-card">
+                    <div class="approach-accent accent-orange"></div>
+                    <div class="approach-body">
+                        <span class="approach-label label-orange">Machine Learning</span>
+                        <p>PCA and K-Means clustering group countries by extraction profile. LASSO, Ridge, Elastic Net, and Random Forest then take a theory-agnostic approach to surface predictors a standard linear model may miss.</p>
+                    </div>
                 </div>
-                <div class="approach-divider"></div>
-                <div class="approach-item approach-green">
-                    <span class="approach-number">03</span>
-                    <h3>Qualitative Case Studies</h3>
-                    <p>Cross-country regressions reveal broad trends, but effective policy must be context-specific. Three cases show how the same constraints bind differently across settings.</p>
+                <div class="approach-card">
+                    <div class="approach-accent accent-green"></div>
+                    <div class="approach-body">
+                        <span class="approach-label label-green">Qualitative Case Studies</span>
+                        <p>Cross-country regressions reveal broad trends, but effective policy must be context-specific. Three cases show how the same constraints bind differently across settings.</p>
+                    </div>
                 </div>
             </div>
 
@@ -847,69 +851,73 @@
     </section>
 
     <style>
-        .approach-row {
+        .approach-cards {
             display: flex;
-            align-items: stretch;
-            gap: 0;
+            flex-direction: column;
+            gap: 18px;
             width: 100%;
-            max-width: 1400px;
-            margin-top: 10px;
+            max-width: 1100px;
         }
 
-        .approach-item {
-            flex: 1;
-            padding: 30px 35px;
-            text-align: left;
+        .approach-card {
+            display: flex;
+            flex-direction: row;
+            background: var(--white);
+            border-radius: 6px;
+            box-shadow: var(--shadow-subtle);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+        .approach-card:hover {
+            box-shadow: var(--shadow-hover);
         }
 
-        .approach-number {
-            font-size: 52px;
-            font-weight: 800;
-            line-height: 1;
-            display: block;
-            margin-bottom: 12px;
-            opacity: 0.15;
-        }
-        .approach-blue .approach-number { color: var(--blue); }
-        .approach-orange .approach-number { color: var(--orange); }
-        .approach-green .approach-number { color: var(--green); }
-
-        .approach-item h3 {
-            font-size: 26px;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-        .approach-blue h3 { color: var(--blue); }
-        .approach-orange h3 { color: var(--orange); }
-        .approach-green h3 { color: var(--green); }
-
-        .approach-item p {
-            font-size: 19px;
-            color: var(--dark-color);
-            margin: 0;
-            line-height: 1.55;
-        }
-
-        .approach-divider {
-            width: 1px;
-            background: var(--grid-color);
+        .approach-accent {
+            width: 6px;
             flex-shrink: 0;
         }
+        .accent-blue { background: var(--blue); }
+        .accent-orange { background: var(--orange); }
+        .accent-green { background: var(--green); }
 
-        @media (max-width: 992px) {
-            .approach-row {
+        .approach-body {
+            padding: 28px 35px;
+            display: flex;
+            align-items: baseline;
+            gap: 25px;
+            flex: 1;
+        }
+
+        .approach-label {
+            font-size: 20px;
+            font-weight: 700;
+            white-space: nowrap;
+            flex-shrink: 0;
+            min-width: 200px;
+        }
+        .label-blue { color: var(--blue); }
+        .label-orange { color: var(--orange); }
+        .label-green { color: var(--green); }
+
+        .approach-body p {
+            font-size: 20px;
+            color: var(--dark-color);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .approach-body {
                 flex-direction: column;
+                gap: 8px;
+                padding: 22px 20px;
             }
-            .approach-divider {
-                width: 100%;
-                height: 1px;
-            }
-            .approach-item {
-                padding: 25px 20px;
+            .approach-label {
+                min-width: unset;
             }
         }
     </style>
-
+    
     <section id="sec-3" class="scroll-section">
       <div class="content-wrapper">
     
@@ -926,7 +934,7 @@
             <div class="pillar-tag">Pillar I</div>
             <h4>Financial Depth</h4>
             <p class="pillar-metric">Domestic Credit to Private Sector</p>
-            <p class="pillar-why">Does capital actually reach producers — or stay locked in resource rents?</p>
+            <p class="pillar-why"> Poor access to finance could result in fewer profitable projects taking off</p>
             <div class="pillar-bar"></div>
           </div>
     
@@ -944,7 +952,7 @@
             <div class="pillar-tag">Pillar III</div>
             <h4>Human Capital</h4>
             <p class="pillar-metric">Education &amp; Skills Index</p>
-            <p class="pillar-why">Without knowledge accumulation, complexity gains cannot compound.</p>
+            <p class="pillar-why">To learn, upskill, and innovate is vital to capturing a larger share of the global value chain</p>
             <div class="pillar-bar"></div>
           </div>
     
