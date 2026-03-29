@@ -872,27 +872,11 @@
             </p>
             <div class="chart-grid">
                 
-                <div class="chart-card">
-                    <h3>Data Variables</h3>
-                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'Data Variables')">
-                        <iframe src="figures/02_variables_treemap.html" class="iframe-preview" scrolling="no"></iframe>
-                    </div>
+            <div class="chart-card" style="max-width: 1000px; margin: 0 auto; width: 100%;">
+                <h3>ECI Correlation</h3>
+                <div class="visual-placeholder has-iframe" style="height: 500px;" onclick="openPlaceholder(this, 'ECI and HCI')">
+                    <iframe src="figures/04_correlation_bar.html" class="iframe-preview-large" scrolling="no"></iframe>
                 </div>
-                
-                <div class="chart-card">
-                    <h3>Data Sources</h3>
-                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'Data Sources')">
-                        <iframe src="figures/03_data_sources_bubble.html" class="iframe-preview" scrolling="no"></iframe>
-                    </div>
-                </div>
-                
-                <div class="chart-card">
-                    <h3>ECI Correlation</h3>
-                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI Correlation')">
-                        <iframe src="figures/04_correlation_bar.html" class="iframe-preview" scrolling="no"></iframe>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -1095,30 +1079,6 @@
                         <td >70th / 130</td>
                     </tr>
                     <tr>
-                        <td><strong>Financial assets/GDP</strong></td>
-                        <td >35%</td>
-                        <td >61%</td>
-                        <td >200%</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Infrastructure</strong></td>
-                        <td >50% electricity access</td>
-                        <td >Concentrated in Baku</td>
-                        <td >Adequate, rail bottlenecks</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Human Capital</strong></td>
-                        <td >HCI: 2.16</td>
-                        <td >HCI: 3.35</td>
-                        <td >HCI: 3.15</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Institutions</strong></td>
-                        <td >Electoral autocracy</td>
-                        <td >Authoritarian</td>
-                        <td >Strongest in Latin America</td>
-                    </tr>
-                    <tr>
                         <td><strong>Binding Constraint</strong></td>
                         <td >All three pillars fail</td>
                         <td >Dutch Disease + governance</td>
@@ -1126,6 +1086,13 @@
                     </tr>
                 </tbody>
             </table>
+
+             <div class="chart-card" style="max-width: 1000px; margin: 0 auto; width: 100%;">
+                <h3>Case studies vs. comparators</h3>
+                <div class="visual-placeholder has-iframe" style="height: 500px;" onclick="openPlaceholder(this, 'ECI and HCI')">
+                    <iframe src="figures/10_eci_trajectory_comparators.html" class="iframe-preview-large" scrolling="no"></iframe>
+            </div>
+
         </div>
     </section>
 
@@ -1180,12 +1147,6 @@
                     <h3 style="color: var(--blue);">The Malaysia Comparison</h3>
                     <p>Both countries were upper-middle-income hydrocarbon economies in the mid-1990s with comparable ECI levels. Malaysia channelled Petronas revenues into downstream manufacturing and electronics, reaching ECI +1.1 by 2019. Azerbaijan collapsed to -1.2 by the mid-2000s.</p>
                     <p><strong>Two binding constraints:</strong> severely inadequate rule of law (-0.7 vs Malaysia's +0.5) and extreme hydrocarbon concentration crowding out non-oil tradables.</p>
-                </div>
-            </div>
-                        <div class="chart-card" style="max-width: 1000px; margin: 0 auto; width: 100%;">
-                <h3>Case studies vs. comparators</h3>
-                <div class="visual-placeholder has-iframe" style="height: 500px;" onclick="openPlaceholder(this, 'ECI and HCI')">
-                    <iframe src="figures/10_eci_trajectory_comparators.html" class="iframe-preview-large" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
@@ -1272,6 +1233,37 @@
                     <a href="https://github.com/AyaanTigdikar/Capstone" target="_blank" class="vault-btn" style="background: var(--dark-color);"><i class="fab fa-github fa-lg"></i> GitHub Repository</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+        <section id="sec-annex-1" class="scroll-section">
+        <div class="content-wrapper">
+            <h2>Annex 1</h2>
+            <p class="narrative-text">Variables and Sources </p>
+             <div class="chart-grid">
+                
+                <div class="chart-card">
+                    <h3>Data Variables</h3>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'Data Variables')">
+                        <iframe src="figures/02_variables_treemap.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
+                </div>
+                
+                <div class="chart-card">
+                    <h3>Data Sources</h3>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'Data Sources')">
+                        <iframe src="figures/03_data_sources_bubble.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-annex-2" class="scroll-section">
+        <div class="content-wrapper">
+            <h2>Annex 2</h2>
+            <p class="narrative-text">Additional info here</p>
         </div>
     </section>
 
@@ -1403,20 +1395,6 @@
                 <p>World Justice Project (2025) Rule of Law Index 2025. Washington, DC: World Justice Project.</p>
                 <p>Zou, H. and Hastie, T. (2005) 'Regularization and variable selection via the elastic net', Journal of the Royal Statistical Society, Series B, 67(2), pp. 301–320.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="sec-annex-1" class="scroll-section">
-        <div class="content-wrapper">
-            <h2>Annex 1</h2>
-            <p class="narrative-text">Additional info here</p>
-        </div>
-    </section>
-
-    <section id="sec-annex-2" class="scroll-section">
-        <div class="content-wrapper">
-            <h2>Annex 2</h2>
-            <p class="narrative-text">Additional info here</p>
         </div>
     </section>
 
