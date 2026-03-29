@@ -1150,52 +1150,49 @@
     </section>
 
     <section id="sec-8" class="scroll-section">
-    <div class="content-wrapper">
-        <div class="header-logos">TESTING VENABLES' INVESTMENT HYPOTHESIS</div>
-        <h2>Econometric results</h2>
-        <div class="split-container">
-            <div class="split-pane left">
-                <h3 style="color: var(--blue);">Model Specification</h3>
-                <p style="font-size: 20px;">Panel OLS with country-clustered standard errors. Controls include political stability, rule of law, trade openness, and forestry rents.</p>
-                <div style="background: var(--bg-plot); padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--grid-color); text-align: center; overflow-x: auto;">
-                    $$
-                    \begin{aligned}
-                    ECI_{it} = \beta_0 
-                    &+ \beta_1 HCI_{it} 
-                    + \beta_2 GFCF_{it} 
-                    + \beta_3 Production_{it} \\
-                    &+ \beta_4 PoliticalStability_{it} 
-                    + \beta_5 RuleOfLaw_{it} 
-                    + \beta_6 Trade_{it} 
-                    + \beta_7 ForestryRents_{it} \\
-                    &+ \beta_8 (HCI_{it} \times Production_{it}) 
-                    + \beta_9 (GFCF_{it} \times Production_{it}) \\
-                    &+ \beta_{10} (HCI_{it} \times ForestryRents_{it}) 
-                    + \beta_{11} (GFCF_{it} \times ForestryRents_{it}) \\
-                    &+ \beta_{12} ECI_{i,t-1} 
-                    + \epsilon_{it}
-                    \end{aligned}
-                    $$
+        <div class="content-wrapper">
+            <div class="header-logos">TESTING VENABLES' INVESTMENT HYPOTHESIS</div>
+            <h2>Econometric Results</h2>
+    
+            <p class="narrative-text" style="text-align: left; margin-bottom: 20px;">
+                Panel OLS with country-clustered standard errors. Controls include political stability, rule of law, trade openness, and forestry rents.
+            </p>
+    
+            <div style="background: var(--white); padding: 20px 25px; border-radius: 8px; border: 1px solid var(--grid-color); box-shadow: var(--shadow-subtle); width: 100%; max-width: 1200px; box-sizing: border-box; text-align: center; overflow-x: auto; margin-bottom: 35px; font-size: 18px;">
+                $$
+                ECI_{it} = \beta_0 
+                + \beta_1 HCI_{it} 
+                + \beta_2 GFCF_{it} 
+                + \beta_3 Prod_{it}
+                + \beta_4 PolStab_{it} 
+                + \beta_5 RoL_{it} 
+                + \beta_6 Trade_{it} 
+                + \beta_7 Forest_{it}
+                + \boldsymbol{\beta} \cdot \mathbf{Interactions}_{it}
+                + \beta_{12} ECI_{i,t-1} 
+                + \epsilon_{it}
+                $$
+            </div>
+    
+            <div class="split-container" style="align-items: flex-start;">
+                <div class="chart-card" style="flex: 1; min-width: 350px;">
+                    <h3>Regression Results</h3>
+                    <div class="visual-placeholder has-iframe" style="height: 450px;" onclick="openPlaceholder(this, 'Table 3.3: Regression results')">
+                        <iframe src="figures/regression_table_combined.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div style="flex: 1; min-width: 350px; padding: 30px 10px 30px 20px; text-align: left;">
+                    <h3 style="color: var(--orange);">Key Findings</h3>
+                    <p style="font-size: 20px;"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating it contributes to complexity growth beyond existing trajectory.</p>
+                    <p style="font-size: 20px;"><strong>Gross Fixed Capital Formation</strong> is positive and significant.</p>
+                    <p style="font-size: 20px;"><strong>Production Value</strong> is negative but not significant, consistent with the conditional curse view.</p>
+                    <p style="font-size: 20px;"><strong>Institutional controls</strong> lose significance once lagged ECI is included.</p>
+                    <p style="font-size: 20px;">None of the four <strong>interaction terms</strong> are significant, however 3 out of 4 carry a positive sign.</p>
                 </div>
             </div>
-            <div class="split-pane right">
-                <h3 style="color: var(--orange);">Key Findings</h3>
-                <p style="font-size: 20px;"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating HCI contributes to complexity growth beyond existing trajectory.</p>
-                <p style="font-size: 20px;"><strong>Gross Fixed Capital Formation</strong> is positive and significant.</p>
-                <p style="font-size: 20px;"><strong>Production Value</strong> is negative but not significant, consistent with the conditional curse view.</p>
-                <p style="font-size: 20px;"><strong>Institutional controls</strong> lose significance once lagged ECI is included.</p>
-                <p style="font-size: 20px;">None of the four<strong> Interaction terms</strong> s significant, however 3 out of 4 have a positive sign.</p>
-            </div>
         </div>
-        <div class="chart-card" style="max-width: 500px; margin: 0 auto; width: 100%;">
-            <h3>Regression Results</h3>
-            <div class="visual-placeholder has-iframe" style="height: 400px;" onclick="openPlaceholder(this, 'Table 3.3: Regression results')">
-                <iframe src="figures/regression_table_combined.html" class="iframe-preview" scrolling="no"></iframe>
-            </div>
-        </div>
-    </div>
     </section>
-
+    
     <section id="sec-9" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">THE INTERACTION BETWEEN HUMAN CAPITAL AND RESOURCE WEALTH MATTERS</div>
