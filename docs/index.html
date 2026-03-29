@@ -502,6 +502,41 @@
         }
         .vault-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
 
+        .map-launch-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            white-space: nowrap;
+            font-family: var(--font-main);
+            font-size: 16px; font-weight: 600;
+            color: var(--white);
+            background: var(--dark-color);
+            border: none; border-radius: 5px;
+            padding: 12px 24px;
+            cursor: pointer;
+            letter-spacing: 0.3px;
+            transition: 0.3s;
+            box-shadow: var(--shadow-subtle);
+        }
+        .map-launch-btn:hover {
+            background: var(--blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        .map-launch-btn i { font-size: 14px; }
+
+        .case-title-row {
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px; width: 100%;
+        }
+        .case-title-row h2 {
+            margin-bottom: 0;
+        }
+        .case-title-row .map-launch-btn {
+            position: absolute;
+            right: 0;
+            bottom: 14px;
+        }
+
         /* =========================================
            9. NAVIGATION (SIDE MENU)
            ========================================= */
@@ -1218,7 +1253,10 @@
     <section id="sec-14" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHEN ALL THREE PILLARS COLLAPSE</div>
-            <h2>Republic of Congo</h2>
+            <div class="case-title-row">
+                <h2>Republic of Congo</h2>
+                <button class="map-launch-btn" onclick="openMapView('Congo')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
+            </div>
             <div class="split-container">
                 <div class="split-pane" style="border-color: var(--red);">
                     <div class="case-header">
@@ -1246,7 +1284,10 @@
     <section id="sec-15" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">GDP GREW. COMPLEXITY COLLAPSED.</div>
-            <h2>Azerbaijan</h2>
+            <div class="case-title-row">
+                <h2>Azerbaijan</h2>
+                <button class="map-launch-btn" onclick="openMapView('Azerbaijan')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
+            </div>
             <div class="split-container">
                 <div class="split-pane" style="border-color: var(--orange);">
                     <div class="case-header">
@@ -1274,7 +1315,10 @@
     <section id="sec-16" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">STRONG INSTITUTIONS ARE NECESSARY BUT NOT SUFFICIENT</div>
-            <h2>Chile</h2>
+            <div class="case-title-row">
+                <h2>Chile</h2>
+                <button class="map-launch-btn" onclick="openMapView('Chile')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
+            </div>
             <div class="split-container">
                 <div class="split-pane" style="border-color: var(--green);">
                     <div class="case-header">
@@ -1310,12 +1354,6 @@
                     </div>
                 </div>
                 
-                <div class="chart-card" style="width: 100%; margin-top: 20px; box-sizing: border-box;">
-                    <h3 style="font-size: 26px;">Interactive Map Analysis</h3>
-                    <div class="visual-placeholder has-iframe" style="height: 600px;" onclick="openPlaceholder(this, 'Interactive Map Analysis')">
-                        <iframe src="figures/fused_map.html" class="iframe-preview-large" scrolling="no"></iframe>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1732,6 +1770,43 @@
                 nav.style.width = "0";
             }
         }
+        // Map overlay for case-study buttons
+        function openMapView(view) {
+            var url = 'figures/fused_map.html#view=' + view;
+            var overlay = document.getElementById('mapOverlay');
+            if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.id = 'mapOverlay';
+                overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;';
+
+                var topBar = document.createElement('div');
+                topBar.style.cssText = 'width:92vw;display:flex;justify-content:flex-end;margin-bottom:8px;flex-shrink:0;';
+
+                var closeBtn = document.createElement('button');
+                closeBtn.innerHTML = '&times; Close map';
+                closeBtn.style.cssText = 'font-family:var(--font-main);font-size:14px;font-weight:600;color:#fff;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:5px;padding:8px 20px;cursor:pointer;transition:0.2s;';
+                closeBtn.onmouseenter = function(){ this.style.background='rgba(255,255,255,0.25)'; };
+                closeBtn.onmouseleave = function(){ this.style.background='rgba(255,255,255,0.15)'; };
+                closeBtn.onclick = function(){ 
+                    document.getElementById('mapOverlay').remove(); 
+                };
+                topBar.appendChild(closeBtn);
+                overlay.appendChild(topBar);
+
+                var frame = document.createElement('iframe');
+                frame.id = 'mapOverlayFrame';
+                frame.style.cssText = 'width:92vw;flex:1;border:none;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,0.4);';
+                overlay.appendChild(frame);
+
+                overlay.addEventListener('click', function(e){
+                    if (e.target === overlay || e.target === topBar) overlay.remove();
+                });
+
+                document.body.appendChild(overlay);
+            }
+            document.getElementById('mapOverlayFrame').src = url;
+        }
+
     </script>
 </body>
 </html>

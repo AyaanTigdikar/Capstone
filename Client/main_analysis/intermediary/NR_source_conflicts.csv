@@ -5930,179 +5930,765 @@ World,1988,Cadmium,Production,OWID,250,21.900000000000002,OWID,250,21.9000000000
 World,1988,Oil,Price,EI_Prices,0,39.58657575853056,GasPrice,0,14.9238416988417,62.3
 World,1989,Cadmium,Production,OWID,250,21.400000000000002,OWID,250,21.400000000000002,0.0
 World,1989,Oil,Price,EI_Prices,0,46.119883212233596,GasPrice,0,18.22611328125,60.5
+World,1990,Bauxite,Price,ConsolidatedPrices,0,27.2,OWID,0,34.0,25.0
 World,1990,Cadmium,Production,OWID,250,20.2,OWID,250,20.2,0.0
-World,1990,Coal,Price,EI_Prices,0,43.48,GasPrice,0,39.6666666666667,8.8
-World,1990,Oil,Price,EI_Prices,0,56.961731453171296,GasPrice,0,23.7258203125,58.3
+World,1990,Coal,Price,ConsolidatedPrices,0,39.6666666666667,EI_Prices,0,43.48,9.6
+World,1990,Coal,Price,ConsolidatedPrices,0,39.6666666666667,GasPrice,0,39.6666666666667,0.0
+World,1990,Cobalt,Price,ConsolidatedPrices,0,18200.0,OWID,0,22700.0,24.7
+World,1990,Copper,Price,ConsolidatedPrices,0,2710.0,OWID,0,3380.0,24.7
+World,1990,Gold,Price,ConsolidatedPrices,0,12400000.0,OWID,0,15500000.0,25.0
+World,1990,Iron ore,Price,ConsolidatedPrices,0,30.54,OWID,0,38.08,24.7
+World,1990,Lead,Price,ConsolidatedPrices,0,1010.0,OWID,0,1260.0,24.8
+World,1990,Lithium,Price,ConsolidatedPrices,0,4030.0,OWID,0,5030.0,24.8
+World,1990,Manganese,Price,ConsolidatedPrices,0,687.8844621364063,OWID,0,857.8819,24.7
+World,1990,Natural Gas,Price,ConsolidatedPrices,0,1.638333333333333,GasPrice,0,1.6383333333333334,0.0
+World,1990,Natural Graphite,Price,ConsolidatedPrices,0,701.2,OWID,0,874.7,24.7
+World,1990,Nickel,Price,ConsolidatedPrices,0,8860.0,OWID,0,11100.0,25.3
+World,1990,Oil,Price,ConsolidatedPrices,0,23.7258203125,EI_Prices,0,56.961731453171296,140.1
+World,1990,Oil,Price,ConsolidatedPrices,0,23.7258203125,GasPrice,0,23.7258203125,0.0
+World,1990,Rare Earth,Price,ConsolidatedPrices,0,8990.0,OWID,0,11200.0,24.6
+World,1990,Silver,Price,ConsolidatedPrices,0,155000.0,OWID,0,193300.0,24.7
+World,1990,Tin,Price,ConsolidatedPrices,0,8520.0,OWID,0,10600.0,24.4
+World,1990,Vanadium,Price,ConsolidatedPrices,0,16600.0,OWID,0,20700.0,24.7
+World,1990,Zinc,Price,ConsolidatedPrices,0,1640.0,OWID,0,2050.0,25.0
+World,1991,Bauxite,Price,ConsolidatedPrices,0,30.4,OWID,0,36.3,19.4
 World,1991,Cadmium,Production,OWID,250,20.900000000000002,OWID,250,20.900000000000002,0.0
-World,1991,Coal,Price,EI_Prices,0,42.8,GasPrice,0,39.6666666666667,7.3
-World,1991,Oil,Price,EI_Prices,0,46.06789575058465,GasPrice,0,20.0009143968872,56.6
+World,1991,Coal,Price,ConsolidatedPrices,0,39.6666666666667,EI_Prices,0,42.8,7.9
+World,1991,Coal,Price,ConsolidatedPrices,0,39.6666666666667,GasPrice,0,39.6666666666667,0.0
+World,1991,Cobalt,Price,ConsolidatedPrices,0,25100.0,OWID,0,30100.0,19.9
+World,1991,Copper,Price,ConsolidatedPrices,0,2410.0,OWID,0,2890.0,19.9
+World,1991,Gold,Price,ConsolidatedPrices,0,11700000.0,OWID,0,14000000.0,19.7
+World,1991,Iron ore,Price,ConsolidatedPrices,0,29.49,OWID,0,35.32,19.8
+World,1991,Lead,Price,ConsolidatedPrices,0,739.0,OWID,0,884.0,19.6
+World,1991,Lithium,Price,ConsolidatedPrices,0,4210.0,OWID,0,5040.0,19.7
+World,1991,Manganese,Price,ConsolidatedPrices,0,806.9977219922572,OWID,0,965.7902,19.7
+World,1991,Natural Gas,Price,ConsolidatedPrices,0,1.486666666666667,GasPrice,0,1.4866666666666666,0.0
+World,1991,Natural Graphite,Price,ConsolidatedPrices,0,647.8,OWID,0,775.2,19.7
+World,1991,Nickel,Price,ConsolidatedPrices,0,8160.0,OWID,0,9760.0,19.6
+World,1991,Oil,Price,ConsolidatedPrices,0,20.0009143968872,EI_Prices,0,46.06789575058465,130.3
+World,1991,Oil,Price,ConsolidatedPrices,0,20.0009143968872,GasPrice,0,20.0009143968872,0.0
+World,1991,Rare Earth,Price,ConsolidatedPrices,0,9470.0,OWID,0,11300.0,19.3
+World,1991,Silver,Price,ConsolidatedPrices,0,130000.0,OWID,0,155400.0,19.5
+World,1991,Tin,Price,ConsolidatedPrices,0,8000.0,OWID,0,9600.0,20.0
+World,1991,Vanadium,Price,ConsolidatedPrices,0,11200.0,OWID,0,13400.0,19.6
+World,1991,Zinc,Price,ConsolidatedPrices,0,1160.0,OWID,0,1390.0,19.8
+World,1992,Bauxite,Price,ConsolidatedPrices,0,28.6,OWID,0,33.2,16.1
 World,1992,Cadmium,Production,OWID,250,19.6,OWID,250,19.6,0.0
-World,1992,Coal,Price,EI_Prices,0,38.53,GasPrice,0,38.5625,0.1
-World,1992,Oil,Price,EI_Prices,0,43.19323433855884,GasPrice,0,19.3208365758755,55.3
+World,1992,Coal,Price,ConsolidatedPrices,0,38.5625,EI_Prices,0,38.53,0.1
+World,1992,Coal,Price,ConsolidatedPrices,0,38.5625,GasPrice,0,38.5625,0.0
+World,1992,Cobalt,Price,ConsolidatedPrices,0,47400.0,OWID,0,55100.0,16.2
+World,1992,Copper,Price,ConsolidatedPrices,0,2370.0,OWID,0,2750.0,16.0
+World,1992,Gold,Price,ConsolidatedPrices,0,11100000.0,OWID,0,12900000.0,16.2
+World,1992,Iron ore,Price,ConsolidatedPrices,0,31.18,OWID,0,36.21,16.1
+World,1992,Lead,Price,ConsolidatedPrices,0,774.0,OWID,0,899.0,16.1
+World,1992,Lithium,Price,ConsolidatedPrices,0,4320.0,OWID,0,5020.0,16.2
+World,1992,Manganese,Price,ConsolidatedPrices,0,654.2292490118577,OWID,0,760.081,16.2
+World,1992,Natural Gas,Price,ConsolidatedPrices,0,1.771666666666667,GasPrice,0,1.7716666666666667,0.0
+World,1992,Natural Graphite,Price,ConsolidatedPrices,0,513.1,OWID,0,596.1,16.2
+World,1992,Nickel,Price,ConsolidatedPrices,0,7000.0,OWID,0,8130.0,16.1
+World,1992,Oil,Price,ConsolidatedPrices,0,19.3208365758755,EI_Prices,0,43.19323433855884,123.6
+World,1992,Oil,Price,ConsolidatedPrices,0,19.3208365758755,GasPrice,0,19.3208365758755,0.0
+World,1992,Rare Earth,Price,ConsolidatedPrices,0,10100.0,OWID,0,11700.0,15.8
+World,1992,Silver,Price,ConsolidatedPrices,0,127000.0,OWID,0,147200.0,15.9
+World,1992,Tin,Price,ConsolidatedPrices,0,8870.0,OWID,0,10300.0,16.1
+World,1992,Vanadium,Price,ConsolidatedPrices,0,8970.0,OWID,0,10400.0,15.9
+World,1992,Zinc,Price,ConsolidatedPrices,0,1290.0,OWID,0,1500.0,16.3
+World,1993,Bauxite,Price,ConsolidatedPrices,0,27.8,OWID,0,31.4,12.9
 World,1993,Cadmium,Production,OWID,250,18.7,OWID,250,18.7,0.0
-World,1993,Coal,Price,EI_Prices,0,33.68,GasPrice,0,31.3333333333333,7.0
-World,1993,Oil,Price,EI_Prices,0,36.85361725502895,GasPrice,0,16.9716342412451,53.9
+World,1993,Coal,Price,ConsolidatedPrices,0,31.3333333333333,EI_Prices,0,33.68,7.5
+World,1993,Coal,Price,ConsolidatedPrices,0,31.3333333333333,GasPrice,0,31.3333333333333,0.0
+World,1993,Cobalt,Price,ConsolidatedPrices,0,31300.0,OWID,0,35300.0,12.8
+World,1993,Copper,Price,ConsolidatedPrices,0,2020.0,OWID,0,2280.0,12.9
+World,1993,Gold,Price,ConsolidatedPrices,0,11600000.0,OWID,0,13100000.0,12.9
+World,1993,Iron ore,Price,ConsolidatedPrices,0,24.5,OWID,0,27.65,12.9
+World,1993,Lead,Price,ConsolidatedPrices,0,699.0,OWID,0,788.0,12.7
+World,1993,Lithium,Price,ConsolidatedPrices,0,4210.0,OWID,0,4750.0,12.8
+World,1993,Manganese,Price,ConsolidatedPrices,0,605.0,OWID,0,682.4567,12.8
+World,1993,Natural Gas,Price,ConsolidatedPrices,0,2.120833333333333,GasPrice,0,2.120833333333333,0.0
+World,1993,Natural Graphite,Price,ConsolidatedPrices,0,572.8,OWID,0,646.4,12.8
+World,1993,Nickel,Price,ConsolidatedPrices,0,5290.0,OWID,0,5970.0,12.9
+World,1993,Oil,Price,ConsolidatedPrices,0,16.9716342412451,EI_Prices,0,36.85361725502895,117.1
+World,1993,Oil,Price,ConsolidatedPrices,0,16.9716342412451,GasPrice,0,16.9716342412451,0.0
+World,1993,Rare Earth,Price,ConsolidatedPrices,0,9010.0,OWID,0,10200.0,13.2
+World,1993,Silver,Price,ConsolidatedPrices,0,138000.0,OWID,0,156000.0,13.0
+World,1993,Tin,Price,ConsolidatedPrices,0,7710.0,OWID,0,8700.0,12.8
+World,1993,Vanadium,Price,ConsolidatedPrices,0,5710.0,OWID,0,6440.0,12.8
+World,1993,Zinc,Price,ConsolidatedPrices,0,1020.0,OWID,0,1150.0,12.7
+World,1994,Bauxite,Price,ConsolidatedPrices,0,25.6,OWID,0,28.2,10.2
 World,1994,Cadmium,Production,OWID,250,18.2,OWID,250,18.2,0.0
-World,1994,Coal,Price,EI_Prices,0,37.18,GasPrice,0,32.3,13.1
-World,1994,Oil,Price,EI_Prices,0,33.47487099143922,GasPrice,0,15.817626459144,52.7
+World,1994,Coal,Price,ConsolidatedPrices,0,32.3,EI_Prices,0,37.18,15.1
+World,1994,Coal,Price,ConsolidatedPrices,0,32.3,GasPrice,0,32.3,0.0
+World,1994,Cobalt,Price,ConsolidatedPrices,0,42200.0,OWID,0,46400.0,10.0
+World,1994,Copper,Price,ConsolidatedPrices,0,2450.0,OWID,0,2690.0,9.8
+World,1994,Gold,Price,ConsolidatedPrices,0,12400000.0,OWID,0,13600000.0,9.7
+World,1994,Iron ore,Price,ConsolidatedPrices,0,24.4,OWID,0,26.84,10.0
+World,1994,Lead,Price,ConsolidatedPrices,0,820.0,OWID,0,902.0,10.0
+World,1994,Lithium,Price,ConsolidatedPrices,0,4410.0,OWID,0,4850.0,10.0
+World,1994,Manganese,Price,ConsolidatedPrices,0,602.0,OWID,0,662.1188,10.0
+World,1994,Natural Gas,Price,ConsolidatedPrices,0,1.92,GasPrice,0,1.92,0.0
+World,1994,Natural Graphite,Price,ConsolidatedPrices,0,506.6,OWID,0,557.1,10.0
+World,1994,Nickel,Price,ConsolidatedPrices,0,6340.0,OWID,0,6970.0,9.9
+World,1994,Oil,Price,ConsolidatedPrices,0,15.817626459144,EI_Prices,0,33.47487099143922,111.6
+World,1994,Oil,Price,ConsolidatedPrices,0,15.817626459144,GasPrice,0,15.817626459144,0.0
+World,1994,Rare Earth,Price,ConsolidatedPrices,0,7980.0,OWID,0,8780.0,10.0
+World,1994,Silver,Price,ConsolidatedPrices,0,170000.0,OWID,0,187000.0,10.0
+World,1994,Tin,Price,ConsolidatedPrices,0,8140.0,OWID,0,8950.0,10.0
+World,1994,Vanadium,Price,ConsolidatedPrices,0,11600.0,OWID,0,12800.0,10.3
+World,1994,Zinc,Price,ConsolidatedPrices,0,1090.0,OWID,0,1200.0,10.1
+World,1995,Bauxite,Price,ConsolidatedPrices,0,23.5,OWID,0,25.1,6.8
 World,1995,Cadmium,Production,OWID,250,20.1,OWID,250,20.1,0.0
-World,1995,Coal,Price,EI_Prices,0,44.5,GasPrice,0,39.3716666666667,11.5
-World,1995,Oil,Price,EI_Prices,0,35.02969928038363,GasPrice,0,17.0166796875,51.4
+World,1995,Coal,Price,ConsolidatedPrices,0,39.3716666666667,EI_Prices,0,44.5,13.0
+World,1995,Coal,Price,ConsolidatedPrices,0,39.3716666666667,GasPrice,0,39.3716666666667,0.0
+World,1995,Cobalt,Price,ConsolidatedPrices,0,58300.0,OWID,0,62400.0,7.0
+World,1995,Copper,Price,ConsolidatedPrices,0,3050.0,OWID,0,3260.0,6.9
+World,1995,Gold,Price,ConsolidatedPrices,0,12400000.0,OWID,0,13300000.0,7.3
+World,1995,Iron ore,Price,ConsolidatedPrices,0,28.3,OWID,0,30.27,7.0
+World,1995,Lead,Price,ConsolidatedPrices,0,933.0,OWID,0,998.0,7.0
+World,1995,Lithium,Price,ConsolidatedPrices,0,4340.0,OWID,0,4640.0,6.9
+World,1995,Manganese,Price,ConsolidatedPrices,0,599.0,OWID,0,640.6627,7.0
+World,1995,Natural Gas,Price,ConsolidatedPrices,0,1.686666666666667,GasPrice,0,1.6866666666666665,0.0
+World,1995,Natural Graphite,Price,ConsolidatedPrices,0,495.9,OWID,0,530.4,7.0
+World,1995,Nickel,Price,ConsolidatedPrices,0,8230.0,OWID,0,8800.0,6.9
+World,1995,Oil,Price,ConsolidatedPrices,0,17.0166796875,EI_Prices,0,35.02969928038363,105.9
+World,1995,Oil,Price,ConsolidatedPrices,0,17.0166796875,GasPrice,0,17.0166796875,0.0
+World,1995,Rare Earth,Price,ConsolidatedPrices,0,8210.0,OWID,0,8780.0,6.9
+World,1995,Silver,Price,ConsolidatedPrices,0,166000.0,OWID,0,177100.0,6.7
+World,1995,Tin,Price,ConsolidatedPrices,0,9160.0,OWID,0,9800.0,7.0
+World,1995,Vanadium,Price,ConsolidatedPrices,0,11000.0,OWID,0,11800.0,7.3
+World,1995,Zinc,Price,ConsolidatedPrices,0,1230.0,OWID,0,1320.0,7.3
+World,1996,Bauxite,Price,ConsolidatedPrices,0,26.8,OWID,0,27.9,4.1
 World,1996,Cadmium,Production,OWID,250,18.900000000000002,OWID,250,18.900000000000002,0.0
-World,1996,Coal,Price,EI_Prices,0,41.25,GasPrice,0,38.0741666666667,7.7
-World,1996,Oil,Price,EI_Prices,0,41.33550493039297,GasPrice,0,20.668488372093,50.0
+World,1996,Coal,Price,ConsolidatedPrices,0,38.0741666666667,EI_Prices,0,41.25,8.3
+World,1996,Coal,Price,ConsolidatedPrices,0,38.0741666666667,GasPrice,0,38.0741666666667,0.0
+World,1996,Cobalt,Price,ConsolidatedPrices,0,56400.0,OWID,0,58600.0,3.9
+World,1996,Copper,Price,ConsolidatedPrices,0,2400.0,OWID,0,2500.0,4.2
+World,1996,Gold,Price,ConsolidatedPrices,0,12500000.0,OWID,0,13000000.0,4.0
+World,1996,Iron ore,Price,ConsolidatedPrices,0,28.5,OWID,0,29.63,4.0
+World,1996,Lead,Price,ConsolidatedPrices,0,1080.0,OWID,0,1120.0,3.7
+World,1996,Lithium,Price,ConsolidatedPrices,0,4340.0,OWID,0,4510.0,3.9
+World,1996,Manganese,Price,ConsolidatedPrices,0,650.0,OWID,0,675.2709,3.9
+World,1996,Natural Gas,Price,ConsolidatedPrices,0,2.756666666666666,GasPrice,0,2.7566666666666664,0.0
+World,1996,Natural Graphite,Price,ConsolidatedPrices,0,535.6,OWID,0,556.6,3.9
+World,1996,Nickel,Price,ConsolidatedPrices,0,7500.0,OWID,0,7790.0,3.9
+World,1996,Oil,Price,ConsolidatedPrices,0,20.668488372093,EI_Prices,0,41.33550493039297,100.0
+World,1996,Oil,Price,ConsolidatedPrices,0,20.668488372093,GasPrice,0,20.668488372093,0.0
+World,1996,Rare Earth,Price,ConsolidatedPrices,0,7150.0,OWID,0,7430.0,3.9
+World,1996,Silver,Price,ConsolidatedPrices,0,167000.0,OWID,0,173400.0,3.8
+World,1996,Tin,Price,ConsolidatedPrices,0,9090.0,OWID,0,9450.0,4.0
+World,1996,Vanadium,Price,ConsolidatedPrices,0,12600.0,OWID,0,13100.0,4.0
+World,1996,Zinc,Price,ConsolidatedPrices,0,1130.0,OWID,0,1170.0,3.5
+World,1997,Bauxite,Price,ConsolidatedPrices,0,24.3,OWID,0,24.7,1.6
 World,1997,Cadmium,Production,OWID,250,20.3,OWID,250,20.3,0.0
-World,1997,Coal,Price,EI_Prices,0,38.92,GasPrice,0,35.0991666666667,9.8
-World,1997,Oil,Price,EI_Prices,0,37.311586282824436,GasPrice,0,19.0925875486381,48.8
+World,1997,Coal,Price,ConsolidatedPrices,0,35.0991666666667,EI_Prices,0,38.92,10.9
+World,1997,Coal,Price,ConsolidatedPrices,0,35.0991666666667,GasPrice,0,35.0991666666667,0.0
+World,1997,Cobalt,Price,ConsolidatedPrices,0,46300.0,OWID,0,47000.0,1.5
+World,1997,Copper,Price,ConsolidatedPrices,0,2360.0,OWID,0,2400.0,1.7
+World,1997,Gold,Price,ConsolidatedPrices,0,10700000.0,OWID,0,10900000.0,1.9
+World,1997,Iron ore,Price,ConsolidatedPrices,0,30.1,OWID,0,30.56,1.5
+World,1997,Lead,Price,ConsolidatedPrices,0,1030.0,OWID,0,1050.0,1.9
+World,1997,Lithium,Price,ConsolidatedPrices,0,4480.0,OWID,0,4550.0,1.6
+World,1997,Manganese,Price,ConsolidatedPrices,0,635.0,OWID,0,644.891,1.6
+World,1997,Natural Gas,Price,ConsolidatedPrices,0,2.525,GasPrice,0,2.525,0.0
+World,1997,Natural Graphite,Price,ConsolidatedPrices,0,557.7,OWID,0,566.4,1.6
+World,1997,Nickel,Price,ConsolidatedPrices,0,6930.0,OWID,0,7040.0,1.6
+World,1997,Oil,Price,ConsolidatedPrices,0,19.0925875486381,EI_Prices,0,37.311586282824436,95.4
+World,1997,Oil,Price,ConsolidatedPrices,0,19.0925875486381,GasPrice,0,19.0925875486381,0.0
+World,1997,Rare Earth,Price,ConsolidatedPrices,0,8540.0,OWID,0,8670.0,1.5
+World,1997,Silver,Price,ConsolidatedPrices,0,157000.0,OWID,0,159700.0,1.7
+World,1997,Tin,Price,ConsolidatedPrices,0,8410.0,OWID,0,8540.0,1.5
+World,1997,Vanadium,Price,ConsolidatedPrices,0,15300.0,OWID,0,15500.0,1.3
+World,1997,Zinc,Price,ConsolidatedPrices,0,1420.0,OWID,0,1440.0,1.4
+World,1998,Bauxite,Price,ConsolidatedPrices,0,22.4,OWID,0,22.4,0.0
 World,1998,Cadmium,Production,OWID,250,20.2,OWID,250,20.2,0.0
-World,1998,Coal,Price,EI_Prices,0,32.0,GasPrice,0,29.2308333333333,8.7
-World,1998,Oil,Price,EI_Prices,0,24.4696752600212,GasPrice,0,12.7156614785992,48.0
+World,1998,Coal,Price,ConsolidatedPrices,0,29.2308333333333,EI_Prices,0,32.0,9.5
+World,1998,Coal,Price,ConsolidatedPrices,0,29.2308333333333,GasPrice,0,29.2308333333333,0.0
+World,1998,Cobalt,Price,ConsolidatedPrices,0,44200.0,OWID,0,44200.0,0.0
+World,1998,Copper,Price,ConsolidatedPrices,0,1730.0,OWID,0,1730.0,0.0
+World,1998,Gold,Price,ConsolidatedPrices,0,9490000.0,OWID,0,9490000.0,0.0
+World,1998,Iron ore,Price,ConsolidatedPrices,0,31.14,OWID,0,31.14,0.0
+World,1998,Lead,Price,ConsolidatedPrices,0,999.0,OWID,0,999.0,0.0
+World,1998,Lithium,Price,ConsolidatedPrices,0,4480.0,OWID,0,4480.0,0.0
+World,1998,Manganese,Price,ConsolidatedPrices,0,591.0,OWID,0,591.0,0.0
+World,1998,Natural Gas,Price,ConsolidatedPrices,0,2.084166666666667,GasPrice,0,2.0841666666666665,0.0
+World,1998,Natural Graphite,Price,ConsolidatedPrices,0,565.0,OWID,0,564.9,0.0
+World,1998,Nickel,Price,ConsolidatedPrices,0,4630.0,OWID,0,4630.0,0.0
+World,1998,Oil,Price,ConsolidatedPrices,0,12.7156614785992,EI_Prices,0,24.4696752600212,92.4
+World,1998,Oil,Price,ConsolidatedPrices,0,12.7156614785992,GasPrice,0,12.7156614785992,0.0
+World,1998,Rare Earth,Price,ConsolidatedPrices,0,8900.0,OWID,0,8900.0,0.0
+World,1998,Silver,Price,ConsolidatedPrices,0,178000.0,OWID,0,178000.0,0.0
+World,1998,Tin,Price,ConsolidatedPrices,0,8230.0,OWID,0,8230.0,0.0
+World,1998,Vanadium,Price,ConsolidatedPrices,0,21500.0,OWID,0,21500.0,0.0
+World,1998,Zinc,Price,ConsolidatedPrices,0,1130.0,OWID,0,1130.0,0.0
+World,1999,Bauxite,Price,ConsolidatedPrices,0,21.0,OWID,0,20.6,1.9
 World,1999,Cadmium,Production,OWID,250,20.0,OWID,250,20.0,0.0
-World,1999,Coal,Price,EI_Prices,0,28.79,GasPrice,0,25.8916666666667,10.1
-World,1999,Oil,Price,EI_Prices,0,33.84068864413777,GasPrice,0,17.9700778210117,46.9
+World,1999,Coal,Price,ConsolidatedPrices,0,25.8916666666667,EI_Prices,0,28.79,11.2
+World,1999,Coal,Price,ConsolidatedPrices,0,25.8916666666667,GasPrice,0,25.8916666666667,0.0
+World,1999,Cobalt,Price,ConsolidatedPrices,0,33700.0,OWID,0,33000.0,2.1
+World,1999,Copper,Price,ConsolidatedPrices,0,1670.0,OWID,0,1640.0,1.8
+World,1999,Gold,Price,ConsolidatedPrices,0,9000000.0,OWID,0,8810000.0,2.1
+World,1999,Iron ore,Price,ConsolidatedPrices,0,26.47,OWID,0,25.9,2.2
+World,1999,Lead,Price,ConsolidatedPrices,0,963.0,OWID,0,942.0,2.2
+World,1999,Lithium,Price,ConsolidatedPrices,0,4470.0,OWID,0,4360.0,2.5
+World,1999,Manganese,Price,ConsolidatedPrices,0,535.0,OWID,0,523.4394,2.2
+World,1999,Natural Gas,Price,ConsolidatedPrices,0,2.265833333333333,GasPrice,0,2.265833333333333,0.0
+World,1999,Natural Graphite,Price,ConsolidatedPrices,0,624.0,OWID,0,608.5,2.5
+World,1999,Nickel,Price,ConsolidatedPrices,0,6010.0,OWID,0,5880.0,2.2
+World,1999,Oil,Price,ConsolidatedPrices,0,17.9700778210117,EI_Prices,0,33.84068864413777,88.3
+World,1999,Oil,Price,ConsolidatedPrices,0,17.9700778210117,GasPrice,0,17.9700778210117,0.0
+World,1999,Rare Earth,Price,ConsolidatedPrices,0,6400.0,OWID,0,6260.0,2.2
+World,1999,Silver,Price,ConsolidatedPrices,0,169000.0,OWID,0,165000.0,2.4
+World,1999,Tin,Price,ConsolidatedPrices,0,8070.0,OWID,0,7900.0,2.1
+World,1999,Vanadium,Price,ConsolidatedPrices,0,7830.0,OWID,0,7660.0,2.2
+World,1999,Zinc,Price,ConsolidatedPrices,0,1180.0,OWID,0,1150.0,2.5
+World,2000,Bauxite,Price,ConsolidatedPrices,0,22.4,OWID,0,21.2,5.4
 World,2000,Cadmium,Production,OWID,250,20.3,OWID,250,20.3,0.0
-World,2000,Coal,Price,EI_Prices,0,35.99,GasPrice,0,26.25,27.1
-World,2000,Cobalt,Price,EI_Prices,0,33422.0,OWID,0,28100.0,15.9
-World,2000,Lithium,Price,EI_Prices,0,4470.0,OWID,0,4230.0,5.4
-World,2000,Oil,Price,EI_Prices,0,51.90885126381084,GasPrice,0,28.49544921875,45.1
+World,2000,Coal,Price,ConsolidatedPrices,0,26.25,EI_Prices,0,35.99,37.1
+World,2000,Coal,Price,ConsolidatedPrices,0,26.25,GasPrice,0,26.25,0.0
+World,2000,Cobalt,Price,ConsolidatedPrices,0,29700.0,EI_Prices,0,33422.0,12.5
+World,2000,Cobalt,Price,ConsolidatedPrices,0,29700.0,OWID,0,28100.0,5.4
+World,2000,Copper,Price,ConsolidatedPrices,0,1940.0,OWID,0,1840.0,5.2
+World,2000,Gold,Price,ConsolidatedPrices,0,9010000.0,OWID,0,8530000.0,5.3
+World,2000,Iron ore,Price,ConsolidatedPrices,0,25.57,OWID,0,24.21,5.3
+World,2000,Lead,Price,ConsolidatedPrices,0,961.0,OWID,0,910.0,5.3
+World,2000,Lithium,Price,ConsolidatedPrices,0,4470.0,EI_Prices,0,4470.0,0.0
+World,2000,Lithium,Price,ConsolidatedPrices,0,4470.0,OWID,0,4230.0,5.4
+World,2000,Manganese,Price,ConsolidatedPrices,0,582.0,OWID,0,550.90594,5.3
+World,2000,Natural Gas,Price,ConsolidatedPrices,0,4.225833333333333,GasPrice,0,4.225833333333333,0.0
+World,2000,Natural Graphite,Price,ConsolidatedPrices,0,535.0,OWID,0,506.0,5.4
+World,2000,Nickel,Price,ConsolidatedPrices,0,8640.0,OWID,0,8180.0,5.3
+World,2000,Oil,Price,ConsolidatedPrices,0,28.49544921875,EI_Prices,0,51.90885126381084,82.2
+World,2000,Oil,Price,ConsolidatedPrices,0,28.49544921875,GasPrice,0,28.49544921875,0.0
+World,2000,Rare Earth,Price,ConsolidatedPrices,0,6450.0,OWID,0,6110.0,5.3
+World,2000,Silver,Price,ConsolidatedPrices,0,161000.0,OWID,0,152000.0,5.6
+World,2000,Tin,Price,ConsolidatedPrices,0,8160.0,OWID,0,7730.0,5.3
+World,2000,Vanadium,Price,ConsolidatedPrices,0,7160.0,OWID,0,6780.0,5.3
+World,2000,Zinc,Price,ConsolidatedPrices,0,1230.0,OWID,0,1160.0,5.7
+World,2001,Bauxite,Price,ConsolidatedPrices,0,22.4,OWID,0,20.6,8.0
 World,2001,Cadmium,Production,OWID,250,20.0,OWID,250,20.0,0.0
-World,2001,Coal,Price,EI_Prices,0,39.03423076923077,GasPrice,0,32.3125,17.2
-World,2001,Cobalt,Price,EI_Prices,0,23259.0,OWID,0,21500.0,7.6
-World,2001,Lithium,Price,EI_Prices,0,1490.0,OWID,0,1370.0,8.1
-World,2001,Oil,Price,EI_Prices,0,43.30445583346055,GasPrice,0,24.4438910505837,43.6
+World,2001,Coal,Price,ConsolidatedPrices,0,32.3125,EI_Prices,0,39.03423076923077,20.8
+World,2001,Coal,Price,ConsolidatedPrices,0,32.3125,GasPrice,0,32.3125,0.0
+World,2001,Cobalt,Price,ConsolidatedPrices,0,23300.0,EI_Prices,0,23259.0,0.2
+World,2001,Cobalt,Price,ConsolidatedPrices,0,23300.0,OWID,0,21500.0,7.7
+World,2001,Copper,Price,ConsolidatedPrices,0,1690.0,OWID,0,1560.0,7.7
+World,2001,Gold,Price,ConsolidatedPrices,0,8750000.0,OWID,0,8060000.0,7.9
+World,2001,Iron ore,Price,ConsolidatedPrices,0,23.87,OWID,0,21.98,7.9
+World,2001,Lead,Price,ConsolidatedPrices,0,962.0,OWID,0,886.0,7.9
+World,2001,Lithium,Price,ConsolidatedPrices,0,1490.0,EI_Prices,0,1490.0,0.0
+World,2001,Lithium,Price,ConsolidatedPrices,0,1490.0,OWID,0,1370.0,8.1
+World,2001,Manganese,Price,ConsolidatedPrices,0,529.0,OWID,0,486.88312,8.0
+World,2001,Natural Gas,Price,ConsolidatedPrices,0,4.068333333333333,GasPrice,0,4.068333333333333,0.0
+World,2001,Natural Graphite,Price,ConsolidatedPrices,0,447.0,OWID,0,411.6,7.9
+World,2001,Nickel,Price,ConsolidatedPrices,0,5950.0,OWID,0,5470.0,8.1
+World,2001,Oil,Price,ConsolidatedPrices,0,24.4438910505837,EI_Prices,0,43.30445583346055,77.2
+World,2001,Oil,Price,ConsolidatedPrices,0,24.4438910505837,GasPrice,0,24.4438910505837,0.0
+World,2001,Rare Earth,Price,ConsolidatedPrices,0,5790.0,OWID,0,5330.0,7.9
+World,2001,Silver,Price,ConsolidatedPrices,0,141000.0,OWID,0,130000.0,7.8
+World,2001,Tin,Price,ConsolidatedPrices,0,6940.0,OWID,0,6390.0,7.9
+World,2001,Vanadium,Price,ConsolidatedPrices,0,5390.0,OWID,0,4960.0,8.0
+World,2001,Zinc,Price,ConsolidatedPrices,0,969.0,OWID,0,892.0,7.9
+World,2002,Bauxite,Price,ConsolidatedPrices,0,19.9,OWID,0,18.0,9.5
 World,2002,Cadmium,Production,OWID,250,17.8,OWID,250,17.8,0.0
-World,2002,Coal,Price,EI_Prices,0,31.649615384615387,GasPrice,0,27.06,14.5
-World,2002,Cobalt,Price,EI_Prices,0,15234.0,OWID,0,15500.0,1.7
-World,2002,Lithium,Price,EI_Prices,0,1590.0,OWID,0,1440.0,9.4
-World,2002,Oil,Price,EI_Prices,0,43.63872619106483,GasPrice,0,25.0232558139535,42.7
+World,2002,Coal,Price,ConsolidatedPrices,0,27.06,EI_Prices,0,31.649615384615387,17.0
+World,2002,Coal,Price,ConsolidatedPrices,0,27.06,GasPrice,0,27.06,0.0
+World,2002,Cobalt,Price,ConsolidatedPrices,0,17100.0,EI_Prices,0,15234.0,10.9
+World,2002,Cobalt,Price,ConsolidatedPrices,0,17100.0,OWID,0,15500.0,9.4
+World,2002,Copper,Price,ConsolidatedPrices,0,1670.0,OWID,0,1510.0,9.6
+World,2002,Gold,Price,ConsolidatedPrices,0,10000000.0,OWID,0,9060000.0,9.4
+World,2002,Iron ore,Price,ConsolidatedPrices,0,26.04,OWID,0,23.61,9.3
+World,2002,Lead,Price,ConsolidatedPrices,0,961.0,OWID,0,871.0,9.4
+World,2002,Lithium,Price,ConsolidatedPrices,0,1590.0,EI_Prices,0,1590.0,0.0
+World,2002,Lithium,Price,ConsolidatedPrices,0,1590.0,OWID,0,1440.0,9.4
+World,2002,Manganese,Price,ConsolidatedPrices,0,471.0,OWID,0,426.75375,9.4
+World,2002,Natural Gas,Price,ConsolidatedPrices,0,3.330833333333333,GasPrice,0,3.3308333333333326,0.0
+World,2002,Natural Graphite,Price,ConsolidatedPrices,0,495.0,OWID,0,448.0,9.5
+World,2002,Nickel,Price,ConsolidatedPrices,0,6770.0,OWID,0,6130.0,9.5
+World,2002,Oil,Price,ConsolidatedPrices,0,25.0232558139535,EI_Prices,0,43.63872619106483,74.4
+World,2002,Oil,Price,ConsolidatedPrices,0,25.0232558139535,GasPrice,0,25.0232558139535,0.0
+World,2002,Rare Earth,Price,ConsolidatedPrices,0,7500.0,OWID,0,6800.0,9.3
+World,2002,Silver,Price,ConsolidatedPrices,0,149000.0,OWID,0,135000.0,9.4
+World,2002,Tin,Price,ConsolidatedPrices,0,6440.0,OWID,0,5830.0,9.5
+World,2002,Vanadium,Price,ConsolidatedPrices,0,5270.0,OWID,0,4780.0,9.3
+World,2002,Zinc,Price,ConsolidatedPrices,0,852.0,OWID,0,772.0,9.4
+World,2003,Bauxite,Price,ConsolidatedPrices,0,19.1,OWID,0,16.9,11.5
 World,2003,Cadmium,Production,OWID,250,18.400000000000002,OWID,250,18.400000000000002,0.0
-World,2003,Coal,Price,EI_Prices,0,43.59788461538461,GasPrice,0,27.9542410714286,35.9
-World,2003,Cobalt,Price,EI_Prices,0,23369.0,OWID,0,18200.0,22.1
-World,2003,Lithium,Price,EI_Prices,0,1550.0,OWID,0,1370.0,11.6
-World,2003,Oil,Price,EI_Prices,0,49.16259788253283,GasPrice,0,28.830703125,41.4
+World,2003,Coal,Price,ConsolidatedPrices,0,27.9542410714286,EI_Prices,0,43.59788461538461,56.0
+World,2003,Coal,Price,ConsolidatedPrices,0,27.9542410714286,GasPrice,0,27.9542410714286,0.0
+World,2003,Cobalt,Price,ConsolidatedPrices,0,20600.0,EI_Prices,0,23369.0,13.4
+World,2003,Cobalt,Price,ConsolidatedPrices,0,20600.0,OWID,0,18200.0,11.7
+World,2003,Copper,Price,ConsolidatedPrices,0,1880.0,OWID,0,1660.0,11.7
+World,2003,Gold,Price,ConsolidatedPrices,0,11700000.0,OWID,0,10400000.0,11.1
+World,2003,Iron ore,Price,ConsolidatedPrices,0,26.86,OWID,0,23.79,11.4
+World,2003,Lead,Price,ConsolidatedPrices,0,965.0,OWID,0,855.0,11.4
+World,2003,Lithium,Price,ConsolidatedPrices,0,1550.0,EI_Prices,0,1550.0,0.0
+World,2003,Lithium,Price,ConsolidatedPrices,0,1550.0,OWID,0,1370.0,11.6
+World,2003,Manganese,Price,ConsolidatedPrices,0,599.0,OWID,0,530.63586,11.4
+World,2003,Natural Gas,Price,ConsolidatedPrices,0,5.625,GasPrice,0,5.625,0.0
+World,2003,Natural Graphite,Price,ConsolidatedPrices,0,467.0,OWID,0,413.0,11.6
+World,2003,Nickel,Price,ConsolidatedPrices,0,9630.0,OWID,0,8530.0,11.4
+World,2003,Oil,Price,ConsolidatedPrices,0,28.830703125,EI_Prices,0,49.16259788253283,70.5
+World,2003,Oil,Price,ConsolidatedPrices,0,28.830703125,GasPrice,0,28.830703125,0.0
+World,2003,Rare Earth,Price,ConsolidatedPrices,0,6150.0,OWID,0,5450.0,11.4
+World,2003,Silver,Price,ConsolidatedPrices,0,158000.0,OWID,0,140000.0,11.4
+World,2003,Tin,Price,ConsolidatedPrices,0,7490.0,OWID,0,6640.0,11.3
+World,2003,Vanadium,Price,ConsolidatedPrices,0,8700.0,OWID,0,7710.0,11.4
+World,2003,Zinc,Price,ConsolidatedPrices,0,895.74,OWID,0,793.0,11.5
+World,2004,Bauxite,Price,ConsolidatedPrices,0,21.8,OWID,0,18.8,13.8
 World,2004,Cadmium,Production,OWID,250,18.6,OWID,250,18.6,0.0
-World,2004,Coal,Price,EI_Prices,0,72.13433962264152,GasPrice,0,56.7299107142857,21.4
-World,2004,Cobalt,Price,EI_Prices,0,52757.0,OWID,0,37400.0,29.1
-World,2004,Lithium,Price,EI_Prices,0,1720.0,OWID,0,1480.0,14.0
-World,2004,Oil,Price,EI_Prices,0,63.54876781315577,GasPrice,0,38.265,39.8
+World,2004,Coal,Price,ConsolidatedPrices,0,56.7299107142857,EI_Prices,0,72.13433962264152,27.2
+World,2004,Coal,Price,ConsolidatedPrices,0,56.7299107142857,GasPrice,0,56.7299107142857,0.0
+World,2004,Cobalt,Price,ConsolidatedPrices,0,43400.0,EI_Prices,0,52757.0,21.6
+World,2004,Cobalt,Price,ConsolidatedPrices,0,43400.0,OWID,0,37400.0,13.8
+World,2004,Copper,Price,ConsolidatedPrices,0,2950.0,OWID,0,2550.0,13.6
+World,2004,Gold,Price,ConsolidatedPrices,0,13200000.0,OWID,0,11400000.0,13.6
+World,2004,Iron ore,Price,ConsolidatedPrices,0,37.92,OWID,0,32.72,13.7
+World,2004,Lead,Price,ConsolidatedPrices,0,1220.0,OWID,0,1050.0,13.9
+World,2004,Lithium,Price,ConsolidatedPrices,0,1720.0,EI_Prices,0,1720.0,0.0
+World,2004,Lithium,Price,ConsolidatedPrices,0,1720.0,OWID,0,1480.0,14.0
+World,2004,Manganese,Price,ConsolidatedPrices,0,1090.0,OWID,0,940.55054,13.7
+World,2004,Natural Gas,Price,ConsolidatedPrices,0,5.849166666666666,GasPrice,0,5.849166666666666,0.0
+World,2004,Natural Graphite,Price,ConsolidatedPrices,0,469.0,OWID,0,405.0,13.6
+World,2004,Nickel,Price,ConsolidatedPrices,0,13800.0,OWID,0,11900.0,13.8
+World,2004,Oil,Price,ConsolidatedPrices,0,38.265,EI_Prices,0,63.54876781315577,66.1
+World,2004,Oil,Price,ConsolidatedPrices,0,38.265,GasPrice,0,38.265,0.0
+World,2004,Rare Earth,Price,ConsolidatedPrices,0,8590.0,OWID,0,7410.0,13.7
+World,2004,Silver,Price,ConsolidatedPrices,0,215000.0,OWID,0,186000.0,13.5
+World,2004,Tin,Price,ConsolidatedPrices,0,12100.0,OWID,0,10400.0,14.0
+World,2004,Vanadium,Price,ConsolidatedPrices,0,23600.0,OWID,0,20300.0,14.0
+World,2004,Zinc,Price,ConsolidatedPrices,0,1160.0,OWID,0,999.0,13.9
+World,2005,Bauxite,Price,ConsolidatedPrices,0,24.7,OWID,0,20.6,16.6
 World,2005,Cadmium,Production,OWID,250,20.1,OWID,250,20.1,0.0
-World,2005,Coal,Price,EI_Prices,0,60.53923076923078,GasPrice,0,50.8163130024737,16.1
-World,2005,Cobalt,Price,EI_Prices,0,35186.0,OWID,0,28100.0,20.1
-World,2005,Lithium,Price,EI_Prices,0,1460.0,OWID,0,1220.0,16.4
-World,2005,Oil,Price,EI_Prices,0,87.57494397895583,GasPrice,0,54.5210894941634,37.7
+World,2005,Coal,Price,ConsolidatedPrices,0,50.8163130024737,EI_Prices,0,60.53923076923078,19.1
+World,2005,Coal,Price,ConsolidatedPrices,0,50.8163130024737,GasPrice,0,50.8163130024737,0.0
+World,2005,Cobalt,Price,ConsolidatedPrices,0,33600.0,EI_Prices,0,35186.0,4.7
+World,2005,Cobalt,Price,ConsolidatedPrices,0,33600.0,OWID,0,28100.0,16.4
+World,2005,Copper,Price,ConsolidatedPrices,0,3820.0,OWID,0,3190.0,16.5
+World,2005,Gold,Price,ConsolidatedPrices,0,14300000.0,OWID,0,11900000.0,16.8
+World,2005,Iron ore,Price,ConsolidatedPrices,0,44.5,OWID,0,37.15,16.5
+World,2005,Lead,Price,ConsolidatedPrices,0,1350.0,OWID,0,1130.0,16.3
+World,2005,Lithium,Price,ConsolidatedPrices,0,1460.0,EI_Prices,0,1460.0,0.0
+World,2005,Lithium,Price,ConsolidatedPrices,0,1460.0,OWID,0,1220.0,16.4
+World,2005,Manganese,Price,ConsolidatedPrices,0,712.0,OWID,0,594.24475,16.5
+World,2005,Natural Gas,Price,ConsolidatedPrices,0,7.306230540961385,GasPrice,0,7.306230540961385,0.0
+World,2005,Natural Graphite,Price,ConsolidatedPrices,0,537.0,OWID,0,448.0,16.6
+World,2005,Nickel,Price,ConsolidatedPrices,0,14700.0,OWID,0,12300.0,16.3
+World,2005,Oil,Price,ConsolidatedPrices,0,54.5210894941634,EI_Prices,0,87.57494397895583,60.6
+World,2005,Oil,Price,ConsolidatedPrices,0,54.5210894941634,GasPrice,0,54.5210894941634,0.0
+World,2005,Rare Earth,Price,ConsolidatedPrices,0,6595.0,OWID,0,5500.0,16.6
+World,2005,Silver,Price,ConsolidatedPrices,0,236000.0,OWID,0,197000.0,16.5
+World,2005,Tin,Price,ConsolidatedPrices,0,10600.0,OWID,0,8850.0,16.5
+World,2005,Vanadium,Price,ConsolidatedPrices,0,64100.0,OWID,0,53500.0,16.5
+World,2005,Zinc,Price,ConsolidatedPrices,0,1480.0,OWID,0,1240.0,16.2
+World,2006,Bauxite,Price,ConsolidatedPrices,0,26.6,OWID,0,21.5,19.2
 World,2006,Cadmium,Production,OWID,250,19.900000000000002,OWID,250,19.900000000000002,0.0
-World,2006,Coal,Price,EI_Prices,0,64.10807692307692,GasPrice,0,52.7307716829364,17.7
-World,2006,Cobalt,Price,EI_Prices,0,37964.0,OWID,0,24800.0,34.7
-World,2006,Lithium,Price,EI_Prices,0,2320.0,OWID,0,1880.0,19.0
-World,2006,Oil,Price,EI_Prices,0,101.36810264977967,GasPrice,0,65.1440625,35.7
+World,2006,Coal,Price,ConsolidatedPrices,0,52.7307716829364,EI_Prices,0,64.10807692307692,21.6
+World,2006,Coal,Price,ConsolidatedPrices,0,52.7307716829364,GasPrice,0,52.7307716829364,0.0
+World,2006,Cobalt,Price,ConsolidatedPrices,0,30700.0,EI_Prices,0,37964.0,23.7
+World,2006,Cobalt,Price,ConsolidatedPrices,0,30700.0,OWID,0,24800.0,19.2
+World,2006,Copper,Price,ConsolidatedPrices,0,6940.0,OWID,0,5610.0,19.2
+World,2006,Gold,Price,ConsolidatedPrices,0,19500000.0,OWID,0,15800000.0,19.0
+World,2006,Iron ore,Price,ConsolidatedPrices,0,53.88,OWID,0,43.59,19.1
+World,2006,Lead,Price,ConsolidatedPrices,0,1710.0,OWID,0,1380.0,19.3
+World,2006,Lithium,Price,ConsolidatedPrices,0,2320.0,EI_Prices,0,2320.0,0.0
+World,2006,Lithium,Price,ConsolidatedPrices,0,2320.0,OWID,0,1880.0,19.0
+World,2006,Manganese,Price,ConsolidatedPrices,0,800.0,OWID,0,646.8254,19.1
+World,2006,Natural Gas,Price,ConsolidatedPrices,0,6.999035956371017,GasPrice,0,6.999035956371017,0.0
+World,2006,Natural Graphite,Price,ConsolidatedPrices,0,553.0,OWID,0,447.0,19.2
+World,2006,Nickel,Price,ConsolidatedPrices,0,24200.0,OWID,0,19600.0,19.0
+World,2006,Oil,Price,ConsolidatedPrices,0,65.1440625,EI_Prices,0,101.36810264977967,55.6
+World,2006,Oil,Price,ConsolidatedPrices,0,65.1440625,GasPrice,0,65.1440625,0.0
+World,2006,Rare Earth,Price,ConsolidatedPrices,0,3890.0,OWID,0,3150.0,19.0
+World,2006,Silver,Price,ConsolidatedPrices,0,373000.0,OWID,0,302000.0,19.0
+World,2006,Tin,Price,ConsolidatedPrices,0,12500.0,OWID,0,10100.0,19.2
+World,2006,Vanadium,Price,ConsolidatedPrices,0,30900.0,OWID,0,25000.0,19.1
+World,2006,Zinc,Price,ConsolidatedPrices,0,3500.0,OWID,0,2830.0,19.1
+World,2007,Bauxite,Price,ConsolidatedPrices,0,28.4,OWID,0,22.3,21.5
 World,2007,Cadmium,Production,OWID,250,18.7,OWID,250,18.7,0.0
-World,2007,Coal,Price,EI_Prices,0,88.78519230769233,GasPrice,0,70.0891980909537,21.1
-World,2007,Cobalt,Price,EI_Prices,0,67351.0,OWID,0,42900.0,36.3
-World,2007,Lithium,Price,EI_Prices,0,3530.0,OWID,0,2770.0,21.5
-World,2007,Oil,Price,EI_Prices,0,109.51760658949773,GasPrice,0,72.3890784313725,33.9
+World,2007,Coal,Price,ConsolidatedPrices,0,70.0891980909537,EI_Prices,0,88.78519230769233,26.7
+World,2007,Coal,Price,ConsolidatedPrices,0,70.0891980909537,GasPrice,0,70.0891980909537,0.0
+World,2007,Cobalt,Price,ConsolidatedPrices,0,54600.0,EI_Prices,0,67351.0,23.4
+World,2007,Cobalt,Price,ConsolidatedPrices,0,54600.0,OWID,0,42900.0,21.4
+World,2007,Copper,Price,ConsolidatedPrices,0,7230.0,OWID,0,5690.0,21.3
+World,2007,Gold,Price,ConsolidatedPrices,0,22500000.0,OWID,0,17700000.0,21.3
+World,2007,Iron ore,Price,ConsolidatedPrices,0,59.64,OWID,0,46.89,21.4
+World,2007,Lead,Price,ConsolidatedPrices,0,2730.0,OWID,0,2150.0,21.2
+World,2007,Lithium,Price,ConsolidatedPrices,0,3530.0,EI_Prices,0,3530.0,0.0
+World,2007,Lithium,Price,ConsolidatedPrices,0,3530.0,OWID,0,2770.0,21.5
+World,2007,Manganese,Price,ConsolidatedPrices,0,1190.0,OWID,0,935.6971,21.4
+World,2007,Natural Gas,Price,ConsolidatedPrices,0,6.421768500281995,GasPrice,0,6.421768500281995,0.0
+World,2007,Natural Graphite,Price,ConsolidatedPrices,0,636.0,OWID,0,500.0,21.4
+World,2007,Nickel,Price,ConsolidatedPrices,0,37200.0,OWID,0,29300.0,21.2
+World,2007,Oil,Price,ConsolidatedPrices,0,72.3890784313725,EI_Prices,0,109.51760658949773,51.3
+World,2007,Oil,Price,ConsolidatedPrices,0,72.3890784313725,GasPrice,0,72.3890784313725,0.0
+World,2007,Rare Earth,Price,ConsolidatedPrices,0,5290.0,OWID,0,4160.0,21.4
+World,2007,Silver,Price,ConsolidatedPrices,0,431000.0,OWID,0,339000.0,21.3
+World,2007,Tin,Price,ConsolidatedPrices,0,19800.0,OWID,0,15600.0,21.2
+World,2007,Vanadium,Price,ConsolidatedPrices,0,29100.0,OWID,0,22900.0,21.3
+World,2007,Zinc,Price,ConsolidatedPrices,0,3400.0,OWID,0,2670.0,21.5
+World,2008,Bauxite,Price,ConsolidatedPrices,0,30.1,OWID,0,22.8,24.3
 World,2008,Cadmium,Production,OWID,250,21.6,OWID,250,21.6,0.0
-World,2008,Coal,Price,EI_Prices,0,147.67365384615388,GasPrice,0,138.023796169914,6.5
-World,2008,Cobalt,Price,EI_Prices,0,86002.0,OWID,0,51800.0,39.8
-World,2008,Lithium,Price,EI_Prices,0,4440.0,OWID,0,3360.0,24.3
-World,2008,Oil,Price,EI_Prices,0,141.69882959602018,GasPrice,0,97.255972762646,31.4
+World,2008,Coal,Price,ConsolidatedPrices,0,138.023796169914,EI_Prices,0,147.67365384615388,7.0
+World,2008,Coal,Price,ConsolidatedPrices,0,138.023796169914,GasPrice,0,138.023796169914,0.0
+World,2008,Cobalt,Price,ConsolidatedPrices,0,68400.0,EI_Prices,0,86002.0,25.7
+World,2008,Cobalt,Price,ConsolidatedPrices,0,68400.0,OWID,0,51800.0,24.3
+World,2008,Copper,Price,ConsolidatedPrices,0,7040.0,OWID,0,5330.0,24.3
+World,2008,Gold,Price,ConsolidatedPrices,0,28100000.0,OWID,0,21300000.0,24.2
+World,2008,Iron ore,Price,ConsolidatedPrices,0,70.43,OWID,0,53.32,24.3
+World,2008,Lead,Price,ConsolidatedPrices,0,2650.0,OWID,0,2010.0,24.2
+World,2008,Lithium,Price,ConsolidatedPrices,0,4440.0,EI_Prices,0,4440.0,0.0
+World,2008,Lithium,Price,ConsolidatedPrices,0,4440.0,OWID,0,3360.0,24.3
+World,2008,Manganese,Price,ConsolidatedPrices,0,2380.0,OWID,0,1801.8579,24.3
+World,2008,Natural Gas,Price,ConsolidatedPrices,0,9.758782633318997,GasPrice,0,9.758782633318997,0.0
+World,2008,Natural Graphite,Price,ConsolidatedPrices,0,826.0,OWID,0,625.33124,24.3
+World,2008,Nickel,Price,ConsolidatedPrices,0,21100.0,OWID,0,16000.0,24.2
+World,2008,Oil,Price,ConsolidatedPrices,0,97.255972762646,EI_Prices,0,141.69882959602018,45.7
+World,2008,Oil,Price,ConsolidatedPrices,0,97.255972762646,GasPrice,0,97.255972762646,0.0
+World,2008,Rare Earth,Price,ConsolidatedPrices,0,13600.0,OWID,0,10300.0,24.3
+World,2008,Silver,Price,ConsolidatedPrices,0,482000.0,OWID,0,365000.0,24.3
+World,2008,Tin,Price,ConsolidatedPrices,0,24900.0,OWID,0,18900.0,24.1
+World,2008,Vanadium,Price,ConsolidatedPrices,0,50800.0,OWID,0,38500.0,24.2
+World,2008,Zinc,Price,ConsolidatedPrices,0,1960.0,OWID,0,1480.0,24.5
+World,2009,Bauxite,Price,ConsolidatedPrices,0,27.7,OWID,0,21.0,24.2
 World,2009,Cadmium,Production,OWID,250,20.8,OWID,250,20.8,0.0
-World,2009,Coal,Price,EI_Prices,0,70.38884615384615,GasPrice,0,76.1596647949277,8.2
-World,2009,Cobalt,Price,EI_Prices,0,39375.0,OWID,0,26000.0,34.0
-World,2009,Lithium,Price,EI_Prices,0,5942.0,OWID,0,3440.0,42.1
-World,2009,Natural Graphite,Price,EI_Prices,0,908.0,OWID,0,681.5074,24.9
-World,2009,Oil,Price,EI_Prices,0,90.17366180754948,GasPrice,0,61.6712648221344,31.6
+World,2009,Coal,Price,ConsolidatedPrices,0,76.1596647949277,EI_Prices,0,70.38884615384615,7.6
+World,2009,Coal,Price,ConsolidatedPrices,0,76.1596647949277,GasPrice,0,76.1596647949277,0.0
+World,2009,Cobalt,Price,ConsolidatedPrices,0,34200.0,EI_Prices,0,39375.0,15.1
+World,2009,Cobalt,Price,ConsolidatedPrices,0,34200.0,OWID,0,26000.0,24.0
+World,2009,Copper,Price,ConsolidatedPrices,0,5320.0,OWID,0,4040.0,24.1
+World,2009,Gold,Price,ConsolidatedPrices,0,31300000.0,OWID,0,23800000.0,24.0
+World,2009,Iron ore,Price,ConsolidatedPrices,0,92.76,OWID,0,70.47,24.0
+World,2009,Lead,Price,ConsolidatedPrices,0,1920.0,OWID,0,1460.0,24.0
+World,2009,Lithium,Price,ConsolidatedPrices,0,4530.0,EI_Prices,0,5942.0,31.2
+World,2009,Lithium,Price,ConsolidatedPrices,0,4530.0,OWID,0,3440.0,24.1
+World,2009,Manganese,Price,ConsolidatedPrices,0,1370.0,OWID,0,1041.0723,24.0
+World,2009,Natural Gas,Price,ConsolidatedPrices,0,4.703259286138809,GasPrice,0,4.703259286138809,0.0
+World,2009,Natural Graphite,Price,ConsolidatedPrices,0,897.0,EI_Prices,0,908.0,1.2
+World,2009,Natural Graphite,Price,ConsolidatedPrices,0,897.0,OWID,0,681.5074,24.0
+World,2009,Nickel,Price,ConsolidatedPrices,0,14600.0,OWID,0,11100.0,24.0
+World,2009,Oil,Price,ConsolidatedPrices,0,61.6712648221344,EI_Prices,0,90.17366180754948,46.2
+World,2009,Oil,Price,ConsolidatedPrices,0,61.6712648221344,GasPrice,0,61.6712648221344,0.0
+World,2009,Rare Earth,Price,ConsolidatedPrices,0,9300.0,OWID,0,7100.0,23.7
+World,2009,Silver,Price,ConsolidatedPrices,0,472000.0,OWID,0,359000.0,23.9
+World,2009,Tin,Price,ConsolidatedPrices,0,18500.0,OWID,0,14100.0,23.8
+World,2009,Vanadium,Price,ConsolidatedPrices,0,21400.0,OWID,0,16200.0,24.3
+World,2009,Zinc,Price,ConsolidatedPrices,0,1720.0,OWID,0,1310.0,23.8
+World,2010,Bauxite,Price,ConsolidatedPrices,0,27.0,OWID,0,20.2,25.2
 World,2010,Cadmium,Production,OWID,250,23.7,OWID,250,23.7,0.0
-World,2010,Coal,Price,EI_Prices,0,92.4996153846154,GasPrice,0,104.598814165124,13.1
-World,2010,Cobalt,Price,EI_Prices,0,45966.0,OWID,0,29700.0,35.4
-World,2010,Lithium,Price,EI_Prices,0,5186.0,OWID,0,3250.0,37.3
-World,2010,Natural Graphite,Price,EI_Prices,0,1075.0,OWID,0,595.7542,44.6
-World,2010,Oil,Price,EI_Prices,0,114.36015602680754,GasPrice,0,79.495533596838,30.5
+World,2010,Coal,Price,ConsolidatedPrices,0,104.598814165124,EI_Prices,0,92.4996153846154,11.6
+World,2010,Coal,Price,ConsolidatedPrices,0,104.598814165124,GasPrice,0,104.598814165124,0.0
+World,2010,Cobalt,Price,ConsolidatedPrices,0,39700.0,EI_Prices,0,45966.0,15.8
+World,2010,Cobalt,Price,ConsolidatedPrices,0,39700.0,OWID,0,29700.0,25.2
+World,2010,Copper,Price,ConsolidatedPrices,0,7680.0,OWID,0,5740.0,25.3
+World,2010,Gold,Price,ConsolidatedPrices,0,39500000.0,OWID,0,29500000.0,25.3
+World,2010,Iron ore,Price,ConsolidatedPrices,0,98.79,OWID,0,73.84,25.3
+World,2010,Lead,Price,ConsolidatedPrices,0,2400.0,OWID,0,1790.0,25.4
+World,2010,Lithium,Price,ConsolidatedPrices,0,4350.0,EI_Prices,0,5186.0,19.2
+World,2010,Lithium,Price,ConsolidatedPrices,0,4350.0,OWID,0,3250.0,25.3
+World,2010,Manganese,Price,ConsolidatedPrices,0,1500.0,OWID,0,1121.0454,25.3
+World,2010,Natural Gas,Price,ConsolidatedPrices,0,6.261899662781599,GasPrice,0,6.261899662781599,0.0
+World,2010,Natural Graphite,Price,ConsolidatedPrices,0,797.043627136262,EI_Prices,0,1075.0,34.9
+World,2010,Natural Graphite,Price,ConsolidatedPrices,0,797.043627136262,OWID,0,595.7542,25.3
+World,2010,Nickel,Price,ConsolidatedPrices,0,21800.0,OWID,0,16300.0,25.2
+World,2010,Oil,Price,ConsolidatedPrices,0,79.495533596838,EI_Prices,0,114.36015602680754,43.9
+World,2010,Oil,Price,ConsolidatedPrices,0,79.495533596838,GasPrice,0,79.495533596838,0.0
+World,2010,Rare Earth,Price,ConsolidatedPrices,0,20000.0,OWID,0,14500.0,27.5
+World,2010,Silver,Price,ConsolidatedPrices,0,644000.0,OWID,0,481000.0,25.3
+World,2010,Tin,Price,ConsolidatedPrices,0,27300.0,OWID,0,20400.0,25.3
+World,2010,Vanadium,Price,ConsolidatedPrices,0,25400.0,OWID,0,19000.0,25.2
+World,2010,Zinc,Price,ConsolidatedPrices,0,2250.0,OWID,0,1680.0,25.3
+World,2011,Bauxite,Price,ConsolidatedPrices,0,30.5,OWID,0,22.1,27.5
 World,2011,Cadmium,Production,OWID,250,21.1,OWID,250,21.1,0.0
-World,2011,Coal,Price,EI_Prices,0,121.48000000000002,GasPrice,0,129.607283300507,6.7
-World,2011,Cobalt,Price,EI_Prices,0,39661.0,OWID,0,26200.0,33.9
-World,2011,Lithium,Price,EI_Prices,0,5100.0,OWID,0,2800.0,45.1
-World,2011,Natural Graphite,Price,EI_Prices,0,1348.0,OWID,0,820.28986,39.1
-World,2011,Oil,Price,EI_Prices,0,155.15145150524955,GasPrice,0,111.255597609562,28.3
+World,2011,Coal,Price,ConsolidatedPrices,0,129.607283300507,EI_Prices,0,121.48000000000002,6.3
+World,2011,Coal,Price,ConsolidatedPrices,0,129.607283300507,GasPrice,0,129.607283300507,0.0
+World,2011,Cobalt,Price,ConsolidatedPrices,0,36100.0,EI_Prices,0,39661.0,9.9
+World,2011,Cobalt,Price,ConsolidatedPrices,0,36100.0,OWID,0,26200.0,27.4
+World,2011,Copper,Price,ConsolidatedPrices,0,8950.0,OWID,0,6480.0,27.6
+World,2011,Gold,Price,ConsolidatedPrices,0,50600000.0,OWID,0,36600000.0,27.7
+World,2011,Iron ore,Price,ConsolidatedPrices,0,104.1,OWID,0,75.44,27.5
+World,2011,Lead,Price,ConsolidatedPrices,0,2690.0,OWID,0,1950.0,27.5
+World,2011,Lithium,Price,ConsolidatedPrices,0,3870.0,EI_Prices,0,5100.0,31.8
+World,2011,Lithium,Price,ConsolidatedPrices,0,3870.0,OWID,0,2800.0,27.6
+World,2011,Manganese,Price,ConsolidatedPrices,0,1460.0,OWID,0,1058.1592,27.5
+World,2011,Natural Gas,Price,ConsolidatedPrices,0,9.065344787764145,GasPrice,0,9.065344787764145,0.0
+World,2011,Natural Graphite,Price,ConsolidatedPrices,0,1130.0,EI_Prices,0,1348.0,19.3
+World,2011,Natural Graphite,Price,ConsolidatedPrices,0,1130.0,OWID,0,820.28986,27.4
+World,2011,Nickel,Price,ConsolidatedPrices,0,22900.0,OWID,0,16600.0,27.5
+World,2011,Oil,Price,ConsolidatedPrices,0,111.255597609562,EI_Prices,0,155.15145150524955,39.5
+World,2011,Oil,Price,ConsolidatedPrices,0,111.255597609562,GasPrice,0,111.255597609562,0.0
+World,2011,Rare Earth,Price,ConsolidatedPrices,0,58100.0,OWID,0,42100.0,27.5
+World,2011,Silver,Price,ConsolidatedPrices,0,1130000.0,OWID,0,819000.0,27.5
+World,2011,Tin,Price,ConsolidatedPrices,0,34700.0,OWID,0,25100.0,27.7
+World,2011,Vanadium,Price,ConsolidatedPrices,0,26600.0,OWID,0,19300.0,27.4
+World,2011,Zinc,Price,ConsolidatedPrices,0,2340.0,OWID,0,1700.0,27.4
+World,2012,Bauxite,Price,ConsolidatedPrices,0,28.5,OWID,0,20.2,29.1
 World,2012,Cadmium,Production,OWID,250,22.5,OWID,250,22.5,0.0
-World,2012,Coal,Price,EI_Prices,0,92.4996153846154,GasPrice,0,101.442891692016,9.7
-World,2012,Cobalt,Price,EI_Prices,0,31019.0,OWID,0,21600.0,30.4
-World,2012,Lithium,Price,EI_Prices,0,5419.0,OWID,0,3000.0,44.6
-World,2012,Natural Graphite,Price,EI_Prices,0,1429.0,OWID,0,859.0,39.9
-World,2012,Oil,Price,EI_Prices,0,152.57171814228374,GasPrice,0,111.669702380952,26.8
+World,2012,Coal,Price,ConsolidatedPrices,0,101.442891692016,EI_Prices,0,92.4996153846154,8.8
+World,2012,Coal,Price,ConsolidatedPrices,0,101.442891692016,GasPrice,0,101.442891692016,0.0
+World,2012,Cobalt,Price,ConsolidatedPrices,0,30500.0,EI_Prices,0,31019.0,1.7
+World,2012,Cobalt,Price,ConsolidatedPrices,0,30500.0,OWID,0,21600.0,29.2
+World,2012,Copper,Price,ConsolidatedPrices,0,8100.0,OWID,0,5750.0,29.0
+World,2012,Gold,Price,ConsolidatedPrices,0,53800000.0,OWID,0,38200000.0,29.0
+World,2012,Iron ore,Price,ConsolidatedPrices,0,116.48,OWID,0,82.69,29.0
+World,2012,Lead,Price,ConsolidatedPrices,0,2520.0,OWID,0,1790.0,29.0
+World,2012,Lithium,Price,ConsolidatedPrices,0,4220.0,EI_Prices,0,5419.0,28.4
+World,2012,Lithium,Price,ConsolidatedPrices,0,4220.0,OWID,0,3000.0,28.9
+World,2012,Manganese,Price,ConsolidatedPrices,0,1400.0,OWID,0,993.90247,29.0
+World,2012,Natural Gas,Price,ConsolidatedPrices,0,9.076545759550084,GasPrice,0,9.076545759550084,0.0
+World,2012,Natural Graphite,Price,ConsolidatedPrices,0,1210.0,EI_Prices,0,1429.0,18.1
+World,2012,Natural Graphite,Price,ConsolidatedPrices,0,1210.0,OWID,0,859.0,29.0
+World,2012,Nickel,Price,ConsolidatedPrices,0,17500.0,OWID,0,12400.0,29.1
+World,2012,Oil,Price,ConsolidatedPrices,0,111.669702380952,EI_Prices,0,152.57171814228374,36.6
+World,2012,Oil,Price,ConsolidatedPrices,0,111.669702380952,GasPrice,0,111.669702380952,0.0
+World,2012,Rare Earth,Price,ConsolidatedPrices,0,51200.0,OWID,0,36300.0,29.1
+World,2012,Silver,Price,ConsolidatedPrices,0,1000000.0,OWID,0,710000.0,29.0
+World,2012,Tin,Price,ConsolidatedPrices,0,28300.0,OWID,0,20100.0,29.0
+World,2012,Vanadium,Price,ConsolidatedPrices,0,25600.0,OWID,0,18100.0,29.3
+World,2012,Zinc,Price,ConsolidatedPrices,0,2110.0,OWID,0,1500.0,28.9
+World,2013,Bauxite,Price,ConsolidatedPrices,0,27.5,OWID,0,19.2,30.2
 World,2013,Cadmium,Production,OWID,250,22.5,OWID,250,22.5,0.0
-World,2013,Coal,Price,EI_Prices,0,81.68903846153846,GasPrice,0,90.1340958413996,10.3
-World,2013,Cobalt,Price,EI_Prices,0,27074.0,OWID,0,19500.0,28.0
-World,2013,Lithium,Price,EI_Prices,0,5696.0,OWID,0,3070.0,46.1
-World,2013,Natural Graphite,Price,EI_Prices,0,990.0,OWID,0,805.0,18.7
-World,2013,Oil,Price,EI_Prices,0,146.31434581705648,GasPrice,0,108.658517786561,25.7
+World,2013,Coal,Price,ConsolidatedPrices,0,90.1340958413996,EI_Prices,0,81.68903846153846,9.4
+World,2013,Coal,Price,ConsolidatedPrices,0,90.1340958413996,GasPrice,0,90.1340958413996,0.0
+World,2013,Cobalt,Price,ConsolidatedPrices,0,27900.0,EI_Prices,0,27074.0,3.0
+World,2013,Cobalt,Price,ConsolidatedPrices,0,27900.0,OWID,0,19500.0,30.1
+World,2013,Copper,Price,ConsolidatedPrices,0,7490.0,OWID,0,5240.0,30.0
+World,2013,Gold,Price,ConsolidatedPrices,0,45500000.0,OWID,0,31800000.0,30.1
+World,2013,Iron ore,Price,ConsolidatedPrices,0,87.42,OWID,0,61.16,30.0
+World,2013,Lead,Price,ConsolidatedPrices,0,2420.0,OWID,0,1770.0,26.9
+World,2013,Lithium,Price,ConsolidatedPrices,0,4390.0,EI_Prices,0,5696.0,29.7
+World,2013,Lithium,Price,ConsolidatedPrices,0,4390.0,OWID,0,3070.0,30.1
+World,2013,Manganese,Price,ConsolidatedPrices,0,1190.0,OWID,0,832.48926,30.0
+World,2013,Natural Gas,Price,ConsolidatedPrices,0,10.26568308218208,GasPrice,0,10.265683082182077,0.0
+World,2013,Natural Graphite,Price,ConsolidatedPrices,0,1150.0,EI_Prices,0,990.0,13.9
+World,2013,Natural Graphite,Price,ConsolidatedPrices,0,1150.0,OWID,0,805.0,30.0
+World,2013,Nickel,Price,ConsolidatedPrices,0,15000.0,OWID,0,10500.0,30.0
+World,2013,Oil,Price,ConsolidatedPrices,0,108.658517786561,EI_Prices,0,146.31434581705648,34.7
+World,2013,Oil,Price,ConsolidatedPrices,0,108.658517786561,GasPrice,0,108.658517786561,0.0
+World,2013,Rare Earth,Price,ConsolidatedPrices,0,19100.0,OWID,0,13400.0,29.8
+World,2013,Silver,Price,ConsolidatedPrices,0,767000.0,OWID,0,537000.0,30.0
+World,2013,Tin,Price,ConsolidatedPrices,0,22900.0,OWID,0,16000.0,30.1
+World,2013,Vanadium,Price,ConsolidatedPrices,0,23800.0,OWID,0,16600.0,30.3
+World,2013,Zinc,Price,ConsolidatedPrices,0,2110.0,OWID,0,1480.0,29.9
+World,2014,Bauxite,Price,ConsolidatedPrices,0,26.7,OWID,0,18.4,31.1
 World,2014,Cadmium,Production,OWID,250,25.6,OWID,250,25.6,0.0
-World,2014,Coal,Price,EI_Prices,0,75.38076923076925,GasPrice,0,75.7289814572073,0.5
-World,2014,Cobalt,Price,EI_Prices,0,30786.0,OWID,0,21100.0,31.5
-World,2014,Lithium,Price,EI_Prices,0,5723.0,OWID,0,3110.0,45.7
-World,2014,Natural Graphite,Price,EI_Prices,0,916.0,OWID,0,716.0,21.8
-World,2014,Oil,Price,EI_Prices,0,131.10906468592407,GasPrice,0,98.9460079051383,24.5
+World,2014,Coal,Price,ConsolidatedPrices,0,75.7289814572073,EI_Prices,0,75.38076923076925,0.5
+World,2014,Coal,Price,ConsolidatedPrices,0,75.7289814572073,GasPrice,0,75.7289814572073,0.0
+World,2014,Cobalt,Price,ConsolidatedPrices,0,30600.0,EI_Prices,0,30786.0,0.6
+World,2014,Cobalt,Price,ConsolidatedPrices,0,30600.0,OWID,0,21100.0,31.0
+World,2014,Copper,Price,ConsolidatedPrices,0,7010.0,OWID,0,4830.0,31.1
+World,2014,Gold,Price,ConsolidatedPrices,0,40800000.0,OWID,0,28100000.0,31.1
+World,2014,Iron ore,Price,ConsolidatedPrices,0,84.43,OWID,0,58.14,31.1
+World,2014,Lead,Price,ConsolidatedPrices,0,2340.0,OWID,0,1610.0,31.2
+World,2014,Lithium,Price,ConsolidatedPrices,0,4510.0,EI_Prices,0,5723.0,26.9
+World,2014,Lithium,Price,ConsolidatedPrices,0,4510.0,OWID,0,3110.0,31.0
+World,2014,Manganese,Price,ConsolidatedPrices,0,1330.0,OWID,0,915.8851,31.1
+World,2014,Natural Gas,Price,ConsolidatedPrices,0,8.767791496176912,GasPrice,0,8.767791496176912,0.0
+World,2014,Natural Graphite,Price,ConsolidatedPrices,0,1040.0,EI_Prices,0,916.0,11.9
+World,2014,Natural Graphite,Price,ConsolidatedPrices,0,1040.0,OWID,0,716.0,31.2
+World,2014,Nickel,Price,ConsolidatedPrices,0,16900.0,OWID,0,11600.0,31.4
+World,2014,Oil,Price,ConsolidatedPrices,0,98.9460079051383,EI_Prices,0,131.10906468592407,32.5
+World,2014,Oil,Price,ConsolidatedPrices,0,98.9460079051383,GasPrice,0,98.9460079051383,0.0
+World,2014,Rare Earth,Price,ConsolidatedPrices,0,15200.0,OWID,0,10500.0,30.9
+World,2014,Silver,Price,ConsolidatedPrices,0,614000.0,OWID,0,423000.0,31.1
+World,2014,Tin,Price,ConsolidatedPrices,0,22600.0,OWID,0,15500.0,31.4
+World,2014,Vanadium,Price,ConsolidatedPrices,0,22100.0,OWID,0,15200.0,31.2
+World,2014,Zinc,Price,ConsolidatedPrices,0,2360.0,OWID,0,1630.0,30.9
+World,2015,Bauxite,Price,ConsolidatedPrices,0,27.6,OWID,0,19.0,31.2
 World,2015,Cadmium,Production,OWID,250,25.1,OWID,250,25.1,0.0
-World,2015,Coal,Price,EI_Prices,0,56.79403846153845,GasPrice,0,62.6925526907506,10.4
-World,2015,Cobalt,Price,EI_Prices,0,28455.0,OWID,0,20100.0,29.4
-World,2015,Lithium,Price,EI_Prices,0,6550.0,OWID,0,3120.0,52.4
-World,2015,Natural Graphite,Price,EI_Prices,0,691.0,OWID,0,860.0,24.5
-World,2015,Oil,Price,EI_Prices,0,69.33317473729744,GasPrice,0,52.3867588932806,24.4
+World,2015,Coal,Price,ConsolidatedPrices,0,62.6925526907506,EI_Prices,0,56.79403846153845,9.4
+World,2015,Coal,Price,ConsolidatedPrices,0,62.6925526907506,GasPrice,0,62.6925526907506,0.0
+World,2015,Cobalt,Price,ConsolidatedPrices,0,29200.0,EI_Prices,0,28455.0,2.6
+World,2015,Cobalt,Price,ConsolidatedPrices,0,29200.0,OWID,0,20100.0,31.2
+World,2015,Copper,Price,ConsolidatedPrices,0,5650.0,OWID,0,3880.0,31.3
+World,2015,Gold,Price,ConsolidatedPrices,0,37400000.0,OWID,0,25700000.0,31.3
+World,2015,Iron ore,Price,ConsolidatedPrices,0,81.19,OWID,0,55.84,31.2
+World,2015,Lead,Price,ConsolidatedPrices,0,2010.0,OWID,0,1380.0,31.3
+World,2015,Lithium,Price,ConsolidatedPrices,0,4540.0,EI_Prices,0,6550.0,44.3
+World,2015,Lithium,Price,ConsolidatedPrices,0,4540.0,OWID,0,3120.0,31.3
+World,2015,Manganese,Price,ConsolidatedPrices,0,1140.0,OWID,0,784.05066,31.2
+World,2015,Natural Gas,Price,ConsolidatedPrices,0,5.50152505687378,GasPrice,0,5.50152505687378,0.0
+World,2015,Natural Graphite,Price,ConsolidatedPrices,0,1250.0,EI_Prices,0,691.0,44.7
+World,2015,Natural Graphite,Price,ConsolidatedPrices,0,1250.0,OWID,0,860.0,31.2
+World,2015,Nickel,Price,ConsolidatedPrices,0,11800.0,OWID,0,8140.0,31.0
+World,2015,Oil,Price,ConsolidatedPrices,0,52.3867588932806,EI_Prices,0,69.33317473729744,32.3
+World,2015,Oil,Price,ConsolidatedPrices,0,52.3867588932806,GasPrice,0,52.3867588932806,0.0
+World,2015,Rare Earth,Price,ConsolidatedPrices,0,14800.0,OWID,0,10200.0,31.1
+World,2015,Silver,Price,ConsolidatedPrices,0,505000.0,OWID,0,348000.0,31.1
+World,2015,Tin,Price,ConsolidatedPrices,0,16700.0,OWID,0,11500.0,31.1
+World,2015,Vanadium,Price,ConsolidatedPrices,0,16400.0,OWID,0,11300.0,31.1
+World,2015,Zinc,Price,ConsolidatedPrices,0,2110.0,OWID,0,1450.0,31.3
+World,2016,Bauxite,Price,ConsolidatedPrices,0,28.1,OWID,0,19.1,32.0
 World,2016,Cadmium,Production,OWID,250,25.6,OWID,250,25.6,0.0
-World,2016,Coal,Price,EI_Prices,0,60.08564743589743,GasPrice,0,70.0818063930116,16.6
-World,2016,Cobalt,Price,EI_Prices,0,25472.0,OWID,0,17300.0,32.1
-World,2016,Lithium,Price,EI_Prices,0,12017.0,OWID,0,3340.0,72.2
-World,2016,Natural Graphite,Price,EI_Prices,0,575.0,OWID,0,830.0,44.3
-World,2016,Oil,Price,EI_Prices,0,57.16046233509656,GasPrice,0,43.7341699604743,23.5
+World,2016,Coal,Price,ConsolidatedPrices,0,70.0818063930116,EI_Prices,0,60.08564743589743,14.3
+World,2016,Coal,Price,ConsolidatedPrices,0,70.0818063930116,GasPrice,0,70.0818063930116,0.0
+World,2016,Cobalt,Price,ConsolidatedPrices,0,25500.0,EI_Prices,0,25472.0,0.1
+World,2016,Cobalt,Price,ConsolidatedPrices,0,25500.0,OWID,0,17300.0,32.2
+World,2016,Copper,Price,ConsolidatedPrices,0,4960.0,OWID,0,3370.0,32.1
+World,2016,Gold,Price,ConsolidatedPrices,0,40300000.0,OWID,0,27300000.0,32.3
+World,2016,Iron ore,Price,ConsolidatedPrices,0,73.11,OWID,0,49.65,32.1
+World,2016,Lead,Price,ConsolidatedPrices,0,2080.0,OWID,0,1410.0,32.2
+World,2016,Lithium,Price,ConsolidatedPrices,0,4920.0,EI_Prices,0,12017.0,144.2
+World,2016,Lithium,Price,ConsolidatedPrices,0,4920.0,OWID,0,3340.0,32.1
+World,2016,Manganese,Price,ConsolidatedPrices,0,920.0,OWID,0,624.8333,32.1
+World,2016,Natural Gas,Price,ConsolidatedPrices,0,4.354890995477952,GasPrice,0,4.354890995477952,0.0
+World,2016,Natural Graphite,Price,ConsolidatedPrices,0,1220.0,EI_Prices,0,575.0,52.9
+World,2016,Natural Graphite,Price,ConsolidatedPrices,0,1220.0,OWID,0,830.0,32.0
+World,2016,Nickel,Price,ConsolidatedPrices,0,9590.0,OWID,0,6520.0,32.0
+World,2016,Oil,Price,ConsolidatedPrices,0,43.7341699604743,EI_Prices,0,57.16046233509656,30.7
+World,2016,Oil,Price,ConsolidatedPrices,0,43.7341699604743,GasPrice,0,43.7341699604743,0.0
+World,2016,Rare Earth,Price,ConsolidatedPrices,0,10600.0,OWID,0,7200.0,32.1
+World,2016,Silver,Price,ConsolidatedPrices,0,551000.0,OWID,0,374000.0,32.1
+World,2016,Tin,Price,ConsolidatedPrices,0,18500.0,OWID,0,12600.0,31.9
+World,2016,Vanadium,Price,ConsolidatedPrices,0,13300.0,OWID,0,9030.0,32.1
+World,2016,Zinc,Price,ConsolidatedPrices,0,2240.0,OWID,0,1520.0,32.1
+World,2017,Bauxite,Price,ConsolidatedPrices,0,31.5,OWID,0,20.9,33.7
 World,2017,Cadmium,Production,OWID,250,25.5,OWID,250,25.5,0.0
-World,2017,Coal,Price,EI_Prices,0,84.51041346153846,GasPrice,0,94.1380793492764,11.4
-World,2017,Cobalt,Price,EI_Prices,0,55790.0,OWID,0,32200.0,42.3
-World,2017,Lithium,Price,EI_Prices,0,17035.0,OWID,0,3260.0,80.9
-World,2017,Natural Graphite,Price,EI_Prices,0,647.0,OWID,0,750.0,15.9
-World,2017,Oil,Price,EI_Prices,0,69.35212202472233,GasPrice,0,54.1924404761905,21.9
+World,2017,Coal,Price,ConsolidatedPrices,0,94.1380793492764,EI_Prices,0,84.51041346153846,10.2
+World,2017,Coal,Price,ConsolidatedPrices,0,94.1380793492764,GasPrice,0,94.1380793492764,0.0
+World,2017,Cobalt,Price,ConsolidatedPrices,0,48400.0,EI_Prices,0,55790.0,15.3
+World,2017,Cobalt,Price,ConsolidatedPrices,0,48400.0,OWID,0,32200.0,33.5
+World,2017,Copper,Price,ConsolidatedPrices,0,6290.0,OWID,0,4180.0,33.5
+World,2017,Gold,Price,ConsolidatedPrices,0,40500000.0,OWID,0,27000000.0,33.3
+World,2017,Iron ore,Price,ConsolidatedPrices,0,78.54,OWID,0,52.23,33.5
+World,2017,Lead,Price,ConsolidatedPrices,0,2520.0,OWID,0,1680.0,33.3
+World,2017,Lithium,Price,ConsolidatedPrices,0,4900.0,EI_Prices,0,17035.0,247.7
+World,2017,Lithium,Price,ConsolidatedPrices,0,4900.0,OWID,0,3260.0,33.5
+World,2017,Manganese,Price,ConsolidatedPrices,0,1420.0,OWID,0,944.34924,33.5
+World,2017,Natural Gas,Price,ConsolidatedPrices,0,5.267977846963224,GasPrice,0,5.267977846963224,0.0
+World,2017,Natural Graphite,Price,ConsolidatedPrices,0,1130.0,EI_Prices,0,647.0,42.7
+World,2017,Natural Graphite,Price,ConsolidatedPrices,0,1130.0,OWID,0,750.0,33.6
+World,2017,Nickel,Price,ConsolidatedPrices,0,10400.0,OWID,0,6920.0,33.5
+World,2017,Oil,Price,ConsolidatedPrices,0,54.1924404761905,EI_Prices,0,69.35212202472233,28.0
+World,2017,Oil,Price,ConsolidatedPrices,0,54.1924404761905,GasPrice,0,54.1924404761905,0.0
+World,2017,Rare Earth,Price,ConsolidatedPrices,0,11500.0,OWID,0,7650.0,33.5
+World,2017,Silver,Price,ConsolidatedPrices,0,549000.0,OWID,0,365000.0,33.5
+World,2017,Tin,Price,ConsolidatedPrices,0,20700.0,OWID,0,13700.0,33.8
+World,2017,Vanadium,Price,ConsolidatedPrices,0,29900.0,OWID,0,19900.0,33.4
+World,2017,Zinc,Price,ConsolidatedPrices,0,3070.0,OWID,0,2040.0,33.6
+World,2018,Bauxite,Price,ConsolidatedPrices,0,31.5,OWID,0,20.4,35.2
 World,2018,Cadmium,Production,OWID,250,26.7,OWID,250,26.7,0.0
-World,2018,Coal,Price,EI_Prices,0,91.82705769230766,GasPrice,0,113.230785370134,23.3
-World,2018,Cobalt,Price,EI_Prices,0,81170.09999999999,OWID,0,41400.0,49.0
-World,2018,Lithium,Price,EI_Prices,0,13041.0,OWID,0,4740.0,63.7
-World,2018,Natural Graphite,Price,EI_Prices,0,783.5,OWID,0,593.0,24.3
-World,2018,Oil,Price,EI_Prices,0,89.08228019782659,GasPrice,0,71.3100597609562,20.0
+World,2018,Coal,Price,ConsolidatedPrices,0,113.230785370134,EI_Prices,0,91.82705769230766,18.9
+World,2018,Coal,Price,ConsolidatedPrices,0,113.230785370134,GasPrice,0,113.230785370134,0.0
+World,2018,Cobalt,Price,ConsolidatedPrices,0,63800.0,EI_Prices,0,81170.09999999999,27.2
+World,2018,Cobalt,Price,ConsolidatedPrices,0,63800.0,OWID,0,41400.0,35.1
+World,2018,Copper,Price,ConsolidatedPrices,0,6590.0,OWID,0,4280.0,35.1
+World,2018,Gold,Price,ConsolidatedPrices,0,40900000.0,OWID,0,26500000.0,35.2
+World,2018,Iron ore,Price,ConsolidatedPrices,0,93.0,OWID,0,60.37,35.1
+World,2018,Lead,Price,ConsolidatedPrices,0,2450.0,OWID,0,1590.0,35.1
+World,2018,Lithium,Price,ConsolidatedPrices,0,7300.0,EI_Prices,0,13041.0,78.6
+World,2018,Lithium,Price,ConsolidatedPrices,0,7300.0,OWID,0,4740.0,35.1
+World,2018,Manganese,Price,ConsolidatedPrices,0,1500.0,OWID,0,973.71564,35.1
+World,2018,Natural Gas,Price,ConsolidatedPrices,0,6.918453433316714,GasPrice,0,6.918453433316714,0.0
+World,2018,Natural Graphite,Price,ConsolidatedPrices,0,913.0,EI_Prices,0,783.5,14.2
+World,2018,Natural Graphite,Price,ConsolidatedPrices,0,913.0,OWID,0,593.0,35.0
+World,2018,Nickel,Price,ConsolidatedPrices,0,13100.0,OWID,0,8510.0,35.0
+World,2018,Oil,Price,ConsolidatedPrices,0,71.3100597609562,EI_Prices,0,89.08228019782659,24.9
+World,2018,Oil,Price,ConsolidatedPrices,0,71.3100597609562,GasPrice,0,71.3100597609562,0.0
+World,2018,Rare Earth,Price,ConsolidatedPrices,0,8860.0,OWID,0,5750.0,35.1
+World,2018,Silver,Price,ConsolidatedPrices,0,506000.0,OWID,0,328000.0,35.2
+World,2018,Tin,Price,ConsolidatedPrices,0,20600.0,OWID,0,13400.0,35.0
+World,2018,Vanadium,Price,ConsolidatedPrices,0,64500.0,OWID,0,42000.0,34.9
+World,2018,Zinc,Price,ConsolidatedPrices,0,3110.0,OWID,0,2020.0,35.0
+World,2019,Bauxite,Price,ConsolidatedPrices,0,32.3,OWID,0,20.6,36.2
 World,2019,Cadmium,Production,OWID,250,23.5,OWID,250,23.5,0.0
-World,2019,Coal,Price,EI_Prices,0,60.16673388139321,GasPrice,0,82.1932362752411,36.6
-World,2019,Cobalt,Price,EI_Prices,0,35912.34120833333,OWID,0,24100.0,32.9
-World,2019,Lithium,Price,EI_Prices,0,10287.0,OWID,0,5120.0,50.2
-World,2019,Natural Graphite,Price,EI_Prices,0,665.8,OWID,0,714.0,7.2
-World,2019,Nickel,Price,EI_Prices,0,17467.720814417768,OWID,0,7570.0,56.7
-World,2019,Oil,Price,EI_Prices,0,78.7856652062988,GasPrice,0,64.2105731225296,18.5
+World,2019,Coal,Price,ConsolidatedPrices,0,82.1932362752411,EI_Prices,0,60.16673388139321,26.8
+World,2019,Coal,Price,ConsolidatedPrices,0,82.1932362752411,GasPrice,0,82.1932362752411,0.0
+World,2019,Cobalt,Price,ConsolidatedPrices,0,37900.0,EI_Prices,0,35912.34120833333,5.2
+World,2019,Cobalt,Price,ConsolidatedPrices,0,37900.0,OWID,0,24100.0,36.4
+World,2019,Copper,Price,ConsolidatedPrices,0,6160.0,OWID,0,3930.0,36.2
+World,2019,Gold,Price,ConsolidatedPrices,0,44900000.0,OWID,0,28600000.0,36.3
+World,2019,Iron ore,Price,ConsolidatedPrices,0,92.94,OWID,0,59.25,36.2
+World,2019,Lead,Price,ConsolidatedPrices,0,2200.0,OWID,0,1400.0,36.4
+World,2019,Lithium,Price,ConsolidatedPrices,0,8030.0,EI_Prices,0,10287.0,28.1
+World,2019,Lithium,Price,ConsolidatedPrices,0,8030.0,OWID,0,5120.0,36.2
+World,2019,Manganese,Price,ConsolidatedPrices,0,1300.0,OWID,0,828.7055,36.3
+World,2019,Natural Gas,Price,ConsolidatedPrices,0,4.156136000020176,GasPrice,0,4.156136000020176,0.0
+World,2019,Natural Graphite,Price,ConsolidatedPrices,0,1120.0,EI_Prices,0,665.8,40.6
+World,2019,Natural Graphite,Price,ConsolidatedPrices,0,1120.0,OWID,0,714.0,36.2
+World,2019,Nickel,Price,ConsolidatedPrices,0,11900.0,EI_Prices,0,17467.720814417768,46.8
+World,2019,Nickel,Price,ConsolidatedPrices,0,11900.0,OWID,0,7570.0,36.4
+World,2019,Oil,Price,ConsolidatedPrices,0,64.2105731225296,EI_Prices,0,78.7856652062988,22.7
+World,2019,Oil,Price,ConsolidatedPrices,0,64.2105731225296,GasPrice,0,64.2105731225296,0.0
+World,2019,Rare Earth,Price,ConsolidatedPrices,0,6080.0,OWID,0,3880.0,36.2
+World,2019,Silver,Price,ConsolidatedPrices,0,512000.0,OWID,0,326000.0,36.3
+World,2019,Tin,Price,ConsolidatedPrices,0,19100.0,OWID,0,12199.751,36.1
+World,2019,Vanadium,Price,ConsolidatedPrices,0,47900.0,OWID,0,30500.0,36.3
+World,2019,Zinc,Price,ConsolidatedPrices,0,2740.0,OWID,0,1750.0,36.1
+World,2020,Bauxite,Price,ConsolidatedPrices,0,30.1,OWID,0,19.0,36.9
 World,2020,Cadmium,Production,OWID,250,24.0,OWID,250,24.0,0.0
-World,2020,Coal,Price,EI_Prices,0,50.12901344086021,GasPrice,0,61.9831981116504,23.6
-World,2020,Cobalt,Price,EI_Prices,0,33951.148,OWID,0,21800.0,35.8
-World,2020,Lithium,Price,EI_Prices,0,6485.0,OWID,0,4030.0,37.9
-World,2020,Natural Graphite,Price,EI_Prices,0,528.8,OWID,0,780.0,47.5
+World,2020,Coal,Price,ConsolidatedPrices,0,61.9831981116504,EI_Prices,0,50.12901344086021,19.1
+World,2020,Coal,Price,ConsolidatedPrices,0,61.9831981116504,GasPrice,0,61.9831981116504,0.0
+World,2020,Cobalt,Price,ConsolidatedPrices,0,34500.0,EI_Prices,0,33951.148,1.6
+World,2020,Cobalt,Price,ConsolidatedPrices,0,34500.0,OWID,0,21800.0,36.8
+World,2020,Copper,Price,ConsolidatedPrices,0,6320.0,OWID,0,3980.0,37.0
+World,2020,Gold,Price,ConsolidatedPrices,0,57000000.0,OWID,0,35900000.0,37.0
+World,2020,Iron ore,Price,ConsolidatedPrices,0,91.27,OWID,0,57.48,37.0
+World,2020,Lead,Price,ConsolidatedPrices,0,2010.0,OWID,0,1270.0,36.8
+World,2020,Lithium,Price,ConsolidatedPrices,0,6400.0,EI_Prices,0,6485.0,1.3
+World,2020,Lithium,Price,ConsolidatedPrices,0,6400.0,OWID,0,4030.0,37.0
+World,2020,Manganese,Price,ConsolidatedPrices,0,1110.0,OWID,0,699.11127,37.0
+World,2020,Natural Gas,Price,ConsolidatedPrices,0,3.168562747964911,GasPrice,0,3.1685627479649114,0.0
+World,2020,Natural Graphite,Price,ConsolidatedPrices,0,1240.0,EI_Prices,0,528.8,57.4
+World,2020,Natural Graphite,Price,ConsolidatedPrices,0,1240.0,OWID,0,780.0,37.1
 World,2020,Nickel,Price,EI_Prices,0,16634.734848484844,OWID,0,8670.0,47.9
-World,2020,Oil,Price,EI_Prices,0,50.709643722270236,GasPrice,0,41.8383464566929,17.5
+World,2020,Oil,Price,ConsolidatedPrices,0,41.8383464566929,EI_Prices,0,50.709643722270236,21.2
+World,2020,Oil,Price,ConsolidatedPrices,0,41.8383464566929,GasPrice,0,41.8383464566929,0.0
+World,2020,Rare Earth,Price,ConsolidatedPrices,0,5130.0,OWID,0,3230.0,37.0
+World,2020,Silver,Price,ConsolidatedPrices,0,661000.0,OWID,0,416000.0,37.1
+World,2020,Tin,Price,ConsolidatedPrices,0,17600.0,OWID,0,11100.0,36.9
+World,2020,Vanadium,Price,ConsolidatedPrices,0,26300.0,OWID,0,16500.0,37.3
+World,2020,Zinc,Price,ConsolidatedPrices,0,2440.0,OWID,0,1540.0,36.9
+World,2021,Bauxite,Price,ConsolidatedPrices,0,30.6,OWID,0,18.4,39.9
 World,2021,Cadmium,Production,OWID,250,24.7,OWID,250,24.7,0.0
-World,2021,Coal,Price,EI_Prices,0,122.60216666666668,GasPrice,0,143.984744385402,17.4
-World,2021,Cobalt,Price,EI_Prices,0,52933.84479166666,EI_Prices,0,96.39751079451052,99.8
-World,2021,Cobalt,Price,EI_Prices,0,52933.84479166666,OWID,0,26900.0,49.2
-World,2021,Lithium,Price,EI_Prices,0,15171.0,EI_Prices,0,69.97084368251787,99.5
-World,2021,Lithium,Price,EI_Prices,0,15171.0,OWID,0,3730.0,75.4
-World,2021,Natural Graphite,Price,EI_Prices,0,560.0,OWID,0,806.0,43.9
-World,2021,Oil,Price,EI_Prices,0,82.0913412779581,GasPrice,0,70.9118972332016,13.6
+World,2021,Coal,Price,ConsolidatedPrices,0,143.984744385402,EI_Prices,0,122.60216666666668,14.9
+World,2021,Coal,Price,ConsolidatedPrices,0,143.984744385402,GasPrice,0,143.984744385402,0.0
+World,2021,Cobalt,Price,ConsolidatedPrices,0,44800.0,EI_Prices,0,52933.84479166666,18.2
+World,2021,Cobalt,Price,ConsolidatedPrices,0,44800.0,EI_Prices,0,96.39751079451052,99.8
+World,2021,Cobalt,Price,ConsolidatedPrices,0,44800.0,OWID,0,26900.0,40.0
+World,2021,Gold,Price,ConsolidatedPrices,0,57900000.0,OWID,0,34800000.0,39.9
+World,2021,Iron ore,Price,ConsolidatedPrices,0,141.78,OWID,0,85.29,39.8
+World,2021,Lead,Price,ConsolidatedPrices,0,2490.0,OWID,0,1500.0,39.8
+World,2021,Lithium,Price,ConsolidatedPrices,0,6200.0,EI_Prices,0,15171.0,144.7
+World,2021,Lithium,Price,ConsolidatedPrices,0,6200.0,EI_Prices,0,69.97084368251787,98.9
+World,2021,Lithium,Price,ConsolidatedPrices,0,6200.0,OWID,0,3730.0,39.8
+World,2021,Manganese,Price,ConsolidatedPrices,0,1420.0,OWID,0,857.0,39.6
+World,2021,Natural Gas,Price,ConsolidatedPrices,0,12.69897141071355,GasPrice,0,12.698971410713554,0.0
+World,2021,Natural Graphite,Price,ConsolidatedPrices,0,1340.0,EI_Prices,0,560.0,58.2
+World,2021,Natural Graphite,Price,ConsolidatedPrices,0,1340.0,OWID,0,806.0,39.9
+World,2021,Oil,Price,ConsolidatedPrices,0,70.9118972332016,EI_Prices,0,82.0913412779581,15.8
+World,2021,Oil,Price,ConsolidatedPrices,0,70.9118972332016,GasPrice,0,70.9118972332016,0.0
+World,2021,Silver,Price,ConsolidatedPrices,0,811000.0,OWID,0,488000.0,39.8
+World,2021,Tin,Price,ConsolidatedPrices,0,34800.0,OWID,0,21000.0,39.7
+World,2021,Vanadium,Price,ConsolidatedPrices,0,32200.0,OWID,0,18900.0,41.3
+World,2021,Zinc,Price,ConsolidatedPrices,0,3220.0,OWID,0,1940.0,39.8
 World,2022,Cadmium,Production,OWID,250,22.6,OWID,250,22.6,0.0
-World,2022,Coal,Price,EI_Prices,0,291.28175000000005,GasPrice,0,384.169733255537,31.9
+World,2022,Coal,Price,ConsolidatedPrices,0,384.169733255537,EI_Prices,0,291.28175000000005,24.2
+World,2022,Coal,Price,ConsolidatedPrices,0,384.169733255537,GasPrice,0,384.169733255537,0.0
 World,2022,Cobalt,Price,EI_Prices,0,67057.19166666667,EI_Prices,0,138.8665919191818,99.8
+World,2022,Gold,Price,ConsolidatedPrices,0,57900000.0,OWID,0,32300000.0,44.2
 World,2022,Lithium,Price,EI_Prices,0,59428.0,EI_Prices,0,98.91249774114438,99.8
-World,2022,Natural Graphite,Price,EI_Prices,0,762.9,OWID,0,1160.0,52.1
-World,2022,Oil,Price,EI_Prices,0,108.6021474539173,GasPrice,0,101.32,6.7
+World,2022,Manganese,Price,ConsolidatedPrices,0,2000.0,OWID,0,1110.0,44.5
+World,2022,Natural Gas,Price,ConsolidatedPrices,0,25.81658551418907,GasPrice,0,25.816585514189068,0.0
+World,2022,Natural Graphite,Price,ConsolidatedPrices,0,2090.0,EI_Prices,0,762.9,63.5
+World,2022,Natural Graphite,Price,ConsolidatedPrices,0,2090.0,OWID,0,1160.0,44.5
+World,2022,Oil,Price,ConsolidatedPrices,0,101.32,EI_Prices,0,108.6021474539173,7.2
+World,2022,Oil,Price,ConsolidatedPrices,0,101.32,GasPrice,0,101.32,0.0
+World,2022,Vanadium,Price,ConsolidatedPrices,0,36400.0,OWID,0,20300.0,44.2
+World,2022,Zinc,Price,ConsolidatedPrices,0,4190.0,OWID,0,2330.0,44.4
 World,2023,Cadmium,Production,OWID,250,24.1,OWID,250,24.1,0.0
-World,2023,Coal,Price,EI_Prices,0,129.5375,GasPrice,0,188.152583869009,45.2
+World,2023,Coal,Price,ConsolidatedPrices,0,188.152583869009,EI_Prices,0,129.5375,31.2
+World,2023,Coal,Price,ConsolidatedPrices,0,188.152583869009,GasPrice,0,188.152583869009,0.0
 World,2023,Cobalt,Price,EI_Prices,0,35436.97002083333,EI_Prices,0,104.70507007546284,99.7
 World,2023,Lithium,Price,EI_Prices,0,40297.0,EI_Prices,0,88.26260029934711,99.8
-World,2023,Oil,Price,EI_Prices,0,85.07984586545322,GasPrice,0,82.64229083665342,2.9
+World,2023,Natural Gas,Price,ConsolidatedPrices,0,9.722697619971035,GasPrice,0,9.722697619971035,0.0
+World,2023,Oil,Price,ConsolidatedPrices,0,82.64229083665342,EI_Prices,0,85.07984586545322,2.9
+World,2023,Oil,Price,ConsolidatedPrices,0,82.64229083665342,GasPrice,0,82.64229083665342,0.0
 World,2024,Cadmium,Production,OWID,250,24.0,OWID,250,24.0,0.0
-World,2024,Coal,Price,EI_Prices,0,112.0,GasPrice,0,143.551381802723,28.2
+World,2024,Coal,Price,ConsolidatedPrices,0,143.551381802723,EI_Prices,0,112.0,22.0
+World,2024,Coal,Price,ConsolidatedPrices,0,143.551381802723,GasPrice,0,143.551381802723,0.0
 World,2024,Cobalt,Price,EI_Prices,0,27235.875480000002,EI_Prices,0,73.6495413541909,99.7
 World,2024,Lithium,Price,EI_Prices,0,12394.018986324098,EI_Prices,0,66.38596011619647,99.5
-World,2024,Oil,Price,EI_Prices,0,80.76,GasPrice,0,80.76,0.0
+World,2024,Natural Gas,Price,ConsolidatedPrices,0,8.348713119958367,GasPrice,0,8.348713119958367,0.0
+World,2024,Oil,Price,ConsolidatedPrices,0,80.76,EI_Prices,0,80.76,0.0
+World,2024,Oil,Price,ConsolidatedPrices,0,80.76,GasPrice,0,80.76,0.0
 "Yemen, Rep.",1990,Oil,Production,EI_CSV,39,182.0,OWID,34,175.27852538275584,3.7
 "Yemen, Rep.",1991,Oil,Production,EI_CSV,39,197.0,OWID,34,190.2308823529412,3.4
 "Yemen, Rep.",1992,Oil,Production,EI_CSV,39,183.9584699,OWID,34,169.89576954069298,7.6

@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<style>
+  body  { font-family: "Times New Roman", Times, serif; font-size:13px; margin:40px; color:#000; }
+  h2    { font-size:14px; font-weight:normal; text-align:center; margin-bottom:4px; }
+  table { border-collapse:collapse; width:640px; margin:0 auto; }
+  th,td { padding:3px 10px; text-align:center; }
+  td.varname { text-align:left; padding-left:4px; min-width:240px; }
+  tr.se-row td { padding-top:0; padding-bottom:4px; }
+  .top-border { border-top:2px solid #000; }
+  .mid-border { border-top:1px solid #000; }
+  .bot-border { border-bottom:2px solid #000; }
+  .section-lbl td { font-style:italic; font-size:11px; padding-top:6px; color:#444; text-align:left; }
+  .note { font-size:11px; text-align:left; width:640px; margin:4px auto 0; }
+  sup { font-size:9px; }
+</style></head><body>
+<h2>Economic Complexity — Appendix: Extra Controls</h2><table>
+<thead>
+  <tr class="top-border"><th></th><th colspan="2"><em>Dependent variable: Economic Complexity Index</em></th></tr>
+  <tr class="mid-border bot-border"><th></th><th>(4a) Extra controls</th><th>(4b) All lagged + controls</th></tr>
+</thead><tbody>
+<tr><td class="varname">Human Capital Index (log)</td><td>0.128</td><td>0.142</td></tr>
+<tr class="se-row"><td></td><td>(0.102)</td><td>(0.112)</td></tr>
+<tr><td class="varname">Gross Fixed Capital Formation (log)</td><td>0.015</td><td>0.013</td></tr>
+<tr class="se-row"><td></td><td>(0.012)</td><td>(0.011)</td></tr>
+<tr><td class="varname">Production Value (log)</td><td>-0.017*</td><td>-0.015*</td></tr>
+<tr class="se-row"><td></td><td>(0.009)</td><td>(0.008)</td></tr>
+<tr><td class="varname">Political Stability</td><td>0.012</td><td>0.018</td></tr>
+<tr class="se-row"><td></td><td>(0.024)</td><td>(0.020)</td></tr>
+<tr><td class="varname">Rule of Law</td><td>0.092*</td><td>0.077</td></tr>
+<tr class="se-row"><td></td><td>(0.052)</td><td>(0.051)</td></tr>
+<tr><td class="varname">Trade Openness (% of GDP)</td><td>0.000</td><td>0.001</td></tr>
+<tr class="se-row"><td></td><td>(0.001)</td><td>(0.001)</td></tr>
+<tr><td class="varname">Forestry Rents (% of GDP)</td><td>0.004</td><td>0.002</td></tr>
+<tr class="se-row"><td></td><td>(0.005)</td><td>(0.005)</td></tr>
+<tr><td class="varname">Hydrocarbons Dominant</td><td>-0.019</td><td>-0.000</td></tr>
+<tr class="se-row"><td></td><td>(0.057)</td><td>(0.047)</td></tr>
+<tr><td class="varname">Subsoil Metals Dominant</td><td>-0.014</td><td>0.007</td></tr>
+<tr class="se-row"><td></td><td>(0.059)</td><td>(0.042)</td></tr>
+<tr><td class="varname">Precious Metals Dominant</td><td>0.042</td><td>0.080*</td></tr>
+<tr class="se-row"><td></td><td>(0.051)</td><td>(0.041)</td></tr>
+<tr><td class="varname">Access to Electricity (%)</td><td>0.003***</td><td>0.003***</td></tr>
+<tr class="se-row"><td></td><td>(0.001)</td><td>(0.001)</td></tr>
+<tr class="section-lbl mid-border"><td colspan="3">Interaction terms</td></tr>
+<tr><td class="varname">HCI × Production (log)</td><td>0.071**</td><td>0.068*</td></tr>
+<tr class="se-row"><td></td><td>(0.032)</td><td>(0.037)</td></tr>
+<tr><td class="varname">GFCF × Production (log)</td><td>0.011*</td><td>0.002</td></tr>
+<tr class="se-row"><td></td><td>(0.006)</td><td>(0.007)</td></tr>
+<tr><td class="varname">HCI × Forestry Rents</td><td>0.015</td><td>0.011</td></tr>
+<tr class="se-row"><td></td><td>(0.021)</td><td>(0.022)</td></tr>
+<tr><td class="varname">GFCF × Forestry Rents</td><td>0.005*</td><td>-0.002</td></tr>
+<tr class="se-row"><td></td><td>(0.003)</td><td>(0.003)</td></tr>
+<tr class="section-lbl mid-border"><td colspan="3">Lagged dependent variable</td></tr>
+<tr><td class="varname">Economic Complexity Index (t−1)</td><td>0.778***</td><td>0.780***</td></tr>
+<tr class="se-row"><td></td><td>(0.049)</td><td>(0.048)</td></tr>
+<tr><td class="varname">Constant</td><td>-0.545***</td><td>-0.554***</td></tr>
+<tr class="se-row"><td></td><td>(0.111)</td><td>(0.136)</td></tr>
+
+<tr class="mid-border"><td class="varname">Observations</td><td>1,261</td><td>1,261</td></tr>
+<tr><td class="varname">Countries</td><td>54</td><td>54</td></tr>
+<tr><td class="varname">R<sup>2</sup></td><td>0.796</td><td>0.795</td></tr>
+<tr><td class="varname">Adjusted R<sup>2</sup></td><td>0.793</td><td>0.792</td></tr>
+<tr class="bot-border"><td class="varname">Clustered SE</td><td colspan="2">Country</td></tr>
+</tbody></table>
+<p class="note"><em>Note:</em>&nbsp;<sup>*</sup>p&lt;0.1;&nbsp;<sup>**</sup>p&lt;0.05;&nbsp;<sup>***</sup>p&lt;0.01. Clustered SEs by country in parentheses.</p>
+</body></html>

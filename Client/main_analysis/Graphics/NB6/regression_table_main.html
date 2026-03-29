@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<style>
+  body  { font-family: "Times New Roman", Times, serif; font-size:13px; margin:40px; color:#000; }
+  h2    { font-size:14px; font-weight:normal; text-align:center; margin-bottom:4px; }
+  table { border-collapse:collapse; width:720px; margin:0 auto; }
+  th,td { padding:3px 10px; text-align:center; }
+  td.varname { text-align:left; padding-left:4px; min-width:240px; }
+  tr.se-row td { padding-top:0; padding-bottom:4px; }
+  .top-border { border-top:2px solid #000; }
+  .mid-border { border-top:1px solid #000; }
+  .bot-border { border-bottom:2px solid #000; }
+  .section-lbl td { font-style:italic; font-size:11px; padding-top:6px; color:#444; text-align:left; }
+  .note { font-size:11px; text-align:left; width:720px; margin:4px auto 0; }
+  sup { font-size:9px; }
+</style></head><body>
+<h2>Economic Complexity in Resource-Rich Countries</h2><table>
+<thead>
+  <tr class="top-border"><th></th><th colspan="3"><em>Dependent variable: Economic Complexity Index</em></th></tr>
+  <tr class="mid-border bot-border"><th></th><th>(1) No lag</th><th>(2) ECI lag</th><th>(3) All lagged</th></tr>
+</thead><tbody>
+<tr><td class="varname">Human Capital Index (log)</td><td>1.663***</td><td>0.276**</td><td>0.265**</td></tr>
+<tr class="se-row"><td></td><td>(0.409)</td><td>(0.107)</td><td>(0.104)</td></tr>
+<tr><td class="varname">Gross Fixed Capital Formation (log)</td><td>0.142***</td><td>0.035***</td><td>0.034***</td></tr>
+<tr class="se-row"><td></td><td>(0.052)</td><td>(0.010)</td><td>(0.012)</td></tr>
+<tr><td class="varname">Production Value (log)</td><td>-0.042</td><td>-0.009</td><td>-0.007</td></tr>
+<tr class="se-row"><td></td><td>(0.032)</td><td>(0.008)</td><td>(0.008)</td></tr>
+<tr><td class="varname">Political Stability</td><td>0.026</td><td>0.012</td><td>0.016</td></tr>
+<tr class="se-row"><td></td><td>(0.069)</td><td>(0.020)</td><td>(0.016)</td></tr>
+<tr><td class="varname">Rule of Law</td><td>0.353*</td><td>0.060</td><td>0.066</td></tr>
+<tr class="se-row"><td></td><td>(0.206)</td><td>(0.046)</td><td>(0.047)</td></tr>
+<tr><td class="varname">Trade Openness (% of GDP)</td><td>0.001</td><td>0.000</td><td>0.000</td></tr>
+<tr class="se-row"><td></td><td>(0.003)</td><td>(0.001)</td><td>(0.001)</td></tr>
+<tr><td class="varname">Forestry Rents (% of GDP)</td><td>-0.027</td><td>-0.005</td><td>-0.005</td></tr>
+<tr class="se-row"><td></td><td>(0.016)</td><td>(0.004)</td><td>(0.004)</td></tr>
+<tr class="section-lbl mid-border"><td colspan="4">Interaction terms</td></tr>
+<tr><td class="varname">HCI × Production (log)</td><td>0.236*</td><td>0.039</td><td>0.034</td></tr>
+<tr class="se-row"><td></td><td>(0.139)</td><td>(0.033)</td><td>(0.030)</td></tr>
+<tr><td class="varname">GFCF × Production (log)</td><td>0.018</td><td>0.009</td><td>-0.002</td></tr>
+<tr class="se-row"><td></td><td>(0.030)</td><td>(0.006)</td><td>(0.007)</td></tr>
+<tr><td class="varname">HCI × Forestry Rents</td><td>-0.082</td><td>-0.025</td><td>-0.024</td></tr>
+<tr class="se-row"><td></td><td>(0.071)</td><td>(0.018)</td><td>(0.017)</td></tr>
+<tr><td class="varname">GFCF × Forestry Rents</td><td>0.013</td><td>0.006*</td><td>0.001</td></tr>
+<tr class="se-row"><td></td><td>(0.015)</td><td>(0.004)</td><td>(0.003)</td></tr>
+<tr class="section-lbl mid-border"><td colspan="4">Lagged dependent variable</td></tr>
+<tr><td class="varname">Economic Complexity Index (t−1)</td><td></td><td>0.807***</td><td>0.814***</td></tr>
+<tr class="se-row"><td></td><td></td><td>(0.045)</td><td>(0.044)</td></tr>
+<tr><td class="varname">Constant</td><td>-2.939***</td><td>-0.543***</td><td>-0.531***</td></tr>
+<tr class="se-row"><td></td><td>(0.535)</td><td>(0.133)</td><td>(0.147)</td></tr>
+
+<tr class="mid-border"><td class="varname">Observations</td><td>1,324</td><td>1,273</td><td>1,270</td></tr>
+<tr><td class="varname">Countries</td><td>54</td><td>54</td><td>54</td></tr>
+<tr><td class="varname">R<sup>2</sup></td><td>0.378</td><td>0.785</td><td>0.788</td></tr>
+<tr><td class="varname">Adjusted R<sup>2</sup></td><td>0.373</td><td>0.783</td><td>0.786</td></tr>
+<tr class="bot-border"><td class="varname">Clustered SE</td><td colspan="3">Country</td></tr>
+</tbody></table>
+<p class="note"><em>Note:</em>&nbsp;<sup>*</sup>p&lt;0.1;&nbsp;<sup>**</sup>p&lt;0.05;&nbsp;<sup>***</sup>p&lt;0.01. Clustered SEs by country in parentheses.</p>
+</body></html>
