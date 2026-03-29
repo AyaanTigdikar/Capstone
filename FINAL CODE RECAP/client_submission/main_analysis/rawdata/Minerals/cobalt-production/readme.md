@@ -1,0 +1,90 @@
+# Cobalt production - Data package
+
+This data package contains the data that powers the chart ["Cobalt production"](https://ourworldindata.org/explorers/minerals?Mineral=Cobalt&Metric=Production&Type=Mine&Share+of+global=false&country=OWID_WRL~AUS~CHL~CHN~USA) on the Our World in Data website. It was downloaded on January 08, 2026.
+
+### Active Filters
+
+A filtered subset of the full data was downloaded. The following filters were applied:
+
+## CSV Structure
+
+The high level structure of the CSV file is that each row is an observation for an entity (usually a country or region) and a timepoint (usually a year).
+
+The first two columns in the CSV file are "Entity" and "Code". "Entity" is the name of the entity (e.g. "United States"). "Code" is the OWID internal entity code that we use if the entity is a country or region. For normal countries, this is the same as the [iso alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) code of the entity (e.g. "USA") - for non-standard countries like historical countries these are custom codes.
+
+The third column is either "Year" or "Day". If the data is annual, this is "Year" and contains only the year as an integer. If the column is "Day", the column contains a date string in the form "YYYY-MM-DD".
+
+The final column is the data column, which is the time series that powers the chart. If the CSV data is downloaded using the "full data" option, then the column corresponds to the time series below. If the CSV data is downloaded using the "only selected data visible in the chart" option then the data column is transformed depending on the chart type and thus the association with the time series might not be as straightforward.
+
+## Metadata.json structure
+
+The .metadata.json file contains metadata about the data package. The "charts" key contains information to recreate the chart, like the title, subtitle etc.. The "columns" key contains information about each of the columns in the csv, like the unit, timespan covered, citation for the data etc..
+
+## About the data
+
+Our World in Data is almost never the original producer of the data - almost all of the data we use has been compiled by others. If you want to re-use data, it is your responsibility to ensure that you adhere to the sources' license and to credit them correctly. Please note that a single time series may have more than one source - e.g. when we stich together data from different time periods by different producers or when we calculate per capita metrics using population data from a second source.
+
+## Detailed information about the data
+
+
+## Cobalt production
+Production of [cobalt](#dod:cobalt), in tonnes. Based on mined, rather than [refined](#dod:refined-production), production.
+Last updated: December 15, 2025  
+Next update: December 2026  
+Date range: 1901–2024  
+Unit: tonnes  
+
+
+### How to cite this data
+
+#### In-line citation
+If you have limited space (e.g. in data visualizations), you can use this abbreviated in-line citation:  
+USGS - Mineral Commodity Summaries (2025); USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data
+
+#### Full citation
+USGS - Mineral Commodity Summaries (2025); USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World in Data. “Cobalt production” [dataset]. United States Geological Survey, “Mineral Commodity Summaries”; United States Geological Survey, “Historical Statistics for Mineral and Material Commodities” [original data].
+Source: USGS - Mineral Commodity Summaries (2025), USGS - Historical Statistics for Mineral and Material Commodities (2024) – with major processing by Our World In Data
+
+### How is this data described by its producer - USGS - Mineral Commodity Summaries (2025), USGS - Historical Statistics for Mineral and Material Commodities (2024)?
+Notes found in original USGS historical data:
+- Note on global production: Data represent the cobalt content of refined products or the cobalt content, recoverable cobalt content, or recovered cobalt content of mined ores, concentrates, or intermediate products depending on the producing country and year. Datum for 1900 was not available. Production estimates for the former Soviet Union are not included prior to 1961. Data for 1901–36 are from IC 8103. Data for 1937–97 are from the MYB. Data for 1998–2003, 2009, and 2011 are previously unpublished revisions. Data for 2004–08, 2010, and 2012 to the most recent year are from the MYB.
+
+Notes found in original USGS data:
+- Mine production in 2020.
+- Mine production in 2021.
+- Production in 2023.
+- Estimated production in 2024.
+- Production in 2021 is also estimated.
+- Overseas territory of France.
+
+Notes found in original BGS data:
+- Figures in this table relate where possible to cobalt recovered. The principal exceptions to this are Brazil, Democratic Republic of Congo and New Caledonia, the figures for which relate to ore raised.
+- There is frequently a considerable disparity between the cobalt content of ore raised and cobalt actually recovered.
+- Figures in this table relate where possible to cobalt recovered. The principal exceptions to this are Brazil and New Caledonia, the figures for which relate to cobalt in ore raised.
+- Figures in this table relate where possible to cobalt recovered. The principal exceptions to this are Brazil, Canada and New Caledonia, the figures for which relate to cobalt in ore raised.
+- Figures in this table relate either to cobalt recovered or to cobalt contained in ore raised. In many countries it is not clear whether cobalt that is known to exist in extracted ore is recovered.
+- Consequently, the figures in this table may relate either to cobalt recovered or to cobalt contained in ore raised.
+- In many countries it is not clear whether cobalt that is known to be present in the extracted ore is subsequently recovered, nor whether the reported figure is contained or recovered cobalt.
+- In addition to the countries listed, cobalt is contained within copper ores in Poland but this is not currently recovered.
+- Includes Co content of ores and residues shipped to overseas refineries including UK.
+- Metal and/or refined.
+
+### Sources
+
+#### United States Geological Survey – Mineral Commodity Summaries
+Retrieved on: 2025-12-15  
+Retrieved from: https://doi.org/10.5066/P13XCP3R  
+
+#### United States Geological Survey – Historical Statistics for Mineral and Material Commodities
+Retrieved on: 2024-07-15  
+Retrieved from: https://www.usgs.gov/centers/national-minerals-information-center/historical-statistics-mineral-and-material-commodities  
+
+#### Notes on our processing step for this indicator
+- The majority of the data is sourced from USGS, supplemented by BGS data where available. Where both overlap, USGS data is prioritized.
+- As BGS does not provide global data, we calculated the world total by summing the data from individual countries, using this as a cross-check against USGS global figures.
+- Due to the inherent uncertainties in the data for certain minerals and countries, we allowed a maximum deviation of 10% between the global totals reported by USGS and the calculated ones for BGS. If the deviation exceeded this threshold, we excluded the BGS data.
+- The calculated global total from BGS data was used only on exceptional occasions, after ensuring that the resulting aggregate was sufficiently complete.
+- Both BGS and USGS datasets include numerous notes and footnotes. We have retained most of these, making only minor edits or deletions where necessary to maintain clarity.
+
+
+    

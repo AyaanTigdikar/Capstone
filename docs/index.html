@@ -502,6 +502,41 @@
         }
         .vault-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
 
+        .map-launch-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            white-space: nowrap;
+            font-family: var(--font-main);
+            font-size: 16px; font-weight: 600;
+            color: var(--white);
+            background: var(--dark-color);
+            border: none; border-radius: 5px;
+            padding: 12px 24px;
+            cursor: pointer;
+            letter-spacing: 0.3px;
+            transition: 0.3s;
+            box-shadow: var(--shadow-subtle);
+        }
+        .map-launch-btn:hover {
+            background: var(--blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        .map-launch-btn i { font-size: 14px; }
+
+        .case-title-row {
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px; width: 100%;
+        }
+        .case-title-row h2 {
+            margin-bottom: 0;
+        }
+        .case-title-row .map-launch-btn {
+            position: absolute;
+            right: 0;
+            bottom: 14px;
+        }
+
         /* =========================================
            9. NAVIGATION (SIDE MENU)
            ========================================= */
@@ -634,6 +669,7 @@
         <a href="#sec-references" class="nav-item">Sources</a>
         <a href="#sec-annex-1" class="nav-item">Annex 1</a>
         <a href="#sec-annex-2" class="nav-item">Annex 2</a>
+        <a href="#sec-annex-3" class="nav-item">Annex 3</a>
     </div>
 
     <div id="mediaModal" class="modal">
@@ -803,28 +839,146 @@
     </section>
 
     <section id="sec-3" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">WHICH FACTORS DRIVE DIVERSIFICATION ACROSS COUNTRIES?</div>
-            <h2>Three Pillars Behind Industrial Upgrading</h2>
-            <p class="narrative-text">
-                Across both our econometric and ML models, three structural variables consistently emerge as the strongest predictors of sustained diversification and development of value-added industries
-            </p>
-            <div class="pillars-container">
-                <div class="pillar-card credit">
-                    <h4>Financial Depth</h4>
-                    <p style="font-size: 18px; color: var(--grey);">Domestic Credit to Private Sector</p>
-                </div>
-                <div class="pillar-card energy">
-                    <h4>Energy Infrastructure</h4>
-                    <p style="font-size: 18px; color: var(--grey);">Electricity Access</p>
-                </div>
-                <div class="pillar-card human">
-                    <h4>Human Capital</h4>
-                    <p style="font-size: 18px; color: var(--grey);">Education & Skills Index</p>
-                </div>
-            </div>
+      <div class="content-wrapper">
+    
+        <div class="header-logos">WHICH FACTORS DRIVE DIVERSIFICATION ACROSS COUNTRIES?</div>
+        <h2>Three Pillars Behind Industrial Upgrading</h2>
+        <p class="narrative-text">
+          Across both our econometric and ML models, three structural variables consistently emerge as the strongest predictors of sustained diversification and development of value-added industries.
+        </p>
+    
+        <div class="pillars-container">
+    
+          <div class="pillar-card credit">
+            <div class="pillar-icon-fa"><i class="fas fa-landmark"></i></div>
+            <div class="pillar-tag">Pillar I</div>
+            <h4>Financial Depth</h4>
+            <p class="pillar-metric">Domestic Credit to Private Sector</p>
+            <p class="pillar-why">Does capital actually reach producers — or stay locked in resource rents?</p>
+            <div class="pillar-bar"></div>
+          </div>
+    
+          <div class="pillar-card energy">
+            <div class="pillar-icon-fa"><i class="fas fa-bolt"></i></div>
+            <div class="pillar-tag">Pillar II</div>
+            <h4>Energy Infrastructure</h4>
+            <p class="pillar-metric">Electricity Access</p>
+            <p class="pillar-why">The backbone of industrial diversification and manufacturing capacity.</p>
+            <div class="pillar-bar"></div>
+          </div>
+    
+          <div class="pillar-card human">
+            <div class="pillar-icon-fa"><i class="fas fa-graduation-cap"></i></div>
+            <div class="pillar-tag">Pillar III</div>
+            <h4>Human Capital</h4>
+            <p class="pillar-metric">Education &amp; Skills Index</p>
+            <p class="pillar-why">Without knowledge accumulation, complexity gains cannot compound.</p>
+            <div class="pillar-bar"></div>
+          </div>
+    
         </div>
+      </div>
     </section>
+    
+    <style>
+      /* Override the base .pillar-card styles for this section */
+      .pillars-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+        width: 100%;
+      }
+    
+      .pillar-card {
+        position: relative;
+        background: var(--white);
+        border-radius: 10px;
+        box-shadow: var(--shadow-subtle);
+        padding: 40px 30px 36px;
+        flex: 1;
+        min-width: 300px;
+        max-width: 380px;
+        text-align: center;
+        border-bottom: none;
+        border-top: 5px solid var(--grid-color);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: default;
+      }
+    
+      .pillar-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-hover);
+      }
+    
+      .pillar-card.credit { border-top-color: var(--blue); }
+      .pillar-card.energy { border-top-color: var(--orange); }
+      .pillar-card.human  { border-top-color: var(--green); }
+    
+      /* Animated bottom sweep bar on hover */
+      .pillar-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        transition: width 0.4s ease;
+      }
+      .credit .pillar-bar { background: var(--blue); }
+      .energy .pillar-bar { background: var(--orange); }
+      .human  .pillar-bar { background: var(--green); }
+      .pillar-card:hover .pillar-bar { width: 100%; }
+    
+      /* Font Awesome icon */
+      .pillar-icon-fa {
+        font-size: 36px;
+        margin-bottom: 18px;
+      }
+      .credit .pillar-icon-fa { color: var(--blue); }
+      .energy .pillar-icon-fa { color: var(--orange); }
+      .human  .pillar-icon-fa { color: var(--green); }
+    
+      /* Pillar I / II / III label */
+      .pillar-tag {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        color: var(--grey);
+      }
+    
+      /* Card heading */
+      .pillar-card h4 {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--title-color);
+        margin: 0 0 8px;
+        line-height: 1.2;
+      }
+    
+      /* Metric sub-label */
+      .pillar-metric {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--grey);
+        margin: 0 0 16px;
+        border-bottom: 1px solid var(--grid-color);
+        padding-bottom: 14px;
+      }
+    
+      /* One-liner rationale */
+      .pillar-why {
+        font-size: 18px;
+        color: var(--dark-color);
+        line-height: 1.55;
+        margin: 0;
+      }
+    </style>
 
     <section id="sec-4" class="scroll-section">
         <div class="content-wrapper">
@@ -867,18 +1021,18 @@
         <div class="content-wrapper">
             <div class="header-logos">WHAT DATA DO WE USE?</div>
             <h2>Our Data</h2>
-            <p class="narrative-text">
-                54 resource-rich economies over 24 years (1995–2019).
+            <p class="narrative-text" style="text-align: left;">
+                A panel of 54 resource-rich developing economies over 1995 to 2019, covering 48 variables across nine thematic groups (see Annex 1). Thirteen countries were excluded for insufficient coverage (Annex 2). Missing values were filled by linear interpolation (capped at three years) and K-Nearest Neighbours imputation.<br><br>
+                <strong>Key patterns:</strong> Resource-rich countries show lower mean ECI than the full sample. The strongest positive correlations with ECI are domestic credit, the human capital index, and life expectancy; the strongest negative are political corruption and agricultural share of GDP.
             </p>
             <div class="chart-grid">
-                
-            <div class="chart-card" style="max-width: 1000px; margin: 0 auto; width: 100%;">
-                <h3>ECI Correlation</h3>
-                <div class="visual-placeholder has-iframe" style="height: 500px;" onclick="openPlaceholder(this, 'ECI and HCI')">
-                    <iframe src="figures/04_correlation_bar.html" class="iframe-preview-large" scrolling="no"></iframe>
+                <div class="chart-card">
+                    <h3>ECI Correlation</h3>
+                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI Correlation')">
+                        <iframe src="figures/04_correlation_bar.html" class="iframe-preview" scrolling="no"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="sec-7" class="scroll-section">
@@ -1106,7 +1260,10 @@
     <section id="sec-14" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHEN ALL THREE PILLARS COLLAPSE</div>
-            <h2>Republic of Congo</h2>
+            <div class="case-title-row">
+                <h2>Republic of Congo</h2>
+                <button class="map-launch-btn" onclick="openMapView('Congo')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
+            </div>
             <div class="split-container">
                 <div class="split-pane" style="border-color: var(--red);">
                     <div class="case-header">
@@ -1134,7 +1291,10 @@
     <section id="sec-15" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">GDP GREW. COMPLEXITY COLLAPSED.</div>
-            <h2>Azerbaijan</h2>
+            <div class="case-title-row">
+                <h2>Azerbaijan</h2>
+                <button class="map-launch-btn" onclick="openMapView('Azerbaijan')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
+            </div>
             <div class="split-container">
                 <div class="split-pane" style="border-color: var(--orange);">
                     <div class="case-header">
@@ -1162,7 +1322,10 @@
     <section id="sec-16" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">STRONG INSTITUTIONS ARE NECESSARY BUT NOT SUFFICIENT</div>
-            <h2>Chile</h2>
+            <div class="case-title-row">
+                <h2>Chile</h2>
+                <button class="map-launch-btn" onclick="openMapView('Chile')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
+            </div>
             <div class="split-container">
                 <div class="split-pane" style="border-color: var(--green);">
                     <div class="case-header">
@@ -1198,12 +1361,6 @@
                     </div>
                 </div>
                 
-                <div class="chart-card" style="width: 100%; margin-top: 20px; box-sizing: border-box;">
-                    <h3 style="font-size: 26px;">Interactive Map Analysis</h3>
-                    <div class="visual-placeholder has-iframe" style="height: 600px;" onclick="openPlaceholder(this, 'Interactive Map Analysis')">
-                        <iframe src="figures/fused_map.html" class="iframe-preview-large" scrolling="no"></iframe>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1245,8 +1402,10 @@
 
         <section id="sec-annex-1" class="scroll-section">
         <div class="content-wrapper">
-            <h2>Annex 1</h2>
-            <p class="narrative-text">Variables and Sources </p>
+            <h2>Annex 1: Data Sources</h2>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                The panel draws on six primary sources. The World Bank WDI supplies 26 variables covering resource rents, sectoral GDP composition, savings, infrastructure, financial depth, and demographics. The IMF WEO and Investment and Capital Stock datasets provide GDP per capita (PPP), fiscal balances, government revenue, and gross fixed capital formation. Governance indicators come from V-Dem; human capital and capital stock from the Penn World Table 11.0; and the landlocked indicator from CEPII GeoDist. Natural resource production quantities and reserves are compiled from the Energy Institute, Our World in Data, and USGS Data Series 140, converted to dollar values using a consolidated price file covering 19 minerals plus oil, coal, and natural gas. For the Chile case study, facility-level data from Sernageomin, COCHILCO, and customs records produce a directed network of approximately 460 facilities and 1,900 edges across 17 commodity groups.
+            </p>
              <div class="chart-grid">
                 
                 <div class="chart-card">
@@ -1269,8 +1428,111 @@
 
     <section id="sec-annex-2" class="scroll-section">
         <div class="content-wrapper">
-            <h2>Annex 2</h2>
-            <p class="narrative-text">Additional info here</p>
+            <h2>Annex 2: Missing Data Procedures</h2>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                <strong>Excluded countries:</strong> 13 countries were dropped from the sample due to insufficient data coverage, including North Korea, Cuba, South Sudan, Turkmenistan, Syria, and others with extensive missing economic or governance variables. The full list is in the report appendix (Table B.1).
+            </p>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                <strong>Imputation:</strong> Missing values are filled in two passes. First, linear interpolation estimates gaps between observed values within each country's time series, capped at three years beyond the nearest observation. Second, remaining gaps (where a country has no observed value at all for a variable) are filled using K-Nearest Neighbours imputation (k=5, distance-weighted), which draws on the five most similar country-year observations. Median prediction error across all variables is 5.24%, though volatile series such as inflation (31.1%) and mineral rents (44.4%) carry higher uncertainty. Twenty-five of 54 countries have more than 10% of their data cells filled by KNN.
+            </p>
+        </div>
+    </section>
+
+    <section id="sec-annex-3" class="scroll-section">
+        <div class="content-wrapper">
+            <h2>Annex 3: Clustering Techniques</h2>
+
+            <div class="split-container">
+                <div class="split-pane left">
+                    <h3 style="color: var(--blue);">C.1 Principal Component Analysis</h3>
+                    <p style="font-size: 20px;">
+                        PCA is a dimensionality reduction technique that transforms a set of potentially correlated variables into a smaller set of uncorrelated variables called principal components (PCs). Each PC is a linear combination of the original variables, constructed to capture the maximum variance remaining in the data (Jolliffe, 2002).
+                    </p>
+                    <p style="font-size: 20px;">The procedure follows four steps:</p>
+                    <ul style="font-size: 20px;">
+                        <li><strong>Standardisation:</strong> Each variable is rescaled to mean zero and unit variance.</li>
+                        <li><strong>Covariance matrix:</strong> Computed from the standardised data.</li>
+                        <li><strong>Eigendecomposition:</strong> Eigenvalues represent the variance explained by each component; eigenvectors define the component directions.</li>
+                        <li><strong>Scores:</strong> Observations are projected onto the new coordinate system defined by the eigenvectors.</li>
+                    </ul>
+                    <p style="font-size: 20px;">
+                        We apply PCA to 21 resource production variables. The first two components account for 69.5% of total variance: PC1 (51.8%) is driven by oil and natural gas; PC2 (17.7%) captures mining activity, particularly copper, gold, and coal. Most smaller minerals load weakly on both components.
+                    </p>
+                </div>
+                <div class="split-pane right">
+                    <h3 style="color: var(--orange);">C.2 K-means Clustering</h3>
+                    <p style="font-size: 20px;">
+                        K-means is an unsupervised algorithm that partitions <em>n</em> observations into <em>k</em> clusters by minimising within-cluster variance, defined as the sum of squared Euclidean distances between each observation and its cluster centroid (MacQueen, 1967).
+                    </p>
+                    <p style="font-size: 20px;">The algorithm iterates three steps until convergence:</p>
+                    <ul style="font-size: 20px;">
+                        <li><strong>Assignment:</strong> Each observation is assigned to the nearest centroid.</li>
+                        <li><strong>Update:</strong> Centroids are recalculated as the mean of all assigned observations.</li>
+                        <li><strong>Convergence:</strong> Steps repeat until assignments stabilise.</li>
+                    </ul>
+                    <p style="font-size: 20px;">
+                        We apply K-means (k=5) to the first two principal components, using the 1995 cross-section of 54 countries. The silhouette score analysis restricts the optimal range to k=3 through k=6.
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 40px;">C.3 Cluster Robustness</h3>
+            <p class="narrative-text" style="text-align: left; font-size: 20px;">
+                Agreement with the baseline is measured by the Adjusted Rand Index (ARI), which compares two partitions on a scale from 0 (random) to 1 (identical), corrected for chance.
+            </p>
+
+            <table class="comp-table" style="margin-bottom: 30px;">
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Specification</th>
+                        <th>Change from Baseline</th>
+                        <th>ARI</th>
+                        <th>Key Observations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>k = 3</strong></td>
+                        <td>Fewer clusters</td>
+                        <td>-</td>
+                        <td style="text-align: left;">Petrostates and Oil Exporters merge, losing the distinction between Gulf producers and lower-income oil economies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>k = 4</strong></td>
+                        <td>Fewer clusters</td>
+                        <td>-</td>
+                        <td style="text-align: left;">Mining Exporters and Diversified Producers collapse into one group, mixing mineral-dominant and mixed portfolios.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>k = 6</strong></td>
+                        <td>More clusters</td>
+                        <td>-</td>
+                        <td style="text-align: left;">Forestry Intensive splits further but the extra cluster contains only 2-3 countries with no clear interpretive profile.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>A: Merged minerals</strong></td>
+                        <td>4 features instead of 21</td>
+                        <td class="status-green">0.70</td>
+                        <td style="text-align: left;">Hydrocarbon clusters stable. Divergence in mineral-dependent economies where copper/gold distinction is lost.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>B: Three PCs</strong></td>
+                        <td>3 components instead of 2</td>
+                        <td class="status-green">0.81</td>
+                        <td style="text-align: left;">Highest ARI. Third component (11.4% variance) adds limited clustering power.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>C: 2019 data</strong></td>
+                        <td>End-of-panel production</td>
+                        <td class="status-orange">0.67</td>
+                        <td style="text-align: left;">Azerbaijan and Iraq move to Petrostates; Kazakhstan and Russia shift to Mining Exporters; Ghana and Vietnam leave Forestry Intensive.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="synthesis-box">
+                <p style="font-size: 20px;"><strong>Country-level stability:</strong> 14 countries (27%) receive the same label across all four specifications, drawn almost entirely from Forestry Intensive plus the UAE. The least stable are mixed hydrocarbon-mineral economies (Bolivia, Indonesia, Kazakhstan, Russia, Iran), whose resource composition is not well summarised by a single cluster. The clustering is used as a descriptive device only and is not included as a predictor in the econometric or ML specifications.</p>
+            </div>
         </div>
     </section>
 
@@ -1515,6 +1777,43 @@
                 nav.style.width = "0";
             }
         }
+        // Map overlay for case-study buttons
+        function openMapView(view) {
+            var url = 'figures/fused_map.html#view=' + view;
+            var overlay = document.getElementById('mapOverlay');
+            if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.id = 'mapOverlay';
+                overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;';
+
+                var topBar = document.createElement('div');
+                topBar.style.cssText = 'width:92vw;display:flex;justify-content:flex-end;margin-bottom:8px;flex-shrink:0;';
+
+                var closeBtn = document.createElement('button');
+                closeBtn.innerHTML = '&times; Close map';
+                closeBtn.style.cssText = 'font-family:var(--font-main);font-size:14px;font-weight:600;color:#fff;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:5px;padding:8px 20px;cursor:pointer;transition:0.2s;';
+                closeBtn.onmouseenter = function(){ this.style.background='rgba(255,255,255,0.25)'; };
+                closeBtn.onmouseleave = function(){ this.style.background='rgba(255,255,255,0.15)'; };
+                closeBtn.onclick = function(){ 
+                    document.getElementById('mapOverlay').remove(); 
+                };
+                topBar.appendChild(closeBtn);
+                overlay.appendChild(topBar);
+
+                var frame = document.createElement('iframe');
+                frame.id = 'mapOverlayFrame';
+                frame.style.cssText = 'width:92vw;flex:1;border:none;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,0.4);';
+                overlay.appendChild(frame);
+
+                overlay.addEventListener('click', function(e){
+                    if (e.target === overlay || e.target === topBar) overlay.remove();
+                });
+
+                document.body.appendChild(overlay);
+            }
+            document.getElementById('mapOverlayFrame').src = url;
+        }
+
     </script>
 </body>
 </html>
