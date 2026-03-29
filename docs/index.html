@@ -815,7 +815,7 @@
         <div class="pillars-container">
     
           <div class="pillar-card credit">
-            <div class="pillar-icon">🏦</div>
+            <div class="pillar-icon-fa"><i class="fas fa-landmark"></i></div>
             <div class="pillar-tag">Pillar I</div>
             <h4>Financial Depth</h4>
             <p class="pillar-metric">Domestic Credit to Private Sector</p>
@@ -824,7 +824,7 @@
           </div>
     
           <div class="pillar-card energy">
-            <div class="pillar-icon">⚡</div>
+            <div class="pillar-icon-fa"><i class="fas fa-bolt"></i></div>
             <div class="pillar-tag">Pillar II</div>
             <h4>Energy Infrastructure</h4>
             <p class="pillar-metric">Electricity Access</p>
@@ -833,7 +833,7 @@
           </div>
     
           <div class="pillar-card human">
-            <div class="pillar-icon">🎓</div>
+            <div class="pillar-icon-fa"><i class="fas fa-graduation-cap"></i></div>
             <div class="pillar-tag">Pillar III</div>
             <h4>Human Capital</h4>
             <p class="pillar-metric">Education &amp; Skills Index</p>
@@ -846,108 +846,102 @@
     </section>
     
     <style>
+      /* Override the base .pillar-card styles for this section */
       .pillars-container {
         display: flex;
-        gap: 24px;
+        gap: 30px;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 16px 0;
+        margin: 30px 0;
+        width: 100%;
       }
     
       .pillar-card {
         position: relative;
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.1);
-        border-radius: 16px;
-        padding: 32px 28px 28px;
-        width: 260px;
+        background: var(--white);
+        border-radius: 10px;
+        box-shadow: var(--shadow-subtle);
+        padding: 40px 30px 36px;
+        flex: 1;
+        min-width: 300px;
+        max-width: 380px;
+        text-align: center;
+        border-bottom: none;
+        border-top: 5px solid var(--grid-color);
         overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: default;
       }
     
       .pillar-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-hover);
       }
     
-      /* Accent glow top-left corner */
-      .pillar-card::before {
-        content: '';
-        position: absolute;
-        top: -40px;
-        left: -40px;
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        opacity: 0.12;
-        transition: opacity 0.3s ease;
-      }
-      .pillar-card:hover::before { opacity: 0.22; }
+      .pillar-card.credit { border-top-color: var(--blue); }
+      .pillar-card.energy { border-top-color: var(--orange); }
+      .pillar-card.human  { border-top-color: var(--green); }
     
-      .credit::before { background: #4e9af1; }
-      .energy::before { background: #f5a623; }
-      .human::before  { background: #7ed321; }
-    
-      .credit:hover { border-color: rgba(78,154,241,0.45); }
-      .energy:hover { border-color: rgba(245,166,35,0.45); }
-      .human:hover  { border-color: rgba(126,211,33,0.45); }
-    
-      /* Animated bottom bar */
+      /* Animated bottom sweep bar on hover */
       .pillar-bar {
         position: absolute;
         bottom: 0;
         left: 0;
         height: 3px;
         width: 0%;
-        border-radius: 0 0 0 16px;
         transition: width 0.4s ease;
       }
-      .credit .pillar-bar { background: #4e9af1; }
-      .energy .pillar-bar { background: #f5a623; }
-      .human  .pillar-bar { background: #7ed321; }
+      .credit .pillar-bar { background: var(--blue); }
+      .energy .pillar-bar { background: var(--orange); }
+      .human  .pillar-bar { background: var(--green); }
       .pillar-card:hover .pillar-bar { width: 100%; }
     
-      .pillar-icon {
-        font-size: 28px;
-        margin-bottom: 10px;
-        display: block;
+      /* Font Awesome icon */
+      .pillar-icon-fa {
+        font-size: 36px;
+        margin-bottom: 18px;
       }
+      .credit .pillar-icon-fa { color: var(--blue); }
+      .energy .pillar-icon-fa { color: var(--orange); }
+      .human  .pillar-icon-fa { color: var(--green); }
     
+      /* Pillar I / II / III label */
       .pillar-tag {
         font-size: 11px;
         font-weight: 700;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        margin-bottom: 8px;
-        opacity: 0.5;
-        color: var(--grey, #aaa);
+        margin-bottom: 10px;
+        color: var(--grey);
       }
     
+      /* Card heading */
       .pillar-card h4 {
-        font-size: 20px;
-        font-weight: 700;
-        margin: 0 0 6px;
-        color: var(--white, #fff);
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--title-color);
+        margin: 0 0 8px;
         line-height: 1.2;
       }
     
+      /* Metric sub-label */
       .pillar-metric {
         font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 0.04em;
+        font-weight: 700;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
-        margin: 0 0 12px;
-        opacity: 0.55;
-        color: var(--grey, #aaa);
+        color: var(--grey);
+        margin: 0 0 16px;
+        border-bottom: 1px solid var(--grid-color);
+        padding-bottom: 14px;
       }
     
+      /* One-liner rationale */
       .pillar-why {
-        font-size: 14px;
-        color: var(--grey, #bbb);
+        font-size: 18px;
+        color: var(--dark-color);
         line-height: 1.55;
         margin: 0;
-        opacity: 0.8;
       }
     </style>
 
