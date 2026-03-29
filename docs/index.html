@@ -820,47 +820,95 @@
             <h2>Our Analytical Approach</h2>
             
             <p class="narrative-text">
-                Three complementary methods to identify the drivers of industrial upgrading and translate cross-country patterns into actionable, context-specific policy insights.
+                Three complementary methods to identify the drivers of industrial upgrading and translate cross-country patterns into context-specific policy insights.
             </p>
 
-            <div class="pillars-container" style="margin-bottom: 0;">
-
-                <div class="pillar-card credit">
-                    <div class="pillar-icon-fa"><i class="fas fa-chart-line"></i></div>
-                    <div class="pillar-tag">Approach I</div>
-                    <h4>Econometrics</h4>
-                    <p class="pillar-metric">Theory-Driven Identification</p>
-                    <p class="pillar-why" style="font-size: 17px; text-align: left;">
-                        Panel OLS models that test Venables' (2016) intertemporal investment theory empirically, using an interaction strategy inspired by Mehlum et al. (2006) to examine whether human capital and physical investment moderate the effect of resource wealth on economic complexity.
-                    </p>
-                    <div class="pillar-bar"></div>
+            <div class="approach-row">
+                <div class="approach-item approach-blue">
+                    <span class="approach-number">01</span>
+                    <h3>Econometrics</h3>
+                    <p>Panel OLS models that test Venables' (2016) investment theory empirically, using an interaction strategy inspired by Mehlum et al. (2006).</p>
                 </div>
-
-                <div class="pillar-card energy">
-                    <div class="pillar-icon-fa"><i class="fas fa-brain"></i></div>
-                    <div class="pillar-tag">Approach II</div>
-                    <h4>Machine Learning</h4>
-                    <p class="pillar-metric">Data-Driven Discovery</p>
-                    <p class="pillar-why" style="font-size: 17px; text-align: left;">
-                        PCA and K-Means clustering provide a descriptive lens, grouping countries by resource extraction profile. LASSO, Ridge, Elastic Net, and Random Forest then take a theory-agnostic approach to identify key predictors of complexity, uncovering patterns that a standard linear specification may miss.
-                    </p>
-                    <div class="pillar-bar"></div>
+                <div class="approach-divider"></div>
+                <div class="approach-item approach-orange">
+                    <span class="approach-number">02</span>
+                    <h3>Machine Learning</h3>
+                    <p>PCA and K-Means clustering group countries by extraction profile. LASSO, Ridge, Elastic Net, and Random Forest then take a theory-agnostic approach to surface predictors a standard linear model may miss.</p>
                 </div>
-
-                <div class="pillar-card human">
-                    <div class="pillar-icon-fa"><i class="fas fa-globe-africa"></i></div>
-                    <div class="pillar-tag">Approach III</div>
-                    <h4>Qualitative Case Studies</h4>
-                    <p class="pillar-metric">Congo · Azerbaijan · Chile</p>
-                    <p class="pillar-why" style="font-size: 17px; text-align: left;">
-                        Cross-country regressions reveal overarching trends, but effective policy must be context-specific. Three cases illustrate how the same macro-level constraints bind differently depending on institutional, geographic, and political conditions.
-                    </p>
-                    <div class="pillar-bar"></div>
+                <div class="approach-divider"></div>
+                <div class="approach-item approach-green">
+                    <span class="approach-number">03</span>
+                    <h3>Qualitative Case Studies</h3>
+                    <p>Cross-country regressions reveal broad trends, but effective policy must be context-specific. Three cases show how the same constraints bind differently across settings.</p>
                 </div>
-
             </div>
+
         </div>
     </section>
+
+    <style>
+        .approach-row {
+            display: flex;
+            align-items: stretch;
+            gap: 0;
+            width: 100%;
+            max-width: 1400px;
+            margin-top: 10px;
+        }
+
+        .approach-item {
+            flex: 1;
+            padding: 30px 35px;
+            text-align: left;
+        }
+
+        .approach-number {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1;
+            display: block;
+            margin-bottom: 12px;
+            opacity: 0.15;
+        }
+        .approach-blue .approach-number { color: var(--blue); }
+        .approach-orange .approach-number { color: var(--orange); }
+        .approach-green .approach-number { color: var(--green); }
+
+        .approach-item h3 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .approach-blue h3 { color: var(--blue); }
+        .approach-orange h3 { color: var(--orange); }
+        .approach-green h3 { color: var(--green); }
+
+        .approach-item p {
+            font-size: 19px;
+            color: var(--dark-color);
+            margin: 0;
+            line-height: 1.55;
+        }
+
+        .approach-divider {
+            width: 1px;
+            background: var(--grid-color);
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 992px) {
+            .approach-row {
+                flex-direction: column;
+            }
+            .approach-divider {
+                width: 100%;
+                height: 1px;
+            }
+            .approach-item {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 
     <section id="sec-3" class="scroll-section">
       <div class="content-wrapper">
