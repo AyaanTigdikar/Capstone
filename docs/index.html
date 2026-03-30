@@ -1076,49 +1076,58 @@
       }
     </style>
 
-<section id="sec-4" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
-            <h2>The Economic Complexity Framework</h2>
-            
-            <p class="narrative-text" style="text-align: left;">
-                The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
-                <strong>How it works:</strong> Based on trade data to calculate two key measures: <strong>Diversity</strong> (number of products exported) and <strong>Ubiquity</strong> (number of countries exporting those products).
-            </p>
-            
-            <div style="width: 100%; margin-top: 30px; border-top: 2px dashed var(--grid-color); padding-top: 30px;"></div>
 
-            <div class="chart-grid">
+    <section id="sec-4" class="scroll-section" style="justify-content: flex-start; padding: 0;">
+        
+        <div style="min-height: 100vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 40px; box-sizing: border-box;">
+            <div class="content-wrapper">
+                <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
+                <h2>The Economic Complexity Framework</h2>
                 
-                <div class="chart-card">
-                    <h3>ECI vs Income Evolution</h3>
-                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI vs Income Evolution')">
-                        <iframe src="figures/01_eci_animated_scatter.html" class="iframe-preview" scrolling="no"></iframe>
-                    </div>
-                </div>
-                
-                <div class="chart-card">
-                    <h3>ECI Performance</h3>
-                    <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI Performance')">
-                        <iframe src="figures/00_eci_table.html" class="iframe-preview" scrolling="no"></iframe>
-                    </div>
-                </div>
-                
-                <div class="chart-card">
-                    <h3>Vietnam's Product Space</h3>
-                    <div class="visual-placeholder has-iframe" style="display: flex; flex-direction: column; gap: 10px; padding: 15px; cursor: pointer;" 
-                         onclick="
-                            document.getElementById('mediaModal').style.display = 'block';
-                            document.getElementById('modal-title').innerText = 'The Vietnam Product Space (1995 vs 2024)';
-                            document.getElementById('modal-body').innerHTML = '<div style=\'display: flex; flex-direction: column; height: 100%; width: 100%; padding: 20px; box-sizing: border-box; gap: 20px; align-items: center; justify-content: center; background: var(--bg-plot);\'><img src=\'figures/vietnam_1995.png\' style=\'max-width: 100%; height: 48%; object-fit: contain;\'><img src=\'figures/vietnam_2024.png\' style=\'max-width: 100%; height: 48%; object-fit: contain;\'></div>';
-                         ">
-                        <img src="figures/vietnam_1995.png" alt="Vietnam 1995" style="width: 100%; height: 48%; object-fit: contain;">
-                        <img src="figures/vietnam_2024.png" alt="Vietnam 2024" style="width: 100%; height: 48%; object-fit: contain;">
-                    </div>
-                </div>
-
+                <p class="narrative-text" style="text-align: left;">
+                    The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
+                    <strong>How it works:</strong> Based on trade data to calculate two key measures: <strong>Diversity</strong> (number of products exported) and <strong>Ubiquity</strong> (number of countries exporting those products).
+                </p>
             </div>
         </div>
+
+        <div style="min-height: 100vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 40px; box-sizing: border-box; border-top: 1px dashed var(--grid-color);">
+            <div class="content-wrapper" style="width: 100%;">
+                
+                <div class="chart-grid">
+                    
+                    <div class="chart-card">
+                        <h3>ECI vs Income Evolution</h3>
+                        <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI vs Income Evolution')">
+                            <iframe src="figures/01_eci_animated_scatter.html" class="iframe-preview" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <h3>ECI Performance</h3>
+                        <div class="visual-placeholder has-iframe" onclick="openPlaceholder(this, 'ECI Performance')">
+                            <iframe src="figures/00_eci_table.html" class="iframe-preview" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-card">
+                        <h3>Vietnam's Product Space</h3>
+                        <div class="visual-placeholder has-iframe" style="display: flex; flex-direction: column; gap: 10px; padding: 15px; cursor: pointer;" 
+                             onclick="
+                                document.getElementById('mediaModal').style.display = 'block';
+                                document.getElementById('modal-title').innerText = 'The Vietnam Product Space (1995 vs 2024)';
+                                document.getElementById('modal-body').innerHTML = '<div style=\'display: flex; flex-direction: column; height: 100%; width: 100%; padding: 20px; box-sizing: border-box; gap: 20px; align-items: center; justify-content: center; background: var(--bg-plot);\'><img src=\'figures/vietnam_1995.png\' style=\'max-width: 100%; height: 48%; object-fit: contain;\'><img src=\'figures/vietnam_2024.png\' style=\'max-width: 100%; height: 48%; object-fit: contain;\'></div>';
+                             ">
+                            <img src="figures/vietnam_1995.png" alt="Vietnam 1995" style="width: 100%; height: 48%; object-fit: contain;">
+                            <img src="figures/vietnam_2024.png" alt="Vietnam 2024" style="width: 100%; height: 48%; object-fit: contain;">
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        
     </section>
 
             </div>
@@ -1452,7 +1461,7 @@
                     <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Infrastructure spending:</strong> Concentrated heavily on pipelines. SOFAZ spending at times exceeding the fund’s own investment returns.</p>
                     <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Rent capture vulnerability:</strong> Politically connected contracts, opaque procurement processes, and SOFAZ's lack of independence from presidential orders enable rent capture.</p>
                     <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Lack of transparency:</strong> Azerbaijan’s State Statistical Committee does not publish a Gini coefficient.</p>
-                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Financial instability:</strong> NPLs reached 21% after the 2015-16 banking crisis.</p>
+                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Financial instability:</strong> NPLs reached 21% after the 2015-2016 banking crisis.</p>
                 </div>
                 
                 <div style="flex: 1; min-width: 350px; text-align: left;">
