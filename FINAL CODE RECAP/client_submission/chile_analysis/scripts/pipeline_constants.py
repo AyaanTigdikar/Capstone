@@ -1,6 +1,6 @@
 """
 pipeline_constants.py
-─────────────────────────────────────────────────────────────────────────────
+---
 Single source of truth for every hard-coded value in the pipeline that is:
   (a) an assumption rather than something derived from data, OR
   (b) currently duplicated across multiple notebooks, OR
@@ -19,16 +19,14 @@ If a value needs updating, change it HERE only.  Never redefine these in a
 notebook cell.
 
 Audit trail
-───────────
+---
   Created  : 2025-03 (post-audit of pipeline v1)
   Last edit: update this line when values change
 """
 
 from __future__ import annotations
 
-# ══════════════════════════════════════════════════════════════════════════
 # 1.  MOLYBDENUM PRODUCTION SPLIT
-# ══════════════════════════════════════════════════════════════════════════
 #
 # COCHILCO Tabla 4.2 reports Chuquicamata and Radomiro Tomic as a single
 # combined line "Divisiones Chuquicamata y Radomiro Tomic".  The 40/60 split
@@ -49,9 +47,7 @@ MO_SPLIT: dict[str, list[tuple[str, float]]] = {
 }
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 2.  MINE → PRODUCT-TYPE CLASSIFICATION
-# ══════════════════════════════════════════════════════════════════════════
 #
 # Each copper-producing mine is classified by its PRIMARY export product:
 #   "cathode"     – SX-EW or fire-refined cathode exported directly
@@ -78,7 +74,7 @@ MO_SPLIT: dict[str, list[tuple[str, float]]] = {
 # USED BY: Notebook C, Cell 5 (§6 Distance-Based Port Assignment)
 
 PRODUCT_TYPE_OVERRIDE: dict[str, str] = {
-    # ── Codelco integrated operations (onsite smelter → cathode) ──────────
+    # Codelco integrated operations (onsite smelter → cathode)
     "Chuquicamata":      "cathode",   # → Chuquicamata smelter → Angamos/Mejillones
     "Radomiro Tomic":    "cathode",   # SX-EW → Angamos
     "Ministro Hales":    "cathode",   # → Chuquicamata smelter → Angamos
@@ -87,7 +83,7 @@ PRODUCT_TYPE_OVERRIDE: dict[str, str] = {
     "Andina":            "cathode",   # → Las Ventanas refinery → San Antonio/Ventanas
     "Rio Blanco":        "cathode",   # División Andina primary ore body — same routing
     "Salvador":          "cathode",   # → Potrerillos smelter → Barquito
-    # ── Pure SX-EW operations ─────────────────────────────────────────────
+    # Pure SX-EW operations
     "Zaldívar":          "cathode",
     "Zaldivar":          "cathode",   # alternate spelling in some inventory rows
     "El Abra":           "cathode",
@@ -100,7 +96,7 @@ PRODUCT_TYPE_OVERRIDE: dict[str, str] = {
     "Tres Valles":       "cathode",
     "Michilla":          "cathode",
     "Las Luces":         "cathode",
-    # ── Concentrate producers (sulphide ore → third-party smelting) ───────
+    # Concentrate producers (sulphide ore → third-party smelting)
     "Escondida":         "concentrate",
     "Collahuasi":        "concentrate",
     "Los Pelambres":     "concentrate",
@@ -115,9 +111,7 @@ PRODUCT_TYPE_OVERRIDE: dict[str, str] = {
 }
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 3.  MISSING SMELTER-TO-PORT EDGE PATCHES
-# ══════════════════════════════════════════════════════════════════════════
 #
 # Three smelters have mine-to-plant edges recorded under their LONG inventory
 # names but no smelter-to-port edges.  Root cause: smelter_inv_map in
@@ -164,9 +158,7 @@ MISSING_S2P: list[dict] = [
 ]
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 4.  SMELTER ENTITY CONSOLIDATION MAP
-# ══════════════════════════════════════════════════════════════════════════
 #
 # Several smelters appear under multiple names in the inventory (one row per
 # commodity processed at the same physical facility).  Edges referencing
@@ -184,9 +176,7 @@ ENTITY_MERGE_MAP: dict[str, str] = {
 }
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 5.  IRON EXPORT PORTS (extra terminals not in the main PORTS list)
-# ══════════════════════════════════════════════════════════════════════════
 #
 # Huasco and Guayacán are significant iron-ore / pellet export terminals but
 # are NOT in the main PORTS list (which covers copper).  Iron edge-building
@@ -225,9 +215,7 @@ FE_PORT_SHARES: dict[str, float] = {
 }
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 6.  FALLBACK PORT-SHARE DISTRIBUTIONS
-# ══════════════════════════════════════════════════════════════════════════
 #
 # Used when Aduanas Salidas is unavailable and PORT_PRODUCT_MAP (derived in
 # Notebook B §4A) does not cover a given commodity / product-form pair.
@@ -327,9 +315,7 @@ FALLBACK_SHARES: dict[str, dict[str, float]] = {
 }
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 7.  ADUANAS CUSTOMS DATA — CODES AND ALIASES
-# ══════════════════════════════════════════════════════════════════════════
 
 # Export operation codes used to filter Aduanas Salidas rows.
 # Codes 200–216 correspond to export régimes under DFL-2
@@ -374,9 +360,7 @@ ADUANAS_MANUAL_PORTS: dict[int, str] = {
 }
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 8.  MANUAL COMMODITY PRICES  (USD/MT unless noted)
-# ══════════════════════════════════════════════════════════════════════════
 #
 # Tier 4 (lowest priority) prices: used only when COCHILCO Tablas 96/97/98
 # and implied FOB values are both unavailable for a mineral.
@@ -441,9 +425,7 @@ LITHIUM_PRICE_MULTIPLIERS: dict[str, float] = {
 }
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 9.  DOUBLE-COUNTING EXCLUSION LIST
-# ══════════════════════════════════════════════════════════════════════════
 #
 # COCHILCO A_National_Production reports both aggregate categories AND their
 # sub-components in separate rows.  e.g. "COMPUESTOS DE LITIO" is the sum of
@@ -472,9 +454,7 @@ DOUBLE_COUNT_EXCLUDE: list[str] = [
 ]
 
 
-# ══════════════════════════════════════════════════════════════════════════
 # 10.  MINOR PORT COORDINATES (not in main PORTS list)
-# ══════════════════════════════════════════════════════════════════════════
 #
 # Small-volume ports used for specific commodities that are absent from the
 # primary PORTS list (which covers major copper/mineral terminals).
