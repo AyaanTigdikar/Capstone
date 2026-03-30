@@ -70,7 +70,7 @@ header .subtitle{font-size:11px;color:#777;margin-top:2px}
 <div class="main-container">
   <div class="sidebar">
     <div class="country-select-wrap">
-      <select id="countrySelect" onchange="(function(v){var s=document.getElementById('legendStatus'),p=document.getElementById('legendPipelines'),r=document.getElementById('legendRoads'),c=document.getElementById('legendChile');if(!s)return;if(v==='Chile'){s.style.display='none';p.style.display='none';r.style.display='none';c.style.display='';}else if(v==='Congo'){s.style.display='';p.style.display='none';r.style.display='';c.style.display='none';}else if(v==='both'){s.style.display='';p.style.display='';r.style.display='';c.style.display='';}else if(v==='pipelines'){s.style.display='none';p.style.display='';r.style.display='none';c.style.display='none';}else{s.style.display='';p.style.display='';r.style.display='none';c.style.display='none';}})(this.value)">
+      <select id="countrySelect">
         <option value="Azerbaijan">Azerbaijan</option>
         <option value="Congo">Rep. of the Congo</option>
         <option value="Chile">Chile</option>
@@ -144,22 +144,6 @@ header .subtitle{font-size:11px;color:#777;margin-top:2px}
     </div>
   </div>
 </div>
-<script>
-// Early legend sync - runs before any external scripts so legend is correct on load
-(function(){
-  var sel=document.getElementById('countrySelect');
-  if(sel) sel.onchange({target:sel});
-  // Also fire it directly
-  var v=sel?sel.value:'Azerbaijan';
-  var s=document.getElementById('legendStatus'),p=document.getElementById('legendPipelines'),r=document.getElementById('legendRoads'),c=document.getElementById('legendChile');
-  if(!s)return;
-  if(v==='Chile'){s.style.display='none';p.style.display='none';r.style.display='none';c.style.display='';}
-  else if(v==='Congo'){s.style.display='';p.style.display='none';r.style.display='';c.style.display='none';}
-  else if(v==='both'){s.style.display='';p.style.display='';r.style.display='';c.style.display='';}
-  else if(v==='pipelines'){s.style.display='none';p.style.display='';r.style.display='none';c.style.display='none';}
-  else{s.style.display='';p.style.display='';r.style.display='none';c.style.display='none';}
-})();
-</script>
 <script src="data/congo_roads.js"></script>
 <script src="data/chile_full.js"></script>
 <script src="data/country_dots.js"></script>
@@ -473,23 +457,25 @@ try {
 // LEGEND & LAYER VISIBILITY
 // ==============================================================
 function updateLegend(){
-  var v=document.getElementById('countrySelect').value;
-  var legendEl=document.getElementById('mapLegend');
-  var legendStatus=document.getElementById('legendStatus');
-  var legendPipelines=document.getElementById('legendPipelines');
-  var legendRoads=document.getElementById('legendRoads');
-  var legendChile=document.getElementById('legendChile');
-  legendEl.style.display='';
-  if(v==='Chile'){
-    legendStatus.style.display='none';legendPipelines.style.display='none';legendRoads.style.display='none';legendChile.style.display='';
-  } else if(v==='Congo'){
-    legendStatus.style.display='';legendPipelines.style.display='none';legendRoads.style.display='';legendChile.style.display='none';
-  } else if(v==='both'){
-    legendStatus.style.display='';legendPipelines.style.display='';legendRoads.style.display='';legendChile.style.display='';
-  } else if(v==='pipelines'){
-    legendStatus.style.display='none';legendPipelines.style.display='';legendRoads.style.display='none';legendChile.style.display='none';
+  const legendEl=document.getElementById('mapLegend');
+  const legendStatus=document.getElementById('legendStatus');
+  const legendPipelines=document.getElementById('legendPipelines');
+  const legendRoads=document.getElementById('legendRoads');
+  const legendChile=document.getElementById('legendChile');
+  // Debug: show current view in legend
+  var dbg=document.getElementById('legendDebug');
+  if(!dbg){dbg=document.createElement('div');dbg.id='legendDebug';dbg.style.cssText='font-weight:700;color:#c0392b;margin-bottom:4px;font-size:11px';legendEl.insertBefore(dbg,legendEl.firstChild);}
+  dbg.textContent='View: '+currentView;
+  if(currentView==='Chile'){
+    legendStatus.style.display='none';legendPipelines.style.display='none';legendRoads.style.display='none';legendChile.style.display='';legendEl.style.display='';
+  } else if(currentView==='Congo'){
+    legendStatus.style.display='';legendPipelines.style.display='none';legendRoads.style.display='';legendChile.style.display='none';legendEl.style.display='';
+  } else if(currentView==='both'){
+    legendStatus.style.display='';legendPipelines.style.display='';legendRoads.style.display='';legendChile.style.display='';legendEl.style.display='';
+  } else if(currentView==='pipelines'){
+    legendStatus.style.display='none';legendPipelines.style.display='';legendRoads.style.display='none';legendChile.style.display='none';legendEl.style.display='';
   } else {
-    legendStatus.style.display='';legendPipelines.style.display='';legendRoads.style.display='none';legendChile.style.display='none';
+    legendStatus.style.display='';legendPipelines.style.display='';legendRoads.style.display='none';legendChile.style.display='none';legendEl.style.display='';
   }
 }
 
@@ -694,9 +680,6 @@ function hideChileTabs(){
     switchView(v);
   }
 })();
-
-// Final safety: always sync legend to dropdown on load
-updateLegend();
 
 
 </script>

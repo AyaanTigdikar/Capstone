@@ -603,11 +603,149 @@
             line-height: 1.5;
         }
 
+        /* =========================================
+           12. CASE STUDY REDESIGN
+           ========================================= */
+        .case-banner {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .case-banner h2 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .case-subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 4px;
+            color: var(--white);
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .case-subtitle.congo { background: var(--red); }
+        .case-subtitle.azerbaijan { background: var(--orange); }
+        .case-subtitle.chile { background: var(--green); }
+
+        .metrics-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .metric-card {
+            flex: 1;
+            min-width: 160px;
+            max-width: 260px;
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px 18px;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            border-top: 4px solid var(--grid-color);
+            transition: transform 0.2s ease;
+        }
+        .metric-card:hover { transform: translateY(-3px); }
+        .metric-card.accent-red { border-top-color: var(--red); }
+        .metric-card.accent-orange { border-top-color: var(--orange); }
+        .metric-card.accent-green { border-top-color: var(--green); }
+        .metric-card.accent-blue { border-top-color: var(--blue); }
+        .metric-value {
+            font-size: 34px;
+            font-weight: 700;
+            color: var(--title-color);
+            line-height: 1.1;
+            margin-bottom: 6px;
+        }
+        .metric-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--grey);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+        }
+
+        .case-findings {
+            width: 100%;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .case-col {
+            flex: 1;
+            min-width: 340px;
+        }
+        .case-col-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--grid-color);
+        }
+        .case-col-header i {
+            font-size: 20px;
+        }
+        .case-col-header h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .finding-item {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 16px;
+            font-size: 20px;
+            line-height: 1.45;
+            color: var(--dark-color);
+        }
+        .finding-item .finding-icon {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            color: var(--white);
+            margin-top: 2px;
+        }
+        .finding-icon.red-bg { background: var(--red); }
+        .finding-icon.orange-bg { background: var(--orange); }
+        .finding-icon.green-bg { background: var(--green); }
+        .finding-icon.blue-bg { background: var(--blue); }
+
+        .rec-item {
+            background: rgba(74, 111, 165, 0.04);
+            border-left: 4px solid var(--blue);
+            padding: 14px 18px;
+            border-radius: 0 6px 6px 0;
+            margin-bottom: 14px;
+            font-size: 20px;
+            line-height: 1.45;
+            color: var(--dark-color);
+        }
+        .rec-item strong {
+            color: var(--title-color);
+        }
+        .rec-item:last-child { margin-bottom: 0; }
+
         /* Responsive Fixes */
         @media (max-width: 992px) { 
             section { padding: 80px 30px; } 
             #header-subtitle { font-size: 20px; } 
             .references-container { column-count: 1; }
+            .metrics-row { justify-content: center; }
+            .metric-card { max-width: none; }
         }
         @media (max-width: 768px) {
             h2 { font-size: 34px; margin-bottom: 25px;}
@@ -621,6 +759,8 @@
             .modal-content { width: 95vw; height: 90vh; padding: 15px; }
             .vault-btn { width: 100%; justify-content: center; }
             .comp-table th, .comp-table td { padding: 10px; font-size: 16px; }
+            .case-findings { flex-direction: column; gap: 30px; }
+            .metric-value { font-size: 28px; }
         }
     </style>
 </head>
@@ -770,7 +910,7 @@
                     <h3 style="color: var(--orange); font-size: 28px; margin-bottom: 20px;">Secondary Questions</h3>
                     <ul style="font-size: 22px; color: var(--dark-color); line-height: 1.6; padding-left: 25px;">
                         <li style="margin-bottom: 15px;">How sustainable are these shifts in terms of fiscal revenues, employment and export diversification?</li>
-                        <li style="margin-bottom: 15px;">How have they supported or hindered credit quality?</li>
+                        <li style="margin-bottom: 15px;">How have they supported or hindered sovereign credit quality?</li>
                         <li style="margin-bottom: 0;">What policy levers and institutional conditions support or hinder the transition?</li>
                     </ul>
                 </div>
@@ -795,7 +935,7 @@
                 <div class="flow-card card-2">
                     <span class="flow-author">Venables (2016)</span>
                     <h3>Consumption crowds out investment</h3>
-                    <p>Resource-rich governments consistently fail to convert extraction rents into <strong>human capital, infrastructure, and financial assets</strong>. Adjusted net savings are strongly negative.</p>
+                    <p>Resource-rich governments have generally converted extraction rents into consumption rather than productive investment in <strong>human capital, infrastructure, or financial assets</strong>. Adjusted net savings are strongly negative.</p>
                 </div>
     
                 <div class="flow-card card-3">
@@ -835,7 +975,7 @@
             <h2>The Analytical Approach</h2>
             
             <p class="narrative-text">
-                Applying a dual, quantitative approach coupled with rich, policy-relevant case studies
+                The project combines two quantitative strategies with three country case studies
             </p>
 
             <div class="approach-cards">
@@ -850,7 +990,7 @@
                     <div class="approach-accent accent-orange"></div>
                     <div class="approach-body">
                         <span class="approach-label label-orange">Machine Learning</span>
-                        <p>Application of unsupervised techniques (PCA and K-Means clustering) to group countries by <strong>resource extraction profile</strong>. While supervised models (LASSO, Ridge, Elastic Net, and Random Forest) take a <strong>theory-agnostic approach</strong> to surface important predictors.</p>
+                        <p>Unsupervised techniques (PCA and K-Means clustering) group countries by <strong>resource extraction profile</strong>. Supervised models (LASSO, Ridge, Elastic Net, and Random Forest) then take a <strong>theory-agnostic approach</strong> to identify important predictors.</p>
                     </div>
                 </div>
                 <div class="approach-card">
@@ -950,7 +1090,7 @@
             <div class="pillar-tag">Pillar I</div>
             <h4>Financial Depth</h4>
             <p class="pillar-metric">Domestic Credit to Private Sector</p>
-            <p class="pillar-why"> Poor access to finance could result in fewer profitable projects taking off</p>
+            <p class="pillar-why"> Where firms cannot borrow, resource rents stay in the extractive sector rather than financing new industries</p>
             <div class="pillar-bar"></div>
           </div>
     
@@ -959,7 +1099,7 @@
             <div class="pillar-tag">Pillar II</div>
             <h4>Energy Infrastructure</h4>
             <p class="pillar-metric">Access to Electricity</p>
-            <p class="pillar-why">The backbone of industrial diversification and manufacturing capacity.</p>
+            <p class="pillar-why">Manufacturing requires reliable electricity. Countries with low electrification cannot sustain industrial production outside extraction.</p>
             <div class="pillar-bar"></div>
           </div>
     
@@ -968,7 +1108,7 @@
             <div class="pillar-tag">Pillar III</div>
             <h4>Human Capital</h4>
             <p class="pillar-metric">Education &amp; Skills Index</p>
-            <p class="pillar-why">To learn, upskill, and innovate is vital to capturing a larger share of the value chain</p>
+            <p class="pillar-why">Without educated workers, countries remain locked into the lowest segments of the value chain</p>
             <div class="pillar-bar"></div>
           </div>
     
@@ -1079,21 +1219,24 @@
 
     <section id="sec-5" class="scroll-section" style="justify-content: flex-start; padding: 0;">
         
-        <div style="min-height: 100vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 40px; box-sizing: border-box;">
+        <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 40px 40px; box-sizing: border-box;">
             <div class="content-wrapper">
                 <div class="header-logos">HOW CAN WE MEASURE THE SOPHISTICATION OF AN ECONOMY?</div>
                 <h2>The Economic Complexity Framework</h2>
-                
 
-<p class="narrative-text" style="text-align: left;">
-    The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).<br><br>
-    <strong>How it works:</strong> Based on trade data to calculate two key measures:
+<p class="narrative-text" style="text-align: left; margin-bottom: 10px;">
+    The ECI is a measure developed by the Harvard Growth Lab to capture the degree of "know-how" accumulated by a country. It helps track the transition from low complexity activities (e.g., subsistence farming, oil extraction) towards high complexity activities (electronics, machinery, and chemicals).
+</p>
+<p class="narrative-text" style="text-align: left; margin-bottom: 8px;">
+    <strong>How it works:</strong> It uses trade data to calculate two quantities:
 </p>
 
-<ul class="narrative-text" style="text-align: left; margin-top: 0;">
+<ul class="narrative-text" style="text-align: left; margin-top: 0; margin-bottom: 0;">
     <li><strong>Diversity:</strong> Number of different products a country exports.</li>
     <li><strong>Ubiquity:</strong> Number of countries exporting those products.</li>
 </ul>
+            </div>
+        </div>
 
         <div style="min-height: 100vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 80px 40px; box-sizing: border-box; border-top: 1px dashed var(--grid-color);">
             <div class="content-wrapper" style="width: 100%;">
@@ -1132,10 +1275,6 @@
             </div>
         </div>
         
-    </section>
-
-            </div>
-        </div>
     </section>
 
     <section id="sec-6" class="scroll-section">
@@ -1248,7 +1387,7 @@
                         <div class="case-header" style="margin-bottom: 20px;">
                             <h3 style="color: var(--orange); margin-bottom: 0;">Key Findings</h3>
                         </div>
-                        <p style="font-size: 20px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating HCI contributes to complexity growth beyond existing trajectory.</p>
+                        <p style="font-size: 20px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating that HCI contributes to complexity growth beyond a country's existing trajectory.</p>
                         <p style="font-size: 20px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Gross Fixed Capital Formation</strong> is positive and significant.</p>
                         <p style="font-size: 20px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Production Value</strong> is negative but not significant, consistent with the conditional curse view.</p>
                         <p style="font-size: 20px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Institutional controls</strong> lose significance once lagged ECI is included.</p>
@@ -1370,7 +1509,7 @@
                 <div class="header-logos">WHO IS STRENGTHENING THEIR ECONOMIC FOUNDATIONS?</div>
                 <h2>Future Risk and Opportunities</h2>
                 <p class="narrative-text">
-                    Based on current levels of our predictors, we project which countries should increase and decrease their ECI.
+                    Based on current predictor levels, we project which countries are positioned for ECI gains and which face likely declines.
                 </p>
 
                 <div class="chart-card" style="max-width: 900px; margin: 0 auto; width: 100%;">
@@ -1414,7 +1553,7 @@
             <div class="content-wrapper">
                 <div class="header-logos">WHERE DO THE THREE PILLARS BIND?</div>
                 <h2>Comparative Case Studies</h2>
-                <p class="narrative-text">Each case illustrates a different configuration of constraints. The binding bottleneck shifts as institutional and economic conditions improve.</p>
+                <p class="narrative-text">Each case study shows a different bottleneck. The binding constraint changes as countries move up the income ladder.</p>
                 
                 <table class="comp-table">
                     <thead>
@@ -1434,15 +1573,15 @@
                         </tr>
                         <tr>
                             <td><strong>ECI Rank</strong></td>
-                            <td >124th / 130</td>
-                            <td >95th / 130</td>
-                            <td >70th / 130</td>
+                            <td class="status-red">124th / 130</td>
+                            <td class="status-orange">95th / 130</td>
+                            <td class="status-green">70th / 130</td>
                         </tr>
                         <tr>
                             <td><strong>Binding Constraint</strong></td>
-                            <td >All three pillars fail</td>
-                            <td >Dutch Disease + governance</td>
-                            <td >Human capital quality + R&amp;D</td>
+                            <td class="status-red">All three pillars fail</td>
+                            <td class="status-orange">Dutch Disease + governance</td>
+                            <td class="status-green">Human capital quality + R&amp;D</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1468,139 +1607,177 @@
                 <h2>Republic of Congo</h2>
                 <button class="map-launch-btn" onclick="openMapView('Congo')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
             </div>
-            
-            <div class="split-container" style="gap: 60px; align-items: flex-start; margin-top: 30px;">
-                
-                <div style="flex: 1; min-width: 350px; text-align: left;">
-                    <div class="case-header" style="margin-bottom: 20px;">
-                        <h3 style="color: var(--red); margin-bottom: 0;">Key Findings</h3>
+
+            <div class="case-findings">
+
+                <div class="case-col">
+                    <div class="case-col-header">
+                        <i class="fas fa-magnifying-glass-chart" style="color: var(--red);"></i>
+                        <h3 style="color: var(--red);">Key Findings</h3>
                     </div>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Oil concentration:</strong> 40% of GDP, 80% of exports, 60% of government revenues.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Infrastructure deficit:</strong> National electrification at 50%; only 13% of roads are paved. State operate rail system below capacity.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Human Capital gap:</strong> Only 60% of children completing primary school go to secondary; the country has around 23,000 teachers against an estimated need of 48,000.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Informal economy:</strong> 75% of workers are in informal employment; 94% of active firms are informal, cutting them off from formal credit and upskilling.</p>
-                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Financial exclusion:</strong> 8.5% of firms use banks to finance investment. Only 18% of adults hold a formal bank account.</p>
-                </div>
-                
-                <div style="flex: 1; min-width: 350px; text-align: left;">
-                    <div class="case-header" style="margin-bottom: 20px;">
-                        <h3 style="color: var(--blue); margin-bottom: 0;">Policy Recommendations</h3>
+                    <div class="finding-item">
+                        <div class="finding-icon red-bg"><i class="fas fa-oil-can"></i></div>
+                        <div>Oil accounts for 40% of GDP, 80% of exports, and 60% of government revenues.</div>
                     </div>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Education investment:</strong> Delink from oil revenue cycles through a dedicated fund mechanism within the CEMAC framework; shift focus from broad-based low-capacity schooling to continuous student progression and quality.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Open the electricity sector to private participation:</strong> The 2003 Electricity Code already provides the institutional framework, but political will to enforce it is needed.</p>
-                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Strengthen oil revenue transparency:</strong> Implement independent verification systems and production reporting.</p>
+                    <div class="finding-item">
+                        <div class="finding-icon red-bg"><i class="fas fa-road"></i></div>
+                        <div>Only 13% of roads are paved. The state-operated rail system runs below capacity.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon red-bg"><i class="fas fa-school"></i></div>
+                        <div>Only 60% of children completing primary school progress to secondary. The country has around 23,000 teachers against an estimated need of 48,000.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon red-bg"><i class="fas fa-store"></i></div>
+                        <div>94% of active firms are informal, cutting them off from formal credit and upskilling.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon red-bg"><i class="fas fa-building-columns"></i></div>
+                        <div>Only 18% of adults hold a formal bank account.</div>
+                    </div>
                 </div>
-                
+
+                <div class="case-col">
+                    <div class="case-col-header">
+                        <i class="fas fa-clipboard-list" style="color: var(--blue);"></i>
+                        <h3 style="color: var(--blue);">Policy Recommendations</h3>
+                    </div>
+                    <div class="rec-item"><strong>Education investment:</strong> Delink from oil revenue cycles through a dedicated fund mechanism within the CEMAC framework; shift focus from broad-based low-capacity schooling to continuous student progression and quality.</div>
+                    <div class="rec-item"><strong>Open the electricity sector to private participation:</strong> The 2003 Electricity Code already provides the institutional framework, but political will to enforce it is needed.</div>
+                    <div class="rec-item"><strong>Strengthen oil revenue transparency:</strong> Implement independent verification systems and production reporting.</div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="sec-15" class="scroll-section">
+        <section id="sec-15" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">DUTCH DISEASE IN ACTION</div>
             <div class="case-title-row">
                 <h2>Azerbaijan</h2>
                 <button class="map-launch-btn" onclick="openMapView('Azerbaijan')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
             </div>
-            
-            <div class="split-container" style="gap: 60px; align-items: flex-start; margin-top: 30px;">
-                
-                <div style="flex: 1; min-width: 350px; text-align: left;">
-                    <div class="case-header" style="margin-bottom: 20px;">
-                        <h3 style="color: var(--orange); margin-bottom: 0;">Key Findings</h3>
+
+            <div class="case-findings">
+
+                <div class="case-col">
+                    <div class="case-col-header">
+                        <i class="fas fa-magnifying-glass-chart" style="color: var(--orange);"></i>
+                        <h3 style="color: var(--orange);">Key Findings</h3>
                     </div>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Oil concentration:</strong> Over 45% of "non-oil" manufacturing is petroleum-related.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Infrastructure spending:</strong> Concentrated heavily on pipelines. SOFAZ spending at times exceeding the fund’s own investment returns.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Rent capture vulnerability:</strong> Politically connected contracts, opaque procurement processes, and SOFAZ's lack of independence from presidential orders enable rent capture.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Lack of transparency:</strong> Azerbaijan’s State Statistical Committee does not publish a Gini coefficient.</p>
-                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Financial instability:</strong> NPLs reached 21% after the 2015-2016 banking crisis.</p>
-                </div>
-                
-                <div style="flex: 1; min-width: 350px; text-align: left;">
-                    <div class="case-header" style="margin-bottom: 20px;">
-                        <h3 style="color: var(--blue); margin-bottom: 0;">Policy Recommendations</h3>
+                    <div class="finding-item">
+                        <div class="finding-icon orange-bg"><i class="fas fa-industry"></i></div>
+                        <div>Over 45% of what the government classifies as "non-oil" manufacturing is petroleum-related.</div>
                     </div>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Mitigate rent capture:</strong> Establish independent mechanisms and oversight bodies for sovereign wealth fund governance.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Invest in human capital and productive diversification:</strong> Prioritise sectors closely related to the existing export basket, such as petrochemicals and renewable energy engineering.</p>
-                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Create independent institutions for data transparency:</strong> Independent national statistics and consistently publish non-oil deficit projections and SOFAZ sustainability assessments.</p>
+                    <div class="finding-item">
+                        <div class="finding-icon orange-bg"><i class="fas fa-money-bill-transfer"></i></div>
+                        <div>Infrastructure spending concentrated on pipelines. SOFAZ transfers to the budget have at times exceeded the fund's own investment returns.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon orange-bg"><i class="fas fa-user-tie"></i></div>
+                        <div>Politically connected contracts, opaque procurement, and SOFAZ's lack of independence from presidential orders enable rent capture.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon orange-bg"><i class="fas fa-eye-slash"></i></div>
+                        <div>The State Statistical Committee does not publish a Gini coefficient.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon orange-bg"><i class="fas fa-triangle-exclamation"></i></div>
+                        <div>Non-performing loans reached 21% after the 2015-2016 banking crisis.</div>
+                    </div>
                 </div>
+
+                <div class="case-col">
+                    <div class="case-col-header">
+                        <i class="fas fa-clipboard-list" style="color: var(--blue);"></i>
+                        <h3 style="color: var(--blue);">Policy Recommendations</h3>
+                    </div>
+                    <div class="rec-item"><strong>Mitigate rent capture:</strong> Establish independent oversight bodies for sovereign wealth fund governance, separating SOFAZ disbursement decisions from presidential authority.</div>
+                    <div class="rec-item"><strong>Redirect capital toward adjacent sectors:</strong> Prioritise investment in sectors closely related to the existing export basket, such as petrochemical processing and renewable energy engineering, rather than reinforcing extractive capacity.</div>
+                    <div class="rec-item"><strong>Establish independent data institutions:</strong> Create an autonomous national statistics agency and consistently publish non-oil deficit projections and SOFAZ sustainability assessments.</div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="sec-16" class="scroll-section" style="min-height: 100vh; display: flex; align-items: center; padding-top: 40px; padding-bottom: 20px;">
-        <div class="content-wrapper" style="width: 100%;">
+        <section id="sec-16" class="scroll-section">
+        <div class="content-wrapper">
             <div class="header-logos">STRONG INSTITUTIONS ARE NECESSARY BUT NOT SUFFICIENT</div>
             <div class="case-title-row">
                 <h2>Chile</h2>
                 <button class="map-launch-btn" onclick="openMapView('Chile')">Open map <i class="fas fa-arrow-up-right-from-square"></i></button>
             </div>
-            
-            <div class="split-container" style="gap: 60px; align-items: flex-start; margin-top: 30px;">
-                
-                <div style="flex: 1; min-width: 350px; text-align: left;">
-                    <div class="case-header" style="margin-bottom: 20px;">
-                        <h3 style="color: var(--green); margin-bottom: 0;">The Human Capital Bottleneck</h3>
+
+            <div class="case-findings">
+
+                <div class="case-col">
+                    <div class="case-col-header">
+                        <i class="fas fa-magnifying-glass-chart" style="color: var(--green);"></i>
+                        <h3 style="color: var(--green);">The Human Capital Bottleneck</h3>
                     </div>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);">Chile has the strongest institutions in Latin America, yet its ECI has declined since the mid-2000s.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Product space:</strong> Exports cluster in the "periphery" of the product space.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Downstream processing:</strong> 54% of copper exports go to China for downstream processing.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>R&amp;D spending:</strong> 0.34% of GDP (one-sixth of OECD average).</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Education gap:</strong> PISA maths scores 60 points below OECD average.</p>
-                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Productivity:</strong> Worker productivity 50% below OECD average.</p>
-                </div>
-                
-                <div style="flex: 1; min-width: 350px; text-align: left;">
-                    <div class="case-header" style="margin-bottom: 20px;">
-                        <h3 style="color: var(--blue); margin-bottom: 0;">Policy Recommendations</h3>
+                    <div class="finding-item">
+                        <div class="finding-icon green-bg"><i class="fas fa-chart-line"></i></div>
+                        <div>Chile has the strongest institutions in Latin America, yet its ECI has declined since the mid-2000s.</div>
                     </div>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Direct lithium revenues toward education quality and applied research</strong> having a defined share of rents for technical training institutes and applied research, following Norway's SINTEF model.</p>
-                    <p style="font-size: 21px; margin-bottom: 15px; line-height: 1.4; color: var(--dark-color);"><strong>Build the domestic mining supply chain</strong> through procurement preferences for domestic suppliers and dedicated credit lines with risk-sharing facilities.</p>
-                    <p style="font-size: 21px; margin-bottom: 0; line-height: 1.4; color: var(--dark-color);"><strong>Invest in logistics infrastructure</strong> along the northern mining corridor, port expansion, rail gauge standardisation, and energy connections to support proposed lithium processing facilities and reduce freight costs.</p>
+                    <div class="finding-item">
+                        <div class="finding-icon green-bg"><i class="fas fa-circle-nodes"></i></div>
+                        <div>Chilean exports sit in the periphery of the product space, meaning they connect to few other, more complex products.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon green-bg"><i class="fas fa-ship"></i></div>
+                        <div>54% of copper exports go to China for downstream processing rather than being refined domestically.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon green-bg"><i class="fas fa-flask"></i></div>
+                        <div>R&amp;D spending at 0.34% of GDP is one-sixth of the OECD average.</div>
+                    </div>
+                    <div class="finding-item">
+                        <div class="finding-icon green-bg"><i class="fas fa-graduation-cap"></i></div>
+                        <div>PISA maths scores 60 points below OECD average. Worker productivity 50% below OECD average.</div>
+                    </div>
                 </div>
-                
+
+                <div class="case-col">
+                    <div class="case-col-header">
+                        <i class="fas fa-clipboard-list" style="color: var(--blue);"></i>
+                        <h3 style="color: var(--blue);">Policy Recommendations</h3>
+                    </div>
+                    <div class="rec-item"><strong>Direct lithium revenues toward education quality and applied research,</strong> allocating a defined share of rents for technical training institutes and applied research, following Norway's SINTEF model.</div>
+                    <div class="rec-item"><strong>Build the domestic mining supply chain</strong> through procurement preferences for domestic suppliers and dedicated credit lines with risk-sharing facilities.</div>
+                    <div class="rec-item"><strong>Invest in logistics infrastructure</strong> along the northern mining corridor: port expansion, rail gauge standardisation, and energy connections to support proposed lithium processing facilities and reduce freight costs.</div>
+                </div>
+
             </div>
         </div>
     </section>
-    <section id="sec-17" class="scroll-section">
+        <section id="sec-17" class="scroll-section">
         <div class="content-wrapper">
-            <div class="header-logos">WHAT THE CASE STUDIES TELL US</div>
+            <div class="header-logos">THREE LEVERS FOR THE NEXT DECADE</div>
             <h2>Conclusions and Implications</h2>
-            <p class="narrative-text">The most effective approach cannot be to totally abandon resource dependence, as these countries are unlikely to survive the transition. Instead, the <strong>structural foundations</strong> for long-term productive diversification should be laid. Each case study isolates a different binding constraint on that conversion. </p>
-    
-            <!-- Pillar cards, each anchored to one case study -->
-            <div class="pillars-container" style="margin-bottom: 30px;">
-    
-                <<div class="pillar-card credit" style="text-align: left; border-bottom: 4px solid var(--blue);">
-                    <h4 style="color: var(--title-color); font-size: 24px; text-align: center;">1. Financial Depth</h4>
-                    <p style="font-size: 18px;">Domestic credit to the private sector is the single strongest ML predictor of economic complexity. Where firms cannot access formal finance, resource rents stay locked in the extractive sector.</p>
-                    <div style="background: rgba(194, 58, 58, 0.06); border-left: 4px solid var(--red); padding: 14px 18px; border-radius: 0 6px 6px 0; margin-top: 10px;">
-                        <p style="font-size: 16px; margin: 0; color: var(--dark-color);"><strong style="color: var(--red);">Congo:</strong> Only 8.5% of firms use banks for investment; 94% of active firms are informal, with no access to formal credit. Reduce barriers to firm formalisation and expand access to bank financing, so that oil revenues channelled through the fiscal system can reach the productive economy.</p>
-                    </div>
+            <p class="narrative-text">The most effective pathway is not to abandon resource dependence but to <strong>systematically convert resource rents into the structural foundations</strong> for long-term productive diversification.</p>
+
+            <div class="pillars-container" style="margin-bottom: 40px;">
+
+                <div class="pillar-card credit">
+                    <h4 style="color: var(--title-color); font-size: 24px;">1. Financial Depth</h4>
+                    <p style="font-size: 18px;">Domestic credit to the private sector emerged as the single strongest ML predictor. In Congo, only 8.5% of firms use banks for investment and 94% of active firms are informal. Reducing barriers to firm formalisation and expanding bank financing are preconditions for oil revenues to reach the productive economy.</p>
                 </div>
-    
-                <div class="pillar-card energy" style="text-align: left; border-bottom: 4px solid var(--orange);">
-                    <h4 style="color: var(--title-color); font-size: 24px; text-align: center;">2. Infrastructure &amp; Governance</h4>
-                    <p style="font-size: 18px;">Electricity access is a consistent predictor across all ML models. But infrastructure spending only translates into diversification when governance channels it beyond the resource sector.</p>
-                    <div style="background: rgba(212, 133, 59, 0.06); border-left: 4px solid var(--orange); padding: 14px 18px; border-radius: 0 6px 6px 0; margin-top: 10px;">
-                        <p style="font-size: 16px; margin: 0; color: var(--dark-color);"><strong style="color: var(--orange);">Azerbaijan:</strong> Capital spending is concentrated on pipelines; over 45% of "non-oil" manufacturing remains petroleum-linked. Redirect SOFAZ-funded infrastructure toward sectors adjacent to the existing export basket, such as petrochemical processing and renewable energy engineering, rather than reinforcing extractive capacity.</p>
-                    </div>
+                <div class="pillar-card energy">
+                    <h4 style="color: var(--title-color); font-size: 24px;">2. Infrastructure &amp; Governance</h4>
+                    <p style="font-size: 18px;">Electricity access is a consistent predictor of complexity across all ML models, but infrastructure spending only translates into diversification when governance channels it beyond the resource sector. In Azerbaijan, over 45% of "non-oil" manufacturing remains petroleum-linked and SOFAZ-funded capital spending is concentrated on pipelines. Redirecting investment toward petrochemical processing and renewable energy engineering would target sectors adjacent to the existing export basket.</p>
                 </div>
-    
-                <div class="pillar-card human" style="text-align: left; border-bottom: 4px solid var(--green);">
-                    <h4 style="color: var(--title-color); font-size: 24px; text-align: center;">3. Human Capital</h4>
-                    <p style="font-size: 18px;">Positive and significant across all econometric specifications. Strong institutions are necessary but not sufficient: without education quality and research capacity, exports remain in the periphery of the product space.</p>
-                    <div style="background: rgba(46, 125, 74, 0.06); border-left: 4px solid var(--green); padding: 14px 18px; border-radius: 0 6px 6px 0; margin-top: 10px;">
-                        <p style="font-size: 16px; margin: 0; color: var(--dark-color);"><strong style="color: var(--green);">Chile:</strong> R&amp;D at 0.34% of GDP; PISA maths 60 points below the OECD average. Direct lithium revenues toward technical training and applied research following Norway's SINTEF model, building the workforce needed for downstream processing.</p>
-                    </div>
+                <div class="pillar-card human">
+                    <h4 style="color: var(--title-color); font-size: 24px;">3. Human Capital</h4>
+                    <p style="font-size: 18px;">Positive and significant across all econometric specifications. Chile has the strongest institutions in Latin America, yet its ECI has declined since the mid-2000s: R&amp;D sits at 0.34% of GDP and PISA maths scores are 60 points below the OECD average. Directing lithium revenues toward technical training and applied research, following Norway's SINTEF model, would build the workforce needed for downstream processing.</p>
                 </div>
-    
             </div>
-    
-            <div class="synthesis-box" style="max-width: 1200px; margin-bottom: 40px;">
-                <p style="font-size: 20px;"><strong>The binding constraint shifts with income level.</strong> At low income (Congo), all three pillars fail at once and the priority is establishing minimum thresholds. At middle income (Azerbaijan), governance determines whether accumulated rents reach productive uses or recirculate into extraction. At upper-middle income (Chile), the quality of education and research separates countries that upgrade from those that plateau.</p>
+
+            <div class="synthesis-box" style="max-width: 1200px;">
+                <p><strong>For sovereign credit assessment:</strong> The constraints on industrial upgrading shift as institutional and economic conditions improve. In low-income resource economies (Congo), all three pillars are binding simultaneously. In middle-income settings (Azerbaijan), Dutch Disease and governance dominate. In upper-middle-income settings (Chile), human capital quality and R&amp;D become the bottleneck. No single policy lever is sufficient across all settings.</p>
             </div>
-    
+
             <div class="vault-box">
                 <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
                     <a href="team/Capstone_final_project.pdf" target="_blank" class="vault-btn" style="background: var(--red);"><i class="fas fa-file-pdf"></i> Full Report PDF</a>
@@ -1710,63 +1887,6 @@
                 </div>
             </div>
 
-            <h3 style="text-align: center; margin-top: 40px;">C.3 Cluster Robustness</h3>
-            <p class="narrative-text" style="text-align: left; font-size: 20px;">
-                Agreement with the baseline is measured by the Adjusted Rand Index (ARI), which compares two partitions on a scale from 0 (random) to 1 (identical), corrected for chance.
-            </p>
-
-            <table class="comp-table" style="margin-bottom: 30px;">
-                <thead>
-                    <tr>
-                        <th style="text-align: left;">Specification</th>
-                        <th>Change from Baseline</th>
-                        <th>ARI</th>
-                        <th>Key Observations</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>k = 3</strong></td>
-                        <td>Fewer clusters</td>
-                        <td>-</td>
-                        <td style="text-align: left;">Petrostates and Oil Exporters merge, losing the distinction between Gulf producers and lower-income oil economies.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>k = 4</strong></td>
-                        <td>Fewer clusters</td>
-                        <td>-</td>
-                        <td style="text-align: left;">Mining Exporters and Diversified Producers collapse into one group, mixing mineral-dominant and mixed portfolios.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>k = 6</strong></td>
-                        <td>More clusters</td>
-                        <td>-</td>
-                        <td style="text-align: left;">Forestry Intensive splits further but the extra cluster contains only 2-3 countries with no clear interpretive profile.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>A: Merged minerals</strong></td>
-                        <td>4 features instead of 21</td>
-                        <td class="status-green">0.70</td>
-                        <td style="text-align: left;">Hydrocarbon clusters stable. Divergence in mineral-dependent economies where copper/gold distinction is lost.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>B: Three PCs</strong></td>
-                        <td>3 components instead of 2</td>
-                        <td class="status-green">0.81</td>
-                        <td style="text-align: left;">Highest ARI. Third component (11.4% variance) adds limited clustering power.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>C: 2019 data</strong></td>
-                        <td>End-of-panel production</td>
-                        <td class="status-orange">0.67</td>
-                        <td style="text-align: left;">Azerbaijan and Iraq move to Petrostates; Kazakhstan and Russia shift to Mining Exporters; Ghana and Vietnam leave Forestry Intensive.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="synthesis-box">
-                <p style="font-size: 20px;"><strong>Country-level stability:</strong> 14 countries (27%) receive the same label across all four specifications, drawn almost entirely from Forestry Intensive plus the UAE. The least stable are mixed hydrocarbon-mineral economies (Bolivia, Indonesia, Kazakhstan, Russia, Iran), whose resource composition is not well summarised by a single cluster. The clustering is used as a descriptive device only and is not included as a predictor in the econometric or ML specifications.</p>
-            </div>
         </div>
     </section>
 
