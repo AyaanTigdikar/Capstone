@@ -889,8 +889,10 @@ bottom3 = ranking.tail(3)["Country Code"].tolist()
 print(f"  Top 3 improvers: {top3}")
 print(f"  Bottom 3 decliners: {bottom3}")
 
-hist = ml_df[["Country Code","Country Name","Year","Economic Complexity Index"]].dropna()
-all_cc = ml_df["Country Code"].unique().tolist()
+hist = (master[master["Country Code"].isin(include_lst)]
+        [["Country Code","Country Name","Year","Economic Complexity Index"]].dropna())
+all_cc = hist["Country Code"].unique().tolist()
+cc_name09 = master.groupby("Country Code")["Country Name"].first().to_dict()
 TOP_C  = "#2e7d4a"
 BOT_C  = "#c23a3a"
 GREY_L = "#9aafc4"
@@ -901,8 +903,8 @@ def hex_rgba(h, a):
 
 figZ = make_subplots(rows=1, cols=2, horizontal_spacing=0.08, shared_yaxes=True,
                      subplot_titles=[
-                         f"Top 3 improvers: {' · '.join(top3)}",
-                         f"Bottom 3 decliners: {' · '.join(bottom3)}",
+                         f"Top 3 improvers: {' · '.join(cc_name09.get(c, c) for c in top3)}",
+                         f"Bottom 3 decliners: {' · '.join(cc_name09.get(c, c) for c in bottom3)}",
                      ])
 
 for panel_i, (highlight, h_col) in enumerate([(top3, TOP_C), (bottom3, BOT_C)], 1):
@@ -950,7 +952,7 @@ for panel_i, (highlight, h_col) in enumerate([(top3, TOP_C), (bottom3, BOT_C)], 
         yref = "y" if panel_i == 1 else "y2"
         figZ.add_annotation(
             x=2030, y=by[-1], xref=xref, yref=yref,
-            text=f"<b>{cc}</b>", showarrow=True, ax=14, ay=0,
+            text=f"<b>{cc_name09.get(cc, cc)}</b>", showarrow=True, ax=14, ay=0,
             arrowwidth=1, arrowcolor=h_col,
             font=dict(size=9, color=h_col), xanchor="left",
         )
