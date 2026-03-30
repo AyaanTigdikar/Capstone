@@ -37,7 +37,7 @@ header .subtitle{font-size:11px;color:#777;margin-top:2px}
 .tag-ugs{background:#f3e5f5;color:#7b1fa2}
 .map-wrap{flex:1;position:relative}
 #map{width:100%;height:100%}
-.info-panel{position:absolute;bottom:16px;left:16px;background:#fff;border:1px solid #ddd;border-radius:4px;padding:14px 18px;display:none;z-index:1000;max-width:420px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.info-panel{position:absolute;bottom:16px;left:16px;background:#fff;border:1px solid #ddd;border-radius:4px;padding:14px 18px;display:none;z-index:1100;max-width:420px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
 .info-panel.visible{display:block}
 .info-panel .close-btn{position:absolute;top:6px;right:10px;background:none;border:none;color:#999;font-size:16px;cursor:pointer}
 .info-panel h3{font-size:13px;font-weight:600;color:#222;margin-bottom:8px;padding-right:20px}
@@ -45,7 +45,7 @@ header .subtitle{font-size:11px;color:#777;margin-top:2px}
 .info-row{font-size:11px}
 .info-row .key{color:#999}
 .info-row .value{color:#333;font-weight:500;margin-top:1px}
-#mapLegend{position:absolute;bottom:12px;right:12px;z-index:1000;background:rgba(255,255,255,0.95);border:1px solid #ddd;border-radius:4px;padding:8px 12px;font-family:'IBM Plex Sans',sans-serif;font-size:10px;color:#666;box-shadow:0 1px 4px rgba(0,0,0,0.08);max-width:220px}
+#mapLegend{position:absolute;bottom:12px;right:12px;z-index:1100;pointer-events:auto;background:rgba(255,255,255,0.95);border:1px solid #ddd;border-radius:4px;padding:8px 12px;font-family:'IBM Plex Sans',sans-serif;font-size:10px;color:#666;box-shadow:0 1px 4px rgba(0,0,0,0.08);max-width:220px}
 #mapLegend .legend-section{margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid #eee}
 #mapLegend .legend-section:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
 #mapLegend .legend-row{display:flex;align-items:center;gap:6px;margin-bottom:3px}
@@ -671,6 +671,8 @@ function hideChileTabs(){
   if(v&&views[v]){
     document.getElementById('countrySelect').value=v;
     switchView(v);
+  } else {
+    updateLayerVisibility();
   }
 })();
 
