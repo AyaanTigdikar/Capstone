@@ -26,7 +26,7 @@ import openpyxl
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# ── Paths ─────────────────────────────────────────────────────────────────
+# Paths
 # BASE_DIR is derived from this file's location:  scripts/ → Chile/ (parent)
 # This makes the whole project portable — copy the Chile/ folder anywhere and
 # paths resolve automatically.
@@ -41,7 +41,7 @@ DIR_TEMP        = os.path.join(DIR_INTERMED, "temporary") # scratch outputs
 # Legacy alias so any code that still references DIR_PRELIM keeps working
 DIR_PRELIM = DIR_INTERMED
 
-# ── Data file paths ────────────────────────────────────────────────────────
+# Data file paths
 
 COCHILCO_PATH = os.path.join(DIR_DATA, "COCHILCO_Production_2005_2024.xlsx")
 
@@ -65,7 +65,7 @@ SALIDAS_PATH = next(
     _salidas_candidates[0],
 )
 
-# ── Shared constants ───────────────────────────────────────────────────────
+# Shared constants
 
 COMPANY_TO_DEPOSIT = {
     "División El Teniente":      ["El Teniente", "Teniente"],
@@ -219,7 +219,7 @@ IRON_MINE_NAMES = [
 
 ZINC_MINE_NAMES = ["El Toqui"]
 
-# ── Utility functions ──────────────────────────────────────────────────────
+# Utility functions
 
 def haversine_km(lat1, lon1, lat2, lon2):
     R = 6371.0
@@ -286,7 +286,7 @@ def search_inventory(inv_df, terms, require_mine=False):
     return sorted(matched)
 
 
-# ── State I/O helpers ──────────────────────────────────────────────────────
+# State I/O helpers
 
 _STATE_KEYS = [
     "inv", "links", "comm_col", "idle_mines",
