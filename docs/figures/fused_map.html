@@ -653,15 +653,6 @@ function hideChileTabs(){
   document.getElementById('chileTabBar').style.display='none';
 }
 
-// ==============================================================
-// INIT
-// ==============================================================
-currentView='Azerbaijan';
-document.getElementById('pipelineToggle').checked=true;
-updateStats('Azerbaijan');
-renderList('Azerbaijan');
-updateLayerVisibility();
-
 // Hash-based deep link (for overlay buttons in index.html)
 (function(){
   var hash=window.location.hash.replace('#','');
