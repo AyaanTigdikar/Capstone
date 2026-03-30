@@ -1236,23 +1236,18 @@
             <div class="header-logos">THE MACHINE LEARNING APPROACH</div>
             <h2>Why ML after Econometrics?</h2>
             
-            <p class="narrative-text" style="text-align: left;">
-                <strong><span style="color: var(--green);">1) We may be missing relevant predictors of ECI:</span></strong> 
-                    Econometric models select variables based on theory, which risks omitting important predictors but lack theoretical rationale.
-                <br><br>
-                <strong><span style="color: var(--green);">2) Robustness check:</span></strong>
-                    ML may validate/invalidate variables identified as significant in the econometric model.
-                <br><br>
-                <strong style="display: block; text-align: center; color: var(--green); font-size: 25px;">Solution:</strong>
-                <br>
-                <strong>Machine Learning:</strong> all available variables are fed into the models. The ML algorithms themselves identify which predictors carry the most explanatory power.
-                <br><br>
-                <strong>Regularization techniques (LASSO, Ridge and Elastic Net):</strong>  they penalise weak coefficients, shrinking them towards zero.
-                <br><br>
-                <strong>Random Forest:</strong> also calculates feature importance, but by capturing non-linear relationships between predictors and ECI.
-                <br><br>
-            </p>
-
+            <div class="split-container">
+                <div class="split-pane left">
+                    <h3 style="color: var(--blue);">The Problem</h3>
+                    <p style="font-size: 20px;"><strong>Missing predictors:</strong> Econometric models select variables based on theory, risking the omission of important predictors that lack theoretical rationale.</p>
+                    <p style="font-size: 20px;"><strong>Robustness:</strong> ML can validate or challenge which variables the econometric model identifies as significant.</p>
+                </div>
+                <div class="split-pane right">
+                    <h3 style="color: var(--orange);">The Solution</h3>
+                    <p style="font-size: 20px;"><strong>Regularisation (LASSO, Ridge, Elastic Net):</strong> All available variables are fed into the model. Weak coefficients are penalised and shrunk towards zero, surfacing only the strongest predictors.</p>
+                    <p style="font-size: 20px;"><strong>Random Forest:</strong> Calculates feature importance while capturing non-linear relationships between predictors and ECI.</p>
+                </div>
+            </div>
         </div>
     </section>
 
