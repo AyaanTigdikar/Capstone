@@ -1239,8 +1239,8 @@
             <div class="split-container">
                 <div class="split-pane left">
                     <h3 style="color: var(--blue);">The Problem</h3>
-                    <p style="font-size: 20px;"><strong>Missing predictors:</strong> Econometric models select variables based on theory, risking the omission of important predictors that lack theoretical rationale.</p>
-                    <p style="font-size: 20px;"><strong>Robustness:</strong> ML can validate or challenge which variables the econometric model identifies as significant.</p>
+                    <p style="font-size: 20px;">Econometric models select variables guided by theory. This ensures interpretability but risks omitting predictors that matter empirically yet lack a clear theoretical rationale.</p>
+                    <p style="font-size: 20px;">With 48 available variables across nine thematic groups, a theory-driven specification can only test a small subset. Structural factors such as financial depth or electricity access may be excluded simply because they fall outside the theoretical framework.</p>
                 </div>
                 <div class="split-pane right">
                     <h3 style="color: var(--orange);">The Solution</h3>
@@ -1248,9 +1248,13 @@
                     <p style="font-size: 20px;"><strong>Random Forest:</strong> Calculates feature importance while capturing non-linear relationships between predictors and ECI.</p>
                 </div>
             </div>
+
+            <div class="synthesis-box" style="max-width: 1100px;">
+                <p style="font-size: 20px; margin: 0;"><strong>Robustness check:</strong> Where ML and econometrics converge on the same predictors, confidence in those variables is strengthened. Where they diverge, ML highlights factors the theory-driven model may have overlooked.</p>
+            </div>
         </div>
     </section>
-
+    
     <section id="sec-11" class="scroll-section">
         <div class="content-wrapper">
             <div class="header-logos">WHAT THE DATA REVEALS WITHOUT THEORETICAL PRIORS</div>
