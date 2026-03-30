@@ -752,7 +752,7 @@
             
             <p class="narrative-text">
                 <strong>The Empirical Puzzle:</strong><br>
-                Countries with large natural resource endowments are also more likely to be poorer and trapped in low-value-added production.
+                Countries rich in natural resources often remain trapped in low-value-added production, growing more slowly than their resource wealth would suggest. 
             </p>
 
             <div class="split-container">
@@ -808,6 +808,25 @@
             </div>
         </div>
     </section>
+
+    <style>
+        /* Fix flow-card heading weight to match rest of presentation */
+        .flow-card h3 {
+            font-weight: 600;
+        }
+
+        /* Ensure equal-height cards with consistent internal spacing */
+        .lit-timeline-flow {
+            align-items: stretch;
+        }
+        .flow-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .flow-card p:last-child {
+            margin-top: auto;
+        }
+    </style>
 
     <section id="sec-2" class="scroll-section">
         <div class="content-wrapper">
@@ -1150,47 +1169,53 @@
     </section>
 
     <section id="sec-8" class="scroll-section">
-        <div class="content-wrapper">
-            <div class="header-logos">TESTING VENABLES' INVESTMENT HYPOTHESIS</div>
-            <h2>Econometric Results</h2>
-    
-            <p class="narrative-text" style="text-align: left; margin-bottom: 20px;">
-                Panel OLS with country-clustered standard errors. Controls include political stability, rule of law, trade openness, and forestry rents.
+    <div class="content-wrapper">
+        <div class="header-logos">TESTING VENABLES' INVESTMENT HYPOTHESIS</div>
+        <h2>Econometric Results</h2>
+
+        <p class="narrative-text" style="text-align: left; margin-bottom: 20px;">
+            Panel OLS with country-clustered standard errors. Controls include political stability, rule of law, trade openness, and forestry rents.
+        </p>
+
+        <div style="background: var(--white); padding: 25px 30px; border-radius: 8px; border: 1px solid var(--grid-color); box-shadow: var(--shadow-subtle); width: 100%; max-width: 1100px; box-sizing: border-box; text-align: center; margin-bottom: 35px;">
+            $$
+            \begin{aligned}
+            ECI_{it} = \;\beta_0 
+            &+ \beta_1 HCI_{it} 
+            + \beta_2 GFCF_{it} 
+            + \beta_3 Prod_{it}
+            + \beta_4 Forest_{it}
+            + \boldsymbol{\gamma}' \mathbf{X}_{it} \\
+            &+ \beta_8 (HCI_{it} \times Prod_{it}) 
+            + \beta_9 (GFCF_{it} \times Prod_{it}) \\
+            &+ \beta_{10} (HCI_{it} \times Forest_{it}) 
+            + \beta_{11} (GFCF_{it} \times Forest_{it}) \\
+            &+ \beta_{12} ECI_{i,t-1} 
+            + \epsilon_{it}
+            \end{aligned}
+            $$
+            <p style="font-size: 14px; color: var(--grey); margin: 10px 0 0 0; text-align: center;">
+                where \(\mathbf{X}_{it}\) = Political Stability, Rule of Law, Trade Openness
             </p>
-    
-            <div style="background: var(--white); padding: 20px 25px; border-radius: 8px; border: 1px solid var(--grid-color); box-shadow: var(--shadow-subtle); width: 100%; max-width: 1200px; box-sizing: border-box; text-align: center; overflow-x: auto; margin-bottom: 35px; font-size: 18px;">
-                $$
-                ECI_{it} = \beta_0 
-                + \beta_1 HCI_{it} 
-                + \beta_2 GFCF_{it} 
-                + \beta_3 Prod_{it}
-                + \beta_4 PolStab_{it} 
-                + \beta_5 RoL_{it} 
-                + \beta_6 Trade_{it} 
-                + \beta_7 Forest_{it}
-                + \boldsymbol{\beta} \cdot \mathbf{Interactions}_{it}
-                + \beta_{12} ECI_{i,t-1} 
-                + \epsilon_{it}
-                $$
+        </div>
+
+        <div class="split-container" style="align-items: flex-start; max-width: 1100px; margin: 0 auto;">
+            <div class="chart-card" style="flex: 1; min-width: 320px;">
+                <h3>Regression Results</h3>
+                <div class="visual-placeholder has-iframe" style="height: 450px;" onclick="openPlaceholder(this, 'Table 3.3: Regression results')">
+                    <iframe src="figures/regression_table_combined.html" class="iframe-preview" scrolling="no"></iframe>
+                </div>
             </div>
-    
-            <div class="split-container" style="align-items: flex-start;">
-                <div class="chart-card" style="flex: 1; min-width: 350px;">
-                    <h3>Regression Results</h3>
-                    <div class="visual-placeholder has-iframe" style="height: 450px;" onclick="openPlaceholder(this, 'Table 3.3: Regression results')">
-                        <iframe src="figures/regression_table_combined.html" class="iframe-preview" scrolling="no"></iframe>
-                    </div>
-                </div>
-                <div style="flex: 1; min-width: 350px; padding: 30px 10px 30px 20px; text-align: left;">
-                    <h3 style="color: var(--orange);">Key Findings</h3>
-                    <p style="font-size: 20px;"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating it contributes to complexity growth beyond existing trajectory.</p>
-                    <p style="font-size: 20px;"><strong>Gross Fixed Capital Formation</strong> is positive and significant.</p>
-                    <p style="font-size: 20px;"><strong>Production Value</strong> is negative but not significant, consistent with the conditional curse view.</p>
-                    <p style="font-size: 20px;"><strong>Institutional controls</strong> lose significance once lagged ECI is included.</p>
-                    <p style="font-size: 20px;">None of the four <strong>interaction terms</strong> are significant, however 3 out of 4 carry a positive sign.</p>
-                </div>
+            <div style="flex: 1; min-width: 320px; padding: 25px 20px; text-align: left;">
+                <h3 style="color: var(--orange);">Key Findings</h3>
+                <p style="font-size: 20px;"><strong>Human Capital (HCI)</strong> is positive and significant across all specifications, indicating it contributes to complexity growth beyond existing trajectory.</p>
+                <p style="font-size: 20px;"><strong>Gross Fixed Capital Formation</strong> is positive and significant.</p>
+                <p style="font-size: 20px;"><strong>Production Value</strong> is negative but not significant, consistent with the conditional curse view.</p>
+                <p style="font-size: 20px;"><strong>Institutional controls</strong> lose significance once lagged ECI is included.</p>
+                <p style="font-size: 20px;">None of the four <strong>interaction terms</strong> are significant, however 3 out of 4 carry a positive sign.</p>
             </div>
         </div>
+    </div>
     </section>
     
     <section id="sec-9" class="scroll-section">
