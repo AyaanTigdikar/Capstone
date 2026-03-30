@@ -57,8 +57,10 @@ COCHILCO_ORIG = next(
 )
 
 _salidas_candidates = [
-    os.path.join(DIR_DATA, "Salidas2024.csv"),
     os.path.join(DIR_DATA, "Salidas2025.csv"),
+    os.path.join(DIR_DATA, "salidas_2024.csv"),
+    os.path.join(DIR_DATA, "Salidas2024.csv"),
+    os.path.join(DIR_DATA, "Salidas_minerals_only.csv"),
 ]
 SALIDAS_PATH = next(
     (p for p in _salidas_candidates if os.path.exists(p)),

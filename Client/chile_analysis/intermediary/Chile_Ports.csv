@@ -1,0 +1,14 @@
+name,region,lat,lon,products,key_users
+Coloso,Antofagasta,-23.76,-70.45,Cu concentrate,Escondida (dedicated)
+Angamos,Antofagasta,-23.1,-70.42,"Cu cathode, concentrate",Codelco
+Mejillones,Antofagasta,-23.1,-70.45,"Cu concentrate, cathode, acid",Multiple
+Antofagasta (ATI),Antofagasta,-23.65,-70.4,"Cu cathode, general",Antofagasta Minerals
+Iquique,Tarapaca,-20.21,-70.15,Cu cathode,"Collahuasi, Quebrada Blanca"
+Patache,Tarapaca,-20.8,-70.22,Cu concentrate,"Collahuasi, Quebrada Blanca"
+Barquito,Atacama,-27.07,-70.84,"Cu concentrate, cathode","Codelco Salvador, ENAMI"
+Caldera,Atacama,-27.07,-70.82,Cu concentrate,Medium miners
+Coquimbo,Coquimbo,-29.96,-71.35,"Cu concentrate, Fe pellets",CMP
+Los Vilos,Coquimbo,-31.91,-71.51,Cu concentrate,Los Pelambres (dedicated)
+Ventanas,Valparaiso,-32.74,-71.49,"Cu cathode, blister","Codelco, Anglo American"
+San Antonio,Valparaiso,-33.59,-71.62,"Cu cathode, general","El Teniente, general"
+San Vicente,Biobio,-36.73,-73.13,"Cu cathode, general",Southern region
