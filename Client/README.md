@@ -1,4 +1,4 @@
-# Capstone Code Submission — Resource Curse & Economic Complexity
+# Capstone Code Submission: Resource Curse & Economic Complexity
 
 **Project:** Does Natural Resource Dependence Hinder Economic Complexity?
 **Sample:** 54-country panel, 1995–2019
@@ -14,12 +14,12 @@ client_submission/
 ├── main_analysis/
 │   ├── 0_NR_extraction_FINAL.ipynb
 │   ├── 1_cleaning_master_data_FINAL.ipynb
-│   ├── 3_Imputing_FINAL.ipynb
-│   ├── 4_Clustering_FINAL.ipynb
-│   ├── 5_ML_FINAL.ipynb
-│   ├── 6_Regressions_Unified.ipynb
-│   ├── 7_Viz_Descriptive_Clustering.ipynb
-│   ├── 8_Viz_ML.ipynb
+│   ├── 2_Imputing_FINAL.ipynb
+│   ├── 3_Clustering_FINAL.ipynb
+│   ├── 4_ML_FINAL.ipynb
+│   ├── 5_Regressions_Unified.ipynb
+│   ├── 6_Viz_Descriptive_Clustering.ipynb
+│   ├── 7_Viz_ML.ipynb
 │   ├── scripts/
 │   │   ├── standardize_country.py   ← country name harmonisation (used by NB0/NB1)
 │   │   └── viz_utils.py             ← shared Plotly styling helpers
@@ -61,13 +61,13 @@ pip install pandas numpy scikit-learn xgboost statsmodels plotly geopandas scipy
 
 ---
 
-## Main Analysis — Execution Order
+## Main Analysis - Execution Order
 
 Run notebooks in numerical order. Each reads from intermediary outputs of the previous step.
 
 ---
 
-### NB0 — `0_NR_extraction_FINAL.ipynb` — Natural Resource Data Extraction
+### NB0 - `0_NR_extraction_FINAL.ipynb` - Natural Resource Data Extraction
 
 **What it does:**
 Pulls raw natural resource production, consumption, reserves, and prices from five sources and merges them into a single long-format panel.
@@ -78,11 +78,11 @@ Pulls raw natural resource production, consumption, reserves, and prices from fi
 - Country names standardised to ISO3 via custom `add_iso3()` mapping; decade-range rows skipped via regex; non-resource rows dropped
 
 **Inputs:** `rawdata/Statistical Review of World Energy Narrow File-1.csv`, `rawdata/base_dataset.xlsx`, `rawdata/Minerals/`, `rawdata/Oil Gas Coal Uranium Price.xlsx`
-**Output:** `intermediary/natural_resources_production_values.csv` — long format (Country, Year, Resource, Metric, Value) covering 20+ resources, 1990–2024
+**Output:** `intermediary/natural_resources_production_values.csv` - long format (Country, Year, Resource, Metric, Value) covering 20+ resources, 1990–2024
 
 ---
 
-### NB1 — `1_cleaning_master_data_FINAL.ipynb` — Master Dataset Construction
+### NB1 - `1_cleaning_master_data_FINAL.ipynb` - Master Dataset Construction
 
 **What it does:**
 Downloads and caches economic indicators from six data sources via API, then merges them into a country × year panel.
@@ -102,18 +102,18 @@ Downloads and caches economic indicators from six data sources via API, then mer
 
 ---
 
-### NB3 — `3_Imputing_FINAL.ipynb` — Missing Value Imputation
+### NB2 - `2_Imputing_FINAL.ipynb` - Missing Value Imputation
 
 **What it does:**
 Fills gaps in sparse mineral production data using a two-pass strategy, then integrates NR data with the master economic panel.
 
-**Pass 1 — share-based backfilling:**
+**Pass 1 - share-based backfilling:**
 - For each mineral, finds the earliest year where country coverage exceeds 70% of global production
 - Extracts each country's share in that threshold year; backfills prior years using constant shares × global production
 - Sensitivity tested at 60/70/80% thresholds; 70% chosen as baseline
 - Example: Tin reaches 70% coverage in 1997 → 1995–1996 filled using 1997 country shares
 
-**Pass 2 — KNN imputation:**
+**Pass 2 - KNN imputation:**
 - `sklearn.KNeighborsRegressor(n_neighbors=5)` on remaining gaps
 - Features scaled before fitting; imputation done within-country then cross-country
 
@@ -127,7 +127,7 @@ Additional steps:
 
 ---
 
-### NB4 — `4_Clustering_FINAL.ipynb` — Country Clustering
+### NB3 - `3_Clustering_FINAL.ipynb` - Country Clustering
 
 **What it does:**
 Classifies 54 resource-rich developing countries into resource profile clusters using dimensionality reduction and K-Means.
@@ -136,8 +136,8 @@ Classifies 54 resource-rich developing countries into resource profile clusters 
 1. Pivot `NaturalResource.csv` to wide (rows = Country×Year, columns = resources)
 2. Divide all resource columns by population → per-capita production
 3. `log1p()` transform on per-capita values to compress outliers
-4. `PCA(n_components=2)` — PC1 loads on oil/gas, PC2 loads on copper/gold/coal
-5. `KMeans(k=5)` — k selected via silhouette score tested over k=2..8 on 1995 data
+4. `PCA(n_components=2)` - PC1 loads on oil/gas, PC2 loads on copper/gold/coal
+5. `KMeans(k=5)` - k selected via silhouette score tested over k=2..8 on 1995 data
 
 **Cluster labelling** (reference-country anchoring, not manual relabelling):
 - SAU → Petrostates, NGA → Oil Exporters, RUS → Major Producers, CHL → Mining Exporters, COD → Forestry Intensive
@@ -148,7 +148,7 @@ Charts: PCA biplot, loadings heatmap, cluster choropleth, animated Rosling-style
 
 ---
 
-### NB5 — `5_ML_FINAL.ipynb` — Machine Learning Models
+### NB4 - `4_ML_FINAL.ipynb` - Machine Learning Models
 
 **What it does:**
 Trains four supervised models to predict Economic Complexity Index and its annual change from institutional, macroeconomic, and NR production variables.
@@ -161,10 +161,10 @@ Trains four supervised models to predict Economic Complexity Index and its annua
 - L1_ECI: ECI lagged 1 year within country
 - After all transforms + dropna: 1,100 obs across 51 countries
 
-**Cross-validation:** `PanelTemporalCV` expanding window — train: Year ≤ 2014 (993 obs), test: Year ≥ 2015 (107 obs); 5 folds, min_train_years=8, gap=1 year
+**Cross-validation:** `PanelTemporalCV` expanding window - train: Year ≤ 2014 (993 obs), test: Year ≥ 2015 (107 obs); 5 folds, min_train_years=8, gap=1 year
 
 **Models (both ECI level and ΔECI targets):**
-- `LassoCV(max_iter=10000)` — learned α ≈ 0.01–0.03
+- `LassoCV(max_iter=10000)` - learned α ≈ 0.01–0.03
 - `RidgeCV(alphas=logspace(-3, 3, 100))`
 - `ElasticNetCV(l1_ratio=0.5, max_iter=10000)`
 - `RandomForestRegressor(n_estimators=200, max_depth=4, min_samples_leaf=10, oob_score=True)`
@@ -172,11 +172,11 @@ Trains four supervised models to predict Economic Complexity Index and its annua
 Test R²: Lasso ~0.75, RF ~0.65. Feature importance: min-max normalised |coefficients| for linear models; MDI for RF.
 
 **Inputs:** `intermediary/Master.csv`, `intermediary/clustersagg.csv`
-**Outputs:** model objects and results in-memory (used directly by NB8)
+**Outputs:** model objects and results in-memory (used directly by NB7)
 
 ---
 
-### NB6 — `6_Regressions_Unified.ipynb` — Econometric Regressions
+### NB5 - `5_Regressions_Unified.ipynb` - Econometric Regressions
 
 **What it does:**
 Estimates six pooled OLS specifications of ECI on institutional and NR production variables, all with country-clustered standard errors.
@@ -184,23 +184,23 @@ Estimates six pooled OLS specifications of ECI on institutional and NR productio
 **Variable transforms:** `log1p` on HCI, GFCF, per-capita production value; all interaction terms mean-centred on the 54-country sample means; ECI shifted by (min + 1) then log for log-scale AR specs (ECI contains negatives).
 
 **Model specifications:**
-- **Model 1:** Full variable set (~20 vars: GDP pc, savings, agriculture/industry shares, employment, credit, inflation, life expectancy, etc.) — kitchen-sink baseline, clustered SE by country
-- **Model 2:** AR baseline — only ECI_lag1 as predictor; R² ~0.97, establishes how much of ECI is just persistence
-- **Model 3a:** Parsimonious — 7 vars (log_HCI, log_GFCF, political stability, rule of law, log_production_value_pc, trade, forestry rents) + 4 interaction terms (HCI×Production, GFCF×Production, HCI×Forestry, GFCF×Forestry); no ECI lag
+- **Model 1:** Full variable set (~20 vars: GDP pc, savings, agriculture/industry shares, employment, credit, inflation, life expectancy, etc.) - kitchen-sink baseline, clustered SE by country
+- **Model 2:** AR baseline - only ECI_lag1 as predictor; R² ~0.97, establishes how much of ECI is just persistence
+- **Model 3a:** Parsimonious - 7 vars (log_HCI, log_GFCF, political stability, rule of law, log_production_value_pc, trade, forestry rents) + 4 interaction terms (HCI×Production, GFCF×Production, HCI×Forestry, GFCF×Forestry); no ECI lag
 - **Model 3b:** Model 3a + ECI_lag1 (controls for persistence, isolates within-country dynamics)
 - **Model 3c:** Model 3b with all 7 regressors and interactions lagged one period instead of contemporaneous (addresses endogeneity)
 - **Model 4a/4b:** Model 3b/3c + resource-type dummies (Hydrocarbons_Dominant, Subsoil_Metals_Dominant, Precious_Metals_Dominant) + electricity access
-- **Model 5:** log(ECI) ~ log(ECI)_lag1 — log-scale AR persistence benchmark
-- **Model 6:** ΔECI as dependent variable (first differences) with extended controls — tests whether changes in inputs drive changes in complexity
+- **Model 5:** log(ECI) ~ log(ECI)_lag1 - log-scale AR persistence benchmark
+- **Model 6:** ΔECI as dependent variable (first differences) with extended controls - tests whether changes in inputs drive changes in complexity
 
 Also includes: residual diagnostics (QQ plots, Durbin-Watson), HTML regression tables exported for publication, and a robustness re-estimation of Models 3a/3b on the full (non-restricted) sample for comparison.
 
 **Inputs:** `intermediary/Master.csv`, `intermediary/clusters1995.csv`
-**Outputs:** `intermediary/high_resource_countries.csv` (54-country filtered panel with cluster labels, used by NB7–9); coefficient tables, VIF table, HTML regression tables, ECI distribution and trajectory charts printed inline
+**Outputs:** `intermediary/high_resource_countries.csv` (54-country filtered panel with cluster labels, used by NB6–7); coefficient tables, VIF table, HTML regression tables, ECI distribution and trajectory charts printed inline
 
 ---
 
-### NB7 — `7_Viz_Descriptive_Clustering.ipynb` — Descriptive & Clustering Charts
+### NB6 - `6_Viz_Descriptive_Clustering.ipynb` - Descriptive & Clustering Charts
 
 **What it does:**
 Four publication charts for the data and clustering sections.
@@ -215,7 +215,7 @@ Four publication charts for the data and clustering sections.
 
 ---
 
-### NB8 — `8_Viz_ML.ipynb` — ML Charts
+### NB7 - `7_Viz_ML.ipynb` - ML Charts
 
 **What it does:**
 Four charts summarising ML model performance and feature importance.
@@ -225,36 +225,20 @@ Four charts summarising ML model performance and feature importance.
 - **Train/test R² comparison** (`09_ml_performance_comparison.png`): side-by-side bars for train and test R² for all four models, both ECI level and ΔECI targets
 - **Random Forest importance** (`11_ml_random_forest_importance.png`): MDI importance for top features from RF fit
 
-Same train/test split and model specs as NB5 (Year ≤ 2014 / ≥ 2015).
+Same train/test split and model specs as NB4 (Year ≤ 2014 / ≥ 2015).
 
 **Inputs:** `intermediary/Master.csv`, `intermediary/high_resource_countries.csv`, `intermediary/clusters_k5_agg.csv`
 **Outputs:** 4 PNG files to `outputs/charts/ml/`
 
 ---
 
-### NB9 — `9_Viz_Regression.ipynb` — Regression Charts
-
-**What it does:**
-Four charts from the regression results.
-
-- **Coefficient forest plot** (`16_reg_coefficient_forest.png`): all five model specs (3a–3e) side by side, 95% CI bars, variables grouped by type; reads pre-computed coefficients from `robustness-forest/outputs/regression/coef_model*.csv`
-- **R² comparison** (`17_reg_r2_comparison.png`): bar chart of in-sample R² across Models 1, 3a–3e
-- **HCI × NR interaction** (`18_reg_hci_production_interaction.png`): scatter of log(HCI) vs ECI, country-year observations split into four NR production quartiles, separate OLS trendline per quartile
-- **Rents vs ECI** (`19_reg_rents_eci_relationship.png`): scatter of NR rents (% GDP) vs ECI, points coloured by cluster, single OLS trendline
-
-**Inputs:** `intermediary/Master.csv`, `intermediary/clustersagg.csv`, `robustness-forest/outputs/regression/coef_model*.csv`
-**Outputs:** 4 PNG files to `outputs/charts/regression/`
-
-
----
-
-## Chile Analysis — Execution Order
+## Chile Analysis - Execution Order
 
 Independent pipeline; does not share data with the main 54-country analysis. Run A → B → C.
 
 ---
 
-### Chile A — `Chile_A_Setup_Production.ipynb` — Inventory & Production Setup
+### Chile A - `Chile_A_Setup_Production.ipynb` - Inventory & Production Setup
 
 **What it does:**
 Loads the Chilean facilities inventory and COCHILCO production statistics, matches production figures to individual mines, and saves a pickled pipeline state for downstream notebooks.
@@ -271,7 +255,7 @@ Loads the Chilean facilities inventory and COCHILCO production statistics, match
 
 ---
 
-### Chile B — `Chile_B_Supply_Chain.ipynb` — Supply Chain Construction
+### Chile B - `Chile_B_Supply_Chain.ipynb` - Supply Chain Construction
 
 **What it does:**
 Builds the full directed supply chain graph (mine → concentrator/SX-EW → smelter → port) from the inventory and link tables.
@@ -296,7 +280,7 @@ Unified edge table columns: `FROM_NAME`, `FROM_TYPE`, `FROM_LAT/LON`, `TO_NAME`,
 
 ---
 
-### Chile C — `Chile_C_Validation_Analysis.ipynb` — Validation & Repair
+### Chile C - `Chile_C_Validation_Analysis.ipynb` - Validation & Repair
 
 **What it does:**
 Validates the supply chain graph and patches any construction errors before the data is used for visualisation or analysis.
@@ -342,8 +326,7 @@ python3.10 chile_analysis/scripts/chile_visualisations.py
 
 ## Notes
 
-- **Sample integrity:** The 54-country sample in `main_analysis/` is fixed. Do not filter it further in the main pipeline; sample sensitivity is handled exclusively in NB10, NB11, NB12.
-- **NB2 is absent by design:** `2_MissingCheck_FINAL.ipynb` is a diagnostic/exploratory notebook, not part of the production pipeline.
+- **Sample integrity:** The 54-country sample in `main_analysis/` is fixed. Do not filter it further in the main pipeline.
 - **Intermediary files:** Notebooks read from CSVs written by earlier steps. If a notebook fails to find an input, run the preceding step first.
 - **Chile pipeline is self-contained:** No shared data with the 54-country analysis; can be run independently.
 - **Outputs:** Interactive charts are `.html`; static charts are `.png` in `outputs/charts/` subdirectories.
